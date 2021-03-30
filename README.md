@@ -6,7 +6,7 @@ Our community, make sure to read the rules carefully
  [The Grand Archives](https://discord.io/the-grand-archives)
 
 ## Latest Release
-Table: [v2.1.1](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases)  
+Table: [v2.1.1](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest)  
 Cheat Engine: [7.1 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
 Game: App ver. 1.1.5 | Regulation ver. 1.35
 
@@ -44,8 +44,8 @@ Aerthas Veras | contributed
 RBT | New World flags, Player counter
 Ainsley Harriott | Param Dumps and Offsets, spreadsheet contribution, some scripts
 Pavuk | spreadsheet and table contribution, some other stuff
-Loki | Table Contribution, Help with ASM
-Igromanru | Table contribution and maintaining the table
+[Loki](https://github.com/LokiWasTaken) | Table Contribution, Help with ASM
+[Igromanru](https://github.com/igromanru) | Table contribution and maintaining the table
 
 CE Forum | Reason                 
 -------- | ---------------------
