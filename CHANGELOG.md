@@ -1,5 +1,24 @@
 # Changelog
 
+### v2.2-inu 07/31/2021
+ - Kill All Mobs improvement by Amir
+ - Mass ItemGib rewritten by Grish
+ - Mass ItemGib > Select weapons by Phil25
+ - Reinforce Estus Flask in Npc Menus
+ - NPC Spawn and Control added in Scripts > Misc
+ - REMO, the cutscene viewer, is now functional
+ - WINDOW / CSWindow stuff added to table, contains resolution and graphics settings
+ - ApplyEffect can now apply an array of effects
+ - Host with dead bosses by sfix
+ - Added some old param scripts
+ - Quick Item pointers fixed
+ - Missing items added to ItemGib
+ - Last Spell Highlighted actually works again
+ - Knight's Ring buff script marked as unsafe
+ - Reduced clutter in Player Game Data
+ - References to Watchdog removed or replaced by Blue Sentinel
+ - Some text colour changes in preparation for CE dark mode
+
 ### v2.1.1-inu 07/27/2020
   - Fixed Item Namer  
 by Grish:
@@ -106,7 +125,6 @@ by kairos:
  - PP Classes: ActionButtonParam, AiSoundParam, AtkParam_Npc and NpcParam
 
 ### v1.2.0-inu 07/01/2019:
-None of the github changes are part of this table:
  - Change Home Bonfire PP script
  - Added Compact View Mode button by mgr.inz.Player
  - Fixed issue in SpEffectParam class: pve damage multipliers were named incorrectly
