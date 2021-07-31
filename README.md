@@ -6,15 +6,22 @@ Our community, make sure to read the rules carefully
  [The Grand Archives](https://discord.io/the-grand-archives)
 
 ## Latest Release
-Table: [v2.1.1](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest)  
+Table: [v2.2](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest)  
 Cheat Engine: [7.1 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
 Game: App ver. 1.1.5 | Regulation ver. 1.35
 
 ### Changelog
-#### v2.1.1-inu 07/27/2020
- - Fixed Item Namer  
-by Grish:
- - Mass ItemGib scripts rewritten with more options included  
+#### v2.2-inu 07/31/2021
+ - Kill All Mobs improvement by Amir
+ - Mass ItemGib rewritten by Grish
+ - Mass ItemGib > Select weapons by Phil25
+ - Reinforce Estus Flask in Npc Menus
+ - NPC Spawn and Control added in Scripts > Misc
+ - REMO, the cutscene viewer, is now functional
+ - WINDOW / CSWindow stuff added to table, contains resolution and graphics settings
+ - ApplyEffect can now apply an array of effects
+ - Host with dead bosses by sfix
+ - Misc stuff
 #### For previous changelogs check the [full changelog](/CHANGELOG.md)
 
 ## Credits
@@ -34,6 +41,7 @@ Vortexian | Inspiration for vortmov
 Saucy | Table contribution
 amir | Table contribution
 Grish | Mass ItemGib
+sfix | Table contribution
 
 Reverse Souls | Reason               
 ------------- | ---------------------
