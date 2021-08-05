@@ -1,5 +1,9 @@
 # Changelog
 
+### v2.2.1-inu 08/05/2021
+ - Revert Kill All Mobs improvement due to issues
+ - DS2 Lifegem update by Boblord 
+
 ### v2.2-inu 07/31/2021
  - Kill All Mobs improvement by Amir
  - Mass ItemGib rewritten by Grish
