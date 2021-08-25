@@ -3,25 +3,21 @@ Dark Souls III Cheat Engine table maintained by The Grand Archives.
 
 ## Discord
 Our community, make sure to read the rules carefully  
- [The Grand Archives](https://discord.io/the-grand-archives)
+[The Grand Archives](https://discord.io/the-grand-archives)
+ 
+### Softban Info
+Unfairest's document about softbans:  
+[Some Madman's Guide to DS3 CE](https://docs.google.com/document/d/1AaQiu5axxinl633IUZuWhggrQOHog-3WxMWnuus8-LU)
 
 ## Latest Release
-Table: [v2.2](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest)  
+Table: [v2.2.1](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest)  
 Cheat Engine: [7.1 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
 Game: App ver. 1.1.5 | Regulation ver. 1.35
 
 ### Changelog
-#### v2.2-inu 07/31/2021
- - Kill All Mobs improvement by Amir
- - Mass ItemGib rewritten by Grish
- - Mass ItemGib > Select weapons by Phil25
- - Reinforce Estus Flask in Npc Menus
- - NPC Spawn and Control added in Scripts > Misc
- - REMO, the cutscene viewer, is now functional
- - WINDOW / CSWindow stuff added to table, contains resolution and graphics settings
- - ApplyEffect can now apply an array of effects
- - Host with dead bosses by sfix
- - Misc stuff
+### v2.2.1-inu 08/05/2021
+ - Revert Kill All Mobs improvement due to issues
+ - DS2 Lifegem update by Boblord 
 #### For previous changelogs check the [full changelog](/CHANGELOG.md)
 
 ## Credits
