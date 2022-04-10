@@ -1,5 +1,16 @@
 # Changelog
 
+### v2.3.0-inu 04/10/2022
+ - Z.Z: Anri and Horace flags
+ - heliodesic: Minor fix for "Unlock Summoning Limit" script
+ - heliodesic: Rewrite "Add All Phantoms to the Black Separation Crystal" script
+ - Fixed lack of ThrowMan in Open script
+ - SuperArmor and partial Toughness info added
+ - Kill All Mobs hopefully fixed
+ - Npc Spawn fix
+ - HitMtrlParam, Bullet, Magic, ReinforceParamWeapon, and EquipParamWeapon classes updated
+ - Misc fixes
+
 ### v2.2.1-inu 08/05/2021
  - Revert Kill All Mobs improvement due to issues
  - DS2 Lifegem update by Boblord 

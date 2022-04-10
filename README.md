@@ -10,14 +10,21 @@ Unfairest's document about softbans:
 [Some Madman's Guide to DS3 CE](https://docs.google.com/document/d/1AaQiu5axxinl633IUZuWhggrQOHog-3WxMWnuus8-LU)
 
 ## Latest Release
-Table: [v2.2.1](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest)  
-Cheat Engine: [7.1 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
+Table: [v2.3.0](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest)  
+Cheat Engine: [7.4 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
 Game: App ver. 1.1.5 | Regulation ver. 1.35
 
 ### Changelog
-### v2.2.1-inu 08/05/2021
- - Revert Kill All Mobs improvement due to issues
- - DS2 Lifegem update by Boblord 
+### v2.3.0-inu 04/10/2022
+ - Z.Z: Anri and Horace flags
+ - heliodesic: Minor fix for "Unlock Summoning Limit" script
+ - heliodesic: Rewrite "Add All Phantoms to the Black Separation Crystal" script
+ - Fixed lack of ThrowMan in Open script
+ - SuperArmor and partial Toughness info added
+ - Kill All Mobs hopefully fixed
+ - Npc Spawn fix
+ - HitMtrlParam, Bullet, Magic, ReinforceParamWeapon, and EquipParamWeapon classes updated
+ - Misc fixes
 #### For previous changelogs check the [full changelog](/CHANGELOG.md)
 
 ## Credits
@@ -38,6 +45,8 @@ Saucy | Table contribution
 amir | Table contribution
 Grish | Mass ItemGib
 sfix | Table contribution
+Z.Z | Table contribution
+heliodesic | Table contribution
 
 Reverse Souls | Reason               
 ------------- | ---------------------
