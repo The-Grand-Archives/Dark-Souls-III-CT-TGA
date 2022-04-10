@@ -25,6 +25,7 @@ Game: App ver. 1.1.5 | Regulation ver. 1.35
  - Npc Spawn fix
  - HitMtrlParam, Bullet, Magic, ReinforceParamWeapon, and EquipParamWeapon classes updated
  - Misc fixes
+ - Boblord: Boss teleports and multiple param mods
 #### For previous changelogs check the [full changelog](/CHANGELOG.md)
 
 ## Credits

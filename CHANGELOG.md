@@ -10,6 +10,7 @@
  - Npc Spawn fix
  - HitMtrlParam, Bullet, Magic, ReinforceParamWeapon, and EquipParamWeapon classes updated
  - Misc fixes
+ - Boblord: Boss teleports and multiple param mods
 
 ### v2.2.1-inu 08/05/2021
  - Revert Kill All Mobs improvement due to issues
