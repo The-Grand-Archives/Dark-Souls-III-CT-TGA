@@ -15,7 +15,7 @@ Cheat Engine: [7.4 or newer](https://github.com/cheat-engine/cheat-engine/releas
 Game: App ver. 1.1.5 | Regulation ver. 1.35
 
 ### Changelog
-### v2.3.0-inu 04/10/2022
+### v2.3.1-inu 04/10/2022
  - Z.Z: Anri and Horace flags
  - heliodesic: Minor fix for "Unlock Summoning Limit" script
  - heliodesic: Rewrite "Add All Phantoms to the Black Separation Crystal" script
@@ -26,6 +26,7 @@ Game: App ver. 1.1.5 | Regulation ver. 1.35
  - HitMtrlParam, Bullet, Magic, ReinforceParamWeapon, and EquipParamWeapon classes updated
  - Misc fixes
  - Boblord: Boss teleports and multiple param mods
+ - Fix EquipParamWeapon class
 #### For previous changelogs check the [full changelog](/CHANGELOG.md)
 
 ## Credits
