@@ -1,5 +1,9 @@
 # Changelog
 
+### v2.3.1-inu 04/10/2022
+ - Fix issues caused by merging badly
+ - Fix EquipParamWeapon class
+
 ### v2.3.0-inu 04/10/2022
  - Z.Z: Anri and Horace flags
  - heliodesic: Minor fix for "Unlock Summoning Limit" script
