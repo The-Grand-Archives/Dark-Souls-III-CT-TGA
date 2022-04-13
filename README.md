@@ -10,12 +10,12 @@ Unfairest's document about softbans:
 [Some Madman's Guide to DS3 CE](https://docs.google.com/document/d/1AaQiu5axxinl633IUZuWhggrQOHog-3WxMWnuus8-LU)
 
 ## Latest Release
-Table: [v2.3.0](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest)  
+Table: [v2.3.2](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest)  
 Cheat Engine: [7.4 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
 Game: App ver. 1.1.5 | Regulation ver. 1.35
 
 ### Changelog
-### v2.3.1-inu 04/10/2022
+### v2.3.2-inu 04/10/2022
  - Z.Z: Anri and Horace flags
  - heliodesic: Minor fix for "Unlock Summoning Limit" script
  - heliodesic: Rewrite "Add All Phantoms to the Black Separation Crystal" script

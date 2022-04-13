@@ -1,5 +1,8 @@
 # Changelog
 
+### v2.3.2-inu 04/13/2022
+ - Fixes more issues
+
 ### v2.3.1-inu 04/10/2022
  - Fix issues caused by merging badly
  - Fix EquipParamWeapon class
