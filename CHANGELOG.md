@@ -231,7 +231,7 @@
 ### Removed
  - Unnecesssary extra chrasms removed
 
-[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.2...HEAD
+[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.2...dev
 [2.3.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.1...v2.3.2
 [2.3.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.0...v2.3.1
 [2.3.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.2.1...v2.3.0
