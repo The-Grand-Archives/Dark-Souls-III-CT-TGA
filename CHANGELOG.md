@@ -5,6 +5,7 @@
  - Added world flags for several more npcs at Firelink
 ### Changed
  - Changelog remade, now following a standard
+ - Unlock summoning limit now accounts for player limit
 ### Fixed
 
 ## [2.3.2] - 2022-04-13
