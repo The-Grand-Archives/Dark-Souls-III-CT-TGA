@@ -3,9 +3,16 @@
 ### Added
  - Version checks for game, CE, and cheat table
  - Added world flags for several more npcs at Firelink
+ - Version checks for Cheat Engine, Dark Souls III, and cheat table
+ - Initial compatibility for Dark Souls III v1.15.1, many scripts are currently broken
 ### Changed
  - Changelog remade, now following a standard
+ - README updated, now includes usage instructions (including Linux guide)
  - Unlock summoning limit now accounts for player limit
+ - Bases once again use AOB scans
+ - Bases now use proper names
+### Removed
+ - Compatibility with old base names; Check comments in Open script to update your code if needed
 ### Fixed
 
 ## [2.3.2] - 2022-04-13
