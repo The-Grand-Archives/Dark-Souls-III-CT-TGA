@@ -1,41 +1,48 @@
 # Dark Souls III Cheat Table
 Dark Souls III Cheat Engine table maintained by The Grand Archives.
 
-## Discord
+## Info
+### Discord
 Our community, make sure to read the rules carefully  
 [The Grand Archives](https://discord.io/the-grand-archives)
- 
-### Softban Info
-Unfairest's document about softbans:  
+
+### Softbans
+Unfairest's document about softbans: 
 [Some Madman's Guide to DS3 CE](https://docs.google.com/document/d/1AaQiu5axxinl633IUZuWhggrQOHog-3WxMWnuus8-LU)
 
 ## Latest Release
-Table: [v2.3.2](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest)  
-Cheat Engine: [7.4 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
-Game: App ver. 1.1.5 | Regulation ver. 1.35
+Table: [v2.3.2](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases/latest) | [Changelog](/CHANGELOG.md)  
+Cheat Engine: [7.2 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
+Game: App ver. 1.15 | Regulation ver. 1.35
 
-### Changelog
-### v2.3.2-inu 04/10/2022
- - Z.Z: Anri and Horace flags
- - heliodesic: Minor fix for "Unlock Summoning Limit" script
- - heliodesic: Rewrite "Add All Phantoms to the Black Separation Crystal" script
- - Fixed lack of ThrowMan in Open script
- - SuperArmor and partial Toughness info added
- - Kill All Mobs hopefully fixed
- - Npc Spawn fix
- - HitMtrlParam, Bullet, Magic, ReinforceParamWeapon, and EquipParamWeapon classes updated
- - Misc fixes
- - Boblord: Boss teleports and multiple param mods
- - Fix EquipParamWeapon class
-#### For previous changelogs check the [full changelog](/CHANGELOG.md)
+## How to use
+### Cheat Table (Windows)
+1. Download and install Cheat Engine either from [Github](https://github.com/cheat-engine/cheat-engine/releases) or from its [website](https://cheatengine.org/) 
+2. Download the [Cheat Table](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases)
+3. Unpack the .CT file anywhere, a recommendation would be your **My Cheat Tables** folder (e.g. `%USERPROFILE%\Documents\My Cheat Tables`)
+4. Run the game via Steam 
+5. Load the .CT file directly via double-click or selecting it and pressing enter, or launch Cheat Engine and load the .CT file via File->Load or by clicking on the folder icon
+6. Activate the "Open" script by ticking its box
+### Cheat Table (Linux)
+I expect you to already have Steam, Wine, Proton, and the game installed
+1. Launch the game at least once via Steam to have your wine prefix set up
+2. Install [protonhax](https://github.com/jcnils/protonhax) (On Arch you should grab [protonhax-git](https://aur.archlinux.org/packages/protonhax-git))
+3. Download and install the **Windows** version of Cheat Engine from [Github](https://github.com/cheat-engine/cheat-engine/releases) or from its [website](https://cheatengine.org/) using **Wine**
+4. Download the [Cheat Table](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases) 
+5. Unpack the .CT file anywhere, a recommendation would be somewhere you can easily find within the wine prefix created for the game (e.g. `~/.steam/steam/steamapps/compatdata/374320/pfx/drive_c/`)
+6. In Steam, set the game's launch options to `protonhax init %command%`
+7. Run the game via Steam
+8. Run Cheat Engine via `protonhax run 374320 /path/to/Cheat\ Engine.exe` in your terminal of choice or put it in a shell script (replace `/path/to/` with your actual path to where you installed CE)
+9. Load the .CT file via File->Load or by clicking on the folder icon
+10. Activate the "Open" script by ticking its box
 
 ## Credits
 
 The Grand Archives | Reason               
-------------- | ---------------------
+------------------ | ---------------------
 Ametalon | Help with LUA, major table contributions
-Coinsworth | Help with ASM, knowledge, major table contributions
-inuNorii | knowledge, table contribution/overhaul
+[Coinsworth](https://github.com/LukeYui/) | Help with ASM, knowledge, major table contributions
+[inuNorii](https://github.com/inuNorii) | knowledge, table contribution/overhaul
 Unfairest | Ban data collection, guides
 Gáté | Param Edits, Param knowledge
 Lucifer | Param Edits
@@ -43,10 +50,10 @@ Lucifer | Param Edits
 kairos | PP Class contribution
 PurplE | ItemGib dropdown contribution
 Vortexian | Inspiration for vortmov
-Saucy | Table contribution
+[Saucy](https://github.com/0dm) | Table contribution
 amir | Table contribution
 Grish | Mass ItemGib
-sfix | Table contribution
+[sfix](https://github.com/garyttierney) | Table contribution
 Z.Z | Table contribution
 heliodesic | Table contribution
 
@@ -87,7 +94,7 @@ SilverDeath | Help with CE, ASM, IDA Pro
 Jeon | Help with CE, ASM, IDA Pro
 
 Other | Reason               
-------------- | ---------------------
+----- | ---------------------
 [terenceyao](http://fearlessrevolution.com/memberlist.php?mode=viewprofile&u=1536) | first fixed after the second DLC patch
 [/u/skzRuneStorm](https://www.reddit.com/r/opensouls3/comments/61e8jj/ringed_city_dlc_items_hex_id/) | Ringed City Item ID's
 [Kavez](https://github.com/Kavez) |
