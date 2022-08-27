@@ -3,7 +3,6 @@
 
 ## [3.0.0] - 2022-08-27
 ### Added
- - Version checks for game, CE, and cheat table
  - Added world flags for several more npcs at Firelink
  - Version checks for Cheat Engine, Dark Souls III, and cheat table
  - Initial compatibility for Dark Souls III v1.15.1, many scripts are currently broken
