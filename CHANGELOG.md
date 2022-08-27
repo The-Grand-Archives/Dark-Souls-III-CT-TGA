@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+
+## [3.0.0] - 2022-08-27
 ### Added
  - Version checks for game, CE, and cheat table
  - Added world flags for several more npcs at Firelink
@@ -13,7 +15,6 @@
  - Bases now use proper names
 ### Removed
  - Compatibility with old base names; Check comments in Open script to update your code if needed
-### Fixed
 
 ## [2.3.2] - 2022-04-13
 ### Fixed
@@ -239,7 +240,8 @@
 ### Removed
  - Unnecesssary extra chrasms removed
 
-[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.2...dev
+[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.0.0...dev
+[2.3.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.2...v3.0.0
 [2.3.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.1...v2.3.2
 [2.3.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.0...v2.3.1
 [2.3.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.2.1...v2.3.0
