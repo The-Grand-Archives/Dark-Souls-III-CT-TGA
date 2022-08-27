@@ -19,7 +19,7 @@ Game: App ver. 1.15.1 | Regulation ver. 1.35
 ### Cheat Table (Windows)
 1. Download and install Cheat Engine either from [Github](https://github.com/cheat-engine/cheat-engine/releases) or from its [website](https://cheatengine.org/) 
 2. Download the [Cheat Table](https://github.com/inunorii/Dark-Souls-III-CT-TGA/releases)
-3. Unpack the .CT file anywhere, a recommendation would be your **My Cheat Tables** folder (e.g. `%USERPROFILE%\Documents\My Cheat Tables`)
+3. Unpack the .CT file anywhere that *isn't a Windows protected folder*, a recommendation would be your **My Cheat Tables** folder (e.g. `%USERPROFILE%\Documents\My Cheat Tables`). The default downloads folder is protected and potentially causes problems with one of the features in the table.
 4. Run the game via Steam 
 5. Load the .CT file directly via double-click or selecting it and pressing enter, or launch Cheat Engine and load the .CT file via File->Load or by clicking on the folder icon
 6. Activate the "Open" script by ticking its box
