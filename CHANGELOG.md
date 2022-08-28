@@ -1,12 +1,14 @@
 # Changelog
 ## [Unreleased]
 ### Added
- - by sfix:
+ - by [sfix](https://github.com/garyttierney):
    - NetworkParam param class
    - Script for faster Red Eye Orb animation and invasion search
 ### Fixed
  - by Old Man:
    - "camrttn" addresses now use an AOB again
+ - by [Dasaav](https://github.com/Dasaav-dsv):
+   - Npc Menu functions now using AOBs
 
 ## [3.0.0] - 2022-08-27
 ### Added
