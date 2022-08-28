@@ -1,7 +1,12 @@
 # Changelog
 ## [Unreleased]
+### Added
+ - by sfix:
+   - NetworkParam param class
+   - Script for faster Red Eye Orb animation and invasion search
 ### Fixed
- - "camrttn" addresses now use an AOB again
+ - by Old Man:
+   - "camrttn" addresses now use an AOB again
 
 ## [3.0.0] - 2022-08-27
 ### Added
