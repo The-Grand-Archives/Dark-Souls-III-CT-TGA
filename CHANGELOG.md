@@ -9,6 +9,7 @@
    - "camrttn" addresses now use an AOB again
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - Npc Menu functions now using AOBs
+ - BonfireWarp temp fix
 
 ## [3.0.0] - 2022-08-27
 ### Added
