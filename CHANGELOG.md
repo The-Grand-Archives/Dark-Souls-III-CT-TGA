@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Fixed
+ - "camrttn" addresses now use an AOB again
 
 ## [3.0.0] - 2022-08-27
 ### Added
