@@ -10,6 +10,8 @@
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - Npc Menu functions now using AOBs
  - BonfireWarp temp fix
+ - GameFlagData -> SprjEventFlagMan
+ - Removed duplicate CSTrophy finder
 
 ## [3.0.0] - 2022-08-27
 ### Added
