@@ -12,6 +12,7 @@
  - BonfireWarp temp fix
  - GameFlagData -> SprjEventFlagMan
  - Removed duplicate CSTrophy finder
+ - Pointers using wrong bases
 
 ## [3.0.0] - 2022-08-27
 ### Added
