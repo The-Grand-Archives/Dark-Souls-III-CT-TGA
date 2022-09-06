@@ -4,6 +4,7 @@
  - by [sfix](https://github.com/garyttierney):
    - NetworkParam param class
    - Script for faster Red Eye Orb animation and invasion search
+   - Read and Set Event Flag state by ID
 ### Fixed
  - by Old Man:
    - "camrttn" addresses now use an AOB again
