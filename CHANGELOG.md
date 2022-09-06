@@ -9,6 +9,8 @@
    - "camrttn" addresses now use an AOB again
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - Npc Menu functions now using AOBs
+ - by AgRun:
+   - No cost level up only scan AOBs once per activation
  - BonfireWarp temp fix
  - GameFlagData -> SprjEventFlagMan
  - Removed duplicate CSTrophy finder
