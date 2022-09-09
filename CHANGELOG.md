@@ -20,6 +20,7 @@
 ### Changed
  - Removed duplicate CSTrophy finder
  - Reorganised Param Mods section with categories
+ - Reorganised function scripts into a new header
  - Reorganised and tagged misc scripts
  - Decoded an old meme
 
