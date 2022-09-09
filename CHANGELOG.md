@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+
+## [3.1.0] - 2022-09-10
 ### Added
  - by [sfix](https://github.com/garyttierney):
    - NetworkParam param class
@@ -20,12 +22,13 @@
  - Pointers using wrong bases
  - Apply Effect
 ### Changed
- - Removed duplicate CSTrophy finder
  - Reorganised Param Mods section with categories
  - Reorganised function scripts into a new header
  - Reorganised and tagged misc scripts
  - Decoded an old meme
  - Blue colours have been changed for readability, hopefully
+### Removed
+ - Duplicate CSTrophy finder
 
 ## [3.0.0] - 2022-08-27
 ### Added
@@ -265,7 +268,8 @@
 ### Removed
  - Unnecesssary extra chrasms removed
 
-[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.0.0...dev
+[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.0...dev
+[3.1.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.2...v3.0.0
 [2.3.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.1...v2.3.2
 [2.3.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.0...v2.3.1
