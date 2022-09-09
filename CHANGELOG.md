@@ -6,6 +6,7 @@
    - Script for faster Red Eye Orb animation and invasion search
    - Read and Set Event Flag state by ID
  - "How to use" for Event Flags script
+ - Check if game process is readable
 ### Fixed
  - by Old Man:
    - "camrttn" addresses now use an AOB again
