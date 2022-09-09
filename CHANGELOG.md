@@ -5,6 +5,7 @@
    - NetworkParam param class
    - Script for faster Red Eye Orb animation and invasion search
    - Read and Set Event Flag state by ID
+ - "How to use" for Event Flags script
 ### Fixed
  - by Old Man:
    - "camrttn" addresses now use an AOB again
@@ -23,6 +24,7 @@
  - Reorganised function scripts into a new header
  - Reorganised and tagged misc scripts
  - Decoded an old meme
+ - Blue colours have been changed for readability, hopefully
 
 ## [3.0.0] - 2022-08-27
 ### Added
