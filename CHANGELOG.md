@@ -2,6 +2,7 @@
 ## [Unreleased]
 ### Fixed
  - ReinforceLv in Session Info
+ - MassItemGib fix for real this time
 
 ## [3.1.0] - 2022-09-10
 ### Added
