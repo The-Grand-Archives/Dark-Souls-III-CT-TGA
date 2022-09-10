@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Fixed
+ - ReinforceLv in Session Info
 
 ## [3.1.0] - 2022-09-10
 ### Added
