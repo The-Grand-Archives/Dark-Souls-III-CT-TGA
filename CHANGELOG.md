@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+
+## [3.1.1] - 2022-09-10
 ### Fixed
  - ReinforceLv in Session Info
  - MassItemGib fix for real this time
@@ -271,7 +273,8 @@
 ### Removed
  - Unnecesssary extra chrasms removed
 
-[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.0...dev
+[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.1...dev
+[3.1.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.0...v3.1.1
 [3.1.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.2...v3.0.0
 [2.3.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.1...v2.3.2
