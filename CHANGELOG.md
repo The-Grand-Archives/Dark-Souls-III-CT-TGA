@@ -4,7 +4,7 @@
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - Bullet Spawn
    - Debug Add Items
-   - ItemGib
+   - ItemGib+MassItemGib
 
 ## [3.1.1] - 2022-09-10
 ### Fixed
@@ -278,7 +278,8 @@
 ### Removed
  - Unnecesssary extra chrasms removed
 
-[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.1...dev
+[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.2...dev
+[3.1.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.1...v3.1.2
 [3.1.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.0...v3.1.1
 [3.1.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.2...v3.0.0
