@@ -1,5 +1,10 @@
 # Changelog
 ## [Unreleased]
+### Fixed
+ - by [Dasaav](https://github.com/Dasaav-dsv):
+   - Bullet Spawn
+   - Debug Add Items
+   - ItemGib
 
 ## [3.1.1] - 2022-09-10
 ### Fixed

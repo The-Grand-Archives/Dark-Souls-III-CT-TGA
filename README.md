@@ -56,6 +56,7 @@ Grish | Mass ItemGib
 [sfix](https://github.com/garyttierney) | Table contribution
 Z.Z | Table contribution
 heliodesic | Table contribution
+[Dasaav](https://github.com/Dasaav-dsv) | Function fixes
 
 Reverse Souls | Reason               
 ------------- | ---------------------
