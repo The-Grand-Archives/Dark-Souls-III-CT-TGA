@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+
+## [3.1.2] - 2022-09-13
 ### Fixed
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - Bullet Spawn
