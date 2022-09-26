@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Changed
+ - No longer using synchronize() and checkSynchronize()
 
 ## [3.1.2] - 2022-09-13
 ### Fixed
