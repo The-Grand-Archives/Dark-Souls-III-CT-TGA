@@ -2,6 +2,13 @@
 ## [Unreleased]
 ### Added
  - by [Dasaav](https://github.com/Dasaav-dsv):
+   - New "Event Flags" header and script
+   - ef.getFlag, ef.setFlag functions
+   - Unlock all Bonfires, Kill all Bosses, Resurrect all Bosses, Place all Cinders of a Lord scripts
+   - Event Flags by ID subsection
+   - Details, explanations and examples for the new functions in the "Event Flags" header script, as well as in:
+     - Event Flags > Event Flags by ID > How to use
+     - Event Flags > Event Flags by ID > Examples
    - New "Table Tools" header
    - Persistent table configuration, Table Tools > Configure Table
    - New config options:
@@ -24,6 +31,7 @@
    - Details, explanations and examples for the new functions in the table initialization script
 ### Fixed
  - by [Dasaav](https://github.com/Dasaav-dsv):
+   - ItemNamer with AOBs
    - NearOnlyDraw, FdpClient, SprjSound bases and AOBs
    - Potentially unstable AOBs
 ### Changed
@@ -42,6 +50,7 @@
 ### Removed
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - Old method of getting base addresses from AOBs in the table initialization
+   - "Event Flags" script from Scripts > Functions, replaced with the "Event Flags" header
 ### Deprecated
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - runOnce function due to issues overwriting table file
