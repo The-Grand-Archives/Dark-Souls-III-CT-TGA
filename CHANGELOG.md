@@ -2,6 +2,13 @@
 ## [Unreleased]
 ### Added
  - by [Dasaav](https://github.com/Dasaav-dsv):
+   - New "Event Flags" header and script
+   - ef.getFlag, ef.setFlag functions
+   - Unlock all Bonfires, Kill all Bosses, Resurrect all Bosses, Place all Cinders of a Lord scripts
+   - Event Flags by ID subsection
+   - Details, explanations and examples for the new functions in the "Event Flags" header script, as well as in:
+     - Event Flags > Event Flags by ID > How to use
+     - Event Flags > Event Flags by ID > Examples
    - New "Table Tools" header
    - Persistent table configuration, Table Tools > Configure Table
    - New config options:
@@ -10,10 +17,13 @@
      - Check game version (default: true)
      - Check Cheat Engine version (default: true)
      - Check table version (Github) (default: true)
+   - Default config section in the table initialization script
+   - Functionality to register new config variables in the default config section
    - Functionality to cache (save) symbol addresses (speeding up their subsequent lookup)
    - Table Tools > Clear Symbol Cache to delete all cached symbols
+   - Table Tools > Clear runOnce Memory to delete all identifiers tga:runOnce has saved running functions
    - Default TGA files path: %PROGRAMDATA%/the-grand-archives/
-   - "tga" class for file manipulation functions: tga:loadConfig, tga:saveConfig, tga:loadSymbolCache, tga:saveSymbolCache, tga:clearSymbolCache
+   - "tga" class for file manipulation functions: tga:loadConfig, tga:saveConfig, tga:loadSymbolCache, tga:saveSymbolCache, tga:clearSymbolCache, tga:runOnce, tga:clearRunOnce
    - isdir and mkpath file manipulation functions 
    - sanitizeUsername, getGameVersion functions
    - getAddressProcessSafe, registerBaseByKey functions
@@ -21,6 +31,7 @@
    - Details, explanations and examples for the new functions in the table initialization script
 ### Fixed
  - by [Dasaav](https://github.com/Dasaav-dsv):
+   - ItemNamer with AOBs
    - NearOnlyDraw, FdpClient, SprjSound bases and AOBs
    - Potentially unstable AOBs
 ### Changed
@@ -30,14 +41,19 @@
    - Table initialization to utilize config variables
    - Significantly reduced the time it takes to open the table by caching base addresses (config option)
    - Table can now be opened without the game being launched (config option)
-   - Reorganized base AOBs into a table
+   - Reorganized base AOBs into a Lua table
    - Table will now open in case of not finding all AOBs
    - Missing AOBs are printed in the Lua console output
    - Table initialization variable game_ver now contains a version string, formatted like "1.XX.Y"
    - Unsupported game version warning message now displays the current and supported game versions
+   - Replaced runOnce function with tga:runOnce
 ### Removed
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - Old method of getting base addresses from AOBs in the table initialization
+   - "Event Flags" script from Scripts > Functions, replaced with the "Event Flags" header
+### Deprecated
+ - by [Dasaav](https://github.com/Dasaav-dsv):
+   - runOnce function due to issues overwriting table file
 
 ## [3.1.2] - 2022-09-13
 ### Fixed
