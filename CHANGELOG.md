@@ -1,6 +1,7 @@
 # Changelog
 ## [Unreleased]
 ### Added
+ - "printProgress" config option for future use
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - New "Event Flags" header and script
    - ef.getFlag, ef.setFlag functions
