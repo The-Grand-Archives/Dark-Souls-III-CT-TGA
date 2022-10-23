@@ -31,6 +31,7 @@
    - cacheSymbol, AOBScanProcessCached, registerBaseByKeyCached cache interacting functions
    - Details, explanations and examples for the new functions in the table initialization script
 ### Fixed
+ - ReinforceLv entries corrected to 'Byte'
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - ItemNamer with AOBs
    - NearOnlyDraw, FdpClient, SprjSound bases and AOBs
