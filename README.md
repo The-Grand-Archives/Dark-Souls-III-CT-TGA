@@ -11,7 +11,7 @@ Unfairest's document about softbans:
 [Some Madman's Guide to DS3 CE](https://docs.google.com/document/d/1AaQiu5axxinl633IUZuWhggrQOHog-3WxMWnuus8-LU)
 
 ## Latest Release
-Table: [v3.1.2](https://github.com/The-Grand-Archives/Dark-Souls-III-CT-TGA/releases/latest) | [Changelog](/CHANGELOG.md)  
+Table: [v3.2.0](https://github.com/The-Grand-Archives/Dark-Souls-III-CT-TGA/releases/latest) | [Changelog](/CHANGELOG.md)  
 Cheat Engine: [7.2 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
 Game: App ver. 1.15.1 | Regulation ver. 1.35
 
@@ -56,7 +56,7 @@ Grish | Mass ItemGib
 [sfix](https://github.com/garyttierney) | Table contribution
 Z.Z | Table contribution
 heliodesic | Table contribution
-[Dasaav](https://github.com/Dasaav-dsv) | Function fixes
+[Dasaav](https://github.com/Dasaav-dsv) | Functionality reworks and additions
 
 Reverse Souls | Reason               
 ------------- | ---------------------
