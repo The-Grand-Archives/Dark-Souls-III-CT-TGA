@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Fixed
+ - TrophyUnlock
 
 ## [3.2.0] - 2022-11-04
 ### Added
