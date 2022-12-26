@@ -3,6 +3,7 @@
 ### Fixed
  - TrophyUnlock
  - Removed cut content without param data from MassItemGib as it can't be spawned
+ - Last Spell Highlighted
 
 ## [3.2.0] - 2022-11-04
 ### Added
