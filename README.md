@@ -13,7 +13,7 @@ Our community, make sure to read the rules carefully
 [Changelog](/CHANGELOG.md)  
 ### Requirements
 Cheat Engine: [7.2 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
-Game: App ver. 1.15.1
+Game: App ver. 1.15.2
 
 ## How to use
 ### Info
