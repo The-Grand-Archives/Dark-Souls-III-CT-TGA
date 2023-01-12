@@ -1,5 +1,8 @@
 # Changelog
 ## [Unreleased]
+### Changed
+ - Supported version to v1.15.2
+ - Commented out linux check
 ### Fixed
  - TrophyUnlock
  - Removed cut content without param data from MassItemGib as it can't be spawned
