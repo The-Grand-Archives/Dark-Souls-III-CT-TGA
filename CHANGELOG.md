@@ -1,7 +1,16 @@
 # Changelog
 ## [Unreleased]
 
-## [3.2.0] - 2022-11-04
+## [v3.2.1] - 2023-01-12
+### Changed
+ - Supported version to v1.15.2
+ - Commented out linux check
+### Fixed
+ - TrophyUnlock
+ - Removed cut content without param data from MassItemGib as it can't be spawned
+ - Last Spell Highlighted
+
+## [v3.2.0] - 2022-11-04
 ### Added
  - "printProgress" config option for future use
  - by [Dasaav](https://github.com/Dasaav-dsv):
@@ -59,19 +68,19 @@
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - runOnce function due to issues overwriting table file
 
-## [3.1.2] - 2022-09-13
+## [v3.1.2] - 2022-09-13
 ### Fixed
  - by [Dasaav](https://github.com/Dasaav-dsv):
    - Bullet Spawn
    - Debug Add Items
    - ItemGib+MassItemGib
 
-## [3.1.1] - 2022-09-10
+## [v3.1.1] - 2022-09-10
 ### Fixed
  - ReinforceLv in Session Info
  - MassItemGib fix for real this time
 
-## [3.1.0] - 2022-09-10
+## [v3.1.0] - 2022-09-10
 ### Added
  - by [sfix](https://github.com/garyttierney):
    - NetworkParam param class
@@ -100,7 +109,7 @@
 ### Removed
  - Duplicate CSTrophy finder
 
-## [3.0.0] - 2022-08-27
+## [v3.0.0] - 2022-08-27
 ### Added
  - Added world flags for several more npcs at Firelink
  - Version checks for Cheat Engine, Dark Souls III, and cheat table
@@ -114,16 +123,16 @@
 ### Removed
  - Compatibility with old base names; Check comments in Open script to update your code if needed
 
-## [2.3.2] - 2022-04-13
+## [v2.3.2] - 2022-04-13
 ### Fixed
  - Fixes more issues
 
-## [2.3.1] - 2022-04-10
+## [v2.3.1] - 2022-04-10
 ### Fixed
  - Fix issues caused by merging badly
  - Fix EquipParamWeapon class
 
-## [2.3.0] - 2022-04-10
+## [v2.3.0] - 2022-04-10
 ### Added
  - Z.Z: Anri and Horace flags
  - SuperArmor and partial Toughness info added
@@ -138,13 +147,13 @@
  - Npc Spawn fix
  - Misc fixes
 
-## [2.2.1] - 2021-08-05
+## [v2.2.1] - 2021-08-05
 ### Changed
  - DS2 Lifegem update by Boblord
 ### Fixed
  - Revert Kill All Mobs improvement due to issues
 
-## [2.2] - 2021-07-31
+## [v2.2] - 2021-07-31
 ### Added
  - Mass ItemGib > Select weapons by Phil25
  - Reinforce Estus Flask in Npc Menus
@@ -166,13 +175,13 @@
  - Missing items added to ItemGib
  - Last Spell Highlighted actually works again
 
-## 2.1.1 - 2020-07-27
+## v2.1.1 - 2020-07-27
 ### Changed
  - Mass ItemGib scripts rewritten with more options included
  ### Fixed
  - Fixed Item Namer  
 
-## 2.1 - 2020-07-24
+## v2.1 - 2020-07-24
 ### Added
  - Npc Menus header has been expanded to include all shops found in the game
  - Access all Bonfires (requires Firelink Shrine) in Scripts > Npc Menus > Bonfire
@@ -200,17 +209,17 @@
  - Session Info Equipment data actually fixed
  - Reinforce Weapon npc menu script fixed, no longer prevents pressing start to close menus
 
-## 2.0.2 - 2020-06-25
+## v2.0.2 - 2020-06-25
 ### Fixed
  - Fixed (float) in ASM scripts referencing table entries named Float
  - Fixed Custom Type issue preventing ItemNamer from working
 
-## 2.0.1 - 2020-05-15
+## v2.0.1 - 2020-05-15
 ### Fixed
  - Open script was expanded without having to be enabled, this is fixed now
  - Added some missing entries to mass itemgib, thanks to Chang
 
-## 2.0 - 2020-05-06
+## v2.0 - 2020-05-06
 ### Added
  - Npc menus to use anywhere  
  - LockCamParam Helper
@@ -252,7 +261,7 @@
  - Example scripts that were previously under the Param Patcher header are now in Param > Param Scripting
  - improved ItemGib to limit weapon upgrades to your character's max  
 
-## 1.2.2 - 2019-08-30
+## v1.2.2 - 2019-08-30
 ### Added
  - Scroll to memrec, a search for table entries
  - New no cost level up solution  
@@ -268,7 +277,7 @@
  - Entity Control Helper dropdown functionality restored  
  - Fixed a spelling mistake in Open script
 
-## 1.2.0 - 2019-07-01
+## v1.2.0 - 2019-07-01
 ### Added
  - Added Compact View Mode button by mgr.inz.Player
  - First time run function, opens Table Info (FAQ) the first time you open the table
@@ -283,7 +292,7 @@
 ### Fixed
  - Fixed issue in SpEffectParam class: pve damage multipliers were named incorrectly
 
-## 1.1.9-fix - 2019-05-05
+## v1.1.9-fix - 2019-05-05
 ### Added
  - ApplyEffect added to Helpers
  - Discardable items script in Param Patcher v2.0.5 > Goods lets you discard gestures, key items and Storm Ruler from your inventory
@@ -318,7 +327,7 @@
  - some fixes to EquipParamProtector class in Param Patcher
  - a bunch of minor stuff
 
-## 1.1.8-fix - 2018-08-17
+## v1.1.8-fix - 2018-08-17
 ### Added
  - Helper offsets expanded
  - Last Spell Highlighted restored
@@ -338,14 +347,15 @@
 ### Removed
  - Unnecesssary extra chrasms removed
 
-[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.0...dev
-[3.2.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.2...v3.2.0
-[3.1.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.1...v3.1.2
-[3.1.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.0...v3.1.1
-[3.1.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.0.0...v3.1.0
-[3.0.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.2...v3.0.0
-[2.3.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.1...v2.3.2
-[2.3.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.0...v2.3.1
-[2.3.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.2.1...v2.3.0
-[2.2.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.2...v2.2.1
-[2.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.1.1...v2.2
+[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.1...dev
+[v3.2.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.0...v3.2.1
+[v3.2.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.2...v3.2.0
+[v3.1.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.1...v3.1.2
+[v3.1.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.0...v3.1.1
+[v3.1.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.0.0...v3.1.0
+[v3.0.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.2...v3.0.0
+[v2.3.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.1...v2.3.2
+[v2.3.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.3.0...v2.3.1
+[v2.3.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.2.1...v2.3.0
+[v2.2.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.2...v2.2.1
+[v2.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v2.1.1...v2.2

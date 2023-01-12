@@ -1,21 +1,24 @@
 # Dark Souls III Cheat Table
+![Cheat Table Version](https://img.shields.io/github/v/release/The-Grand-Archives/Dark-Souls-III-CT-TGA?include_prereleases&label=Cheat%20Table&sort=semver&logo=github)
+![Downloads](https://img.shields.io/github/downloads/The-Grand-Archives/Dark-Souls-III-CT-TGA/total?label=Downloads&logo=github)
+![Discord](https://img.shields.io/discord/334557263203401729?label=Discord&logo=discord)  
 Dark Souls III Cheat Engine table maintained by The Grand Archives.
 
-## Info
-### Discord
+## Discord
 Our community, make sure to read the rules carefully  
 [The Grand Archives](https://discord.io/the-grand-archives)
 
-### Softbans
-Unfairest's document about softbans: 
-[Some Madman's Guide to DS3 CE](https://docs.google.com/document/d/1AaQiu5axxinl633IUZuWhggrQOHog-3WxMWnuus8-LU)
-
 ## Latest Release
-Table: [v3.2.0](https://github.com/The-Grand-Archives/Dark-Souls-III-CT-TGA/releases/latest) | [Changelog](/CHANGELOG.md)  
+[![Download](https://img.shields.io/badge/dynamic/json.svg?label=download&url=https://api.github.com/repos/The-Grand-Archives/Dark-Souls-III-CT-TGA/releases/latest&query=$.assets[0].name&style=for-the-badge)](https://github.com/The-Grand-Archives/Dark-Souls-III-CT-TGA/releases/latest)  
+[Changelog](/CHANGELOG.md)  
+### Requirements
 Cheat Engine: [7.2 or newer](https://github.com/cheat-engine/cheat-engine/releases)  
-Game: App ver. 1.15.1 | Regulation ver. 1.35
+Game: App ver. 1.15.2
 
 ## How to use
+### Info
+This table is not meant to be used online and you will most likely be banned if you attempt to do so.
+
 ### Cheat Table (Windows)
 1. Download and install Cheat Engine either from [Github](https://github.com/cheat-engine/cheat-engine/releases) or from its [website](https://cheatengine.org/) 
 2. Download the [Cheat Table](https://github.com/The-Grand-Archives/Dark-Souls-III-CT-TGA/releases)
