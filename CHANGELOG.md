@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Fixed
+ - Cheats section for v1.15.2
 
 ## [v3.2.1] - 2023-01-12
 ### Changed

@@ -47,7 +47,7 @@ Ametalon | Help with LUA, major table contributions
 [Coinsworth](https://github.com/LukeYui/) | Help with ASM, knowledge, major table contributions
 [inuNorii](https://github.com/inuNorii) | knowledge, table contribution/overhaul
 Unfairest | Ban data collection, guides
-Gáté | Param Edits, Param knowledge
+Gáté | Param Edits, Param knowledge, fixes
 Lucifer | Param Edits
 [/u/MajinCry](https://www.reddit.com/user/MajinCry) | Kill all mobs in the area script
 kairos | PP Class contribution
