@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Changed
+ - Removed username from tga path
 ### Fixed
  - Cheats section for v1.15.2
 
