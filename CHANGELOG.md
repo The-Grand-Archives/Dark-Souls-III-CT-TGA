@@ -4,6 +4,7 @@
  - Removed username from tga path
 ### Fixed
  - Cheats section for v1.15.2
+ - Added missing labels to ItemGib to avoid CE issues
 
 ## [v3.2.1] - 2023-01-12
 ### Changed
