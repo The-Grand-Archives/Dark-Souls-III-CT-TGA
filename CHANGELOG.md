@@ -1,7 +1,11 @@
 # Changelog
 ## [Unreleased]
+### Added
+ - game_title var
+ - address_version function to throw an error for incompatible scripts that rely on addresses
 ### Changed
  - Removed username from tga path
+ - Made version vars global
 ### Fixed
  - Cheats section for v1.15.2
  - Added missing labels to ItemGib to avoid CE issues
