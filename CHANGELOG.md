@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+
+## [v3.2.2] - 2023-05-19
 ### Added
  - game_title var
  - address_version function to throw an error for incompatible scripts that rely on addresses
@@ -356,7 +358,8 @@
 ### Removed
  - Unnecesssary extra chrasms removed
 
-[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.1...dev
+[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.2...dev
+[v3.2.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.1...v3.2.2
 [v3.2.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.0...v3.2.1
 [v3.2.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.2...v3.2.0
 [v3.1.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.1...v3.1.2
