@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Changed
+ - Renamed and moved some headers for consistency with Elden Ring table
 
 ## [v3.2.2] - 2023-05-19
 ### Added
