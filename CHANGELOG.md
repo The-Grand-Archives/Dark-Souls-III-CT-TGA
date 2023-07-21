@@ -1,7 +1,12 @@
 # Changelog
 ## [Unreleased]
+### Added
+ - additional clarification for anti-debug in affected parts of the table
 ### Changed
  - Renamed and moved some headers for consistency with Elden Ring table
+ - Updated the Table Info (FAQ)
+### Fixed
+ - DLC2 bosses in Event Flags
 
 ## [v3.2.2] - 2023-05-19
 ### Added
