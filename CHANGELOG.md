@@ -2,6 +2,7 @@
 ## [Unreleased]
 ### Added
  - additional clarification for anti-debug in affected parts of the table
+ - more ID based helpers to replace the need for address based helpers
 ### Changed
  - Renamed and moved some headers for consistency with Elden Ring table
  - Updated the Table Info (FAQ)
