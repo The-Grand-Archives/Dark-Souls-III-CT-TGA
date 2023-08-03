@@ -6,6 +6,7 @@
 ### Changed
  - Renamed and moved some headers for consistency with Elden Ring table
  - Updated the Table Info (FAQ)
+ - PlayAnimation script
 ### Fixed
  - DLC2 bosses in Event Flags
 
