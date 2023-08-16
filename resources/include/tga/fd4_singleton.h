@@ -20,16 +20,14 @@ size_t find_fd4_singletons(fd4_singleton_basic_info* out_array, size_t out_array
 
     pattern null_check;
     bool s = pattern_init(&null_check,
-        "48 8b ? ? ? ? ? "  //  0 MOV REG, [MEM]
-        "48 85 ? "          //  7 TEST REG, REG
-        "75 2e "            // 10 JNZ +2e
-        "48 8d 0d ? ? ? ? " // 12 LEA RCX, [runtime_class_metadata]
-        "e8 ? ? ? ? "       // 19 CALL get_singleton_name
-        "4c 8b c8 "         // 24 MOV R9, RAX
-        "4c 8d 05 ? ? ? ? " // 27 LEA R8, [%s:未初期化のシングルトンにアクセスしました]
-        "ba ? ? 00 00 "     // 34 MOV EDX, 0x0000????
-        "48 8d 0d ? ? ? ? " // 39 LEA RCX, [file_path]
-        "e8 ? ? ? ?"        // 46 CALL log_thunk
+        "48 8b ? ? ? ? ? "    // MOV REG, [MEM]
+        "48 85 ? "          // TEST REG, REG
+        "75 26 "            // JNZ +26
+        "4c 8d 0d ? ? ? ? " // LEA R9, [singleton_name]
+        "4c 8d 05 ? ? ? ? " // LEA R8, [% s:未初期化のシングルトンにアクセスしました]
+        "ba b1 00 00 00 "   // MOV EDX, 0xb1
+        "48 8d 0d ? ? ? ? " // LEA RCX, [file_path]
+        "e8 ? ? ? ?"        // CALL log_thunk
     );
     if (!s) return 0;
 
@@ -48,16 +46,8 @@ size_t find_fd4_singletons(fd4_singleton_basic_info* out_array, size_t out_array
         intptr_t static_addr = candidate + 7 + *(int32_t*)(candidate + 3);
         if (!ptr_in_region(static_addr, &data)) continue;
 
-        // Check if runtime_class_ptr is in range
-        intptr_t runtime_class_ptr = candidate + 19 + *(int32_t*)(candidate + 15);
-        if (!ptr_in_region(runtime_class_ptr, &data)) continue;
-
-        // Check if get_singleton_name function is in range
-        intptr_t get_singleton_name = candidate + 24 + *(int32_t*)(candidate + 20);
-        if (!ptr_in_region(get_singleton_name, &text)) continue;
-
         // Check if FD4Singleton header path is there
-        const char* filepath_ptr = (char*)(candidate + 46 + *(int32_t*)(candidate + 42));
+        const char* filepath_ptr = (char*)(candidate + 38 + *(int32_t*)(candidate + 34));
         if (!ptr_in_region(filepath_ptr, &rdata)) continue;
 
         // Check if FD4Singleton path string ends with correct header name
@@ -65,9 +55,13 @@ size_t find_fd4_singletons(fd4_singleton_basic_info* out_array, size_t out_array
         if (filepath_len < 10 || filepath_len == 256) continue;
         if (strcmp(filepath_ptr + filepath_len - 14, "FD4Singleton.h")) continue;
 
-        // Try to query the name
-        const char* name = ((char*(*)(intptr_t))get_singleton_name)(runtime_class_ptr);
-        if (!name) continue;
+        // Check if singleton name string is in the module
+        const char* name = (char*)(candidate + 19 + *(int32_t*)(candidate + 15));
+        if (!ptr_in_region(name, &rdata)) continue;
+
+        // Check if singleton name string is valid
+        size_t name_len = strnlen(name, 256);
+        if (name_len == 256) continue;
 
         // Remove namespace from the name, if any
         const char* simple_name = strrchr(name, ':') + 1;
