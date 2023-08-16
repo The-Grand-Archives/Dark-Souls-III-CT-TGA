@@ -1152,8 +1152,8 @@ struct _EQUIP_PARAM_PROTECTOR_ST {
 	u8 isGuestDrop1: 1;
 	u8 showLogCondType: 1;
 	u8 showDialogCondType: 1;
-	u8 Unk2: 1;
-	u8 Unk3: 1;
+	u8 IsDiscard: 1;
+	u8 IsDrop: 1;
 	u8 Unk4: 1;
 	u8 Unk5: 1;
 	f32 PhysDamageCutRate;

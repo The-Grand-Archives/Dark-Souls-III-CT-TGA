@@ -26,7 +26,8 @@ typedef struct _ParamTable
 
 typedef struct _ParamHeader
 {
-	uint8_t pad00[0x80];
+	uint8_t pad00[0x60];
+	uint64_t param_table_size_bytes;
 	ParamTable* param_table;
 } ParamHeader;
 
@@ -34,10 +35,10 @@ typedef struct _ParamResCap
 {
 	void** vftable_ptr;
 
-	uint8_t pad00[0x10];
+	uint8_t pad00[0x08];
 	DLWString param_name;
 
-	uint8_t pad01[0x48];
+	uint8_t pad01[0x38];
 	ParamHeader* param_header;
 } ParamResCap;
 
@@ -45,7 +46,7 @@ typedef struct _CSRegulationManagerImp
 {
 	void** vftable_ptr;
 
-	uint8_t pad00[0x10];
+	uint8_t pad00[0x08];
 	ParamResCap** param_list_begin;
 	ParamResCap** param_list_end;
 } CSRegulationManagerImp;
