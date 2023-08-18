@@ -3,10 +3,19 @@
 ### Added
  - additional clarification for anti-debug in affected parts of the table
  - more ID based helpers to replace the need for address based helpers
+ - Scripts > Build Creation > Set flask level
+ - Scripts > Build Creation > Reinforce Estus Flask
+ - by [tremwil](https://github.com/tremwil):
+   - CSCRIPT extensions and TGA C library
+   - FD4Singleton finder
+   - CParamUtils / C param patcher + example scripts
+   - Anti-anti VEH debug
+   - more details at #30
 ### Changed
  - Renamed and moved some headers for consistency with Elden Ring table
  - Updated the Table Info (FAQ)
  - PlayAnimation script
+ - Some of the slower Lua PP scripts in the table, such as "Upgrades require no materials", were rewritten in C.
 ### Fixed
  - DLC2 bosses in Event Flags
 
