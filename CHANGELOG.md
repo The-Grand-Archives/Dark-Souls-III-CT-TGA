@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+
+## [v3.3.0] - 2023-08-18
 ### Added
  - additional clarification for anti-debug in affected parts of the table
  - more ID based helpers to replace the need for address based helpers
@@ -15,7 +17,8 @@
  - Renamed and moved some headers for consistency with Elden Ring table
  - Updated the Table Info (FAQ)
  - PlayAnimation script
- - Some of the slower Lua PP scripts in the table, such as "Upgrades require no materials", were rewritten in C.
+ - by [tremwil](https://github.com/tremwil):
+   - Some of the slower Lua PP scripts in the table, such as "Upgrades require no materials", were rewritten in C.
 ### Fixed
  - DLC2 bosses in Event Flags
 
@@ -377,7 +380,8 @@
  - Unnecesssary extra chrasms removed
 
 [unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.2...dev
-[v3.2.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.1...v3.2.2
+[v3.3.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.2...v3.3.0
+[v3.2.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.1...v3.2.2
 [v3.2.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.0...v3.2.1
 [v3.2.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.2...v3.2.0
 [v3.1.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.1.1...v3.1.2
