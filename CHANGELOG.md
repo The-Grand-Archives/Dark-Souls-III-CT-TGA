@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Added
+ - Check for missing DLLs
 
 ## [v3.3.0] - 2023-08-18
 ### Added
