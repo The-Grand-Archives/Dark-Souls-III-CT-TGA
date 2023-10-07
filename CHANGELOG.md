@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Fixed
+ - Entity helpers
 
 ## [v3.3.1] - 2023-09-15
 ### Added
