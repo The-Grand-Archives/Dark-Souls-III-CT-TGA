@@ -3,6 +3,9 @@
 ### Added
  - Hero > GameData > PlayerGameData > EquipInventoryData > Print Inventory
  - Scripts > Functions > RemoveItem
+ - Scripts > Functions > RemoveItem > Remove All Duplicates
+ - Add inArray() lua function
+ - Add setBit() lua function
 ### Fixed
  - Entity helpers
 
