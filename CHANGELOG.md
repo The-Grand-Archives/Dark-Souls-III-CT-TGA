@@ -1,5 +1,8 @@
 # Changelog
 ## [Unreleased]
+### Added
+ - Hero > GameData > PlayerGameData > EquipInventoryData > Print Inventory
+ - Scripts > Functions > RemoveItem
 ### Fixed
  - Entity helpers
 
