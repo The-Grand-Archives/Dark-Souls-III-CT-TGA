@@ -6,6 +6,8 @@
  - Scripts > Functions > RemoveItem > Remove All Duplicates
  - Add inArray() lua function
  - Add setBit() lua function
+### Changed
+ - Pointers in SpecialEffecct header
 ### Fixed
  - Entity helpers
 
