@@ -10,6 +10,7 @@
  - Pointers in SpecialEffecct header
 ### Fixed
  - Entity helpers
+ - Allocated memory in PlayAnimation should deallocate properly now
 
 ## [v3.3.1] - 2023-09-15
 ### Added
