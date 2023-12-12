@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Added
+ - SuperArmor and Toughness to Npc Helper
 
 ## [v3.3.2] - 2023-11-21
 ### Added
