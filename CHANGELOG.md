@@ -2,6 +2,7 @@
 ## [Unreleased]
 ### Added
  - SuperArmor and Toughness to Npc Helper
+ - Basic first time setup question for update check
 
 ## [v3.3.2] - 2023-11-21
 ### Added
