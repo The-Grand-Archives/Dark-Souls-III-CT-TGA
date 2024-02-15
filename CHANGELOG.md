@@ -3,6 +3,11 @@
 ### Added
  - SuperArmor and Toughness to Npc Helper
  - Basic first time setup question for update check
+### Changed
+ - Reorganised open script
+ - Kill All Mobs replaced with rewrite
+### Fixed
+ - Reinforce Estus Flask flask count
 
 ## [v3.3.2] - 2023-11-21
 ### Added
