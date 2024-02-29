@@ -67,7 +67,7 @@ kairos | PP Class contribution
 PurplE | ItemGib dropdown contribution
 Vortexian | Inspiration for vortmov
 [Saucy](https://github.com/0dm) | Table contribution
-amir | Table contribution
+[amirah](https://github.com/AmirSouls) | Table contribution
 Grish | Mass ItemGib
 [sfix](https://github.com/garyttierney) | Table contribution
 Z.Z | Table contribution
