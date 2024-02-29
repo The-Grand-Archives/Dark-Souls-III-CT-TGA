@@ -4,6 +4,7 @@
  - SuperArmor and Toughness to Npc Helper
  - Basic first time setup question for update check
  - Misc/WIP > Dependencies > Shared Functions > getItemIdx
+ - "Remove by Item ID" for RemoveItem
 ### Changed
  - Reorganised open script
  - Kill All Mobs replaced with rewrite
