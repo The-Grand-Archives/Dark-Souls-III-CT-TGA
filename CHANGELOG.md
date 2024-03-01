@@ -6,11 +6,13 @@
  - Misc/WIP > Dependencies > Shared Functions
    - getItemIdx
    - getItemByIdx
+   - getItemType
  - "Remove by Item ID" for RemoveItem
  - EquipItem function, equip any item from inventory via inventory index or item id
 ### Changed
  - Reorganised open script
  - Kill All Mobs replaced with rewrite
+ - Replaced get_item in Print Inventory with getItemType
 ### Fixed
  - Reinforce Estus Flask flask count
 
