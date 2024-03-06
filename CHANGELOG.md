@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+
+## [v3.4.0] - 2024-03-06
 ### Added
  - SuperArmor and Toughness to Npc Helper
  - Basic first time setup question for update check
@@ -411,7 +413,8 @@
 ### Removed
  - Unnecesssary extra chrasms removed
 
-[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.3.2...dev
+[unreleased]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.4.0...dev
+[v3.4.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.3.2...v3.4.0
 [v3.3.2]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.3.1...v3.3.2
 [v3.3.1]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.3.0...v3.3.1
 [v3.3.0]: https://github.com/inunorii/Dark-Souls-III-CT-TGA/compare/v3.2.2...v3.3.0
