@@ -1,5 +1,7 @@
 # Changelog
 ## [Unreleased]
+### Fixed
+ - EquipItem
 
 ## [v3.4.0] - 2024-03-06
 ### Added
