@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>492847</ID>
+  <Description>"R1 FP cost on stance"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>2 Bytes</VariableType>
+  <Address>+10</Address>
+</CheatEntry>

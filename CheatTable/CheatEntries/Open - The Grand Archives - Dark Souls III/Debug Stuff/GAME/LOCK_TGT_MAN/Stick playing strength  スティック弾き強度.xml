@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099110</ID>
+  <Description>"Stick playing strength | スティック弾き強度"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>283C</Offset>
+  </Offsets>
+</CheatEntry>

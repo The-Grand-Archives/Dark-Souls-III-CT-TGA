@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080929</ID>
+  <Description>"EstusFlaskAllocateNum_byMp"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>103</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

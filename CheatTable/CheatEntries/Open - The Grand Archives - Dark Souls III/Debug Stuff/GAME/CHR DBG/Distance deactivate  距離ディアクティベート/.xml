@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097823</ID>
+  <Description>"Distance deactivate | 距離ディアクティベート"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097954"/>
+    <id id="1337097957"/>
+    <id id="1337097956"/>
+    <id id="1337097955"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

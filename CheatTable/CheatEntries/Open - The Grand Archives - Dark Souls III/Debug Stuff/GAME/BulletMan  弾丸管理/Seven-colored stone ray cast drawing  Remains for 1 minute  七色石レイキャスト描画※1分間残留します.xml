@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337187448</ID>
+  <Description>"Seven-colored stone ray cast drawing * Remains for 1 minute | 七色石レイキャスト描画※1分間残留します"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>SprjBulletManager</Address>
+  <Offsets>
+    <Offset>1E4</Offset>
+  </Offsets>
+</CheatEntry>

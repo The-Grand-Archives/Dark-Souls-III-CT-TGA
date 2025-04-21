@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>89056</ID>
+  <Description>"Curse"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>1c</Offset>
+    <Offset>20</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

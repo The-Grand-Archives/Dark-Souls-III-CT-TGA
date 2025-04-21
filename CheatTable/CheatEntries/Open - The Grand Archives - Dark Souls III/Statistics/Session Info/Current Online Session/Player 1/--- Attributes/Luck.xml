@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>86771</ID>
+  <Description>"Luck"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>60</Offset>
+    <Offset>1FA0</Offset>
+    <Offset>38</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

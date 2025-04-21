@@ -1,0 +1,105 @@
+[ENABLE]
+
+Effect13:
+db 04
+Effect33:
+db 04
+Effect34:
+db 04
+Effect45:
+db 04
+Effect7020:
+db 04
+Effect7030:
+db 04
+Effect7080:
+db 04
+Effect7092:
+db 04
+Effect7130:
+db 04
+Effect7135:
+db 04
+Effect7120:
+db 04
+Effect7140:
+db 04
+Effect7150:
+db 04
+Effect7160:
+db 04
+Effect7300:
+db 04
+Effect7400:
+db 04
+Effect1600:
+db 04
+Effect1610:
+db 04
+Effect1620:
+db 04
+Effect11013:
+db 04
+Effect12150:
+db 04
+Effect12153:
+db 04
+Effect5100:
+db 04
+Effect5101:
+db 04
+
+[DISABLE]
+
+
+Effect13:
+db 05
+Effect33:
+db 07
+Effect34:
+db 07
+Effect45:
+db 07
+Effect7020:
+db 07
+Effect7030:
+db 07
+Effect7080:
+db 07
+Effect7092:
+db 07
+Effect7130:
+db 07
+Effect7135:
+db 07
+Effect7120:
+db 07
+Effect7140:
+db 07
+Effect7150:
+db 07
+Effect7160:
+db 07
+Effect7300:
+db 07
+Effect7400:
+db 07
+Effect1600:
+db 07
+Effect1610:
+db 07
+Effect1620:
+db 07
+Effect11013:
+db 07
+Effect12150:
+db 07
+Effect12153:
+db 07
+Effect5100:
+db 07
+Effect5101:
+db 07
+
+
+

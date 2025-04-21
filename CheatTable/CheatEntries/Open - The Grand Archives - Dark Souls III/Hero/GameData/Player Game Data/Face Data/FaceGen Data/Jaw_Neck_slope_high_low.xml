@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081346</ID>
+  <Description>"Jaw_Neck_slope_high_low"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>742</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

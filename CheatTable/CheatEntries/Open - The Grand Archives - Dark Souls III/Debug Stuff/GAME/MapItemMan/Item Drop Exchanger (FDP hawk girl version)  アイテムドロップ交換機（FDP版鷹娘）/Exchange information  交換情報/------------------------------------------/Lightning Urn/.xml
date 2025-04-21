@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>1337098445</ID>
+  <Description>"Lightning Urn"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>10*13</Offset>
+    <Offset>28</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337098446"/>
+    <id id="1337098447"/>
+    <id id="1337098448"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

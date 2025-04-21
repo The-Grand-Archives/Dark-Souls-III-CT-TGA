@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337097396</ID>
+  <Description>"TypeName"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">00000000:Weapon
+10000000:Protector
+20000000:Accessory
+40000000:Goods
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>238</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

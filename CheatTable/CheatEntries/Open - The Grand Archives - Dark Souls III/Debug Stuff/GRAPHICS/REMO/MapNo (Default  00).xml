@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>5</ID>
+  <Description>"MapNo (Default : 00)"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjRemo</Address>
+  <Offsets>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>

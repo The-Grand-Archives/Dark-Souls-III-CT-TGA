@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081836</ID>
+  <Description>"DispCullCamFrustum"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>DF</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

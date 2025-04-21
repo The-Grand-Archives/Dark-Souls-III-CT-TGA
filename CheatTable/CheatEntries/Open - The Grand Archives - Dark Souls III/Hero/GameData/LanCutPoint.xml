@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337078904</ID>
+  <Description>"LanCutPoint"</Description>
+  <VariableType>Float</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>AC</Offset>
+  </Offsets>
+</CheatEntry>

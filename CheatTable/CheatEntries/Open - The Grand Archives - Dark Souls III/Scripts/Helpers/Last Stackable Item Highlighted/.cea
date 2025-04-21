@@ -1,0 +1,69 @@
+[ENABLE]
+aobscanmodule(last_item,DarkSoulsIII.exe,99 ?? ?? ?? ?? 48 8B CB E8 ?? ?? ?? ?? 85 C0 78 ?? 8B D0 48 8B CB)
+alloc(newmem,$1000,last_item)
+
+label(code)
+label(return)
+label(lastItemBackup)
+label(last_item_ptr)
+
+newmem:
+  mov rdx,last_item_ptr
+  mov [rdx],rcx
+code:
+  mov edx,eax
+  mov rcx,rbx
+  jmp return
+
+lastItemBackup:
+  readmem(last_item+11,5)
+
+last_item_ptr:
+  dq 0
+
+last_item+11:
+  jmp newmem
+return:
+registersymbol(last_item)
+registersymbol(last_item_ptr)
+registersymbol(lastItemBackup)
+
+[DISABLE]
+last_item+11:
+  readmem(lastItemBackup,5)
+unregistersymbol(last_item)
+unregistersymbol(last_item_ptr)
+unregistersymbol(lastItemBackup)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+5786F9
+
+"DarkSoulsIII.exe"+5786DD: CC                    -  int 3
+"DarkSoulsIII.exe"+5786DE: CC                    -  int 3
+"DarkSoulsIII.exe"+5786DF: CC                    -  int 3
+"DarkSoulsIII.exe"+5786E0: 40 53                 -  push rbx
+"DarkSoulsIII.exe"+5786E2: 48 83 EC 20           -  sub rsp,20
+"DarkSoulsIII.exe"+5786E6: 48 8D 99 A8 01 00 00  -  lea rbx,[rcx+000001A8]
+"DarkSoulsIII.exe"+5786ED: 48 8B CB              -  mov rcx,rbx
+"DarkSoulsIII.exe"+5786F0: E8 AB 89 00 00        -  call DarkSoulsIII.exe+5810A0
+"DarkSoulsIII.exe"+5786F5: 85 C0                 -  test eax,eax
+"DarkSoulsIII.exe"+5786F7: 78 0F                 -  js DarkSoulsIII.exe+578708
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+5786F9: 8B D0                 -  mov edx,eax
+"DarkSoulsIII.exe"+5786FB: 48 8B CB              -  mov rcx,rbx
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+5786FE: 48 83 C4 20           -  add rsp,20
+"DarkSoulsIII.exe"+578702: 5B                    -  pop rbx
+"DarkSoulsIII.exe"+578703: E9 38 8C 00 00        -  jmp DarkSoulsIII.exe+581340
+"DarkSoulsIII.exe"+578708: 33 C0                 -  xor eax,eax
+"DarkSoulsIII.exe"+57870A: 48 83 C4 20           -  add rsp,20
+"DarkSoulsIII.exe"+57870E: 5B                    -  pop rbx
+"DarkSoulsIII.exe"+57870F: C3                    -  ret
+"DarkSoulsIII.exe"+578710: 0F 57 C0              -  xorps xmm0,xmm0
+"DarkSoulsIII.exe"+578713: C3                    -  ret
+"DarkSoulsIII.exe"+578714: CC                    -  int 3
+}
+
+
+

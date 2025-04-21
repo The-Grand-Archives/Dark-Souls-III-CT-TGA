@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>86856</ID>
+  <Description>"Name"</Description>
+  <VariableType>String</VariableType>
+  <Length>32</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>88</Offset>
+    <Offset>1FA0</Offset>
+    <Offset>A8</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

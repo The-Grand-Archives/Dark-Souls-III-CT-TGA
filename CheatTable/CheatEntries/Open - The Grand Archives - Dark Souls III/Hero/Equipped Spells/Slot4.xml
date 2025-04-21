@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337081736</ID>
+  <Description>"Slot4"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>38</Offset>
+    <Offset>470</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

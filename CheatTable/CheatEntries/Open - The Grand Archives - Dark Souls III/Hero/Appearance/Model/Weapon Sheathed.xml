@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>489666</ID>
+  <Description>"Weapon Sheathed"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>2B8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,19 @@
+<CheatEntry>
+  <ID>1337098015</ID>
+  <Description>"Active SpEffects"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337081461"/>
+    <id id="1337272774"/>
+    <id id="1337272770"/>
+    <id id="1337272766"/>
+    <id id="1337272762"/>
+    <id id="1337272758"/>
+    <id id="1337272754"/>
+    <id id="1337272750"/>
+    <id id="1337272746"/>
+    <id id="1337272742"/>
+    <id id="1337272738"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

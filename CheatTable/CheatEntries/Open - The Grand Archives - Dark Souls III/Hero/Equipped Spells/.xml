@@ -1,0 +1,22 @@
+<CheatEntry>
+  <ID>1337081731</ID>
+  <Description>"Equipped Spells"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337081732"/>
+    <id id="1337081733"/>
+    <id id="1337081734"/>
+    <id id="1337081735"/>
+    <id id="1337081736"/>
+    <id id="1337081737"/>
+    <id id="1337081738"/>
+    <id id="1337081739"/>
+    <id id="1337081740"/>
+    <id id="1337081741"/>
+    <id id="1337081742"/>
+    <id id="1337081743"/>
+    <id id="1337081744"/>
+    <id id="1337081745"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

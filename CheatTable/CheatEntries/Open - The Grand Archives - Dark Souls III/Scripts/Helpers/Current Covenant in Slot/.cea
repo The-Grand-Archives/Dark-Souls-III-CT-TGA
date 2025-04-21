@@ -1,0 +1,33 @@
+[ENABLE]
+aobscanmodule(last_covenant, DarkSoulsIII.exe,0F B6 40 46 C3 ? C8 ? C3 ? ? ? CA 48 89)
+alloc(newmem,$1000,last_covenant)
+
+label(code)
+label(return)
+label(last_covenant_ptr)
+
+newmem:
+
+code:
+  mov rcx,last_covenant_ptr
+  mov [rcx],rax
+  movzx eax,byte ptr [rax+46]
+  ret
+  jmp return
+
+last_covenant_ptr:
+  dq 0
+
+last_covenant:
+  jmp code
+return:
+registersymbol(last_covenant)
+registersymbol(last_covenant_ptr)
+
+[DISABLE]
+last_covenant:
+  db 0F B6 40 46 C3
+unregistersymbol(last_covenant)
+unregistersymbol(last_covenant_ptr)
+dealloc(newmem)
+

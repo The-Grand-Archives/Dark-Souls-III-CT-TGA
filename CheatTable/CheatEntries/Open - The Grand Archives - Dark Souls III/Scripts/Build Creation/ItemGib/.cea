@@ -1,0 +1,356 @@
+{
+Adds item to inventory
+Authors: Coinsworth, inuNorii and ametalon
+}
+[ENABLE]
+aobscanmodule(ItemGib_Main_AOB,$process,8B 02 83 F8 06)
+aobscanmodule(WeaponLookup_AOB,$process,8B EA 48 8B F1 33 DB 41 83 CE FF 85 D2)
+aobscanmodule(AddableQuantity_AOB,$process,48 89 44 24 ?? 48 8D 44 24 ?? 48 89 44 24 ?? 8B 01)
+define(ItemGib_Main_Call,ItemGib_Main_AOB-2F)
+define(WeaponLookup_Call,WeaponLookup_AOB-22)
+define(AddableQuantity_Call,AddableQuantity_AOB-18)
+alloc(Code,$500,DarkSoulsIII.exe)
+alloc(Data,$100,DarkSoulsIII.exe)
+
+Data:
+
+label(ItemGibData)
+ItemGibData:
+registerSymbol(ItemGibData)
+dd #-1      // quantity
+dd 400001F4 // id
+dd #-1      // durability
+dd 0        // infusion
+dd #-1      // upgrade level
+align 10 0
+
+label(ItemToSpawn)
+ItemToSpawn:
+dd 1 // counter
+dd 0 // id
+dd 0 // quantity
+dd 0 // durability
+
+
+Code:
+
+label(tga.GetHeroLevel)
+tga.GetHeroLevel:
+mov rax,[GameDataMan]
+mov rcx,[rax+10]
+movsx eax,byte ptr [rcx+000000B3]
+ret
+int 3
+int 3
+
+label(tga.GetUninfusedWeapon)
+tga.GetUninfusedWeapon:
+mov eax,68DB8BAD
+imul ecx
+sar edx,0C
+mov eax,edx
+shr eax,1F
+add edx,eax
+imul eax,edx,00002710
+ret
+
+label(tga.GetBaseWeapon)
+tga.GetBaseWeapon:
+mov eax,51EB851F
+imul ecx
+sar edx,05
+mov eax,edx
+shr eax,1F
+add edx,eax
+imul eax,edx,64
+ret
+int 3
+int 3
+int 3
+
+label(tga.GetWeaponLevel)
+tga.GetWeaponLevel:
+mov eax,51EB851F
+imul ecx
+sar edx,05
+mov eax,edx
+shr eax,1F
+add edx,eax
+imul eax,edx,64
+sub ecx,eax
+mov eax,ecx
+ret
+int 3
+int 3
+int 3
+
+label(tga.IsSpecialWeapon)
+tga.IsSpecialWeapon:
+sub rsp,58
+mov edx,ecx
+mov rax,WeaponLookup_Call
+lea rcx,[rsp+20]
+call rax
+mov rcx,[rsp+28]
+xor eax,eax
+test rcx,rcx
+je tga.IsSpecialWeapon+2B
+cmp dword ptr [rcx+74],-01
+jne tga.IsSpecialWeapon+2B
+mov al,01
+add rsp,58
+ret
+
+label(tga.IsInfusableWeapon)
+tga.IsInfusableWeapon:
+sub rsp,58
+call tga.GetUninfusedWeapon
+lea rcx,[rsp+20]
+lea edx,[rax+64]
+mov rax,WeaponLookup_Call
+call rax
+cmp qword ptr [rsp+28],00
+setne al
+add rsp,58
+ret
+int 3
+
+label(tga.IsWeapon)
+tga.IsWeapon:
+lea eax,[rcx-00070001]
+cmp eax,0FF8FFFE
+setbe al
+ret
+int 3
+
+label(tga.IsAmmo)
+tga.IsAmmo:
+cmp ecx,00070000
+setl al
+ret
+int 3
+int 3
+
+label(tga.IsConsumable)
+tga.IsConsumable:
+lea eax,[rcx-40000001]
+cmp eax,000FFFFE
+setbe al
+ret
+int 3
+
+label(tga.AddableQuantity)
+tga.AddableQuantity:
+mov [rsp+08],ecx
+sub rsp,28
+lea rcx,[rsp+30]
+mov rax,AddableQuantity_Call
+call rax
+add rsp,28
+ret
+int 3
+int 3
+
+label(tga.AdjustWeaponInfusion)
+tga.AdjustWeaponInfusion:
+db 40 53 // push rbx
+sub rsp,20
+mov ebx,ecx
+call tga.IsInfusableWeapon
+test al,al
+je tga.AdjustWeaponInfusion+15
+mov eax,ebx
+jmp tga.AdjustWeaponInfusion+27
+mov ecx,ebx
+call tga.GetUninfusedWeapon
+mov r8d,eax
+call tga.GetWeaponLevel
+add eax,r8d
+add rsp,20
+pop rbx
+ret
+int 3
+int 3
+int 3
+
+label(tga.AdjustWeaponUpgrade)
+tga.AdjustWeaponUpgrade:
+mov [rsp+08],rbx
+mov [rsp+10],rsi
+push rdi
+sub rsp,20
+mov esi,ecx
+call tga.GetHeroLevel
+mov ecx,esi
+mov ebx,eax
+call tga.GetWeaponLevel
+mov ecx,esi
+mov edi,eax
+call tga.IsSpecialWeapon
+test al,al
+je tga.AdjustWeaponUpgrade+35
+mov eax,ebx
+cdq
+sub eax,edx
+sar eax,1
+mov ebx,eax
+cmp ebx,edi
+mov ecx,esi
+cmovl edi,ebx
+call tga.GetBaseWeapon
+mov rbx,[rsp+30]
+add eax,edi
+mov rsi,[rsp+38]
+add rsp,20
+pop rdi
+ret
+int 3
+
+label(tga.AdjustQuantity)
+tga.AdjustQuantity:
+db 40 53 // push rbx
+sub rsp,20
+mov ebx,edx
+call tga.IsAmmo
+test al,al
+jne tga.AdjustQuantity+21
+call tga.IsConsumable
+test al,al
+jne tga.AdjustQuantity+21
+mov eax,00000001
+jmp tga.AdjustQuantity+32
+call tga.AddableQuantity
+cmp ebx,-01
+je tga.AdjustQuantity+32
+cmp eax,ebx
+cmovl ebx,eax
+mov eax,ebx
+add rsp,20
+pop rbx
+ret
+
+label(tga.SpawnItems)
+label(tga.SpawnItems_CreateItemBatch)
+label(tga.SpawnItems_SetBatchItemCount)
+label(tga.SpawnItems_REP_MOVSB64)
+label(tga.SpawnItems_AdjustItemData)
+label(tga.SpawnItems_AdjustQuantity)
+label(tga.SpawnItems_Call)
+label(tga.SpawnItems_Done)
+tga.SpawnItems:
+registerSymbol(tga.SpawnItems)
+push rbx
+push rsi
+push rdi
+push r14
+push r15
+sub rsp,30
+movsxd r15,dword ptr [rcx]
+lea rsi,[rcx+04]
+tga.SpawnItems_CreateItemBatch:
+mov rax,r15
+mov cl,06
+movsx rcx,cl
+xor rdx,rdx
+div rcx
+test rdx,rdx
+jne tga.SpawnItems_SetBatchItemCount
+mov dl,06
+movsx rdx,dl
+test rax,rax
+je tga.SpawnItems_Done
+tga.SpawnItems_SetBatchItemCount:
+mov r14,rdx
+sub r15,r14
+lea rdi,[ItemToSpawn+04]
+mov [rdi-04],r14d
+mov rax,r14
+mov cl,0C
+movsx rcx,cl
+xor rdx,rdx
+mul rcx
+mov rcx,rax
+tga.SpawnItems_REP_MOVSB64:
+db F3 48 A4
+lea rbx,[ItemToSpawn+04]
+tga.SpawnItems_AdjustItemData:
+mov ecx,[rbx]
+call tga.IsWeapon
+test al,al
+je tga.SpawnItems_AdjustQuantity
+call tga.AdjustWeaponInfusion
+mov ecx,eax
+call tga.AdjustWeaponUpgrade
+mov [rbx],eax
+mov ecx,eax
+tga.SpawnItems_AdjustQuantity:
+mov edx,[rbx+04]
+call tga.AdjustQuantity
+mov [rbx+04],eax
+add rbx,0C
+sub r14,01
+jne tga.SpawnItems_AdjustItemData
+tga.SpawnItems_Call:
+mov rcx,MapItemMan
+lea r8,[rsp+20]
+lea rdx,[ItemToSpawn]
+mov rax,ItemGib_Main_Call
+mov rcx,[rcx]
+call rax
+test r15,r15
+jne tga.SpawnItems_CreateItemBatch
+tga.SpawnItems_Done:
+xor rax,rax
+mov cl,12
+movsx rcx,cl
+lea rdi,[ItemToSpawn]
+rep stosq
+mov dword ptr [ItemToSpawn],01
+add rsp,30
+pop r15
+pop r14
+pop rdi
+pop rsi
+pop rbx
+ret
+int 3
+
+
+// void ItemGib()
+label(ItemGib)
+ItemGib:
+registersymbol(ItemGib)
+sub rsp, 28
+mov ecx, dword ptr [ItemGibData+4]
+call tga.IsWeapon
+test al, al
+mov eax, dword ptr [ItemGibData+4]
+jz short ItemGib_not_weapon
+ItemGib_weapon:
+// if "Hero level" selected, use max upgrade level, it will be adjusted
+mov eax, dword ptr [ItemGibData+10]
+mov ecx, #10
+cmp eax, #-1
+cmove eax, ecx
+add eax, dword ptr [ItemGibData+4]
+add eax, dword ptr [ItemGibData+C]
+ItemGib_not_weapon:
+mov dword ptr [ItemToSpawn+4], eax
+mov eax, dword ptr [ItemGibData]
+mov dword ptr [ItemToSpawn+8], eax
+mov eax, dword ptr [ItemGibData+8]
+mov dword ptr [ItemToSpawn+C], eax
+lea rcx, [ItemToSpawn]
+call tga.SpawnItems
+add rsp, 28
+ret
+align 10 CC
+
+
+[DISABLE]
+unregistersymbol(ItemGib)
+unregistersymbol(ItemGibData)
+unregisterSymbol(tga.SpawnItems)
+dealloc(Code)
+dealloc(Data)
+

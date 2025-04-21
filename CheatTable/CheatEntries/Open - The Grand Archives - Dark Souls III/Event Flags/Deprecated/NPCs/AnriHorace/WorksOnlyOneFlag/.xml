@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337190235</ID>
+  <Description>"WorksOnlyOneFlag"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337190236"/>
+    <id id="1337190237"/>
+    <id id="1337190238"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

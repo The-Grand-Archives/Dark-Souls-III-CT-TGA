@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337096631</ID>
+  <Description>"FlipMode_forHeavyGame"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:30FPS
+1:30FPS_withoutSkip
+2:60FPS_withoutSkip
+3:30FPS_withoutTearing
+4:30FPS_withoutSkipTearing
+5:60FPS_withoutSkipTearing
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjFlipper</Address>
+  <Offsets>
+    <Offset>C</Offset>
+  </Offsets>
+</CheatEntry>

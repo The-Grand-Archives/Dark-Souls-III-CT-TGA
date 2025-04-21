@@ -1,0 +1,159 @@
+{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+disableMemrec(memrec)
+showText([[
+                              Dark Souls III Cheat Engine Table
+                    By Phokz / Pox911 / Zanzer / Zullie the Witch
+
+                             Maintained by The Grand Archives
+                          https://discord.io/the-grand-archives
+
+                         This table is meant for offline use only
+                           some parts of it can get you banned
+
+
+Table Updates:
+https://github.com/The-Grand-Archives/Dark-Souls-III-CT-TGA
+
+Changelog:
+https://github.com/The-Grand-Archives/Dark-Souls-III-CT-TGA/blob/main/CHANGELOG.md
+
+Notable Features:
+
+Scroll to: Search table entries by ID or description
+Press Ctrl+F or find it in Edit>Scroll to
+
+Scripts->Build Creation:
+No cost level up: Dynamically adds souls required for leveling up,
+while you are doing it
+AddSoul: Increase your souls in a safe way
+ItemGib: Spawn items directly into your inventory
+Mass ItemGib: Spawns all (safe) items of a category at once
+BonfireWarp: Warp directly to any bonfire
+Unlock All Gestures: Does what it says
+Upgrades Need No Materials: Remove requirement for item upgrading
+
+Npc Menus:
+This header contains menus of npcs you'd find at Firelink Shrine
+Access All Shop Inventory, Access All Bonfires and
+Free Transpose can also be found here
+
+
+Q: What do the colours mean?
+A: Blue = highlighting/info
+     Green = Param script outside of param headers, these are safe
+     Dark Red = likely unsafe
+     Red = Warning
+     grey = WIP/dummy, ignore unless advanced user
+
+Q: What parts of the table get me banned?
+A: Check Unfairest's Guide
+   https://docs.google.com/document/d/1AaQiu5axxinl633IUZuWhggrQOHog-3WxMWnuus8-LU
+
+Q: Where is the Master Spreadsheet (MSS) for Effects, Bullets, etc ?
+A: https://docs.google.com/spreadsheets/d/1nK2g7g6XJ-qphFAk1tjP3jZtlXWDQY-ItKLa_sniawo/
+
+Q: Why do most features in the table either not work or crash me?
+A: Only legitimate and up-to-date versions of DS3 are supported.
+   Some scripts have been left behind since v1.15.1
+   and likely won't be updated anymore
+
+Q: Why does the game crash when I attach debugger?
+A: Dark Souls III v1.15.1 introduced anti-debug code.
+   If you need to use a debugger, you'll have to find a way to bypass it,
+   which we don't provide.
+
+Q: Where did Param Patcher go?
+A: It is now active by default, its headers can be found under
+   Param -> Param Scripting
+
+Q: Where is Unlimited HP / Stamina / Focus Points / Unlimited
+   Consumables?
+A: Flags -> Character Flags
+
+Q: How to dupe character?
+A: Change "Save Slot" to desired slot (starts at 0 for first slot),
+   preferably empty slot below the current one (so if at 0, set to 1).
+   Quit your current game and load your saves, the dupe should be in
+   the next slot down.
+
+Q: How to disable stagger / knockback?
+A: Hero -> Character Flags -> EventSuperArmor
+
+Q: How to hide character model?
+A: Hero -> Character Flags -> Enable ChrAsm (Set to 0 to Hide).
+
+Q: How to enable one shot kill? (NPCs only)
+A: Debug Stuff > GAME > CHR DBG > Player Exterminate
+
+Q: How to use "Last Weapon Highlighted", "Last Armour
+   Highlighted", etc?
+A: Enable the script, open inventory and highlight the weapon or
+   armour piece that you want to edit and return back to the script.
+
+Q: How to use "Effect Helper", "Bullet Helper", etc?
+A: Enable "Find Address" and follow the instructions below it
+   WARNING! Will likely crash unless you have a bypass for
+   the anti-debug introduced in v1.15.1
+
+Q: How to extend buff duration?
+A: Use Effect Helper and change effectEndurance to
+   whatever duration you want.
+
+Q: How to get more Respecs and Rebirths?
+A: Scripts > Npc Menus > Rosaria > Reallocate Stats
+   Alternatively: Hero > World Flags > Misc > Rebirths (Go in order)
+
+Q: How to Unlock All Gestures?
+A: Hero > GameData > Player Game Data:LocalPlayer >
+   > Gesture Game Data
+
+Q: How to change Character Class?
+A: Hero > GameData > Player Game Data:LocalPlayer >
+   > Player Param > ArcheType
+
+Q: How to revive bosses?
+A: Event Flags
+   or Hero > World Flags > Bosses
+
+Q: I can’t find my bloodstain anywhere.
+A: Teleport > Teleport to Bloodstain
+
+Q: How to get a Gael's beard?
+A: Set "Age" to "3" (Hero > Appearance > Face Details > Misc)
+
+Q: How to use backflip animation?
+A: Scripts > Param Mods > Dark Souls > (Dark) Wood Grain Ring
+   or Hero > Animation > Scripts > Roll and Backflip
+   or use StateInfo 115 on any active effect
+
+Q: How do I get the NPC's face?
+A: Enable the "Last Hit Info" script, punch this npc.
+     Go to his facedata and enable "Copy and Apply FaceData".
+     Enable and disable "Backread Toggle" to refresh your character
+     Note: You can only get the facedata of player model npcs
+
+TGA table contributors
+----------------------
+Ametalon: Help with LUA, major table contributions
+Coinsworth: Help with ASM, knowledge, major table contributions
+inuNorii: knowledge, table contribution/overhaul
+Unfairest: Ban data collection, guides
+Gáté: Param Edits, Param knowledge, fixes
+Lucifer: Param Edits
+/u/MajinCry: Kill all mobs in the area script
+kairos: PP Class contribution
+PurplE: ItemGib dropdown contribution
+Vortexian: Inspiration for vortmov
+Saucy: Table contribution
+amirah: Table contribution
+Grish: Mass ItemGib
+sfix: Table contribution
+Z.Z: Table contribution
+heliodesic: Table contribution
+Dasaav: Functionality reworks and additions
+]])
+
+[DISABLE]

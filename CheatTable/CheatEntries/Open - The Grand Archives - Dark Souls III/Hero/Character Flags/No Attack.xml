@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>77945</ID>
+  <Description>"No Attack"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Binary</VariableType>
+  <BitStart>6</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1ED8</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

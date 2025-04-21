@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337187803</ID>
+  <Description>"Maximum delay time | 受信遅延最大時間"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>34C</Offset>
+  </Offsets>
+</CheatEntry>

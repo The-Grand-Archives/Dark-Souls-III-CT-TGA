@@ -1,0 +1,65 @@
+[ENABLE]
+aobscanmodule(CurrentCameraLock,DarkSoulsIII.exe,F3 0F 10 02 F3 0F 11 44 24 74)
+alloc(newmem,$1000,CurrentCameraLock)
+alloc(lockcam,8)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov [lockcam],rdx
+  movss xmm0,[rdx]
+  movss [rsp+74],xmm0
+  jmp return
+
+CurrentCameraLock:
+  jmp newmem
+  nop
+  nop
+  nop
+  nop
+  nop
+return:
+registersymbol(CurrentCameraLock)
+registersymbol(lockcam)
+[DISABLE]
+
+CurrentCameraLock:
+  db F3 0F 10 02 F3 0F 11 44 24 74
+unregistersymbol(lockcam)
+unregistersymbol(CurrentCameraLock)
+dealloc(newmem)
+dealloc(lockcam)
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+854F31
+
+"DarkSoulsIII.exe"+854EFF: F3 0F 11 8E 24 29 00 00     -  movss [rsi+00002924],xmm1
+"DarkSoulsIII.exe"+854F07: F3 0F 10 52 1C              -  movss xmm2,[rdx+1C]
+"DarkSoulsIII.exe"+854F0C: 41 0F 2F D2                 -  comiss xmm2,xmm10
+"DarkSoulsIII.exe"+854F10: 73 03                       -  jae DarkSoulsIII.exe+854F15
+"DarkSoulsIII.exe"+854F12: 0F 28 D3                    -  movaps xmm2,xmm3
+"DarkSoulsIII.exe"+854F15: F3 0F 10 86 28 29 00 00     -  movss xmm0,[rsi+00002928]
+"DarkSoulsIII.exe"+854F1D: F3 0F 5C D0                 -  subss xmm2,xmm0
+"DarkSoulsIII.exe"+854F21: F3 0F 59 D4                 -  mulss xmm2,xmm4
+"DarkSoulsIII.exe"+854F25: F3 0F 58 D0                 -  addss xmm2,xmm0
+"DarkSoulsIII.exe"+854F29: F3 0F 11 96 28 29 00 00     -  movss [rsi+00002928],xmm2
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+854F31: F3 0F 10 02                 -  movss xmm0,[rdx]
+"DarkSoulsIII.exe"+854F35: F3 0F 11 44 24 74           -  movss [rsp+74],xmm0
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+854F3B: 49 8B 87 80 1F 00 00        -  mov rax,[r15+1F90]
+"DarkSoulsIII.exe"+854F42: 48 8B 88 10 01 00 00        -  mov rcx,[rax+00000110]
+"DarkSoulsIII.exe"+854F49: 48 85 C9                    -  test rcx,rcx
+"DarkSoulsIII.exe"+854F4C: 74 06                       -  je DarkSoulsIII.exe+854F54
+"DarkSoulsIII.exe"+854F4E: E8 4D 9B 12 00              -  call DarkSoulsIII.exe+97EAA0
+"DarkSoulsIII.exe"+854F53: 90                          -  nop
+"DarkSoulsIII.exe"+854F54: 48 89 7D 40                 -  mov [rbp+40],rdi
+"DarkSoulsIII.exe"+854F58: 80 BE 22 28 00 00 00        -  cmp byte ptr [rsi+00002822],00
+"DarkSoulsIII.exe"+854F5F: 74 10                       -  je DarkSoulsIII.exe+854F71
+"DarkSoulsIII.exe"+854F61: 66 C7 86 20 28 00 00 00 00  -  mov word ptr [rsi+00002820],0000
+}
+
+
+

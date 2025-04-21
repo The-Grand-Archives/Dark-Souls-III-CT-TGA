@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>489798</ID>
+  <Description>"Lothric Castle dragon"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="489794"/>
+    <id id="489796"/>
+    <id id="489797"/>
+    <id id="489799"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

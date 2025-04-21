@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>81138</ID>
+  <Description>"SteamID64 (Hex) 001"</Description>
+  <VariableType>String</VariableType>
+  <Length>32</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>7D8</Offset>
+    <Offset>540</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="81152"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

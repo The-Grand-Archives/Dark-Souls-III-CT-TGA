@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337080359</ID>
+  <Description>"MeleeAttackAutoAcquisitionCharacterRangeMaximumRadius"</Description>
+  <VariableType>Float</VariableType>
+  <Address>+2C</Address>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337034188</ID>
+  <Description>"Vigor"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>44</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

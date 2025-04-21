@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>850</ID>
+  <Description>"Left\Right"</Description>
+  <VariableType>Float</VariableType>
+  <Address>Coords</Address>
+  <Offsets>
+    <Offset>178</Offset>
+  </Offsets>
+</CheatEntry>

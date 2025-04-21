@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78569</ID>
+  <Description>"Status"</Description>
+  <DropDownList DisplayValueAsItem="1">0:Default (Off)
+1:Camera Mode
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>E0</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

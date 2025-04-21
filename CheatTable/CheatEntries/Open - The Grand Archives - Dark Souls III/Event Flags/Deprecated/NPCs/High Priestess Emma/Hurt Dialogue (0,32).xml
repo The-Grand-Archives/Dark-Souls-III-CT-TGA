@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096502</ID>
+  <Description>"Hurt Dialogue (0,32)"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>2a316</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

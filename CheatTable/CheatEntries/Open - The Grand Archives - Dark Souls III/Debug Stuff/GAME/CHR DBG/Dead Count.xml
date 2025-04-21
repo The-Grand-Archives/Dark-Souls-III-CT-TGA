@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097801</ID>
+  <Description>"Dead Count"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>13C</Offset>
+  </Offsets>
+</CheatEntry>

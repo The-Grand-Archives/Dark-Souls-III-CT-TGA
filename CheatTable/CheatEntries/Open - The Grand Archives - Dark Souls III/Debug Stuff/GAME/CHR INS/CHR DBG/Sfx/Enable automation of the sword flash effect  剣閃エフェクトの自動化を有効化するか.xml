@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337190040</ID>
+  <Description>"Enable automation of the sword flash effect | 剣閃エフェクトの自動化を有効化するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>174</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,14 @@
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local Faces = {
+    {999000,0,"","Commoner"}
+  }
+  paramUtils:paramIterator("FaceParam",Faces)
+end
+
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  unregisterSymbol("Commoner")
+end

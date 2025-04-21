@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337080815</ID>
+  <Description>"Param Mods"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337190574"/>
+    <id id="1337190571"/>
+    <id id="1337190569"/>
+    <id id="1337190567"/>
+    <id id="1337190568"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

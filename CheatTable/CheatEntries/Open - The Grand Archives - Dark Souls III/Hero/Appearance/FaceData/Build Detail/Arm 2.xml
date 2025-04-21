@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73296</ID>
+  <Description>"Arm 2"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>709</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

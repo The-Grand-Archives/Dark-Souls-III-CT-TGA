@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337183972</ID>
+  <Description>"BulletIns | 弾丸インスタンス"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337183973"/>
+    <id id="1337183974"/>
+    <id id="1337183975"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

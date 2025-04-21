@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>89748</ID>
+  <Description>"NpcParam"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>20</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

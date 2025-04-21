@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>489671</ID>
+  <Description>"Gesture walk -- (only works if Gesture Pointer is disabled)"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337014483"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

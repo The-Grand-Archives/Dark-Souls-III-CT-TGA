@@ -1,0 +1,23 @@
+<CheatEntry>
+  <ID>1337078854</ID>
+  <Description>"Covenant"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:None
+1:Blade of the Darkmoon
+2:Warriors of sunlight
+3:Mound Makers
+4:Spears of the Church
+5:Fingers of Rosaria
+6:Watchdogs of Farron
+7:Aldrich Faithfuls
+8:Way of Blue
+9:Blue Sentinels
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>F7</Offset>
+    <Offset>1FA0</Offset>
+    <Offset>38</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>10394</ID>
+  <Description>"FOV (Default is 43)"</Description>
+  <VariableType>Float</VariableType>
+  <Address>fov</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

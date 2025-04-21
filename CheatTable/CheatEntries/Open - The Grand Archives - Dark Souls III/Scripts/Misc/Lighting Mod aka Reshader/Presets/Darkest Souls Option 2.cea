@@ -1,0 +1,21 @@
+//Author: Zullie the Witch
+[ENABLE]
+BrightnessMod:
+dd (float)0.0
+
+DarkSoulsIII.exe+3D6C0C0:
+dd 3F800000 3F800000 3F800000
+
+DarkSoulsIII.exe+1717B28:
+dd 3A83126F
+
+DarkSoulsIII.exe+4727638:
+dd (float)1.0
+
+DarkSoulsIII.exe+0212450:
+dd 43FA0000
+
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]

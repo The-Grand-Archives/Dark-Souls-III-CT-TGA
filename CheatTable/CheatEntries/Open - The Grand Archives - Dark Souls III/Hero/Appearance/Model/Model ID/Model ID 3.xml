@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>102392</ID>
+  <Description>"Model ID 3"</Description>
+  <VariableType>String</VariableType>
+  <Length>4</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>DarkSoulsIII.exe+3D55af2</Address>
+</CheatEntry>

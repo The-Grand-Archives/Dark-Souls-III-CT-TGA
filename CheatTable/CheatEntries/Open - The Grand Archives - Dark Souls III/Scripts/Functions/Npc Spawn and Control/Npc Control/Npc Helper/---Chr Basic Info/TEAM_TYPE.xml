@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337190175</ID>
+  <Description>"TEAM_TYPE"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>74</Offset>
+  </Offsets>
+</CheatEntry>

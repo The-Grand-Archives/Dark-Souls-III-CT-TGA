@@ -1,0 +1,7 @@
+[ENABLE]
+alloc(XE,8)
+registersymbol(XE)
+
+[DISABLE]
+dealloc(XE)
+unregistersymbol(XE)

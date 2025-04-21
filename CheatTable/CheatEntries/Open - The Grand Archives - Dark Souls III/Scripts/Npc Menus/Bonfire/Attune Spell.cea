@@ -1,0 +1,17 @@
+[ENABLE]
+aobscanmodule(BAttune_AOB,$process,48 8D 45 0F 48 89 45 EF 48 8D 45 0F 48 89 45 F7 48 8D ?? ?? ?? ?? ?? 48 89 45 0F 48 8D ?? ?? ?? ?? ?? 48 89 45 0F 48 8D ?? ?? ?? ?? ?? 48 89 45 17)
+define(BAttune_Call,BAttune_AOB-39)
+alloc(BonfireAttuneSpell,100,DarkSoulsIII.exe)
+createthread(BonfireAttuneSpell)
+
+BonfireAttuneSpell:
+sub rsp,48
+lea rcx,[rsp+28]
+call BAttune_Call
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(BonfireAttuneSpell)

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337081897</ID>
+  <Description>"Time required for path search | パス検索に掛かった時間"</Description>
+  <VariableType>Float</VariableType>
+  <Address>DarkSoulsIII.exe+477F498</Address>
+  <Offsets>
+    <Offset>1724</Offset>
+  </Offsets>
+</CheatEntry>

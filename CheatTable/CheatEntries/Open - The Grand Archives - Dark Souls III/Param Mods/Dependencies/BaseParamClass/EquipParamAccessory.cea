@@ -1,0 +1,128 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+
+EquipParamAccessory = BaseParamClass:new()
+
+function EquipParamAccessory:new(uuid, id, address)
+	local o = {}
+	self.__index = self
+	setmetatable(o, self)
+
+	o:init("EquipParamAccessory", uuid, id, address)
+	return o
+end
+
+function EquipParamAccessory:refId(value)
+    self:patch4Byte(0x0, value)
+end
+
+function EquipParamAccessory:sfxVariation(value)
+    self:patch4Byte(0x4, value)
+end
+
+function EquipParamAccessory:weight(value)
+    self:patchFloat(0x8, value)
+end
+
+function EquipParamAccessory:behaviorId(value)
+    self:patch4Byte(0xC, value)
+end
+
+function EquipParamAccessory:basicPrice(value)
+    self:patch4Byte(0x10, value)
+end
+
+function EquipParamAccessory:sellValue(value)
+    self:patch4Byte(0x14, value)
+end
+
+function EquipParamAccessory:sortId(value)
+    self:patch4Byte(0x18, value)
+end
+
+function EquipParamAccessory:qwcId(value)
+    self:patch4Byte(0x1C, value)
+end
+
+function EquipParamAccessory:equipModelId(value)
+    self:patch2Byte(0x20, value)
+end
+
+function EquipParamAccessory:iconId(value)
+    self:patch2Byte(0x22, value)
+end
+
+function EquipParamAccessory:shopLv(value)
+    self:patch2Byte(0x24, value)
+end
+
+function EquipParamAccessory:trophySGradeId(value)
+    self:patch2Byte(0x26, value)
+end
+
+function EquipParamAccessory:trophySeqId(value)
+    self:patch2Byte(0x28, value)
+end
+
+function EquipParamAccessory:equipModelCategory(value)
+    self:patchByte(0x2A, value)
+end
+
+function EquipParamAccessory:equipModelGender(value)
+    self:patchByte(0x2B, value)
+end
+
+function EquipParamAccessory:accessoryCategory(value)
+    self:patchByte(0x2C, value)
+end
+
+function EquipParamAccessory:refCategory(value)
+    self:patchByte(0x2D, value)
+end
+
+function EquipParamAccessory:spEffectCategory(value)
+    self:patchByte(0x2E, value)
+end
+
+function EquipParamAccessory:isDiscard(value)
+    self:patchBinary(0x3C, value, 3)
+end
+
+function EquipParamAccessory:isDrop(value)
+    self:patchBinary(0x3C, value, 4)
+end
+
+function EquipParamAccessory:vowType(value)
+    self:patchByte(0x46, value)
+end
+
+function EquipParamAccessory:refId1(value)
+    self:patch4Byte(0x48, value)
+end
+
+function EquipParamAccessory:refId2(value)
+    self:patch4Byte(0x4C, value)
+end
+
+function EquipParamAccessory:refId3(value)
+    self:patch4Byte(0x50, value)
+end
+
+function EquipParamAccessory:refId4(value)
+    self:patch4Byte(0x54, value)
+end
+
+--compatibility
+function EquipParamAccessory:refId5(value)
+    self:patch4Byte(0x0, value)
+end
+
+function EquipParamAccessory:Covenant(value)
+    self:patchByte(0x46, value)
+end
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end

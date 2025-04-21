@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337097117</ID>
+  <Description>"No description"</Description>
+  <VariableType>Float</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>AC</Offset>
+    <Offset>C0</Offset>
+    <Offset>C0</Offset>
+    <Offset>C0</Offset>
+    <Offset>C0</Offset>
+    <Offset>BE8</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>2876</ID>
+  <Description>"Encountered"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>6</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>F67</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

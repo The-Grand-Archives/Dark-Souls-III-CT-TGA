@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337078921</ID>
+  <Description>"Play Time"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>A4</Offset>
+  </Offsets>
+</CheatEntry>

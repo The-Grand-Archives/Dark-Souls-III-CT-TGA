@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337046238</ID>
+  <Description>"Stamina Consuption to block"</Description>
+  <VariableType>2 Bytes</VariableType>
+  <Address>+cc</Address>
+</CheatEntry>

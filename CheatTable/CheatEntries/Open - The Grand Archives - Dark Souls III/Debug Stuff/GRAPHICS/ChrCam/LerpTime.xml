@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337098554</ID>
+  <Description>"LerpTime"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>8C</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

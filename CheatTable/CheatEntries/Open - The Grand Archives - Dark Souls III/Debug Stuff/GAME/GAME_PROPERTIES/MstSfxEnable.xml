@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080850</ID>
+  <Description>"MstSfxEnable"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+457F3D8</Address>
+</CheatEntry>

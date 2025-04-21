@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>492919</ID>
+  <Description>"Force Lan Dis"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>A30</Offset>
+  </Offsets>
+</CheatEntry>

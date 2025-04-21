@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097169</ID>
+  <Description>"Compressed replay data size [byte] | 圧縮リプレイデータサイズ [byte]"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>34</Offset>
+    <Offset>10</Offset>
+    <Offset>0</Offset>
+    <Offset>20</Offset>
+    <Offset>B98</Offset>
+  </Offsets>
+</CheatEntry>

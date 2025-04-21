@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73208</ID>
+  <Description>"Lip Protrusion"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>748</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

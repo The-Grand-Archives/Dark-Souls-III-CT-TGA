@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337080859</ID>
+  <Description>"Ignore SteamID check when loading profile | プロファイルロード時にSteamIDのチェックを無視"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>129</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337187594</ID>
+  <Description>""</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>ThrowMan</Address>
+  <Offsets>
+    <Offset>D8</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081256</ID>
+  <Description>"Face_forehead_sellion_nose_ratio"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>736</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

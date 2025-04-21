@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098940</ID>
+  <Description>"LockCamArrangement | ロックカメラアレンジ"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:None
+1:Ave
+2:WAve
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4544990</Address>
+</CheatEntry>

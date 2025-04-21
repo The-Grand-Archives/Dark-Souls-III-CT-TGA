@@ -1,0 +1,53 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local items = {
+    0x0001ADB0,  -- PrimaryLeftWep
+    0x0001ADB0,  -- PrimaryRightWep
+    0x0001ADB0,  -- SecondaryLeftWep
+    0x0001ADB0,  -- SecondaryRightWep
+    0x0001ADB0,  -- TertiaryLeftWep
+    0x0001ADB0,  -- TertiaryRightWep
+    0xFFFFFFFF,  -- PrimaryArrow
+    0xFFFFFFFF,  -- PrimaryBolt
+    0xFFFFFFFF,  -- SecondaryArrow
+    0xFFFFFFFF,  -- SecondaryBolt
+    0xFFFFFFFF,  -- TertiaryArrow (unused)
+    0xFFFFFFFF,  -- TertiaryBolt (unused)
+    0x100DBBA0,  -- Helmet
+    0x100DBF88,  -- Armor
+    0x100DC370,  -- Gauntlet
+    0x100DC758,  -- Leggings
+    0xFFFFFFFF,  -- Hair (unused)
+    0xFFFFFFFF,  -- Accessory 1
+    0xFFFFFFFF,  -- Accessory 2
+    0xFFFFFFFF,  -- Accessory 3
+    0xFFFFFFFF,  -- Accessory 4
+    0xFFFFFFFF,  -- Covenant
+    0xFFFFFFFF,  -- Quickitem 1
+    0xFFFFFFFF,  -- Quickitem 2
+    0xFFFFFFFF,  -- Quickitem 3
+    0xFFFFFFFF,  -- Quickitem 4
+    0xFFFFFFFF,  -- Quickitem 5
+    0xFFFFFFFF,  -- Quickitem 6
+    0xFFFFFFFF,  -- Quickitem 7
+    0xFFFFFFFF,  -- Quickitem 8
+    0xFFFFFFFF,  -- Quickitem 9
+    0xFFFFFFFF,  -- Quickitem 10
+    0xFFFFFFFF,  -- Toolbelt 1
+    0xFFFFFFFF,  -- Toolbelt 2
+    0xFFFFFFFF,  -- Toolbelt 3
+    0xFFFFFFFF,  -- Toolbelt 4
+    0xFFFFFFFF,  -- Toolbelt 5
+}
+
+for i,v in ipairs(items) do
+    local idx = getItemIdx(v)
+    if idx then
+        equipItem(i-1, idx)
+    end
+end
+
+disableMemrec(memrec)
+
+[DISABLE]

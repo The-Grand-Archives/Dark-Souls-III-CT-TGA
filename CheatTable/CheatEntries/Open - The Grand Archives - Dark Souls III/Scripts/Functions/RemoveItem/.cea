@@ -1,0 +1,22 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local func_addr = AOBScanModuleUnique(process,"?? 83 ec ?? 8b f2 ?? 8b e9 ?? 85 c0 74")-8
+
+RemoveItem_data = allocateMemory(16, getAddress(process))
+writeInteger(RemoveItem_data+4,0xFFFFFFFF)
+
+function RemoveItem(idx)
+	local GameDataMan = readPointer("GameDataMan")
+	local PlayerGameData = readPointer(GameDataMan + 0x10)
+	local EquipInventoryData = getAddress(PlayerGameData + 0x3D0)
+	local tailDataIdx = EquipInventoryData + 0x24
+	local invSlot = idx + readInteger(tailDataIdx)
+
+	return executeCodeEx(0, 100, func_addr, EquipInventoryData, invSlot, 1)
+end
+
+[DISABLE]
+deAlloc(RemoveItem_data)
+RemoveItem_data = nil
+RemoveItem = nil

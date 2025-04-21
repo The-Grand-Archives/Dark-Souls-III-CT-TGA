@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>86485</ID>
+  <Description>"Ariendel Chapel Basement"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>25344</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

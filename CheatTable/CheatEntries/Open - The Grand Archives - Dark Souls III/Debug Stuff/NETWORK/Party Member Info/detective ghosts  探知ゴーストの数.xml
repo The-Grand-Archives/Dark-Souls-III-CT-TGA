@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337081410</ID>
+  <Description>"detective ghosts | 探知ゴーストの数"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>D30</Offset>
+  </Offsets>
+</CheatEntry>

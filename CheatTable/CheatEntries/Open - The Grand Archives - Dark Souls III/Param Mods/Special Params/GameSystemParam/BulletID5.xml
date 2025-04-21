@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099400</ID>
+  <Description>"BulletID5"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>D4</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

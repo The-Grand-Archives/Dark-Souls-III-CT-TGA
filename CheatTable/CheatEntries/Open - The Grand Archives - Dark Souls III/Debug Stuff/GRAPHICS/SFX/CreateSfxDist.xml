@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096662</ID>
+  <Description>"CreateSfx:Dist"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjSfx</Address>
+  <Offsets>
+    <Offset>7C</Offset>
+  </Offsets>
+</CheatEntry>

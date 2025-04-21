@@ -1,0 +1,48 @@
+//slightly better lifegem, replaces rusted coin
+
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local RustedCoin = EquipParamGoods:new("radLifegem",455) -- Radiant Lifegem Version, uses rusted coin
+RustedCoin:refId(151)
+RustedCoin:goodsUseAnim(9)
+RustedCoin:iconId(131) -- icon: blessed gem
+RustedCoin:sfxId(535000) -- gold glow
+RustedCoin:sfxId1(302230)
+
+local BlankEffectHeal = SpEffectParam:new("radLifegem",151)
+BlankEffectHeal:effectEndurance(32)
+BlankEffectHeal:motionInterval(0.022)
+BlankEffectHeal:changeHpRate(0)
+BlankEffectHeal:changeHpPoint(-1)
+BlankEffectHeal:spCategory(10)
+BlankEffectHeal:effectSfx(91120701)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+3156:
+dw 'Radiant Lifegem',0
+[[[[MsgRepository]+8]+0]+C0]+119F6:
+dw 'Stone made up of crystallized souls.',A
+dw '',A
+dw 'Gradually restores HP.',A
+dw '',A
+dw 'The dull glimmer of these mysterious stones brightens with the passage of time.',0
+[[[[MsgRepository]+08]+00]+A0]+44C8:
+dw 'Crush to restore a considerable amount of HP',0
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("radLifegem")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+3156:
+dw 'Rusted Coin',0
+[[[[MsgRepository]+8]+0]+C0]+119F6:
+dw 'An old rusted copper coin.',A
+dw '',A
+dw 'Crushing the coin boosts item discovery.',A
+dw '',A
+dw 'Those who have lost their fortunes rely upon this superstitious practice, hoping to retrieve what was once theirs, and more.',0
+[[[[MsgRepository]+08]+00]+A0]+44C8:
+dw 'Crush to temporarily boost item discovery',0
+

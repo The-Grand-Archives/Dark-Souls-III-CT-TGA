@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337190173</ID>
+  <Description>"CharacterId"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>68</Offset>
+  </Offsets>
+</CheatEntry>

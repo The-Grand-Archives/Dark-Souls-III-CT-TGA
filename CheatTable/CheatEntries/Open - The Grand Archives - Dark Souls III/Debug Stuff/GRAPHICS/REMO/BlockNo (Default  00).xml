@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>4</ID>
+  <Description>"BlockNo (Default : 00)"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjRemo</Address>
+  <Offsets>
+    <Offset>1C</Offset>
+  </Offsets>
+</CheatEntry>

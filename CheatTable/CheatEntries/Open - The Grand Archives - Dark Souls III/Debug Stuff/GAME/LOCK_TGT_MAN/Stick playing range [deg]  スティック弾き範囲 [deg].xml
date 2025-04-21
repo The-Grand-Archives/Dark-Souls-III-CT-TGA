@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099111</ID>
+  <Description>"Stick playing range [deg] | スティック弾き範囲 [deg]"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2840</Offset>
+  </Offsets>
+</CheatEntry>

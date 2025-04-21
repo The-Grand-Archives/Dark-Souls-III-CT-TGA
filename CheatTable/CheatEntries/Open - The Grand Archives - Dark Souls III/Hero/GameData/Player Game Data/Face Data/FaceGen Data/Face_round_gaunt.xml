@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081258</ID>
+  <Description>"Face_round_gaunt"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>738</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

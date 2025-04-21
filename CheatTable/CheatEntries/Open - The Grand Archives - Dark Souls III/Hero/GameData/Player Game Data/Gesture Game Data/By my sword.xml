@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>73670</ID>
+  <Description>"By my sword"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">44:Locked
+45:Unlocked
+</DropDownList>
+  <VariableType>2 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>64</Offset>
+    <Offset>7B8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

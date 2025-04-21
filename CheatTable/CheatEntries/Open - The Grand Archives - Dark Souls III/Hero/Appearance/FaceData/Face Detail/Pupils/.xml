@@ -1,0 +1,24 @@
+<CheatEntry>
+  <ID>73318</ID>
+  <Description>"Pupils"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="73266"/>
+    <id id="73267"/>
+    <id id="73264"/>
+    <id id="73265"/>
+    <id id="73262"/>
+    <id id="73263"/>
+    <id id="73272"/>
+    <id id="73275"/>
+    <id id="73274"/>
+    <id id="73273"/>
+    <id id="73260"/>
+    <id id="73261"/>
+    <id id="73268"/>
+    <id id="73271"/>
+    <id id="73270"/>
+    <id id="73269"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

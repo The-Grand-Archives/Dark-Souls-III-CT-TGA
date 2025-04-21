@@ -1,0 +1,12 @@
+[ENABLE]
+aobscanmodule(EquipTier,DarkSoulsIII.exe,89 81 B4 02 00 00 48 85 DB 74 20 48)
+registersymbol(EquipTier)
+
+EquipTier:
+nop 6
+
+[DISABLE]
+EquipTier:
+db 89 81 B4 02 00 00
+
+unregistersymbol(EquipTier)

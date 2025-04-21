@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>78545</ID>
+  <Description>"No Stamina Consume"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Binary</VariableType>
+  <BitStart>4</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1C0</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

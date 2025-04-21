@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337078805</ID>
+  <Description>"VowType6: Watchdogs of Farron"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>6</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+2C</Address>
+</CheatEntry>

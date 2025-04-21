@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>10395</ID>
+  <Description>"Vertical"</Description>
+  <VariableType>Float</VariableType>
+  <Address>Coords</Address>
+  <Offsets>
+    <Offset>174</Offset>
+  </Offsets>
+</CheatEntry>

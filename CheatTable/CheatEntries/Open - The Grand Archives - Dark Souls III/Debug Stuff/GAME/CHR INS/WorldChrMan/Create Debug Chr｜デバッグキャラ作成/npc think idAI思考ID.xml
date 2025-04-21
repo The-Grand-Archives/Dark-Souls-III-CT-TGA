@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337189339</ID>
+  <Description>"npc think id|AI思考ID"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>124</Offset>
+    <Offset>3018</Offset>
+  </Offsets>
+</CheatEntry>

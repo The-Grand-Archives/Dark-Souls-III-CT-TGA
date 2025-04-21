@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>1337256243</ID>
+  <Description>"GuardCutCancelRate"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>+074</Address>
+</CheatEntry>

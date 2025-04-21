@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337045716</ID>
+  <Description>"simpleModelForDlc"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>5</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+103</Address>
+</CheatEntry>

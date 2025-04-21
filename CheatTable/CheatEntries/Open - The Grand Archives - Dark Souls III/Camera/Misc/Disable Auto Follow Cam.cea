@@ -1,0 +1,24 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.0")
+{$asm}
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+define(camHRotateCorrectionAOB,DarkSoulsIII.exe+515F34)
+registersymbol(camHRotateCorrectionAOB)
+
+camHRotateCorrectionAOB: //"DarkSoulsIII.exe"+5107F4:
+db 90 90 90 90 90 90 90 90
+
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+camHRotateCorrectionAOB: //"DarkSoulsIII.exe"+5107F4:
+db 66 0F 7F A6 40 01 00 00
+//Alt: movdqa [rsi+00000140],xmm4
+unregistersymbol(camHRotateCorrectionAOB)
+
+
+

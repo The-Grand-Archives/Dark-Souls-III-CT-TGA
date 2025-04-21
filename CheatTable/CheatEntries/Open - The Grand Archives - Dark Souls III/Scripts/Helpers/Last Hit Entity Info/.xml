@@ -1,0 +1,33 @@
+<CheatEntry>
+  <ID>88192</ID>
+  <Description>"Last Hit Entity Info"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="88194"/>
+    <id id="88217"/>
+    <id id="89748"/>
+    <id id="89749"/>
+    <id id="88195"/>
+    <id id="88193"/>
+    <id id="88196"/>
+    <id id="88197"/>
+    <id id="88208"/>
+    <id id="88199"/>
+    <id id="88198"/>
+    <id id="88215"/>
+    <id id="88209"/>
+    <id id="88210"/>
+    <id id="88211"/>
+    <id id="88250"/>
+    <id id="89052"/>
+    <id id="88218"/>
+    <id id="88212"/>
+    <id id="88294"/>
+    <id id="88419"/>
+    <id id="89198"/>
+    <id id="89428"/>
+    <id id="89392"/>
+    <id id="89750"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080924</ID>
+  <Description>"IsNoinvade"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>FD</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

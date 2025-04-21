@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337099326</ID>
+  <Description>"Landing VFX Value"</Description>
+  <VariableType>Float</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>60</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

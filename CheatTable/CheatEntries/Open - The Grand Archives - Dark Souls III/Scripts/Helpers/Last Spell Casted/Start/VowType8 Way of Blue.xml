@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337078815</ID>
+  <Description>"VowType8: Way of Blue"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+2F</Address>
+</CheatEntry>

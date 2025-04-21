@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081321</ID>
+  <Description>"Naso_Labial_Lines_Light_Dark"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>77B</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

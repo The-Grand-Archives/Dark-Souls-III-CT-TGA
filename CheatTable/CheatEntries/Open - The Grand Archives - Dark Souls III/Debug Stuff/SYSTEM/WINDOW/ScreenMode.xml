@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337180630</ID>
+  <Description>"ScreenMode"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Window
+1:Fullscreen
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>CSWindow</Address>
+  <Offsets>
+    <Offset>C0</Offset>
+  </Offsets>
+</CheatEntry>

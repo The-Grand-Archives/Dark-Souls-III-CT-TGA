@@ -1,0 +1,51 @@
+//Author: Pavuk
+//Reset Attack of the [rax+7414] pointer
+[ENABLE]
+define(ResetAttack,DarkSoulsIII.exe+5CC544)
+alloc(newmemResetAttack,256,ResetAttack) //"DarkSoulsIII.exe"+5CC544
+
+label(codeReset)
+label(returnReset)
+label(Reset)
+
+newmemResetAttack:
+  xor r8,r8
+  push r8
+  mov r8,[target_ptr]
+  mov r8,[r8+58]
+  mov r8,[r8+320]
+  mov r8d,[r8+7414]
+  mov r9d,000F4240
+  add r9d,r8d
+  xor r11,r11
+  push r11
+  mov r11,[target_ptr]
+  mov r11,[r11+1F90]
+  mov r11,[r11+80]
+  mov r11d,[r11+C8]
+  cmp r9d,r11d
+  je Reset
+  cmp r11d,r8d
+  je Reset
+  jmp codeReset
+Reset:
+  mov [rax+00007414],-01
+codeReset:
+  pop r11
+  pop r8
+  mov ebx,[rax+00007414]
+  jmp returnReset
+
+ResetAttack:
+  jmp newmemResetAttack
+  nop
+returnReset:
+registersymbol(ResetAttack)
+
+[DISABLE]
+
+ResetAttack:
+  db 8B 98 14 74 00 00
+
+unregistersymbol(ResetAttack)
+dealloc(newmemResetAttack)

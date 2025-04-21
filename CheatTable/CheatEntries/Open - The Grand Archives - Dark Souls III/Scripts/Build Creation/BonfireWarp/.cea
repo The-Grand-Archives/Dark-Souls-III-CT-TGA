@@ -1,0 +1,68 @@
+{
+ Author: inuNorii
+ Desc: Warp to selected bonfire, plays the bonfire warp animation.
+
+ Thanks to Luke_Yui for message box
+}
+[ENABLE]
+//aobscanmodule(BonfireWarp_AOB,$process,48 8B 8A ???????? 55 E9 ???????? 41)
+aobscanmodule(Error_Call,$process,40 57 48 83 EC ?? 48 C7 44 24 ?? FEFFFFFF 48 89 5C 24 ?? 48 8B F9 48 8B 05 ???????? 83 B8)
+define(BonfireWarp_Call,BonfireWarp_AOB+1D)
+alloc(BonfireWarp,$200,DarkSoulsIII.exe)
+registerSymbol(BonfireWarp)
+registerSymbol(TargetBonfireId)
+
+BonfireWarp:
+sub rsp,48
+mov rcx,[SprjLuaEventMan]
+mov rdx,[CSDlc]
+mov r8,[TargetBonfireId]
+lea r8d,[r8-000003E8]
+xor r9d,r9d
+cmp r8d,3D10A2 //Champion Gundyr
+jng BonfireWarp_CeremonyCheck
+cmp r8d,4C4B40 //The Ringed Rity
+jnl BonfireWarp_DLCCheck
+cmp r8d,44AA20 //Ashes of Ariandel
+jnl BonfireWarp_DLCCheck2
+BonfireWarp_return:
+mov rdx,[GameMan+ACC]
+lea edx,[rdx-000003E8]
+call DarkSoulsIII.exe+475F00 //BonfireWarp_Call
+add rsp,48
+ret
+
+BonfireWarp_CeremonyCheck:
+cmp r8d,3D10A1 //Untended Graves
+jl BonfireWarp_return
+mov r9d,A
+jmp BonfireWarp_return
+BonfireWarp_DLCCheck:
+lea rax,[ErrorText+46]
+cmp byte ptr [rdx+12],1
+jne BonfireWarp_Error
+jmp BonfireWarp_return
+BonfireWarp_DLCCheck2:
+lea rax,[ErrorText]
+cmp byte ptr [rdx+11],1
+jne BonfireWarp_Error
+jmp BonfireWarp_return
+
+BonfireWarp_Error:
+mov [rsp+30],rax
+lea rcx,[rsp+30]
+call Error_Call
+add rsp,48
+ret
+
+ErrorText:
+dw 'Missing License: Ashes of Ariandel',0
+dw 'Missing License: The Ringed City',0
+
+TargetBonfireId:
+dd #4002951
+
+[DISABLE]
+dealloc(BonfireWarp)
+unregisterSymbol(BonfireWarp)
+unregisterSymbol(TargetBonfireId)

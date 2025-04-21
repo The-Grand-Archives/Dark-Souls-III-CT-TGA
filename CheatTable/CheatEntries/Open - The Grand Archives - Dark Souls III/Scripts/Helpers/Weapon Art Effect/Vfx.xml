@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337033704</ID>
+  <Description>"Vfx"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>VfxAnim_ptr</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

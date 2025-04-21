@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096690</ID>
+  <Description>"MP bottle recovery Lottery probability (accumulated value) | MP瓶回復 抽選確率(蓄積値)"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>2 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>CAE</Offset>
+  </Offsets>
+</CheatEntry>

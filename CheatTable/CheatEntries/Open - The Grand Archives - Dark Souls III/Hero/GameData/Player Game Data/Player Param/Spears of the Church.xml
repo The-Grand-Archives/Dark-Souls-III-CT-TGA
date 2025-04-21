@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080962</ID>
+  <Description>"Spears of the Church"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>D0</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

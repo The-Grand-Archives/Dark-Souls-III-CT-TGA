@@ -1,0 +1,15 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local Ragged_Mask = { --Good param mods
+  {76500000,0x24,"00 FC AC 06"}, --Life Ring effect [Array of Byte format]
+}
+paramUtils:paramIterator("EquipParamProtector",Ragged_Mask,"Ragged_Mask_Indentifier") --Save values on 'enable'
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+ paramUtils:paramDepatcher("Ragged_Mask_Indentifier") --Restore default values on 'disable'
+
+
+

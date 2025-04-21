@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337018678</ID>
+  <Description>"CharacterInit Mods"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337018679"/>
+    <id id="1337018682"/>
+    <id id="1337018787"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337081406</ID>
+  <Description>"Party Member Info"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337081407"/>
+    <id id="1337081409"/>
+    <id id="1337081410"/>
+    <id id="1337081411"/>
+    <id id="1337081408"/>
+    <id id="1337081404"/>
+    <id id="1337081414"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

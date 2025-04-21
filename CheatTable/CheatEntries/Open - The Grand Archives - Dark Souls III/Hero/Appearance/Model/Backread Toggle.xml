@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>489663</ID>
+  <Description>"Backread Toggle"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Backread Enabled
+1:Backread Disabled
+</DropDownList>
+  <VariableType>Binary</VariableType>
+  <BitStart>7</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1EE9</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

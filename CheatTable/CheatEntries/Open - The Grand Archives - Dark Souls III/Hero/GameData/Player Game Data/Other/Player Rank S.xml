@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337078915</ID>
+  <Description>"Player Rank S"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>C0</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

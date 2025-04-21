@@ -1,0 +1,20 @@
+[ENABLE]
+alloc(ClearAllPlayedAreas,100,DarkSoulsIII.exe)
+createthread(ClearAllPlayedAreas)
+
+ClearAllPlayedAreas:
+mov rcx,[GameDataMan]
+mov rdx,[WorldChrMan]
+mov rdx,[rdx+80]
+mov rdx,[rdx+1ABC]
+mov rcx,[rcx+10]
+mov rbx,[rcx+810]
+mov [rbx],edx
+lea rbx,[rbx+04]
+mov [rcx+818],rbx
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(ClearAllPlayedAreas)

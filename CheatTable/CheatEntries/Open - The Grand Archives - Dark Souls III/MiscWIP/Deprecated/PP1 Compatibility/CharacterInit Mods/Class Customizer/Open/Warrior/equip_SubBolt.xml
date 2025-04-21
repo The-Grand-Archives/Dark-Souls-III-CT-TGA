@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337018744</ID>
+  <Description>"equip_SubBolt"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">-1:Empty
+404000:Standard Bolt
+404100:Heavy Bolt
+404200:Sniper Bolt
+404300:Wood Bolt
+404400:Lightning Bolt
+404500:Splintering Bolt
+404600:Exploding Bolt
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+3C</Address>
+</CheatEntry>

@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>1337098497</ID>
+  <Description>"Undead Bone Shard"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>10*1D</Offset>
+    <Offset>28</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337098498"/>
+    <id id="1337098499"/>
+    <id id="1337098500"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337080868</ID>
+  <Description>"Resurrection counter[1] | 復活カウンタ[1]"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>E0</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,16 @@
+{
+  Author: Igromanru
+  Description: Removes requirements from all spells
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local object = Magic:new("NoRequirementsForAllSpells")
+object:patchAllByte(0x1E,0) -- INT
+object:patchAllByte(0x1F,0) -- FTH
+
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("NoRequirementsForAllSpells")

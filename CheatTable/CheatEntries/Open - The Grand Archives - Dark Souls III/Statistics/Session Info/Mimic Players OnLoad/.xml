@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>87033</ID>
+  <Description>"Mimic Players OnLoad"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="88433"/>
+    <id id="88424"/>
+    <id id="88425"/>
+    <id id="88426"/>
+    <id id="88427"/>
+    <id id="88428"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

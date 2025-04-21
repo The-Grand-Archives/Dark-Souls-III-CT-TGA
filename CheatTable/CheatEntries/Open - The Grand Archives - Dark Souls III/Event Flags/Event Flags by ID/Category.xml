@@ -1,0 +1,17 @@
+<CheatEntry>
+  <ID>1337256121</ID>
+  <Description>"Category"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:All
+1:Bonfires
+2:Bosses
+3:Doors and Shortcuts
+4:Elevators
+5:Illusory Walls
+6:NPCs
+7:Misc
+8:Non-respawning Enemies
+</DropDownList>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>ef.flag_data+8</Address>
+</CheatEntry>

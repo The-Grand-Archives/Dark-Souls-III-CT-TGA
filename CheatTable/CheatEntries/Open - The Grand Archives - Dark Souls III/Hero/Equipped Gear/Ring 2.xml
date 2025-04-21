@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337078885</ID>
+  <Description>"Ring 2"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>374</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

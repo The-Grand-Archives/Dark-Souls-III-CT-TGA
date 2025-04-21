@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097792</ID>
+  <Description>"Omission update level judgment distance [m] (previous frame non-drawing Lv2 judgment) | 省略更新レベル判定距離[m]（前フレーム非描画 Lv2判定）"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>38</Offset>
+  </Offsets>
+</CheatEntry>

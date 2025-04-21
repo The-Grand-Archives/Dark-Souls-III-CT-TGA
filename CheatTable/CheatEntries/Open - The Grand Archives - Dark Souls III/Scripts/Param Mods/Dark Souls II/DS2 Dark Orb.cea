@@ -1,0 +1,67 @@
+//Written by Boblord
+//replaces heavy soul arrow with dark orb from ds2(or as close as I can get)
+//guess this means I have to make climax one of these days, doesnt it?
+
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+local GoodsArrow = EquipParamGoods:new("darkorb", 1302000)
+GoodsArrow:iconId(264)
+
+local HeavyArrow = Magic:new("darkorb",1302000)
+HeavyArrow:SortId(3128)
+HeavyArrow:Mp(16)
+HeavyArrow:Stamina(45)
+HeavyArrow:RequirementIntellect(12)
+HeavyArrow:RequirementFaith(12)
+HeavyArrow:RefType(32)
+HeavyArrow:sfxID1(528800)
+HeavyArrow:sfxID2(-1)
+HeavyArrow:Bullet1(12600000)
+
+local DarkOrb = Bullet:new("darkorb", 12600000)
+DarkOrb:sfxId_Bullet(523093)
+DarkOrb:sfxId_Hit(523094)
+DarkOrb:life(1.5)
+DarkOrb:dist(12)
+DarkOrb:hormingStopRange(0.4)
+DarkOrb:initVellocity(27)
+DarkOrb:accelInRange(40)
+DarkOrb:accelOutRange(40)
+DarkOrb:maxVellocity(40)
+DarkOrb:minVellocity(6)
+DarkOrb:accelTime(0.32)
+DarkOrb:HitBulletID(12600100)
+DarkOrb:homingAngle(35)
+DarkOrb:lockShootLimitAng(45)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+4652:
+dw 'Dark Orb',0
+[[[[MsgRepository]+8]+0]+C0]+00021908:
+dw 'A hex modified from an old sorcery by',A
+dw 'Gilleah, the father of Hexing.',A
+dw 'Fires a heavy orb of darkness.',A
+dw '',A
+dw 'Hexing, an art nearly lost to time,',A
+dw 'had its spells incorporated into other forms of magic.',0
+[[[[MsgRepository]+08]+00]+A0]+6DE0:
+dw 'Fires orb of darkness',0
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("darkorb")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+4652:
+dw 'Heavy Soul Arrow',0
+[[[[MsgRepository]+8]+0]+C0]+00021908:
+dw 'Elementary, yet practical sorcery from long ago.',A
+dw 'Fires a heavy soul arrow.',A
+dw '',A
+dw 'Offers greater power but slower casting time, entailing a vulnerability that makes this sorcery trickier to handle.',0
+[[[[MsgRepository]+08]+00]+A0]+6DE0:
+dw 'Fire heavy soul arrow',0
+

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097965</ID>
+  <Description>"Enable landing SFX matrix. | 着弾SFXマトリックスを有効化。"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>177</Offset>
+  </Offsets>
+</CheatEntry>

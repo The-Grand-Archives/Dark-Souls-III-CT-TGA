@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>88321</ID>
+  <Description>"-"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>2</ByteLength>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>6b8</Offset>
+    <Offset>88</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

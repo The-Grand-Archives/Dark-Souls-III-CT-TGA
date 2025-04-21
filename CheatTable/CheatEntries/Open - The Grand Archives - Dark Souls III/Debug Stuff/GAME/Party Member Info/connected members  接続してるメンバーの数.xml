@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337187667</ID>
+  <Description>"connected members | 接続してるメンバーの数"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>D3C</Offset>
+  </Offsets>
+</CheatEntry>

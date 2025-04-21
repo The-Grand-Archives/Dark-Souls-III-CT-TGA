@@ -1,0 +1,7 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+RemoveItem(getItemIdx(readInteger(RemoveItem_data+4)))
+disableMemrec(memrec)
+[DISABLE]
+

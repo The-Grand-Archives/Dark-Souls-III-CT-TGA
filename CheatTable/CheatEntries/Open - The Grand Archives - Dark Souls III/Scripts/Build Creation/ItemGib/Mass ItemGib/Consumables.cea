@@ -1,0 +1,345 @@
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+local win = MIGForm:new()
+
+Consumable = Item:new()
+function Consumable:new(attributes)
+  o = Item:new(attributes.id, attributes.typ, attributes.quantity, attributes.dlc, attributes.cutContent)
+  o.unsafe = attributes.unsafe or false
+  setmetatable(o, self)
+  self.__index = self
+  return o
+end
+
+local consumables = {
+  Consumable:new({id = 0x00061A80, typ = 'Ammunition'}),	--Standard Arrow
+  Consumable:new({id = 0x00061AE4, typ = 'Ammunition'}),	--Fire Arrow
+  Consumable:new({id = 0x00061B48, typ = 'Ammunition'}),	--Poison Arrow
+  Consumable:new({id = 0x00061BAC, typ = 'Ammunition'}),	--Large Arrow
+  Consumable:new({id = 0x00061C10, typ = 'Ammunition'}),	--Feather Arrow
+  Consumable:new({id = 0x00061C74, typ = 'Ammunition'}),	--Moonlight Arrow
+  Consumable:new({id = 0x00061CD8, typ = 'Ammunition'}),	--Wood Arrow
+  Consumable:new({id = 0x00061D3C, typ = 'Ammunition'}),	--Dark Arrow
+  Consumable:new({id = 0x00062250, typ = 'Ammunition'}),	--Dragonslayer Greatarrow
+  Consumable:new({id = 0x00062318, typ = 'Ammunition'}),	--Dragonslayer Lightning Arrow
+  Consumable:new({id = 0x0006237C, typ = 'Ammunition'}),	--Onislayer Greatarrow
+  Consumable:new({id = 0x000623E0, typ = 'Ammunition'}),	--Millwood Greatarrow
+  Consumable:new({id = 0x00062A20, typ = 'Ammunition'}),	--Standard Bolt
+  Consumable:new({id = 0x00062A84, typ = 'Ammunition'}),	--Heavy Bolt
+  Consumable:new({id = 0x00062AE8, typ = 'Ammunition'}),	--Sniper Bolt
+  Consumable:new({id = 0x00062B4C, typ = 'Ammunition'}),	--Wood Bolt
+  Consumable:new({id = 0x00062BB0, typ = 'Ammunition'}),	--Lightning Bolt
+  Consumable:new({id = 0x00062C14, typ = 'Ammunition'}),	--Splintering Bolt
+  Consumable:new({id = 0x00062C78, typ = 'Ammunition'}),	--Exploding Bolt
+  Consumable:new({id = 0x20002710, typ = 'Covenants', quantity = 1}),	---Blade of the Darkmoon
+  Consumable:new({id = 0x20002724, typ = 'Covenants', quantity = 1}),	---Watchdogs of Farron
+  Consumable:new({id = 0x2000272E, typ = 'Covenants', quantity = 1}),	---Aldrich Faithful
+  Consumable:new({id = 0x20002738, typ = 'Covenants', quantity = 1}),	---Warrior of Sunlight
+  Consumable:new({id = 0x20002742, typ = 'Covenants', quantity = 1}),	---Mound-Makers
+  Consumable:new({id = 0x2000274C, typ = 'Covenants', quantity = 1}),	---Way of Blue
+  Consumable:new({id = 0x20002756, typ = 'Covenants', quantity = 1}),	---Blue Sentinel
+  Consumable:new({id = 0x20002760, typ = 'Covenants', quantity = 1}),	---Rosaria's Fingers
+  Consumable:new({id = 0x2000276A, typ = 'Covenants', dlc = 2, quantity = 1, unsafe = true}),	---Spears of the Church
+  Consumable:new({id = 0x40000064, typ = 'Multiplayer', quantity = 1}),	--White Sign Soapstone
+  Consumable:new({id = 0x40000065, typ = 'Multiplayer', quantity = 1}),	--Red Sign Soapstone
+  Consumable:new({id = 0x40000066, typ = 'Multiplayer', quantity = 1}),	--Red Eye Orb
+  Consumable:new({id = 0x4000006C, typ = 'Multiplayer', quantity = 1}),	--Roster of Knights
+  Consumable:new({id = 0x4000006F, typ = 'Multiplayer'}),	--Cracked Red Eye Orb
+  Consumable:new({id = 0x40000073, typ = 'QuestItems', quantity = 1}),	--Black Eye Orb
+  Consumable:new({id = 0x400000F0, typ = 'Consumables'}),	--Divine Blessing
+  Consumable:new({id = 0x400000F1, typ = 'Consumables'}),	--Hidden Blessing
+--Consumable:new({id = 0x400000F2, typ = 'Tools', quantity = 1, cutContent = true}),	--Silver Pendant
+  Consumable:new({id = 0x40000104, typ = 'Consumables'}),	--Green Blossom
+  Consumable:new({id = 0x40000105, typ = 'Consumables'}),	--Budding Green Blossom
+  Consumable:new({id = 0x40000106, typ = 'Consumables'}),	--Budding Green Blossom (Sirris Questline)
+  Consumable:new({id = 0x4000010E, typ = 'Consumables'}),	--Bloodred Moss Clump
+  Consumable:new({id = 0x4000010F, typ = 'Consumables'}),	--Purple Moss Clump
+  Consumable:new({id = 0x40000110, typ = 'Consumables'}),	--Blooming Purple Moss Clump
+  Consumable:new({id = 0x40000112, typ = 'Consumables'}),	--Purging Stone
+  Consumable:new({id = 0x40000114, typ = 'Consumables'}),	--Rime-blue Moss Clump
+--Consumable:new({id = 0x40000115, typ = 'Consumables', cutContent = true}),	--Monastery Charm
+  Consumable:new({id = 0x40000118, typ = 'Consumables'}),	--Repair Powder
+  Consumable:new({id = 0x40000122, typ = 'Projectiles'}),	--Kukri
+  Consumable:new({id = 0x40000124, typ = 'Projectiles'}),	--Firebomb
+  Consumable:new({id = 0x40000125, typ = 'Projectiles'}),	--Dung Pie
+  Consumable:new({id = 0x40000126, typ = 'Projectiles'}),	--Alluring Skull
+  Consumable:new({id = 0x40000128, typ = 'Projectiles'}),	--Undead Hunter Charm
+  Consumable:new({id = 0x40000129, typ = 'Projectiles'}),	--Black Firebomb
+  Consumable:new({id = 0x4000012B, typ = 'Projectiles'}),	--Rope Firebomb
+  Consumable:new({id = 0x4000012C, typ = 'Projectiles'}),	--Lightning Urn
+--Consumable:new({id = 0x4000012D, typ = 'Projectiles', cutContent = true}),	--Holy Water Urn
+  Consumable:new({id = 0x4000012E, typ = 'Projectiles'}),	--Rope Black Firebomb
+  Consumable:new({id = 0x4000012F, typ = 'Projectiles'}),	--Stalk Dung Pie
+  Consumable:new({id = 0x40000130, typ = 'Projectiles'}),	--Duel Charm
+  Consumable:new({id = 0x40000136, typ = 'Projectiles'}),	--Throwing Knife
+  Consumable:new({id = 0x40000137, typ = 'Projectiles'}),	--Poison Throwing Knife
+  Consumable:new({id = 0x4000014A, typ = 'Consumables'}),	--Charcoal Pine Resin
+  Consumable:new({id = 0x4000014B, typ = 'Consumables'}),	--Gold Pine Resin
+  Consumable:new({id = 0x4000014E, typ = 'Consumables'}),	--Human Pine Resin
+  Consumable:new({id = 0x4000014F, typ = 'Consumables'}),	--Carthus Rouge
+  Consumable:new({id = 0x40000150, typ = 'Consumables'}),	--Pale Pine Resin
+  Consumable:new({id = 0x40000154, typ = 'Consumables'}),	--Charcoal Pine Bundle
+  Consumable:new({id = 0x40000155, typ = 'Consumables'}),	--Gold Pine Bundle
+  Consumable:new({id = 0x40000157, typ = 'Consumables'}),	--Rotten Pine Resin
+  Consumable:new({id = 0x4000015E, typ = 'Consumables'}),	--Homeward Bone
+  Consumable:new({id = 0x4000015F, typ = 'Tools'}),	--Coiled Sword Fragment
+  Consumable:new({id = 0x4000016E, typ = 'CovenantItems'}),	--Wolf's Blood Swordgrass
+  Consumable:new({id = 0x4000016F, typ = 'CovenantItems'}),	--Human Dregs
+  Consumable:new({id = 0x40000170, typ = 'CovenantItems'}),	--Forked Pale Tongue
+  Consumable:new({id = 0x40000171, typ = 'CovenantItems'}),	--Proof of a Concord Well Kept
+  Consumable:new({id = 0x40000172, typ = 'Consumables'}),	--Prism Stone
+  Consumable:new({id = 0x40000173, typ = 'Tools'}),	--Binoculars
+  Consumable:new({id = 0x40000174, typ = 'CovenantItems'}),	--Proof of a Concord Kept
+  Consumable:new({id = 0x40000175, typ = 'CovenantItems'}),	--Pale Tongue
+  Consumable:new({id = 0x40000176, typ = 'CovenantItems'}),	--Vertebra Shackle
+  Consumable:new({id = 0x40000177, typ = 'CovenantItems'}),	--Sunlight Medal
+  Consumable:new({id = 0x40000178, typ = 'Tools', cutContent = true}),	--Pendant
+  Consumable:new({id = 0x40000179, typ = 'Tools'}),	--Dragon Head Stone
+  Consumable:new({id = 0x4000017A, typ = 'Tools'}),	--Dragon Torso Stone
+  Consumable:new({id = 0x4000017C, typ = 'Tools'}),	--Rubbish
+  Consumable:new({id = 0x40000181, typ = 'Multiplayer', quantity = 1}),	--Dried Finger
+  Consumable:new({id = 0x40000183, typ = 'Tools', quantity = 1}),	--Twinkling Dragon Head Stone
+  Consumable:new({id = 0x40000184, typ = 'Tools', quantity = 1}),	--Twinkling Dragon Torso Stone
+  Consumable:new({id = 0x40000186, typ = 'QuestItems', quantity = 1}),	--Fire Keeper Soul
+  Consumable:new({id = 0x40000190, typ = 'Souls'}),	--Fading Soul
+  Consumable:new({id = 0x40000191, typ = 'Souls'}),	--Soul of a Deserted Corpse
+  Consumable:new({id = 0x40000192, typ = 'Souls'}),	--Large Soul of a Deserted Corpse
+  Consumable:new({id = 0x40000193, typ = 'Souls'}),	--Soul of an Unknown Traveler
+  Consumable:new({id = 0x40000194, typ = 'Souls'}),	--Large Soul of an Unknown Traveler
+  Consumable:new({id = 0x40000195, typ = 'Souls'}),	--Soul of a Nameless Soldier
+  Consumable:new({id = 0x40000196, typ = 'Souls'}),	--Large Soul of a Nameless Soldier
+  Consumable:new({id = 0x40000197, typ = 'Souls'}),	--Soul of a Weary Warrior
+  Consumable:new({id = 0x40000198, typ = 'Souls'}),	--Large Soul of a Weary Warrior
+  Consumable:new({id = 0x40000199, typ = 'Souls'}),	--Soul of a Crestfallen Knight
+  Consumable:new({id = 0x4000019A, typ = 'Souls'}),	--Large Soul of a Crestfallen Knight
+  Consumable:new({id = 0x4000019B, typ = 'Souls'}),	--Soul of a Proud Paladin
+  Consumable:new({id = 0x4000019C, typ = 'Souls'}),	--Large Soul of a Proud Paladin
+  Consumable:new({id = 0x4000019D, typ = 'Souls'}),	--Soul of an Intrepid Hero
+  Consumable:new({id = 0x4000019E, typ = 'Souls'}),	--Large Soul of an Intrepid Hero
+  Consumable:new({id = 0x4000019F, typ = 'Souls'}),	--Soul of a Seasoned Warrior
+  Consumable:new({id = 0x400001A0, typ = 'Souls'}),	--Large Soul of a Seasoned Warrior
+  Consumable:new({id = 0x400001A1, typ = 'Souls'}),	--Soul of an Old Hand
+  Consumable:new({id = 0x400001A2, typ = 'Souls'}),	--Soul of a Venerable Old Hand
+  Consumable:new({id = 0x400001A3, typ = 'Souls'}),	--Soul of a Champion
+  Consumable:new({id = 0x400001A4, typ = 'Souls'}),	--Soul of a Great Champion
+  Consumable:new({id = 0x400001B8, typ = 'Multiplayer'}),	--Seed of a Giant Tree
+--Consumable:new({id = 0x400001B9, typ = 'Consumables', cutContent = true}),	--Spirit Amethyst
+--Consumable:new({id = 0x400001BA, typ = 'Consumables', cutContent = true}),	--Spirit Amethyst
+--Consumable:new({id = 0x400001C2, typ = 'Consumables', cutContent = true}),	--Oozing Charm Berry
+--Consumable:new({id = 0x400001C3, typ = 'Consumables', cutContent = true}),	--Oozing Flash Berry
+  Consumable:new({id = 0x400001C4, typ = 'Consumables'}),	--Mossfruit
+--Consumable:new({id = 0x400001C5, typ = 'Consumables', cutContent = true}),	--Brightbug
+  Consumable:new({id = 0x400001C6, typ = 'Consumables'}),	--Young White Branch
+  Consumable:new({id = 0x400001C7, typ = 'Consumables'}),	--Rusted Coin
+  Consumable:new({id = 0x400001C8, typ = 'Consumables'}),	--Siegbräu
+  Consumable:new({id = 0x400001C9, typ = 'Consumables'}),	--Rusted Gold Coin
+  Consumable:new({id = 0x400001CA, typ = 'Consumables'}),	--Blue Bug Pellet
+  Consumable:new({id = 0x400001CB, typ = 'Consumables'}),	--Red Bug Pellet
+  Consumable:new({id = 0x400001CC, typ = 'Consumables'}),	--Yellow Bug Pellet
+  Consumable:new({id = 0x400001CD, typ = 'Consumables'}),	--Black Bug Pellet
+  Consumable:new({id = 0x400001CE, typ = 'Consumables'}),	--Young White Branch From Giant
+  Consumable:new({id = 0x400001CF, typ = 'Consumables'}),	--Young White Branch
+  Consumable:new({id = 0x400001EA, typ = 'QuestItems', quantity = 8}),	--Dark Sigil
+  Consumable:new({id = 0x400001F4, typ = 'Consumables'}),	--Ember
+  Consumable:new({id = 0x40000208, typ = 'Tools', quantity = 1}),	--Hello Carving
+  Consumable:new({id = 0x40000209, typ = 'Tools', quantity = 1}),	--Thank you Carving
+  Consumable:new({id = 0x4000020A, typ = 'Tools', quantity = 1}),	--Very good! Carving
+  Consumable:new({id = 0x4000020B, typ = 'Tools', quantity = 1}),	--I'm sorry Carving
+  Consumable:new({id = 0x4000020C, typ = 'Tools', quantity = 1}),	--Help me! Carving
+  Consumable:new({id = 0x400002C8, typ = 'BossSouls'}),	--Soul of Champion Gundyr
+--Consumable:new({id = 0x400002C9, typ = 'BossSouls', cutContent = true}),	--Soul of a Wicked Spirit
+  Consumable:new({id = 0x400002CA, typ = 'BossSouls'}),	--Soul of the Dancer
+  Consumable:new({id = 0x400002CB, typ = 'BossSouls'}),	--Soul of a Crystal Sage
+  Consumable:new({id = 0x400002CD, typ = 'BossSouls'}),	--Soul of the Blood of the Wolf
+  Consumable:new({id = 0x400002CE, typ = 'BossSouls'}),	--Soul of Consumed Oceiros
+  Consumable:new({id = 0x400002CF, typ = 'BossSouls'}),	--Soul of Boreal Valley Vordt
+  Consumable:new({id = 0x400002D0, typ = 'BossSouls'}),	--Soul of the Old Demon King
+  Consumable:new({id = 0x400002D1, typ = 'BossSouls'}),	--Soul of Dragonslayer Armour
+  Consumable:new({id = 0x400002D2, typ = 'BossSouls'}),	--Soul of the Nameless King
+--Consumable:new({id = 0x400002D3, typ = 'BossSouls', cutContent = true}),	--Soul of the Great Bat
+  Consumable:new({id = 0x400002D4, typ = 'BossSouls'}),	--Soul of Pontiff Sulyvahn
+  Consumable:new({id = 0x400002D5, typ = 'BossSouls'}),	--Soul of Aldrich
+  Consumable:new({id = 0x400002D6, typ = 'BossSouls'}),	--Soul of High Lord Wolnir
+  Consumable:new({id = 0x400002D7, typ = 'BossSouls'}),	--Soul of the Rotted Greatwood
+  Consumable:new({id = 0x400002D8, typ = 'BossSouls'}),	--Soul of Rosaria
+  Consumable:new({id = 0x400002D9, typ = 'BossSouls'}),	--Soul of the Deacons of the Deep
+  Consumable:new({id = 0x400002DB, typ = 'BossSouls'}),	--Soul of the Twin Princes
+  Consumable:new({id = 0x400002DC, typ = 'BossSouls'}),	--Soul of Yhorm the Giant
+  Consumable:new({id = 0x400002DD, typ = 'BossSouls'}),	--Soul of the Lords
+  Consumable:new({id = 0x400002E3, typ = 'BossSouls'}),	--Soul of a Demon
+--Consumable:new({id = 0x400002E6, typ = 'BossSouls', cutContent = true}),	--Soul of the Twin Princes
+  Consumable:new({id = 0x400002E7, typ = 'BossSouls'}),	--Soul of a Stray Demon
+  Consumable:new({id = 0x400003E8, typ = 'Ores'}),	--Titanite Shard
+  Consumable:new({id = 0x400003E9, typ = 'Ores'}),	--Large Titanite Shard
+  Consumable:new({id = 0x400003EA, typ = 'Ores'}),	--Titanite Chunk
+  Consumable:new({id = 0x400003EB, typ = 'Ores'}),	--Titanite Slab
+--Consumable:new({id = 0x400003F2, typ = 'Ores', cutContent = true}),	--Dragon Scale
+  Consumable:new({id = 0x400003FC, typ = 'Ores'}),	--Titanite Scale
+  Consumable:new({id = 0x40000406, typ = 'Ores'}),	--Twinkling Titanite
+  Consumable:new({id = 0x4000044C, typ = 'Ores'}),	--Heavy Gem
+  Consumable:new({id = 0x40000456, typ = 'Ores'}),	--Sharp Gem
+  Consumable:new({id = 0x40000460, typ = 'Ores'}),	--Refined Gem
+  Consumable:new({id = 0x4000046A, typ = 'Ores'}),	--Crystal Gem
+  Consumable:new({id = 0x40000474, typ = 'Ores'}),	--Simple Gem
+  Consumable:new({id = 0x4000047E, typ = 'Ores'}),	--Fire Gem
+  Consumable:new({id = 0x40000488, typ = 'Ores'}),	--Chaos Gem
+  Consumable:new({id = 0x40000492, typ = 'Ores'}),	--Lightning Gem
+  Consumable:new({id = 0x4000049C, typ = 'Ores'}),	--Deep Gem
+  Consumable:new({id = 0x400004A6, typ = 'Ores'}),	--Dark Gem
+  Consumable:new({id = 0x400004B0, typ = 'Ores'}),	--Poison Gem
+  Consumable:new({id = 0x400004BA, typ = 'Ores'}),	--Blood Gem
+  Consumable:new({id = 0x400004C4, typ = 'Ores'}),	--Raw Gem
+  Consumable:new({id = 0x400004CE, typ = 'Ores'}),	--Blessed Gem
+  Consumable:new({id = 0x400004D8, typ = 'Ores'}),	--Hollow Gem
+  Consumable:new({id = 0x400004E2, typ = 'Ores'}),	--Shriving Stone
+  Consumable:new({id = 0x400007D1, typ = 'Keys', quantity = 1}),	--Lift Chamber Key
+--Consumable:new({id = 0x400007D3, typ = 'Keys', quantity = 1, cutContent = true}),	--Bridge Key
+--Consumable:new({id = 0x400007D4, typ = 'Keys', quantity = 1, cutContent = true}),	--Iron Seal of the Wolf
+  Consumable:new({id = 0x400007D5, typ = 'Keys', quantity = 1}),	--Small Doll
+  Consumable:new({id = 0x400007D7, typ = 'Keys', quantity = 1}),	--Jailbreaker's Key
+  Consumable:new({id = 0x400007D8, typ = 'Keys', quantity = 1}),	--Jailer's Key Ring
+  Consumable:new({id = 0x400007D9, typ = 'Keys', quantity = 1}),	--Grave Key
+  Consumable:new({id = 0x400007DA, typ = 'Keys', quantity = 1}),	--Cell Key
+  Consumable:new({id = 0x400007DB, typ = 'Keys', quantity = 1}),	--Dungeon Ground Floor Key
+  Consumable:new({id = 0x400007DC, typ = 'Keys', quantity = 1}),	--Old Cell Key
+  Consumable:new({id = 0x400007DD, typ = 'Keys', quantity = 1}),	--Tower Key
+  Consumable:new({id = 0x400007DE, typ = 'Keys', quantity = 1}),	--Grand Archives Key
+  Consumable:new({id = 0x400007DF, typ = 'Keys', quantity = 1}),	--Tower Key
+--Consumable:new({id = 0x40000835, typ = 'Keys', quantity = 1, cutContent = true}),	--Holy Remains
+  Consumable:new({id = 0x40000836, typ = 'Keys', quantity = 1}),	--Small Lothric Banner
+  Consumable:new({id = 0x40000837, typ = 'Ores', quantity = 1}),	--Farron Coal
+  Consumable:new({id = 0x40000838, typ = 'Ores', quantity = 1}),	--Sage's Coal
+  Consumable:new({id = 0x40000839, typ = 'Ores', quantity = 1}),	--Giant's Coal
+  Consumable:new({id = 0x4000083A, typ = 'Ores', quantity = 1}),	--Profaned Coal
+  Consumable:new({id = 0x4000083B, typ = 'Ashes', quantity = 1}),	--Mortician's Ashes
+  Consumable:new({id = 0x4000083C, typ = 'Ashes', quantity = 1}),	--Dreamchaser's Ashes
+  Consumable:new({id = 0x4000083D, typ = 'Ashes', quantity = 1}),	--Paladin's Ashes
+  Consumable:new({id = 0x4000083E, typ = 'Ashes', quantity = 1}),	--Grave Warden's Ashes
+  Consumable:new({id = 0x4000083F, typ = 'Ashes', quantity = 1}),	--Greirat's Ashes
+  Consumable:new({id = 0x40000840, typ = 'Ashes', quantity = 1}),	--Orbeck's Ashes
+  Consumable:new({id = 0x40000841, typ = 'Ashes', quantity = 1}),	--Cornyx's Ashes
+  Consumable:new({id = 0x40000842, typ = 'Ashes', quantity = 1}),	--Karla's Ashes
+  Consumable:new({id = 0x40000843, typ = 'Ashes', quantity = 1}),	--Irina's Ashes
+  Consumable:new({id = 0x40000844, typ = 'Ashes', quantity = 1}),	--Yuria's Ashes
+  Consumable:new({id = 0x40000845, typ = 'Keys', quantity = 1}),	--Basin of Vows
+  Consumable:new({id = 0x40000846, typ = 'QuestItems'}),	--Loretta's Bone
+  Consumable:new({id = 0x40000847, typ = 'Keys', quantity = 1}),	--Braille Divine Tome of Carim
+  Consumable:new({id = 0x40000848, typ = 'Keys', quantity = 1}),	--Braille Divine Tome of Lothric
+  Consumable:new({id = 0x40000849, typ = 'Keys', quantity = 1}),	--Braille Divine Sunlight Tome
+  Consumable:new({id = 0x4000084B, typ = 'Keys', quantity = 1}),	--Cinders of a Lord
+  Consumable:new({id = 0x4000084C, typ = 'Keys', quantity = 1}),	--Cinders of a Lord
+  Consumable:new({id = 0x4000084D, typ = 'Keys', quantity = 1}),	--Cinders of a Lord
+  Consumable:new({id = 0x4000084E, typ = 'Keys', quantity = 1}),	--Cinders of a Lord
+  Consumable:new({id = 0x4000084F, typ = 'Keys', quantity = 1}),	--Great Swamp Pyromancy Tome
+  Consumable:new({id = 0x40000850, typ = 'Keys', quantity = 1}),	--Carthus Pyromancy Tome
+  Consumable:new({id = 0x40000851, typ = 'Keys', quantity = 1}),	--Izalith Pyromancy Tome
+  Consumable:new({id = 0x40000852, typ = 'Keys', quantity = 1}),	--Quelana Pyromancy Tome
+  Consumable:new({id = 0x40000853, typ = 'Keys', quantity = 1}),	--Grave Warden Pyromancy Tome
+  Consumable:new({id = 0x40000854, typ = 'Keys', quantity = 1}),	--Sage's Scroll
+  Consumable:new({id = 0x40000855, typ = 'Keys', quantity = 1}),	--Logan's Scroll
+  Consumable:new({id = 0x40000856, typ = 'Keys', quantity = 1}),	--Crystal Scroll
+  Consumable:new({id = 0x40000857, typ = 'Keys', quantity = 1}),	--Transposing Kiln
+--Consumable:new({id = 0x40000858, typ = 'QuestItems', quantity = 1, cutContent = true}),	--Gwyndolin's Finger
+  Consumable:new({id = 0x40000859, typ = 'Tools', quantity = 1}),	--Coiled Sword
+  Consumable:new({id = 0x4000085A, typ = 'QuestItems', quantity = 1}),	--Eyes of a Fire Keeper
+  Consumable:new({id = 0x4000085B, typ = 'QuestItems', quantity = 1}),	--Sword of Avowal
+  Consumable:new({id = 0x4000085C, typ = 'Keys', quantity = 1}),	--Golden Scroll
+  Consumable:new({id = 0x4000085D, typ = 'Consumables'}),	--Estus Shard
+  Consumable:new({id = 0x4000085E, typ = 'QuestItems', quantity = 1}),	--Hawkwood's Swordgrass
+  Consumable:new({id = 0x4000085F, typ = 'Consumables'}),	--Undead Bone Shard
+  Consumable:new({id = 0x40000860, typ = 'Keys', quantity = 1}),	--Deep Braille Divine Tome
+  Consumable:new({id = 0x40000861, typ = 'Keys', quantity = 1}),	--Londor Braille Divine Tome
+  Consumable:new({id = 0x40000862, typ = 'Ashes', quantity = 1}),	--Excrement-covered Ashes
+  Consumable:new({id = 0x40000863, typ = 'Ashes', quantity = 1}),	--Prisoner Chief's Ashes
+  Consumable:new({id = 0x40000864, typ = 'Ashes', quantity = 1}),	--Xanthous Ashes
+  Consumable:new({id = 0x40000865, typ = 'Ashes', quantity = 1}),	--Hollow's Ashes
+  Consumable:new({id = 0x40000866, typ = 'Ashes', quantity = 1}),	--Patches' Ashes
+  Consumable:new({id = 0x40000867, typ = 'Ashes', quantity = 1}),	--Dragon Chaser's Ashes
+  Consumable:new({id = 0x40000868, typ = 'Ashes', quantity = 1}),	--Easterner's Ashes
+  Consumable:new({id = 0x400002E8, typ = 'BossSouls', dlc  = 1, unsafe = true}),	--Soul of Sister Friede
+  Consumable:new({id = 0x40000869, typ = 'Multiplayer', quantity = 1, dlc = 3, unsafe = true}),	--Champions Bones
+  Consumable:new({id = 0x4000086A, typ = 'Ashes', quantity = 1, dlc = 1, unsafe = true}),	--Captain's Ashes
+  Consumable:new({id = 0x4000086B, typ = 'Keys', quantity = 1, dlc = 1, unsafe = true}),	--Contraption Key
+  Consumable:new({id = 0x4000013B, typ = 'Projectiles', quantity = 1, dlc  = 2}),	--Church Guardian Shiv
+  Consumable:new({id = 0x4000017B, typ = 'CovenantItems', dlc  = 2, unsafe = true}),	--Filianore's Spear Ornament
+  Consumable:new({id = 0x4000028A, typ = 'Multiplayer', quantity = 1, dlc  = 2, unsafe = true}),	--Ritual Spear Fragment
+  Consumable:new({id = 0x4000028B, typ = 'Multiplayer', quantity = 1, dlc  = 2, unsafe = true}),	--Divine Spear Fragment
+  Consumable:new({id = 0x400002E9, typ = 'BossSouls', dlc  = 2, unsafe = true}),	--Soul of Slave Knight Gael
+  Consumable:new({id = 0x400002EA, typ = 'BossSouls', dlc  = 2, unsafe = true}),	--Soul of the Demon Prince
+  Consumable:new({id = 0x400002EB, typ = 'BossSouls', dlc  = 2, unsafe = true}),	--Soul of Darkeater Midir
+  Consumable:new({id = 0x4000086C, typ = 'Keys', quantity = 1, dlc  = 2, unsafe = true}),	--Small Envoy Banner
+  Consumable:new({id = 0x4000086D, typ = 'Ashes', quantity = 1, dlc  = 2, unsafe = true}),	--Old Woman's Ashes
+  Consumable:new({id = 0x4000086E, typ = 'QuestItems', quantity = 1, dlc  = 2, unsafe = true}),	--Blood of the Dark souls
+  Consumable:new({id = 0x4000086F, typ = 'CovenantItems', quantity = 1, dlc  = 2, unsafe = true})	--Young Grass Dew
+}
+
+function Consumable:checkDlc(checkBox)
+  if(self.dlc == 0) then
+    return checkBox["BaseGame"].Checked
+  elseif(self.dlc == 1) then
+    if(self.unsafe) then return (checkBox["AshesofAriandel"].Checked and dlc1Owned) end
+    return checkBox["AshesofAriandel"].Checked
+  elseif(self.dlc == 2) then
+    if(self.unsafe) then return (checkBox["RingedCity"].Checked and dlc2Owned) end
+    return checkBox["RingedCity"].Checked
+  else
+    if(self.unsafe) then return ((checkBox["AshesofAriandel"].Checked or checkBox["RingedCity"].Checked) and (dlc1Owned or dlc2Owned)) end
+    return checkBox["AshesofAriandel"].Checked or checkBox["RingedCity"].Checked
+  end
+end
+
+function createWindow()
+  local formName = 'ConsumableForm'
+  win:create('TCEForm', nil, {Caption = 'Consumables'}, formName)
+  win:initDefaultForm(formName)
+
+  win:create('TLabel', formName, {Caption = 'Include', Left = 15})
+  win:create('TScrollBox', formName, {Caption = 'ConsumableList', Width = 240, Height = 105, Left = 10, Top = 15 })
+  win:create('TCheckBox', 'ConsumableList', {Checked = true}, 'CheckAll')
+  win.ctrl['CheckAll'].onChange = changeAllCheckBoxes
+  local checkBoxes = {'Consumables', 'Tools', 'Projectiles', 'Ammunition', 'Souls', 'Boss Souls', 'Keys', 'Ores', 'Ashes', 'Quest Items', 'Multiplayer', 'Covenants', 'Covenant Items'}
+  for _, checkBox in pairs(checkBoxes) do
+    win:create('TCheckBox', 'ConsumableList', {Caption = checkBox, Checked = true})
+  end
+  win:initialize('ConsumableList',{ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', EnlargeHorizontal = 'crsScaleChilds', LeftRightSpacing = 5}})
+
+  win:create('TGroupBox', formName, {Caption = 'DLC', Left = 10, Top = win.ctrl['ConsumableList'].y, ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', LeftRightSpacing = 5}})
+  win:create('TCheckBox', 'DLC', {Caption = 'Base Game', Checked = true})
+  win:create('TCheckBox', 'DLC', {Caption = 'Ashes of Ariandel', Checked = true})
+  win:create('TCheckBox', 'DLC', {Caption = 'Ringed City', Checked = true})
+  win:fixSize('DLC', 5, 25)
+
+  win:create('TGroupBox', formName, {Caption = 'Content', Left = win.ctrl['DLC'].x + 10, Top = win.ctrl['ConsumableList'].y, ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', LeftRightSpacing = 5}})
+  win:create('TCheckBox', 'Content', {Caption = 'Game Content', Checked = true})
+  win:create('TCheckBox', 'Content', {Caption = 'Cut Content', Checked = false})
+  win:fillGap('Content', {x = 'ConsumableList', y = 'DLC'})
+
+  win:fixSize(formName, 10, 60)
+  win:create('TButton', formName, {Caption = 'Spawn', Width = win.ctrl[formName].Width - 20, Height = 40, Left = 10, Top = win.ctrl[formName].Height - 50})
+  win.ctrl['Spawn'].onClick = spawn
+end
+
+function changeAllCheckBoxes()
+  win:changeCheckBoxes('ConsumableList')
+end
+
+function spawn()
+  local checkBoxes = win.ctrl
+  local baseAddress = GetAddress('ItemArray')
+  local totalItems = 0
+  for _, consumable in pairs(consumables) do
+    if(consumable:checkAll(checkBoxes)) then
+     totalItems = totalItems + 1
+     baseAddress = consumable:spawn(baseAddress)
+    end
+  end
+  WriteInteger(GetAddress('ItemArray'), totalItems)
+  autoAssemble('CreateThread(MassItemGib)')
+  win.ctrl.ConsumableForm.close()
+end
+
+[ENABLE]
+createWindow()
+
+[DISABLE]
+

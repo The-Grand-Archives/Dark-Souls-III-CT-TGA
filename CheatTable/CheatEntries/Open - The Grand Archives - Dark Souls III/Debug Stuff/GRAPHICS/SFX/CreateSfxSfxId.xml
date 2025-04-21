@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096663</ID>
+  <Description>"CreateSfx:SfxId"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjSfx</Address>
+  <Offsets>
+    <Offset>78</Offset>
+  </Offsets>
+</CheatEntry>

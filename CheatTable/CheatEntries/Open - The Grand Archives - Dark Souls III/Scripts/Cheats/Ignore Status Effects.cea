@@ -1,0 +1,46 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+define(effects,DarkSoulsIII.exe+9E6EAB)
+effects:
+  db 90 90 90
+registersymbol(effects)
+
+[DISABLE]
+effects:
+  db 45 2B C8
+unregistersymbol(effects)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+9C1DCB
+
+"DarkSoulsIII.exe"+9C1DB9: CC                          -  int 3
+"DarkSoulsIII.exe"+9C1DBA: CC                          -  int 3
+"DarkSoulsIII.exe"+9C1DBB: CC                          -  int 3
+"DarkSoulsIII.exe"+9C1DBC: CC                          -  int 3
+"DarkSoulsIII.exe"+9C1DBD: CC                          -  int 3
+"DarkSoulsIII.exe"+9C1DBE: CC                          -  int 3
+"DarkSoulsIII.exe"+9C1DBF: CC                          -  int 3
+"DarkSoulsIII.exe"+9C1DC0: 4C 63 DA                    -  movsxd  r11,edx
+"DarkSoulsIII.exe"+9C1DC3: 4C 8B D1                    -  mov r10,rcx
+"DarkSoulsIII.exe"+9C1DC6: 46 8B 4C 99 10              -  mov r9d,[rcx+r11*4+10]
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+9C1DCB: 45 2B C8                    -  sub r9d,r8d
+"DarkSoulsIII.exe"+9C1DCE: 45 85 C9                    -  test r9d,r9d
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+9C1DD1: 7E 2C                       -  jle DarkSoulsIII.exe+9C1DFF
+"DarkSoulsIII.exe"+9C1DD3: 49 8D 4B 09                 -  lea rcx,[r11+09]
+"DarkSoulsIII.exe"+9C1DD7: 48 8D 54 24 10              -  lea rdx,[rsp+10]
+"DarkSoulsIII.exe"+9C1DDC: 44 89 4C 24 10              -  mov [rsp+10],r9d
+"DarkSoulsIII.exe"+9C1DE1: 45 3B 0C 8A                 -  cmp r9d,[r10+rcx*4]
+"DarkSoulsIII.exe"+9C1DE5: 49 8D 0C 8A                 -  lea rcx,[r10+rcx*4]
+"DarkSoulsIII.exe"+9C1DE9: C7 44 24 18 00 00 00 00     -  mov [rsp+18],00000000
+"DarkSoulsIII.exe"+9C1DF1: 48 0F 4F D1                 -  cmovg rdx,rcx
+"DarkSoulsIII.exe"+9C1DF5: B0 01                       -  mov al,01
+"DarkSoulsIII.exe"+9C1DF7: 8B 0A                       -  mov ecx,[rdx]
+}
+
+
+

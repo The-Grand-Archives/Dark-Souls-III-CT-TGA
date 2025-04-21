@@ -1,0 +1,26 @@
+{
+	Author: Igromanru
+	Description: Knight's Ring buff increases all stats by 30
+    Credits: Oden for base idea
+
+    This has been confirmed to ban by Dahoom
+    Do not use it unless you know what you're doing
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local effect = SpEffectParam:new("KnightsRingBuffIncreasesAllStatsBy30",112046000)
+--effect:vigor(30)
+--effect:attunement(30)
+--effect:endurance(30)
+--effect:vitality(30)
+--effect:strength(30)
+--effect:dexterity(30)
+--effect:intelligence(30)
+--effect:faith(30)
+--effect:luck(30)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("KnightsRingBuffIncreasesAllStatsBy30")

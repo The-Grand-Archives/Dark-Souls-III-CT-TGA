@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081295</ID>
+  <Description>"Eye_Sockets_Bruised_Bright"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>766</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,22 @@
+{cscript}
+//Ported to C from lua script by: inuNorii
+[ENABLE]
+{$c}
+#include <tga/params.h>
+int on_enable() {
+    ParamPatchBegin("unlock_all_bonfires");
+    ParamPatchAll(BonfireWarpParam, {
+        param->LocationEventId = 14000000;
+    });
+    ParamPatchEnd();
+    return 0;
+}
+
+int on_disable() {
+    ParamRestore("unlock_all_bonfires");
+    return 0;
+}
+
+{$asm}
+[DISABLE]
+

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337190031</ID>
+  <Description>"Enable animation playback speed (for players) | アニメ再生速度を有効化するか（プレイヤー用）"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4768F85</Address>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337098836</ID>
+  <Description>"TargetChaseRateMinAngAtLock [deg]"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>1E0</Offset>
+    <Offset>60</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

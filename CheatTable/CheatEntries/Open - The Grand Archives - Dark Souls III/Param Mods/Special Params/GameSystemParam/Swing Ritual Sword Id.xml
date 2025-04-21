@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099353</ID>
+  <Description>"Swing Ritual Sword Id"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>4C</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

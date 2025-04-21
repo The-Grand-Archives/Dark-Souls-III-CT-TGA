@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337046331</ID>
+  <Description>"isSlashAttackType"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>5</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+101+1</Address>
+</CheatEntry>

@@ -1,0 +1,10 @@
+[ENABLE]
+EffectID:
+dd #101310000 // Magic Weapon
+dd #101330000 // Magic Shield
+dd #101354000 // Spook
+dd 00000000   // end
+createthread(ApplyEffect)
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+[DISABLE]

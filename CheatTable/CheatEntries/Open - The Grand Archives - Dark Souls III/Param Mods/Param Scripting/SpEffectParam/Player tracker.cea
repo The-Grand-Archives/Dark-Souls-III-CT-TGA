@@ -1,0 +1,15 @@
+{
+  Authror: Igromanru
+  Description: Activates invader (players) trackers
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local effect = SpEffectParam:new("PlayerTrackers",40)
+effect:motionInterval(999)
+effect:stateInfo(296)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("PlayerTrackers")

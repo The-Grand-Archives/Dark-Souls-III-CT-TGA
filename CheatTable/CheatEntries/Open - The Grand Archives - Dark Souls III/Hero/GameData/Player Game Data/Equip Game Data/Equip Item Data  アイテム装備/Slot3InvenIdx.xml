@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081705</ID>
+  <Description>"Slot3InvenIdx"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>4AC</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

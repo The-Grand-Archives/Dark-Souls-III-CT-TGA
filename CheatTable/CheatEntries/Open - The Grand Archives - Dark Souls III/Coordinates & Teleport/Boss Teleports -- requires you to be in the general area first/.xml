@@ -1,0 +1,34 @@
+<CheatEntry>
+  <ID>1337159934</ID>
+  <Description>"Boss Teleports -- requires you to be in the general area first"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337159935"/>
+    <id id="1337159940"/>
+    <id id="1337159941"/>
+    <id id="1337159945"/>
+    <id id="1337159946"/>
+    <id id="1337159947"/>
+    <id id="1337190297"/>
+    <id id="1337190298"/>
+    <id id="1337159948"/>
+    <id id="1337190299"/>
+    <id id="1337190300"/>
+    <id id="1337190301"/>
+    <id id="1337190302"/>
+    <id id="1337190303"/>
+    <id id="1337190304"/>
+    <id id="1337159970"/>
+    <id id="1337190305"/>
+    <id id="1337190306"/>
+    <id id="1337190307"/>
+    <id id="1337190308"/>
+    <id id="1337190309"/>
+    <id id="1337159961"/>
+    <id id="1337159962"/>
+    <id id="1337190310"/>
+    <id id="1337159963"/>
+    <id id="1337190311"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,65 @@
+[ENABLE]
+define(Second,DarkSoulsIII.exe+3BCB80)
+alloc(newmem,$1000,Second)
+
+label(code)
+label(return)
+
+newmem:
+  push rax
+  mov rax,NpcControl_Data+04
+  mov rax,[rax]
+  mov rax,[rax+58]
+  mov rax,[rax+320]
+  add rax,7420
+  cmp rcx,rax
+  pop rax
+  je return
+code:
+  mov [rcx+14],edx
+  mov [rcx+18],edx
+  jmp return
+
+Second:
+  jmp newmem
+  nop
+return:
+registersymbol(Second)
+
+define(Third,DarkSoulsIII.exe+3BCB00)
+alloc(newmem2,$1000,Third)
+
+label(code2)
+label(return2)
+
+newmem2:
+  push rax
+  mov rax,NpcControl_Data+04
+  mov rax,[rax]
+  mov rax,[rax+58]
+  mov rax,[rax+320]
+  add rax,7420
+  cmp rcx,rax
+  pop rax
+  je return2
+code2:
+  mov [rcx+14],FFFFFFFF
+  jmp return2
+
+Third:
+  jmp newmem2
+  nop
+  nop
+return2:
+registersymbol(Third)
+
+[DISABLE]
+Second:
+  db 89 51 14 89 51 18
+unregistersymbol(Second)
+dealloc(newmem)
+
+Third:
+  db C7 41 14 FF FF FF FF
+unregistersymbol(Third)
+dealloc(newmem2)

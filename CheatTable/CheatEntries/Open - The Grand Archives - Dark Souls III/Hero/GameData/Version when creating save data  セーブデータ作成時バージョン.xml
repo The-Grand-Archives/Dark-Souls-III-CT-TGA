@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337080863</ID>
+  <Description>"Version when creating save data | セーブデータ作成時バージョン"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>E8</Offset>
+  </Offsets>
+</CheatEntry>

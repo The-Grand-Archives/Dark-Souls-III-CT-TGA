@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337020998</ID>
+  <Description>"Aldrich Faithful"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337021001"/>
+    <id id="1337020990"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

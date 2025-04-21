@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337033260</ID>
+  <Description>"JumpTime"</Description>
+  <VariableType>Float</VariableType>
+  <Address>jump_ptr</Address>
+  <Offsets>
+    <Offset>-720</Offset>
+  </Offsets>
+</CheatEntry>

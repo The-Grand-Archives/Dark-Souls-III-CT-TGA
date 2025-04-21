@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337078900</ID>
+  <Description>"FullRecover"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

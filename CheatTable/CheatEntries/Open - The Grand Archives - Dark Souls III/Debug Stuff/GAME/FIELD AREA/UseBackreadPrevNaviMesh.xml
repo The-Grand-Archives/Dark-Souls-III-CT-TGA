@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081103</ID>
+  <Description>"UseBackreadPrevNaviMesh"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4554A40</Address>
+</CheatEntry>

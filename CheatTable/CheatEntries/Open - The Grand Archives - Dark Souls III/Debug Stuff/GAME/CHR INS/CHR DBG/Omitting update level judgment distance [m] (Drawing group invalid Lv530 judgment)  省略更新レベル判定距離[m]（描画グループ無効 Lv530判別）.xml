@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337189969</ID>
+  <Description>"Omitting update level judgment distance [m] (Drawing group invalid Lv5/30 judgment) | 省略更新レベル判定距離[m]（描画グループ無効 Lv5/30判別）"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>2C</Offset>
+  </Offsets>
+</CheatEntry>

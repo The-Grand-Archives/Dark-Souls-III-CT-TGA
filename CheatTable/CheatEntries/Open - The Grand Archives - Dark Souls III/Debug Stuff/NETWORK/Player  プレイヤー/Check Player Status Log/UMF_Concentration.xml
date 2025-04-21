@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097094</ID>
+  <Description>"UMF_Concentration"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>4D0</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>

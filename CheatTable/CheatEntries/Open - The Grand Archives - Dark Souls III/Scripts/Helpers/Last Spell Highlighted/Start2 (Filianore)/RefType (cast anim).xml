@@ -1,0 +1,58 @@
+<CheatEntry>
+  <ID>1337078709</ID>
+  <Description>"RefType (cast anim)"</Description>
+  <DropDownList ReadOnly="1" DisplayValueAsItem="1">0:Fast Sorcery
+1:Enhance Weapon
+2:Medium Sorcery
+3:Homeward
+4:(unused) Prayer
+5:Fireball
+6:Pyromancy Buff
+7:(unused) Lifedrain
+8:Combustion
+9:Mist
+10:Firestorm
+11:Rapport
+12:Force
+13:Chameleon
+14:(unused) Disabled
+15:Miracle Enhance
+16:(unused) Lifedrain
+17:Enhance Shield
+18:Emit Force
+19:Lightning Spear
+20:Cast Light
+21:(unused) Dragon Head-Prayer
+22:Heavy Sorcery
+23:Fire Surge
+24:Fire Whip
+25:Soul Greatsword
+26:Prayer
+27:Fast Prayer
+28:Sacred Prayer
+29:Farron Dart
+30:Farron Flashsword
+31:Soul Stream
+32:Profaned Flame
+33:Sacred Flame
+34:Lightning Stake
+35:Gnaw
+36:Lightning Storm
+37:Dark Edge
+38:Warmth
+39:Wrath of the Gods
+40:Farron Hail
+41:Very Heavy Sorcery
+42:Black Serpent
+43:Chaos Bed Vestiges
+44:Lifehunt Scythe
+45:Divine Pillars of Light
+46:Old Moonlight
+47:Floating Chaos
+48:Way of White Corona
+49:Lightning Arrow
+50:Flame Fan
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>+25</Address>
+</CheatEntry>

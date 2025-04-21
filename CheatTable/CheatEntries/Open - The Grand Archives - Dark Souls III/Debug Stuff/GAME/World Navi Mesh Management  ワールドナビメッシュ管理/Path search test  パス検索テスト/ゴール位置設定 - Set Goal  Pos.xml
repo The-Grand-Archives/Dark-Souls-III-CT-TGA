@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081912</ID>
+  <Description>"ゴール位置設定 - Set Goal  Pos"</Description>
+  <Color>C0C0C0</Color>
+  <VariableType>String</VariableType>
+  <Length>100</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>14295DAD0</Address>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>89078</ID>
+  <Description>"To Untended Graves"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>1</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>F78</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

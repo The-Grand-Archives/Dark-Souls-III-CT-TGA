@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337180602</ID>
+  <Description>"Antialiasing | アンチエイリアシング品質"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:OFF
+1:ON
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSWindow</Address>
+  <Offsets>
+    <Offset>D0</Offset>
+  </Offsets>
+</CheatEntry>

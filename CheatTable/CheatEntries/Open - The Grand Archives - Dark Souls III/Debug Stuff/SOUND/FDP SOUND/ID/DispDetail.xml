@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337098073</ID>
+  <Description>"DispDetail"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSound</Address>
+  <Offsets>
+    <Offset>1A</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

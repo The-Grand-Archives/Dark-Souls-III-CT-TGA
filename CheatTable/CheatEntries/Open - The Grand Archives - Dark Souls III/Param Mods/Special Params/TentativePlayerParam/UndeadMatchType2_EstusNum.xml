@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099304</ID>
+  <Description>"UndeadMatchType2_EstusNum"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>AC</Offset>
+    <Offset>60</Offset>
+    <Offset>70</Offset>
+  </Offsets>
+</CheatEntry>

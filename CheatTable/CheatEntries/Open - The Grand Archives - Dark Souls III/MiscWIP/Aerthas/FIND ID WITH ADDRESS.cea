@@ -1,0 +1,44 @@
+{$lua}
+--[[
+How 2 use
+
+Under "paramaddress" put the address of the param you want to search for your ID.
+Under "searchaddress" put the address of the thing you want to find. Like the one you would put in a helper
+Don't edit anything else.
+Enable the script or hit ok
+Bottom thing it prints out is your ID
+If nothing prints out, raise the "size" value or stop being stupid and using the wrong param.
+]]--
+{$asm}
+[ENABLE]
+{$lua}
+local paramaddress = "7FF5A12AF770" --Address of the param you wish to start from
+local searchaddress = "7FF5A12CC740"
+--DON'T CHANGE ANY OF THIS SHIT BELOW HERE--
+
+local byte_to_find = string.format("%x",tonumber(searchaddress,16)-tonumber(paramaddress,16))
+local byte = tonumber(byte_to_find,16)
+local address = tonumber(paramaddress,16) --Redefines start address as decimal for use
+local currentaddress = "" -- Blank start
+local size = 1000 --How many to print out
+local id = 0 -- Blank start
+local hex = ""
+
+for i=1,size do
+    currentaddress = string.format("%x", address)
+    id = readInteger(currentaddress)
+    hex = string.format("%x", id)
+    --print(string.format("%x", id))
+    if hex == byte_to_find then
+       --print(string.upper(string.format("%x", id)))
+       currentaddress = string.format("%x", address-8)
+       print(readInteger(currentaddress) .. " : "..searchaddress)
+       print("\n----------------------------------")
+       break
+    end
+    address = address + 24
+end
+
+[DISABLE]
+
+

@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>1337096852</ID>
+  <Description>"Recall of AI player DelayTime[s]  | AIプレイヤーの召還DelayTime[s]"</Description>
+  <Color>000080</Color>
+  <VariableType>Float</VariableType>
+  <Address>DarkSoulsIII.exe+4581718</Address>
+</CheatEntry>

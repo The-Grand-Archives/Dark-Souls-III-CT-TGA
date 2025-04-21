@@ -1,0 +1,15 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local SpellCHail = { --effect param mods
+  {1373000,0xC,"00 00"}, -- 0 FP Cost [Array of Byte format]
+}
+paramUtils:paramIterator("Magic",SpellCHail,"HailRain") --Save values on 'enable'
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+ paramUtils:paramDepatcher("HailRain") --Restore default values on 'disable'
+
+
+

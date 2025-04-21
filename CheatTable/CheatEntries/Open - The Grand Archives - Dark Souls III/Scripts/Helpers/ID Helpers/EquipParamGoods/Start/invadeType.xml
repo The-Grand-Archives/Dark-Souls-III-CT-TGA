@@ -1,0 +1,29 @@
+<CheatEntry>
+  <ID>1337256554</ID>
+  <Description>"invadeType"</Description>
+  <Options moHideChildren="1"/>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:None
+1:Coop
+2:Invasion
+3:Invasion
+4:Mad Phantom
+6:Sinner Hunter
+7:Red Hunter
+8:Gaurdian of Rosalia
+9:Guardian of Forest
+10:Guardian of Anor
+11:Avatar
+12:Battle Royal
+13:Umbasa White
+14:Umbasa Red
+15:Beserker Red
+16:Force Join Umbasa
+17:Force Join Beserker
+18:Join Session White
+19:Force Join Session
+20:Red Hunter
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>+6E</Address>
+</CheatEntry>

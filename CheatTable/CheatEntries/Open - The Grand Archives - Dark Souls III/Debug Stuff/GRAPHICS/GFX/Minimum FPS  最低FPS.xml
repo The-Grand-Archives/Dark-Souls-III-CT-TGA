@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096629</ID>
+  <Description>"Minimum FPS | 最低FPS"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjFlipper</Address>
+  <Offsets>
+    <Offset>2C0</Offset>
+  </Offsets>
+</CheatEntry>

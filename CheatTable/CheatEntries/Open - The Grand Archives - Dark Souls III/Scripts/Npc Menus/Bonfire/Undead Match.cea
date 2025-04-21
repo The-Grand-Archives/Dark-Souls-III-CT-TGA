@@ -1,0 +1,42 @@
+//Thanks to Luke_Yui for message box
+[ENABLE]
+aobscanmodule(UM_Call_Call,$process,?? ?? ?? ?? 90 48 8b 50 08 48 89 53 08 48 8b 40 10 48 89 43 10 48 8d ?? ?? ?? ?? ?? 48 89 44 24 28 c7 43 18 14 00 00 00)
+aobscanmodule(Error_Call,$process,40 57 48 83 EC ?? 48 C7 44 24 ?? FE FF FF FF 48 89 5C 24 ?? 48 8B F9 48 8B 05 ?? ?? ?? ?? 83 B8)
+alloc(BonfireUndeadMatch,100,DarkSoulsIII.exe)
+createthread(BonfireUndeadMatch)
+
+label(Error)
+alloc(ErrorText,128)
+
+BonfireUndeadMatch:
+sub rsp,48
+mov rcx,[CSDlc]
+cmp word ptr [rcx+11],0
+jle short Error
+mov rcx,UM_Call_Call
+movsxd rcx,dword ptr [rcx]
+mov rax,UM_Call_Call+4
+add rax,rcx
+lea rcx,[rsp+28]
+call rax
+add rsp,48
+ret
+
+Error:
+lea rax,[ErrorText]
+mov [rsp+30],rax
+lea rcx,[rsp+30]
+call Error_Call
+add rsp,48
+ret
+
+ErrorText:
+dw 'Missing License: Ashes of Ariandel',A
+dw 'Missing License: The Ringed City',0
+
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(BonfireUndeadMatch)
+dealloc(ErrorText)

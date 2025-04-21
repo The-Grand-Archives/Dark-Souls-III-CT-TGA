@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337038830</ID>
+  <Description>"attackBaseParry"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+F3</Address>
+</CheatEntry>

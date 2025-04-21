@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337180600</ID>
+  <Description>"Auto-detect best rendering settings | 自動描画調整"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:OFF
+1:ON
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSWindow</Address>
+  <Offsets>
+    <Offset>C4</Offset>
+  </Offsets>
+</CheatEntry>

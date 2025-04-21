@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337045274</ID>
+  <Description>"Slide"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>4F8</Offset>
+    <Offset>30</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

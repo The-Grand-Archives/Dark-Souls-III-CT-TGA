@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337190032</ID>
+  <Description>"Activate test parameters (for players) | テストパラメータを有効化するか（プレイヤー用）"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4768F86</Address>
+</CheatEntry>

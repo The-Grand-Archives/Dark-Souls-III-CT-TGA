@@ -1,0 +1,62 @@
+[ENABLE]
+aobscanmodule(last_ring,DarkSoulsIII.exe,F3 0F 10 70 08 E9 * * * * 8B)
+alloc(newmem,$1000,last_ring)
+
+label(code)
+label(return)
+label(last_ring_ptr)
+
+newmem:
+
+code:
+  mov r11,last_ring_ptr
+  mov [r11],rax
+  movss xmm6,[rax+08]
+  jmp return
+
+last_ring_ptr:
+  dq 0
+
+last_ring:
+  jmp code
+return:
+registersymbol(last_ring)
+registersymbol(last_ring_ptr)
+
+[DISABLE]
+last_ring:
+  db F3 0F 10 70 08
+unregistersymbol(last_ring)
+unregistersymbol(last_ring_ptr)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+6AE717
+
+"DarkSoulsIII.exe"+6AE6EE: 8B 51 0C              -  mov edx,[rcx+0C]
+"DarkSoulsIII.exe"+6AE6F1: 33 FF                 -  xor edi,edi
+"DarkSoulsIII.exe"+6AE6F3: 48 8D 4D B0           -  lea rcx,[rbp-50]
+"DarkSoulsIII.exe"+6AE6F7: C7 45 B0 FF FF FF FF  -  mov [rbp-50],FFFFFFFF
+"DarkSoulsIII.exe"+6AE6FE: 89 7D B4              -  mov [rbp-4C],edi
+"DarkSoulsIII.exe"+6AE701: 48 89 7D B8           -  mov [rbp-48],rdi
+"DarkSoulsIII.exe"+6AE705: E8 16 4E 72 00        -  call DarkSoulsIII.exe+DD3520
+"DarkSoulsIII.exe"+6AE70A: 48 8B 45 B8           -  mov rax,[rbp-48]
+"DarkSoulsIII.exe"+6AE70E: 48 85 C0              -  test rax,rax
+"DarkSoulsIII.exe"+6AE711: 0F 84 BB 00 00 00     -  je DarkSoulsIII.exe+6AE7D2
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+6AE717: F3 0F 10 70 08        -  movss xmm6,[rax+08]
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+6AE71C: E9 B1 00 00 00        -  jmp DarkSoulsIII.exe+6AE7D2
+"DarkSoulsIII.exe"+6AE721: 8B 51 0C              -  mov edx,[rcx+0C]
+"DarkSoulsIII.exe"+6AE724: 33 FF                 -  xor edi,edi
+"DarkSoulsIII.exe"+6AE726: 48 8D 4D B0           -  lea rcx,[rbp-50]
+"DarkSoulsIII.exe"+6AE72A: C7 45 B0 FF FF FF FF  -  mov [rbp-50],FFFFFFFF
+"DarkSoulsIII.exe"+6AE731: 48 89 7D B8           -  mov [rbp-48],rdi
+"DarkSoulsIII.exe"+6AE735: E8 66 97 71 00        -  call DarkSoulsIII.exe+DC7EA0
+"DarkSoulsIII.exe"+6AE73A: EB CE                 -  jmp DarkSoulsIII.exe+6AE70A
+"DarkSoulsIII.exe"+6AE73C: 8B 59 0C              -  mov ebx,[rcx+0C]
+"DarkSoulsIII.exe"+6AE73F: 33 FF                 -  xor edi,edi
+}
+
+
+

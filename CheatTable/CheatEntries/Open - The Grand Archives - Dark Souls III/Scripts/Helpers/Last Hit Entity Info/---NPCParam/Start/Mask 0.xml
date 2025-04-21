@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>89481</ID>
+  <Description>"Mask 0"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+0+146</Address>
+</CheatEntry>

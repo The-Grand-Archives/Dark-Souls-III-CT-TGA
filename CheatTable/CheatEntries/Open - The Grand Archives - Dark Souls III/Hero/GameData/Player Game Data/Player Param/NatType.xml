@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337080953</ID>
+  <Description>"NatType"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:0
+1:1
+2:2
+3:3
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>80C</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

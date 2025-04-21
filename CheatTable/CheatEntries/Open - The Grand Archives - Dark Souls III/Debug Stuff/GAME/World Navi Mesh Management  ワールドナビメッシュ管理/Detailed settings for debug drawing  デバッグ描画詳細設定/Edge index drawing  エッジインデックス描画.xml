@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337081905</ID>
+  <Description>"Edge index drawing | エッジインデックス描画"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+477F498</Address>
+  <Offsets>
+    <Offset>174D</Offset>
+  </Offsets>
+</CheatEntry>

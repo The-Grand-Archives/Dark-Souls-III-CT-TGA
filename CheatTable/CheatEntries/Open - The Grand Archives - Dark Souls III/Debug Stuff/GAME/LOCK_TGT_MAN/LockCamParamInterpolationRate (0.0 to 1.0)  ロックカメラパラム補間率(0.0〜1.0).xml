@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099144</ID>
+  <Description>"LockCamParamInterpolationRate (0.0 to 1.0) | ロックカメラパラム補間率(0.0〜1.0)"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2958</Offset>
+  </Offsets>
+</CheatEntry>

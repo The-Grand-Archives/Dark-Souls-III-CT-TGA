@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337256867</ID>
+  <Description>"16D"</Description>
+  <Color>C0C0C0</Color>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+016D</Address>
+</CheatEntry>

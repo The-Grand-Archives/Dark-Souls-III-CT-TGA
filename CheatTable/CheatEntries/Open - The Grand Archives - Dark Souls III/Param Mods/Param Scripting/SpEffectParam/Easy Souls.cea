@@ -1,0 +1,14 @@
+{
+  Author: inuNorii
+  Description: Gives you 2147483647 souls whenever effect 40 activates
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local effect = SpEffectParam:new("soulsTbh",40)
+effect:soul(2147483647)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("soulsTbh")

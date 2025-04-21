@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337190179</ID>
+  <Description>"LookAngle"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>40</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

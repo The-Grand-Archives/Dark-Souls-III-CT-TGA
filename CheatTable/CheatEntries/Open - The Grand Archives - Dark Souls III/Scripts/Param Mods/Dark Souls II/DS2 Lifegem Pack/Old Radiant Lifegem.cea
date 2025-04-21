@@ -1,0 +1,55 @@
+//best lifegem, replaces the special budding green blossom that you get from the handmaiden for sirris' quest
+
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local BuddingBlossom = EquipParamGoods:new("oldRadLifegem",262) -- Old Radiant Lifegem Version, uses sirris' special budding green blossom
+BuddingBlossom:refId(152)
+BuddingBlossom:goodsUseAnim(9)
+BuddingBlossom:maxNum(5) -- sets number of gems that you can hold to 5 hopefully
+BuddingBlossom:iconId(125) -- icon: lightning gem
+BuddingBlossom:sfxId(528702) -- massive gold thing
+BuddingBlossom:sfxId1(302240) -- giant seed effect instead of blossom
+
+local BlankEffectHeal = SpEffectParam:new("oldRadLifegem",152)
+BlankEffectHeal:effectEndurance(33)
+BlankEffectHeal:motionInterval(0.02)
+BlankEffectHeal:changeHpRate(0)
+BlankEffectHeal:changeHpPoint(-2)
+BlankEffectHeal:spCategory(10)
+BlankEffectHeal:effectSfx(91120701)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+2544:
+dw 'Old Radiant Lifegem',0
+[[[[MsgRepository]+8]+0]+C0]+7C12:
+dw 'Stone made of crystallized souls.',A
+dw '',A
+dw 'Gradually restores a large amount of HP.',A
+dw '',A
+dw 'A rare stone with so brilliant a shine would fetch a handsome price.',A
+dw '',A
+dw 'But what value could it really have, without knowing who died to leave it behind?',0
+[[[[MsgRepository]+08]+00]+A0]+2E32:
+dw 'Crush to restore a large amount of HP',0
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("oldRadLifegem")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+2544:
+dw 'Budding Green Blossom',0
+[[[[MsgRepository]+8]+0]+C0]+7C12:
+dw 'Green flower-shaped weed with small white blooms.',A
+dw '',A
+dw 'Large temporary boost to stamina recovery speed.',A
+dw '',A
+dw 'The brief attached messages suggests that it was a gift:',A
+dw '',A
+dw '"Good-bye, dear Grandmother.',A
+dw 'I will visit Grandfather, in the Pit of Hollows."',0
+[[[[MsgRepository]+08]+00]+A0]+2E32:
+dw 'Large temporary boost to stamina recovery speed',0
+

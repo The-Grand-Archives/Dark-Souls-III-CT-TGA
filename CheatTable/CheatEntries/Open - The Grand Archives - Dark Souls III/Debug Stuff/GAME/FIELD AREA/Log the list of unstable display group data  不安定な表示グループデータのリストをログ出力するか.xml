@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081108</ID>
+  <Description>"Log the list of unstable display group data? | 不安定な表示グループデータのリストをログ出力するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4743A78</Address>
+</CheatEntry>

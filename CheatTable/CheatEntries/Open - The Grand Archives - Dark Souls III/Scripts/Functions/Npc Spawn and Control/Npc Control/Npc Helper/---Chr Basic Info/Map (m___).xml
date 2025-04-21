@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337190170</ID>
+  <Description>"Map (m??_??_??_??)"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>1FE0</Offset>
+  </Offsets>
+</CheatEntry>

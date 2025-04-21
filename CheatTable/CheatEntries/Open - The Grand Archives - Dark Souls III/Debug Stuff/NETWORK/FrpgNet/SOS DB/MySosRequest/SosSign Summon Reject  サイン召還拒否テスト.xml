@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>1337096739</ID>
+  <Description>"SosSign Summon Reject | サイン召還拒否テスト"</Description>
+  <Color>000080</Color>
+  <VariableType>4 Bytes</VariableType>
+  <Address>DarkSoulsIII.exe+4740014</Address>
+</CheatEntry>

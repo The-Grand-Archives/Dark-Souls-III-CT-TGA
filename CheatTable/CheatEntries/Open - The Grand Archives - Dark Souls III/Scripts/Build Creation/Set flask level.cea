@@ -1,0 +1,92 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local BonfireInjectAnimAOB = AOBScanModuleUnique(process,"?? 8b 4e 10 e8 ?? ?? ?? ?? 8b d8 ?? 0f b6 cf e8") + 0x48
+local addr = {
+	GetTotalBonfireLevel = 0,
+	SetEventState = AOBScanModuleUnique(process,"40 55 57 41 54 41 57 48 83 EC ?? 80 B9 ?? ?? ?? ?? 00 45 0F B6 F9 45 0F B6 E0"),
+	BonfireInjectAnim = BonfireInjectAnimAOB + readInteger(BonfireInjectAnimAOB+1,1)+5,
+	ActivateBonfire = AOBScanModuleUnique(process,"88 4c ?? ?? 53 ?? 83 ec ?? c6 44 ? ? 63 c6 44 ?? ?? 01 80 f9 01"),
+	ReplaceItem = AOBScanModuleUnique(process,"?? 89 5c ?? ?? ?? 89 6c ?? ?? ?? 89 74 ?? ?? 57 ?? 83 ec ?? ?? 8b e8 ?? 8b d9 ?? 8b c2 ba 00 00 00 40"),
+	SaveRequest = AOBScanModuleUnique(process,"?? 89 5c ?? ?? 57 ?? 83 ec ?? ?? 8b 05 ?? ?? ?? ?? 0f b6 da 8b f9")
+}
+
+addr.GetTotalBonfireLevel = addr.ActivateBonfire + 0x3C + readInteger(addr.ActivateBonfire+0x3C + 2, 1) + 6
+
+local function GetTotalBonfireLevel()
+	return readByte(addr.GetTotalBonfireLevel)
+end
+
+local function SetEventState(id, bool)
+	local SprjEventFlagMan = readPointer("SprjEventFlagMan")
+	executeCodeEx(0, 100, addr.SetEventState, SprjEventFlagMan, id, bool, 0)
+end
+
+local function BonfireInjectAnim()
+	local SprjLuaEventMan = readPointer("SprjLuaEventMan")
+	executeCodeEx(0, 100, addr.BonfireInjectAnim, SprjLuaEventMan, 4001950)
+end
+
+local function ActivateBonfire(bonfireLv)
+	executeCode(addr.ActivateBonfire, bonfireLv)
+end
+
+local function ReplaceItem(EquipGameData, currentId,replaceId)
+	executeCodeEx(0, 100, addr.ReplaceItem, EquipGameData, currentId, replaceId, 1)
+end
+
+local function SaveRequest()
+	executeCode(addr.SaveRequest)
+end
+
+local function ReplaceFlasks(newFlaskLv)
+	local GameDataMan = readPointer("GameDataMan")
+	local PlayerGameData = readPointer(GameDataMan + 0x10)
+	local EquipGameData = getAddress(PlayerGameData + 0x228)
+	local flaskLv = GetTotalBonfireLevel() - 1
+	local flaskIds = {150, 151, 190, 191}
+	for _,v in pairs(flaskIds) do
+		local oldItem = v + flaskLv * 2
+		local newItem = v + (newFlaskLv-1) * 2
+		if oldItem ~= newItem then
+			ReplaceItem(EquipGameData, oldItem, newItem)
+		end
+	end
+end
+
+local function UpdateBonfireEvent()
+	local bonfireLv = GetTotalBonfireLevel()
+	if bonfireLv > 0 then
+		local maxBonfireLv = 11
+		local id = 6020
+		for i=0,bonfireLv-1 do
+			SetEventState(id+i, 1)
+		end
+		for i=bonfireLv,maxBonfireLv-1 do
+			SetEventState(id+i, 0)
+		end
+	end
+end
+
+local function SetBonfireLv(bonfireLv)
+	if bonfireLv >= 11 then
+		bonfireLv = 11
+	elseif bonfireLv <= 1 then
+		bonfireLv = 1
+	end
+	if GetTotalBonfireLevel() <= 11 then
+		ReplaceFlasks(bonfireLv)
+		ActivateBonfire(bonfireLv)
+		BonfireInjectAnim()
+		UpdateBonfireEvent()
+		SaveRequest()
+	end
+end
+
+local bonfireLv = inputQuery("Set Flask Level","Should be between 0 and 10",GetTotalBonfireLevel()-1)
+if bonfireLv ~= nil then
+	SetBonfireLv(tonumber(bonfireLv)+1)
+end
+disableMemrec(memrec)
+
+[DISABLE]

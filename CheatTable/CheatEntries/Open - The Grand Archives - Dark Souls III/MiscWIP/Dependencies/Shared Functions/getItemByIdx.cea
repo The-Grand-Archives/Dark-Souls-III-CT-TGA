@@ -1,0 +1,20 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+function getItemByIdx(idx)
+    local GameDataMan = readPointer("GameDataMan")
+    local PlayerGameData = readPointer(GameDataMan + 0x10)
+    local EquipInventoryData = getAddress(PlayerGameData + 0x3D0)
+
+    local inventoryList = readPointer(EquipInventoryData + 0x18)
+
+    local item = readInteger(inventoryList + idx * 0x10)
+    if item ~= 0xFFFFFFFF then
+        return item
+    else
+        return false
+    end
+end
+
+[DISABLE]
+getItemByIdx = nil

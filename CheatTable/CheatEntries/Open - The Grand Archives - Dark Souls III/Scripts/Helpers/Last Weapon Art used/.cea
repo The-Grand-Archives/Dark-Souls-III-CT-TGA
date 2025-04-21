@@ -1,0 +1,32 @@
+[ENABLE]
+aobscanmodule(WeaponArtHighlited,DarkSoulsIII.exe, 41 0F BF 59 10 49 8B C8)
+alloc(newmem,$1000,WeaponArtHighlited)
+
+label(code)
+label(return)
+label(WeaponArtHighlited_ptr)
+
+newmem:
+
+code:
+  mov rax,WeaponArtHighlited_ptr
+  mov [rax],r9
+  movsx ebx,word ptr [r9+10]
+  jmp return
+
+
+WeaponArtHighlited_ptr:
+  dq 0
+
+WeaponArtHighlited:
+  jmp code
+return:
+registersymbol(WeaponArtHighlited)
+registersymbol(WeaponArtHighlited_ptr)
+
+[DISABLE]
+WeaponArtHighlited:
+  db 41 0F BF 59 10
+unregistersymbol(WeaponArtHighlited)
+unregistersymbol(WeaponArtHighlited_ptr)
+dealloc(newmem)

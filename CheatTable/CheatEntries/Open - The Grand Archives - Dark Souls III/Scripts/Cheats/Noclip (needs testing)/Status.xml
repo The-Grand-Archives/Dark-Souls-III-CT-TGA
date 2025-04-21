@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337027069</ID>
+  <Description>"Status"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:disable
+1:no-clip
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>bFlyMode</Address>
+</CheatEntry>

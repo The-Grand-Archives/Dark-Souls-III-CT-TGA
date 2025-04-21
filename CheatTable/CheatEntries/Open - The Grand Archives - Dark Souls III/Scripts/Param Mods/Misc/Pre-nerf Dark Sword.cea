@@ -1,0 +1,131 @@
+//Author: inuNorii
+//stats based on App Ver 1.05 Regulation 1.08
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local darkswords = {
+  6240000, 6240100, 6240200, 6240300, 6240400, 6240500, 6240600, 6240700,
+  6240800, 6240900, 6241000, 6241100, 6241200, 6241300, 6241400, 6241500
+}
+for i,id in ipairs(darkswords) do
+local weapon = EquipParamWeapon:new("preNerfDarkSword",id)
+weapon:saWeaponDamage(20)
+weapon:wepAbsorbPosId(0.5)
+weapon:staminaConsumeRate(1.154)
+end
+
+local normal = EquipParamWeapon:new("preNerfDarkSword",6240000)
+normal:correctStrength(56)
+normal:attackBasePhysics(115)
+
+local heavy = EquipParamWeapon:new("preNerfDarkSword",6240100)
+heavy:correctStrength(56)
+heavy:attackBasePhysics(115)
+
+local sharp = EquipParamWeapon:new("preNerfDarkSword",6240200)
+sharp:correctStrength(56)
+sharp:correctAgility(30)
+sharp:attackBasePhysics(115)
+
+local refined = EquipParamWeapon:new("preNerfDarkSword",6240300)
+refined:correctStrength(53)
+refined:correctAgility(53)
+refined:attackBasePhysics(115)
+
+local simple = EquipParamWeapon:new("preNerfDarkSword",6240400)
+simple:correctStrength(56)
+simple:correctAgility(30)
+simple:correctMagic(86)
+simple:attackBasePhysics(110)
+simple:attackBaseMagic(110)
+
+local crystal = EquipParamWeapon:new("preNerfDarkSword",6240500)
+crystal:correctStrength(56)
+crystal:correctAgility(30)
+crystal:correctMagic(86)
+crystal:attackBasePhysics(110)
+crystal:attackBaseMagic(110)
+
+local fire = EquipParamWeapon:new("preNerfDarkSword",6240600)
+fire:correctStrength(56)
+fire:correctAgility(30)
+fire:attackBasePhysics(110)
+fire:attackBaseFire(110)
+
+local chaos = EquipParamWeapon:new("preNerfDarkSword",6240700)
+chaos:correctStrength(56)
+chaos:correctAgility(30)
+chaos:correctMagic(86)
+chaos:correctFaith(86)
+chaos:attackBasePhysics(110)
+chaos:attackBaseFire(110)
+
+local lightning = EquipParamWeapon:new("preNerfDarkSword",6240800)
+lightning:correctStrength(56)
+lightning:correctAgility(30)
+lightning:correctFaith(86)
+lightning:attackBasePhysics(110)
+lightning:attackBaseThunder(110)
+
+local deep = EquipParamWeapon:new("preNerfDarkSword",6240900)
+deep:correctStrength(56)
+deep:correctAgility(30)
+deep:attackBasePhysics(110)
+deep:attackBaseDark(110)
+
+local dark = EquipParamWeapon:new("preNerfDarkSword",6241000)
+dark:correctStrength(56)
+dark:correctAgility(30)
+dark:correctMagic(86)
+dark:correctFaith(86)
+dark:attackBasePhysics(110)
+dark:attackBaseDark(110)
+
+local poison = EquipParamWeapon:new("preNerfDarkSword",6241100)
+poison:correctStrength(56)
+poison:correctAgility(30)
+poison:attackBasePhysics(115)
+
+local blood = EquipParamWeapon:new("preNerfDarkSword",6241200)
+blood:correctStrength(56)
+blood:correctAgility(30)
+blood:attackBasePhysics(115)
+
+local raw = EquipParamWeapon:new("preNerfDarkSword",6241300)
+raw:correctStrength(56)
+raw:correctAgility(30)
+raw:attackBasePhysics(115)
+
+local blessed = EquipParamWeapon:new("preNerfDarkSword",6241400)
+blessed:correctStrength(56)
+blessed:correctAgility(30)
+blessed:correctFaith(86)
+blessed:attackBasePhysics(110)
+
+local hollow = EquipParamWeapon:new("preNerfDarkSword",6241500)
+hollow:correctStrength(56)
+hollow:correctAgility(30)
+hollow:attackBasePhysics(115)
+
+--no idea if named correctly, but doesnt affect functionality
+local Atk_1H_R1_0 = AtkParam_Pc:new("preNerfDarkSword",2304100)
+Atk_1H_R1_0:AtkSuperArmorCorrection(110)
+local Atk_1H_R2_0 = AtkParam_Pc:new("preNerfDarkSword",2304105)
+Atk_1H_R2_0:AtkSuperArmorCorrection(130)
+local Atk_1H_R1_1 = AtkParam_Pc:new("preNerfDarkSword",2304110)
+Atk_1H_R1_1:AtkSuperArmorCorrection(110)
+local Atk_1H_R2_1 = AtkParam_Pc:new("preNerfDarkSword",2304115)
+Atk_1H_R2_1:AtkSuperArmorCorrection(130)
+local Atk_2H_R1_0 = AtkParam_Pc:new("preNerfDarkSword",2304300)
+Atk_2H_R1_0:AtkSuperArmorCorrection(120)
+local Atk_2H_R2_0 = AtkParam_Pc:new("preNerfDarkSword",2304305)
+Atk_2H_R2_0:AtkSuperArmorCorrection(150)
+local Atk_2H_R1_1 = AtkParam_Pc:new("preNerfDarkSword",2304310)
+Atk_2H_R1_1:AtkSuperArmorCorrection(120)
+local Atk_2H_R2_1 = AtkParam_Pc:new("preNerfDarkSword",2304315)
+Atk_2H_R2_1:AtkSuperArmorCorrection(150)
+local Atk_SwordArt = AtkParam_Pc:new("preNerfDarkSword",2304100)
+Atk_SwordArt:AtkSuperArmorCorrection(150)
+
+[DISABLE]
+paramUtils:restore("preNerfDarkSword")

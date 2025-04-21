@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337045284</ID>
+  <Description>"Attach Player Camera to Entity"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337045285"/>
+    <id id="1337045286"/>
+    <id id="1337045287"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

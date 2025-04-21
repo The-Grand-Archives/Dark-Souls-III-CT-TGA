@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337096599</ID>
+  <Description>"Voice Chat Status | ボイスチャット状態"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>8</Offset>
+    <Offset>178</Offset>
+    <Offset>10&gt;</Offset>
+  </Offsets>
+</CheatEntry>

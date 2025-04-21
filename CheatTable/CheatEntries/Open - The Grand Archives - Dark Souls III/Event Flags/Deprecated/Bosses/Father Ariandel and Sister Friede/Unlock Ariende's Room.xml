@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>86426</ID>
+  <Description>"Unlock Ariende's Room"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>644E</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

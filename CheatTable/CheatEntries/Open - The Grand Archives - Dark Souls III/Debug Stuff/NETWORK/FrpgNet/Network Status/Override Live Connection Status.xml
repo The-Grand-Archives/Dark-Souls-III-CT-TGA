@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097372</ID>
+  <Description>"Override Live Connection Status?"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>A44</Offset>
+  </Offsets>
+</CheatEntry>

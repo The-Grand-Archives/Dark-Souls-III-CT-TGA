@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099125</ID>
+  <Description>"ChrLockRangeMaxRadius"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2920</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337190054</ID>
+  <Description>"Enable distance overwrite for deactivation processing | ディアクティベート処理の距離上書きを有効にするか"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>18C</Offset>
+  </Offsets>
+</CheatEntry>

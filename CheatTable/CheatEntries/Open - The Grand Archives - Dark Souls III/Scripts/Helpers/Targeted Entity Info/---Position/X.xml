@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337045259</ID>
+  <Description>"X"</Description>
+  <VariableType>Float</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>70</Offset>
+    <Offset>40</Offset>
+    <Offset>a8</Offset>
+    <Offset>68</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

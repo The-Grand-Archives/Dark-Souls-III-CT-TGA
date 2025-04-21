@@ -1,0 +1,40 @@
+[ENABLE]
+define(SomeAngle,DarkSoulsIII.exe+5CCAE6)
+alloc(newmem,256,SomeAngle) //"DarkSoulsIII.exe"+5CCAE6
+
+label(code)
+label(return)
+
+globalalloc(AngleEntity, 8)
+
+newmem:
+  push rbx
+  mov rbx,[target_ptr]
+  mov rbx,[rbx+58]
+  mov rbx,[rbx+320]
+  cmp rax,rbx
+  pop rbx
+  jne code
+  mov r15,[AngleEntity]
+  mov [rax+000073E0],r15
+code:
+  movaps xmm7,[rax+000073E0]
+  jmp return
+
+SomeAngle:
+  jmp newmem
+  nop
+  nop
+return:
+registersymbol(SomeAngle)
+
+[DISABLE]
+
+SomeAngle:
+  db 0F 28 B8 E0 73 00 00
+
+unregistersymbol(SomeAngle)
+dealloc(newmem)
+
+dealloc(AngleEntity)
+unregistersymbol(AngleEntity)

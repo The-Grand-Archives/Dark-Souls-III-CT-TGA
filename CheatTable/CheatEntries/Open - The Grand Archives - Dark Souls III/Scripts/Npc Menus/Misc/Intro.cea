@@ -1,0 +1,17 @@
+[ENABLE]
+aobscanmodule(Intro_AOB,$process,48 33 c4 48 89 84 24 88 00 00 00 0f b6 fa 48 8b d9 49 89 4b a0 33 f6)
+define(Intro_Call,Intro_AOB-22)
+alloc(Intro,100,DarkSoulsIII.exe)
+createthread(Intro)
+
+Intro:
+sub rsp,48
+lea rcx,[rsp+28]
+call Intro_Call
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Intro)

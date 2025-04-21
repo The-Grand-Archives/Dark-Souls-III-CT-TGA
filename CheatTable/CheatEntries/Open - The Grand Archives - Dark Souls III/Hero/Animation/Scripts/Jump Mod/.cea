@@ -1,0 +1,43 @@
+[ENABLE]
+aobscanmodule(JumpMod,DarkSoulsIII.exe,F3 0F 5C 75 04 49)
+alloc(newmem,$1000,JumpMod)
+
+label(code)
+label(return)
+label(jump_ptr)
+label(check)
+
+newmem:
+  push rcx
+  mov rcx,[WorldChrMan]
+  mov rcx,[rcx+80]
+  mov rcx,[rcx+1F90]
+  mov rcx,[rcx+80]
+  mov rcx,[rcx+C8] //last animation ID Highlited
+  cmp rcx,#27410 //Jump ID
+  pop rcx
+  je check
+  jmp code
+check:
+  mov rbx,jump_ptr
+  mov [rbx],rbp
+code:
+  subss xmm6,[rbp+04]
+  jmp return
+
+jump_ptr:
+  dq 0
+
+JumpMod:
+  jmp newmem
+return:
+registersymbol(JumpMod)
+registersymbol(jump_ptr)
+
+[DISABLE]
+JumpMod:
+  db F3 0F 5C 75 04
+
+unregistersymbol(JumpMod)
+unregistersymbol(jump_ptr)
+dealloc(newmem)

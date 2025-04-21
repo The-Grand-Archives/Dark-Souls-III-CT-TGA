@@ -19,7 +19,7 @@ If it doesn't work, try this [alternative invite](https://discord.gg/2RTW6BFgeX)
 
 ### Requirements
 
-Cheat Engine: [7.4 or newer](https://github.com/cheat-engine/cheat-engine/releases/7.4)  
+Cheat Engine: 7.5 or 7.4
 Game: App ver. 1.15.2
 
 ## How to use
@@ -30,8 +30,7 @@ This table is not meant to be used online and you will most likely be banned if 
 
 ### Cheat Table (Windows)
 
-1. Download and install Cheat Engine either from [Github](https://github.com/cheat-engine/cheat-engine/releases) or from its [website](https://cheatengine.org/)  
-  Use the official installer. Do not try to compile it yourself from source unless you know what you're doing
+1. Install a supported version of Cheat Engine, see [Installing Cheat Engine](#installing-cheat-engine)
 2. Download the [Cheat Table](https://github.com/The-Grand-Archives/Dark-Souls-III-CT-TGA/releases)
 3. Unpack the .CT file anywhere that *isn't a Windows protected folder*, a recommendation would be your **My Cheat Tables** folder (e.g. `%USERPROFILE%\Documents\My Cheat Tables`). The default downloads folder is protected and potentially causes problems with one of the features in the table.
 4. Run the game via Steam
@@ -42,9 +41,9 @@ This table is not meant to be used online and you will most likely be banned if 
 
 I expect you to already have Steam, Wine, Proton, and the game installed
 
-1. Launch the game at least once via Steam to have your wine prefix set up
-2. Install [protonhax](https://github.com/jcnils/protonhax)
-3. Download and install the **Windows** version of Cheat Engine from [Github](https://github.com/cheat-engine/cheat-engine/releases) or from its [website](https://cheatengine.org/) using **Wine**
+1. Install a supported version of Cheat Engine, see [Installing Cheat Engine](#installing-cheat-engine)
+2. Launch the game at least once via Steam to have your wine prefix set up
+3. Install [protonhax](https://github.com/jcnils/protonhax)
 4. Download the [Cheat Table](https://github.com/The-Grand-Archives/Dark-Souls-III-CT-TGA/releases)
 5. Unpack the .CT file anywhere, a recommendation would be somewhere you can easily find within the wine prefix created for the game (e.g. `~/.steam/steam/steamapps/compatdata/374320/pfx/drive_c/`)
 6. In Steam, set the game's launch options to `protonhax init %command%`
@@ -52,6 +51,39 @@ I expect you to already have Steam, Wine, Proton, and the game installed
 8. Run Cheat Engine via `protonhax run 374320 /path/to/Cheat\ Engine.exe` in your terminal of choice or put it in a shell script (replace `/path/to/` with your actual path to where you installed CE)
 9. Load the .CT file via File->Load or by clicking on the folder icon
 10. Activate the "Open" script by ticking its box
+
+### Installing Cheat Engine
+
+#### Windows
+
+1. Run Terminal or PowerShell with administrator privileges
+2. Install Chocolatey by pasting the following line into either and pressing enter, if you don't already have it:
+  `winget install chocolatey`
+3. Install Cheat Engine through Chocolatey, using:
+  `choco install cheatengine --version=7.5`
+  If your terminal doesn't recognise `choco`, restart it
+
+#### Linux
+
+Run [this bash script](https://gist.github.com/Umgak/3ce70343161fe4018fb1b4736005f681) provided by [Umgak](https://github.com/Umgak).  
+You can grab it manually from the link or use this command:
+```bash
+bash -c "$(curl -fsSL https://gist.github.com/Umgak/3ce70343161fe4018fb1b4736005f681/raw)"
+```
+
+Alternatively, you can do it completely manually:
+1. Grab the actual installer of Cheat Engine 7.5 from [this link](https://d2oq4dwfbh6gxl.cloudfront.net/f/CheatEngine/1032/CheatEngine75.exe)
+2. Run it in your terminal of choice like this:  
+  `wine ./CheatEngine75.exe /VERYSILENT /ZBDIST`  
+
+Absolutely make sure to use the command as posted, as not using the extra arguments will result in Cheat Engine's installer triggering its malware behaviour.
+
+If you accidentally ran it incorrectly and you notice weird things, remove the following files:
+```
+autorun/eatme.lua
+autorun/soundextension.lua
+autorun/dlls/dnd.dat
+```
 
 ## Credits
 

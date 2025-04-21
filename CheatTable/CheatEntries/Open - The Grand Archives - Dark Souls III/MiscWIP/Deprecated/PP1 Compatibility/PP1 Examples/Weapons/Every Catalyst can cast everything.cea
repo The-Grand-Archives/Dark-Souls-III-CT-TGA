@@ -1,0 +1,94 @@
+{
+  Author: Jessica (from Reverse Souls)
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local talismanCatalysts = { --Every Talisman can cast Sorcery and Pyromancy
+      {13050000,0x101,"87 12 02 80"}, --Talisman Sorcery
+      {13050000,0x102,"13 02 80 06"}, --Talisman Pyromancy
+      {13260000,0x101,"87 12 02 80"}, --Sunlight Talisman Sorcery
+      {13260000,0x102,"13 02 80 06"}, --Sunlight Talisman Pyromancy
+      {13290000,0x101,"87 12 02 80"}, --Saint's Talisman Sorcery
+      {13290000,0x102,"13 02 80 06"}, --Saint's Talisman Pyromancy
+      {13270000,0x101,"87 12 02 80"}, --Canvas Talisman Sorcery
+      {13270000,0x102,"13 02 80 06"}, --Canvas Talisman Pyromancy
+      {13280000,0x101,"87 12 02 80"}, --Sunless Talisman Sorcery
+      {13280000,0x102,"13 02 80 06"}, --Sunless Talisman Pyromancy
+      {13300000,0x101,"87 12 02 80"}, --White Hair Talisman Sorcery
+      {13300000,0x102,"13 02 80 06"}, --White Hair Talisman Pyromancy
+      {13210000,0x101,"87 12 02 80"}, --Cleric's Sacred Chime Sorcery
+      {13210000,0x102,"13 02 80 06"}, --Cleric's Sacred Chime Pyromancy
+      {13220000,0x101,"87 12 02 80"}, --Priest's Chime Sorcery
+      {13220000,0x102,"13 02 80 06"}, --Priest's Chime Pyromancy
+      {13230000,0x101,"87 12 02 80"}, --Saint-Tree Bellvine Sorcery
+      {13230000,0x102,"13 02 80 06"}, --Saint-Tree Bellvine Pyromancy
+      {13430000,0x101,"87 12 02 80"}, --Sacred Chime of Filianore Sorcery
+      {13430000,0x102,"13 02 80 06"}, --Sacred Chime of Filianore Pyromancy
+      {13240000,0x101,"87 12 02 80"}, --Caitha's Chime Sorcery
+      {13240000,0x102,"13 02 80 06"}, --Caitha's Chime Pyromancy
+      {13250000,0x101,"87 12 02 80"}, --Crystal Chime Sorcery
+      {13250000,0x102,"13 02 80 06"}, --Crystal Chime Pyromancy
+      {13140000,0x101,"87 12 02 80"}, --Yorska's Chime Sorcery
+      {13140000,0x102,"13 02 80 06"}, --Yoshka's Chime Pyromancy
+
+}
+local staffCatalysts = { --Every Staff can cast Pyromancy and Miracles
+      {13060000,0x102,"11 02 60 06"}, --Sorcerer's Staff Pyromancy
+      {13060000,0x102,"17 02 60 06"}, --Sorcerer's Staff Miracle
+      {13170000,0x102,"11 02 60 06"}, --Heretic's Staff Pyromancy
+      {13170000,0x102,"17 02 60 06"}, --Heretic's Staff Miracle
+      {13180000,0x102,"11 02 60 06"}, --Court Sorcerer's Staff Pyromancy
+      {13180000,0x102,"17 02 60 06"}, --Court Sorcerer's Staff Miracle
+      {13190000,0x102,"11 02 60 06"}, --Witchtree Staff Pyromancy
+      {13190000,0x102,"17 02 60 06"}, --Witchtree Staff Miracle
+      {13070000,0x102,"11 02 60 06"}, --Storyteller's Staff Pyromancy
+      {13070000,0x102,"17 02 60 06"}, --Storyteller's Staff Miracle
+      {13080000,0x102,"11 02 60 06"}, --Mendicant's Staff Pyromancy
+      {13080000,0x102,"17 02 60 06"}, --Mendicant's Staff Miracle
+      {13420000,0x102,"11 02 60 06"}, --Murky Longstaff Pyromancy
+      {13420000,0x102,"17 02 60 06"}, --Murky Longstaff Miracle
+      {13200000,0x102,"11 02 60 06"}, --Izalith Staff Pyromancy
+      {13200000,0x102,"17 02 60 06"}, --Izalith Staff Miracle
+      {13110000,0x102,"11 02 60 06"}, --Archdeacon's Great Staff Pyromancy
+      {13110000,0x102,"17 02 60 06"}, --Archdeacon's Great Staff Miracle
+      {13100000,0x102,"11 02 60 06"}, --Man-Grub's Staff Pyromancy
+      {13100000,0x102,"17 02 60 06"}, --Man-Grub's Staff Miracle
+      {13440000,0x102,"11 02 60 06"}, --Preacher's Right Arm Pyromancy
+      {13440000,0x102,"17 02 60 06"}, --Preacher's Right Arm Miracle
+      {13160000,0x102,"11 02 60 06"}, --Sage's Crystal Staff Pyromancy
+      {13160000,0x102,"13 02 80 06"}, --Sage's Crystal Staff Miracle
+}
+local pyromancyCatalysts = { --All Pyromancy Hands can cast Miracles and Sorcery
+      {13400000,0x101,"83 11 02 80"}, --Pyromancy Flame Sorcery
+      {13400000,0x102,"13 02 80 06"}, --Pyromancy Flame Miracle
+      {13410000,0x101,"83 11 02 80"}, --Pyromancer's Parting Flame Sorcery
+      {13410000,0x102,"13 02 80 06"}, --Pyromancer's Parting Flame Miracle
+}
+local hybridCatalysts = { --All Hybrid's can cast Miracles, Sorcery and Pyromancy
+      {2160000,0x101,"87 0A 02 80"}, --Cleric's Candlestick Sorcery
+      {2160000,0x102,"0b 02 80 06"}, --Cleric's Candlestick Pyromancy
+      {4130000,0x101,"87 21 02 80"}, --Demon's Scar Sorcery
+      {4130000,0x102,"23 02 80 06"}, --Demon's Scar Miracle
+      {13120000,0x102,"47 02 80 06"}, --Golden Ritual Spear Pyromancy
+      {13120000,0x102,"47 02 80 06"}, --Golden Ritual Spear Miracle
+      {8220000,0x102,"47 02 80 06"}, --Heysel's Pick Pyromancy
+      {8220000,0x102,"47 02 80 06"}, --Heysel's Pick Miracle
+      {10160000,0x102,"47 02 80 06"}, --Immolation Tinder Pyromancy
+      {10160000,0x102,"47 02 80 06"}, --Immolation Tinder Miracle
+      {12070000,0x101,"87 0A 02 80"}, --Rose of Ariandel Sorcery
+      {12070000,0x102,"0b 02 80 06"}, --Rose of Ariandel Pyromancy
+}
+paramUtils:paramIterator("EquipParamWeapon",talismanCatalysts,"talismanCatalystsOriginal")
+paramUtils:paramIterator("EquipParamWeapon",staffCatalysts,"staffCatalystsOriginal")
+paramUtils:paramIterator("EquipParamWeapon",pyromancyCatalysts,"pyromancyCatalystsOriginal")
+paramUtils:paramIterator("EquipParamWeapon",hybridCatalysts,"hybridCatalystsOriginal")
+
+{$asm}
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:paramDepatcher("talismanCatalystsOriginal")
+paramUtils:paramDepatcher("staffCatalystsOriginal")
+paramUtils:paramDepatcher("pyromancyCatalystsOriginal")
+paramUtils:paramDepatcher("hybridCatalystsOriginal")

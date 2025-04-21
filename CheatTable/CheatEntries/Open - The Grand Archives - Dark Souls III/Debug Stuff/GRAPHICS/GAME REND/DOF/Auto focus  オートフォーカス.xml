@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337081871</ID>
+  <Description>"Auto focus | オートフォーカス"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>C2</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

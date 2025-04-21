@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081918</ID>
+  <Description>"直線上にナビメッシュが通ってるか - Test Line of Sight"</Description>
+  <Color>C0C0C0</Color>
+  <VariableType>String</VariableType>
+  <Length>100</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>14295DC50</Address>
+</CheatEntry>

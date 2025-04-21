@@ -1,0 +1,22 @@
+<CheatEntry>
+  <ID>1337187849</ID>
+  <Description>"===== Inventory list ====="</Description>
+  <GroupHeader>1</GroupHeader>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>(readInteger("[[GameDataMan]+10]+468")-readInteger("[[GameDataMan]+10]+3F4"))*0x10</Offset>
+    <Offset>3E8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337187850"/>
+    <id id="1337187851"/>
+    <id id="1337187852"/>
+    <id id="1337187853"/>
+    <id id="1337187854"/>
+    <id id="1337187855"/>
+    <id id="1337187856"/>
+    <id id="1337187857"/>
+    <id id="1337187858"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

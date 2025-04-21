@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337033257</ID>
+  <Description>"Jump Height"</Description>
+  <VariableType>Float</VariableType>
+  <Address>jump_ptr</Address>
+  <Offsets>
+    <Offset>4</Offset>
+  </Offsets>
+</CheatEntry>

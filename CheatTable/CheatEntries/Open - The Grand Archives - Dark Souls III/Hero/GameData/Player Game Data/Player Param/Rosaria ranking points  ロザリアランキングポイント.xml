@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080967</ID>
+  <Description>"Rosaria ranking points | ロザリアランキングポイント"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>C8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

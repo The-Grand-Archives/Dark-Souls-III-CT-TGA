@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337096614</ID>
+  <Description>"Run at variable frame rate | 可変フレームレートで実行するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjFlipper</Address>
+  <Offsets>
+    <Offset>360</Offset>
+  </Offsets>
+</CheatEntry>

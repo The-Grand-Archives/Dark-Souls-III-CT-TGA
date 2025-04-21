@@ -1,0 +1,27 @@
+{cscript}
+// Example C Param Patcher script: Double all weapon base damage
+// Requires CSCRIPT extensions
+[ENABLE]
+{$c}
+#include <tga/params.h>
+int on_enable() {
+    ParamPatchBegin("double_dmg");
+    ParamPatchAll(EquipParamWeapon, {
+        param->atkBasePhysics *= 2;
+        param->atkBaseMagic *= 2;
+        param->atkBaseFire *= 2;
+        param->atkBaseThunder *= 2;
+        param->atkBaseStamina *= 2;
+    });
+    ParamPatchEnd();
+    return 0;
+}
+
+int on_disable() {
+    ParamRestore("double_dmg");
+    return 0;
+}
+
+{$asm}
+[DISABLE]
+

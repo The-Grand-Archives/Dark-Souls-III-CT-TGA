@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337038820</ID>
+  <Description>"correctType"</Description>
+  <DropDownList DisplayValueAsItem="1">0:Normal
+1:Heavy
+2:Sharp
+8:Refined
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>+e8</Address>
+</CheatEntry>

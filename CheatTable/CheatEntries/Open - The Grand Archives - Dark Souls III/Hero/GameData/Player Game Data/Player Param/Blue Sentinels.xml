@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080969</ID>
+  <Description>"Blue Sentinels"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>B1</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

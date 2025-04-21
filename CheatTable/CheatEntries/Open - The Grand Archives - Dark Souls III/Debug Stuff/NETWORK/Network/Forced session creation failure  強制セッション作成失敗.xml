@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337189385</ID>
+  <Description>"Forced session creation failure | 強制セッション作成失敗"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>37C</Offset>
+  </Offsets>
+</CheatEntry>

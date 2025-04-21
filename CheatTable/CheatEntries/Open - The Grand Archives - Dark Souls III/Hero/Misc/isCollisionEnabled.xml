@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337014506</ID>
+  <Description>"isCollisionEnabled"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>48</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

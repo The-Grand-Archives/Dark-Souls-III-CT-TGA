@@ -1,0 +1,23 @@
+//Clientside
+[ENABLE]
+aobscanmodule(RightHand, DarkSoulsIII.exe , 89 43 08 40 0A F9 48 8B 8E)
+aobscanmodule(LeftHand, DarkSoulsIII.exe , 89 43 04 48 8B 9E 20)
+registersymbol(RightHand)
+registersymbol(LeftHand)
+
+RightHand:
+nop 3
+
+LeftHand:
+nop 3
+
+[DISABLE]
+
+RightHand:
+db 89 43 08
+
+LeftHand:
+db 89 43 04
+
+unregistersymbol(RightHand)
+unregistersymbol(LeftHand)

@@ -1,0 +1,18 @@
+{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+disableMemrec(memrec)
+showText("Event Flags Help", [[
+Select your event flag category from the "Category" dropdown, for example "Bosses," then select the event flag ID from the "Event Flag ID" dropdown, for example "13300850 : Crystal Sage - Defeated,"
+"State" will show the selected flag's current state, which you can change from its dropdown.
+
+You can also manually set "Event Flag ID" to a valid flag ID and check and/or change its state in the same way.
+
+Check under the "Examples" header to see example scripts.
+
+List containing flags and names, some are Cinders mod specific:
+https://github.com/vawser/Cinders-DS3/blob/52cdc32e14b8cbf343473acdd28922c3ed3cb0cc/%23%20Documentation%2FMod%2FMod%20Info%20-%20Event%20Flags.txt
+]])
+
+[DISABLE]

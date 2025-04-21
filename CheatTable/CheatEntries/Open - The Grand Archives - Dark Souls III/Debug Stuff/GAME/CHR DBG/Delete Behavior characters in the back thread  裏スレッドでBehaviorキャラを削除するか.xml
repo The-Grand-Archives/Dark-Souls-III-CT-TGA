@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097819</ID>
+  <Description>"Delete Behavior characters in the back thread? | 裏スレッドでBehaviorキャラを削除するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+458714A</Address>
+</CheatEntry>

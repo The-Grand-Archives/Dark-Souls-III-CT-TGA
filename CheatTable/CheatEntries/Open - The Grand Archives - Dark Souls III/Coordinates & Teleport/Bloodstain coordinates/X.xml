@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337019905</ID>
+  <Description>"X"</Description>
+  <VariableType>Float</VariableType>
+  <Address>bloodstain_coords_ptr_2</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

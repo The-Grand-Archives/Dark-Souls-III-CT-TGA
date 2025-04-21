@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337183585</ID>
+  <Description>"AutoPreUpdateFrame"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjRemo</Address>
+  <Offsets>
+    <Offset>110</Offset>
+    <Offset>140</Offset>
+  </Offsets>
+</CheatEntry>

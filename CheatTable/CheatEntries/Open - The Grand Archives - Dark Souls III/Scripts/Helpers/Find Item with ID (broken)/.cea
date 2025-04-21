@@ -1,0 +1,73 @@
+[ENABLE]
+aobscanmodule(itemid,DarkSoulsIII.exe,C3 90 89 48 8B 41 8B 41 0C 89 02)
+alloc(newmem,$1000,itemid)
+
+label(code)
+label(return)
+label(itemid_value)
+label(itemid_found)
+
+newmem:
+  mov rax,itemid_value
+  mov eax,[rax]
+  cmp [rcx+0C],eax
+  jne code
+  mov rax,itemid_found
+  mov [rax],rcx
+code:
+  mov eax,[rcx+0C]
+  mov [rdx],eax
+  jmp return
+
+itemid_value:
+  dd 0
+
+itemid_found:
+  dq 0
+
+itemid+06:
+  jmp newmem
+return:
+registersymbol(itemid)
+registersymbol(itemid_value)
+registersymbol(itemid_found)
+
+[DISABLE]
+itemid+06:
+  db 8B 41 0C 89 02
+unregistersymbol(itemid)
+unregistersymbol(itemid_value)
+unregistersymbol(itemid_found)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+5837D0
+
+"DarkSoulsIII.exe"+5837BE: 8B C3                       -  mov eax,ebx
+"DarkSoulsIII.exe"+5837C0: 48 8B 5C 24 30              -  mov rbx,[rsp+30]
+"DarkSoulsIII.exe"+5837C5: 48 83 C4 20                 -  add rsp,20
+"DarkSoulsIII.exe"+5837C9: 5F                          -  pop rdi
+"DarkSoulsIII.exe"+5837CA: C3                          -  ret
+"DarkSoulsIII.exe"+5837CB: CC                          -  int 3
+"DarkSoulsIII.exe"+5837CC: CC                          -  int 3
+"DarkSoulsIII.exe"+5837CD: CC                          -  int 3
+"DarkSoulsIII.exe"+5837CE: CC                          -  int 3
+"DarkSoulsIII.exe"+5837CF: CC                          -  int 3
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+5837D0: 8B 41 0C                    -  mov eax,[rcx+0C]
+"DarkSoulsIII.exe"+5837D3: 89 02                       -  mov [rdx],eax
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+5837D5: 48 8B C2                    -  mov rax,rdx
+"DarkSoulsIII.exe"+5837D8: C3                          -  ret
+"DarkSoulsIII.exe"+5837D9: CC                          -  int 3
+"DarkSoulsIII.exe"+5837DA: CC                          -  int 3
+"DarkSoulsIII.exe"+5837DB: CC                          -  int 3
+"DarkSoulsIII.exe"+5837DC: CC                          -  int 3
+"DarkSoulsIII.exe"+5837DD: CC                          -  int 3
+"DarkSoulsIII.exe"+5837DE: CC                          -  int 3
+"DarkSoulsIII.exe"+5837DF: CC                          -  int 3
+"DarkSoulsIII.exe"+5837E0: 48 89 5C 24 08              -  mov [rsp+08],rbx
+}
+
+
+

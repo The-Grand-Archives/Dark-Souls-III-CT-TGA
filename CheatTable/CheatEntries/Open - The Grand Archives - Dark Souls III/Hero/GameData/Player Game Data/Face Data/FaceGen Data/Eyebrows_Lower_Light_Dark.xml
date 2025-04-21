@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081284</ID>
+  <Description>"Eyebrows_Lower_Light_Dark"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>76C</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

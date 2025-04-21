@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081350</ID>
+  <Description>"Beard_Moustache_light_dark"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>764</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

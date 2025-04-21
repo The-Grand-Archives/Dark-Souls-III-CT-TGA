@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337044678</ID>
+  <Description>"Poison Max"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1F4</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

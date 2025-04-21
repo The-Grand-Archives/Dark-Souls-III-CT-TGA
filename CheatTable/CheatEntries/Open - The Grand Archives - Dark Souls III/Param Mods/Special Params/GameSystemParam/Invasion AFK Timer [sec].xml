@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099473</ID>
+  <Description>"Invasion AFK Timer [sec]"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>2 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>126</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

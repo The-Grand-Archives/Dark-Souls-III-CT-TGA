@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099108</ID>
+  <Description>"Stick playing frame | スティック弾きフレーム"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2838</Offset>
+  </Offsets>
+</CheatEntry>

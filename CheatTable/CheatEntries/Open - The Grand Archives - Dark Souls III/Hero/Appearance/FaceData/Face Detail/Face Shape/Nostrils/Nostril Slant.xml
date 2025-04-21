@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73193</ID>
+  <Description>"Nostril Slant"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>754</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,33 @@
+<CheatEntry>
+  <ID>1337045472</ID>
+  <Description>"goodsUseAnim"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Eat
+1:Resin buff
+2:Throw
+3:Heavy throw
+4:Binoculars
+5:Repair
+6:Prayer
+7:Carving
+8:Message
+9:Ember
+10:Estus
+11:Dragon Head
+12:Dragon Torso
+13:13 None
+14:Force
+15:15 None
+16:Bundle buff
+17:Fast throw
+18:18 None
+19:Ashen Estus
+20:Throw behind
+21:Siegbrau
+22:Chameleon
+23:23 Block use
+24:24 Block use
+25:Spear of the Church
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>+3E</Address>
+</CheatEntry>

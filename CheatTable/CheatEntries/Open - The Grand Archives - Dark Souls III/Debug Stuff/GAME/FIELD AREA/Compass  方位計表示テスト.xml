@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081111</ID>
+  <Description>"Compass | 方位計表示テスト"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <Color>0000FF</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4743A79</Address>
+</CheatEntry>

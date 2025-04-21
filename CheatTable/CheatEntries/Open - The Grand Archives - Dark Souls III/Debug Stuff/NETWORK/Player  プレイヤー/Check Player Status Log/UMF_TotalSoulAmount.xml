@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097096</ID>
+  <Description>"UMF_TotalSoulAmount"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>4C8</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>

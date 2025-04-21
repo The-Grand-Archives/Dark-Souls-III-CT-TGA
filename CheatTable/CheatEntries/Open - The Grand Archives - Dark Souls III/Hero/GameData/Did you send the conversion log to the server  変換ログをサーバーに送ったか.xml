@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337080865</ID>
+  <Description>"Did you send the conversion log to the server? | 変換ログをサーバーに送ったか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>F0</Offset>
+  </Offsets>
+</CheatEntry>

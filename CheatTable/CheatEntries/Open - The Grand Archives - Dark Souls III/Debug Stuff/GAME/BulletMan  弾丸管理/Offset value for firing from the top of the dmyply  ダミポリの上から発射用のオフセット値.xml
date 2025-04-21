@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>1337187449</ID>
+  <Description>"Offset value for firing from the top of the dmyply | ダミポリの上から発射用のオフセット値"</Description>
+  <Color>000080</Color>
+  <VariableType>Float</VariableType>
+  <Address>DarkSoulsIII.exe+45939FC</Address>
+</CheatEntry>

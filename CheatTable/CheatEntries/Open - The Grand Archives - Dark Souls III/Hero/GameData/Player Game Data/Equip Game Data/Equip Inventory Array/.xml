@@ -1,0 +1,36 @@
+<CheatEntry>
+  <ID>1337080982</ID>
+  <Description>"Equip Inventory Array"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337080991"/>
+    <id id="1337080996"/>
+    <id id="1337080995"/>
+    <id id="1337080994"/>
+    <id id="1337080993"/>
+    <id id="1337080992"/>
+    <id id="1337080997"/>
+    <id id="1337081002"/>
+    <id id="1337081001"/>
+    <id id="1337081000"/>
+    <id id="1337080999"/>
+    <id id="1337080998"/>
+    <id id="1337081003"/>
+    <id id="1337081006"/>
+    <id id="1337081005"/>
+    <id id="1337081004"/>
+    <id id="1337081007"/>
+    <id id="1337081018"/>
+    <id id="1337081017"/>
+    <id id="1337081016"/>
+    <id id="1337081015"/>
+    <id id="1337081014"/>
+    <id id="1337081013"/>
+    <id id="1337081012"/>
+    <id id="1337081011"/>
+    <id id="1337081010"/>
+    <id id="1337081009"/>
+    <id id="1337081008"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

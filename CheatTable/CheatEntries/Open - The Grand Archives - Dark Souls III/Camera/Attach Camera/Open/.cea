@@ -1,0 +1,10 @@
+[ENABLE]
+label(CameraThing)
+registersymbol(CameraThing)
+[AttachAddressToUse]:
+CameraThing:
+[DISABLE]
+unregistersymbol(CameraThing)
+
+
+

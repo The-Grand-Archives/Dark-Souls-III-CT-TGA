@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>73662</ID>
+  <Description>"Praise the Sun"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">28:Locked
+29:Unlocked
+</DropDownList>
+  <VariableType>2 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>44</Offset>
+    <Offset>7B8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

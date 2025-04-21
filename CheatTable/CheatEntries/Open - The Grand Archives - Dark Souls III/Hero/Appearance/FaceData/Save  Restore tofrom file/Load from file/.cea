@@ -1,0 +1,53 @@
+{
+  Author: Igromanru
+  Game Version: 1.14
+  Date: 21.06.2017
+  Description: Loads character appearance data to a file, that was saved with the "Save to file".
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+function stringToTable(text, name)
+	local result = {}
+	local sMatch = text:match("<"..name..">(.*)</"..name..">")
+	if #sMatch ~= 0 then
+		for value in sMatch:gmatch('(%x+);') do
+			table.insert(result,tonumber(value,16))
+		end
+	end
+	return result
+end
+
+function loadFaceDataFromFile(filename)
+	local file = io.open(filename)
+	local fileContent = file:read("*all")
+	if(#fileContent > 0) then
+		local facedata = stringToTable(fileContent, "facedata")
+		local gender = stringToTable(fileContent, "gender")
+		local body = stringToTable(fileContent, "body")
+
+		if #facedata > 0 then
+			writeBytes("[[GameDataMan]+10]+6b8", facedata)
+		end
+		if #gender > 0 then
+			writeBytes("[[GameDataMan]+10]+AA", gender)
+		end
+		if #body > 0 then
+			writeBytes("[[GameDataMan]+10]+3B0", body)
+		end
+	end
+	file:close()
+end
+
+local openDialog = createOpenDialog(getMainForm())
+--openDialog.InitalDir = TrainerOrigin
+if(openDialog:execute()) then
+	loadFaceDataFromFile(openDialog.FileName)
+else
+	error("canceled")
+end
+
+
+[DISABLE]
+{$lua}

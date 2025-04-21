@@ -1,0 +1,23 @@
+<CheatEntry>
+  <ID>1337096893</ID>
+  <Description>"iconId"</Description>
+  <DropDownList DisplayValueAsItem="1">0:TEST DATA
+3:Red Eye Orb
+54:Soul of a Wicked Spirit
+89:Soul of the Great Bat
+90:Monesttary Charm
+92:Holy Water Urn
+104:?Pendant?
+106:Seed of Giant Tree
+116:Spirit Amethyst
+117:Holy Remains
+135:Uncharged Spirit Amethyst
+151:Irina's Ashes
+156:Brallie Tome of Sunlight
+173:Iron Seal of the Wolf
+259:Banner
+3499:Humanity Head
+</DropDownList>
+  <VariableType>2 Bytes</VariableType>
+  <Address>+2c</Address>
+</CheatEntry>

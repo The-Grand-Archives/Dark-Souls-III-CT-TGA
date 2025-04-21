@@ -1,0 +1,40 @@
+<CheatEntry>
+  <ID>1337045762</ID>
+  <Description>"weapon position"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">20:Dagger
+23:Straight sword
+25:Greatsword
+27:Rapier
+28:Curved Sword
+29:Katana
+30:Axe
+32:Greataxe
+35:Hammer/Greathammer
+36:Spear
+38:Halberd
+41:Talisman/Sacred Chime
+42:Pyro flame
+44:Bow
+45:Greatbow
+46:Crossbow
+47:Greatshield
+48:Shield
+49:Torch
+50:Fists
+147:Giant Door Shield
+153:Offhand Dagger
+181:Demon's Fist
+232:Friede's Great Scythe
+236:Valorheart
+1020:Twindagger
+1023:Twinswords
+1026:Paired Greatswords
+1028:Dancer's Swords
+1029:Onikiri and Ubadachi
+1036:Twinspears
+1042:Dark Hand/Claws
+10000:Miyazaki Dual Weapon
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+170</Address>
+</CheatEntry>

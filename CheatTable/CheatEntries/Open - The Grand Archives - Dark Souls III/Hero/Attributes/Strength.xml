@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337036791</ID>
+  <Description>"Strength"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>50</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

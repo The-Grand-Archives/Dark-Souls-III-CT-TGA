@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096715</ID>
+  <Description>""</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>CB8</Offset>
+  </Offsets>
+</CheatEntry>

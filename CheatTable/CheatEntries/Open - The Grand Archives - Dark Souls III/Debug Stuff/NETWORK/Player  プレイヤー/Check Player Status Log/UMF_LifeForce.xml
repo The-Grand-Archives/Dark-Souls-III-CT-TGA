@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097095</ID>
+  <Description>"UMF_LifeForce"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>4CC</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>

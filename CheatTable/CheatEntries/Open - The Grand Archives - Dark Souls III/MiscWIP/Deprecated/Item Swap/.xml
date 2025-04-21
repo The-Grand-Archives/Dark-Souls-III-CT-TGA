@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>72379</ID>
+  <Description>"Item Swap"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337014490"/>
+    <id id="72941"/>
+    <id id="72375"/>
+    <id id="86601"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

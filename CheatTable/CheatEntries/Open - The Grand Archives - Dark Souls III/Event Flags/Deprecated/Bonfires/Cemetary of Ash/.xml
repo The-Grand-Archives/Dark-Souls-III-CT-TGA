@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>94074</ID>
+  <Description>"Cemetary of Ash"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="77999"/>
+    <id id="78144"/>
+    <id id="77998"/>
+    <id id="78206"/>
+    <id id="78207"/>
+    <id id="77981"/>
+    <id id="77989"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

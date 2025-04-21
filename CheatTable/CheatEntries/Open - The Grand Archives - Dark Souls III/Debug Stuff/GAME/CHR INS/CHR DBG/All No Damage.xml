@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337189943</ID>
+  <Description>"All No Damage"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg_Flags+9</Address>
+</CheatEntry>

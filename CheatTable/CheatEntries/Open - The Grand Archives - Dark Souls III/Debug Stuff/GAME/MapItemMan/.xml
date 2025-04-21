@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337099086</ID>
+  <Description>"MapItemMan"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337098225"/>
+    <id id="1337098219"/>
+    <id id="1337098222"/>
+    <id id="1337098221"/>
+    <id id="1337098220"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

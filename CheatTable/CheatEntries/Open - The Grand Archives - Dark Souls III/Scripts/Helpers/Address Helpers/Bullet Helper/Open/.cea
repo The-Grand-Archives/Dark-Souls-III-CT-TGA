@@ -1,0 +1,7 @@
+[ENABLE]
+label(BulletParam)
+registersymbol(BulletParam)
+[BulletAddressToUse]:
+BulletParam:
+[DISABLE]
+unregistersymbol(BulletParam)

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337081062</ID>
+  <Description>"Other Player Name Notation"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:0
+1:1
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>1D</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

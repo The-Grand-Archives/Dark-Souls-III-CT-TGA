@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>86442</ID>
+  <Description>"Champion's Gravetender"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="86445"/>
+    <id id="86443"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

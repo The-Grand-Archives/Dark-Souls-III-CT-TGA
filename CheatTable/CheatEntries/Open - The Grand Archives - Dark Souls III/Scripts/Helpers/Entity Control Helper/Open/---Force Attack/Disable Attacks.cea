@@ -1,0 +1,122 @@
+[ENABLE]
+define(Second,DarkSoulsIII.exe+3BCB80)
+alloc(newmem,$1000,Second)
+
+label(code)
+label(return)
+
+newmem:
+  push rax
+  mov rax,XE
+  mov rax,[rax]
+  mov rax,[rax+58]
+  mov rax,[rax+320]
+  add rax,7420
+  cmp rcx,rax
+  pop rax
+  je return
+code:
+  mov [rcx+14],edx
+  mov [rcx+18],edx
+  jmp return
+
+Second:
+  jmp newmem
+  nop
+return:
+registersymbol(Second)
+
+define(Third,DarkSoulsIII.exe+3BCB00)
+alloc(newmem2,$1000,Third)
+
+label(code2)
+label(return2)
+
+newmem2:
+  push rax
+  mov rax,XE
+  mov rax,[rax]
+  mov rax,[rax+58]
+  mov rax,[rax+320]
+  add rax,7420
+  cmp rcx,rax
+  pop rax
+  je return2
+code2:
+  mov [rcx+14],FFFFFFFF
+  jmp return2
+
+Third:
+  jmp newmem2
+  nop
+  nop
+return2:
+registersymbol(Third)
+
+[DISABLE]
+Second:
+  db 89 51 14 89 51 18
+unregistersymbol(Second)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+3BCF60
+
+"DarkSoulsIII.exe"+3BCF56: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF57: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF58: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF59: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF5A: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF5B: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF5C: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF5D: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF5E: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF5F: CC                             -  int 3
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+3BCF60: 89 51 14                       -  mov [rcx+14],edx
+"DarkSoulsIII.exe"+3BCF63: 89 51 18                       -  mov [rcx+18],edx
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+3BCF66: C6 41 0D 01                    -  mov byte ptr [rcx+0D],01
+"DarkSoulsIII.exe"+3BCF6A: C3                             -  ret
+"DarkSoulsIII.exe"+3BCF6B: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF6C: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF6D: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF6E: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF6F: CC                             -  int 3
+"DarkSoulsIII.exe"+3BCF70: 48 89 5C 24 10                 -  mov [rsp+10],rbx
+"DarkSoulsIII.exe"+3BCF75: 57                             -  push rdi
+"DarkSoulsIII.exe"+3BCF76: 48 83 EC 20                    -  sub rsp,20
+}
+
+Third:
+  db C7 41 14 FF FF FF FF
+unregistersymbol(Third)
+dealloc(newmem2)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+3BCEE0
+
+"DarkSoulsIII.exe"+3BCED6: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCED7: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCED8: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCED9: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEDA: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEDB: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEDC: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEDD: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEDE: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEDF: CC                       -  int 3
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+3BCEE0: C7 41 14 FF FF FF FF     -  mov [rcx+14],FFFFFFFF
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+3BCEE7: C3                       -  ret
+"DarkSoulsIII.exe"+3BCEE8: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEE9: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEEA: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEEB: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEEC: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEED: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEEE: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEEF: CC                       -  int 3
+"DarkSoulsIII.exe"+3BCEF0: C6 41 08 01              -  mov byte ptr [rcx+08],01
+}

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099121</ID>
+  <Description>"Line Of Sight LockOn Deactivate Time"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2910</Offset>
+  </Offsets>
+</CheatEntry>

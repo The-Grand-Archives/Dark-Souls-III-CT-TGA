@@ -1,0 +1,44 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+define(SomeAob,DarkSoulsIII.exe+4DE38CF)
+alloc(newmem,$1000,SomeAob)
+label(code)
+label(return)
+
+newmem:
+  mov ecx,[rdx]
+  mov ecx,fa
+  shl ecx,3
+  neg ecx
+  cmp edi,ecx
+  jg code
+  mov rcx,[WorldChrMan]
+  mov rcx,[rcx+80]
+  mov rcx,[rcx+1F90]
+  cmp rbx,[rcx+18]
+  jne code
+  xor rdi,rdi
+code:
+  lea ecx,[rax+rdi]
+  mov [rsp+48],ecx
+  jmp return
+
+SomeAob:
+  jmp newmem
+  nop
+  nop
+return:
+registersymbol(SomeAob)
+
+[DISABLE]
+SomeAob:
+  db 8D 0C 38 89 4C 24 48
+unregistersymbol(SomeAob)
+dealloc(newmem)
+
+
+
+

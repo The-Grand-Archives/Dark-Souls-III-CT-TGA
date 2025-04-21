@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78373</ID>
+  <Description>"Irithyll Dungeon #2"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>5</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>2443B</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

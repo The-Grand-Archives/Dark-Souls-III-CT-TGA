@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337256123</ID>
+  <Description>"Event Flag ID"</Description>
+  <DropDownList DisplayValueAsItem="1">14000101:Cemetary of Ash - Coiled Sword embed
+</DropDownList>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>ef.flag_data</Address>
+</CheatEntry>

@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>492941</ID>
+  <Description>"Start Menu"</Description>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+47665EC</Address>
+</CheatEntry>

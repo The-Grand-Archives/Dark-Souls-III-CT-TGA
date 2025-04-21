@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337096589</ID>
+  <Description>"Network System"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Fine
+1:Error
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>16B</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

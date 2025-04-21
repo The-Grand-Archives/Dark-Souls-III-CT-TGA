@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>86610</ID>
+  <Description>"Effect7020 "Temp. Stat Boost""</Description>
+  <DropDownList DisplayValueAsItem="1">07:Default
+04:Restricted
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Byte</VariableType>
+  <Address>Effect7020</Address>
+</CheatEntry>

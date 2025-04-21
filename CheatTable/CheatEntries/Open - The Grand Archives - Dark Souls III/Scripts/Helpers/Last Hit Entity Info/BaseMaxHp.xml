@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>88197</ID>
+  <Description>"BaseMaxHp"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>dc</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

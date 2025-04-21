@@ -1,0 +1,42 @@
+//Thanks to LukeYui for providing the function for this meme!
+[ENABLE]
+alloc(PopupMsgInvade,256,DarkSoulsIII.exe)
+alloc(CreateNewString,256,DarkSoulsIII.exe)
+alloc(NewString,512)
+define(StringLookupByID,DarkSoulsIII.exe+E0C6E0)
+
+NewString:
+dw 'VFX -> Reshaded',0
+
+CreateNewString:
+mov r9d,ebx
+xor edx,edx
+cmp r9d,03A7D28C
+jne DarkSoulsIII.exe+E0C6E5 //StringLookupByID+05
+lea rax,[NewString]
+jmp DarkSoulsIII.exe+E0C6F3 //StringLookupByID+13
+
+StringLookupByID:
+jmp CreateNewString
+
+PopupMsgInvade:
+mov rcx,[SprjLuaEventMan]
+mov edx,00000001
+mov r8d,03A7D28C
+sub rsp,28
+call 140473040
+add rsp,28
+ret
+
+createthread(PopupMsgInvade)
+
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+DarkSoulsIII.exe+E0C6E0:
+db 44 8B CB 33 D2
+
+dealloc(CreateNewString)
+dealloc(NewString)
+dealloc(PopupMsgInvade)

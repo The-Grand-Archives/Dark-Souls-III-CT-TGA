@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>107590</ID>
+  <Description>"Last 5 Bullets Fired"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="107591"/>
+    <id id="107592"/>
+    <id id="107593"/>
+    <id id="107594"/>
+    <id id="107595"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,2203 @@
+<CheatEntry>
+  <ID>1337257112</ID>
+  <Description>"BULLET_ID"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">0:0 : Test
+1:1 : Magic test
+2:2 : Funnel test
+3:3 : Hiryu breath test
+5:5 : Evil eye and [ throw ]
+6:6 : Evil Eye [ landing ]
+7:7 :
+8:8 :
+30:30 : Wrath of Gods Test (Scales off held weapon damage)
+50:50 : Bonfire recovery effect
+60:60 :
+61:61 :
+62:62 :
+63:63 : Delayed invis damage
+64:64 :
+65:65 :
+70:70 : Alluring skull explosion
+75:75 : Firebomb Fire Effect?
+76:76 : Small fire on roll? Behaves strangely, as it doesn't spawn ALL the time
+77:77 : Black Firebomb Fire Effect?
+78:78 : Small fire on roll but slightly bigger. Behaves the same way as 76.
+100:100 : Kukri
+101:101 : Dart
+110:110 : Firebomb
+111:111 : Firebomb Explosion
+112:112 : Black Firebomb thrown with Hawk Ring
+113:113 : Does nothing
+115:115 : Black Firebomb
+116:116 : Black Firebomb Explosion
+120:120 : Alluring Skull
+121:121 : Alluring skull Explosion
+122:122 :
+123:123 :
+130:130 : Prism Stone
+131:131 : Prism Stone death scream
+132:132 : Prism Stone death scream
+150:150 : Dung Pie
+151:151 : Dung pie Hit effect
+160:160 : Undead Hunter Charm
+161:161 : Undead Hunter Charm explosion
+170:170 : Bloodred Moss Clump, Clear Bleed, chains bullet 171
+171:171 : Bloodred Moss Clump, Remove Bleed buildup
+180:180 : Purple Moss Clump, Clear Poison, chains bullet 181
+181:181 : Purple Moss Clump, Remove Poison buildup
+190:190 : Blooming Purple Moss Clump, Clear Toxic, chains bullet 191
+191:191 : Blooming Purple Moss Clump, Remove Toxic buildup, chains bullet 180
+195:195 : Rime-blue Moss Clump, Remove Frostbite buildup, chains bullet 196
+196:196 : Rime-blue Moss Clump, Clear Frostbite
+200:200 :
+210:210 : Siegbrau use. Restores health and increases frostbite resist
+211:211 :
+220:220 : Divine Blessing main bullet, clears all status, chains bullet 221
+221:221 : Remove Bleed buildup, chains bullet 222
+222:222 : Remove Poison Buildup, chains bullet 223
+223:223 : Remove Toxic Buildup, chains bullet 225
+225:225 : Remove Frost Buldup, chains bullet 226
+226:226 : Restore Full Hp
+230:230 : Dragon Head Stone
+235:235 : Twinkling Dragon Head Stone
+236:236 :
+240:240 : Dragon Torso Stone
+245:245 : Twinkling Dragon Torso Stone
+246:246 : Fume burst from Dragon Torso
+250:250 : Lightning Urn
+251:251 : Lightning Urn explosion
+252:252 : Lightning Urn in water
+253:253 :
+254:254 :
+255:255 :
+256:256 : Lightning spark, moves forward when fired. Does damage.
+270:270 : Duel Charm
+271:271 : Duel Charm explosion
+300:300 : Throwing Knife
+301:301 : Poison Throwing Knife
+302:302 :
+305:305 : Church Guardian Shiv
+310:310 : Black firebomb short distance
+315:315 : Black firebomb short distance
+320:320 : Rope Firebomb
+321:321 : Rope Firebomb explosion
+330:330 : Rope Black Firebomb
+331:331 : Rope Black Firebomb explosion
+340:340 : Stalk Dung Pie
+341:341 : Stalk Dung Pie explosion
+350:350 :
+360:360 : Spell parry
+370:370 : Spell parry
+400:400 : Hello Carving
+401:401 : Hello Carving impact
+405:405 : Thank you Carving
+406:406 : Thank you Carving impact
+410:410 : Very good! Carving
+411:411 : Very good! Carving impact
+415:415 : I'm sorry Carving
+416:416 : I'm sorry Carving impact
+420:420 : Help me! Carving
+421:421 : Help me! Carving impact
+500:500 : Standard Arrow
+501:501 : Running/Rolling/Backstep attack with Standard Arrow
+502:502 : 1/3 Black Bow of Pharis Weapon Art with Standard Arrow
+503:503 : 2/3 Black Bow of Pharis Weapon Art with Standard Arrow
+504:504 : 3/3 Black Bow of Pharis Weapon Art with Standard Arrow
+505:505 : Shortbow &amp; Composite Bow Weapon Art with Standard Arrow
+506:506 : Longbow &amp; Dragonrider Bow Weapon Art with Standard Arrow
+507:507 : Darkmoon Longbow Weapon Art with Standard Arrow
+508:508 : Whitebirch Bow Weapon Art with Standard Arrow
+510:510 : Large Arrow
+511:511 : Running/Rolling/Backstep attack with Large Arrow
+512:512 : 1/3 Black Bow of Pharis Weapon Art with Large Arrow
+513:513 : 2/3 Black Bow of Pharis Weapon Art with Large Arrow
+514:514 : 3/3 Black Bow of Pharis Weapon Art with Large Arrow
+515:515 : Shortbow &amp; Composite Bow Weapon Art with Large Arrow
+516:516 : Longbow &amp; Dragonrider Bow Weapon Art with Large Arrow
+517:517 : Darkmoon Longbow Weapon Art with Large Arrow
+518:518 : Whitebirch Bow Weapon Art with Large Arrow
+520:520 : Feather Arrow
+521:521 : Running/Rolling/Backstep attack with Feather Arrow
+522:522 : 1/3 Black Bow of Pharis Weapon Art with Feather Arrow
+523:523 : 2/3 Black Bow of Pharis Weapon Art with Feather Arrow
+524:524 : 3/3 Black Bow of Pharis Weapon Art with Feather Arrow
+525:525 : Shortbow &amp; Composite Bow Weapon Art with Feather Arrow
+526:526 : Longbow &amp; Dragonrider Bow Weapon Art with Feather Arrow
+527:527 : Darkmoon Longbow Weapon Art with Feather Arrow
+528:528 : Whitebirch Bow Weapon Art with Feather Arrow
+530:530 : Fire Arrow
+531:531 : Running/Rolling/Backstep attack with Fire Arrow
+532:532 : 1/3 Black Bow of Pharis Weapon Art with Fire Arrow
+533:533 : 2/3 Black Bow of Pharis Weapon Art with Fire Arrow
+534:534 : 3/3 Black Bow of Pharis Weapon Art with Fire Arrow
+535:535 : Shortbow &amp; Composite Bow Weapon Art with Fire Arrow
+536:536 : Longbow &amp; Dragonrider Bow Weapon Art with Fire Arrow
+537:537 : Darkmoon Longbow Weapon Art with Fire Arrow
+538:538 : Whitebirch Bow Weapon Art with Fire Arrow
+540:540 : Poison Arrow
+541:541 : Running/Rolling/Backstep attack with Poison Arrow
+542:542 : 1/3 Black Bow of Pharis Weapon Art with Poison Arrow
+543:543 : 2/3 Black Bow of Pharis Weapon Art with Poison Arrow
+544:544 : 3/3 Black Bow of Pharis Weapon Art with Poison Arrow
+545:545 : Shortbow &amp; Composite Bow Weapon Art with Poison Arrow
+546:546 : Longbow &amp; Dragonrider Bow Weapon Art with Poison Arrow
+547:547 : Darkmoon Longbow Weapon Art with Poison Arrow
+548:548 : Whitebirch Bow Weapon Art with Poison Arrow
+550:550 : Moonlight Arrow
+551:551 : Running/Rolling/Backstep attack with Moonlight Arrow
+552:552 : 1/3 Black Bow of Pharis Weapon Art with Moonlight Arrow
+553:553 : 2/3 Black Bow of Pharis Weapon Art with Moonlight Arrow
+554:554 : 3/3 Black Bow of Pharis Weapon Art with Moonlight Arrow
+555:555 : Shortbow &amp; Composite Bow Weapon Art with Moonlight Arrow
+556:556 : Longbow &amp; Dragonrider Bow Weapon Art with Moonlight Arrow
+557:557 : Darkmoon Longbow Weapon Art with Moonlight Arrow
+558:558 : Whitebirch Bow Weapon Art with Moonlight Arrow
+560:560 : Wood Arrow
+561:561 : Running/Rolling/Backstep attack with Wood Arrow
+562:562 : 1/3 Black Bow of Pharis Weapon Art with Wood Arrow
+563:563 : 2/3 Black Bow of Pharis Weapon Art with Wood Arrow
+564:564 : 3/3 Black Bow of Pharis Weapon Art with Wood Arrow
+565:565 : Shortbow &amp; Composite Bow Weapon Art with Wood Arrow
+566:566 : Longbow &amp; Dragonrider Bow Weapon Art with Wood Arrow
+567:567 : Darkmoon Longbow Weapon Art with Wood Arrow
+568:568 : Whitebirch Bow Weapon Art with Wood Arrow
+570:570 : Dark Arrow
+571:571 : Running/Rolling/Backstep attack with Dark Arrow
+572:572 : 1/3 Black Bow of Pharis Weapon Art with Dark Arrow
+573:573 : 2/3 Black Bow of Pharis Weapon Art with Dark Arrow
+574:574 : 3/3 Black Bow of Pharis Weapon Art with Dark Arrow
+575:575 : Shortbow &amp; Composite Bow Weapon Art with Dark Arrow
+576:576 : Longbow &amp; Dragonrider Bow Weapon Art with Dark Arrow
+577:577 : Darkmoon Longbow Weapon Art with Dark Arrow
+578:578 : Whitebirch Bow Weapon Art with Dark Arrow
+700:700 : Dragonslayer Greatarrow
+701:701 : Dragonslayer Greatbow &amp; Onislayer Greatbow Weapon Art with Dragonslayer Greatarrow
+703:703 : Millwood Greatbow Weapon Art with Dragonslayer Greatarrow (No Explosion)
+704:704 : Millwood Greatbow Weapon Art Explosion of Dragonslayer Greatarrow
+705:705 : Millwood Greatbow Weapon Art Idle Dragonslayer Greatarrow
+706:706 : Millwood Greatbow Weapon Art with Dragonslayer Greatarrow
+710:710 : Dragonslayer Lightning Arrow
+711:711 : Dragonslayer Greatbow &amp; Onislayer Greatbow Weapon Art with Dragonslayer Lightning Arrow
+713:713 : Millwood Greatbow Weapon Art with Dragonslayer Lightning Greatarrows (No Explosion)
+714:714 : Millwood Greatbow Weapon Art with Explosion of Dragonslayer Lightning Greatarrows
+715:715 : Millwood Greatbow Weapon Art with Idle Dragonslayer Lightning Greatarrows
+716:716 : Millwood Greatbow Weapon Art with Dragonslayer Lightning Greatarrows
+720:720 : Onislayer Greatarrow
+721:721 : Dragonslayer Greatbow &amp; Onislayer Greatbow Weapon Art with Onislayer Greatarrow
+723:723 : Millwood Greatbow Weapon Art with Onislayer Greatarrow (No Explosion)
+724:724 : Millwood Greatbow Weapon Art with Explosion of Onislayer Greatarrow
+725:725 : Millwood Greatbow Weapon Art with Idle Onislayer Greatarrow
+726:726 : Millwood Greatbow Weapon Art with Onislayer Greatarrow
+730:730 : Millwood Greatarrow
+731:731 : Dragonslayer Greatbow &amp; Onislayer Greatbow Weapon Art with Millwood Greatarrow
+733:733 : Millwood Greatbow Weapon Art with Millwood Greatarrow (No Explosion)
+734:734 : Millwood Greatbow Weapon Art with Explosion of Millwood Greatarrow (No Explosion)
+735:735 : Millwood Greatbow Weapon Art with Idle Millwood Greatarrow
+736:736 : Millwood Greatbow Weapon Art with Millwood Greatarrow
+800:800 : Standard Bolt
+805:805 : Standard Bolt shot from Avelyn
+808:808 : Repeating Crossbow Weapon Art with Standard Bolt
+810:810 : Heavy Bolt
+815:815 : Heavy Bolt shot from Avelyn
+818:818 : Repeating Crossbow Weapon Art with Heavy Bolt
+820:820 : Sniper Bolt
+825:825 : Sniper Bolt shot from Avelyn
+828:828 : Repeating Crossbow Weapon Art with Sniper Bolt
+830:830 : Wood Bolt
+835:835 : Wood Bolt shot from Avelyn
+838:838 : Repeating Crossbow Weapon Art with Wood Bolt
+840:840 : Lightning Bolt
+841:841 : Spark with hitbox, no damage
+845:845 : Lightning Bolt shot from Avelyn
+848:848 : Repeating Crossbow Weapon Art with Lightning Bolt
+850:850 : Splintering Bolt
+851:851 :
+852:852 :
+855:855 : Splinter Bolt shot from Avelyn
+856:856 : Splinters
+857:857 : Splinters wider
+860:860 : Exploding Bolt
+861:861 :
+862:862 :
+865:865 : Exploding Bolts shot from Avelyn
+866:866 : Exploding Bolts Pellet shot from Avelyn
+867:867 :
+870:870 : Repeating Crossbow Weapon Art with Splintering Bolt
+872:872 : Repeating Crossbow Weapon Art with Splintering Bolt Splinters
+880:880 : Repeating Crossbow Weapon Art with Exploding Bolt
+881:881 : Repeating Crossbow Weapon Art with Exploding Bolt Explosion
+970:970 : Lightning damage on contact
+971:971 :
+972:972 :
+973:973 :
+974:974 : Mini lightning zap
+980:980 : Slightly less lightning damage on contact
+981:981 :
+982:982 :
+983:983 :
+984:984 :
+990:990 : Slightly more lightning damage on contact
+991:991 :
+992:992 :
+993:993 :
+994:994 :
+1000:1000 : Blue Sentinel warning orb, homing
+1001:1001 : Strange variation of invader tracker (happens during abyss watchers fight apparently)
+1002:1002 : Invader tracker that is transparent and grey
+1003:1003 : Green invader tracker
+4300:4300 :
+4330:4330 :
+4340:4340 :
+4350:4350 :
+5200:5200 :
+8000:8000 : Fireball projectile, no damage
+9000:9000 :
+9100:9100 : Firedart that has high knockback/guard break. The weakest version of 9100-9116.
+9101:9101 :
+9102:9102 :
+9103:9103 :
+9104:9104 :
+9105:9105 :
+9106:9106 :
+9107:9107 :
+9108:9108 :
+9109:9109 :
+9110:9110 :
+9111:9111 :
+9112:9112 :
+9113:9113 :
+9114:9114 :
+9115:9115 :
+9116:9116 : Highest damaging Firedart. Like stupidly high.
+9920:9920 :
+15310:15310 : Giant arrows from giant in undead settlement, does nothing
+15311:15311 : Giant arrows from giant in undead settlement, does nothing
+15312:15312 : Giant arrows from giant in undead settlement, does nothing
+15313:15313 : Giant arrows from giant in undead settlement, does nothing
+15314:15314 : Giant arrows from giant in undead settlement, does nothing
+15315:15315 : Giant arrows from giant in undead settlement, does nothing
+15316:15316 : Giant arrows from giant in undead settlement, does nothing
+15320:15320 :
+15321:15321 :
+15322:15322 :
+15323:15323 :
+15324:15324 :
+15325:15325 :
+15326:15326 :
+15330:15330 :
+15331:15331 :
+15332:15332 :
+15333:15333 :
+15334:15334 :
+15335:15335 :
+15336:15336 :
+15340:15340 :
+15341:15341 :
+15342:15342 :
+15343:15343 :
+15344:15344 :
+15345:15345 :
+15346:15346 :
+15350:15350 : greatarrow smoke
+15351:15351 :
+15352:15352 :
+15353:15353 :
+15354:15354 :
+15355:15355 :
+15356:15356 :
+40000:40000 : Ritual Homing Soulmass
+40001:40001 : ^ Fired Spear
+40010:40010 : Ritual Homing Soulmass+1
+40011:40011 : ^ Fired Spear
+40020:40020 : Ritual Homing Soulmass+2
+40021:40021 : ^ Fired Spear
+40030:40030 : Ritual Homing Soulmass+3
+40031:40031 : ^ Fired Spear
+40100:40100 : Ritual Homing Soulmass+4
+40101:40101 : ^ Fired Spear
+40110:40110 : Ritual Homing Soulmass+5
+40111:40111 : ^ Fired Spear
+40120:40120 : Ritual Homing Soulmass+6
+40121:40121 : ^ Fired Spear
+40130:40130 : Ritual Homing Soulmass+7
+40131:40131 : ^ Fired Spear
+40200:40200 : Ritual Homing Soulmass+8
+40201:40201 : ^ Fired Spear
+40210:40210 : Ritual Homing Soulmass+9
+40211:40211 : ^ Fired Spear
+40220:40220 : Ritual Homing Soulmass+10
+40221:40221 : ^ Fired Spear
+40230:40230 : Ritual Homing Soulmass+11
+40231:40231 : ^ Fired Spear
+40300:40300 : Ritual Homing Soulmass+12
+40301:40301 : ^ Fired Spear
+40310:40310 : Ritual Homing Soulmass+13
+40311:40311 : ^ Fired Spear
+40320:40320 : Ritual Homing Soulmass+14
+40321:40321 : ^ Fired Spear
+40330:40330 : Ritual Homing Soulmass+15
+40331:40331 : ^ Fired Spear
+40400:40400 : Ritual Homing Soulmass+16
+40401:40401 : ^ Fired Spear
+40410:40410 : Ritual Homing Soulmass+17
+40411:40411 : ^ Fired Spear
+40420:40420 : Ritual Homing Soulmass+18
+40421:40421 : ^ Fired Spear
+40430:40430 : Ritual Homing Soulmass+19
+40431:40431 : ^ Fired Spear
+40500:40500 : Ritual Homing Soulmass+20
+40501:40501 : ^ Fired Spear
+40510:40510 : Ritual Homing Soulmass+21
+40511:40511 : ^ Fired Spear
+40520:40520 : Ritual Homing Soulmass+22
+40521:40521 : ^ Fired Spear
+40530:40530 : Ritual Homing Soulmass+23
+40531:40531 : ^ Fired Spear
+40600:40600 : Ritual Homing Soulmass+24
+40601:40601 : ^ Fired Spear
+40610:40610 : Ritual Homing Soulmass+25
+40611:40611 : ^ Fired Spear
+40620:40620 : Ritual Homing Soulmass+26
+40621:40621 : ^ Fired Spear
+40630:40630 : Ritual Homing Soulmass+27
+40631:40631 : ^ Fired Spear
+40700:40700 : Ritual Homing Soulmass+28
+40701:40701 : ^ Fired Spear
+40710:40710 : Ritual Homing Soulmass+29
+40711:40711 : ^ Fired Spear
+40720:40720 : Ritual Homing Soulmass+30
+40721:40721 : ^ Fired Spear
+40730:40730 : Ritual Homing Soulmass+31
+40731:40731 : ^ Fired Spear
+40800:40800 : Ritual Homing Soulmass+32
+40801:40801 : ^ Fired Spear
+40810:40810 : Ritual Homing Soulmass+33
+40811:40811 : ^ Fired Spear
+40820:40820 : Ritual Homing Soulmass+34
+40821:40821 : ^ Fired Spear
+40830:40830 : Ritual Homing Soulmass+35
+40831:40831 : ^ Fired Spear
+40900:40900 : Ritual Homing Soulmass+36
+40901:40901 : ^ Fired Spear
+40910:40910 : Ritual Homing Soulmass+37
+40911:40911 : ^ Fired Spear
+40920:40920 : Ritual Homing Soulmass+38
+40921:40921 : ^ Fired Spear
+40930:40930 : Ritual Homing Soulmass+39
+40931:40931 : ^ Fired Spear
+41000:41000 : Ritual Homing Soulmass+40
+41001:41001 : ^ Fired Spear
+41010:41010 : Ritual Homing Soulmass+41
+41011:41011 : ^ Fired Spear
+41020:41020 : Ritual Homing Soulmass+42
+41021:41021 : ^ Fired Spear
+41030:41030 : Ritual Homing Soulmass+43
+41031:41031 : ^ Fired Spear
+41100:41100 : Ritual Homing Soulmass+44
+41101:41101 : ^ Fired Spear
+41110:41110 : Ritual Homing Soulmass+45
+41111:41111 : ^ Fired Spear
+41120:41120 : Ritual Homing Soulmass+46
+41121:41121 : ^ Fired Spear
+41130:41130 : Ritual Homing Soulmass+47
+41131:41131 : ^ Fired Spear
+41200:41200 : Ritual Homing Soulmass+48
+41201:41201 : ^ Fired Spear
+41210:41210 : Ritual Homing Soulmass+49
+41211:41211 : ^ Fired Spear
+41220:41220 : Ritual Homing Soulmass+50
+41221:41221 : ^ Fired Spear
+41230:41230 : Ritual Homing Soulmass+51
+41231:41231 : ^ Fired Spear
+41300:41300 : Ritual Homing Soulmass+52
+41301:41301 : ^ Fired Spear
+41310:41310 : Ritual Homing Soulmass+53
+41311:41311 : ^ Fired Spear
+41320:41320 : Ritual Homing Soulmass+54
+41321:41321 : ^ Fired Spear
+41330:41330 : Ritual Homing Soulmass+55
+41331:41331 : ^ Fired Spear
+41400:41400 : Ritual Homing Soulmass+56
+41401:41401 : ^ Fired Spear
+41410:41410 : Ritual Homing Soulmass+57
+41411:41411 : ^ Fired Spear
+41420:41420 : Ritual Homing Soulmass+58
+41421:41421 : ^ Fired Spear
+41430:41430 : Ritual Homing Soulmass+59
+41431:41431 : ^ Fired Spear
+41500:41500 : Ritual Homing Soulmass+60
+41501:41501 : ^ Fired Spear
+41510:41510 : Ritual Homing Soulmass+61
+41511:41511 : ^ Fired Spear
+41520:41520 : Ritual Homing Soulmass+62
+41521:41521 : ^ Fired Spear
+41530:41530 : Ritual Homing Soulmass+63
+41531:41531 : ^ Fired Spear
+41600:41600 : Ritual Homing Soulmass+64
+41601:41601 : ^ Fired Spear
+41610:41610 : Ritual Homing Soulmass+65
+41611:41611 : ^ Fired Spear
+41620:41620 : Ritual Homing Soulmass+66
+41621:41621 : ^ Fired Spear
+41630:41630 : Ritual Homing Soulmass+67
+41631:41631 : ^ Fired Spear
+41700:41700 : Ritual Homing Soulmass+68
+41701:41701 : ^ Fired Spear
+41710:41710 : Ritual Homing Soulmass+69
+41711:41711 : ^ Fired Spear
+41720:41720 : Ritual Homing Soulmass+70
+41721:41721 : ^ Fired Spear
+41730:41730 : Ritual Homing Soulmass+71
+41731:41731 : ^ Fired Spear
+41800:41800 : Ritual Homing Soulmass+72
+41801:41801 : ^ Fired Spear
+41810:41810 : Ritual Homing Soulmass+73
+41811:41811 : ^ Fired Spear
+41820:41820 : Ritual Homing Soulmass+74
+41821:41821 : ^ Fired Spear
+41830:41830 : Ritual Homing Soulmass+75
+41831:41831 : ^ Fired Spear
+42000:42000 : Ritual Spear Fragment
+42005:42005 : ^ Spears part 1
+42010:42010 : ^ Line of Spears, effect 9134
+42020:42020 : ^ Spears part 2
+42030:42030 : ^ Spears part 3
+42040:42040 : ^ Spears part 4
+42050:42050 : ^ Spears part 5
+42100:42100 : Divine Spear Fragment
+42105:42105 : ^ Spears part 1
+42110:42110 : ^ Line of Spears, effect 9134
+42120:42120 : ^ Spears part 2
+42130:42130 : ^ Spears part 3
+42140:42140 : ^ Spears part 4
+42150:42150 : ^ Spears part 5
+50000:50000 : Divine Homing Soulmass
+50001:50001 : ^ Fired Spear
+50010:50010 : Divine Homing Soulmass+1
+50011:50011 : ^ Fired Spear
+50020:50020 : Divine Homing Soulmass+2
+50021:50021 : ^ Fired Spear
+50030:50030 : Divine Homing Soulmass+3
+50031:50031 : ^ Fired Spear
+50100:50100 : Divine Homing Soulmass+4
+50101:50101 : ^ Fired Spear
+50110:50110 : Divine Homing Soulmass+5
+50111:50111 : ^ Fired Spear
+50120:50120 : Divine Homing Soulmass+6
+50121:50121 : ^ Fired Spear
+50130:50130 : Divine Homing Soulmass+7
+50131:50131 : ^ Fired Spear
+50200:50200 : Divine Homing Soulmass+8
+50201:50201 : ^ Fired Spear
+50210:50210 : Divine Homing Soulmass+9
+50211:50211 : ^ Fired Spear
+50220:50220 : Divine Homing Soulmass+10
+50221:50221 : ^ Fired Spear
+50230:50230 : Divine Homing Soulmass+11
+50231:50231 : ^ Fired Spear
+50300:50300 : Divine Homing Soulmass+12
+50301:50301 : ^ Fired Spear
+50310:50310 : Divine Homing Soulmass+13
+50311:50311 : ^ Fired Spear
+50320:50320 : Divine Homing Soulmass+14
+50321:50321 : ^ Fired Spear
+50330:50330 : Divine Homing Soulmass+15
+50331:50331 : ^ Fired Spear
+50400:50400 : Divine Homing Soulmass+16
+50401:50401 : ^ Fired Spear
+50410:50410 : Divine Homing Soulmass+17
+50411:50411 : ^ Fired Spear
+50420:50420 : Divine Homing Soulmass+18
+50421:50421 : ^ Fired Spear
+50430:50430 : Divine Homing Soulmass+19
+50431:50431 : ^ Fired Spear
+50500:50500 : Divine Homing Soulmass+20
+50501:50501 : ^ Fired Spear
+50510:50510 : Divine Homing Soulmass+21
+50511:50511 : ^ Fired Spear
+50520:50520 : Divine Homing Soulmass+22
+50521:50521 : ^ Fired Spear
+50530:50530 : Divine Homing Soulmass+23
+50531:50531 : ^ Fired Spear
+50600:50600 : Divine Homing Soulmass+24
+50601:50601 : ^ Fired Spear
+50610:50610 : Divine Homing Soulmass+25
+50611:50611 : ^ Fired Spear
+50620:50620 : Divine Homing Soulmass+26
+50621:50621 : ^ Fired Spear
+50630:50630 : Divine Homing Soulmass+27
+50631:50631 : ^ Fired Spear
+50700:50700 : Divine Homing Soulmass+28
+50701:50701 : ^ Fired Spear
+50710:50710 : Divine Homing Soulmass+29
+50711:50711 : ^ Fired Spear
+50720:50720 : Divine Homing Soulmass+30
+50721:50721 : ^ Fired Spear
+50730:50730 : Divine Homing Soulmass+31
+50731:50731 : ^ Fired Spear
+50800:50800 : Divine Homing Soulmass+32
+50801:50801 : ^ Fired Spear
+50810:50810 : Divine Homing Soulmass+33
+50811:50811 : ^ Fired Spear
+50820:50820 : Divine Homing Soulmass+34
+50821:50821 : ^ Fired Spear
+50830:50830 : Divine Homing Soulmass+35
+50831:50831 : ^ Fired Spear
+50900:50900 : Divine Homing Soulmass+36
+50901:50901 : ^ Fired Spear
+50910:50910 : Divine Homing Soulmass+37
+50911:50911 : ^ Fired Spear
+50920:50920 : Divine Homing Soulmass+38
+50921:50921 : ^ Fired Spear
+50930:50930 : Divine Homing Soulmass+39
+50931:50931 : ^ Fired Spear
+51000:51000 : Divine Homing Soulmass+40
+51001:51001 : ^ Fired Spear
+51010:51010 : Divine Homing Soulmass+41
+51011:51011 : ^ Fired Spear
+51020:51020 : Divine Homing Soulmass+42
+51021:51021 : ^ Fired Spear
+51030:51030 : Divine Homing Soulmass+43
+51031:51031 : ^ Fired Spear
+51100:51100 : Divine Homing Soulmass+44
+51101:51101 : ^ Fired Spear
+51110:51110 : Divine Homing Soulmass+45
+51111:51111 : ^ Fired Spear
+51120:51120 : Divine Homing Soulmass+46
+51121:51121 : ^ Fired Spear
+51130:51130 : Divine Homing Soulmass+47
+51131:51131 : ^ Fired Spear
+51200:51200 : Divine Homing Soulmass+48
+51201:51201 : ^ Fired Spear
+51210:51210 : Divine Homing Soulmass+49
+51211:51211 : ^ Fired Spear
+51220:51220 : Divine Homing Soulmass+50
+51221:51221 : ^ Fired Spear
+51230:51230 : Divine Homing Soulmass+51
+51231:51231 : ^ Fired Spear
+51300:51300 : Divine Homing Soulmass+52
+51301:51301 : ^ Fired Spear
+51310:51310 : Divine Homing Soulmass+53
+51311:51311 : ^ Fired Spear
+51320:51320 : Divine Homing Soulmass+54
+51321:51321 : ^ Fired Spear
+51330:51330 : Divine Homing Soulmass+55
+51331:51331 : ^ Fired Spear
+51400:51400 : Divine Homing Soulmass+56
+51401:51401 : ^ Fired Spear
+51410:51410 : Divine Homing Soulmass+57
+51411:51411 : ^ Fired Spear
+51420:51420 : Divine Homing Soulmass+58
+51421:51421 : ^ Fired Spear
+51430:51430 : Divine Homing Soulmass+59
+51431:51431 : ^ Fired Spear
+51500:51500 : Divine Homing Soulmass+60
+51501:51501 : ^ Fired Spear
+51510:51510 : Divine Homing Soulmass+61
+51511:51511 : ^ Fired Spear
+51520:51520 : Divine Homing Soulmass+62
+51521:51521 : ^ Fired Spear
+51530:51530 : Divine Homing Soulmass+63
+51531:51531 : ^ Fired Spear
+51600:51600 : Divine Homing Soulmass+64
+51601:51601 : ^ Fired Spear
+51610:51610 : Divine Homing Soulmass+65
+51611:51611 : ^ Fired Spear
+51620:51620 : Divine Homing Soulmass+66
+51621:51621 : ^ Fired Spear6
+51630:51630 : Divine Homing Soulmass+67
+51631:51631 : ^ Fired Spear
+51700:51700 : Divine Homing Soulmass+68
+51701:51701 : ^ Fired Spear
+51710:51710 : Divine Homing Soulmass+69
+51711:51711 : ^ Fired Spear
+51720:51720 : Divine Homing Soulmass+70
+51721:51721 : ^ Fired Spear
+51730:51730 : Divine Homing Soulmass+71
+51731:51731 : ^ Fired Spear
+51800:51800 : Divine Homing Soulmass+72
+51801:51801 : ^ Fired Spear
+51810:51810 : Divine Homing Soulmass+73
+51811:51811 : ^ Fired Spear
+51820:51820 : Divine Homing Soulmass+74
+51821:51821 : ^ Fired Spear
+51830:51830 : Divine Homing Soulmass+75
+51831:51831 : ^ Fired Spear
+55000:55000 : Ritual Spears on Boss Spawn
+55001:55001 : ^ Ground lightning
+55002:55002 : ^ Spears
+55003:55003 : ^ Instant Spears from ground
+55004:55004 : ^ Spears
+55010:55010 : Ritual Spears on Boss Spawn+1
+55011:55011 : ^ Ground lightning
+55012:55012 : ^ Spears
+55013:55013 : ^ Instant Spears from ground
+55014:55014 : ^ Spears
+55020:55020 : Ritual Spears on Boss Spawn+2
+55021:55021 : ^ Ground lightning
+55022:55022 : ^ Spears
+55023:55023 : ^ Instant Spears from ground
+55024:55024 : ^ Spears
+55030:55030 : Ritual Spears on Boss Spawn+3
+55031:55031 : ^ Ground lightning
+55032:55032 : ^ Spears
+55033:55033 : ^ Instant Spears from ground
+55034:55034 : ^ Spears
+55040:55040 : Ritual Spears on Boss Spawn+4
+55041:55041 : ^ Ground lightning
+55042:55042 : ^ Spears
+55043:55043 : ^ Instant Spears from ground
+55044:55044 : ^ Spears
+55050:55050 : Ritual Spears on Boss Spawn+5
+55051:55051 : ^ Ground lightning
+55052:55052 : ^ Spears
+55053:55053 : ^ Instant Spears from ground
+55054:55054 : ^ Spears
+55060:55060 : Ritual Spears on Boss Spawn+6
+55061:55061 : ^ Ground lightning
+55062:55062 : ^ Spears
+55063:55063 : ^ Instant Spears from ground
+55064:55064 : ^ Spears
+55070:55070 : Ritual Spears on Boss Spawn+7
+55071:55071 : ^ Ground lightning
+55072:55072 : ^ Spears
+55073:55073 : ^ Instant Spears from ground
+55074:55074 : ^ Spears
+55080:55080 : Ritual Spears on Boss Spawn+8
+55081:55081 : ^ Ground lightning
+55082:55082 : ^ Spears
+55083:55083 : ^ Instant Spears from ground
+55084:55084 : ^ Spears
+55090:55090 : Ritual Spears on Boss Spawn+9
+55091:55091 : ^ Ground lightning
+55092:55092 : ^ Spears
+55093:55093 : ^ Instant Spears from ground
+55094:55094 : ^ Spears
+55100:55100 : Ritual Spears on Boss Spawn+10
+55101:55101 : ^ Ground lightning
+55102:55102 : ^ Spears
+55103:55103 : ^ Instant Spears from ground
+55104:55104 : ^ Spears
+55110:55110 : Ritual Spears on Boss Spawn+11
+55111:55111 : ^ Ground lightning
+55112:55112 : ^ Spears
+55113:55113 : ^ Instant Spears from ground
+55114:55114 : ^ Spears
+55120:55120 : Ritual Spears on Boss Spawn+12
+55121:55121 : ^ Ground lightning
+55122:55122 : ^ Spears
+55123:55123 : ^ Instant Spears from ground
+55124:55124 : ^ Spears
+55130:55130 : Ritual Spears on Boss Spawn+13
+55131:55131 : ^ Ground lightning
+55132:55132 : ^ Spears
+55133:55133 : ^ Instant Spears from ground
+55134:55134 : ^ Spears
+55140:55140 : Ritual Spears on Boss Spawn+14
+55141:55141 : ^ Ground lightning
+55142:55142 : ^ Spears
+55143:55143 : ^ Instant Spears from ground
+55144:55144 : ^ Spears
+55150:55150 : Ritual Spears on Boss Spawn+15
+55151:55151 : ^ Ground lightning
+55152:55152 : ^ Spears
+55153:55153 : ^ Instant Spears from ground
+55154:55154 : ^ Spears
+55160:55160 : Ritual Spears on Boss Spawn+16
+55161:55161 : ^ Ground lightning
+55162:55162 : ^ Spears
+55163:55163 : ^ Instant Spears from ground
+55164:55164 : ^ Spears
+55170:55170 : Ritual Spears on Boss Spawn+17
+55171:55171 : ^ Ground lightning
+55172:55172 : ^ Spears
+55173:55173 : ^ Instant Spears from ground
+55174:55174 : ^ Spears
+55180:55180 : Ritual Spears on Boss Spawn+18
+55181:55181 : ^ Ground lightning
+55182:55182 : ^ Spears
+55183:55183 : ^ Instant Spears from ground
+55184:55184 : ^ Spears
+56000:56000 : Divine Spears on Boss Spawn
+56001:56001 : ^ Ground lightning
+56002:56002 : ^ Spears
+56003:56003 : ^ Instant Spears from ground
+56004:56004 : ^ Spears
+56010:56010 : Divine Spears on Boss Spawn+1
+56011:56011 : ^ Ground lightning
+56012:56012 : ^ Spears
+56013:56013 : ^ Instant Spears from ground
+56014:56014 : ^ Spears
+56020:56020 : Divine Spears on Boss Spawn+2
+56021:56021 : ^ Ground lightning
+56022:56022 : ^ Spears
+56023:56023 : ^ Instant Spears from ground
+56024:56024 : ^ Spears
+56030:56030 : Divine Spears on Boss Spawn+3
+56031:56031 : ^ Ground lightning
+56032:56032 : ^ Spears
+56033:56033 : ^ Instant Spears from ground
+56034:56034 : ^ Spears
+56040:56040 : Divine Spears on Boss Spawn+4
+56041:56041 : ^ Ground lightning
+56042:56042 : ^ Spears
+56043:56043 : ^ Instant Spears from ground
+56044:56044 : ^ Spears
+56050:56050 : Divine Spears on Boss Spawn+5
+56051:56051 : ^ Ground lightning
+56052:56052 : ^ Spears
+56053:56053 : ^ Instant Spears from ground
+56054:56054 : ^ Spears
+56060:56060 : Divine Spears on Boss Spawn+6
+56061:56061 : ^ Ground lightning
+56062:56062 : ^ Spears
+56063:56063 : ^ Instant Spears from ground
+56064:56064 : ^ Spears
+56070:56070 : Divine Spears on Boss Spawn+7
+56071:56071 : ^ Ground lightning
+56072:56072 : ^ Spears
+56073:56073 : ^ Instant Spears from ground
+56074:56074 : ^ Spears
+56080:56080 : Divine Spears on Boss Spawn+8
+56081:56081 : ^ Ground lightning
+56082:56082 : ^ Spears
+56083:56083 : ^ Instant Spears from ground
+56084:56084 : ^ Spears
+56090:56090 : Divine Spears on Boss Spawn+9
+56091:56091 : ^ Ground lightning
+56092:56092 : ^ Spears
+56093:56093 : ^ Instant Spears from ground
+56094:56094 : ^ Spears
+56100:56100 : Divine Spears on Boss Spawn+10
+56101:56101 : ^ Ground lightning
+56102:56102 : ^ Spears
+56103:56103 : ^ Instant Spears from ground
+56104:56104 : ^ Spears
+56110:56110 : Divine Spears on Boss Spawn+11
+56111:56111 : ^ Ground lightning
+56112:56112 : ^ Spears
+56113:56113 : ^ Instant Spears from ground
+56114:56114 : ^ Spears
+56120:56120 : Divine Spears on Boss Spawn+12
+56121:56121 : ^ Ground lightning
+56122:56122 : ^ Spears
+56123:56123 : ^ Instant Spears from ground
+56124:56124 : ^ Spears
+56130:56130 : Divine Spears on Boss Spawn+13
+56131:56131 : ^ Ground lightning
+56132:56132 : ^ Spears
+56133:56133 : ^ Instant Spears from ground
+56134:56134 : ^ Spears
+56140:56140 : Divine Spears on Boss Spawn+14
+56141:56141 : ^ Ground lightning
+56142:56142 : ^ Spears
+56143:56143 : ^ Instant Spears from ground
+56144:56144 : ^ Spears
+56150:56150 : Divine Spears on Boss Spawn+15
+56151:56151 : ^ Ground lightning
+56152:56152 : ^ Spears
+56153:56153 : ^ Instant Spears from ground
+56154:56154 : ^ Spears
+56160:56160 : Divine Spears on Boss Spawn+16
+56161:56161 : ^ Ground lightning
+56162:56162 : ^ Spears
+56163:56163 : ^ Instant Spears from ground
+56164:56164 : ^ Spears
+56170:56170 : Divine Spears on Boss Spawn+17
+56171:56171 : ^ Ground lightning
+56172:56172 : ^ Spears
+56173:56173 : ^ Instant Spears from ground
+56174:56174 : ^ Spears
+56180:56180 : Divine Spears on Boss Spawn+18
+56181:56181 : ^ Ground lightning
+56182:56182 : ^ Spears
+56183:56183 : ^ Instant Spears from ground
+56184:56184 : ^ Spears
+100000:100000 :
+100010:100010 :
+130000:130000 :
+135000:135000 :
+135001:135001 :
+135002:135002 :
+135003:135003 :
+135004:135004 :
+135005:135005 :
+135006:135006 :
+135010:135010 :
+135011:135011 :
+135012:135012 :
+135013:135013 :
+135014:135014 :
+135015:135015 :
+135016:135016 :
+135050:135050 : Stationary fireball that explodes
+135051:135051 : Explosion from stationary fireball
+138000:138000 : Fire arrow, does nothing
+138001:138001 : Fire arrow, does nothing
+138002:138002 : Fire arrow, does nothing
+138003:138003 : Fire arrow, does nothing
+138004:138004 : Fire arrow, does nothing
+138005:138005 : Fire arrow, does nothing
+138006:138006 : Fire arrow, does nothing
+138010:138010 : Fire arrow, does nothing
+138011:138011 : Fire arrow, does nothing
+138012:138012 : Fire arrow, does nothing
+138013:138013 : Fire arrow, does nothing
+138014:138014 : Fire arrow, does nothing
+138015:138015 : Fire arrow, does nothing
+138016:138016 : Fire arrow, does nothing
+138020:138020 : Fire arrow, does nothing
+138021:138021 : Fire arrow, does nothing
+138022:138022 : Fire arrow, does nothing
+138023:138023 : Fire arrow, does nothing
+138024:138024 : Fire arrow, does nothing
+138025:138025 : Fire arrow, does nothing
+138026:138026 : Fire arrow, does nothing
+138040:138040 : Those dark spirits that you find in the vases in Carthus. No damage. Homing.
+138041:138041 :
+138042:138042 :
+138043:138043 :
+138044:138044 :
+138045:138045 :
+138046:138046 :
+138050:138050 :
+138051:138051 : Button trap arrow, does nothing
+138052:138052 :
+138060:138060 :
+139000:139000 : Gravity-less fireball, does nothing
+139001:139001 : Gravity-less fireball, does nothing
+139002:139002 : Gravity-less fireball, does nothing
+139003:139003 : Gravity-less fireball, does nothing
+139004:139004 : Gravity-less fireball, does nothing
+139005:139005 : Gravity-less fireball, does nothing
+139006:139006 : Gravity-less fireball, does nothing
+139010:139010 : Explosion, does no damage
+139011:139011 : Explosion, does no damage
+139012:139012 : Explosion, does no damage
+139013:139013 : Explosion, does no damage
+139014:139014 : Explosion, does no damage
+139015:139015 : Explosion, does no damage
+139016:139016 : Explosion, does no damage
+140000:140000 : Strange circle and sound (From bypassing wall that requires small doll)
+140010:140010 : Strange circle and sound (From bypassing wall that requires small doll)
+149000:149000 : Mad Phantom Sign
+149001:149001 :
+149010:149010 : Mad phantom sign where you cast but disappears
+149011:149011 :
+149020:149020 :
+149021:149021 :
+1070090:1070090 :
+1070091:1070091 :
+1070230:1070230 :
+1070700:1070700 :
+1070701:1070701 :
+1070702:1070702 :
+1090700:1090700 :
+1100560:1100560 : NPC Throwing Knife
+1100750:1100750 :
+1100751:1100751 :
+1100752:1100752 :
+1100800:1100800 : NPC Arrow/Bolt
+1100801:1100801 : NPC Fire Arrow/Bolt
+1100805:1100805 : NPC Explosive Arrow/Bolt
+1100806:1100806 :
+1100810:1100810 : Oil urn thrown by mob in Cemetery of Ash
+1100811:1100811 : Oil urn impact
+1100820:1100820 : NPC Firebomb
+1100821:1100821 : NPC Firebomb impact
+1100822:1100822 :
+1100823:1100823 :
+1100830:1100830 :
+1100831:1100831 :
+1100832:1100832 :
+1105210:1105210 :
+1105220:1105220 :
+1130700:1130700 : Black sludge from Slimes
+1130710:1130710 :
+1130800:1130800 :
+1130801:1130801 : Sludge explosion related to 1130700
+1130802:1130802 : Smaller sludge explosion related to 1130700
+1170700:1170700 :
+1170701:1170701 :
+1180700:1180700 :
+1180710:1180710 :
+1180720:1180720 :
+1190010:1190010 : NPC Arrow
+1190170:1190170 :
+1190180:1190180 :
+1190181:1190181 :
+1190255:1190255 :
+1190655:1190655 :
+1190656:1190656 :
+1190657:1190657 :
+1200190:1200190 :
+1200191:1200191 :
+1200240:1200240 :
+1200241:1200241 :
+1210280:1210280 :
+1210340:1210340 :
+1210350:1210350 :
+1210360:1210360 :
+1210370:1210370 :
+1210380:1210380 : Fire storm
+1210381:1210381 : Fire pillar
+1210390:1210390 :
+1220020:1220020 :
+1220021:1220021 :
+1220022:1220022 :
+1220030:1220030 :
+1220031:1220031 :
+1230740:1230740 : NPC Gnaw
+1230741:1230741 : NPC Gnaw followup
+1230750:1230750 : NPC Dorhys' Gnawing
+1230751:1230751 : NPC Dorhys' Gnawing followup
+1240700:1240700 : NPC Firebomb
+1240701:1240701 : NPC Firebomb impact
+1240710:1240710 :
+1240711:1240711 :
+1240720:1240720 : NPC Firebomb
+1240721:1240721 : NPC Firebomb impact
+1240800:1240800 : NPC Arrow
+1250700:1250700 :
+1260700:1260700 : pot of cranberries thrown by the red robe men in Undead Settlement
+1260701:1260701 :
+1260710:1260710 :
+1280700:1280700 : NPC Arrow
+1290150:1290150 :
+1290190:1290190 :
+1290191:1290191 :
+1290192:1290192 :
+1290193:1290193 :
+1290194:1290194 :
+1290195:1290195 :
+1290330:1290330 :
+1290380:1290380 :
+1290381:1290381 :
+1310180:1310180 :
+1310181:1310181 :
+1310182:1310182 :
+1310183:1310183 :
+1310700:1310700 :
+1310701:1310701 :
+1310710:1310710 :
+1320010:1320010 :
+1320011:1320011 : Crystal explosion from Crystal Sage
+1320012:1320012 :
+1320013:1320013 :
+1320020:1320020 :
+1320021:1320021 :
+1320030:1320030 :
+1320031:1320031 :
+1320050:1320050 : Crystal sage crystal soulmass
+1320051:1320051 : Crystal sage crystal soulmass burst
+1320052:1320052 : Crystal sage crystal soulmass burst
+1320053:1320053 :
+1320112:1320112 :
+1320140:1320140 :
+1320141:1320141 :
+1320142:1320142 : Crystal sage dragon breath crystal
+1320143:1320143 : Crystal sage dragon breath crystal
+1320144:1320144 : Crystal sage dragon breath crystal break
+1320150:1320150 : Crystal sage crystal hail
+1320151:1320151 : Crystal sage crystal hail burst
+1320152:1320152 : Crystal sage crystal hail burst
+1320153:1320153 : Crystal sage small impact
+1320155:1320155 : Crystal sage crystal hail longer range
+1320160:1320160 : Farron flashsword?
+1320161:1320161 : Farron flashsword?
+1320170:1320170 : Crystal sage crystal orb, does nothing
+1320180:1320180 : Farron dart, does nothing Works with Fire Surge.
+1320190:1320190 : Starburst of crystal sage's purple dragon breath
+1320191:1320191 : Crystal sage's purple crystal 2 meters beneath you
+1320192:1320192 : Crystal sage's purple crystal on hand
+1320193:1320193 : Crystal sage's pruple crystal explode on hand
+1320194:1320194 : Crystal sage's purple crystal 2 meters beneath you
+1320195:1320195 : Crystal sage's purple crystal 2 meters beneath you
+1320196:1320196 :
+1320312:1320312 :
+1320340:1320340 :
+1320341:1320341 :
+1320342:1320342 :
+1320343:1320343 : Crystal sage clone crystal on hand
+1320344:1320344 : Crystal sage clone crystal on hand explode
+1320350:1320350 : Crystal sage clone crystal hail
+1320351:1320351 : Crystal sage clone
+1320352:1320352 :
+1320353:1320353 :
+1320355:1320355 : Crystal sage clone crystal hail
+1320360:1320360 : Farron flashsword-like sword from crystal sage fight with purple burst
+1320361:1320361 : Farron flashsword-like sword from crystal sage fight
+1320370:1320370 : Crystal sage clone crystal soul spear
+1320380:1320380 : Farron dart, does nothing
+1320390:1320390 : Crystal on ground, behaves like firestorm spawning but spawns on enemies
+1320391:1320391 : Crystal on hand then explode
+1320392:1320392 : Crystal explode on hand
+1320393:1320393 :
+1320394:1320394 : Crystal on ground, behaves like firestorm spawning
+1320395:1320395 : Crystal on ground, spawns on nearest enemy
+1320512:1320512 :
+1320540:1320540 :
+1320541:1320541 :
+1320542:1320542 : Crystal spawn on hand, explodes, delayed
+1320543:1320543 : Crystal spawn on hand, explodes
+1320544:1320544 : Crystal sage clone impact
+1320550:1320550 : Crystal sage clone crystal hail
+1320551:1320551 : Crystal sage clone crystal hail burst
+1320552:1320552 : Crystal sage clone crystal hail burst
+1320553:1320553 : Crystal sage clone impact
+1320555:1320555 : Crystal sage clone crystal hail longer range
+1320560:1320560 : Farron flashsword-like sword from crystal sage fight
+1320561:1320561 : Farron flashsword-like sword from crystal sage fight
+1320570:1320570 : Crystal sage clone crystal soul spear
+1320580:1320580 : Farron dart does nothing
+1320590:1320590 : Crystal on ground, behaves like firestorm spawning but spawns on enemies
+1320591:1320591 : Crystal spawn on hand, explodes
+1320592:1320592 : Explosion from crystal on hand
+1320593:1320593 :
+1320594:1320594 : Crystal on ground, behaves like firestorm spawning
+1320595:1320595 : Crystal on ground, spawns on enemies
+1340700:1340700 :
+1340710:1340710 :
+1340720:1340720 :
+1340730:1340730 : White wax from archive scholars
+1340731:1340731 :
+1340732:1340732 :
+1340740:1340740 :
+1340750:1340750 :
+1350700:1350700 : Another soul arrow that goes through walls with no damage
+1350710:1350710 : Single homing soulmass, no damage
+1350711:1350711 : Soul arrow that goes through walls - No damage
+1350720:1350720 : Spit or something, does nothing
+1350721:1350721 :
+1350722:1350722 : Irithyll Ghoul Vomit
+1350730:1350730 : Sorcery explosion
+1350740:1350740 :
+1350741:1350741 :
+1380700:1380700 : Manserpent Affinity single orb
+1380710:1380710 : Manserpent Affinity
+1380711:1380711 : Manserpent Orb that fires behind you after short delay
+1380712:1380712 :
+1380713:1380713 : Manserpent that fires forward.
+1380714:1380714 : Blackish-Yellow explosion resulting from bullets 1380711 and 1380714 hitting a wall/enemy.
+1390400:1390400 : Manserpent Fireball
+1391032:1391032 :
+1391060:1391060 :
+1391061:1391061 :
+1391132:1391132 :
+1391140:1391140 :
+1391141:1391141 :
+1391150:1391150 :
+1391151:1391151 :
+1391440:1391440 : Manserpent Fire breath
+1410300:1410300 : Dragonslayer arrow, does nothing
+1410310:1410310 : Dragonslayer arrow, does nothing, slower
+1410400:1410400 :
+1440800:1440800 : Arrow, does nothing
+1440801:1440801 : Fire arrow, does nothing
+1441840:1441840 :
+1441850:1441850 :
+1441851:1441851 :
+1480700:1480700 :
+1480701:1480701 :
+1480710:1480710 :
+2030230:2030230 : Slow moving pursuer-like orb
+2030700:2030700 :
+2030701:2030701 :
+2070700:2070700 :
+2070701:2070701 :
+2070710:2070710 :
+2080130:2080130 :
+2080131:2080131 : Magenta spludge from body
+2090700:2090700 :
+2090701:2090701 :
+2090702:2090702 :
+2090710:2090710 :
+2090711:2090711 :
+2090712:2090712 :
+2090713:2090713 :
+2090720:2090720 :
+2090721:2090721 :
+2090722:2090722 :
+2090730:2090730 :
+2090740:2090740 : Freeze attack from Oceiros
+2090741:2090741 : Freeze attack from Oceiros
+2090742:2090742 :
+2090743:2090743 :
+2100700:2100700 : Brownish purple sludge thrown outward
+2100701:2100701 : Another magenta spludge
+2120130:2120130 : Possibly mimic spit attack, does nothing
+2130121:2130121 :
+2140010:2140010 :
+2140011:2140011 :
+2140015:2140015 :
+2140020:2140020 :
+2140021:2140021 :
+2150020:2150020 : Large red/pinkish crystally explosion
+2180040:2180040 : Man-Grub maggot puke attack? Likely area restricted
+2180110:2180110 : Man-Grub Caster attack. Goes through walls and enemies without hitting them.
+2180200:2180200 :
+2190700:2190700 :
+2190701:2190701 :
+2190702:2190702 :
+2190705:2190705 :
+2190706:2190706 :
+2190710:2190710 :
+2190711:2190711 :
+2190720:2190720 :
+2190721:2190721 :
+2190722:2190722 :
+2190730:2190730 :
+2200110:2200110 :
+2200120:2200120 :
+2200140:2200140 :
+2200230:2200230 :
+2200600:2200600 : Spawns electricity from the Carthus Sandworm
+2200601:2200601 :
+2200602:2200602 : Same as 2200600 , but higher up and less electricity spawns.
+2210500:2210500 :
+2210501:2210501 :
+2210510:2210510 : Fireball, tracks, does nothing
+2210540:2210540 : Trail of fire, does nothing, better than most
+2210541:2210541 :
+2210550:2210550 :
+2210551:2210551 :
+2210560:2210560 : Poison mist
+2230200:2230200 :
+2230210:2230210 :
+2230211:2230211 : Gas of some kind
+2230220:2230220 :
+2230221:2230221 :
+2230222:2230222 :
+2230223:2230223 :
+2230224:2230224 :
+2230225:2230225 :
+2230226:2230226 :
+2230227:2230227 :
+2230228:2230228 :
+2230229:2230229 :
+2230230:2230230 :
+2230235:2230235 :
+2230700:2230700 :
+2230701:2230701 :
+2230702:2230702 :
+2230798:2230798 :
+2230799:2230799 :
+2230900:2230900 :
+2230901:2230901 :
+2230902:2230902 :
+2240112:2240112 :
+2240176:2240176 : Vordt Breath Works with Fire Surge.
+2240260:2240260 :
+2240270:2240270 :
+2240271:2240271 :
+2240273:2240273 :
+2250700:2250700 : Ball of lightning that splits into several balls, does nothing
+2250701:2250701 : Ball lightning split, does nothing
+2250702:2250702 : Single ball lightning split
+2250703:2250703 : Single ball lightning split
+2250704:2250704 : Single ball lightning split
+2250705:2250705 : Single ball lightning split
+2260700:2260700 : Giant arrow from smoldering lake, does nothing
+2260701:2260701 : Giant arrow from smoldering lake impact
+2260702:2260702 : Water impact from giant arrow
+2260703:2260703 : Water impact from giant arrow
+2270110:2270110 : Crab water spit
+2270111:2270111 : Water sploosh
+2270210:2270210 :
+2270211:2270211 :
+2270220:2270220 :
+2270221:2270221 :
+2270222:2270222 :
+3020192:3020192 : Rock debris flying off in a circle
+3021200:3021200 : Sludge thrown by giants in Cathedral of the Deep.
+3021900:3021900 :
+3021901:3021901 :
+3021910:3021910 :
+3021911:3021911 :
+3040700:3040700 :
+3040701:3040701 :
+3040710:3040710 : Fire pillar from abyss watchers
+3040711:3040711 :
+3040712:3040712 :
+3040713:3040713 :
+3040714:3040714 :
+3040715:3040715 :
+3040716:3040716 :
+3040717:3040717 :
+3040718:3040718 :
+3040719:3040719 :
+3040720:3040720 : Explosion from abyss watchers
+3040740:3040740 :
+3040750:3040750 :
+3040760:3040760 :
+3040770:3040770 : Explosion from abyss watchers
+3040780:3040780 :
+3040781:3040781 :
+3040820:3040820 :
+3040840:3040840 :
+3040841:3040841 :
+3040842:3040842 :
+3040843:3040843 :
+3040844:3040844 :
+3040845:3040845 :
+3040846:3040846 :
+3040847:3040847 :
+3040870:3040870 :
+3040880:3040880 : Explosion from abyss watchers
+3040890:3040890 :
+3040891:3040891 :
+3040900:3040900 :
+3050700:3050700 :
+3050701:3050701 :
+3050710:3050710 : Teeny explosion from Old Demon King.
+3050711:3050711 : Circle of fireballs from Old Demon King
+3050720:3050720 :
+3050721:3050721 :
+3050730:3050730 :
+3050731:3050731 :
+3050732:3050732 : Old Demon King Comet. Spawns small and grows over time.
+3050733:3050733 : Old Demon King Comet. Spawns fully grown.
+3050734:3050734 : Large explosion from Old Demon King
+3050735:3050735 :
+3050740:3050740 :
+3050741:3050741 :
+3050742:3050742 :
+3050743:3050743 :
+3050744:3050744 :
+3050745:3050745 :
+3050746:3050746 :
+3050747:3050747 :
+3050748:3050748 :
+3050749:3050749 :
+3050750:3050750 :
+3050751:3050751 :
+3050752:3050752 :
+3050753:3050753 :
+3050754:3050754 :
+3050755:3050755 :
+3050756:3050756 :
+3050757:3050757 :
+3050758:3050758 :
+3050759:3050759 :
+3050760:3050760 : Explosion from Old Demon King. Has a bit of smoke.
+3050770:3050770 : Explosion from Old Demon King
+3050780:3050780 :
+3050781:3050781 :
+3050782:3050782 :
+3050783:3050783 :
+3050784:3050784 :
+3050785:3050785 :
+3050786:3050786 :
+3050790:3050790 :
+3050800:3050800 :
+3050810:3050810 :
+3050811:3050811 :
+3050812:3050812 :
+3050813:3050813 :
+3050814:3050814 :
+3050815:3050815 :
+3050816:3050816 :
+3050817:3050817 :
+3050818:3050818 :
+3050819:3050819 :
+3050820:3050820 :
+3050821:3050821 :
+3050822:3050822 :
+3060700:3060700 : Flame breath from Demons. Works with Fire Surge
+3060701:3060701 :
+3060702:3060702 :
+3060710:3060710 :
+3060800:3060800 :
+3060801:3060801 :
+3060802:3060802 :
+3070700:3070700 : A red fireball from Demon Clerics
+3070710:3070710 : Bright Orange flame from Demon Cleric's. Works with Fire Surge.
+3070720:3070720 : Explosion from Demon Cleric's fireballs.
+3071700:3071700 : Demon Cleric's fireball. No hitbox
+3080700:3080700 : Red bloody orb stays in one spot then shoots no damage
+3080701:3080701 : Red bloody orb no damage
+3080702:3080702 : red bloody orb hit
+3080710:3080710 : Orange orb on ground that explodes into fire pillar
+3080711:3080711 : Bigger fire orb that glows then explodes into bigger fire pillar
+3080712:3080712 : fire pillar explosion
+3080720:3080720 : Large blood and fire explosion
+3080721:3080721 : Large blood and fire explosion (slightly bigger)
+3090100:3090100 :
+3100011:3100011 :
+3100012:3100012 :
+3100013:3100013 :
+3100021:3100021 :
+3100022:3100022 :
+3100023:3100023 :
+3100050:3100050 :
+3100051:3100051 :
+3100052:3100052 :
+3100060:3100060 :
+3100061:3100061 :
+3100062:3100062 :
+3100070:3100070 :
+3100071:3100071 :
+3100072:3100072 :
+3100210:3100210 : Quick crystal buildup that explodes. From Ravenous Crystal Lizards.
+3100220:3100220 :
+3100221:3100221 :
+3100230:3100230 :
+3100231:3100231 :
+3100240:3100240 :
+3110700:3110700 :
+3110701:3110701 :
+3110702:3110702 :
+3110710:3110710 : Cloud of smoke. Probably curses, does no damage. From basilisks.
+3120700:3120700 :
+3120710:3120710 :
+3120711:3120711 :
+3120720:3120720 :
+3120721:3120721 :
+3120730:3120730 :
+3140010:3140010 :
+3140500:3140500 : Wyvern Fire Breath. No hitbox, works with fire surge.
+3140501:3140501 :
+3140502:3140502 :
+3140505:3140505 :
+3140510:3140510 : Wyvern Fire Breath. No hitbox, works with fire surge.
+3140511:3140511 :
+3140512:3140512 :
+3140520:3140520 : Wyvern Fire Breath. No hitbox, works with fire surge.
+3140521:3140521 :
+3140522:3140522 : Fire breath sound and lighting from Wyvern. Makes a bit of fire appear around you, but seems random where it appears.
+3140530:3140530 :
+3140531:3140531 :
+3140532:3140532 :
+3140540:3140540 : Fire breath from dragon, does nothing
+3140541:3140541 :
+3140542:3140542 :
+3140550:3140550 :
+3140551:3140551 :
+3140552:3140552 :
+3140560:3140560 : flames on ground from dragon no damage
+3140562:3140562 : flames on ground from dragon no damage
+3140570:3140570 :
+3140572:3140572 :
+3140581:3140581 :
+3140582:3140582 :
+3140591:3140591 :
+3140592:3140592 :
+3140630:3140630 :
+3140631:3140631 :
+3140640:3140640 :
+3140641:3140641 :
+3140650:3140650 :
+3140651:3140651 :
+3140652:3140652 :
+3140653:3140653 :
+3140667:3140667 :
+3140668:3140668 :
+3140677:3140677 :
+3140678:3140678 :
+3140687:3140687 :
+3140688:3140688 :
+3140750:3140750 :
+3140751:3140751 :
+3140752:3140752 :
+3140755:3140755 :
+3140756:3140756 :
+3140757:3140757 :
+3140760:3140760 :
+3140770:3140770 :
+3160700:3160700 : Line of smoke from Dragonslayer Armor. Goes for a very, VERY long distance.
+3210020:3210020 :
+3220040:3220040 : Rock Lizard's Fire Breath. No hitbox, works with Fire Surge
+3230010:3230010 :
+3230020:3230020 :
+5010430:5010430 : Nameless King's Lightning Stomp
+5010520:5010520 :
+5010521:5010521 :
+5010522:5010522 : Large lightning explosion from Nameless King phase 2.
+5010531:5010531 :
+5010532:5010532 : Lightning shoots away from you in 4 directions. From Nameless King phase 2.
+5010533:5010533 : Same as 5010532, but delayed by a few seconds.
+5010540:5010540 : Nameless King's Swordspear Lightning Bolt
+5010541:5010541 : Same as 5010540
+5010550:5010550 :
+5010551:5010551 :
+5010552:5010552 :
+5010700:5010700 : Part of Nameless King's wind attack in Phase 2
+5010701:5010701 : Horizontal wind attack from Nameless King phase 2
+5010710:5010710 :
+5010711:5010711 :
+5010720:5010720 : Vertical wind attack from Nameless King phase 2
+5010730:5010730 : Same as 5010701, but starts off smaller.
+5010731:5010731 : Puny version of 5010720
+5020144:5020144 : Fiery explosion from Demon Prince.
+5020191:5020191 : Demon Prince Big Fireball Explosion
+5020212:5020212 : Spawns a lot lava from Demon Prince
+5020226:5020226 : Demon Prince Big Fireball Explosion
+5020242:5020242 : Demon Prince Seething Chaos. Spawns ontop of you and explodes after a delay.
+5020243:5020243 : Demon Prince Seething Chaos. Spawns ontop of you and explodes shortly after.
+5020244:5020244 : Large explosion that shoots rocks. From Demon Prince
+5020251:5020251 : Fiery smoke with a wide horizontal AOE. From Demon Prince.
+5020260:5020260 : Demon Prince Big Fireball . Loud as hell.
+5020262:5020262 : Spawns some lava from Demon Prince.
+5020306:5020306 : Demon in pain pink dust plume fades quickly
+5020307:5020307 : Large fiery explosion. From Demon Prince
+5020320:5020320 : Demon in Pain long pink dust cloud that explodes
+5020322:5020322 : After a short delay, purple explosion. From Demon Prince
+5020323:5020323 : Same as 5020322, but instantly explodes.
+5020421:5020421 : Demon Prince spawns a line of fire far beneath you
+5020423:5020423 : Line of explosions from Demin Prince. Spawns really far below you.
+5020425:5020425 : Fiery explosion from Demon Prince.
+5020582:5020582 : Spawns a small bit of lava that lingers for a short moment then disappears. From Demon Prince
+5020800:5020800 : Demon in Pain 4 spits of brownish pink sludge impact
+5020810:5020810 :
+5020811:5020811 :
+5020812:5020812 :
+5020813:5020813 :
+5020820:5020820 :
+5020821:5020821 :
+5020822:5020822 :
+5020830:5020830 :
+5020840:5020840 :
+5020850:5020850 :
+5020851:5020851 :
+5020900:5020900 :
+5020901:5020901 :
+5020902:5020902 :
+5020903:5020903 :
+5020904:5020904 :
+5020905:5020905 :
+5021101:5021101 : Demon Prince comet. Slowly grows before launching and flies for a VERY long distance
+5021102:5021102 : Demon Prince comet. Launches almost immediately and flies for a VERY long distance.
+5021103:5021103 : Fiery explosion from Demon Prince.
+5021710:5021710 : Demon Prince Summons multiple large fire rocks that drop
+5021711:5021711 : Demon Prince Summons large fire rock that drops
+5022700:5022700 : Demon Prince small fireball
+5022720:5022720 : Demon prince 5 small fireballs
+5030121:5030121 :
+5030231:5030231 : Invisible AOE that staggers, doesn't move, hitRadiusMax: 7
+5030300:5030300 :
+5030301:5030301 :
+5030302:5030302 :
+5030303:5030303 :
+5030700:5030700 : Fires a ring around caster of 24 invisible AOE bullets that stagger (acts like a physics object that collides and skims across surfaces)
+5030701:5030701 : Fires the above bullet but slightly higher?
+5030710:5030710 :
+5030711:5030711 :
+5030720:5030720 :
+5030730:5030730 :
+5030740:5030740 : Lightning from Nameless King phase 1
+5030741:5030741 :
+5030750:5030750 :
+5030751:5030751 :
+5030760:5030760 :
+5030770:5030770 :
+5030780:5030780 :
+5030781:5030781 :
+5110410:5110410 : Small dust on the ground
+5110411:5110411 :
+5110500:5110500 :
+5110600:5110600 : Chunks of rock flung in a circle, does nothing
+5120710:5120710 : huge pink smoke cloud
+5120720:5120720 : poison mist?
+5120721:5120721 : poison mist again
+5120730:5120730 : poison mist fires off to the right
+5120800:5120800 :
+5120810:5120810 :
+5140201:5140201 :
+5140202:5140202 :
+5140251:5140251 : Pontiff's Purple Arrow Spell, does nothing
+5140261:5140261 : Pontiff's Purple Sword Slash, does nothing
+5140262:5140262 :
+5140700:5140700 :
+5140701:5140701 :
+5140800:5140800 :
+5140801:5140801 :
+5140810:5140810 :
+5140811:5140811 :
+5141201:5141201 :
+5141202:5141202 :
+5141251:5141251 :
+5141261:5141261 :
+5141262:5141262 :
+5150700:5150700 : one aldritch bullet, no damage
+5150701:5150701 : slightly larger purple projectile
+5150702:5150702 : purple projectile, no damage
+5150710:5150710 : more fire, at feet
+5150711:5150711 : more fire
+5150713:5150713 : fire effect, no damage
+5150720:5150720 : Purple Beam Throw - Aldritch
+5150721:5150721 :
+5150722:5150722 : cool huge purple explosion, instant, no damage, at feet
+5150723:5150723 : cool huge purple explosion, instant, no damage
+5150730:5150730 : homing aldritch arrows, no damage
+5150731:5150731 : arrow burst around you
+5150732:5150732 : two arrows crossing hand
+5150733:5150733 : four arrows splitting off at hand?
+5150734:5150734 : aldritch arrows, no damage
+5150740:5150740 : Aldrich purple spiral from when he comes out of the ground
+5150750:5150750 : Weird semi-transparent line thing. Possibly SFX from Aldrich's Arrow Rain
+5150751:5150751 : Same as above but more transparent
+5150752:5150752 : tiny purple projectile, no damage
+5150753:5150753 :
+5150754:5150754 :
+5150760:5150760 : 9 aldritch bullets
+5160060:5160060 :
+5160061:5160061 :
+5160062:5160062 :
+5160063:5160063 :
+5160064:5160064 :
+5160065:5160065 :
+5160303:5160303 :
+5160313:5160313 :
+5160314:5160314 :
+5160450:5160450 :
+5160451:5160451 :
+5160452:5160452 :
+5160453:5160453 :
+5160454:5160454 :
+5170010:5170010 :
+5180200:5180200 :
+5180201:5180201 :
+5180220:5180220 :
+5180221:5180221 :
+5180223:5180223 :
+5180402:5180402 :
+5180430:5180430 :
+5180431:5180431 :
+5180500:5180500 :
+5180501:5180501 :
+5180800:5180800 :
+5180810:5180810 :
+5190700:5190700 :
+5190710:5190710 : shockwave above you
+5190711:5190711 : shockwave - no stagger or damage
+5200700:5200700 : Rock attack from Stray Demon. Works with Fire Surge (!)
+5200710:5200710 :
+5200711:5200711 :
+5220700:5220700 : delayed deacon fireball
+5220800:5220800 :
+5220801:5220801 : Big deep soul that attaches itself to the player that fires it
+5220810:5220810 :
+5220811:5220811 : big deep soul - goes through walls
+5220812:5220812 : massive deep soul explosion again but has sound
+5220820:5220820 : Giant Deep Soul that hovers in place for a moment before disappearing. From Deacons.
+5220821:5220821 :
+5220822:5220822 : holy explosion of deep souls no damage but looks cool again
+5220830:5220830 : massive deep soul that doesn't move
+5220831:5220831 : giant deep soul - no damage - goes though walls
+5220832:5220832 : "holy explosion of deep souls
+5220900:5220900 :
+5221700:5221700 : deacon fireball no damage goes through walls
+5221710:5221710 : force? no stagger - interestingly, when SpEffects are applied to force it is also applied to this
+5221720:5221720 :
+5221721:5221721 :
+5221800:5221800 : deep soul that goes through walls and spazzes out a bit again - no damage
+5221801:5221801 :
+5222700:5222700 : deacon fireball thing that goes through walls - no damage
+5222800:5222800 : "deep soul drawing a pattern?
+5222801:5222801 :
+5220810:5220810 : Giant Deep Soul that hovers in place for a moment before disappearing. From Deacons.
+5220812:5220812 : Explosion of Deep Souls from Deacons. Makes different sound than the similar bullets.
+5220820:5220820 : Giant Deep Soul that hovers in place for a moment before disappearing. From Deacons.
+5220822:5220822 : Explosion of Deep Souls from Deacons. Makes different sound than the similar bullets.
+5222900:5222900 : some deep soul like thing but it goes directly up at a high speed
+5222901:5222901 :
+5222910:5222910 : some deep soul like thing but it goes directly up at a high speed
+5223700:5223700 : delayed deacon fireball
+5223800:5223800 : deep soul drawing a pattern?
+5223801:5223801 :
+5230070:5230070 :
+5230071:5230071 : Yellow summon sign
+5230072:5230072 : Yellow summon sign
+5230130:5230130 :
+5230200:5230200 :
+5230210:5230210 :
+5230220:5230220 :
+5230250:5230250 :
+5230260:5230260 :
+5230261:5230261 :
+5230280:5230280 :
+5230320:5230320 :
+5240100:5240100 :
+5240110:5240110 :
+5240111:5240111 :
+5240200:5240200 : Fire trail from Irithyl NPCS, trails around, does nothing
+5240201:5240201 : Fire trail, 1 pillar does nothing
+5240202:5240202 : Fire trail, 1 pillar does nothing, where hand casts
+5240203:5240203 : Fire trail, 1 pillar does nothing, where hand casts
+5240210:5240210 : massive fire pillar that spawns on you, no damage
+5240211:5240211 : massive fire pillar that spawns on you, no damage, instant
+5240212:5240212 : spawns fire on your feet - no damage, goes onto locked on target
+5240220:5240220 :
+5240225:5240225 :
+5240230:5240230 :
+5240240:5240240 :
+5250700:5250700 : Lothric Bullets. Shorter delay than 5250702
+5250701:5250701 : Lothric Bullets. No delay
+5250702:5250702 : Lothric Bullets
+5250703:5250703 : Lothric Bullets. No delay.
+5250710:5250710 : Wrath of the Gods from Twin Princes boss fight.
+5250720:5250720 :
+5250721:5250721 : Tiny fire explosion in front you. Related to Twin Princes boss fight.
+5250722:5250722 :
+5250723:5250723 :
+5250724:5250724 :
+5250725:5250725 :
+5250726:5250726 :
+5250727:5250727 :
+5250728:5250728 : Fires a bunch of aldrich shit beneath you
+5250729:5250729 :
+5250730:5250730 : Lorian's Holy Flame Beam attack
+5250731:5250731 : Lorian's Holy Flame Beam attack
+5250732:5250732 :
+5250733:5250733 : Light explosion related to the Twin Prince's boss fight.
+5250740:5250740 : Lothric's White Soul Spear
+5250750:5250750 :
+5250751:5250751 :
+5250752:5250752 :
+5250753:5250753 :
+5252699:5252699 :
+5252700:5252700 :
+5252701:5252701 :
+5252709:5252709 :
+5252710:5252710 :
+5252711:5252711 :
+5252719:5252719 :
+5252720:5252720 :
+5252721:5252721 :
+5260313:5260313 :
+5260600:5260600 :
+5260601:5260601 :
+5270140:5270140 :
+5270151:5270151 :
+5270152:5270152 :
+5270520:5270520 :
+5270521:5270521 :
+5270721:5270721 :
+5270722:5270722 :
+5270731:5270731 :
+5270732:5270732 :
+5280081:5280081 :
+5280190:5280190 : Wrath of gods and force combined
+5280240:5280240 : another large combustion that does no damage
+5280241:5280241 : spread bursts of fire in front of you
+5280245:5280245 : fireball, no damage, through walls
+5280246:5280246 : cool looking large combustion, no damage
+5280247:5280247 : tiny burst of flames around you no damage
+5280255:5280255 : Poison misty attack
+5280256:5280256 : Poison misty attack thrown forward
+5280257:5280257 : Poison misty attack thrown forward
+5280300:5280300 : crystal soul spear that goes through walls and does no damage
+5280310:5280310 : Farron hail type attack
+5280320:5280320 : single crystal homing soulmass
+5280321:5280321 : single crystal homing soulmass
+5280322:5280322 : crystal homing soulmass projectile that goes up
+5280323:5280323 : soul-arrow looking projectile, no damage. through walls
+5280340:5280340 : Another bullet used by Soul Stream for visual effects. Does no damage.
+5280535:5280535 : Lightning spike thing, no damage
+5280536:5280536 : doesn't seem to do anything
+5280537:5280537 :
+5280540:5280540 : another no damage lightning spike
+5280550:5280550 : Soul of cinder's lightning rain
+5280551:5280551 : smoke with lightning rain
+5280552:5280552 : diving then rising lightning bolt
+5280555:5280555 : smoke cloud that spawns way above shooting lightning
+5280556:5280556 : another cloud spawning on you that shoots lightning
+5280558:5280558 : seems to do nothing
+5280559:5280559 : another lightning cloud spawning on you
+5280604:5280604 : Soul of Cinder fire explosion AOE after his 5 hit combo in phase 2
+5280903:5280903 :
+5280904:5280904 : Soul of Cinder fire explosion AOE when transitioning between phase 1 and 2
+5280910:5280910 :
+6000711:6000711 : Some flame attack from Farron Followers
+6020131:6020131 : Ice explosion from stage 2 of Friede.
+6020135:6020135 : Ice spawns midair. From Friede phase 2.
+6020138:6020138 : Same as 6020135, but lasts longer.
+6020143:6020143 : Same as 6020135, but spawns 3. Spawns slightly behind you.
+6020144:6020144 : same as 6020131
+6020147:6020147 : Same as 6020143
+6020150:6020150 : Ice Explosion from Phase 3 Friede.
+6020152:6020152 : Single ice buildup that explodes from Phase 3 Friede after short delay.
+6020658:6020658 : Large black fiery explosion from Phase 3 Friede
+6020661:6020661 : Ice explosion from Phase 3 Friede.
+6020664:6020664 : Same as 6020668. No visible difference.
+6020668:6020668 : Same as 6020152, but longer delay before explosion.
+6020671:6020671 : same as 6020661
+6020674:6020674 : 3 ice buildups that explode after a delay.
+6020677:6020677 : Same as 6020674
+6020781:6020781 : Another single ice buildup that explodes (this time almost immediately)
+6020782:6020782 : Another explosion of ice.
+6020784:6020784 : Explosion of ice that occurs a few seconds after casting.
+6020789:6020789 : Large fiery black explosion. From Phase 3 Friede.
+6020803:6020803 : Small bit of black fire from Friede Phase 3.
+6060720:6060720 : Fire that drops from the branches Ariandel Tree ladies.
+6060721:6060721 : Fire that drops from the branches Ariandel Tree ladies.
+6060702:6060702 : Icy AOE from Ariandel Tree ladies. Makes spooky sound.
+6080807:6080807 : Purple Smoke from Corvian Settlers
+6100705:6100705 : Smashing sound and pillar of smoke from Millwood Chieftain with Earthseeker's attack.
+6100700:6100700 :
+6100711:6100711 : Earthseeker WA. Spawned by Millwood Chieftain.
+6100712:6100712 : Same as 6100711, but fewer spawn
+6100713:6100713 : Same as 6100711, but only 1 spawns.
+6100714:6100714 : Same as 6100713, but spawns higher up.
+6200710:6200710 : Gael's Crossbow Bolts (Works outside of Fillanore's rest, No damage)
+6200720:6200720 : Gael's Way of White Corona 3-shot. Returns after some time.
+6200900:6200900 : Red Affinity going wherever, If given a hitbox it will spawn lightning where it lands
+6200901:6200901 : Red Affinity moving towards target
+6200902:6200902 : Lightning marker
+6200903:6200903 : Gael's Lightning
+6200910:6200910 : lightning bolt ID, doesn't do anything
+6200921:6200921 : Red Affinity going wherever
+6200952:6200952 : Lightning appears in the distance. Does not seem to work outside of Fillianore's rest
+6200953:6200953 : Lightning spawns on top of you with. No sound outside of Fillianore's rest.
+6200954:6200954 : Lightning spawns on top of you after random amount of time. No sound outside of Fillianore's rest.
+6210702:6210702 : Flame AOE with bits of black fire mixed in. From Midir.
+6210703:6210703 : Flame AOE with bits of black fire mixed in. From Midir.
+6210707:6210707 : Flame AOE with bits of black fire mixed in. From Midir.
+6210708:6210708 : Flame AOE with bits of black fire mixed in. From Midir.
+6210721:6210721 : Midir flames from bridge fight.
+6210763:6210763 : Purple explosion AOE with sound.
+6210764:6210764 : Purple explosion AOE with sound.
+6210812:6210812 : Purple explosion AOE with sound.
+6210817:6210817 : Purple explosion AOE with sound.
+6210822:6210822 : Purple explosion AOE with sound.
+6210827:6210827 : Purple explosion AOE with sound.
+6210832:6210832 : Purple explosion AOE with sound.
+6210837:6210837 : Purple explosion AOE with sound.
+6210842:6210842 : Purple explosion AOE with sound.
+6210847:6210847 : Purple explosion AOE with sound.
+6210862:6210862 : Purple explosion AOE with sound.
+6211400:6211400 : Forward moving wave of fire, cool light effect
+6211420:6211420 : Midir flames on ground
+6211420:6211420 : Midir ring of fire straight down
+6211489:6211489 : Midir purple explosion
+6211905:6211905 : Midir purple explosion 2
+6230700:6230700 : Dark blue orb projectile from DLC2
+6250740:6250740 : White particles and glowing from DLC2 Angel
+6250750:6250750 : White projectile from DLC2 Angel
+6260730:6260730 : Fire from dragon shield
+6270710:6270710 : Lighting spear from DLC2
+6270711:6270711 : Lighting spear from DLC2
+6280312:6280312 : Orange ledo archer
+6280340:6280340 : Orange ledo with his hammer somewhere
+6280341:6280341 : Orange ledo with his hammer where you cast
+6280315:6280315 : Straight flying archer arrow
+6280332:6280332 : Spawns a Zullie at hand position
+6280337:6280337 : Streak from Zullies Dark Edge
+6280390:6280390 : Archdragon ghost used by giant on the bridge
+6280396:6280396 : Fire breath on the floor (Midir)
+6280800:6280800 : n
+6280900:6280900 : Effect 16280, ?
+6280910:6280910 : Effect 16400, Target pushed forward and unable to use bonfire?
+6280920:6280920 : Effect 16410, Target pushed forward and unable to use bonfire?
+6280930:6280930 : Effect 16420, ?
+6290050:6290050 : Delayed Ranged Heal from Hollow Cleric
+6290051:6290051 : Ranged Heal from Hollow Cleric
+6290052:6290052 : Damage from Ranged Heal
+6290055:6290055 : Delayed Damage
+6290056:6290056 : Damage
+6290057:6290057 : Instant Damage
+6290060:6290060 : Delayed Great Heal from Hollow Cleric
+6290061:6290061 : Great Heal from Hollow Cleric
+6290062:6290062 : n
+6290063:6290063 : Instant Damage
+6290065:6290065 : Delayed Great Heal from Hollow Cleric
+6290066:6290066 : Great Heal from Hollow Cleric
+6290080:6290080 : Ranged Heal from Hollow Cleric
+6290081:6290081 : Damage from Ranged Heal
+6290085:6290085 : Delayed Damage
+6290086:6290086 : Instant Damage
+6330700:6330700 : Bug ass juice projectile
+9990730:9990730 : n
+11200000:11200000 : Farron Dart
+11210000:11210000 : Great Farron Dart
+11300000:11300000 : Soul Arrow
+11301000:11301000 : Great Soul Arrow
+11302000:11302000 : Heavy Soul Arrow
+11303000:11303000 : Great Heavy Soul Arrow
+11304000:11304000 : Homing Soulmass
+11304100:11304100 : Homing Soulmass fired
+11305000:11305000 : Homing Crystal Soulmass
+11305100:11305100 : Homing Crystal Soulmass fired
+11306000:11306000 : Soul Spear
+11307000:11307000 : Crystal Soul Spear
+11308000:11308000 : Deep Soul
+11309000:11309000 : Great Deep Soul
+11355000:11355000 :
+11355100:11355100 :
+11356000:11356000 : Aural Decoy
+11356010:11356010 :
+11370000:11370000 : White Dragon Breath
+11370010:11370010 :
+11370020:11370020 : Associated with White Dragon Breath
+11370030:11370030 :
+11370040:11370040 : crystal line
+11370050:11370050 : crystal line
+11370060:11370060 : crystal line
+11370070:11370070 :
+11370080:11370080 :
+11370090:11370090 :
+11370100:11370100 : Associated with White Dragon Breath
+11370110:11370110 : Associated with White Dragon Breath
+11370120:11370120 : Associated with White Dragon Breath
+11370130:11370130 : Associated with White Dragon Breath
+11370140:11370140 : Associated with White Dragon Breath
+11370150:11370150 : Associated with White Dragon Breath
+11370160:11370160 :
+11370170:11370170 :
+11372000:11372000 : Farron Hail
+11372100:11372100 :
+11373000:11373000 : Crystal Hail The rising invisible base that the Crystal Hail attaches itself to. Lasts 1 second before triggering the attack
+11373100:11373100 : The actual ball that shoots 4 mini projectile bursts. Lasts 1.5 seconds
+11373200:11373200 : A single projectile burst that is supposed to come from the ball
+11373300:11373300 : Another identical rising invisible base. Also lasts 1 second
+11373400:11373400 : 2 separated triggers that fire straight ahead. These are connected to the 2nd invisible base.
+11373500:11373500 : The actual spell bullet that fires when the separate triggers...trigger. Fired at a 90 degree angle downwards. The trigger is not what makes the bullet fly down, its the bullet itself.
+11376000:11376000 : Old Moonlight beam
+11376100:11376100 : Old moonlight beam Charged
+11376101:11376101 : Old moonlight beam Charged
+11603000:11603000 : Affinity
+11603100:11603100 : Single affinity bullet
+11604000:11604000 : Great Soul Dregs
+11620000:11620000 : Soul Stream (actual spell)
+11620100:11620100 :
+11620200:11620200 :
+11620300:11620300 : Value used by Soul Stream, wont work as a bullet
+11651000:11651000 : Twisted Wall of Light
+11651100:11651100 :
+11740000:11740000 : Pestilent Mercury
+11740100:11740100 :
+11740101:11740101 :
+11740102:11740102 :
+11741010:11741010 : Snap Freeze
+12400000:12400000 : Fireball
+12400100:12400100 :
+12402000:12402000 : Fire Orb
+12402100:12402100 : Random fire damage
+12403000:12403000 : Firestorm
+12403100:12403100 :
+12403200:12403200 : Single Fire Storm pillar
+12403300:12403300 : Knocks up player, does some damage. Popularly known as BURGER FLIP (works as Int bullet hit id for sorceries, tested with deep soul, didnt work with fireball/lightningspear)
+12403500:12403500 :
+12403600:12403600 : Fire Pillar
+12405000:12405000 : Fire Surge
+12407000:12407000 : Black Serpent
+12407100:12407100 : Black Serpent line part 1
+12407200:12407200 : Black Serpent line part 2
+12407300:12407300 : Black Serpent line part 3
+12407400:12407400 : Black Serpent line part 4
+12407500:12407500 : Black Serpent line part 5
+12407600:12407600 : Black Serpent line part 6
+12407700:12407700 : Black Serpent line part 7
+12407800:12407800 : Black Serpent line part 8
+12407900:12407900 : Black Serpent line part 9
+12408000:12408000 : Black Serpent line part 10
+12408100:12408100 : Black Serpent line part 11
+12408200:12408200 : Black Serpent line part 12
+12408300:12408300 : Black Serpent line part 13
+12408400:12408400 : Black Serpent line part 14
+12411000:12411000 : Combustion
+12411100:12411100 :
+12411200:12411200 : Great Combustion
+12420000:12420000 : Poison Mist
+12421000:12421000 : Toxic Mist
+12422000:12422000 : Acid Surge
+12423000:12423000 : Unused, looks like sludge, applies effect 102423000
+12430000:12430000 : Iron Flesh?
+12436000:12436000 : Rapport
+12450000:12450000 : Great Chaos Fire Orb
+12450100:12450100 : magma at feet
+12450200:12450200 : Creates magma
+12450300:12450300 : Spawns Lava Midair
+12451000:12451000 : Chaos Storm
+12451100:12451100 : Single Chaos Storm pillar
+12451200:12451200 :
+12451300:12451300 :
+12451500:12451500 :
+12451600:12451600 :
+12451700:12451700 :
+12452000:12452000 : Fire Whip
+12453000:12453000 : Black Flame
+12453100:12453100 : Hit bullet of Black Flame
+12453200:12453200 : does damage (needs testing)
+12455000:12455000 : Profaned Flame
+12455100:12455100 : Profaned Flame but right on top of you
+12455200:12455200 : Explosion on top of you
+12456000:12456000 : Chaos Bed Vestiges
+12456100:12456100 : Fire Damage
+12456200:12456200 :
+12456210:12456210 : Chaos Bed Vestiges spiraling fire
+12457000:12457000 : Floating chaos orb, does nothing
+12457100:12457100 : Floating chaos' invisible bullet that fires the smaller bullets
+12457110:12457110 : Floating chaos' smaller bullets
+12458000:12458000 : Flame Fan - curved fire line
+12458010:12458010 : n - Comes from the flame fan, but no visual, audio, or physical effect?
+12458210:12458210 : n - Comes from the flame fan, but no visual, audio, or physical effect?
+12458200:12458200 : n - Comes from the flame fan, but no visual, audio, or physical effect?
+12470000:12470000 : Warmth
+12600000:12600000 : Dark Orb
+12600100:12600100 :
+12610000:12610000 : Black Fire Orb
+12610100:12610100 :
+12620000:12620000 : Bursting Fireball
+12620100:12620100 : Another Bursting Fireball
+12620200:12620200 : Three bursting fireballs that go lower
+12630000:12630000 : Boulder Heave
+12630100:12630100 :
+12660000:12660000 : Seething Chaos
+12660010:12660010 : Second part of Seething Chaos but it's invisible
+12660020:12660020 : Seething Chaos impact grows then explodes
+12660030:12660030 : Seething Chaos explosion
+13490000:13490000 : Heal Aid
+13500000:13500000 : Heal
+13500009:13500009 :
+13500100:13500100 :
+13500109:13500109 :
+13501000:13501000 : Med Heal
+13501009:13501009 :
+13501100:13501100 :
+13501109:13501109 :
+13502000:13502000 : Great Heal
+13502100:13502100 :
+13503000:13503000 : Soothing Sunlight
+13503100:13503100 :
+13505000:13505000 : Bountiful Sunlight
+13505100:13505100 :
+13508000:13508000 : Caressing Tears
+13509000:13509000 : Lightning arrow miracle projectile
+12455200:12455200 : Morbid Temptation
+13530000:13530000 : Force
+13531000:13531000 : Wrath of the Gods
+13532000:13532000 : Emit Force
+13532100:13532100 :
+13540000:13540000 : Seek Guidance
+13540010:13540010 :
+13550000:13550000 : Lightning Spear launch effect
+13550100:13550100 : Lightning Spear
+13551000:13551000 : Great Lightning Spear launch effect
+13551100:13551100 : Great Lightning Spear
+13552000:13552000 : Sunlight Spear launch effect
+13552100:13552100 : Sunlight Spear
+13553000:13553000 : Lightning Storm
+13553100:13553100 : Actual Lightning Storm circle projectiles
+13553200:13553200 : Traveling lightning
+13553300:13553300 :
+13553400:13553400 :
+13553500:13553500 :
+13553600:13553600 :
+13553700:13553700 :
+13553800:13553800 :
+13554000:13554000 : Gnaw
+13555000:13555000 : Dorhys' Gnawing
+13556000:13556000 : Way of white corona, full spell
+13556010:13556010 : Way of white corona, sits still then returns
+13556021:13556021 : Way of white corona, returning
+13557000:13557000 : Projected heal
+13557010:13557010 : Projected heal impact
+13563000:13563000 : Sacred Oath
+13581000:13581000 : Vow of Silence
+13650000:13650000 :
+13700000:13700000 :
+13700100:13700100 : purple delayed explosion               (I think these are from dead again)
+13700110:13700110 : Purple delayed explosion, does damage
+13700120:13700120 : purple delayed explosion
+13700130:13700130 : purple delayed explosion
+13700140:13700140 : purple delayed explosion
+13700150:13700150 : purple delayed explosion               (each of these have different damage)
+13700160:13700160 : purple delayed explosion
+13700170:13700170 : purple delayed explosion
+13700180:13700180 : purple delayed explosion
+13700200:13700200 : purple explosion no delay
+13700210:13700210 : purple explosion no delay
+13700220:13700220 : purple explosion no delay
+13700230:13700230 : purple explosion no delay
+13700240:13700240 : purple explosion no delay
+13700250:13700250 : purple explosion no delay
+13700260:13700260 : purple explosion no delay
+13700270:13700270 : purple explosion no delay
+13700280:13700280 : purple explosion no delay
+13710000:13710000 : Lightning Stake
+13710100:13710100 : Lightning explosion from hand. (damage needs testing)
+13710200:13710200 :
+13720000:13720000 : Divine Pillars of Light
+13720100:13720100 : Single pillar
+13720200:13720200 : Pillar with glass breaking sound effect
+13720300:13720300 : Invisible Pillars of Divine Light
+13720500:13720500 : Pillar, spawns in front of you a few feet away where you're facing
+13730000:13730000 : Lifehunt Scythe
+13730100:13730100 : Lifehunt scythe effect on body (when casting?)
+13730200:13730200 : Lifehunt scythe effect on body (when casting?)
+13730300:13730300 : Lifehunt scythe effect on body (when casting?)
+13730400:13730400 : Lifehunt scythe effect on body (when casting?)
+13750000:13750000 : Dorris Swarm
+13750005:13750005 :
+13750010:13750010 :
+13750100:13750100 :
+13750110:13750110 :
+13750200:13750200 :
+13750210:13750210 :
+13750300:13750300 :
+13750300:13750300 :
+13750310:13750310 :
+13750410:13750410 :
+100010800:100010800 : Tailbone Shortsword Weapon Art, does no damage
+100010810:100010810 : Tailbone Shortsword Weapon Art, does no damage, only 1 tick in front of you
+100010820:100010820 :
+100021100:100021100 : Sunlight Straight Sword Buff
+100021110:100021110 : Sunlight Straight Sword Buff, but this version is where you cast
+100040800:100040800 :
+100040810:100040810 :
+100040820:100040820 :
+100041000:100041000 : Crescent Moon Sword weapon art, no damage
+100041301:100041301 : Spawns a bit of magma
+100050601:100050601 : Frayed Blade WA
+100050602:100050602 : Frayed Blade WA
+100061700:100061700 : Sword of Judgement beam attack. Staggers but no damage
+100061800:100061800 :
+100061801:100061801 :
+100061802:100061802 :
+100061810:100061810 :
+100061811:100061811 :
+100061812:100061812 :
+100061820:100061820 :
+100061821:100061821 :
+100061822:100061822 :
+100061830:100061830 :
+100061831:100061831 :
+100061832:100061832 :
+100061840:100061840 :
+100061841:100061841 :
+100061842:100061842 :
+100062600:100062600 : Short line of fire
+100062610:100062610 : Short line of fire
+100062611:100062611 : Short line of fire
+100062612:100062612 : Shorter line of fire
+100062613:100062613 : Shorter line of fire
+100062614:100062614 : Shorter line of fire
+100062615:100062615 : Shortest line of fire
+100062700:100062700 : Lothric's holy sword weapon art
+100062710:100062710 : Line of fire, does no damage
+100062720:100062720 : Still short line of fire
+100062721:100062721 : Short line of fire
+100062722:100062722 : Shorter line of fire
+100062723:100062723 : Shorter line of fire
+100062724:100062724 : Short line of fire
+100062725:100062725 : Shortest line of fire
+100062800:100062800 : lothric's holy sword weapon art
+100062900:100062900 : wrath of the gods
+100062910:100062910 : wrath of the gods
+100063200:100063200 : moonlight greatsword vertical no damage
+100063210:100063210 : moonlight greatsword horizontal no damage
+100063220:100063220 : moonlight greatsword horizontal no damage
+100063230:100063230 : moonlight greatsword horizontal no damage
+100063240:100063240 : invisible moonlight greatsword bullet no damage
+100063400:100063400 : line of roaring fire on ground that does knockback no damage
+100063410:100063410 : medium fire burst in front of feet
+100063411:100063411 :
+100063412:100063412 : long distance fire burst on target does knockback no damage
+100063413:100063413 : long fire line that trails off
+100063414:100063414 : long fire line that trails off little shorter
+100063415:100063415 : long fire line that trails off shorter than above
+100063416:100063416 : long fire line that trails off shorter than above
+100063417:100063417 : long fire line that trails off shorter than above
+100063418:100063418 : long fire line that trails off shorter than above
+100063419:100063419 : not a fire line at this point just 1 burst
+100063730:100063730 : Charged storm ruler weapon art shockwave, knockback, no damage
+100063731:100063731 : not as cool version of above, very short and doesn't explode
+100063732:100063732 : same as above but goes where you aim, goes kind of far
+100063740:100063740 : Storm Ruler Damaging WA bullet
+100063741:100063741 : not as cool version of above, very short and doesn't explode
+100071800:100071800 : Earthseeker WA largest AOE but no damage, (still burger flips enemy)
+100071801:100071801 : Earthseeker WA 1 hole
+100071802:100071802 : Earthseeker WA instant 1 hole, damage
+100071803:100071803 : Earthseeker WA instant 1 hole spawns higher up, no damage (still burger flips enemy)
+100071811:100071811 : Earthseeker WA 5 holes, like 100071800 but smaller AOE
+100071812:100071812 : Earthseeker WA 1 hole no damage
+100071813:100071813 : Earthseeker WA 1 hole
+100071100:100071100 : Dragonslayer Greataxe WA
+100071110:100071110 :
+100071111:100071111 :
+100071112:100071112 :
+100071113:100071113 :
+100071114:100071114 :
+100071115:100071115 :
+100071116:100071116 :
+100071117:100071117 :
+100071200:100071200 : Big fire explosion, big knockback, pretty big damage
+100081700:100081700 : great combustion no damage
+100081710:100081710 : fire surge no damage
+100081900:100081900 : chaos fire orb no damage
+100081910:100081910 : spurts of 3 fire orbs up in an arc (?)
+100082900:100082900 : wrath of the gods
+100082910:100082910 : wrath of the gods
+100082920:100082920 :
+100083201:100083201 : Ledo hammer bullet - No Hitbox
+100083202:100083202 : Ledo hammer bullet - No Hitbox
+100091100:100091100 : like a bigger chaos orb with no lava does nothing
+100091105:100091105 :
+100091300:100091300 : Wind burst from one of the spears, works with fire surge animation, knocks people over, visible to others
+100091310:100091310 :
+100091400:100091400 :
+100091600:100091600 : Dragonslayer Swordspear weapon art, lots of damage
+100091610:100091610 : Dragonslayer Swordspear weapon art but right in front of you
+100091620:100091620 :
+100091630:100091630 :
+100092200:100092200 : Dragonslayer Spear WA launch effect
+100092210:100092210 : Dragonslayer Spear WA
+100092220:100092220 :
+100092230:100092230 :
+100092300:100092300 : Follower javelin projectile
+100092301:100092301 : Follower javelin impact
+100092310:100092310 : Follower javelin projectile 2
+100092311:100092311 : Follower javelin impact 2
+100092500:100092500 : Lothric War Banner AOE bullet that continues firing until weapon is put away
+100092610:100092610 : Crucifix shockwave
+100092620:100092620 : Crucifix unused bullet for unused part of WA
+100092640:100092640 : Crucifix mad orb (no damage)
+100092641:100092641 : crucifix mad orb explosion (no damage)
+100092642:100092642 : Crucifix mad orb Explosion on hand (Knockback, No damage)
+100092643:100092643 : Crucifix mad orb something
+100100700:100100700 : pontiff great scythe weapon art
+100101600:100101600 : roaring fire line with black smoke medium range
+100101610:100101610 : roaring fire line with black smoke shorter than above
+100101611:100101611 : roaring fire line with black smoke shorter than above
+100101612:100101612 : roaring fire line with black smoke shorter than above
+100101613:100101613 : roaring fire line with black smoke shorter than above
+100101614:100101614 : roaring fire line with black smoke shorter than above
+100101615:100101615 : roaring fire line with black smoke shorter than above
+100101616:100101616 : roaring fire line with black smoke shorter than above
+100101617:100101617 : roaring fire line with black smoke shorter than above
+100101618:100101618 : roaring fire line with black smoke shorter than above
+100101619:100101619 : roaring fire line with black smoke shortest
+100101806:100101806 : Friede scythe
+100101851:100101851 : Friede explosion
+100110000:100110000 : Invisible bullet that hits the floor - staggers if hitradius is increased
+100110300:100110300 : Sparks, can be used like Fire Surge, has hitbox but only appears in hand so very short range
+100110310:100110310 :
+100110320:100110320 :
+100110325:100110325 :
+100120400:100120400 :
+100120410:100120410 :
+100130700:100130700 : Likely the Poison Spores WA from Storyteller's Staff
+100101806:100101806 : Friede Scytche
+100101851:100101851 : Friede Scytche Explosion
+100134005:100134005 : pyromancy flame L2
+100134015:100134015 : pyromancy flame L2
+100134025:100134025 : pyromancy flame L2
+100160900:100160900 : invis bullet that hits floor
+100161500:100161500 : Crow quills WA with all bullets
+100161510:100161510 : Same as above
+100161600:100161600 : Ringed Knight Paired Greatswords fire wave from WA
+100161601:100161601 : Same as above
+100202800:100202800 : spell parry
+100202810:100202810 :
+100213100:100213100 : Triple fire stream, can be used just like Fire Surge, has fire hitbox, but no damage
+100213101:100213101 : Small fire stream, has hitbox, has no shootInterval like Fire Surge
+100220410:100220410 : wind blast weapon art (does nothing)
+100220415:100220415 : Knockdown
+100203100:100203100 : Dragonhead Greatshield roar
+104901710:104901710 : Invis bullet that explodes after a distance, can be used like Fire Surge. No hitbox at all.
+104901711:104901711 : Fire explosion from before, explodes immediately in hand
+</DropDownList>
+  <ShowAsSigned>0</ShowAsSigned>
+  <GroupHeader>1</GroupHeader>
+</CheatEntry>

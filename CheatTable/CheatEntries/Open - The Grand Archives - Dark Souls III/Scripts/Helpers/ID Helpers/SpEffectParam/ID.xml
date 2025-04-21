@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>1337256188</ID>
+  <Description>"ID"</Description>
+  <DropDownListLink>SP_EFFECT_ID</DropDownListLink>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>8 Bytes</VariableType>
+  <Address>SpEffectParamHelper</Address>
+</CheatEntry>

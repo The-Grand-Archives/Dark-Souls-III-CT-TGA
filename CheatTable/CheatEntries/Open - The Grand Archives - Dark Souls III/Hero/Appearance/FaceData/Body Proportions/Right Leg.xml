@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>12</ID>
+  <Description>"Right Leg"</Description>
+  <VariableType>Float</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>3C0</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337097367</ID>
+  <Description>"All"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>8</ByteLength>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>A2F</Offset>
+  </Offsets>
+</CheatEntry>

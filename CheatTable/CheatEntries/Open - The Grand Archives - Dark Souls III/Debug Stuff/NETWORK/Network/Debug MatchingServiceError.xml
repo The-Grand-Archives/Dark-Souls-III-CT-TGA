@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097720</ID>
+  <Description>"Debug MatchingServiceError"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>180</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099140</ID>
+  <Description>"camFrontRangeLockHalfAng [deg]"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2948</Offset>
+  </Offsets>
+</CheatEntry>

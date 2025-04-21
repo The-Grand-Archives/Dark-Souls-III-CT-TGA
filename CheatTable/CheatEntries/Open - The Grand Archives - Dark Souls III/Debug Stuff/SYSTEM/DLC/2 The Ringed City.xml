@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337099096</ID>
+  <Description>"2 The Ringed City"</Description>
+  <Options moHideChildren="1" moRecursiveSetValue="1"/>
+  <VariableType>Byte</VariableType>
+  <Address>CsDlc</Address>
+  <Offsets>
+    <Offset>12</Offset>
+  </Offsets>
+</CheatEntry>

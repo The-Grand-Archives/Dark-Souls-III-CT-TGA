@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096733</ID>
+  <Description>"Initial life of your SOS request | 自分のSOS要求の初期寿命"</Description>
+  <VariableType>Float</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>74</Offset>
+    <Offset>B90</Offset>
+  </Offsets>
+</CheatEntry>

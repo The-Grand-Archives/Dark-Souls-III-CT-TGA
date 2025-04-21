@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081344</ID>
+  <Description>"Chin_retracted_jutting"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>72C</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,26 @@
+[ENABLE]
+alloc(Debug_Remo,$100,DarkSoulsIII.exe)
+createthread(Debug_Remo)
+
+Debug_Remo:
+sub rsp,48
+mov rcx,[SprjRemo]
+test rcx,rcx
+je short end
+lea rdx,[DebugMenuInput]
+mov [rdx+18],02001000 //Push X or circle
+mov r8d,FFFFFFFF //Play
+mov r9,140CD6270
+call r9
+end:
+add rsp,48
+ret
+
+DebugMenuInput:
+dq 0000000000000000
+
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_Remo)

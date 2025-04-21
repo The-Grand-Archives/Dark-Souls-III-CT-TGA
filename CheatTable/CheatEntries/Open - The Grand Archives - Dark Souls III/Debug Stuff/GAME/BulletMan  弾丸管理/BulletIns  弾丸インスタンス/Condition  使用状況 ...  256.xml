@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337183974</ID>
+  <Description>"Condition | 使用状況: ... / 256"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjBulletManager</Address>
+  <Offsets>
+    <Offset>1D8</Offset>
+  </Offsets>
+</CheatEntry>

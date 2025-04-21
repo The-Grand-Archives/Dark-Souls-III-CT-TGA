@@ -1,0 +1,23 @@
+{cscript}
+[ENABLE]
+{$c}
+#include <tga/params.h>
+int on_enable() {
+    ParamPatchBegin("curse_dagger");
+    ParamPatchAll(EquipParamWeapon, {
+        if (param->weaponCategory == 0) {
+            param->residentSpEffectId2 = 33;
+        }
+    });
+    ParamPatchEnd();
+    return 0;
+}
+
+int on_disable() {
+    ParamRestore("curse_dagger");
+    return 0;
+}
+
+{$asm}
+[DISABLE]
+

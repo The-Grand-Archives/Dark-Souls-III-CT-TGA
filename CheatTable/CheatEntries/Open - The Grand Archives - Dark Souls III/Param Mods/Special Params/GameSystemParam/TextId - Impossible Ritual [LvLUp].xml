@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099372</ID>
+  <Description>"TextId - Impossible Ritual [LvLUp]"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>64</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

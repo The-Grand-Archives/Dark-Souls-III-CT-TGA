@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>89770</ID>
+  <Description>"Hp"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>XE</Address>
+  <Offsets>
+    <Offset>d8</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

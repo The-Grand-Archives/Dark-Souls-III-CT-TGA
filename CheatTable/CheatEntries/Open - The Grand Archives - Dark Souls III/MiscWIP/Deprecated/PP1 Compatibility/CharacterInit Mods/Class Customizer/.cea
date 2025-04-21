@@ -1,0 +1,9 @@
+[ENABLE]
+globalalloc(newmem2,32)
+label(SpecialAddress)
+registersymbol(SpecialAddress)
+newmem2:
+SpecialAddress:
+[DISABLE]
+dealloc(newmem2)
+unregistersymbol(SpecialAddress)

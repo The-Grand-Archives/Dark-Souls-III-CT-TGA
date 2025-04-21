@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337080839</ID>
+  <Description>"Put the menu in the cutscene state?"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:True
+1:False
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>NewMenuSystem</Address>
+  <Offsets>
+    <Offset>30D4</Offset>
+  </Offsets>
+</CheatEntry>

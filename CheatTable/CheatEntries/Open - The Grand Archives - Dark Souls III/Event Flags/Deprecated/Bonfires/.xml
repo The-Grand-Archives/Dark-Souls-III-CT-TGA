@@ -1,0 +1,22 @@
+<CheatEntry>
+  <ID>78000</ID>
+  <Description>"Bonfires"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="94074"/>
+    <id id="94075"/>
+    <id id="94076"/>
+    <id id="94077"/>
+    <id id="94078"/>
+    <id id="94079"/>
+    <id id="94080"/>
+    <id id="94081"/>
+    <id id="94082"/>
+    <id id="94083"/>
+    <id id="94085"/>
+    <id id="94084"/>
+    <id id="489692"/>
+    <id id="489693"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

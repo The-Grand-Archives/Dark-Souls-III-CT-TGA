@@ -1,0 +1,164 @@
+<CheatEntry>
+  <ID>1337045441</ID>
+  <Description>"Start Chars + Npc Chars"</Description>
+  <DropDownList DisplayValueAsItem="1">3000:Knight
+3001:Mercenary
+3002:Warrior
+3003:Herald
+3004:Thief
+3005:Assassin
+3006:Sorcerer
+3007:Pyromancer
+3008:Cleric
+3009:Deprived
+21000:Slave Knight Gael
+21002:Slave Knight Gael
+21005:Slave Knight Gael
+21100:Vilhelm
+21140:Vilhelm
+21200:Chaos Blade Cornyx (Cut content)
+21300:Gravetender Champion
+21400:Amnesiac Lapp
+21401:Amnesiac Lapp
+21420:Amnesiac Lapp
+21421:Amnesiac Lapp
+21440:Amnesiac Lapp
+21500:Shira
+21520:Shira
+21540:Shira
+21640:Sorcerer DLC 2 Cut content
+21700:Paint Knight
+21800:Halflight Spear of the Church
+21940:Desert Pyromancer
+22000:Lapp with returned memories
+22140:Ledo DLC 2
+22240:Wandering Knight DLC 2
+22340:Morne Knight DLC 2
+24700:Maneater Mildred
+24800:Greirat
+24801:Greirat
+24802:Greirat
+24803:Greirat
+25000:Yuria
+25020:Yuria
+25100:Hawkwood
+25101:Hawkwood
+25120:Hawkwood
+25121:Hawkwood
+25200:Sirris
+25201:Sirris
+25202:Sirris
+25203:Sirris
+25204:Sirris
+25220:Sirris
+25221:Sirris
+25222:Sirris
+25223:Sirris
+25300:Leonhard
+25301:Leonhard
+25302:Leonhard
+25400:Orbeck
+25401:Orbeck
+25402:Orbeck
+25420:Orbeck
+25500:Cornyx
+25501:Cornyx
+25600:Karla
+25601:Karla
+25700:Irina
+25701:Irina
+25702:Irina
+25703:Irina
+25800:Morne Knight
+25801:Morne Knight
+25802:Morne Knight
+25820:Morne Knight
+25821:Morne Knight
+25900:Cathedral Cut Content NPC
+26000:Anri
+26001:Anri
+26002:Anri
+26003:Anri
+26004:Anri
+26005:Anri
+26006:Anri
+26007:Anri
+26008:Anri
+26009:Anri
+26020:Anri
+26021:Anri
+26050:Anri
+26051:Anri
+26052:Anri
+26053:Anri
+26054:Anri
+26055:Hollow Anri
+26056:Hollow Anri
+26057:Hollow Anri
+26058:Hollow Anri
+26059:Hollow Anri
+26070:Anri
+26071:Anri
+26100:Patches
+26101:Patches
+26102:Patches
+26103:Patches
+26104:Patches
+26200:Siegward
+26201:Siegward
+26202:Siegward
+26203:Siegward
+26204:Siegward Stormruler
+26209:Storm Ruler Npc Cut Content
+26300:Horace
+26301:Horace
+26302:Horace
+26320:Horace
+27300:Blade Master
+27320:Blade Master
+27321:Blade Master
+27420:Heysel
+27440:Heysel
+27441:Heysel
+27500:Gotthard Onikiri and Ubadachi
+27520:Gotthard
+27521:Gotthard
+27600:Cuculus
+27620:Cuculus
+27700:Holy Knight Hodrick
+27701:Holy Knight Hodrick
+27720:Holy Knight Hodrick
+27740:Holy Knight Hodrick
+27800:Londor Pale Shade
+27820:Londor Pale Shade:
+27821:Londor Pale Shade
+27822:Londor Pale Shade
+27890:Londor Pale Shade
+27891:Londor Pale Shade
+27900:Lion Knight Albert
+27920:Lion Knight Albert
+28000:Daughter of Crystal Kriemhild
+28040:Daughter of Crystal Kriemhild
+28100:Exile Greatsword warrior
+28200:Exile Greatclub warior
+28300:Rogue
+28400:Fallen Knight
+28500:Fallen Knight
+28600:Cout Sorcerer
+28700:Havel
+28800:Dragonblood Knight
+28900:Prince Ricard
+29000:Drang Hammer Knight
+29100:Drang Spear Knight
+29200:Tsorig
+29220:Tsorig
+29240:Tsorig
+29241:Tsorig
+29340:Creighton
+29341:Creighton
+29440:Alva
+29540:Kirk
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>ChrParamID</Address>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>86108</ID>
+  <Description>"InitPosition"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>12</ByteLength>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>A40</Offset>
+  </Offsets>
+</CheatEntry>

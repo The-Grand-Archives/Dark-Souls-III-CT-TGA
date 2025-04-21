@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097806</ID>
+  <Description>"ActionFlags | アクションフラグ監視"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097978"/>
+    <id id="1337097850"/>
+    <id id="1337097849"/>
+    <id id="1337097848"/>
+    <id id="1337097881"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

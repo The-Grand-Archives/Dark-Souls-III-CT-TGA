@@ -1,0 +1,77 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.0")
+{$asm}
+[ENABLE]
+
+define(fovAOB,DarkSoulsIII.exe+514AD7) // should be unique
+alloc(newmem,$1000,fovAOB)
+
+label(code)
+label(return)
+label(fov)
+registersymbol(fov)
+newmem:
+
+code:
+  mov [fov],rcx
+  movss xmm0,[rcx]
+  comiss xmm12,xmm0
+  jmp return
+
+
+////
+
+///
+fov:
+dq 0
+///
+
+fovAOB:
+  jmp code
+  nop
+  nop
+  nop
+return:
+registersymbol(fovAOB)
+
+[DISABLE]
+
+fovAOB:
+  db F3 0F 10 01 44 0F 2F E0
+
+unregistersymbol(fovAOB)
+dealloc(newmem)
+//
+unregistersymbol(fov)
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+50F427
+
+"DarkSoulsIII.exe"+50F3ED: F3 0F 10 86 78 01 00 00  -  movss xmm0,[rsi+00000178]
+"DarkSoulsIII.exe"+50F3F5: F3 0F 10 9E 70 01 00 00  -  movss xmm3,[rsi+00000170]
+"DarkSoulsIII.exe"+50F3FD: 0F 14 D8                 -  unpcklps xmm3,xmm0
+"DarkSoulsIII.exe"+50F400: 0F 14 D1                 -  unpcklps xmm2,xmm1
+"DarkSoulsIII.exe"+50F403: 0F 14 DA                 -  unpcklps xmm3,xmm2
+"DarkSoulsIII.exe"+50F406: 0F 29 9D 50 01 00 00     -  movaps [rbp+00000150],xmm3
+"DarkSoulsIII.exe"+50F40D: 66 0F 7F 9E 70 01 00 00  -  movdqa [rsi+00000170],xmm3
+"DarkSoulsIII.exe"+50F415: C7 45 B0 00 00 34 43     -  mov [rbp-50],43340000
+"DarkSoulsIII.exe"+50F41C: C7 45 0C 00 00 00 00     -  mov [rbp+0C],00000000
+"DarkSoulsIII.exe"+50F423: 48 83 C1 14              -  add rcx,14
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+50F427: F3 0F 10 01              -  movss xmm0,[rcx]
+"DarkSoulsIII.exe"+50F42B: 44 0F 2F E0              -  comiss xmm12,xmm0
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+50F42F: 76 06                    -  jna DarkSoulsIII.exe+50F437
+"DarkSoulsIII.exe"+50F431: 48 8D 45 0C              -  lea rax,[rbp+0C]
+"DarkSoulsIII.exe"+50F435: EB 0F                    -  jmp DarkSoulsIII.exe+50F446
+"DarkSoulsIII.exe"+50F437: 48 8D 45 B0              -  lea rax,[rbp-50]
+"DarkSoulsIII.exe"+50F43B: 0F 2F 05 D6 1F 7E 03     -  comiss xmm0,[DarkSoulsIII.exe+3CF1418]
+"DarkSoulsIII.exe"+50F442: 48 0F 46 C1              -  cmovbe rax,rcx
+"DarkSoulsIII.exe"+50F446: F3 0F 10 08              -  movss xmm1,[rax]
+"DarkSoulsIII.exe"+50F44A: F3 0F 59 CC              -  mulss xmm1,xmm4
+"DarkSoulsIII.exe"+50F44E: F3 0F 5C 4E 50           -  subss xmm1,[rsi+50]
+"DarkSoulsIII.exe"+50F453: F3 0F 59 8E D0 03 00 00  -  mulss xmm1,[rsi+000003D0]
+}
+
+
+

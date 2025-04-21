@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>73656</ID>
+  <Description>"Applause"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">16:Locked
+17:Unlocked
+</DropDownList>
+  <VariableType>2 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>2C</Offset>
+    <Offset>7B8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

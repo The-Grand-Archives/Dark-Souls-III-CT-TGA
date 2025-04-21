@@ -1,0 +1,44 @@
+{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+disableMemrec(memrec)
+showText("ItemGib Help", [[
+Select item you want to spawn and press square pointed by "← Spawn Item".
+
+Item Name:
+Double-click or press Enter on "Ember", scroll or type part of the item's name and press Down.
+
+Infusion:
+Double-click or press Enter on "Normal".
+
+Upgrade Level:
+Double-click or press Enter on "Hero level".
+"Hero level" means weapon will have your current upgrade level.
+Special weapons accounted for.
+For example, if you are +3, it'll spawn Dagger+3 and Onyx+1.
+Or you can select another upgrade level in the dropdown,
+but not higher than your hero level.
+
+Quantity:
+Double-click or press Enter on "Max".
+If it's ammo or consumables will max out inventory and storage,
+otherwise will spawn one item.
+Or you can set value manually (why would you though).
+
+Durability:
+Double-click or press Enter on "Normal".
+If you want to spawn broken rapier for fishing practice.
+
+Mass ItemGib:
+If you want to spawn all consumables, rings, armor, etc.
+Allows you to select what category to spawn.
+"Select weapons" can be used to provide a custom list of IDs, infusions and levels in a raw text form.
+
+Script tries its best to understand what you want,
+so usually selecting just item name is enough, leave other stuff to defaults.
+Max Chaos Hero level Broken Life Ring will be autocorrected to Life Ring.
+Sharp Onyx Blade+10 for your +3 char will be autocorrected to Onyx Blade+1.
+]])
+
+[DISABLE]

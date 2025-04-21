@@ -1,0 +1,36 @@
+<CheatEntry>
+  <ID>1337078895</ID>
+  <Description>"GameData"</Description>
+  <Options moHideChildren="1"/>
+  <Color>FF8000</Color>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337078921"/>
+    <id id="1337078904"/>
+    <id id="1337080316"/>
+    <id id="1337099167"/>
+    <id id="1337078900"/>
+    <id id="1337078901"/>
+    <id id="1337078905"/>
+    <id id="1337079005"/>
+    <id id="1337078902"/>
+    <id id="1337079003"/>
+    <id id="1337078903"/>
+    <id id="1337079004"/>
+    <id id="1337078898"/>
+    <id id="1337080866"/>
+    <id id="1337080868"/>
+    <id id="1337080867"/>
+    <id id="1337099168"/>
+    <id id="1337080869"/>
+    <id id="1337080863"/>
+    <id id="1337080864"/>
+    <id id="1337080865"/>
+    <id id="1337080860"/>
+    <id id="1337080861"/>
+    <id id="1337080859"/>
+    <id id="1337080873"/>
+    <id id="1337080872"/>
+    <id id="1337097273"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

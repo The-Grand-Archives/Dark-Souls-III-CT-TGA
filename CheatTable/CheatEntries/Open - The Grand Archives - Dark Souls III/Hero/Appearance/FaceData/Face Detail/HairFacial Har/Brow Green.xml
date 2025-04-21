@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73250</ID>
+  <Description>"Brow Green"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6ED</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

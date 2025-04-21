@@ -1,0 +1,23 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+function getItemIdx(inputId)
+    local GameDataMan = readPointer("GameDataMan")
+    local PlayerGameData = readPointer(GameDataMan + 0x10)
+    local EquipInventoryData = getAddress(PlayerGameData + 0x3D0)
+
+    local inventoryList = readPointer(EquipInventoryData + 0x18)
+    local inventoryNum = readInteger(EquipInventoryData + 0x20)
+
+    for i=0,inventoryNum do
+        local item = getAddress(inventoryList + i * 0x10)
+        local itemId = readInteger(item + 4)
+        if itemId == inputId then
+            return i
+        end
+    end
+    return false
+end
+
+[DISABLE]
+getItemIdx = nil

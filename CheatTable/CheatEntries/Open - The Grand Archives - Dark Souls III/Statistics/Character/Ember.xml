@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>72979</ID>
+  <Description>"Ember"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>100</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337024045</ID>
+  <Description>"equipModelCategory"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">1:Arms
+2:Chest
+5:Head
+6:Legs
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>+D0</Address>
+</CheatEntry>

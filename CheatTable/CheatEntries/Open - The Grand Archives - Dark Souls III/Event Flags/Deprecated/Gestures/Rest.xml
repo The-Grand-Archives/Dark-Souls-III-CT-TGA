@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>2870</ID>
+  <Description>"Rest"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>4</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>30B</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

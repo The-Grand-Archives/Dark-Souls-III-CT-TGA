@@ -1,0 +1,105 @@
+//Author:/u/Pavuk
+//Updated: 09.09.2017
+//Vac for all type of items (Dropped/Treasure/Corpse)
+//Safe
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+define(VacAOB,DarkSoulsIII.exe+7C1F6F)
+define(VacAOB2,DarkSoulsIII.exe+7C239F)
+define(VacAOB3,DarkSoulsIII.exe+7BED49)
+registersymbol(VacAOB)
+registersymbol(VacAOB2)
+registersymbol(VacAOB3)
+alloc(Vac, 128, DarkSoulsIII.exe)
+alloc(Vac2, 128, DarkSoulsIII.exe)
+alloc(Vac3, 128, DarkSoulsIII.exe)
+label(Vac_return)
+label(Vac_return2)
+label(Vac_return3)
+
+  Vac: //DROP ITEMS
+     movss xmm7,[rbx+30]
+
+     push rax
+     push rsi
+     mov rsi,[WorldChrMan] //Pointer for Player Coord
+     mov rsi,[rsi+40]
+     mov rsi,[rsi+28]
+     mov eax,[rsi+80]
+     mov [rbx+30],eax //X coord
+     mov eax,[rsi+84]
+     mov [rbx+34],eax //Y coord
+     mov eax,[rsi+88]
+     mov [rbx+38],eax //Z coord
+     pop rsi
+     pop rax
+
+     jmp Vac_return
+
+ VacAOB:
+ jmp Vac
+ Vac_return:
+
+ Vac2: //TREASURE ITEMS
+     movss xmm7,[rbx+30]
+
+     push rax
+     push rsi
+     mov rsi,[WorldChrMan]
+     mov rsi,[rsi+40]
+     mov rsi,[rsi+28]
+     mov eax,[rsi+80]
+     mov [rbx+30],eax //X coord
+     mov eax,[rsi+84]
+     mov [rbx+34],eax //Y coord
+     mov eax,[rsi+88]
+     mov [rbx+38],eax //Z coord
+     pop rsi
+     pop rax
+
+     jmp Vac_return2
+
+ VacAOB2:
+ jmp Vac2
+ Vac_return2:
+
+ Vac3: //CORPSE ITEMS
+     movss xmm3,[rdx+30]
+
+     push rax
+     push rsi
+     mov rsi,[WorldChrMan]
+     mov rsi,[rsi+40]
+     mov rsi,[rsi+28]
+     mov eax,[rsi+80]
+     mov [rdx+30],eax //X coord
+     mov eax,[rsi+84]
+     mov [rdx+34],eax //Y coord
+     pop rax
+     mov eax,[rsi+88]
+     mov [rdx+38],eax //Z coord
+     pop rsi
+     pop rax
+
+     jmp Vac_return3
+
+ VacAOB3:
+ jmp Vac3
+ Vac_return3:
+
+ [DISABLE]
+ VacAOB:
+   db F3 0F 10 7B 30
+ VacAOB2:
+   db F3 0F 10 7B 30
+ VacAOB3:
+   db F3 0F 10 5A 30
+ unregistersymbol(VacAOB)
+ unregistersymbol(VacAOB2)
+ unregistersymbol(VacAOB3)
+ dealloc(Vac)
+ dealloc(Vac2)
+ dealloc(Vac3)

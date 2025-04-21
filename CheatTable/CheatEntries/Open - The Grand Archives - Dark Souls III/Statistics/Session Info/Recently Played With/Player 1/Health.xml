@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>80840</ID>
+  <Description>"Health"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>18</Offset>
+    <Offset>540</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

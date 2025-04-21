@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337097656</ID>
+  <Description>"Server connection status | サーバ接続状態"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Login in progress | ログイン処理中
+1:Logged in | ログイン済み
+2:Banned | BANされた
+3:Not logged in | ログインしていない
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

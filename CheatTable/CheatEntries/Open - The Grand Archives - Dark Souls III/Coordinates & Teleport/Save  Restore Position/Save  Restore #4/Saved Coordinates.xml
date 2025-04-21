@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>89235</ID>
+  <Description>"Saved Coordinates"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>12</ByteLength>
+  <Address>teleportsave4</Address>
+</CheatEntry>

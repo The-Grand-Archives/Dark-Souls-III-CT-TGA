@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>492895</ID>
+  <Description>"All Draw Hit"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>66</Offset>
+  </Offsets>
+</CheatEntry>

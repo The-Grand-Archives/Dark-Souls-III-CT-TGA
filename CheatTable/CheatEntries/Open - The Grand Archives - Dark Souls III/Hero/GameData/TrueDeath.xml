@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337079005</ID>
+  <Description>"TrueDeath"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

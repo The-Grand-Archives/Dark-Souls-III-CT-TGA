@@ -1,0 +1,31 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local Inventory = ShopLineupParam:new("FreeShop")
+Inventory:patchAll4Byte(0x4,0)
+Inventory:patchAllFloat(0x20,1)
+
+local Weapon = EquipParamWeapon:new("FreeShop")
+Weapon:patchAll4Byte(0x14,0)
+Weapon:patchAll4Byte(0x18,0)
+Weapon:patchAll4Byte(0x1C,0)
+Weapon:patchAll4Byte(0x22C,0)
+
+local Protector = EquipParamProtector:new("FreeShop")
+Protector:patchAll4Byte(0x14,0)
+Protector:patchAll4Byte(0x18,0)
+Protector:patchAll4Byte(0x1C,0)
+Protector:patchAll4Byte(0x128,0)
+
+local Accessory = EquipParamAccessory:new("FreeShop")
+Accessory:patchAll4Byte(0x10,0)
+Accessory:patchAll4Byte(0x14,0)
+Accessory:patchAll4Byte(0x40,0)
+
+local Goods = EquipParamGoods:new("FreeShop")
+Goods:patchAll4Byte(0xC,0)
+Goods:patchAll4Byte(0x10,0)
+Goods:patchAll4Byte(0x70,0)
+
+[DISABLE]
+paramUtils:restore("FreeShop")

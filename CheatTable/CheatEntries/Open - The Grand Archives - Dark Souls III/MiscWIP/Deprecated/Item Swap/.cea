@@ -1,0 +1,65 @@
+[ENABLE]
+aobscanmodule(pickup,DarkSoulsIII.exe,8B 4B 20 41 89 0E)
+alloc(newmem,$1000,pickup)
+
+label(code)
+label(return)
+label(pickup_ptr)
+
+newmem:
+
+code:
+  mov rcx,pickup_ptr
+  mov [rcx],rbx
+  mov ecx,[rbx+20]
+  mov [r14],ecx
+  jmp return
+
+pickup_ptr:
+  dq 0
+
+pickup:
+  jmp code
+  nop
+return:
+registersymbol(pickup)
+registersymbol(pickup_ptr)
+
+[DISABLE]
+pickup:
+  db 8B 4B 20 41 89 0E
+unregistersymbol(pickup)
+unregistersymbol(pickup_ptr)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+7A9C08
+
+"DarkSoulsIII.exe"+7A9BE5: F3 0F 11 44 24 20           -  movss [rsp+20],xmm0
+"DarkSoulsIII.exe"+7A9BEB: 45 8B CC                    -  mov r9d,r12d
+"DarkSoulsIII.exe"+7A9BEE: 4C 8D 45 00                 -  lea r8,[rbp+00]
+"DarkSoulsIII.exe"+7A9BF2: 48 8D 55 C0                 -  lea rdx,[rbp-40]
+"DarkSoulsIII.exe"+7A9BF6: E8 05 89 4B 00              -  call DarkSoulsIII.exe+C62500
+"DarkSoulsIII.exe"+7A9BFB: 90                          -  nop
+"DarkSoulsIII.exe"+7A9BFC: 48 89 75 C0                 -  mov [rbp-40],rsi
+"DarkSoulsIII.exe"+7A9C00: 48 89 75 00                 -  mov [rbp+00],rsi
+"DarkSoulsIII.exe"+7A9C04: 84 C0                       -  test al,al
+"DarkSoulsIII.exe"+7A9C06: 74 06                       -  je DarkSoulsIII.exe+7A9C0E
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+7A9C08: 8B 4B 20                    -  mov ecx,[rbx+20]
+"DarkSoulsIII.exe"+7A9C0B: 41 89 0E                    -  mov [r14],ecx
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+7A9C0E: 48 8B 1B                    -  mov rbx,[rbx]
+"DarkSoulsIII.exe"+7A9C11: 48 85 DB                    -  test rbx,rbx
+"DarkSoulsIII.exe"+7A9C14: 0F 85 A6 FE FF FF           -  jne DarkSoulsIII.exe+7A9AC0
+"DarkSoulsIII.exe"+7A9C1A: E9 DA 01 00 00              -  jmp DarkSoulsIII.exe+7A9DF9
+"DarkSoulsIII.exe"+7A9C1F: 48 8B 46 18                 -  mov rax,[rsi+18]
+"DarkSoulsIII.exe"+7A9C23: 48 89 44 24 50              -  mov [rsp+50],rax
+"DarkSoulsIII.exe"+7A9C28: 48 8B 46 28                 -  mov rax,[rsi+28]
+"DarkSoulsIII.exe"+7A9C2C: 48 89 44 24 58              -  mov [rsp+58],rax
+"DarkSoulsIII.exe"+7A9C31: 48 8B 46 38                 -  mov rax,[rsi+38]
+"DarkSoulsIII.exe"+7A9C35: 48 89 44 24 60              -  mov [rsp+60],rax
+}
+
+
+

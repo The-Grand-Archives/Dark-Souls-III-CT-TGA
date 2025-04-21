@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337045443</ID>
+  <Description>"Map Collision"</Description>
+  <Options moHideChildren="1"/>
+  <Color>000080</Color>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337045444"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

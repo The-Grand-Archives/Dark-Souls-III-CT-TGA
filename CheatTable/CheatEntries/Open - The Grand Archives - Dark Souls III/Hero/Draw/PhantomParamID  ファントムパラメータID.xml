@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081622</ID>
+  <Description>"PhantomParamID | ファントムパラメータID"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1F38</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,58 @@
+[ENABLE]
+registersymbol(count_address1)
+registersymbol(count_address2)
+registersymbol(count_address3)
+registersymbol(count_address4)
+registersymbol(count_address5)
+alloc(count_address1,256)
+alloc(count_address2,256)
+alloc(count_address3,256)
+alloc(count_address4,256)
+alloc(count_address5,256)
+{$lua}
+if address_list == nil then
+  address_list = getAddressList()
+end
+if http == nil then
+  http = getInternet()
+end
+previous_id = {}
+if name_check == nil then
+  name_check = createTimer(nil, false)
+end
+name_check.Interval = 10000
+name_check.OnTimer = function(timer)
+  for i = 1, 5 do
+    local value = address_list.getMemoryRecordByDescription("SteamID64 (H3x) "..i).value)
+    if value and value ~= previous_id[i] then
+      previous_id[i] = value)
+      local url = "http://api.steampowered.com/IPlayerService/IsPlayingSharedGame/v0001/?key=123456&steamid=" .. tostring(tonumber(value, 16)) .. "&appid_playing=374320&format=json"
+      local response = http.getURL(url)
+      for line in response:gmatch("[^\n]+") do
+        for name, value in line:gmatch('"(.+)": "(.+)"') do
+          local bytes = stringToByteTable(value)
+          table.insert(bytes, 0)
+          writeBytes("count_address"..i, bytes)
+        end
+      end
+    end
+  end
+end
+name_check.Enabled = true
+
+{$asm}
+
+[DISABLE]
+{$lua}
+name_check.Enabled = false
+{$asm}
+unregistersymbol(count_address1)
+unregistersymbol(count_address2)
+unregistersymbol(count_address3)
+unregistersymbol(count_address4)
+unregistersymbol(count_address5)
+dealloc(count_address1)
+dealloc(count_address2)
+dealloc(count_address3)
+dealloc(count_address4)
+dealloc(count_address5)

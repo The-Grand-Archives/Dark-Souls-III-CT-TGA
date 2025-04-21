@@ -1,0 +1,26 @@
+//Author: inuNorii
+//Add souls directly without the need for effects or items
+[ENABLE]
+aobscanmodule(AddSoul_Call,$process,48 89 5C 24 ?? 48 89 74 24 ?? 57 48 83 EC ?? 8B DA 48 8B F9 E8 ???????? 8D 14 18)
+alloc(AddSoul,$100,$process)
+registerSymbol(AddSoul)
+registerSymbol(SoulsToAdd)
+
+AddSoul:
+sub rsp,48
+mov edi,[SoulsToAdd]
+mov rcx,[WorldChrMan]
+mov rcx,[rcx+80]
+mov rcx,[rcx+00001FA0]
+mov edx,edi
+call AddSoul_Call //DarkSoulsIII.exe+5A3310
+add rsp,48
+ret
+
+SoulsToAdd:
+dd #500
+
+[DISABLE]
+dealloc(AddSoul)
+unregisterSymbol(AddSoul)
+unregisterSymbol(SoulsToAdd)

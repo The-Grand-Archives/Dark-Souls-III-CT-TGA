@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337096721</ID>
+  <Description>"Bonfire DB | 篝火 DB"</Description>
+  <Options moHideChildren="1"/>
+  <Color>000080</Color>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337096787"/>
+    <id id="1337096786"/>
+    <id id="1337096785"/>
+    <id id="1337096784"/>
+    <id id="1337096790"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

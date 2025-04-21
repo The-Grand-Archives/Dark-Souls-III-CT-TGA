@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>78306</ID>
+  <Description>"Activate Lord of Cinders in Firelink Shrine"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78267"/>
+    <id id="78268"/>
+    <id id="78272"/>
+    <id id="78266"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

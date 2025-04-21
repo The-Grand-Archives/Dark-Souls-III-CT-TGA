@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>492927</ID>
+  <Description>"Draw"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>SprjDbgEvent</Address>
+  <Offsets>
+    <Offset>A8</Offset>
+  </Offsets>
+</CheatEntry>

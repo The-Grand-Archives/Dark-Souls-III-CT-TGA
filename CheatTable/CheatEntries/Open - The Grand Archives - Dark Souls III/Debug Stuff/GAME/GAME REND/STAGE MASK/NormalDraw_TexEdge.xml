@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337187819</ID>
+  <Description>"NormalDraw_TexEdge"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>D8</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

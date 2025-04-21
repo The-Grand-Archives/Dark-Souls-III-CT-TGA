@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>108022</ID>
+  <Description>"Orbeck of Vinheim"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="489905"/>
+    <id id="108028"/>
+    <id id="108030"/>
+    <id id="108029"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

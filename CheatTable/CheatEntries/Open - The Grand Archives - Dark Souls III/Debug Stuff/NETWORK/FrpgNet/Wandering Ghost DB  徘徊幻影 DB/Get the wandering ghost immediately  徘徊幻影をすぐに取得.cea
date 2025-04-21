@@ -1,0 +1,7 @@
+[ENABLE]
+[[FrpgNetMan]+B98]+78:
+dd 0
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]

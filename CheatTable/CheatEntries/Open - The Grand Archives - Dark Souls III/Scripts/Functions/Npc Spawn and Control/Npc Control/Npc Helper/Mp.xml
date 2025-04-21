@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337190163</ID>
+  <Description>"Mp"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>E4</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097820</ID>
+  <Description>"Enable Havok Behavior multi-threaded updates | Havok Behavior マルチスレッド更新を有効にするか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjHkBehManager</Address>
+  <Offsets>
+    <Offset>50</Offset>
+  </Offsets>
+</CheatEntry>

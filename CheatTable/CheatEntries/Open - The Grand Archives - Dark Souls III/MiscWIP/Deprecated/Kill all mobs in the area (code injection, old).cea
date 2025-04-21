@@ -1,0 +1,671 @@
+{
+  Author: /u/MajinCry
+  Updated: by Pavuk and MajinCry 22.06.2017
+}
+[ENABLE]
+
+define(Inject_Health01,DarkSoulsIII.exe+9D9AD6)
+alloc(newmem,$2000,Inject_Health01)
+
+registersymbol(InjectHealthOriginal)
+
+label(code)
+label(return)
+label(MakeEnemyHealthZero)
+label(InjectHealthOriginal)
+
+newmem:
+InjectHealthOriginal:
+  readmem(Inject_Health01,7)
+
+MakeEnemyHealthZero:
+	mov ptr[rcx+D8],00000000
+    ret
+
+
+code:
+	cmp DWord ptr[rcx+132],00330031
+	jne short EndOfBKGSCheck
+	cmp DWord ptr[rcx+136],00300030
+	jne short EndOfBKGSCheck
+	call MakeEnemyHealthZero
+  EndOfBKGSCheck:
+	cmp DWord ptr[rcx+132],00330031
+	jne short EndOfLycanCheck
+	cmp DWord ptr[rcx+136],00300036
+	jne short EndOfLycanCheck
+	call MakeEnemyHealthZero
+  EndOfLycanCheck:
+	cmp DWord ptr[rcx+132],00330031
+	jne short EndOfLycanHuntCheck
+	cmp DWord ptr[rcx+136],00300037
+	jne short EndOfLycanHuntCheck
+	call MakeEnemyHealthZero
+  EndOfLycanHuntCheck:
+	cmp DWord ptr[rcx+132],00340031
+	jne short EndOfHollowScreamCheck
+	cmp DWord ptr[rcx+136],00360034
+	jne short EndOfHollowScreamCheck
+	call MakeEnemyHealthZero
+  EndOfHollowScreamCheck:
+	cmp DWord ptr[rcx+132],00340031
+	jne short EndOfHollowMageCheck
+	cmp DWord ptr[rcx+136],00310034
+	jne short EndOfHollowMageCheck
+	call MakeEnemyHealthZero
+  EndOfHollowMageCheck:
+	cmp DWord ptr[rcx+132],00300032
+	jne short EndOfLargeDogCheck
+	cmp DWord ptr[rcx+136],00300032
+	jne short EndOfLargeDogCheck
+	call MakeEnemyHealthZero
+  EndOfLargeDogCheck:
+	cmp DWord ptr[rcx+132],00320032
+	jne short EndOfCrabGiantCheck
+	cmp DWord ptr[rcx+136],00300037
+	jne short EndOfCrabGiantCheck
+	call MakeEnemyHealthZero
+  EndOfCrabGiantCheck:
+	cmp DWord ptr[rcx+132],00320032
+	jne short EndOfCrabSmallCheck
+	cmp DWord ptr[rcx+136],00310037
+	jne short EndOfCrabSmallCheck
+	call MakeEnemyHealthZero
+  EndOfCrabSmallCheck:
+	cmp DWord ptr[rcx+132],00300031
+	jne short EndOfPoisonBrumerCheck
+	cmp DWord ptr[rcx+136],00320033
+	jne short EndOfPoisonBrumerCheck
+	call MakeEnemyHealthZero
+  EndOfPoisonBrumerCheck:
+	cmp DWord ptr[rcx+132],00310031
+	jne short EndOfHollowDeserterCheck
+	cmp DWord ptr[rcx+136],00300030
+	jne short EndOfHollowDeserterCheck
+	call MakeEnemyHealthZero
+  EndOfHollowDeserterCheck:
+	cmp DWord ptr[rcx+132],00300032
+	jne short EndOfMedDogCheck
+	cmp DWord ptr[rcx+136],00310032
+	jne short EndOfMedDogCheck
+	call MakeEnemyHealthZero
+  EndOfMedDogCheck:
+	cmp DWord ptr[rcx+132],00310031
+	jne short EndOfLargeHollowHalberdCheck
+	cmp DWord ptr[rcx+136],00350030
+	jne short EndOfLargeHollowHalberdCheck
+	call MakeEnemyHealthZero
+  EndOfLargeHollowHalberdCheck:
+	cmp DWord ptr[rcx+132],00320031
+	jne short EndOfLothricKnightSwordCheck
+	cmp DWord ptr[rcx+136],00300038
+	jne short EndOfLothricKnightSwordCheck
+	call MakeEnemyHealthZero
+  EndOfLothricKnightSwordCheck:
+	cmp DWord ptr[rcx+132],00320031
+	jne short EndOfLothricKnightSwordBlueCheck
+	cmp DWord ptr[rcx+136],00320038
+	jne short EndOfLothricKnightSwordBlueCheck
+	call MakeEnemyHealthZero
+  EndOfLothricKnightSwordBlueCheck:
+    cmp DWord ptr[rcx+132],00320031
+	jne short EndOfUndeadWorkerCheck
+	cmp DWord ptr[rcx+136],00300034
+	jne short EndOfUndeadWorkerCheck
+	call MakeEnemyHealthZero
+  EndOfUndeadWorkerCheck:
+	cmp DWord ptr[rcx+132],00320031
+	jne short EndOfUndeadSlaveCheck
+	cmp DWord ptr[rcx+136],00300030
+	jne short EndOfUndeadSlaveCheck
+	call MakeEnemyHealthZero
+  EndOfUndeadSlaveCheck:
+	cmp DWord ptr[rcx+132],00320031
+	jne short EndOfEvangelistCheck
+	cmp DWord ptr[rcx+136],00300033
+	jne short EndOfEvangelistCheck
+	call MakeEnemyHealthZero
+  EndOfEvangelistCheck:
+	cmp DWord ptr[rcx+132],00320031
+	jne short EndOfHollowManservantCheck
+	cmp DWord ptr[rcx+136],00300036
+	jne short EndOfHollowManservantCheck
+	call MakeEnemyHealthZero
+  EndOfHollowManservantCheck:
+	cmp DWord ptr[rcx+132],00300033
+	jne short EndOfCageSpiderCheck
+	cmp DWord ptr[rcx+136],00300039
+	jne short EndOfCageSpiderCheck
+	call MakeEnemyHealthZero
+  EndOfCageSpiderCheck:
+	cmp DWord ptr[rcx+132],00310032
+	jne short EndOfRatSmallCheck
+	cmp DWord ptr[rcx+136],00300031
+	jne short EndOfRatSmallCheck
+	call MakeEnemyHealthZero
+  EndOfRatSmallCheck:
+	cmp DWord ptr[rcx+132],00320032
+	jne short EndOfRatLargeCheck
+	cmp DWord ptr[rcx+136],00300038
+	jne short EndOfRatLargeCheck
+	call MakeEnemyHealthZero
+  EndOfRatLargeCheck:
+	cmp DWord ptr[rcx+132],00340031
+	jne short EndOfHollowCathedralCheck
+	cmp DWord ptr[rcx+136],00300034
+	jne short EndOfHollowCathedralCheck
+	call MakeEnemyHealthZero
+  EndOfHollowCathedralCheck:
+	cmp DWord ptr[rcx+132],00320031
+	jne short EndOfGraveWardenCathedralCheck
+	cmp DWord ptr[rcx+136],00300035
+	jne short EndOfGraveWardenCathedralCheck
+	call MakeEnemyHealthZero
+  EndOfGraveWardenCathedralCheck:
+	cmp DWord ptr[rcx+132],00330031
+	jne short EndOfGrandArchivesScholarCheck
+	cmp DWord ptr[rcx+136],00300034
+	jne short EndOfGrandArchivesScholarCheck
+	call MakeEnemyHealthZero
+  EndOfGrandArchivesScholarCheck:
+	cmp DWord ptr[rcx+132],00310032
+	jne short EndOfGargoyleCheck
+	cmp DWord ptr[rcx+136],00300039
+	jne short EndOfGargoyleCheck
+	call MakeEnemyHealthZero
+  EndOfGargoyleCheck:
+	cmp DWord ptr[rcx+132],00310031
+	jne short EndOfHollowDeserterGrandArchivesCheck
+	cmp DWord ptr[rcx+136],00320030
+	jne short EndOfHollowDeserterGrandArchivesCheck
+	call MakeEnemyHealthZero
+  EndOfHollowDeserterGrandArchivesCheck:
+	cmp DWord ptr[rcx+132],00300033
+	jne short EndOfSleepingGiantAnorLondoCheck
+	cmp DWord ptr[rcx+136],00300032
+	jne short EndOfSleepingGiantAnorLondoCheck
+	call MakeEnemyHealthZero
+  EndOfSleepingGiantAnorLondoCheck:
+	cmp DWord ptr[rcx+132],00320035
+	jne short EndOfDeaconDeepTallAnorLondoCheck
+	cmp DWord ptr[rcx+136],00360032
+	jne short EndOfDeaconDeepTallAnorLondoCheck
+	call MakeEnemyHealthZero
+  EndOfDeaconDeepTallAnorLondoCheck:
+	cmp DWord ptr[rcx+132],00320035
+	jne short EndOfDeaconDeepAnorLondoCheck
+	cmp DWord ptr[rcx+136],00370032
+	jne short EndOfDeaconDeepAnorLondoCheck
+	call MakeEnemyHealthZero
+  EndOfDeaconDeepAnorLondoCheck:
+	cmp DWord ptr[rcx+132],00320035
+	jne short EndOfDeaconDeepAnorLondoFatCheck
+	cmp DWord ptr[rcx+136],00350032
+	jne short EndOfDeaconDeepAnorLondoFatCheck
+	call MakeEnemyHealthZero
+  EndOfDeaconDeepAnorLondoFatCheck:
+	cmp DWord ptr[rcx+132],00330031
+	jne short EndOfSerpantManCheck
+	cmp DWord ptr[rcx+136],00300039
+	jne short EndOfSerpantManCheck
+	call MakeEnemyHealthZero
+  EndOfSerpantManCheck:
+	cmp DWord ptr[rcx+132],00330031
+	jne short EndOfSerpantManLargeCheck
+	cmp DWord ptr[rcx+136],00310039
+	jne short EndOfSerpantManLargeCheck
+	call MakeEnemyHealthZero
+  EndOfSerpantManLargeCheck:
+	cmp DWord ptr[rcx+132],00340031
+	jne short EndOfSilverKnightSwordCheck
+	cmp DWord ptr[rcx+136],00300031
+	jne short EndOfSilverKnightSwordCheck
+	call MakeEnemyHealthZero
+  EndOfSilverKnightSwordCheck:
+	cmp DWord ptr[rcx+132],00320033
+	jne short EndOfRockLizardCheck
+	cmp DWord ptr[rcx+136],00300032
+	jne short EndOfRockLizardCheck
+	call MakeEnemyHealthZero
+  EndOfRockLizardCheck:
+	cmp DWord ptr[rcx+132],00310031
+	jne short EndOfCarthusSkelSwordCheck
+	cmp DWord ptr[rcx+136],00300037
+	jne short EndOfCarthusSkelSwordCheck
+	call MakeEnemyHealthZero
+  EndOfCarthusSkelSwordCheck:
+	cmp DWord ptr[rcx+132],00300031
+	jne short EndOfSkelSwordCheck
+	cmp DWord ptr[rcx+136],00300037
+	jne short EndOfSkelSwordCheck
+	call MakeEnemyHealthZero
+  EndOfSkelSwordCheck:
+	cmp DWord ptr[rcx+132],00310031
+	jne short EndOfCarthusGraveWardenCheck
+	cmp DWord ptr[rcx+136],00300038
+	jne short EndOfCarthusGraveWardenCheck
+	call MakeEnemyHealthZero
+  EndOfCarthusGraveWardenCheck:
+	cmp DWord ptr[rcx+132],00310032
+	jne short EndOfRottenFleshCheck
+	cmp DWord ptr[rcx+136],00300033
+	jne short EndOfRottenFleshCheck
+	call MakeEnemyHealthZero
+  EndOfRottenFleshCheck:
+	cmp DWord ptr[rcx+132],00300032
+	jne short EndOfIrithyllSwordsmanCheck
+	cmp DWord ptr[rcx+136],00300033
+	jne short EndOfIrithyllSwordsmanCheck
+	call MakeEnemyHealthZero
+  EndOfIrithyllSwordsmanCheck:
+	cmp DWord ptr[rcx+132],00330031
+	jne short EndOfIrithyllSlaveCheck
+	cmp DWord ptr[rcx+136],00300035
+	jne short EndOfIrithyllSlaveCheck
+	call MakeEnemyHealthZero
+  EndOfIrithyllSlaveCheck:
+	cmp DWord ptr[rcx+132],00320035
+	jne short EndOfFireWitchCheck
+	cmp DWord ptr[rcx+136],00300034
+	jne short EndOfFireWitchCheck
+	call MakeEnemyHealthZero
+  EndOfFireWitchCheck:
+	cmp DWord ptr[rcx+132],00310032
+	jne short EndOfSewerCentipedeCheck
+	cmp DWord ptr[rcx+136],00300030
+	jne short EndOfSewerCentipedeCheck
+	call MakeEnemyHealthZero
+  EndOfSewerCentipedeCheck:
+	cmp DWord ptr[rcx+132],00300033
+	jne short EndOfSmolderGhruClericCheck
+	cmp DWord ptr[rcx+136],00300037
+	jne short EndOfSmolderGhruClericCheck
+	call MakeEnemyHealthZero
+  EndOfSmolderGhruClericCheck:
+	cmp DWord ptr[rcx+132],00310032
+	jne short EndOfSmolderRottenFleshCheck
+	cmp DWord ptr[rcx+136],00320033
+	jne short EndOfSmolderRottenFleshCheck
+	call MakeEnemyHealthZero
+  EndOfSmolderRottenFleshCheck:
+	cmp DWord ptr[rcx+132],00320031
+	jne short EndOfSmolderGhruCheck
+	cmp DWord ptr[rcx+136],00310031
+	jne short EndOfSmolderGhruCheck
+	call MakeEnemyHealthZero
+  EndOfSmolderGhruCheck:
+	cmp DWord ptr[rcx+132],00330031
+	jne short EndOfBKGACheck
+	cmp DWord ptr[rcx+136],00300031
+	jne short EndOfBKGACheck
+	call MakeEnemyHealthZero
+  EndOfBKGACheck:
+	cmp DWord ptr[rcx+132],00320033
+	jne short EndOfDemonStatueCheck
+	cmp DWord ptr[rcx+136],00300033
+	jne short EndOfDemonStatueCheck
+	call MakeEnemyHealthZero
+  EndOfDemonStatueCheck:
+	cmp DWord ptr[rcx+132],00310032
+	jne short EndOfBasiliskCheck
+	cmp DWord ptr[rcx+136],00300034
+	jne short EndOfBasiliskCheck
+	call MakeEnemyHealthZero
+  EndOfBasiliskCheck:
+	cmp DWord ptr[rcx+132],00340031
+	jne short EndOfBonewheelCheck
+	cmp DWord ptr[rcx+136],00300037
+	jne short EndOfBonewheelCheck
+	call MakeEnemyHealthZero
+  EndOfBonewheelCheck:
+	cmp DWord ptr[rcx+132],00340031
+	jne short EndOfGraveWardenHollowCheck
+	cmp DWord ptr[rcx+136],00300033
+	jne short EndOfGraveWardenHollowCheck
+	call MakeEnemyHealthZero
+  EndOfGraveWardenHollowCheck:
+	cmp DWord ptr[rcx+132],00320032
+	jne short EndOfCorvianStorytellerCheck
+	cmp DWord ptr[rcx+136],00300031
+	jne short EndOfCorvianStorytellerCheck
+	call MakeEnemyHealthZero
+  EndOfCorvianStorytellerCheck:
+	cmp DWord ptr[rcx+132],00320031
+	jne short EndOfGhruSpearCheck
+	cmp DWord ptr[rcx+136],00300031
+	jne short EndOfGhruSpearCheck
+	call MakeEnemyHealthZero
+  EndOfGhruSpearCheck:
+	cmp DWord ptr[rcx+132],00310033
+	jne short EndOfDarkwraithCheck
+	cmp DWord ptr[rcx+136],00300037
+	jne short EndOfDarkwraithCheck
+	call MakeEnemyHealthZero
+  EndOfDarkwraithCheck:
+    cmp DWord ptr[rcx+132],00340031
+	jne short EndOfCathedralGiantHollowHalberdCheck
+	cmp DWord ptr[rcx+136],00350034
+	jne short EndOfCathedralGiantHollowHalberdCheck
+	call MakeEnemyHealthZero
+  EndOfCathedralGiantHollowHalberdCheck:
+    cmp DWord ptr[rcx+132],00320035
+	jne short EndOfDevoutDeepCheck
+	cmp DWord ptr[rcx+136],00330032
+	jne short EndOfDevoutDeepCheck
+	call MakeEnemyHealthZero
+  EndOfDevoutDeepCheck:
+    cmp DWord ptr[rcx+132],00320031
+	jne short EndOfLothricKnightDragonBarracksCheck
+	cmp DWord ptr[rcx+136],00310038
+	jne short EndOfLothricKnightDragonBarracksCheck
+	call MakeEnemyHealthZero
+  EndOfLothricKnightDragonBarracksCheck:
+    cmp DWord ptr[rcx+132],00310031
+	jne short EndOfCathedralKnightCheck
+	cmp DWord ptr[rcx+136],00300039
+	jne short EndOfCathedralKnightCheck
+    call MakeEnemyHealthZero
+  EndOfCathedralKnightCheck:
+    cmp DWord ptr[rcx+132],00300036
+    jne short EndOfFarronFollowerCheck
+    cmp DWord ptr[rcx+136],00300030
+    jne short EndOfFarronFollowerCheck
+    call MakeEnemyHealthZero
+  EndOfFarronFollowerCheck:
+    cmp DWord ptr[rcx+132],00300036
+    jne short EndOfGiantFlysCheck
+    cmp DWord ptr[rcx+136],00300039
+    jne short EndOfGiantFlysCheck
+    call MakeEnemyHealthZero
+  EndOfGiantFlysCheck:
+    cmp DWord ptr[rcx+132],00300036
+    jne short EndOfAriandelWolfCheck
+    cmp DWord ptr[rcx+136],00300035
+    jne short EndOfAriandelWolfCheck
+    call MakeEnemyHealthZero
+  EndOfAriandelWolfCheck:
+    cmp DWord ptr[rcx+132],00300036
+    jne short EndOfTreeGrillCheck
+    cmp DWord ptr[rcx+136],00300036
+    jne short EndOfTreeGrillCheck
+    call MakeEnemyHealthZero
+  EndOfTreeGrillCheck:
+    cmp DWord ptr[rcx+132],00310036
+    jne short EndOfMillwoodKnightCheck
+    cmp DWord ptr[rcx+136],00300030
+    jne short EndOfMillwoodKnightCheck
+    call MakeEnemyHealthZero
+  EndOfMillwoodKnightCheck:
+    cmp DWord ptr[rcx+132],00300036
+    jne short EndOfWeakCorvianCheck
+    cmp DWord ptr[rcx+136],00300038
+    jne short EndOfWeakCorvianCheck
+    call MakeEnemyHealthZero
+  EndOfWeakCorvianCheck:
+    cmp DWord ptr[rcx+132],00300036
+    jne short EndOfAnotherWolfCheck
+    cmp DWord ptr[rcx+136],00300034
+    jne short EndOfAnotherWolfCheck
+    call MakeEnemyHealthZero
+  EndOfAnotherWolfCheck:
+    cmp DWord ptr[rcx+132],00310036
+    jne short EndOfAriandelCrabCheck
+    cmp DWord ptr[rcx+136],00300033
+    jne short EndOfAriandelCrabCheck
+    call MakeEnemyHealthZero
+  EndOfAriandelCrabCheck:
+    cmp DWord ptr[rcx+132],00300036
+    jne short EndOfWeakCorvianNCheck
+    cmp DWord ptr[rcx+136],00310038
+    jne short EndOfWeakCorvianNCheck
+    call MakeEnemyHealthZero
+  EndOfWeakCorvianNCheck:
+    cmp DWord ptr[rcx+132],00300036
+    jne short EndOfCorvianKnightCheck
+    cmp DWord ptr[rcx+136],00300037
+    jne short EndOfCorvianKnightCheck
+    call MakeEnemyHealthZero
+  EndOfCorvianKnightCheck:
+    cmp DWord ptr[rcx+132],00320036
+    jne short EndOfMurkmanMageCheck
+    cmp DWord ptr[rcx+136],00300033
+    jne short EndOfMurkmanMageCheck
+    call MakeEnemyHealthZero
+  EndOfMurkmanMageCheck:
+    cmp DWord ptr[rcx+132],00320036
+    jne short EndOfWeakMurkmanCheck
+    cmp DWord ptr[rcx+136],00310033
+    jne short EndOfWeakMurkmanCheck
+    call MakeEnemyHealthZero
+  EndOfWeakMurkmanCheck:
+    cmp DWord ptr[rcx+132],00330036
+    jne short EndOfHaraldKnightCheck
+    cmp DWord ptr[rcx+136],00300032
+    jne short EndOfHaraldKnightCheck
+    call MakeEnemyHealthZero
+  EndOfHaraldKnightCheck:
+    cmp DWord ptr[rcx+132],00320036
+    jne short EndOfAngelCheck
+    cmp DWord ptr[rcx+136],00300035
+    jne short EndOfAngelCheck
+    call MakeEnemyHealthZero
+  EndOfAngelCheck:
+    cmp DWord ptr[rcx+132],00320031
+    jne short EndOfNewLothricKCheck
+    cmp DWord ptr[rcx+136],00330038
+    jne short EndOfNewLothricKCheck
+    call MakeEnemyHealthZero
+  EndOfNewLothricKCheck:
+    cmp DWord ptr[rcx+132],00320036
+    jne short EndOfAngelHostCheck
+    cmp DWord ptr[rcx+136],00300034
+    jne short EndOfAngelHostCheck
+    call MakeEnemyHealthZero
+  EndOfAngelHostCheck:
+    cmp DWord ptr[rcx+132],00320031
+    jne short EndOfNewSlaveCheck
+    cmp DWord ptr[rcx+136],00310030
+    jne short EndOfNewSlaveCheck
+    call MakeEnemyHealthZero
+  EndOfNewSlaveCheck:
+    cmp DWord ptr[rcx+132],00300031
+    jne short EndOfNewSkeletonCheck
+    cmp DWord ptr[rcx+136],00310037
+    jne short EndOfNewSkeletonCheck
+    call MakeEnemyHealthZero
+  EndOfNewSkeletonCheck:
+    cmp DWord ptr[rcx+132],00320036
+    jne short EndOfJudicatorCheck
+    cmp DWord ptr[rcx+136],00300038
+    jne short EndOfJudicatorCheck
+    call MakeEnemyHealthZero
+  EndOfJudicatorCheck:
+    cmp DWord ptr[rcx+132],00320036
+    jne short EndOfRingedKnightCheck
+    cmp DWord ptr[rcx+136],00300036
+    jne short EndOfRingedKnightCheck
+    call MakeEnemyHealthZero
+  EndOfRingedKnightCheck:
+    cmp DWord ptr[rcx+132],00300036
+    jne short EndOfHollowClericCheck
+    cmp DWord ptr[rcx+136],00300037
+    jne short EndOfHollowClericCheck
+    call MakeEnemyHealthZero
+  EndOfHollowClericCheck:
+    cmp DWord ptr[rcx+132],00320036
+    jne short EndOfHollowClericNCheck
+    cmp DWord ptr[rcx+136],00300039
+    jne short EndOfHollowClericNCheck
+    call MakeEnemyHealthZero
+  EndOfHollowClericNCheck:
+    cmp DWord ptr[rcx+132],00330036
+    jne short EndOfLocustCheck
+    cmp DWord ptr[rcx+136],00300033
+    jne short EndOfLocustCheck
+    call MakeEnemyHealthZero
+  EndOfLocustCheck:
+    cmp DWord ptr[rcx+132],00330036
+    jne short EndOfLocustSCheck
+    cmp DWord ptr[rcx+136],00310033
+    jne short EndOfLocustSCheck
+    call MakeEnemyHealthZero
+  EndOfLocustSCheck:
+    cmp DWord ptr[rcx+132],00320033
+    jne short EndOfPoisonBrumer
+    cmp DWord ptr[rcx+136],00300031
+    jne short EndOfPoisonBrumer
+    call MakeEnemyHealthZero
+  EndOfPoisonBrumer:
+    cmp DWord ptr[rcx+132],00320032
+    jne short EndOfIrithyllDogCheck
+    cmp DWord ptr[rcx+136],00300039
+    jne short EndOfIrithyllDogCheck
+    call MakeEnemyHealthZero
+  EndOfIrithyllDogCheck:
+    cmp DWord ptr[rcx+132],00310031
+    jne short EndOfSlimeSCheck
+    cmp DWord ptr[rcx+136],00300033
+    jne short EndOfSlimeSCheck
+    call MakeEnemyHealthZero
+  EndOfSlimeSCheck:
+    cmp DWord ptr[rcx+132],00310033
+    jne short EndOfGiantGHRUCheck
+    cmp DWord ptr[rcx+136],00300032
+    jne short EndOfGiantGHRUCheck
+    call MakeEnemyHealthZero
+  EndOfGiantGHRUCheck:
+    cmp DWord ptr[rcx+132],00310032
+    jne short EndOfCrystalLizardCheck
+    cmp DWord ptr[rcx+136],00300035
+    jne short EndOfCrystalLizardCheck
+    call MakeEnemyHealthZero
+  EndOfCrystalLizardCheck:
+    cmp DWord ptr[rcx+132],00310033
+    jne short EndOfGiantLizardCheck
+    cmp DWord ptr[rcx+136],00300030
+    jne short EndOfGiantLizardCheck
+    call MakeEnemyHealthZero
+  EndOfGiantLizardCheck:
+    cmp DWord ptr[rcx+132],00320031
+    jne short EndOfZombiesCheck
+    cmp DWord ptr[rcx+136],00300032
+    jne short EndOfZombiesCheck
+    call MakeEnemyHealthZero
+  EndOfZombiesCheck:
+    cmp DWord ptr[rcx+132],00310032
+    jne short EndOfSlimeAnothCheck
+    cmp DWord ptr[rcx+136],00310033
+    jne short EndOfSlimeAnothCheck
+    call MakeEnemyHealthZero
+  EndOfSlimeAnothCheck:
+    cmp DWord ptr[rcx+132],00310032
+    jne short EndOfSlimeScumCheck
+    cmp DWord ptr[rcx+136],00300038
+    jne short EndOfSlimeScumCheck
+    call MakeEnemyHealthZero
+  EndOfSlimeScumCheck:
+    cmp DWord ptr[rcx+132],00300032
+    jne short EndOfLeechDudesCheck
+    cmp DWord ptr[rcx+136],00300036
+    jne short EndOfLeechDudesCheck
+    call MakeEnemyHealthZero
+  EndOfLeechDudesCheck:
+    cmp DWord ptr[rcx+132],00320032
+    jne short EndOfJailerUCheck
+    cmp DWord ptr[rcx+136],00300033
+    jne short EndOfJailerUCheck
+    call MakeEnemyHealthZero
+  EndOfJailerUCheck:
+    cmp DWord ptr[rcx+132],00300032
+    jne short EndOfautsDragonCheck
+    cmp DWord ptr[rcx+136],00300037
+    jne short EndOfautsDragonCheck
+    call MakeEnemyHealthZero
+  EndOfautsDragonCheck:
+    cmp DWord ptr[rcx+132],00320031
+    jne short EndOfVillagerFCheck
+    cmp DWord ptr[rcx+136],00310034
+    jne short EndOfVillagerFCheck
+    call MakeEnemyHealthZero
+  EndOfVillagerFCheck:
+    cmp DWord ptr[rcx+132],00310032
+    jne short EndOfGargoyleFCheck
+    cmp DWord ptr[rcx+136],00310039
+    jne short EndOfGargoyleFCheck
+    call MakeEnemyHealthZero
+  EndOfGargoyleFCheck:
+    cmp DWord ptr[rcx+132],00300032
+    jne short EndOfOgreCheck
+    cmp DWord ptr[rcx+136],00300034
+    jne short EndOfOgreCheck
+    call MakeEnemyHealthZero
+  EndOfOgreCheck:
+    cmp DWord ptr[rcx+132],00340031
+    jne short EndOfclericLothricCheck
+    cmp DWord ptr[rcx+136],00320034
+    jne short EndOfclericLothricCheck
+    call MakeEnemyHealthZero
+  EndOfclericLothricCheck:
+    cmp DWord ptr[rcx+132],00300031
+    jne short EndOfAbyssCreatureCheck
+    cmp DWord ptr[rcx+136],00300039
+    jne short EndOfAbyssCreatureCheck
+    call MakeEnemyHealthZero
+  EndOfAbyssCreatureCheck:
+    cmp DWord ptr[rcx+132],00310031
+    jne short EndOfHollowGuyCheck
+    cmp DWord ptr[rcx+136],00310030
+    jne short EndOfHollowGuyCheck
+    call MakeEnemyHealthZero
+  EndOfHollowGuyCheck:
+    cmp DWord ptr[rcx+132],00310031
+    jne short EndOfHollowBigOneCheck
+    cmp DWord ptr[rcx+136],00360030
+    jne short EndOfHollowBigOneCheck
+    call MakeEnemyHealthZero
+  EndOfHollowBigOneCheck:
+    cmp DWord ptr[rcx+132],00310033
+    jne short EndOfSummonerCCheck
+    cmp DWord ptr[rcx+136],00310034
+    jne short EndOfSummonerCCheck
+    call MakeEnemyHealthZero
+  EndOfSummonerCCheck:
+    cmp DWord ptr[rcx+132],00330031
+    jne short EndOfFattyCheck
+    cmp DWord ptr[rcx+136],00300038
+    jne short EndOfFattyCheck
+    call MakeEnemyHealthZero
+  EndOfFattyCheck:
+    cmp DWord ptr[rcx+132],00300032
+    jne short EndOfSpecialDogCheck
+    cmp DWord ptr[rcx+136],00300038
+    jne short EndOfSpecialDogCheck
+    call MakeEnemyHealthZero
+  EndOfSpecialDogCheck:
+    cmp DWord ptr[rcx+132],00320036
+    jne short EndOfDlc2Check
+    cmp DWord ptr[rcx+136],00300037
+    jne short EndOfDlc2Check
+    call MakeEnemyHealthZero
+  EndOfDlc2Check:
+    cmp dword ptr [rcx+000000D8],00
+    jmp return
+    jmp return
+
+Inject_Health01:
+  jmp code
+  nop
+  nop
+return:
+registersymbol(Inject_Health01)
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+
+Inject_Health01:
+  readmem(InjectHealthOriginal,7)
+
+unregistersymbol(Inject_Health01)
+unregistersymbol(InjectHealthOriginal)
+dealloc(newmem)

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081322</ID>
+  <Description>"Mouth_drawn_pursed"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>744</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

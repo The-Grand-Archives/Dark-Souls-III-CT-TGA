@@ -1,0 +1,20 @@
+<CheatEntry>
+  <ID>1337080411</ID>
+  <Description>""</Description>
+  <VariableType>Byte</VariableType>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>363</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337080412"/>
+    <id id="1337080413"/>
+    <id id="1337080414"/>
+    <id id="1337080415"/>
+    <id id="1337080416"/>
+    <id id="1337080417"/>
+    <id id="1337080418"/>
+    <id id="1337080419"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337046312</ID>
+  <Description>"guardCutCancelRate"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+f6+1</Address>
+</CheatEntry>

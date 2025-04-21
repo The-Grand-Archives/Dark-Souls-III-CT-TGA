@@ -1,0 +1,6 @@
+[ENABLE]
+createthread(Debug_ChangeCharacterParam)
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]

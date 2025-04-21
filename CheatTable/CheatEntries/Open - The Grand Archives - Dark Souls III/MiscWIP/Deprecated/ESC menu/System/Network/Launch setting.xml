@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337019867</ID>
+  <Description>"Launch setting"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Play Online
+1:Play Offline
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>20</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337081083</ID>
+  <Description>"Jump Button L3"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>17</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

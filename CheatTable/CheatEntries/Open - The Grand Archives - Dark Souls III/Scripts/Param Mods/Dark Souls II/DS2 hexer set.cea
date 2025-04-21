@@ -1,0 +1,195 @@
+//Written by Boblord
+//replaces the brigand set with the hexer set from ds2, applies new absorptions, weight, and speffects to match the original
+//dont fuck with the stat values more unless you want to get banned, im not responsible for your dumbassery
+//note: dont use scripts that add more than 8 points of stats or I cannot guarentee you'll stay unbanned using this
+
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+--Brigand Hood/Hexer's Hood
+  local equipArmor = EquipParamProtector:new("hexerset",0x048009E0)
+  equipArmor:patch2Byte(0xA0,9500)
+  equipArmor:patch2Byte(0xA2,3368)
+  equipArmor:patch2Byte(0xA4,3368)
+  equipArmor:patchByte(0x131,0)
+  equipArmor:patchByte(0x16B,0)
+  equipArmor:patchByte(0x16C,0)
+  equipArmor:patchByte(0x16F,1)
+  equipArmor:absorbtionMagic(0.96824)
+  equipArmor:absorbtionThunder(0.96824)
+  equipArmor:absorbtionFire(0.958)
+  equipArmor:absorbtionDark(0.96824)
+  equipArmor:absorbtionPhysical(0.96056)
+  equipArmor:absorbtionSlash(0.96184)
+  equipArmor:absorbtionThrust(0.96184)
+  equipArmor:weight(1)
+  equipArmor:residentSpEffectId(0)
+  equipArmor:residentSpEffectId3(157)
+--Brigand Armor/Hexer's Robes
+  local equipArmor = EquipParamProtector:new("hexerset",0x04800DC8)
+  equipArmor:patch2Byte(0xA0,9500)
+  equipArmor:patch2Byte(0xA2,3369)
+  equipArmor:patch2Byte(0xA4,3369)
+  equipArmor:absorbtionMagic(0.9373)
+  equipArmor:absorbtionThunder(0.9373)
+  equipArmor:absorbtionFire(0.9215)
+  equipArmor:absorbtionDark(0.9373)
+  equipArmor:absorbtionPhysical(0.9279)
+  equipArmor:absorbtionSlash(0.9311)
+  equipArmor:absorbtionThrust(0.9311)
+   equipArmor:weight(2.8)
+--Brigand Gauntlets/Hexer's Gloves
+  local equipArmor = EquipParamProtector:new("hexerset",0x048011B0)
+  equipArmor:patch2Byte(0xA0,9500)
+  equipArmor:patch2Byte(0xA2,3370)
+  equipArmor:patch2Byte(0xA4,3370)
+  equipArmor:absorbtionMagic(0.9744)
+  equipArmor:absorbtionThunder(0.9744)
+  equipArmor:absorbtionFire(0.967)
+  equipArmor:absorbtionDark(0.9744)
+  equipArmor:absorbtionPhysical(0.9686)
+  equipArmor:absorbtionSlash(0.9695)
+  equipArmor:absorbtionThrust(0.9695)
+   equipArmor:weight(1.1)
+--Brigand Trousers/Hexer's Boots
+  local equipArmor = EquipParamProtector:new("hexerset",0x04801598)
+  equipArmor:patch2Byte(0xA0,9500)
+  equipArmor:patch2Byte(0xA2,3371)
+  equipArmor:patch2Byte(0xA4,3371)
+  equipArmor:absorbtionMagic(0.953)
+  equipArmor:absorbtionThunder(0.953)
+  equipArmor:absorbtionFire(0.9355)
+  equipArmor:absorbtionDark(0.953)
+  equipArmor:absorbtionPhysical(0.9394)
+  equipArmor:absorbtionSlash(0.9423)
+  equipArmor:absorbtionThrust(0.9423)
+  equipArmor:weight(2.2)
+
+  local zeroLuck = SpEffectParam:new("hexerset", 129001500) -- dont fuck with these eleven luck stat changes, needed to make the stat change function properly
+  zeroLuck:luckBuff(0) -- dont use scripts that add more than 8 points of stats or I can no longer guarentee you will not get banned
+
+    local firstLuck = SpEffectParam:new("hexerset", 129001501)
+  firstLuck:luckBuff(0)
+
+    local secondLuck = SpEffectParam:new("hexerset", 129001502)
+  secondLuck:luckBuff(0)
+
+	local thirdLuck = SpEffectParam:new("hexerset", 129001503)
+  thirdLuck:luckBuff(0)
+
+    local fourthLuck = SpEffectParam:new("hexerset", 129001504)
+  fourthLuck:luckBuff(0)
+
+    local fifthLuck = SpEffectParam:new("hexerset", 129001505)
+  fifthLuck:luckBuff(0)
+
+    local sixthLuck = SpEffectParam:new("hexerset", 129001506)
+  sixthLuck:luckBuff(0)
+
+    local seventhLuck = SpEffectParam:new("hexerset", 129001507)
+  seventhLuck:luckBuff(0)
+
+    local eighthLuck = SpEffectParam:new("hexerset", 129001508)
+  eighthLuck:luckBuff(0)
+
+    local ninthLuck = SpEffectParam:new("hexerset", 129001509)
+  ninthLuck:luckBuff(0)
+
+    local tenthLuck = SpEffectParam:new("hexerset", 129001510)
+  tenthLuck:luckBuff(0)
+
+  local hoodMod = SpEffectParam:new("hexerset", 157)
+  hoodMod:iconId(10020)
+  hoodMod:intelligenceBuff(1) --dont touch
+  hoodMod:faithBuff(1) -- also dont touch
+  hoodMod:magicMpCost(.875)
+  hoodMod:pyroMpCost(.875)
+  hoodMod:miracleMpCost(.875)
+  hoodMod:motionInterval(-1)
+hoodMod:replaceSpEffectId(157)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+0004AC3E:
+dw 'Hexer',27,'s Hood',0
+[[[[MsgRepository]+8]+0]+C0]+0021A51E:
+dw 'Hood worn by a hexer.',A
+dw 'Grants an increase to spell uses.',A
+dw 'Belonged to Felkin the Outcast.',A
+dw '',A
+dw 'Hexing appears to be an offshoot of sorcery,',A
+dw 'but its origins are unknown.',A
+dw '',A
+dw 'Effect: Increases number of casts for each spell',0
+
+[[[[MsgRepository]+8]+0]+50]+0004AC58:
+dw 'Hexer',27,'s Robes',0
+[[[[MsgRepository]+8]+0]+C0]+0021A6DA:
+dw 'Robe worn by a hexer.',A
+dw 'Belonged to Felkin the Outcast.',A
+dw 'Those who have a taste of dark are drawn into',A
+dw 'its vortex and rarely return.',A
+dw '',A
+dw 'Perhaps it appeals to something',A
+dw 'deep within the human soul.',0
+
+[[[[MsgRepository]+8]+0]+50]+0004AC74:
+dw 'Hexer',27,'s Gloves',0
+[[[[MsgRepository]+8]+0]+C0]+0021A888:
+dw 'Gloves worn by a hexer.',A
+dw 'Belonged to Felkin the Outcast.',A
+dw 'Those who have a taste of dark are drawn into',A
+dw 'its vortex and rarely return.',A
+dw '',A
+dw 'Perhaps it appeals to something',A
+dw 'deep within the human soul.',0
+
+[[[[MsgRepository]+8]+0]+50]+0004AC98:
+dw 'Hexer',27,'s Boots',0
+[[[[MsgRepository]+8]+0]+C0]+0021AA3E:
+dw 'Boots worn by a hexer.',A
+dw 'Belonged to Felkin the Outcast.',A
+dw 'Those who have a taste of dark are drawn into',A
+dw 'its vortex and rarely return.',A
+dw '',A
+dw 'Perhaps it appeals to something',A
+dw 'deep within the human soul.',0
+
+ [DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("hexerset")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+0004AC3E:
+dw 'Brigand Hood',0
+[[[[MsgRepository]+8]+0]+C0]+0021A51E:
+dw 'Hood from a foreign land.',A
+dw 'Probably belonged to a brigand who met his match.',A
+dw '',A
+dw 'In foreign lands, undead were banished to send a message to populace, and when the message was not heard, they banished the living, too.',0
+
+[[[[MsgRepository]+8]+0]+50]+0004AC58:
+dw 'Brigand Armor',0
+[[[[MsgRepository]+8]+0]+C0]+0021A6DA:
+dw 'Armor from a foreign land.',A
+dw 'Probably belonged to a brigand who met his match.',A
+dw '',A
+dw 'In foreign lands, undead were banished to send a message to populace, and when the message was not heard, they banished the living, too.',0
+
+
+[[[[MsgRepository]+8]+0]+50]+0004AC74:
+dw 'Brigand Gauntlets',0
+[[[[MsgRepository]+8]+0]+C0]+0021A888:
+dw 'Gauntlets from a foreign land.',A
+dw 'Probably belonged to a brigand who met his match.',A
+dw '',A
+dw 'In foreign lands, undead were banished to send a message to populace, and when the message was not heard, they banished the living, too.',0
+
+[[[[MsgRepository]+8]+0]+50]+0004AC98:
+dw 'Brigand Trousers',0
+[[[[MsgRepository]+8]+0]+C0]+0021AA3E:
+dw 'Trousers from a foreign land.',A
+dw 'Probably belonged to a brigand who met his match.',A
+dw '',A
+dw 'In foreign lands, undead were banished to send a message to populace, and when the message was not heard, they banished the living, too.',0
+

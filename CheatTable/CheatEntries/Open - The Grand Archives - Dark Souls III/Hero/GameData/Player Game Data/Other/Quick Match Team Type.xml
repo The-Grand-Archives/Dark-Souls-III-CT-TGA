@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337078916</ID>
+  <Description>"Quick Match Team Type"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>931</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

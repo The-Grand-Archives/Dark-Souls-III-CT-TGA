@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>86369</ID>
+  <Description>"Health Max"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>1C</Offset>
+    <Offset>540+0950</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

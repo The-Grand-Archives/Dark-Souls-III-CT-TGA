@@ -1,0 +1,10 @@
+//Author: inuNorii
+//Edits Wood Grain Ring to give backflips like the Dark Wood Grain Ring would
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local effect = SpEffectParam:new("darkWoodGrainRing",112014000)
+effect:stateInfo(115)
+
+[DISABLE]
+paramUtils:restore("darkWoodGrainRing")

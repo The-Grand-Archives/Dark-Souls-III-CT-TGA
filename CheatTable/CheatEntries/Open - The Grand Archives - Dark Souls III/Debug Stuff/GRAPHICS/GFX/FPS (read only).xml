@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097655</ID>
+  <Description>"FPS (read only)"</Description>
+  <VariableType>Float</VariableType>
+  <Address>CSLoadBalancer</Address>
+  <Offsets>
+    <Offset>8</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337081162</ID>
+  <Description>"Player Ref Data"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337081164"/>
+    <id id="1337081183"/>
+    <id id="1337080425"/>
+    <id id="1337080430"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,40 @@
+{
+  Author: inuNorii
+  Desc: Prevents some of the most common malicious effects
+        from being applied to your character.
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local blockIds = {
+  13, 33, 34, 45, 500, 600, 610, 611, 1600, 1610, 1620, 1630, 3080, 3091,
+  3092, 3094, 3230, 4902, 11013, 12000, 12150, 12153, 16325, 103750410
+}
+for i,id in ipairs(blockIds) do
+local block = SpEffectParam:new("PreventMaliciousEffects",id)
+block:effectEndurance(1)
+block:soul(0)
+block:spCategory(0)
+block:categoryPriority(0)
+block:heroPointDamage(0)
+block:stateInfo(0)
+block:clearSoul(0)
+block:restrictFlags(4)
+block:effectSfx(0)
+block:effectSfx1(0)
+end
+
+local restrictIds = {
+  1520, 1530, 3600, 3610, 3640, 3650, 12050, 16190,
+  16323, 16325, 23100, 1420040, 1420050, 140000000
+}
+for i,id in ipairs(restrictIds) do
+local restrict = SpEffectParam:new("PreventMaliciousEffects",id)
+restrict:effectEndurance(1)
+restrict:restrictFlags(4)
+end
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("PreventMaliciousEffects")

@@ -1,0 +1,116 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local sharedShopValues = {
+  900000, 900001, 900002, 900003, 900004, 900005, 900006, 900007, 900008,
+  900009, 900010, 900011, 900012, 900013, 900014, 900015, 900016, 900017,
+  900018, 900019, 900020, 900021, 900022, 900023, 900024, 900025, 900026,
+  900027, 900028, 900029, 900030, 900031, 900032, 900033, 900034, 900035,
+  900036, 900037, 900038, 900039, 900040, 900041, 900042, 900043, 900044,
+  900045, 900046, 900047, 900048, 900049, 900050, 900051, 900052, 900053,
+  900054, 900055, 900056, 900057, 900058, 900059, 900060, 900061, 900062,
+  900063, 900064, 900065
+}
+for i,id in ipairs(sharedShopValues) do
+local Inventory = ShopLineupParam:new("CustomShop",id)
+Inventory:Value(0)
+Inventory:EventFlag(-1)
+Inventory:SellQuantity(-1)
+Inventory:PriceRate(1)
+end
+
+local sharedWeaponValues = {
+  890000
+}
+for i,id in ipairs(sharedWeaponValues) do
+local Weapon = EquipParamWeapon:new("CustomShop",id)
+Weapon:patch4Byte(0x14,0)
+Weapon:patch4Byte(0x18,0)
+Weapon:patch4Byte(0x1C,0)
+Weapon:patch4Byte(0x22C,0)
+end
+--[[
+local sharedProtectorValues = {
+  0
+}
+for i,id in ipairs(sharedProtectorValues) do
+local Protector = EquipParamProtector:new("CustomShop",id)
+Protector:patch4Byte(0x14,0)
+Protector:patch4Byte(0x18,0)
+Protector:patch4Byte(0x1C,0)
+Protector:patch4Byte(0x128,0)
+end
+]]
+local sharedAccessoryValues = {
+  900200, 900201, 900202, 900204, 900210, 900211, 900212, 910000
+}
+for i,id in ipairs(sharedAccessoryValues) do
+local Accessory = EquipParamAccessory:new("CustomShop",id)
+Accessory:patch4Byte(0x10,0)
+Accessory:patch4Byte(0x14,0)
+Accessory:patch4Byte(0x40,0)
+end
+--[[
+local sharedGoodsValues = {
+  0
+}
+for i,id in ipairs(sharedGoodsValues) do
+local Goods = EquipParamGoods:new("CustomShop",id)
+Goods:patch4Byte(0xC,0)
+Goods:patch4Byte(0x10,0)
+Goods:patch4Byte(0x70,0)
+end
+]]
+local shop_00 = ShopLineupParam:new("CustomShop",900000)
+shop_00:EquipId(890000)
+shop_00:EquipType(0)
+local shop_01 = ShopLineupParam:new("CustomShop",900001)
+shop_01:EquipId(900200)
+shop_01:EquipType(2)
+local shop_02 = ShopLineupParam:new("CustomShop",900002)
+shop_02:EquipId(900201)
+shop_02:EquipType(2)
+local shop_03 = ShopLineupParam:new("CustomShop",900003)
+shop_03:EquipId(900202)
+shop_03:EquipType(2)
+local shop_04 = ShopLineupParam:new("CustomShop",900004)
+shop_04:EquipId(900204)
+shop_04:EquipType(2)
+local shop_05 = ShopLineupParam:new("CustomShop",900005)
+shop_05:EquipId(900210)
+shop_05:EquipType(2)
+local shop_06 = ShopLineupParam:new("CustomShop",900006)
+shop_06:EquipId(900211)
+shop_06:EquipType(2)
+local shop_07 = ShopLineupParam:new("CustomShop",900007)
+shop_07:EquipId(900212)
+shop_07:EquipType(2)
+local shop_08 = ShopLineupParam:new("CustomShop",900008)
+shop_08:EquipId(910000)
+shop_08:EquipType(2)
+
+{$asm}
+aobscanmodule(CustomBuy_Call_Call,$process,?? ?? ?? ?? 90 48 8b 50 08 48 89 53 08 48 8b 40 10 48 89 43 10 48 8d ?? ?? ?? ?? ?? 48 89 44 24 28 c7 43 18 05 00 00 00)
+alloc(CustomShop,100,DarkSoulsIII.exe)
+createthread(CustomShop)
+CustomShop:
+sub rsp,48
+mov rdx,#900000
+mov r8, #900065
+mov rcx,CustomBuy_Call_Call
+movsxd rcx,dword ptr [rcx]
+mov rax,CustomBuy_Call_Call+4
+add rax,rcx
+lea rcx,[rsp+28]
+call rax
+add rsp,48
+ret
+
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("CustomShop")
+{$asm}
+dealloc(CustomShop)

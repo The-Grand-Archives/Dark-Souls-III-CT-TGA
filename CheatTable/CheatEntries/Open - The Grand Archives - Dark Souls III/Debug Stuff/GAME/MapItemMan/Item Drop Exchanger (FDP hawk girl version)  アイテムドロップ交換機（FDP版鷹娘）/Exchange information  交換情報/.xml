@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337098243</ID>
+  <Description>"Exchange information | 交換情報"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337098239"/>
+    <id id="1337098341"/>
+    <id id="1337098340"/>
+    <id id="1337098342"/>
+    <id id="1337098343"/>
+    <id id="1337098369"/>
+    <id id="1337098370"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

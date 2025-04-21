@@ -1,0 +1,72 @@
+[ENABLE]
+define(mVAC,DarkSoulsIII.exe+9CF63D)
+alloc(newmem,2048,mVAC)
+label(returnhere)
+label(originalcode)
+label(exit)
+registersymbol(mVAC)
+
+
+newmem:
+push rax
+push rdx
+mov rax,FFFFFFFFFFFFFFFF
+cmp r9,rax
+jne originalcode
+
+mov rax,[WorldChrMan]
+mov rax,[rax+40]
+mov rax,[rax+28]
+add rax,80
+mov rdx,rbx
+add rdx,80
+cmp rdx,rax
+je originalcode
+
+cmp [XE], 0
+je originalcode
+mov rdx, [XE]
+mov rdx, [rdx+1F90]
+cmp rdx, 0
+jz originalcode
+mov rdx, [rdx+68]
+cmp rdx, rbx
+jne originalcode
+
+mov rdx, [rdx+a8]
+mov rdx, [rdx+40]
+
+mov rax,[[[[WorldChrMan]+40]+28]+80]
+mov [rbx+00000080],rax
+mov [rdx+70], rax
+mov rax,[[[[WorldChrMan]+40]+28]+84]
+mov [rbx+00000084],rax
+mov [rdx+74], rax
+mov rax,[[[[WorldChrMan]+40]+28]+88]
+mov [rbx+00000088],rax
+mov [rdx+78], rax
+
+originalcode:
+pop rdx
+pop rax
+movaps xmm0,[rbx+00000080]
+
+exit:
+jmp returnhere
+
+
+mVAC:
+jmp newmem
+nop
+nop
+returnhere:
+
+[DISABLE]
+
+mVAC:
+db 0F 28 83 80 00 00 00 0F 54 05
+
+
+unregistersymbol(mVAC)
+dealloc(newmem)
+//Alt: db 0F 28 83 80 00 00 00 0F 54 05

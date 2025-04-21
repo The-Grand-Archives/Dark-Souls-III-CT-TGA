@@ -1,0 +1,46 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+  local WeaponId = 0x4C4B40 -- Uchigatana
+
+  local WeaponsArray = {
+     {WeaponId,0xC4,"C8 00"}, -- Physical Damage - 200
+     {WeaponId,0xC6,"32 00"}, -- Magic Damage - 50
+     {WeaponId,0xC8,"32 00"}, -- Fire Damage - 50
+     {WeaponId,0xCA,"32 00"}, -- Lightning Damage - 50
+     {WeaponId,0x188,"96 00"}, -- Dark Damage - 150
+
+     {WeaponId,0xEE,"00"}, -- Required STR - 0
+     {WeaponId,0xEF,"00"}, -- Required DEX - 0
+     {WeaponId,0xF0,"00"}, -- Required INT - 0
+     {WeaponId,0xF1,"00"}, -- Required FTH - 0
+
+     {WeaponId,0x20,"00 00 16 43"}, -- STR Scaling - 150
+     {WeaponId,0x24,"00 00 16 43"}, -- DEX Scaling - 150
+     {WeaponId,0x28,"00 00 5C 42"}, -- INT Scaling - 50
+     {WeaponId,0x2C,"00 00 5C 42"}, -- FTH Scaling - 50
+
+     {WeaponId,0x30,"00 00 5C 42"}, -- Physical Block - 50
+     {WeaponId,0x34,"00 00 5C 42"}, -- Magic Block - 50
+     {WeaponId,0x3C,"00 00 5C 42"}, -- Lightning Block - 50
+     {WeaponId,0x38,"00 00 5C 42"}, -- Fire Block - 50
+     {WeaponId,0x184,"00 00 5C 42"}, -- Dark Block -50
+
+     {WeaponId,0x40,"44 29 00 00"}, --Effect on Hit 1 -- Undead Hunter Charm
+     {WeaponId,0x44,"C0 D6 AD 06"}, --Effect on Hit 2 --
+     {WeaponId,0x48,"FF FF FF FF"}, --Effect on Hit 3 --
+
+     {WeaponId,0x4C,"98 30 AE 06"}, --Effect on Self 1 -- Pontiff's Left Eye Effect
+     {WeaponId,0x50,"10 A0 AD 06"}, --Effect on Self 2 -- Silvercat Ring effect
+     {WeaponId,0x54,"C8 AB AD 06"}, --Effect on Self 3 -- Carthus Milkring
+
+     {WeaponId,0xCE,"64 00"}, -- Poise Damage - 100
+
+     {WeaponId,0x0C,"00 00 00 00"}, -- Weight - 0
+  }
+  paramUtils:paramIterator("EquipParamWeapon",WeaponsArray,"WeaponModification")
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+   paramUtils:paramDepatcher("WeaponModification")

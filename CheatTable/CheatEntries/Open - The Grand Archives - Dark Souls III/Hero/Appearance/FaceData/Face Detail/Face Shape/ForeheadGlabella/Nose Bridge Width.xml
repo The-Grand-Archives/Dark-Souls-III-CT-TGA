@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73178</ID>
+  <Description>"Nose Bridge Width"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>75B</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

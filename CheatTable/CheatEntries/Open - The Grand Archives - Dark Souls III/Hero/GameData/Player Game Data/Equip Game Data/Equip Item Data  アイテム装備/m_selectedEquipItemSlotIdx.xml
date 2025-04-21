@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081708</ID>
+  <Description>"m_selectedEquipItemSlotIdx"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>4E0</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

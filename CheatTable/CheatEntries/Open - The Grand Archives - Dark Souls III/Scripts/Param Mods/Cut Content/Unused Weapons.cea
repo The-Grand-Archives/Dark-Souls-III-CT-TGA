@@ -1,0 +1,239 @@
+{
+  Author: Lucifer
+  Description: All Unused Weapon's
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+--Firelink Greatsword/Missionary Axe
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x0060BDA0)
+  equipWeapon:patch2Byte(0xb8,709)
+  equipWeapon:patch2Byte(0xba,1080)
+--Greataxe/Four Knight's Hammer
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x006B9310)
+  equipWeapon:patch2Byte(0xb8,821)
+  equipWeapon:patch2Byte(0xba,1208)
+--Greataxe/Four Knight's Hammer (Infusion)
+local Infusion1 = {
+  0x006B9374, -- Heavy
+  0x006B93D8, -- Sharp
+  0x006B943C, -- Refined
+  0x006B94A0, -- Simple
+  0x006B9504, -- Crystal
+  0x006B9568, -- Fire
+  0x006B95CC, -- Chaos
+  0x006B9630, -- Lightning
+  0x006B9694, -- Deep
+  0x006B96F8, -- Dark
+  0x006B975C, -- Poison
+  0x006B97C0, -- Blood
+  0x006B9824, -- Raw
+  0x006B9888, -- Blessed
+  0x006B98EC, -- Hollow
+}
+for i,id in ipairs(Infusion1) do
+  local equipWeapon = EquipParamWeapon:new("Infusion",id)
+  equipWeapon:patch2Byte(0xb8,821)
+  equipWeapon:patch2Byte(0xba,1208)
+end
+--Warpick/Hammer Of A Great Tree
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x007DBB80)
+  equipWeapon:patch2Byte(0xb8,823)
+  equipWeapon:patch2Byte(0xba,1210)
+--Warpick/Hammer Of A Great Tree (Infusion)
+local Infusion2 = {
+  0x007DBBE4, -- Heavy
+  0x007DBC48, -- Sharp
+  0x007DBCAC, -- Refined
+  0x007DBD10, -- Simple
+  0x007DBD74, -- Crystal
+  0x007DBDD8, -- Fire
+  0x007DBE3C, -- Chaos
+  0x007DBEA0, -- Lightning
+  0x007DBF04, -- Deep
+  0x007DBF68, -- Dark
+  0x007DBFCC, -- Poison
+  0x007DC030, -- Blood
+  0x007DC094, -- Raw
+  0x007DC0F8, -- Blessed
+  0x007DC15C, -- Hollow
+}
+for i,id in ipairs(Infusion2) do
+  local equipWeapon = EquipParamWeapon:new("Infusion",id)
+  equipWeapon:patch2Byte(0xb8,823)
+  equipWeapon:patch2Byte(0xba,1210)
+end
+--Four-Progend Plow/Heavy Four-Progend Plow
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x008ADAE0)
+  equipWeapon:patch2Byte(0xb8,921)
+  equipWeapon:patch2Byte(0xba,1220)
+--Four-Progend Plow/Heavy Four-Progend Plow (Infusion)
+local Infusion3 = {
+  0x008ADB44, -- Heavy
+  0x008ADBA8, -- Sharp
+  0x008ADC0C, -- Refined
+  0x008ADC70, -- Simple
+  0x008ADCD4, -- Crystal
+  0x008ADD38, -- Fire
+  0x008ADD9C, -- Chaos
+  0x008ADE00, -- Lightning
+  0x008ADE64, -- Deep
+  0x008ADEC8, -- Dark
+  0x008ADF2C, -- Poison
+  0x008ADF90, -- Blood
+  0x008ADFF4, -- Raw
+  0x008AE058, -- Blessed
+  0x008AE0BC, -- Hollow
+}
+for i,id in ipairs(Infusion3) do
+  local equipWeapon = EquipParamWeapon:new("Infusion",id)
+  equipWeapon:patch2Byte(0xb8,921)
+  equipWeapon:patch2Byte(0xba,1220)
+end
+--Pontiff Knight Great Scythe/Lothric's Scythe
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x0099A7F0)
+  equipWeapon:patch2Byte(0xb8,1011)
+  equipWeapon:patch2Byte(0xba,1222)
+--Splitleaf Greatsword/Ancient Dragon Halberd
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x009B2E90)
+  equipWeapon:patch2Byte(0xb8,1012)
+  equipWeapon:patch2Byte(0xba,1223)
+--Splitleaf Greatsword/Ancient Dragon Halberd (Infusion)
+local Infusion4 = {
+  0x009B2EF4, -- Heavy
+  0x009B2F58, -- Sharp
+  0x009B2FBC, -- Refined
+  0x009B3020, -- Simple
+  0x009B3084, -- Crystal
+  0x009B30E8, -- Fire
+  0x009B314C, -- Chaos
+  0x009B31B0, -- Lightning
+  0x009B3214, -- Deep
+  0x009B3278, -- Dark
+  0x009B32DC, -- Poison
+  0x009B3340, -- Blood
+  0x009B33A4, -- Raw
+  0x009B3408, -- Blessed
+  0x009B346C, -- Hollow
+}
+for i,id in ipairs(Infusion4) do
+  local equipWeapon = EquipParamWeapon:new("Infusion",id)
+  equipWeapon:patch2Byte(0xb8,1012)
+  equipWeapon:patch2Byte(0xba,1223)
+end
+--Dancer's Enchanted Sword/Golden Dual Sword
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x00F4C040)
+  equipWeapon:patch2Byte(0xb8,1608)
+  equipWeapon:patch2Byte(0xba,1171)
+  equipWeapon:patch2Byte(0xea,143)
+--Buckle/Cleric's Parma
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x01312D00)
+  equipWeapon:patch2Byte(0xb8,2026)
+  equipWeapon:patch2Byte(0xba,2037)
+--Buckle/Cleric's Parma (Infusion)
+local Infusion5 = {
+  0x01312D64, -- Heavy
+  0x01312DC8, -- Sharp
+  0x01312E2C, -- Refined
+  0x01312E90, -- Simple
+  0x01312EF4, -- Crystal
+  0x01312F58, -- Fire
+  0x01312FBC, -- Chaos
+  0x01313020, -- Lightning
+  0x01313084, -- Deep
+  0x013130E8, -- Dark
+  0x0131314C, -- Poison
+  0x013131B0, -- Blood
+  0x01313214, -- Raw
+  0x01313278, -- Blessed
+  0x013132DC, -- Hollow
+}
+for i,id in ipairs(Infusion5) do
+  local equipWeapon = EquipParamWeapon:new("Infusion",id)
+  equipWeapon:patch2Byte(0xb8,2026)
+  equipWeapon:patch2Byte(0xba,2037)
+end
+--Black Knight Shield/Prince's Shield
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x0141F5E0)
+  equipWeapon:patch2Byte(0xb8,2111)
+  equipWeapon:patch2Byte(0xba,2040)
+--Valorheart/Torch And Shield
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x00F646E0)
+  equipWeapon:patch2Byte(0xb8,2200)
+  equipWeapon:patch2Byte(0xba,1177)
+--Wolf Knight's Greatshield/Ancient Dragon Great Shield
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x01511110)
+  equipWeapon:patch2Byte(0xb8,2206)
+  equipWeapon:patch2Byte(0xba,2062)
+--Lothric Knight Sword/Lothric Priest Sword
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x001F6EE0)
+  equipWeapon:patch2Byte(0xb8,8000)
+  equipWeapon:patch2Byte(0xba,1006)
+--Lothric Knight Sword/Lothric Priest Sword (Infusion)
+local Infusion6 = {
+  0x001F6F44, -- Heavy
+  0x001F6FA8, -- Sharp
+  0x001F700C, -- Refined
+  0x001F7070, -- Simple
+  0x001F70D4, -- Crystal
+  0x001F7138, -- Fire
+  0x001F719C, -- Chaos
+  0x001F7200, -- Lightning
+  0x001F7264, -- Deep
+  0x001F72C8, -- Dark
+  0x001F732C, -- Poison
+  0x001F7390, -- Blood
+  0x001F73F4, -- Raw
+  0x001F7458, -- Blessed
+  0x001F74BC, -- Hollow
+}
+for i,id in ipairs(Infusion6) do
+  local equipWeapon = EquipParamWeapon:new("Infusion",id)
+  equipWeapon:patch2Byte(0xb8,8000)
+  equipWeapon:patch2Byte(0xba,1006)
+end
+--Ringed Knight Straight Sword/Broken Greatsword
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x00225510)
+  equipWeapon:patch2Byte(0xb8,8002)
+  equipWeapon:patch2Byte(0xba,1006)
+--Murky Hand Scythe/Ancient Dagger
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x00118C30)
+  equipWeapon:patch2Byte(0xb8,8003)
+  equipWeapon:patch2Byte(0xba,1006)
+--Murky Hand Scythe/Ancient Dagger (Infusion)
+local Infusion7 = {
+  0x00118C94, -- Heavy
+  0x00118CF8, -- Sharp
+  0x00118D5C, -- Refined
+  0x00118DC0, -- Simple
+  0x00118E24, -- Crystal
+  0x00118E88, -- Fire
+  0x00118EEC, -- Chaos
+  0x00118F50, -- Lightning
+  0x00118FB4, -- Deep
+  0x00119018, -- Dark
+  0x0011907C, -- Poison
+  0x001190E0, -- Blood
+  0x00119144, -- Raw
+  0x001191A8, -- Blessed
+  0x0011920C, -- Hollow
+}
+for i,id in ipairs(Infusion7) do
+  local equipWeapon = EquipParamWeapon:new("Infusion",id)
+  equipWeapon:patch2Byte(0xb8,8003)
+  equipWeapon:patch2Byte(0xba,1006)
+end
+--Sunlight Straight Sword/Sword Of Avowal
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x00203230)
+  equipWeapon:patch2Byte(0xb8,8005)
+  equipWeapon:patch2Byte(0xba,188)
+--Irithyll Rapier/White Rapier
+  local equipWeapon = EquipParamWeapon:new("UnusedWeapons",0x002E8A10)
+  equipWeapon:patch2Byte(0xb8,8006)
+  equipWeapon:patch2Byte(0xba,1006)
+------------------------------------------------------------------------------
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("UnusedWeapons")
+paramUtils:restore("Infusion")

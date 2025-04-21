@@ -1,0 +1,28 @@
+<CheatEntry>
+  <ID>1337096866</ID>
+  <Description>"Summon state debug | 召還状態デバッグ"</Description>
+  <Options moHideChildren="1"/>
+  <Color>C0C0C0</Color>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337098527"/>
+    <id id="1337098525"/>
+    <id id="1337098508"/>
+    <id id="1337098523"/>
+    <id id="1337098524"/>
+    <id id="1337098521"/>
+    <id id="1337098522"/>
+    <id id="1337098519"/>
+    <id id="1337098520"/>
+    <id id="1337098517"/>
+    <id id="1337098518"/>
+    <id id="1337098515"/>
+    <id id="1337098516"/>
+    <id id="1337098513"/>
+    <id id="1337098514"/>
+    <id id="1337098511"/>
+    <id id="1337098512"/>
+    <id id="1337098509"/>
+    <id id="1337098510"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

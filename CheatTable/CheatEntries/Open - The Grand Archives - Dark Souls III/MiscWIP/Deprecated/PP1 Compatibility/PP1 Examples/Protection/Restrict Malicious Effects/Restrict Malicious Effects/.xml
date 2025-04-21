@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>89265</ID>
+  <Description>"Restrict "Malicious Effects"*"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="89266"/>
+    <id id="86630"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

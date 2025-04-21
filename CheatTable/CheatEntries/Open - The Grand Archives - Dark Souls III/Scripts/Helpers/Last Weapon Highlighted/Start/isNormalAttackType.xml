@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337038855</ID>
+  <Description>"isNormalAttackType"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+102</Address>
+</CheatEntry>

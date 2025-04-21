@@ -1,0 +1,18 @@
+{Gate 24 June 2019 17:10}
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local StatTut = CharaInitParam:new("DEPRIVED",3009)
+StatTut:soulLvl(802) --Level
+StatTut:baseVit(99) --Vigor
+StatTut:baseWil(99) --Attunement
+StatTut:baseEnd(99) --Endurance
+StatTut:baseStr(99) --Strength
+StatTut:baseDex(99) --Dexterity
+StatTut:baseMag(99) --Intelligence
+StatTut:baseFai(99) --Faith
+StatTut:baseLuc(99) --Luck
+--StatTut:baseHeroPoint(0) --Humanity
+StatTut:baseDurability(99) --Vitality
+[DISABLE]
+paramUtils:restore("DEPRIVED")

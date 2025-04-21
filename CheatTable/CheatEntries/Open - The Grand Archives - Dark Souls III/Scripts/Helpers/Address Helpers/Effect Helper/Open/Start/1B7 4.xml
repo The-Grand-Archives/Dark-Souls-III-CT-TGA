@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337063980</ID>
+  <Description>"1B7"</Description>
+  <Color>C0C0C0</Color>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+01B7</Address>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099156</ID>
+  <Description>"Is lock range radius bonus damping effective? | ロック範囲半径ボーナス減衰が有効か"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2973</Offset>
+  </Offsets>
+</CheatEntry>

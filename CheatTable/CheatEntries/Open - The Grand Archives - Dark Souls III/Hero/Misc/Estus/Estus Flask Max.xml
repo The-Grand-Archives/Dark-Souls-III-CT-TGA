@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73051</ID>
+  <Description>"Estus Flask Max"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>102</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

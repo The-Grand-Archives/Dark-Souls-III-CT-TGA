@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097881</ID>
+  <Description>"Ladder condition | はしご状態"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>2CC</Offset>
+    <Offset>48</Offset>
+    <Offset>50</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

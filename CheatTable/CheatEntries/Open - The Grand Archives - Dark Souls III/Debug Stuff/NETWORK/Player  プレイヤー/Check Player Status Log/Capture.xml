@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097085</ID>
+  <Description>"Capture"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>4B9</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>

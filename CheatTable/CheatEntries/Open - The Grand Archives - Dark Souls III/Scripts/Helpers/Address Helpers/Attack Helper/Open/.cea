@@ -1,0 +1,7 @@
+[ENABLE]
+label(AttackParamPC)
+registersymbol(AttackParamPC)
+[AttackAddressToUse]:
+AttackParamPC:
+[DISABLE]
+unregistersymbol(AttackParamPC)

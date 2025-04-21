@@ -1,0 +1,16 @@
+{
+  Author: Igromanru
+  Description: All bullets gives Bonfire & Budding Green Moss on Hit
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local object = Bullet:new("AllBulletsAppliesBoneFireAndGreenMoss")
+object:patchAll4Byte(0x6C,110)  --Apply Bonfire on spEffectId0
+object:patchAll4Byte(0x74,3042) --Apply Green Moss on spEffectId2
+
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("AllBulletsAppliesBoneFireAndGreenMoss")

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337081670</ID>
+  <Description>"msPos/MapStudio"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <Color>C0C0C0</Color>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>12</ByteLength>
+  <Address>0</Address>
+</CheatEntry>

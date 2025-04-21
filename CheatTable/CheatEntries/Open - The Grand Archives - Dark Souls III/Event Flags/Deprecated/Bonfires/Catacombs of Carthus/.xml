@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>94079</ID>
+  <Description>"Catacombs of Carthus"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78228"/>
+    <id id="78230"/>
+    <id id="78232"/>
+    <id id="78231"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

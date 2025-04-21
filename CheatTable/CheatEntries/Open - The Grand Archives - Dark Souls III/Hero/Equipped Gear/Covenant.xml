@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337078888</ID>
+  <Description>"Covenant"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>380</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

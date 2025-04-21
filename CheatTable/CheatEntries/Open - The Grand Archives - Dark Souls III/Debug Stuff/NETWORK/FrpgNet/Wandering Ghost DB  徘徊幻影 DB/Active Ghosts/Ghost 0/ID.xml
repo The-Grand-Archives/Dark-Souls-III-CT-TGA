@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097167</ID>
+  <Description>"ID"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>44</Offset>
+    <Offset>10</Offset>
+    <Offset>0</Offset>
+    <Offset>20</Offset>
+    <Offset>B98</Offset>
+  </Offsets>
+</CheatEntry>

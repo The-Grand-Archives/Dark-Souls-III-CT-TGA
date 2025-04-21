@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337078714</ID>
+  <Description>"DisableOffline"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+2A</Address>
+</CheatEntry>

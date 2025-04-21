@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099439</ID>
+  <Description>"NetPenaltyCondition2"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>2 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>124</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

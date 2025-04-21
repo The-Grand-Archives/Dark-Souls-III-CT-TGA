@@ -1,0 +1,14 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+  local PyromancyFlame = 0xCC77C0 -- Weapon ID
+  local WeaponsArray = {
+    {PyromancyFlame,0x101,"83"}, --Sorcery Cast
+    {PyromancyFlame,0x102,"13"}, --Miracle Cast
+  }
+  paramUtils:paramIterator("EquipParamWeapon",WeaponsArray,"PyroFlameCast") --Patching
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+  paramUtils:paramDepatcher("PyroFlameCast") --Depatching

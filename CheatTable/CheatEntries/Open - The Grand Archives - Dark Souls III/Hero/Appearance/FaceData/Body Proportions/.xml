@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>14</ID>
+  <Description>"Body Proportions"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="73354"/>
+    <id id="8"/>
+    <id id="9"/>
+    <id id="10"/>
+    <id id="12"/>
+    <id id="11"/>
+    <id id="13"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

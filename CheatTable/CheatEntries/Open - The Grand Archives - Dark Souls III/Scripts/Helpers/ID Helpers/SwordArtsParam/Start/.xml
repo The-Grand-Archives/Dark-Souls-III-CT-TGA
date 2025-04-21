@@ -1,0 +1,25 @@
+<CheatEntry>
+  <ID>1337256173</ID>
+  <Description>"Start"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <GroupHeader>1</GroupHeader>
+  <Address>SwordArtsParamHelper+8</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="492841"/>
+    <id id="492842"/>
+    <id id="492843"/>
+    <id id="492844"/>
+    <id id="492845"/>
+    <id id="492846"/>
+    <id id="492850"/>
+    <id id="492851"/>
+    <id id="492847"/>
+    <id id="1337012303"/>
+    <id id="492848"/>
+    <id id="492849"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

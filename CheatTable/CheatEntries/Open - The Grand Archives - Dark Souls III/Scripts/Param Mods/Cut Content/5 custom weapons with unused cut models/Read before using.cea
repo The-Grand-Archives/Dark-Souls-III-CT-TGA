@@ -1,0 +1,101 @@
+{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+disableMemrec(memrec)
+showText([[
+              5 Blades Project by Boblord
+Turns 5 cut weapon models in the files into completely custom unique weapons.
+
+Each one focuses on a different element- fire, magic, dark, lightning, and poison
+They also all scale off of a different stat primarialy- str, dex, int, fth, and lck
+
+Each script replaces them over an already existing weapon in the game(which reverts to normal on disabling the script).
+All of the weapons that they replaced were chosen to specifically drop from NPCs, who you need to fight to get them legit(or just spawn them in itemgib if you want)
+
+Note that they are all uninfusable and max out at +5 so if you have a +10 version of the weapon that it is supposed to replace, it will not work properly(functions as a +0 wep)
+
+IMPORTANT: SOME WEAPONS OVERWRITE OTHER SEMI-TRIVIAL THINGS IN ORDER TO WORK PROPERLY, WILL BE EXPLAINED IN MORE DETAIL FURTHER DOWN. IF SOME OTHER WEAPON DOES NOT SEEM RIGHT JUST TURN OFF THE SCRIPTS AND TRY AGAIN.
+
+Don't use any of these online unless you're playing with someone who also has these scripts enabled. They will not show up to them right otherwise.
+
+Contact Boblord#7082 on discord for any additional bugs/issues that may arise from these.
+
+Have fun!
+
+
+Specifics on every weapon:
+
+All weapon arts for their associated weapons buff the element innate to the weapon. The ones on Darksifter, Loyce Dueling Blade, and Eternal Glory sometimes have their vfx break in the offhand.
+
+Smoldering Shortsword:
+Fire damage str scaling straight sword that replaces the fume ugs and drops from black iron tarkus.
+Uses the flame weapon spell for the item icon.
+
+Weapon art works like the one on Lorian's UGS, and boosts fire damage
+The 2h R2s use the ugs anim. Note that neither of these changed attacks have the same stuns from the ultra.
+
+Addtional Overwrites- Name for the WA on Lorian's UGS is replaced as well.
+
+Loyce Dueling Blade:
+Magic damage dex scaling(with low int scaling too)heavy curved sword that replaces crescent moon sword and drops from the final leonhard encounter with the black eye orb.
+Normal swings take up a large portion of your stamina, so be careful with how much you swing.
+Uses the frozen weapon spell for the item icon.
+
+Weapon art works like the one from the gargoyle flame spear, with a slightly higher stun so you get caught for most of the charge but much lower actual charge damage.
+Following through with the second half of the wa(the leap) buffs the weapon with magic that looks the same as the ivory king ugs buff from ds2.
+
+Leonhard will never actually buff this weapon himself, just uses the first half of the wa to charge.
+
+Additional Overwrites- Name for the WA on Gargoyle Flame Spear is replaced as well. Gargoyle flame spear WA itself may have the magic buff wa instead of the intended fire buff WA. The changed stun carries over to the flame spear.
+Buff functions buggy in the offhand with the vfx on it.
+
+Darksifter:
+Dark damage int scaling greatsword that replaces anri's straight sword and drops from anri(or from the end of her two questlines)
+The dark damage on this greatsword scales off of your hollowing level, so 0 hollowing and it only does phys damage(even with max int), and its full dark damage with max hollowing.
+Uses the dark weapon spell for the item icon.
+
+Weapon art works in a similar fashion to the resonant weapon spell from ds2. Consumes up to 5000 souls, and buffs your dark damage based on how many souls it consumed.
+Having less souls and using the WA has the added AR from the buff decrease exponentially. It's near useless with 0 souls.
+
+Note that you should disable this script before you close the game, or cheat engine will spit out some errors that makes it a slight pain in the ass to close CE.
+Anri won't use the WA correctly either.
+
+Additional Overwrites: Name for the WA on Wolnir's GS is replaced as well. The WA on Wolnir's GS is replaced with the one from Darksifter.
+Buff functions buggy in the offhand with the vfx on it.
+
+Eternal Glory:
+Lightning damage fth scaling rapier that replaces ricard's rapier and drops from ricard in archdragon peak.
+Uses the lightning weapon spell for the item icon.
+
+The weapon art is a cross between the earth seeker wa and the lightning strike from dragonslayer swordspear.
+Using it does the earth seeker wa anim but calls down a few lightning bolts in the area infront of you. Works decently well for forcing distance in pvp.
+Note that an enemy cant take damage from multiple lightning bolts during the wa. Only once per wa will they take damage from it.
+Buffs with lightning afterwards as well.
+
+Ricard won't use this wa properly either.
+
+MINOR IMPORTANT ISSUES: completely messes up the stamina cost on greathammers, disable this script before you try and run around with one.
+Shieldpokes do not do any damage, don't use them. Backstabs/ripostes also do lowered damage.
+
+Additional Overwrites: Name for the WA on Earth Seeker is replaced as well. Greathammer stamina cost is completely changed as said earlier. The WA on the earth seeker is replaced with this one as well.
+Buff functions buggy in the offhand with the vfx on it. Shieldpokes do no damage and any critical attacks do low damage.
+
+
+Revenant:
+Poison damage lck scaling dagger that replaces the butcher's knife and drops from mildred in road of sacrifices.
+The poison buildup of this weapon scales with luck.
+Uses the hidden weapon spell for the item icon.
+
+The weapon art works like bloodlust, damaging you and inflicting you with poison buildup and a lesser amount of toxic buildup.
+Provides a short lived buff that adds toxic buildup to the weapon on top of it. Lasts somewhere around 13-15 seconds.
+If you keep using the WA over and over to try and proc toxic, you will poison yourself after a few uses, and eventually toxic yourself after a few more.
+Both of the self inflicted poison/toxic procs from using this weapon are extra strong, so be very careful when trying to use the buff.
+
+Additional Overwrites: Name for the WA on Butcher's Knife is replaced as well. The WA on the Butcher's Knife is replaced with the one from Revenant.
+Make sure your Butcher's Knife that you replace this weapon on is a +5 uninfused.
+
+
+]])
+
+[DISABLE]

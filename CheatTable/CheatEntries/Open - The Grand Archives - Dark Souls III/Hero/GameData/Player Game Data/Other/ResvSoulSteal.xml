@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337078918</ID>
+  <Description>"ResvSoulSteal"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>F5</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

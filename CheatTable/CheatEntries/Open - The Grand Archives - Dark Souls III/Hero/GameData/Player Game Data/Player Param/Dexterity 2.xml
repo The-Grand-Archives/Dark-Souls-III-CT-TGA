@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337080945</ID>
+  <Description>"Dexterity"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <Color>C0C0C0</Color>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>214</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>89392</ID>
+  <Description>"---NPC ThinkParam"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="89393"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

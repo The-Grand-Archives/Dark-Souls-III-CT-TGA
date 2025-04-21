@@ -1,0 +1,20 @@
+[ENABLE]
+aobscanmodule(AHSSell_Call_Call,$process,?? ?? ?? ?? 90 48 8b 48 08 48 89 4b 08 48 8b 40 10 48 89 43 10 48 8d ?? ?? ?? ?? ?? 48 89 44 24 28 c7 43 18 06 00 00 00)
+alloc(HandmaidSellItem,100,DarkSoulsIII.exe)
+createthread(HandmaidSellItem)
+
+HandmaidSellItem:
+sub rsp,48
+mov rcx,AHSSell_Call_Call
+movsxd rcx,dword ptr [rcx]
+mov rax,AHSSell_Call_Call+4
+add rax,rcx
+lea rcx,[rsp+28]
+call rax
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(HandmaidSellItem)

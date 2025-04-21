@@ -1,0 +1,30 @@
+[ENABLE]
+
+aobscanmodule(AllShopAOB,DarkSoulsIII.exe,8B 58 10 85 DB) // should be unique
+alloc(newmem,32,AllShopAOB)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov ebx,FFFFFFFF
+  test ebx,ebx
+  jmp return
+
+AllShopAOB:
+  jmp code
+return:
+registersymbol(AllShopAOB)
+
+[DISABLE]
+
+AllShopAOB:
+  db 8B 58 10 85 DB
+
+unregistersymbol(AllShopAOB)
+dealloc(newmem)
+
+
+

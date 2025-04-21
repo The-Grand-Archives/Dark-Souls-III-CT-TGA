@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337080811</ID>
+  <Description>"Multiplayer"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337080955"/>
+    <id id="78520"/>
+    <id id="1337097272"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

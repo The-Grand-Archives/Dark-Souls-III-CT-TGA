@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337098920</ID>
+  <Description>"EscapeWallWingAngY [deg]"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>364</Offset>
+    <Offset>60</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

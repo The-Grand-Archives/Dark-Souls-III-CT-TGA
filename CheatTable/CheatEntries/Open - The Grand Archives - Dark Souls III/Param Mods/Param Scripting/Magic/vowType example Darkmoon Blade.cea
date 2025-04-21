@@ -1,0 +1,25 @@
+{
+	Author: inuNorii
+	Description: Example on using vowtypes
+                 Darkmoon Blade now requires being in the
+                 Blades of the Darkmoon covenant
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local magic = Magic:new("vowTypeExample",3591000)
+magic:vowType0(0) --No covenant
+magic:vowType1(1) --Blades of the Darkmoon
+magic:vowType2(0) --Warrior of Sunlight
+magic:vowType3(0) --Mound-makers
+magic:vowType4(0) --Spears of the Church
+magic:vowType5(0) --Fingers of Rosaria
+magic:vowType6(0) --Watchdogs of Farron
+magic:vowType7(0) --Aldrich Faithful
+magic:vowType8(0) --Way of Blue
+magic:vowType9(0) --Blue Sentinels
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("vowTypeExample")

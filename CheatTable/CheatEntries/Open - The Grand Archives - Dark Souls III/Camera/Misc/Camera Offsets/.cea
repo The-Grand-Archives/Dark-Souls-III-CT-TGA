@@ -1,0 +1,74 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.0")
+{$asm}
+[ENABLE]
+define(camoffsets,DarkSoulsIII.exe+514ABD)
+alloc(newmem,$1000,camoffsets)
+
+label(code)
+label(return)
+label(coords)
+registersymbol(coords)
+
+newmem:
+
+code:
+  mov [coords],rsi
+  jmp return
+
+
+////
+
+///
+coords:
+dq 0
+///
+
+
+camoffsets:
+  jmp code
+  nop
+  nop
+  nop
+return:
+registersymbol(camoffsets)
+
+[DISABLE]
+
+camoffsets:
+  db 66 0F 7F 9E 70 01 00 00
+unregistersymbol(coords)
+unregistersymbol(camoffsets)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+50F40D
+
+"DarkSoulsIII.exe"+50F3D5: F3 0F 5C C2              -  subss xmm0,xmm2
+"DarkSoulsIII.exe"+50F3D9: F3 0F 59 86 D0 03 00 00  -  mulss xmm0,[rsi+000003D0]
+"DarkSoulsIII.exe"+50F3E1: F3 0F 58 D0              -  addss xmm2,xmm0
+"DarkSoulsIII.exe"+50F3E5: F3 0F 10 8E 7C 01 00 00  -  movss xmm1,[rsi+0000017C]
+"DarkSoulsIII.exe"+50F3ED: F3 0F 10 86 78 01 00 00  -  movss xmm0,[rsi+00000178]
+"DarkSoulsIII.exe"+50F3F5: F3 0F 10 9E 70 01 00 00  -  movss xmm3,[rsi+00000170]
+"DarkSoulsIII.exe"+50F3FD: 0F 14 D8                 -  unpcklps xmm3,xmm0
+"DarkSoulsIII.exe"+50F400: 0F 14 D1                 -  unpcklps xmm2,xmm1
+"DarkSoulsIII.exe"+50F403: 0F 14 DA                 -  unpcklps xmm3,xmm2
+"DarkSoulsIII.exe"+50F406: 0F 29 9D 50 01 00 00     -  movaps [rbp+00000150],xmm3
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+50F40D: 66 0F 7F 9E 70 01 00 00  -  movdqa [rsi+00000170],xmm3
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+50F415: C7 45 B0 00 00 34 43     -  mov [rbp-50],43340000
+"DarkSoulsIII.exe"+50F41C: C7 45 0C 00 00 00 00     -  mov [rbp+0C],00000000
+"DarkSoulsIII.exe"+50F423: 48 83 C1 14              -  add rcx,14
+"DarkSoulsIII.exe"+50F427: F3 0F 10 01              -  movss xmm0,[rcx]
+"DarkSoulsIII.exe"+50F42B: 44 0F 2F E0              -  comiss xmm12,xmm0
+"DarkSoulsIII.exe"+50F42F: 76 06                    -  jna DarkSoulsIII.exe+50F437
+"DarkSoulsIII.exe"+50F431: 48 8D 45 0C              -  lea rax,[rbp+0C]
+"DarkSoulsIII.exe"+50F435: EB 0F                    -  jmp DarkSoulsIII.exe+50F446
+"DarkSoulsIII.exe"+50F437: 48 8D 45 B0              -  lea rax,[rbp-50]
+"DarkSoulsIII.exe"+50F43B: 0F 2F 05 D6 1F 7E 03     -  comiss xmm0,[DarkSoulsIII.exe+3CF1418]
+}
+
+
+

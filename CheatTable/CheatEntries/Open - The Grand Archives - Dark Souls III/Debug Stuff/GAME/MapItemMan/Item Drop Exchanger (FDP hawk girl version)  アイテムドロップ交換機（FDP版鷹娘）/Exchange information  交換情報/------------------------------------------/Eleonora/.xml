@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>1337098373</ID>
+  <Description>"Eleonora"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>10*0</Offset>
+    <Offset>28</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337098374"/>
+    <id id="1337098375"/>
+    <id id="1337098376"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

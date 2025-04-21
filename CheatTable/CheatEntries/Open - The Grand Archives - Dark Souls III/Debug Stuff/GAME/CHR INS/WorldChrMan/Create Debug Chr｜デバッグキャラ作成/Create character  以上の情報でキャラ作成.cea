@@ -1,0 +1,17 @@
+[ENABLE]
+alloc(CreateDebugChr,$100,DarkSoulsIII.exe)
+createthread(CreateDebugChr)
+
+CreateDebugChr:
+sub rsp,28
+mov rcx,[WorldChrMan]
+mov rcx,[rcx+3018]
+mov edx,01
+call 140A07E60
+add rsp,28
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(CreateDebugChr)

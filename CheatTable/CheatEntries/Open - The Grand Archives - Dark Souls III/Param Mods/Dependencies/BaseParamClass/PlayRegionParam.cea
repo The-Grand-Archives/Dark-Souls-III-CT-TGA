@@ -1,0 +1,114 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+PlayRegionParam = BaseParamClass:new()
+
+function PlayRegionParam:new(uuid, id, address)
+	local o = {}
+	self.__index = self
+	setmetatable(o, self)
+
+	o:init("PlayRegionParam", uuid, id, address)
+	return o
+end
+
+function PlayRegionParam:multiPlayZoneId(value)
+    local current = self:read4Byte(0x00)
+    if value ~= nil then
+        self:patch4Byte(0x00, value)
+    end
+    return current
+end
+
+function PlayRegionParam:multiPlayStartLimitEventFlagId(value)
+    local current = self:read4Byte(0x04)
+    if value ~= nil then
+        self:patch4Byte(0x04, value)
+    end
+    return current
+end
+
+function PlayRegionParam:otherDisableDistance(value)
+    self:patchloate(0x08, value)
+end
+
+function PlayRegionParam:pcPositionSaveLimitEventFlagId(value)
+    self:patch4Byte(0x0C, value)
+end
+
+function PlayRegionParam:multiPlayHostLimitEventFlagId(value)
+	local current = self:read4Byte(0x10)
+	if value ~= nil then
+		self:patch4Byte(0x10, value)
+	end
+	return current
+end
+
+function PlayRegionParam:DisolvedEventFlag(value)
+    self:patch2Byte(0x14, value)
+end
+
+function PlayRegionParam:LoadOfCinder(value)
+    self:patchByte(0x16, value)
+end
+
+function PlayRegionParam:isEnableEvent(value)
+    self:patchBinary(0x17, value, 0)
+end
+
+function PlayRegionParam:BonfireEventId0(value)
+    self:patch4Byte(0x18, value)
+end
+
+function PlayRegionParam:BonfireEventId1(value)
+    self:patch4Byte(0x1C, value)
+end
+
+function PlayRegionParam:BonfireEventId2(value)
+    self:patch4Byte(0x20, value)
+end
+
+function PlayRegionParam:BonfireEventId3(value)
+    self:patch4Byte(0x24, value)
+end
+
+function PlayRegionParam:BonfireEventId4(value)
+    self:patch4Byte(0x28, value)
+end
+
+function PlayRegionParam:BonfireEventId5(value)
+    self:patch4Byte(0x2C, value)
+end
+
+function PlayRegionParam:BonfireEventId6(value)
+    self:patch4Byte(0x30, value)
+end
+
+function PlayRegionParam:BonfireEventId7(value)
+    self:patch4Byte(0x34, value)
+end
+
+function PlayRegionParam:BonfireEventId8(value)
+    self:patch4Byte(0x38, value)
+end
+
+function PlayRegionParam:BonfireEventId9(value)
+    self:patch4Byte(0x3C, value)
+end
+
+function PlayRegionParam:enableBloodstain(value)
+    self:patchBinary(0x40, value, 0)
+end
+
+function PlayRegionParam:enableBloodMessage(value)
+    self:patchBinary(0x40, value, 1)
+end
+
+function PlayRegionParam:enableGhost(value)
+    self:patchBinary(0x40, value, 2)
+end
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end

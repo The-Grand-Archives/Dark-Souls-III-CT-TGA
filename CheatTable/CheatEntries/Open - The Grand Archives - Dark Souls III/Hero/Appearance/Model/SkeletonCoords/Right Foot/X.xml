@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337085354</ID>
+  <Description>"X"</Description>
+  <VariableType>Float</VariableType>
+  <Address>DarkSoulsIII.exe+494C8B8</Address>
+  <Offsets>
+    <Offset>58</Offset>
+    <Offset>48</Offset>
+    <Offset>10</Offset>
+    <Offset>0</Offset>
+    <Offset>0</Offset>
+    <Offset>0</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>

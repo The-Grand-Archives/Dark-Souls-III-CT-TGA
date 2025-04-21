@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337098978</ID>
+  <Description>"EnableCamMapAdjust | マップ指定のカメラモードパラムが有効か"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>433</Offset>
+    <Offset>60</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

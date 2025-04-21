@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337081898</ID>
+  <Description>"Peripheral parts acquisition distance | 周辺パーツ取得距離"</Description>
+  <VariableType>Float</VariableType>
+  <Address>DarkSoulsIII.exe+477F498</Address>
+  <Offsets>
+    <Offset>172C</Offset>
+  </Offsets>
+</CheatEntry>

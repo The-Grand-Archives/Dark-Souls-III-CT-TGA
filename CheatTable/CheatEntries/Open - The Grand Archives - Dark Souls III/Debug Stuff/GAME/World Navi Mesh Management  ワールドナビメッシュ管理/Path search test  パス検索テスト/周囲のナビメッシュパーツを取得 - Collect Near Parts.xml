@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081916</ID>
+  <Description>"周囲のナビメッシュパーツを取得 - Collect Near Parts"</Description>
+  <Color>C0C0C0</Color>
+  <VariableType>String</VariableType>
+  <Length>100</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>14295DBC0</Address>
+</CheatEntry>

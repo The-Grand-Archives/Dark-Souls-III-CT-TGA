@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080926</ID>
+  <Description>"LoadOfCinder"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>100</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

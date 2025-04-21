@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097462</ID>
+  <Description>"BrightnessGammaScale"</Description>
+  <VariableType>Float</VariableType>
+  <Address>RendMan</Address>
+  <Offsets>
+    <Offset>98</Offset>
+  </Offsets>
+</CheatEntry>

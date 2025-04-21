@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099431</ID>
+  <Description>"Host Weakness Compensation"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>2 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>14C</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

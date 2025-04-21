@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337190220</ID>
+  <Description>"0x7438 - Attacks 2"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>7438</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

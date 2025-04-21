@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337081746</ID>
+  <Description>"Equipped Gestures"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337081747"/>
+    <id id="1337081748"/>
+    <id id="1337081749"/>
+    <id id="1337081750"/>
+    <id id="1337081751"/>
+    <id id="1337081752"/>
+    <id id="1337081753"/>
+    <id id="1337183582"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

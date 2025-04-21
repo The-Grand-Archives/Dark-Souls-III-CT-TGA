@@ -1,0 +1,22 @@
+[ENABLE]
+define(DontNopThis,DarkSoulsIII.exe+5BD567)
+registersymbol(DontNopThis)
+
+DontNopThis:
+  db 90 90 90 90 90 90 90
+
+[[[Target_ptr]+18]+30]+4F8:
+
+db 01
+
+[DISABLE]
+
+DontNopThis:
+  db 80 A3 F8 04 00 00 FC
+
+[[[Target_ptr]+18]+30]+4F8:
+
+db 00
+
+unregistersymbol(DontNopThis)
+

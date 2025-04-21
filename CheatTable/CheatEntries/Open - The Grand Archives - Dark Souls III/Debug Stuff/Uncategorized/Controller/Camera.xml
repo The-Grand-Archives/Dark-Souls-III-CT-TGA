@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337078685</ID>
+  <Description>"Camera"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>8 Bytes</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>150</Offset>
+  </Offsets>
+</CheatEntry>

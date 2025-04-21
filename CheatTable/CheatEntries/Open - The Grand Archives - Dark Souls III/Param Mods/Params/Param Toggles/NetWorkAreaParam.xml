@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337079099</ID>
+  <Description>"NetWorkAreaParam"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disabled
+1:Enabled
+</DropDownList>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>SoloParamRepository</Address>
+  <Offsets>
+    <Offset>DE8</Offset>
+  </Offsets>
+</CheatEntry>

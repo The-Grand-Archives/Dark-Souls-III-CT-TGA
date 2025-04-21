@@ -1,0 +1,24 @@
+<CheatEntry>
+  <ID>1337256182</ID>
+  <Description>"Start"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <GroupHeader>1</GroupHeader>
+  <Address>BehaviorParam_PCHelper+8</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337011585"/>
+    <id id="1337011586"/>
+    <id id="489721"/>
+    <id id="489720"/>
+    <id id="1337011587"/>
+    <id id="1337011588"/>
+    <id id="1337011589"/>
+    <id id="489714"/>
+    <id id="489713"/>
+    <id id="1337011590"/>
+    <id id="1337011591"/>
+    <id id="492364"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

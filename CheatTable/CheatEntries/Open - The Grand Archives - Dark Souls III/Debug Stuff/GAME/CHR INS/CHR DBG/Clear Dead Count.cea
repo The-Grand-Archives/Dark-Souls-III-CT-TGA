@@ -1,0 +1,15 @@
+[ENABLE]
+alloc(Debug_ClearDeadCount,256,DarkSoulsIII.exe)
+createthread(Debug_ClearDeadCount)
+
+Debug_ClearDeadCount:
+sub rsp,48
+mov edx,00000002
+call DarkSoulsIII.exe+8D8750
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_ClearDeadCount)

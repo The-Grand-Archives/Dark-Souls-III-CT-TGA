@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337038844</ID>
+  <Description>"rightHandEquippable"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+101</Address>
+</CheatEntry>

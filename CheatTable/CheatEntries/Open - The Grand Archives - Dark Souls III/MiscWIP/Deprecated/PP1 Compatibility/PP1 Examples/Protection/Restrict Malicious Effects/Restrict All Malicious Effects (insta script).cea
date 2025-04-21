@@ -1,0 +1,45 @@
+{ Game   : DarkSoulsIII.exe
+  Version: 1.13
+  Date   : 2017-05-03
+  Author : Igromanru
+  Description: Restrict all malicious effects in one script.
+}
+
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+	local restrictEffects = {
+	  {13,0x16c,"04"}, --Humanity Steal
+	  {33,0x16c,"04"}, --Curse
+	  {34,0x16c,"04"}, --Crystal Curse
+	  {45,0x16c,"04"}, --Curse
+	  {1600,0x16c,"04"}, --Drain
+	  {1610,0x16c,"04"}, --Drain
+	  {1620,0x16c,"04"}, --Drain
+	  {3121,0x16c,"04"}, --Toxic from Oceiros Garden
+	  {4902,0x16c,"04"}, --Freeze self
+	  {5100,0x16c,"04"}, --Leeches
+	  {5101,0x16c,"04"}, --Leeches
+	  {7020,0x16c,"04"}, --7020
+	  {7030,0x16c,"04"}, --7030
+	  {7080,0x16c,"04"}, --7080
+	  {7092,0x16c,"04"}, --7092
+	  {7120,0x16c,"04"}, --7120
+	  {7130,0x16c,"04"}, --7130
+	  {7135,0x16c,"04"}, --7135
+	  {7140,0x16c,"04"}, --7140
+	  {7150,0x16c,"04"}, --7150
+	  {7160,0x16c,"04"}, --7160
+	  {7300,0x16c,"04"}, --7300
+	  {7400,0x16c,"04"}, --7400
+	  {11013,0x16c,"04"}, --Instadeath effect
+	  {12150,0x16c,"04"}, --12150
+	  {12153,0x16c,"04"}, --12153
+	  {103750410,0x16c, "04"}, --Instadeath
+	}
+	paramUtils:paramIterator("SpEffectParam",restrictEffects,"RestrictAllMaliciousEffects")
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+	paramUtils:paramDepatcher("RestrictAllMaliciousEffects")

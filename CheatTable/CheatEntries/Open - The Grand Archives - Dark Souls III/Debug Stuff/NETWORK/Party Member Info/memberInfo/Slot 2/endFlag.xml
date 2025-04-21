@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081434</ID>
+  <Description>"endFlag"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>D88</Offset>
+  </Offsets>
+</CheatEntry>

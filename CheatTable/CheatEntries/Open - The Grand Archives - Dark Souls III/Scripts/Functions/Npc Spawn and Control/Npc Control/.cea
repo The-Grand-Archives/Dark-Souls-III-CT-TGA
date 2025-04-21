@@ -1,0 +1,28 @@
+[ENABLE]
+aobscanmodule(NpcControl_AOB,$process,48 8B 05 ???????? 48 33 C4 48 89 44 24 ?? 48 8B F9 81 FA ???????? 0F8F)
+define(NpcControl_Call,NpcControl_AOB-6)
+alloc(NpcControl,$100,DarkSoulsIII.exe)
+label(NpcControl_Data)
+registerSymbol(NpcControl)
+registerSymbol(NpcControl_Data)
+
+NpcControl:
+sub rsp,28
+mov edx,[NpcControl_Data+00]
+mov rcx,[NpcControl_Data+04]
+test rcx,rcx
+je short end
+call NpcControl_Call
+end:
+add rsp,28
+ret
+
+NpcControl_Data:
+dd 00000000
+dq 0000000000000000
+
+[DISABLE]
+dealloc(NpcControl)
+unregisterSymbol(NpcControl)
+unregisterSymbol(NpcControl_Data)
+

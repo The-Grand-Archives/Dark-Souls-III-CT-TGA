@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337098187</ID>
+  <Description>"All-in-one debug drawing | 全風デバッグ描画"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WindWorld</Address>
+  <Offsets>
+    <Offset>70</Offset>
+  </Offsets>
+</CheatEntry>

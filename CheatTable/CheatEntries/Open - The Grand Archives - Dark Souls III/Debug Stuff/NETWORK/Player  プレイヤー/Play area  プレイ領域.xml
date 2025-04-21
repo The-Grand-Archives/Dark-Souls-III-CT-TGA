@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097627</ID>
+  <Description>"Play area | プレイ領域"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>4</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>

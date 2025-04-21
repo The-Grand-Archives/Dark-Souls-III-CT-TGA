@@ -1,0 +1,402 @@
+{$lua}
+function InitializeForm()
+  --form
+  form = createForm(true)
+  form.caption = [[Select Weapons]]
+  form.centerScreen()
+  form.width = 320
+  form.height = 525
+  form.BorderStyle = bsDialog
+  form.OnClose = function (sender)
+    return caFree
+  end
+  --Label
+  infusionL = createLabel(form)
+  infusionL.caption =
+  [[
+Provide a list of weapons to spawn at once.
+
+Format per line: {hex ID},{infusion ID},{level}
+ex. "F4240,1,8" (without quotes) gives Heavy Dagger+8
+  ]]
+  infusionL.left = [[10]]
+  infusionL.top = [[10]]
+  infusionL.width = [[50]]
+  infusionL.height = [[60]]
+  --Memo
+  infusionM = createMemo(form)
+  infusionM.left = [[10]]
+  infusionM.top = [[75]]
+  infusionM.width = [[300]]
+  infusionM.height = [[400]]
+  infusionM.setScrollbars(ssAutoVertical)
+  --Buttons
+  spawnB = createButton(form)
+  spawnB.caption = [[Spawn Weapons]]
+  spawnB.left = [[10]]
+  spawnB.top = [[485]]
+  spawnB.width = [[300]]
+  spawnB.height = [[30]]
+end
+
+local weaponsBase = -- Base Weapons
+{
+  [0x000F4240] = true, --Dagger
+  [0x000F6950] = true, --Bandit's Knife
+  [0x000F9060] = true, --Parrying Dagger
+  [0x000FDE80] = true, --Rotten Ghru Dagger
+  [0x00102CA0] = true, --Harpe
+  [0x001053B0] = true, --Scholar's Candlestick
+  [0x00107AC0] = true, --Tailbone Short Sword
+  [0x0010A1D0] = true, --Corvian Greatknife
+  [0x00111700] = true, --Handmaid's Dagger
+  [0x001E8480] = true, --Shortsword
+  [0x001EF9B0] = true, --Broken Straight Sword
+  [0x001F6EE0] = true, --Lothric Knight Sword
+  [0x00203230] = true, --Sunlight Straight Sword
+  [0x00205940] = true, --Rotten Ghru Curved Sword
+  [0x0020A760] = true, --Irithyll Straight Sword
+  [0x0020F580] = true, --Cleric's Candlestick
+  [0x002143A0] = true, --Morion Blade
+  [0x002191C0] = true, --Astora Straight Sword
+  [0x0021B8D0] = true, --Barbed Straight Sword
+  [0x0021DFE0] = true, --Executioner's Greatsword
+  [0x002206F0] = true, --Anri's Straight Sword
+  [0x002DC6C0] = true, --Estoc
+  [0x002DEDD0] = true, --Mail Breaker
+  [0x002E14E0] = true, --Rapier
+  [0x002E3BF0] = true, --Ricard's Rapier
+  [0x002E6300] = true, --Crystal Sage's Rapier
+  [0x002E8A10] = true, --Irithyll Rapier
+  [0x003D3010] = true, --Shotel
+  [0x003D7E30] = true, --Scimitar
+  [0x003DA540] = true, --Falchion
+  [0x003DCC50] = true, --Carthus Curved Sword
+  [0x003DF360] = true, --Carthus Curved Greatsword
+  [0x003E1A70] = true, --Pontiff Knight Curved Sword
+  [0x003E4180] = true, --Storm Curved Sword
+  [0x003E6890] = true, --Painting Guardian's Curved Sword
+  [0x003E8FA0] = true, --Crescent Moon Sword
+  [0x003EB6B0] = true, --Carthus Shotel
+  [0x004C4B40] = true, --Uchigatana
+  [0x004C7250] = true, --Washing Pole
+  [0x004C9960] = true, --Chaos Blade
+  [0x004CC070] = true, --Black Blade
+  [0x004CE780] = true, --Bloodlust
+  [0x004D0E90] = true, --Darkdrift
+  [0x005B8D80] = true, --Bastard Sword
+  [0x005BDBA0] = true, --Claymore
+  [0x005C29C0] = true, --Zweihander
+  [0x005C50D0] = true, --Greatsword
+  [0x005C9EF0] = true, --Astora Greatsword
+  [0x005CC600] = true, --Murakumo
+  [0x005D1420] = true, --Lothric Knight Greatsword
+  [0x005D8950] = true, --Black Knight Greatsword
+  [0x005DB060] = true, --Flamberge
+  [0x005DD770] = true, --Exile Greatsword
+  [0x005E2590] = true, --Greatsword of Judgment
+  [0x005E4CA0] = true, --Profaned Greatsword
+  [0x005E73B0] = true, --Cathedral Knight Greatsword
+  [0x005E9AC0] = true, --Farron Greatsword
+  [0x005F0FF0] = true, --Yhorm's Great Machete
+  [0x005F3700] = true, --Dark Sword
+  [0x005F5E10] = true, --Black Knight Sword
+  [0x005F8520] = true, --Lorian's Greatsword
+  [0x005FAC30] = true, --Twin Princes' Greatsword
+  [0x005FD340] = true, --Lothric's Holy Sword
+  [0x005FFA50] = true, --Wolnir's Holy Sword
+  [0x00602160] = true, --Wolf Knight's Greatsword
+  [0x00604870] = true, --Hollowslayer Greatsword
+  [0x00606F80] = true, --Moonlight Greatsword
+  [0x00609690] = true, --Drakeblood Greatsword
+  [0x0060BDA0] = true, --Firelink Greatsword
+  [0x0060E4B0] = true, --Fume Ultra Greatsword
+  [0x00610BC0] = true, --Old Wolf Curved Sword
+  [0x006132D0] = true, --Storm Ruler
+  [0x006ACFC0] = true, --Hand Axe
+  [0x006AF6D0] = true, --Battle Axe
+  [0x006B1DE0] = true, --Brigand Axe
+  [0x006B6C00] = true, --Crescent Axe
+  [0x006B9310] = true, --Greataxe
+  [0x001EAB90] = true, --Long Sword
+  [0x006BE130] = true, --Butcher Knife
+  [0x006C0840] = true, --Dragonslayer's Axe
+  [0x006C5660] = true, --Thrall Axe
+  [0x006C7D70] = true, --Dragonslayer Greataxe
+  [0x006CA480] = true, --Demon's Greataxe
+  [0x006CCB90] = true, --Eleonora
+  [0x006D19B0] = true, --Man Serpent Hatchet
+  [0x007A1200] = true, --Club
+  [0x007A3910] = true, --Mace
+  [0x007A6020] = true, --Morning Star
+  [0x007A8730] = true, --Reinforced Club
+  [0x007AFC60] = true, --Large Club
+  [0x007B4A80] = true, --Great Club
+  [0x007BBFB0] = true, --Great Mace
+  [0x007C8300] = true, --Great Wooden Hammer
+  [0x007CAA10] = true, --Gargoyle Flame Hammer
+  [0x007CD120] = true, --Vordt's Great Hammer
+  [0x007CF830] = true, --Old King's Great Hammer
+  [0x007D6D60] = true, --Heysel Pick
+  [0x007DBB80] = true, --Warpick
+  [0x007DE290] = true, --Pickaxe
+  [0x007E09A0] = true, --Dragon Tooth
+  [0x007E30B0] = true, --Smough's Great Hammer
+  [0x007E57C0] = true, --Blacksmith Hammer
+  [0x007E7ED0] = true, --Morne's Great Hammer
+  [0x007EA5E0] = true, --Spiked Mace
+  [0x00895440] = true, --Spear
+  [0x00897B50] = true, --Winged Spear
+  [0x0089C970] = true, --Partizan
+  [0x008A8CC0] = true, --Greatlance
+  [0x008AB3D0] = true, --Lothric Knight Long Spear
+  [0x008ADAE0] = true, --Four-Pronged Plow
+  [0x008B01F0] = true, --Gargoyle Flame Spear
+  [0x008B2900] = true, --Rotten Ghru Spear
+  [0x008B5010] = true, --Tailbone Spear
+  [0x008B7720] = true, --Soldering Iron
+  [0x008BC540] = true, --Dragonslayer Swordspear
+  [0x008BEC50] = true, --Arstor's Spear
+  [0x008C1360] = true, --Saint Bident
+  [0x008C3A70] = true, --Yorshka's Spear
+  [0x008C6180] = true, --Pike
+  [0x008CAFA0] = true, --Dragonslayer Spear
+  [0x00989680] = true, --Great Scythe
+  [0x0098BD90] = true, --Lucerne
+  [0x0098E4A0] = true, --Glaive
+  [0x00990BB0] = true, --Halberd
+  [0x009959D0] = true, --Black Knight Greataxe
+  [0x0099A7F0] = true, --Pontiff Knight Great Scythe
+  [0x0099CF00] = true, --Great Corvian Scythe
+  [0x0099F610] = true, --Winged Knight Halberd
+  [0x009A1D20] = true, --Gundyr's Halberd
+  [0x009AB960] = true, --Red Hilted Halberd
+  [0x009AE070] = true, --Black Knight Glaive
+  [0x009B0780] = true, --Immolation Tinder
+  [0x00A7D8C0] = true, --Claw
+  [0x00A7FFD0] = true, --Caestus
+  [0x00A826E0] = true, --Manikin Claws
+  [0x00A84DF0] = true, --Demon's Fist
+  [0x00A87500] = true, --Dark Hand
+  [0x00B71B00] = true, --Whip
+  [0x00B7B740] = true, --Witch's Locks
+  [0x00B7DE50] = true, --Notched Whip
+  [0x00B80560] = true, --Spotted Whip
+  [0x00C72090] = true, --Talisman
+  [0x00C747A0] = true, --Sorcerer's Staff
+  [0x00C76EB0] = true, --Storyteller's Staff
+  [0x00C795C0] = true, --Mendicant's Staff
+  [0x00C7E3E0] = true, --Man-grub's Staff
+  [0x00C80AF0] = true, --Archdeacon's Great Staff
+  [0x00C83200] = true, --Golden Ritual Spear
+  [0x00C88020] = true, --Yorshka's Chime
+  [0x00C8CE40] = true, --Sage's Crystal Staff
+  [0x00C8F550] = true, --Heretic's Staff
+  [0x00C91C60] = true, --Court Sorcerer's Staff
+  [0x00C94370] = true, --Witchtree Branch
+  [0x00C96A80] = true, --Izalith Staff
+  [0x00C99190] = true, --Cleric's Sacred Chime
+  [0x00C9B8A0] = true, --Priest's Chime
+  [0x00C9DFB0] = true, --Saint-tree Bellvine
+  [0x00CA06C0] = true, --Caitha's Chime
+  [0x00CA2DD0] = true, --Crystal Chime
+  [0x00CA54E0] = true, --Sunlight Talisman
+  [0x00CA7BF0] = true, --Canvas Talisman
+  [0x00CAA300] = true, --Sunless Talisman
+  [0x00CACA10] = true, --Saint's Talisman
+  [0x00CAF120] = true, --White Hair Talisman
+  [0x00CC77C0] = true, --Pyromancy Flame
+  [0x00CF8500] = true, --Dragonslayer Greatbow
+  [0x00D5C690] = true, --Short Bow
+  [0x00D5EDA0] = true, --Composite Bow
+  [0x00D63BC0] = true, --Light Crossbow
+  [0x00D662D0] = true, --Arbalest
+  [0x00D689E0] = true, --Longbow
+  [0x00D6B0F0] = true, --Dragonrider Bow
+  [0x00D6FF10] = true, --Avelyn
+  [0x00D72620] = true, --Knight's Crossbow
+  [0x00D74D30] = true, --Heavy Crossbow
+  [0x00D79B50] = true, --Darkmoon Longbow
+  [0x00D7C260] = true, --Onislayer Greatbow
+  [0x00D7E970] = true, --Black Bow of Pharis
+  [0x00D83790] = true, --Sniper Crossbow
+  [0x00F42400] = true, --Sellsword Twinblades
+  [0x00F47220] = true, --Warden Twinblades
+  [0x00F49930] = true, --Winged Knight Twinaxes
+  [0x00F4C040] = true, --Dancer's Enchanted Swords
+  [0x00F4E750] = true, --Great Machete
+  [0x00F50E60] = true, --Brigand Twindaggers
+  [0x00F53570] = true, --Gotthard Twinswords
+  [0x00F58390] = true, --Onikiri and Ubadachi
+  [0x00F5AAA0] = true, --Drang Twinspears
+  [0x00F61FD0] = true, --Drang Hammers
+  [0x01312D00] = true, --Buckler   <-- Shields start here
+  [0x01315410] = true, --Small Leather Shield
+  [0x0131A230] = true, --Round Shield
+  [0x0131C940] = true, --Large Leather Shield
+  [0x01323E70] = true, --Hawkwood's Shield
+  [0x01326580] = true, --Iron Round Shield
+  [0x0132DAB0] = true, --Wooden Shield
+  [0x013301C0] = true, --Kite Shield
+  [0x013328D0] = true, --Ghru Rotshield
+  [0x013376F0] = true, --Havel's Greatshield
+  [0x01339E00] = true, --Target Shield
+  [0x0133C510] = true, --Elkhorn Round Shield
+  [0x0133EC20] = true, --Warrior's Round Shield
+  [0x01341330] = true, --Caduceus Round Shield
+  [0x01343A40] = true, --Red and White Round Shield
+  [0x01346150] = true, --Plank Shield
+  [0x01348860] = true, --Leather Shield
+  [0x0134AF70] = true, --Crimson Parma
+  [0x0134D680] = true, --Eastern Iron Shield
+  [0x0134FD90] = true, --Llewellyn Shield
+  [0x013572C0] = true, --Sacred Bloom Shield
+  [0x01354BB0] = true, --Golden Falcon Shield
+  [0x013572C0] = true, --Sacred Bloom Shield
+  [0x01409650] = true, --Lothric Knight Shield
+  [0x01410B80] = true, --Knight Shield
+  [0x014159A0] = true, --Pontiff Knight Shield
+  [0x014180B0] = true, --Carthus Shield
+  [0x0141F5E0] = true, --Black Knight Shield
+  [0x01424400] = true, --Silver Knight Shield
+  [0x01426B10] = true, --Spiked Shield
+  [0x01429220] = true, --Pierce Shield
+  [0x0142B930] = true, --East-West Shield
+  [0x0142E040] = true, --Sunlight Shield
+  [0x01430750] = true, --Crest Shield
+  [0x01432E60] = true, --Dragon Crest Shield
+  [0x01435570] = true, --Spider Shield
+  [0x01437C80] = true, --Grass Crest Shield
+  [0x0143A390] = true, --Sunset Shield
+  [0x0143CAA0] = true, --Golden Wing Crest Shield
+  [0x0143F1B0] = true, --Blue Wooden Shield
+  [0x014418C0] = true, --Silver Eagle Kite Shield
+  [0x01443FD0] = true, --Stone Parma
+  [0x014466E0] = true, --Spirit Tree Crest Shield
+  [0x01448DF0] = true, --Porcine Shield
+  [0x0144B500] = true, --Shield of Want
+  [0x0144DC10] = true, --Wargod Wooden Shield
+  [0x014FD890] = true, --Lothric Knight Greatshield
+  [0x014FFFA0] = true, --Cathedral Knight Greatshield
+  [0x01504DC0] = true, --Dragonslayer Greatshield
+  [0x015074D0] = true, --Moaning Shield
+  [0x013599D0] = true, --Ancient Dragon Great Shield
+  [0x0150C2F0] = true, --Yhorm's Greatshield
+  [0x0150EA00] = true, --Black Iron Greatshield
+  [0x01511110] = true, --Wolf Knight's Greatshield
+  [0x01513820] = true, --Twin Dragon Greatshield
+  [0x01518640] = true, --Curse Ward Greatshield
+  [0x0151AD50] = true, --Bonewheel Shield
+  [0x0151D460] = true, --Stone Greatshield
+  [0x015EF3C0] = true  --Torch
+}
+
+local weaponsDLC1 = -- Ashes of Ariandel DLC Weapons
+{
+  [0x00222E00] = true, --Onyx Blade
+  [0x003EDDC0] = true, --Follower Sabre
+  [0x006D67D0] = true, --Millwood Battle Axe
+  [0x006D8EE0] = true, --Earth Seeker
+  [0x007ECCF0] = true, --Quakestone Hammer
+  [0x008CD6B0] = true, --Follower Javelin
+  [0x009B55A0] = true, --Friede's Great Scythe
+  [0x00A89C10] = true, --Crow Talons
+  [0x00B82C70] = true, --Rose of Ariandel
+  [0x00CC9ED0] = true, --Pyromancer's Parting Flame
+  [0x00D85EA0] = true, --Millwood Greatbow
+  [0x00F646E0] = true, --Valorheart
+  [0x00F66DF0] = true, --Crow Quills
+  [0x0135C0E0] = true, --Followers Shield
+  [0x01450320] = true, --Ethereal Oak Shield
+  [0x015F1AD0] = true  --Follower Torch
+}
+
+local weaponsDLC2 = -- The Ringed City DLC Weapons
+{
+  [0x00116520] = true, --Aquamarine Dagger
+  [0x00118C30] = true, --Murky Hand Scythe
+  [0x00225510] = true, --Ringed Knight Straight Sword
+  [0x00227C20] = true, --Gael Greatsword
+  [0x003F04D0] = true, --Demon Scar
+  [0x004D35A0] = true, --Frayed Blade
+  [0x006159E0] = true, --Harald Curved Greatsword
+  [0x007EF400] = true, --Ledo's Great Hammer
+  [0x008CFDC0] = true, --Ringed Knight Spear
+  [0x008D24D0] = true, --Lothric War Banner
+  [0x008D4BE0] = true, --Crucifix of the Mad King (Halberd)
+  [0x009B2E90] = true, --Splitleaf Greatsword (It's a Halberd)
+  [0x00CCC5E0] = true, --Murky Longstaff
+  [0x00CCECF0] = true, --Sacred Chime of Filianore
+  [0x00CD1400] = true, --Preacher's Right Arm
+  [0x00D77440] = true, --White Birch Bow
+  [0x00D885B0] = true, --Repeating Crossbow
+  [0x00F5F8C0] = true, --Great Door Twinshields
+  [0x00F69500] = true, --Ringed Knight Paired Greatswords
+  [0x0135E7F0] = true, --Dragonhead Shield
+  [0x01452A30] = true  --Dragonhead Greatshield
+}
+
+function ParseLine(line)
+  if type(line) ~= "string" then return false end
+
+  local hexIdS, infusionS, levelS = line:match("([^,]+),([^,]+),([^,]+)")
+
+  if not (hexIdS and infusionS and levelS) then return false end
+
+  local hexId = tonumber(hexIdS, 16)
+  local infusion = tonumber(infusionS)
+  local level = tonumber(levelS)
+
+  if not (hexId and infusion and level) then return false end
+  if infusion < 0 or infusion > 15 then return false end
+  if level < 0 or level > 10 then return false end
+
+  return true, hexId, infusion, level
+end
+
+function CanOwnWeapon(hexId, dlc1Owned, dlc2Owned)
+  if weaponsDLC1[hexId] then return dlc1Owned end
+  if weaponsDLC2[hexId] then return dlc2Owned end
+  return weaponsBase[hexId]
+end
+
+function GetWeaponOffset(hexId, infusion, level)
+  if hexId == 0x00A87500 then level = 0 end --Dark Hand is not upgradable
+  return infusion * 100 + level
+end
+
+function Spawn()
+  local weaponList = infusionM.getLines()
+  local dlc1Owned = (readBytes(GetAddress('[CsDlc]+11')) == 1) and true or false
+  local dlc2Owned = (readBytes(GetAddress('[CsDlc]+12')) == 1) and true or false
+  local baseAddress = GetAddress('ItemArray')
+  local totalItems = 0
+
+  for index = 0, weaponList.Count - 1 do
+    local line = weaponList[index]
+    local parseSuccess, hexId, infusion, level = ParseLine(line)
+
+    if parseSuccess then
+      if CanOwnWeapon(hexId, dlc1Owned, dlc2Owned) then
+        local weapon = Item:new(hexId, "CustomWeapon", 1, 0, false)
+        local offset = GetWeaponOffset(hexId, infusion, level)
+        baseAddress = weapon:spawn(baseAddress, offset)
+        totalItems = totalItems + 1
+      else
+        print(hexId .. " is a DLC weapon you do not own or ID is invalid")
+      end
+    else
+      print("Invalid line: " .. line)
+    end
+  end
+
+  WriteInteger(GetAddress('ItemArray'), totalItems)
+  autoAssemble("CreateThread(MassItemGib)")
+  form.close()
+end
+
+[ENABLE]
+if not syntaxcheck then disableMemrec(memrec) end
+InitializeForm()
+spawnB.onClick = Spawn
+[DISABLE]

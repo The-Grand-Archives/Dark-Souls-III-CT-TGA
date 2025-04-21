@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337081094</ID>
+  <Description>"Played area | プレイ済みプレイ領域"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097267"/>
+    <id id="1337081154"/>
+    <id id="1337097001"/>
+    <id id="1337097003"/>
+    <id id="1337097002"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

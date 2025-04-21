@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097968</ID>
+  <Description>"Whip (standby) Enchant Sfx Occurrence interval [m] | 鞭（待機中）エンチャントSfx発生間隔[m]"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>184</Offset>
+  </Offsets>
+</CheatEntry>

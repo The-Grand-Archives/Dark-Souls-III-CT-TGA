@@ -1,0 +1,76 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+
+EquipMtrlSetParam = BaseParamClass:new()
+
+function EquipMtrlSetParam:new(uuid, id, address)
+	local o = {}
+	self.__index = self
+	setmetatable(o, self)
+
+	o:init("EquipMtrlSetParam", uuid, id, address)
+	return o
+end
+
+function EquipMtrlSetParam:ItemId0(value)
+    self:patch4Byte(0x00,value)
+end
+
+function EquipMtrlSetParam:ItemId1(value)
+    self:patch4Byte(0x04,value)
+end
+
+function EquipMtrlSetParam:ItemId2(value)
+    self:patch4Byte(0x08,value)
+end
+
+function EquipMtrlSetParam:ItemId3(value)
+    self:patch4Byte(0x0C,value)
+end
+
+function EquipMtrlSetParam:ItemId4(value)
+    self:patch4Byte(0x10,value)
+end
+
+function EquipMtrlSetParam:Quantity0(value)
+    self:patchByte(0x14,value)
+end
+
+function EquipMtrlSetParam:Quantity1(value)
+    self:patchByte(0x15,value)
+end
+
+function EquipMtrlSetParam:Quantity2(value)
+    self:patchByte(0x16,value)
+end
+
+function EquipMtrlSetParam:Quantity3(value)
+    self:patchByte(0x17,value)
+end
+
+function EquipMtrlSetParam:Quantity4(value)
+    self:patchByte(0x18,value)
+end
+
+function EquipMtrlSetParam:ItemType0(value)
+    self:patchByte(0x19,value)
+end
+
+function EquipMtrlSetParam:ItemType1(value)
+    self:patchByte(0x1A,value)
+end
+
+function EquipMtrlSetParam:ItemType2(value)
+    self:patchByte(0x1B,value)
+end
+
+function EquipMtrlSetParam:ItemType3(value)
+    self:patchByte(0x1C,value)
+end
+
+function EquipMtrlSetParam:ItemType4(value)
+    self:patchByte(0x1D,value)
+end
+
+[DISABLE]

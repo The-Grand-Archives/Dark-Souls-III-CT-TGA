@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>86491</ID>
+  <Description>"Stairs to the Painter"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>5</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>644f</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

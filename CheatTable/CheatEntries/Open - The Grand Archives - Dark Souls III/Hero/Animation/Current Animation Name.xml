@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337081656</ID>
+  <Description>"Current Animation Name"</Description>
+  <VariableType>String</VariableType>
+  <Length>20</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>898</Offset>
+    <Offset>28</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

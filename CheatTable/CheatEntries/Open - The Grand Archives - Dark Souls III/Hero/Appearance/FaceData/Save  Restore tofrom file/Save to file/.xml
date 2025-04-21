@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337014493</ID>
+  <Description>"Save to file"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337014496"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

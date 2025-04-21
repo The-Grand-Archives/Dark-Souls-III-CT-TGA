@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098516</ID>
+  <Description>"SinnerHeroCount"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>(SprjEventMan)</Address>
+  <Offsets>
+    <Offset>34C</Offset>
+    <Offset>40</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

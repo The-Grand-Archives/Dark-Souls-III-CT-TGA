@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337189329</ID>
+  <Description>"Select Chr｜作成キャラ選択"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337189346"/>
+    <id id="1337189348"/>
+    <id id="1337189347"/>
+    <id id="1337189354"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

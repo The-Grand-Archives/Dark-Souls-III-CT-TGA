@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>91768</ID>
+  <Description>"Draw"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>6</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>XE</Address>
+  <Offsets>
+    <Offset>1EE9</Offset>
+  </Offsets>
+</CheatEntry>

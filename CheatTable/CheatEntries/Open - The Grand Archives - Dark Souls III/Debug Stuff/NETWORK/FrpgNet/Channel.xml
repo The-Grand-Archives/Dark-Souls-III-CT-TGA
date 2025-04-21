@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>492916</ID>
+  <Description>"Channel"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>C21</Offset>
+  </Offsets>
+</CheatEntry>

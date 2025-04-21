@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337190445</ID>
+  <Description>"Talked to Eygon (at shrine)"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Binary</VariableType>
+  <BitStart>5</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>1</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>2EE52</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

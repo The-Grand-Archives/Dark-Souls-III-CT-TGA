@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>1337097556</ID>
+  <Description>"FinalColor (read only)"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>0</ByteLength>
+  <Address>SprjFade</Address>
+  <Offsets>
+    <Offset>20</Offset>
+    <Offset>8</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337097557"/>
+    <id id="1337097563"/>
+    <id id="1337097562"/>
+    <id id="1337097561"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

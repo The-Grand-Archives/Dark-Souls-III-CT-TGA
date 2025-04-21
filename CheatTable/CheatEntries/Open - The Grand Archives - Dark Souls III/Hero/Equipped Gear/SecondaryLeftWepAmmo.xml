@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337078891</ID>
+  <Description>"SecondaryLeftWepAmmo"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">00:
+01:Loaded
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>38E</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

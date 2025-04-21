@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>78032</ID>
+  <Description>"High Lord Wolnir"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78033"/>
+    <id id="78034"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

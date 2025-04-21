@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099390</ID>
+  <Description>"ChrType Name Pos[Y]"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>B8</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

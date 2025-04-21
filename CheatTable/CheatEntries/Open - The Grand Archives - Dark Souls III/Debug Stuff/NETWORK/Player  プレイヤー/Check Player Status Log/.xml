@@ -1,0 +1,23 @@
+<CheatEntry>
+  <ID>1337097057</ID>
+  <Description>"Check Player Status Log"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097082"/>
+    <id id="1337097085"/>
+    <id id="1337097083"/>
+    <id id="1337097084"/>
+    <id id="1337097086"/>
+    <id id="1337097096"/>
+    <id id="1337097095"/>
+    <id id="1337097094"/>
+    <id id="1337097093"/>
+    <id id="1337097092"/>
+    <id id="1337097091"/>
+    <id id="1337097090"/>
+    <id id="1337097089"/>
+    <id id="1337097088"/>
+    <id id="1337097087"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,24 @@
+{
+	Author: Igromanru
+	Description: Patchs only special stateInfo
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+function PatchSpecialStateInfo(thread)
+  local idTable = paramUtils:getParamIdTable("SpEffectParam")
+  for id,address in pairs(idTable) do
+    local object = SpEffectParam:new("PatchSpecialStateInfo", nil, address)
+    local stateInfo = object:readByte(0x156)
+    if(stateInfo == 116 or stateInfo == 136 or stateInfo == 64) then
+	  object:stateInfo(0)
+    end
+  end
+end
+createNativeThread(PatchSpecialStateInfo)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("PatchSpecialStateInfo")
+

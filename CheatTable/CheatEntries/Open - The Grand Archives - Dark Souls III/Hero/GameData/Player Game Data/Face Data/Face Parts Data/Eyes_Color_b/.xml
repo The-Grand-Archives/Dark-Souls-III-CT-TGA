@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337081247</ID>
+  <Description>"Eyes_Color_b"</Description>
+  <Options moHideChildren="1" moRecursiveSetValue="1"/>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6E6</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337081248"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

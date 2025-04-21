@@ -1,0 +1,17 @@
+<CheatEntry>
+  <ID>1337018736</ID>
+  <Description>"equip_Accessory05 (Covenant)"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">-1:Empty
+10000:Blade of the Darkmoon
+10020:Watchdogs of Farron
+10030:Aldrich Faithful
+10040:Warrior of Sunlight
+10050:Mound-makers
+10060:Way of Blue
+10070:Blue Sentinels
+10080:Rosaria's Fingers
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+4C+4</Address>
+</CheatEntry>

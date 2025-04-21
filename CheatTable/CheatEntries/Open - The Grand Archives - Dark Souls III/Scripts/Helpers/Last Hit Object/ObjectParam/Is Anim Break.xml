@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>11345</ID>
+  <Description>"Is Anim Break"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>2</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+9</Address>
+</CheatEntry>

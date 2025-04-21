@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337098829</ID>
+  <Description>"TargetChaseRateXZForEscapeWall"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>1C4</Offset>
+    <Offset>60</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

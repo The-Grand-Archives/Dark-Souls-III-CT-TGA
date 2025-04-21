@@ -1,0 +1,44 @@
+<CheatEntry>
+  <ID>1337018759</ID>
+  <Description>"gestureid4"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">-1:Nothing
+0:Point forward
+1:Point up
+2:point down
+3:Wave
+4:Beckon
+5:Call over
+6:Welcome
+7:Applause
+8:Quiet Resolve
+9:Jump for Joy
+10:Joy
+11:Rejoice
+12:Hurrah!
+13:Praise the Sun
+14:My thanks!
+15:Bow
+16:Proper bow
+17:Dignified bow
+18:Duel bow
+19:Legion Etiquette
+20:Darkmoon Loyality
+21:By my sword
+22:Prayer
+23:Silent Ally
+24:Rest
+25:Collapse
+26:Patches Squat
+27:Prostration
+28:Toast
+29:Sleep
+30:Curl up
+31:Stretch out
+32:Patch of the Dragon
+33:Unmannered bow
+34:Lord of Cinder
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>+DF</Address>
+</CheatEntry>

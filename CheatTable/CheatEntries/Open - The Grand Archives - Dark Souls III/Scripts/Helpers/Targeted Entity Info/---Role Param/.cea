@@ -1,0 +1,44 @@
+{ Game   : DarkSoulsIII.exe
+  Version:
+  Date   : 2017-12-04
+  Author : Pavuk
+
+  How to use : Lock On Target
+}
+[ENABLE]
+define(RoleParam,DarkSoulsIII.exe+E2F350)
+alloc(RoleParamNew,256,RoleParam) //"DarkSoulsIII.exe"+E2F350
+
+label(codeRoleP)
+label(returnRoleP)
+label(RoleParam_PTR)
+
+RoleParamNew:
+  mov rbx,RoleParam_PTR
+  mov [rbx],rax
+codeRoleP:
+  movzx eax,byte ptr [rax+41]
+  mov rbx,[rsp+30]
+  jmp returnRoleP
+
+RoleParam_PTR:
+  dq 0
+
+RoleParam:
+  jmp RoleParamNew
+  nop
+  nop
+  nop
+  nop
+returnRoleP:
+registersymbol(RoleParam)
+registersymbol(RoleParam_PTR)
+
+[DISABLE]
+
+RoleParam:
+  db 0F B6 40 41 48 8B 5C 24 30
+
+unregistersymbol(RoleParam)
+unregistersymbol(RoleParam_PTR)
+dealloc(RoleParamNew)

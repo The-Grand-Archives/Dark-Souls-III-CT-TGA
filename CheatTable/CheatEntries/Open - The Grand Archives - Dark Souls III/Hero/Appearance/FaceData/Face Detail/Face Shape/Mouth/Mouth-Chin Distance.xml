@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73216</ID>
+  <Description>"Mouth-Chin Distance"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>74F</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

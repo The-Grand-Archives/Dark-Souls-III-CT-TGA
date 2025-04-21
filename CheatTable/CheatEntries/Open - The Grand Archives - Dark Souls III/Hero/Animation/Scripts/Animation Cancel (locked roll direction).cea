@@ -1,0 +1,33 @@
+[ENABLE]
+aobscanmodule(BetterAnimCancel,DarkSoulsIII.exe,48 81 4B 58 00 80 00 00)
+alloc(newmem,256,BetterAnimCancel)
+
+label(code)
+label(return)
+
+newmem:
+  push r12
+  mov r12,[WorldChrMan]
+  mov r12,[r12+80]
+  mov r12,[r12+1F90]
+  mov r12,[r12]
+  cmp r12,rbx
+  jne code
+  or [rbx+10],01
+code:
+  pop r12
+  or qword ptr [rbx+58],00008000
+  jmp return
+
+BetterAnimCancel:
+  jmp newmem
+  nop 3
+return:
+registersymbol(BetterAnimCancel)
+
+[DISABLE]
+BetterAnimCancel:
+  db 48 81 4B 58 00 80 00 00
+
+unregistersymbol(BetterAnimCancel)
+dealloc(newmem)

@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(VfxAddressToUse,8)
+registersymbol(VfxAddressToUse)
+[DISABLE]
+dealloc(VfxAddressToUse)
+unregistersymbol(VfxAddressToUse)

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337018682</ID>
+  <Description>"Class Customizer"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337018683"/>
+    <id id="1337018694"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

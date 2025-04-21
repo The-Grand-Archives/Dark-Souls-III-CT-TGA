@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081014</ID>
+  <Description>"Changed Wep InvenIdx"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>2A9</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

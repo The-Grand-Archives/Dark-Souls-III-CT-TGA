@@ -1,0 +1,17 @@
+//Author: inuNorii
+//Changes the Firelink Shrine choice in the bottom left to Pontiff
+[ENABLE]
+[[[[Param]+F10]+68]+68]+7F0:
+dd #13700001 //LocationEventId
+dd #3701951  //WarpEventId
+dd #211295   //BonfireNameId
+dd #211695   //DescriptionTextId
+dd #10062    //PictureId
+
+[DISABLE]
+[[[[Param]+F10]+68]+68]+7F0:
+dd #14000000 //LocationEventId
+dd #4001950  //WarpEventId
+dd #211200   //BonfireNameId
+dd #211600   //DescriptionTextId
+dd #99999    //PictureId

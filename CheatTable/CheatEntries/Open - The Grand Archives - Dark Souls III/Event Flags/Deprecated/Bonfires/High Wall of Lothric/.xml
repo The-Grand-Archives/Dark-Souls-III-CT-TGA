@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>94075</ID>
+  <Description>"High Wall of Lothric"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78146"/>
+    <id id="78148"/>
+    <id id="78150"/>
+    <id id="78151"/>
+    <id id="78153"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

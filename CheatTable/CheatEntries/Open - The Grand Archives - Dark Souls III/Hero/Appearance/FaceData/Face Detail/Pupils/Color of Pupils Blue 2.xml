@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73267</ID>
+  <Description>"Color of Pupils Blue"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6EA</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

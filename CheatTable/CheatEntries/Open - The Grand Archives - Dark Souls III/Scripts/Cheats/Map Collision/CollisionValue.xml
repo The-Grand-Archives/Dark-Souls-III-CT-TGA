@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337045444</ID>
+  <Description>"CollisionValue"</Description>
+  <DropDownList ReadOnly="1" DisplayValueAsItem="1">0:Disabled
+1:Enabled
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>CollisionValue</Address>
+</CheatEntry>

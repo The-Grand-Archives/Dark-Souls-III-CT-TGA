@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099455</ID>
+  <Description>"QuickMatchType13_2"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>195</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

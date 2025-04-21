@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337099030</ID>
+  <Description>"RotHiSpeedMax X [deg/sec]"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>124</Offset>
+    <Offset>68</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

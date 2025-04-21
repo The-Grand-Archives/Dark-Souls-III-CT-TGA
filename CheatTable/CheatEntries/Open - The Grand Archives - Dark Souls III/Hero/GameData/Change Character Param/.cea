@@ -1,0 +1,23 @@
+[ENABLE]
+alloc(Debug_ChangeCharacterParam,256,DarkSoulsIII.exe)
+registerSymbol(Debug_ChangeCharacterParam)
+
+alloc(CharacterParamID,4)
+registerSymbol(CharacterParamID)
+CharacterParamID:
+dd #9200
+
+Debug_ChangeCharacterParam:
+sub rsp,48
+mov rcx,[GameDataMan]
+mov edx,[CharacterParamID]
+call DarkSoulsIII.exe+59AE40
+add rsp,48
+ret
+
+[DISABLE]
+dealloc(Debug_ChangeCharacterParam)
+unregisterSymbol(Debug_ChangeCharacterParam)
+
+dealloc(CharacterParamID)
+unregisterSymbol(CharacterParamID)

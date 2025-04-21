@@ -1,0 +1,946 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+--[[START EquipParamWeapon class]]--
+EquipParamWeapon = BaseParamClass:new()
+
+function EquipParamWeapon:new(uuid, id, address)
+	local o = {}
+	self.__index = self
+	setmetatable(o, self)
+
+	o:init("EquipParamWeapon", uuid, id, address)
+	return o
+end
+
+function EquipParamWeapon:behaviorVariationId(value)
+	self:patch4Byte(0x0, value)
+end
+
+function EquipParamWeapon:sortId(value)
+	self:patch4Byte(0x4, value)
+end
+
+function EquipParamWeapon:wanderingEquipId(value)
+	self:patch4Byte(0x8, value)
+end
+
+-- Weight
+function EquipParamWeapon:weight(value)
+	self:patchFloat(0xC, value)
+end
+
+function EquipParamWeapon:weaponWeightRate(value)
+	self:patchFloat(0x10, value)
+end
+
+-- Prices
+function EquipParamWeapon:fixPrice(value)
+	self:patch4Byte(0x14, value)
+end
+
+function EquipParamWeapon:basicPrice(value)
+	self:patch4Byte(0x18, value)
+end
+
+function EquipParamWeapon:sellValue(value)
+	self:patch4Byte(0x1C, value)
+end
+
+-- Scaling
+function EquipParamWeapon:correctStrength(value)
+	self:patchFloat(0x20, value)
+end
+
+function EquipParamWeapon:correctAgility(value)
+	self:patchFloat(0x24, value)
+end
+
+function EquipParamWeapon:correctMagic(value)
+	self:patchFloat(0x28, value)
+end
+
+function EquipParamWeapon:correctFaith(value)
+	self:patchFloat(0x2C, value)
+end
+
+--Block Rate
+function EquipParamWeapon:physGuardCutRate(value)
+	self:patchFloat(0x30, value)
+end
+
+function EquipParamWeapon:magGuardCutRate(value)
+	self:patchFloat(0x34, value)
+end
+
+function EquipParamWeapon:fireGuardCutRate(value)
+	self:patchFloat(0x38, value)
+end
+
+function EquipParamWeapon:thunGuardCutRate(value)
+	self:patchFloat(0x3C, value)
+end
+
+-- Effects on hit
+function EquipParamWeapon:spEffectBehaviorId(value)
+	self:patch4Byte(0x40, value)
+end
+
+function EquipParamWeapon:spEffectBehaviorId1(value)
+	self:patch4Byte(0x44, value)
+end
+
+function EquipParamWeapon:spEffectBehaviorId2(value)
+	self:patch4Byte(0x48, value)
+end
+
+-- Effects on self
+function EquipParamWeapon:residentSpEffectId(value)
+	self:patch4Byte(0x4C, value)
+end
+
+function EquipParamWeapon:residentSpEffectId1(value)
+	self:patch4Byte(0x50, value)
+end
+
+function EquipParamWeapon:residentSpEffectId2(value)
+	self:patch4Byte(0x54, value)
+end
+
+function EquipParamWeapon:materialSetId(value)
+	self:patch4Byte(0x58, value)
+end
+
+--Origin Equip Weapon
+function EquipParamWeapon:originEquipWep(value)
+	self:patch4Byte(0x5C, value)
+end
+
+function EquipParamWeapon:originEquipWep1(value)
+	self:patch4Byte(0x60, value)
+end
+
+function EquipParamWeapon:originEquipWep2(value)
+	self:patch4Byte(0x64, value)
+end
+
+function EquipParamWeapon:originEquipWep3(value)
+	self:patch4Byte(0x68, value)
+end
+
+function EquipParamWeapon:originEquipWep4(value)
+	self:patch4Byte(0x6C, value)
+end
+
+function EquipParamWeapon:originEquipWep5(value)
+	self:patch4Byte(0x70, value)
+end
+
+function EquipParamWeapon:originEquipWep6(value)
+	self:patch4Byte(0x74, value)
+end
+
+function EquipParamWeapon:originEquipWep7(value)
+	self:patch4Byte(0x78, value)
+end
+
+function EquipParamWeapon:originEquipWep8(value)
+	self:patch4Byte(0x7C, value)
+end
+
+function EquipParamWeapon:originEquipWep9(value)
+	self:patch4Byte(0x80, value)
+end
+
+function EquipParamWeapon:originEquipWep10(value)
+	self:patch4Byte(0x84, value)
+end
+
+function EquipParamWeapon:originEquipWep11(value)
+	self:patch4Byte(0x88, value)
+end
+
+function EquipParamWeapon:originEquipWep12(value)
+	self:patch4Byte(0x8C, value)
+end
+
+function EquipParamWeapon:originEquipWep13(value)
+	self:patch4Byte(0x90, value)
+end
+
+function EquipParamWeapon:originEquipWep14(value)
+	self:patch4Byte(0x94, value)
+end
+
+function EquipParamWeapon:originEquipWep15(value)
+	self:patch4Byte(0x98, value)
+end
+
+--Anti Damage Rate
+function EquipParamWeapon:antiDemonDamageRate(value)
+	self:patchFloat(0x9C, value)
+end
+
+function EquipParamWeapon:antUndeadDamageRate(value)
+	self:patchFloat(0xA0, value)
+end
+
+function EquipParamWeapon:antHollowDamageRate(value)
+	self:patchFloat(0xA4, value)
+end
+
+function EquipParamWeapon:antAbyssalDamageRate(value)
+	self:patchFloat(0xA8, value)
+end
+
+-- AC-BA
+function EquipParamWeapon:vagrantItemLotId(value)
+	self:patch4Byte(0xAC, value)
+end
+
+function EquipParamWeapon:vagrantBonusEneDropItemLotId(value)
+	self:patch4Byte(0xB0, value)
+end
+
+function EquipParamWeapon:vagrantItemEneDropItemLotId(value)
+	self:patch4Byte(0xB4, value)
+end
+
+function EquipParamWeapon:equipModelId(value)
+	self:patch2Byte(0xB8, value)
+end
+
+function EquipParamWeapon:iconId(value)
+	self:patch2Byte(0xBA, value)
+end
+
+-- Durability
+function EquipParamWeapon:durability(value)
+	self:patch2Byte(0xBC, value)
+end
+
+function EquipParamWeapon:durabilityMax(value)
+	self:patch2Byte(0xBE, value)
+end
+
+-- C0-C2
+function EquipParamWeapon:attackThrowEscape(value)
+	self:patch2Byte(0xC0, value)
+end
+
+function EquipParamWeapon:parryDamageLife(value)
+	self:patch2Byte(0xC2, value)
+end
+
+--Attack Damage
+function EquipParamWeapon:attackBasePhysics(value)
+	self:patch2Byte(0xC4, value)
+end
+
+function EquipParamWeapon:attackBaseMagic(value)
+	self:patch2Byte(0xC6, value)
+end
+
+function EquipParamWeapon:attackBaseFire(value)
+	self:patch2Byte(0xC8, value)
+end
+
+function EquipParamWeapon:attackBaseThunder(value)
+	self:patch2Byte(0xCA, value)
+end
+
+function EquipParamWeapon:attackBaseStamina(value) -- Stamina consuption to block
+	self:patch2Byte(0xCC, value)
+end
+
+-- CE-ED
+function EquipParamWeapon:saWeaponDamage(value)
+	self:patch2Byte(0xCE, value)
+end
+
+function EquipParamWeapon:saDurability(value)
+	self:patch2Byte(0xD0, value)
+end
+
+function EquipParamWeapon:guardAngle(value)
+	self:patch2Byte(0xD2, value)
+end
+
+function EquipParamWeapon:staminaGuardDef(value)
+	self:patch2Byte(0xD4, value)
+end
+
+function EquipParamWeapon:reinforceTypeId(value)
+	self:patch2Byte(0xD6, value)
+end
+
+function EquipParamWeapon:trophySGradeId(value)
+	self:patch2Byte(0xD8, value)
+end
+
+function EquipParamWeapon:trophySeqId(value)
+	self:patch2Byte(0xDA, value)
+end
+
+function EquipParamWeapon:throwAtkRate(value) --100 minimum
+	self:patch2Byte(0xDC, value)
+end
+
+function EquipParamWeapon:bowDistRate(value)
+	self:patch2Byte(0xDE, value)
+end
+
+function EquipParamWeapon:equipModelCategory(value)
+	self:patchByte(0xE0, value)
+end
+
+function EquipParamWeapon:equipModelGender(value)
+	self:patchByte(0xE1, value)
+end
+
+function EquipParamWeapon:weaponCategory(value)
+	self:patchByte(0xE2, value)
+end
+
+function EquipParamWeapon:wepmotionCategory(value)
+	self:patchByte(0xE3, value)
+end
+
+function EquipParamWeapon:guardmotionCategory(value)
+	self:patchByte(0xE4, value)
+end
+
+function EquipParamWeapon:atkMaterial(value)
+	self:patchByte(0xE5, value)
+end
+
+function EquipParamWeapon:defMaterial(value)
+	self:patchByte(0xE6, value)
+end
+
+function EquipParamWeapon:defSfxMaterial(value)
+	self:patchByte(0xE7, value)
+end
+
+function EquipParamWeapon:correctType(value)
+	self:patchByte(0xE8, value)
+end
+
+function EquipParamWeapon:spAttribute(value)
+	self:patchByte(0xE9, value)
+end
+
+function EquipParamWeapon:spAtkcategory(value)
+	self:patch2Byte(0xEA, value)
+end
+
+function EquipParamWeapon:wepmotionOneHandId(value)
+	self:patchByte(0xEC, value)
+end
+
+function EquipParamWeapon:wepmotionBothHandId(value)
+	self:patchByte(0xED, value)
+end
+
+-- Requirements
+function EquipParamWeapon:properStrength(value)
+	self:patchByte(0xEE, value)
+end
+
+function EquipParamWeapon:properAgility(value)
+	self:patchByte(0xEF, value)
+end
+
+function EquipParamWeapon:properMagic(value)
+	self:patchByte(0xF0, value)
+end
+
+function EquipParamWeapon:properFaith(value)
+	self:patchByte(0xF1, value)
+end
+
+-- F2-100
+function EquipParamWeapon:overStrength(value)
+	self:patchByte(0xF2, value)
+end
+
+function EquipParamWeapon:attackBaseParry(value)
+	self:patchByte(0xF3, value)
+end
+
+function EquipParamWeapon:defenseBaseParry(value)
+	self:patchByte(0xF4, value)
+end
+
+function EquipParamWeapon:guardBaseRepel(value)
+	self:patchByte(0xF5, value)
+end
+
+function EquipParamWeapon:attackBaseRepel(value)
+	self:patchByte(0xF6, value)
+end
+
+function EquipParamWeapon:guardCutCancelRate(value)
+	self:patchByte(0xF7, value)
+end
+
+function EquipParamWeapon:guardLevel(value)
+	self:patchByte(0xF8, value)
+end
+
+function EquipParamWeapon:slashGuardCutRate(value)
+	self:patchByte(0xF9, value)
+end
+
+function EquipParamWeapon:blowGuardCutRate(value)
+	self:patchByte(0xFA, value)
+end
+
+function EquipParamWeapon:thrustGuardCutRate(value)
+	self:patchByte(0xFB, value)
+end
+
+function EquipParamWeapon:poisonGuardResist(value)
+	self:patchByte(0xFC, value)
+end
+
+function EquipParamWeapon:diseaseGuardResist(value)
+	self:patchByte(0xFD, value)
+end
+
+function EquipParamWeapon:bloodGuardResist(value)
+	self:patchByte(0xFE, value)
+end
+
+function EquipParamWeapon:curseGuardResist(value)
+	self:patchByte(0xFF, value)
+end
+
+function EquipParamWeapon:isDurabilityDivergence(value)
+	self:patchByte(0x100, value)
+end
+
+-- Flags
+-- 101
+function EquipParamWeapon:rightHandEquipable(value)
+	self:patchBinary(0x101, value, 0)
+end
+
+function EquipParamWeapon:leftHandEquipable(value)
+	self:patchBinary(0x101, value, 1)
+end
+
+function EquipParamWeapon:bothHandEquipable(value)
+	self:patchBinary(0x101, value, 2)
+end
+
+function EquipParamWeapon:arrowSlotEquipable(value)
+	self:patchBinary(0x101, value, 3)
+end
+
+function EquipParamWeapon:boltSlotEquipable(value)
+	self:patchBinary(0x101, value, 4)
+end
+
+function EquipParamWeapon:enableGuard(value)
+	self:patchBinary(0x101, value, 5)
+end
+
+function EquipParamWeapon:enableParry(value)
+	self:patchBinary(0x101, value, 6)
+end
+
+function EquipParamWeapon:enableMagic(value)
+	self:patchBinary(0x101, value, 7)
+end
+
+-- 102
+function EquipParamWeapon:enableSorcery(value) --Pyromancy
+	self:patchBinary(0x102, value, 0)
+end
+
+function EquipParamWeapon:enableMiracle(value)
+	self:patchBinary(0x102, value, 1)
+end
+
+function EquipParamWeapon:enableVowMagic(value)
+	self:patchBinary(0x102, value, 2)
+end
+
+function EquipParamWeapon:isNormalAttackType(value)
+	self:patchBinary(0x102, value, 3)
+end
+
+function EquipParamWeapon:isBlowAttackType(value)
+	self:patchBinary(0x102, value, 4)
+end
+
+function EquipParamWeapon:isSlashAttackType(value)
+	self:patchBinary(0x102, value, 5)
+end
+
+function EquipParamWeapon:isThrustAttackType(value)
+	self:patchBinary(0x102, value, 6)
+end
+
+function EquipParamWeapon:isEnhance(value)
+	self:patchBinary(0x102, value, 7)
+end
+
+-- 103
+function EquipParamWeapon:isLuckCorrect(value)
+	self:patchBinary(0x103, value, 0)
+end
+
+function EquipParamWeapon:isCustom(value)
+	self:patchBinary(0x103, value, 1)
+end
+
+function EquipParamWeapon:disableBaseChangeReset(value)
+	self:patchBinary(0x103, value, 2)
+end
+
+function EquipParamWeapon:disableRepair(value)
+	self:patchBinary(0x103, value, 3)
+end
+
+function EquipParamWeapon:isDarkHand(value)
+	self:patchBinary(0x103, value, 4)
+end
+
+function EquipParamWeapon:simpleModelForDlc(value)
+	self:patchBinary(0x103, value, 5)
+end
+
+function EquipParamWeapon:lanternWep(value)
+	self:patchBinary(0x103, value, 6)
+end
+
+function EquipParamWeapon:isVersusGhostWep(value)
+	self:patchBinary(0x103, value, 7)
+end
+
+--Changes the infusion icon
+function EquipParamWeapon:baseChangeCategory(value)
+	self:patchBinary(0x104, value, 0)
+end
+function EquipParamWeapon:baseChangeCategory1(value)
+	self:patchBinary(0x104, value, 1)
+end
+function EquipParamWeapon:baseChangeCategory2(value)
+	self:patchBinary(0x104, value, 2)
+end
+function EquipParamWeapon:baseChangeCategory3(value)
+	self:patchBinary(0x104, value, 3)
+end
+function EquipParamWeapon:baseChangeCategory4(value)
+	self:patchBinary(0x104, value, 4)
+end
+function EquipParamWeapon:baseChangeCategory5(value)
+	self:patchBinary(0x104, value, 5)
+end
+
+--Greatbow/Greatarrow
+function EquipParamWeapon:isDragonSlayer(value)
+	self:patchBinary(0x104, value, 6)
+end
+
+function EquipParamWeapon:isDeposit(value)
+	self:patchBinary(0x104, value, 7)
+end
+
+function EquipParamWeapon:disableMultiDropShare(value)
+	self:patchBinary(0x105, value, 0)
+end
+
+function EquipParamWeapon:isDiscard(value)
+	self:patchBinary(0x105, value, 1)
+end
+
+function EquipParamWeapon:isDrop(value)
+	self:patchBinary(0x105, value, 2)
+end
+
+function EquipParamWeapon:defMaterial2(value)
+	self:patch2Byte(0x106, value)
+end
+
+function EquipParamWeapon:wepCollidableType0(value)
+	self:patchByte(0x108, value)
+end
+
+function EquipParamWeapon:wepCollidableType1(value)
+	self:patchByte(0x109, value)
+end
+
+function EquipParamWeapon:wepCollidableType2(value)
+	self:patchByte(0x10A, value)
+end
+
+function EquipParamWeapon:wepCollidableType3(value)
+	self:patchByte(0x10B, value)
+end
+
+function EquipParamWeapon:traceSfxId0(value)
+	self:patch4Byte(0x10C, value)
+end
+
+function EquipParamWeapon:traceDmyIdHead0(value)
+	self:patch4Byte(0x110, value)
+end
+
+function EquipParamWeapon:traceDmyIdTail0(value)
+	self:patch4Byte(0x114, value)
+end
+
+function EquipParamWeapon:traceSfxId1(value)
+	self:patch4Byte(0x118, value)
+end
+
+function EquipParamWeapon:traceDmyIdHead1(value)
+	self:patch4Byte(0x11C, value)
+end
+
+function EquipParamWeapon:traceDmyIdTail1(value)
+	self:patch4Byte(0x120, value)
+end
+
+function EquipParamWeapon:traceSfxId2(value)
+	self:patch4Byte(0x124, value)
+end
+
+function EquipParamWeapon:traceDmyIdHead2(value)
+	self:patch4Byte(0x128, value)
+end
+
+function EquipParamWeapon:traceDmyIdTail2(value)
+	self:patch4Byte(0x12C, value)
+end
+
+function EquipParamWeapon:traceSfxId3(value)
+	self:patch4Byte(0x130, value)
+end
+
+function EquipParamWeapon:traceDmyIdHead3(value)
+	self:patch4Byte(0x134, value)
+end
+
+function EquipParamWeapon:traceDmyIdTail3(value)
+	self:patch4Byte(0x138, value)
+end
+
+function EquipParamWeapon:traceSfxId4(value)
+	self:patch4Byte(0x13C, value)
+end
+
+function EquipParamWeapon:traceDmyIdHead4(value)
+	self:patch4Byte(0x140, value)
+end
+
+function EquipParamWeapon:traceDmyIdTail4(value)
+	self:patch4Byte(0x144, value)
+end
+
+function EquipParamWeapon:traceSfxId5(value)
+	self:patch4Byte(0x148, value)
+end
+
+function EquipParamWeapon:traceDmyIdHead5(value)
+	self:patch4Byte(0x14C, value)
+end
+
+function EquipParamWeapon:traceDmyIdTail5(value)
+	self:patch4Byte(0x150, value)
+end
+
+function EquipParamWeapon:traceSfxId6(value)
+	self:patch4Byte(0x154, value)
+end
+
+function EquipParamWeapon:traceDmyIdHead6(value)
+	self:patch4Byte(0x158, value)
+end
+
+function EquipParamWeapon:traceDmyIdTail6(value)
+	self:patch4Byte(0x15C, value)
+end
+
+function EquipParamWeapon:traceSfxId7(value)
+	self:patch4Byte(0x160, value)
+end
+
+function EquipParamWeapon:traceDmyIdHead7(value)
+	self:patch4Byte(0x164, value)
+end
+
+function EquipParamWeapon:traceDmyIdTail7(value)
+	self:patch4Byte(0x168, value)
+end
+
+function EquipParamWeapon:defSfxMaterial2(value)
+	self:patch2Byte(0x16C, value)
+end
+
+function EquipParamWeapon:defSeMaterial2(value)
+	self:patch2Byte(0x16E, value)
+end
+
+function EquipParamWeapon:absorpParamId(value)
+	self:patch4Byte(0x170, value)
+end
+
+function EquipParamWeapon:toughnessCorrectRate(value)
+	self:patchFloat(0x174, value)
+end
+
+function EquipParamWeapon:isValidTough_ProtSADmg(value)
+	self:patchBinary(0x178, value, 0)
+end
+
+function EquipParamWeapon:isDualBlade(value)
+	self:patchBinary(0x178, value, 1)
+end
+
+function EquipParamWeapon:isAutoEquip(value)
+	self:patchBinary(0x178, value, 2)
+end
+
+function EquipParamWeapon:isEnableEmergencyStep(value)
+	self:patchBinary(0x178, value, 3)
+end
+
+function EquipParamWeapon:invisibleOnRemo(value)
+	self:patchBinary(0x178, value, 4)
+end
+
+function EquipParamWeapon:correctType_Magic(value)
+	self:patchByte(0x179, value)
+end
+
+function EquipParamWeapon:correctType_Fire(value)
+	self:patchByte(0x17A, value)
+end
+
+function EquipParamWeapon:correctType_Thunder(value)
+	self:patchByte(0x17B, value)
+end
+
+function EquipParamWeapon:weakE_DamageRate(value)
+	self:patchFloat(0x17C, value)
+end
+
+function EquipParamWeapon:weakF_DamageRate(value)
+	self:patchFloat(0x180, value)
+end
+
+function EquipParamWeapon:darkGuardCutRate(value)
+	self:patchFloat(0x184, value)
+end
+
+function EquipParamWeapon:attackBaseDark(value)
+	self:patch2Byte(0x188, value)
+end
+
+function EquipParamWeapon:correctType_Dark(value)
+	self:patchByte(0x18A, value)
+end
+
+function EquipParamWeapon:correctType_Poison(value)
+	self:patchByte(0x18B, value)
+end
+
+function EquipParamWeapon:swordArtsId(value)
+	self:patchByte(0x18C, value)
+end
+
+function EquipParamWeapon:correctType_Blood(value)
+	self:patchByte(0x190, value)
+end
+
+function EquipParamWeapon:properLuck(value)
+	self:patchByte(0x191, value)
+end
+
+function EquipParamWeapon:frostGuardResist(value)
+	self:patchByte(0x192, value)
+end
+
+function EquipParamWeapon:MenuAdhoc(value)
+	self:patchByte(0x193, value)
+end
+
+function EquipParamWeapon:swordArtsParamId(value)
+	self:patch4Byte(0x194, value)
+end
+
+function EquipParamWeapon:correctLuck(value)
+	self:patchFloat(0x198, value)
+end
+
+function EquipParamWeapon:DerivationLevelType(value)
+	self:patch4Byte(0x19C, value)
+end
+
+function EquipParamWeapon:displayTypeId(value)
+	self:patch2Byte(0x1A2, value)
+end
+
+
+function EquipParamWeapon:sfxId0(value)
+	self:patch4Byte(0x1D0, value)
+end
+
+function EquipParamWeapon:sfxId1(value)
+	self:patch4Byte(0x1D4, value)
+end
+
+function EquipParamWeapon:sfxId2(value)
+	self:patch4Byte(0x1D8, value)
+end
+
+function EquipParamWeapon:sfxId3(value)
+	self:patch4Byte(0x1DC, value)
+end
+
+function EquipParamWeapon:sfxPos0(value)
+	self:patch4Byte(0x1E0, value)
+end
+
+function EquipParamWeapon:sfxPos1(value)
+	self:patch4Byte(0x1E4, value)
+end
+
+function EquipParamWeapon:sfxPos2(value)
+	self:patch4Byte(0x1E8, value)
+end
+
+function EquipParamWeapon:sfxPos3(value)
+	self:patch4Byte(0x1EC, value)
+end
+
+function EquipParamWeapon:staminaConsumeRate(value)
+	self:patchFloat(0x1F0, value)
+end
+
+--
+
+function EquipParamWeapon:attackElementCorrectId(value)
+	self:patch4Byte(0x228, value)
+end
+
+function EquipParamWeapon:shopPrice(value)
+	self:patch4Byte(0x22C, value)
+end
+
+function EquipParamWeapon:ReinforcementMenuType(value)
+    self:patchByte(0x231, value)
+end
+
+function EquipParamWeapon:stackSize(value)
+    self:patchByte(0x231, value)
+end
+
+--Compatibility
+function EquipParamWeapon:enablePyromancy(value)
+	self:patchBinary(0x102, value, 0)
+end
+
+function EquipParamWeapon:Group0_AtkVfxId(value)
+	self:patch4Byte(0x10C, value)
+end
+
+function EquipParamWeapon:Group0_DummyPolyId0(value)
+	self:patch4Byte(0x110, value)
+end
+
+function EquipParamWeapon:Group0_DummyPolyId1(value)
+	self:patch4Byte(0x114, value)
+end
+
+function EquipParamWeapon:materialVal0(value)
+	self:patch2Byte(0x16C, value)
+end
+
+function EquipParamWeapon:materialVal1(value)
+	self:patch2Byte(0x16E, value)
+end
+
+function EquipParamWeapon:weaponPosition(value)
+	self:patch4Byte(0x170, value)
+end
+
+function EquipParamWeapon:correctTypeMagic(value)
+	self:patchByte(0x179, value)
+end
+
+function EquipParamWeapon:correctTypeFire(value)
+	self:patchByte(0x17A, value)
+end
+
+function EquipParamWeapon:correctTypeThunder(value)
+	self:patchByte(0x17B, value)
+end
+
+function EquipParamWeapon:correctTypeDark(value)
+	self:patchByte(0x18A, value)
+end
+
+function EquipParamWeapon:AtkThrowEscapeA(value)
+	self:patchByte(0x18B, value)
+end
+
+function EquipParamWeapon:swordArt_ActId(value)
+	self:patchByte(0x18C, value)
+end
+
+function EquipParamWeapon:AtkThrowEscapeB(value)
+	self:patchByte(0x190, value)
+end
+
+function EquipParamWeapon:weaponArt(value)
+	self:patch4Byte(0x194, value)
+end
+
+function EquipParamWeapon:swordArt(value)
+	self:patch4Byte(0x194, value)
+end
+
+function EquipParamWeapon:swordArtId(value)
+	self:patch4Byte(0x194, value)
+end
+
+function EquipParamWeapon:reinforceWeaponId(value)
+	self:patch4Byte(0x19C, value)
+end
+
+function EquipParamWeapon:quiverModel(value)
+	self:patch4Byte(0x19C, value)
+end
+
+function EquipParamWeapon:categoryName(value)
+	self:patch2Byte(0x1A2, value)
+end
+
+function EquipParamWeapon:StaminaConsumeRate(value)
+	self:patchFloat(0x1F0, value)
+end
+
+function EquipParamWeapon:staminaConsumption(value)
+	self:patchFloat(0x1F0, value)
+end
+
+function EquipParamWeapon:AttackElementCorrect(value)
+	self:patch4Byte(0x228, value)
+end
+
+function EquipParamWeapon:StackSize(value)
+    self:patchByte(0x231, value)
+end
+
+--[[END EquipParamWeapon class]]--
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+

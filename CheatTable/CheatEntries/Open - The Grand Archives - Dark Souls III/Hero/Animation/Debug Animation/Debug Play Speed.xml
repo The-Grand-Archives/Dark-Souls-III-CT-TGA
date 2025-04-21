@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337180569</ID>
+  <Description>"Debug Play Speed"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>C0</Offset>
+    <Offset>10</Offset>
+    <Offset>50</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

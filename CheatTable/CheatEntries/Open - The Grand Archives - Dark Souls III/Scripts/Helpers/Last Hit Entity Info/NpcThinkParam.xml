@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>89749</ID>
+  <Description>"NpcThinkParam"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>4</Offset>
+    <Offset>30</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

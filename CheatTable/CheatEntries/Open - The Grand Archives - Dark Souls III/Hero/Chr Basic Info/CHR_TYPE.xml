@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081665</ID>
+  <Description>"CHR_TYPE"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>70</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

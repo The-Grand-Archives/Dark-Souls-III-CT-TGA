@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099232</ID>
+  <Description>"HpBarCap"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>8</Offset>
+    <Offset>60</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,11 @@
+[ENABLE]
+
+[[[WorldChrMan]+40]+28]+80:
+db EE BA 39 C3 51 04 DE 41 27 0E 66 C3
+
+{$lua}
+disableMemrec(memrec)
+
+[DISABLE]
+
+

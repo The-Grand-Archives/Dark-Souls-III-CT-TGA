@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098338</ID>
+  <Description>"Area information | 領域情報"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337098339"/>
+    <id id="1337098350"/>
+    <id id="1337098351"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

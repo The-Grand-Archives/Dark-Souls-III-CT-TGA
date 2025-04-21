@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337098058</ID>
+  <Description>"Play Mode"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:2D Sound
+1:3D Sound
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjSound</Address>
+  <Offsets>
+    <Offset>10</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

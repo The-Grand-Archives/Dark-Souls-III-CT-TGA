@@ -1,0 +1,87 @@
+{ Game   : DarkSouls III
+  Version: 1.2
+  Date   : 2022-08-05
+  Authors: Igromanru, David Scholberg, inuNorii
+  Credits: Thanks to RBT and Dalvik
+  Description: The script allow you to summon more Phantoms, but on the server side it's restricted to 5 phantoms.
+}
+
+[ENABLE]
+aobscanmodule(PlayerIncrement,$process,FF 43 18 48 83 C6 1C)
+alloc(allocatedMemory,128,PlayerIncrement)
+label(PlayerIncrementOriginal)
+registersymbol(PlayerIncrement)
+registersymbol(PlayerIncrementOriginal)
+
+[GameMan]+D38:
+dd 00000001
+
+allocatedMemory:
+
+PlayerIncrementOriginal:
+readmem(PlayerIncrement,11)
+code:
+push rax
+mov rax,[SprjSessionManager]
+mov rax,[rax+10]
+mov eax,[rax+0C]
+cmp dword ptr [rbx+1C],eax
+jnl short PlayerIncrement_max
+mov [rbx+18],01
+jmp short originalcode
+PlayerIncrement_max:
+mov [rbx+18],eax
+
+originalcode:
+pop rax
+
+add rsi,1C
+add rdi,1C
+jmp return
+
+PlayerIncrement:
+jmp code
+nop 6
+return:
+
+[DISABLE]
+PlayerIncrement:
+readmem(PlayerIncrementOriginal,11)
+[GameMan]+D38:
+readmem([GameMan]+D3C,4)
+
+unregistersymbol(PlayerIncrement)
+unregistersymbol(PlayerIncrementOriginal)
+dealloc(allocatedMemory)
+
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+684E30
+
+"DarkSoulsIII.exe"+684E17: 75 05                       -  jne DarkSoulsIII.exe+684E1E
+"DarkSoulsIII.exe"+684E19: FF 43 08                    -  inc [rbx+08]
+"DarkSoulsIII.exe"+684E1C: EB 12                       -  jmp DarkSoulsIII.exe+684E30
+"DarkSoulsIII.exe"+684E1E: 83 F8 02                    -  cmp eax,02
+"DarkSoulsIII.exe"+684E21: 75 05                       -  jne DarkSoulsIII.exe+684E28
+"DarkSoulsIII.exe"+684E23: FF 43 0C                    -  inc [rbx+0C]
+"DarkSoulsIII.exe"+684E26: EB 08                       -  jmp DarkSoulsIII.exe+684E30
+"DarkSoulsIII.exe"+684E28: 83 F8 0C                    -  cmp eax,0C
+"DarkSoulsIII.exe"+684E2B: 75 03                       -  jne DarkSoulsIII.exe+684E30
+"DarkSoulsIII.exe"+684E2D: FF 43 10                    -  inc [rbx+10]
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+684E30: FF 43 18                    -  inc [rbx+18]
+"DarkSoulsIII.exe"+684E33: 48 83 C6 1C                 -  add rsi,1C
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+684E37: 48 83 C7 1C                 -  add rdi,1C
+"DarkSoulsIII.exe"+684E3B: 48 FF CD                    -  dec rbp
+"DarkSoulsIII.exe"+684E3E: 75 80                       -  jne DarkSoulsIII.exe+684DC0
+"DarkSoulsIII.exe"+684E40: 48 8B 5C 24 38              -  mov rbx,[rsp+38]
+"DarkSoulsIII.exe"+684E45: 48 8B 6C 24 40              -  mov rbp,[rsp+40]
+"DarkSoulsIII.exe"+684E4A: 48 8B 74 24 48              -  mov rsi,[rsp+48]
+"DarkSoulsIII.exe"+684E4F: 48 83 C4 20                 -  add rsp,20
+"DarkSoulsIII.exe"+684E53: 5F                          -  pop rdi
+"DarkSoulsIII.exe"+684E54: C3                          -  ret
+"DarkSoulsIII.exe"+684E55: 66 0F 1F 44 00 00           -  nop [rax+rax+00]
+}
+
+

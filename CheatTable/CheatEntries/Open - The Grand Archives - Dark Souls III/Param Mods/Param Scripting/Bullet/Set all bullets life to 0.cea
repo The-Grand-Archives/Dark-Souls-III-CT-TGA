@@ -1,0 +1,14 @@
+{
+  Author: Igromanru
+  Description: Changes all bullets life to 0
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local object = Bullet:new("SetAllBulletsLifeToZero")
+object:patchAllFloat(0x10,0.0)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("SetAllBulletsLifeToZero")

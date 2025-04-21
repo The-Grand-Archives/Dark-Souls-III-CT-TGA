@@ -1,0 +1,25 @@
+<CheatEntry>
+  <ID>1337180552</ID>
+  <Description>"Debug Animation"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337180569"/>
+    <id id="1337180579"/>
+    <id id="1337180556"/>
+    <id id="1337180557"/>
+    <id id="1337180573"/>
+    <id id="1337180558"/>
+    <id id="1337180560"/>
+    <id id="1337180559"/>
+    <id id="1337180563"/>
+    <id id="1337180561"/>
+    <id id="1337180562"/>
+    <id id="1337180565"/>
+    <id id="1337180564"/>
+    <id id="1337180555"/>
+    <id id="1337180571"/>
+    <id id="1337180567"/>
+    <id id="1337180568"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097790</ID>
+  <Description>"Omitted update level judgment distance [m] (previous frame non-drawing Lv30 judgment) | 省略更新レベル判定距離[m]（前フレーム非描画 Lv30判定）"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

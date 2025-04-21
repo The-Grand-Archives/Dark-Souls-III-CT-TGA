@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337081901</ID>
+  <Description>"Drawing distance between parts | パーツ間距離描画"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+477F498</Address>
+  <Offsets>
+    <Offset>1752</Offset>
+  </Offsets>
+</CheatEntry>

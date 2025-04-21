@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337187452</ID>
+  <Description>"Velocity attenuation rate when a sliding bullet hits the floor | すべる弾の床ヒット時の速度減衰率"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>SprjBulletManager</Address>
+  <Offsets>
+    <Offset>1C4</Offset>
+  </Offsets>
+</CheatEntry>

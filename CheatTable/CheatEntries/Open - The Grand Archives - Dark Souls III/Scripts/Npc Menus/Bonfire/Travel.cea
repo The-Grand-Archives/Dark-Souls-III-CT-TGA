@@ -1,0 +1,38 @@
+//Thanks to Luke_Yui for message box
+[ENABLE]
+aobscanmodule(BTravel_Call,$process,40 55 53 56 57 41 56 48 8D 6C 24 C9 48 81 EC 00 01 00 00 48 C7 45 97 FE FF FF FF)
+aobscanmodule(BError_Call,$process,40 57 48 83 EC ?? 48 C7 44 24 ?? FE FF FF FF 48 89 5C 24 ?? 48 8B F9 48 8B 05 ?? ?? ?? ?? 83 B8)
+alloc(BonfireTravel,100,DarkSoulsIII.exe)
+createthread(BonfireTravel)
+
+label(Error)
+alloc(ErrorText,128)
+
+BonfireTravel:
+sub rsp,48
+mov rcx,[SprjEventFlagMan]
+mov rcx,[rcx]
+cmp byte ptr [rcx+5A03],128
+jb short Error
+lea rcx,[rsp+28]
+call BTravel_Call
+add rsp,48
+ret
+
+Error:
+lea rax,[ErrorText]
+mov [rsp+30],rax
+lea rcx,[rsp+30]
+call BError_Call
+add rsp,48
+ret
+
+ErrorText:
+dw 'Missing Firelink Shrine bonfire',0
+
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(BonfireTravel)
+dealloc(ErrorText)

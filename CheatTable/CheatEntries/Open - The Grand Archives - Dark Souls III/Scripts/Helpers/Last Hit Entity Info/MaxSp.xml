@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>88215</ID>
+  <Description>"MaxSp"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>F8</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

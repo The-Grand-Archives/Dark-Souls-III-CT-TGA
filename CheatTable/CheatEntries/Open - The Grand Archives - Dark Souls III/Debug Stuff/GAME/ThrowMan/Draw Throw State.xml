@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337187602</ID>
+  <Description>"Draw Throw State"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <Color>0000FF</Color>
+  <VariableType>Binary</VariableType>
+  <BitStart>2</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>ThrowMan</Address>
+  <Offsets>
+    <Offset>E8</Offset>
+  </Offsets>
+</CheatEntry>

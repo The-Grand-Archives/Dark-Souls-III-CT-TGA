@@ -1,0 +1,20 @@
+// Changes the Red Eye Orb animation, removes the confirmation prompt,
+// and finds a larger quantity of hosts to invade at an increased frequency
+
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+
+local network_settings = NetworkParam:new("faster_invasions", 0)
+
+network_settings:maxBreakInTargetListCount(20) -- find up to 20 potential hosts to invade, not 5
+network_settings:breakInRequestIntervalTimeSec(10) -- and search for them every 10 seconds, not 30
+network_settings:breakInRequestTimeOutSec(5) -- don't wait 20 whole seconds for an invasion to fail, reduce it to 5
+
+local red_eye_orb = EquipParamGoods:new("faster_invasions", 102)
+
+red_eye_orb:goodsUseAnim(16) -- Use the pine bundle animation
+red_eye_orb:opmeMenuType(0) -- Don't confirm item use
+
+[DISABLE]
+paramUtils:restore("faster_invasions")

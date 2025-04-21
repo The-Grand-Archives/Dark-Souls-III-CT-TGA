@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337098137</ID>
+  <Description>"ID:31 &lt; Deacons of the Deep"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Locked
+1:Unlocked
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>CSTrophy</Address>
+  <Offsets>
+    <Offset>102*1F</Offset>
+    <Offset>40</Offset>
+    <Offset>8</Offset>
+  </Offsets>
+</CheatEntry>

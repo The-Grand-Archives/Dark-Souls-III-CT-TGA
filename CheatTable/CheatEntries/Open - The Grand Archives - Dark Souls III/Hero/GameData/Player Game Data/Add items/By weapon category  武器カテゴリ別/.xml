@@ -1,0 +1,24 @@
+<CheatEntry>
+  <ID>1337081090</ID>
+  <Description>"By weapon category | 武器カテゴリ別"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097251"/>
+    <id id="1337097242"/>
+    <id id="1337097265"/>
+    <id id="1337097264"/>
+    <id id="1337097263"/>
+    <id id="1337097262"/>
+    <id id="1337097261"/>
+    <id id="1337097260"/>
+    <id id="1337097259"/>
+    <id id="1337097258"/>
+    <id id="1337097257"/>
+    <id id="1337097256"/>
+    <id id="1337097255"/>
+    <id id="1337097254"/>
+    <id id="1337097253"/>
+    <id id="1337097252"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

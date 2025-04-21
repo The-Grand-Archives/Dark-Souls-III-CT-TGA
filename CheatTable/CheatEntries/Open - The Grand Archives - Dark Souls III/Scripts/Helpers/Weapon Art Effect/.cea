@@ -1,0 +1,69 @@
+[ENABLE]
+aobscanmodule(AnimEffect,DarkSoulsIII.exe,41 8B 10 85 D2 7E ? 41 ? 79 18)
+alloc(newmem,$1000,AnimEffect)
+
+label(code)
+label(return)
+label(AnimEffect_ptr)
+
+newmem:
+
+code:
+  mov rdx,AnimEffect_ptr
+  mov [rdx],r8
+  mov edx,[r8]
+  test edx,edx
+  jmp return
+
+AnimEffect_ptr:
+  dq 0
+
+AnimEffect:
+  jmp newmem
+return:
+
+registersymbol(AnimEffect)
+registersymbol(AnimEffect_ptr)
+
+aobscanmodule(VfxEffect,DarkSoulsIII.exe,8B 02 89 44 24 20 0F)
+alloc(newmem11,100,VfxEffect)
+
+label(code11)
+label(return11)
+label(VfxAnim_ptr)
+
+newmem11:
+
+code11:
+  mov rax,VfxAnim_ptr
+  mov [rax],rdx
+  mov eax,[rdx]
+  mov [rsp+20],eax
+  jmp return11
+
+VfxAnim_ptr:
+  dq 0
+
+VfxEffect:
+  jmp newmem11
+  nop
+return11:
+registersymbol(VfxEffect)
+registersymbol(VfxAnim_ptr)
+
+[DISABLE]
+
+AnimEffect:
+  db 41 8B 10 85 D2
+
+unregistersymbol(AnimEffect)
+unregistersymbol(AnimEffect_ptr)
+dealloc(newmem)
+
+VfxEffect:
+  db 8B 02 89 44 24 20
+
+unregistersymbol(VfxEffect)
+unregistersymbol(VfxAnim_ptr)
+dealloc(newmem11)
+

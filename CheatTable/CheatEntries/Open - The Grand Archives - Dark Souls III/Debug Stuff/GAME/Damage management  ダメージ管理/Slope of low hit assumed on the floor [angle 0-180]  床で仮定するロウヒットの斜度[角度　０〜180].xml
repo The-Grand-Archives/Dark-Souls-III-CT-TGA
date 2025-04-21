@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>1337096534</ID>
+  <Description>"Slope of low hit assumed on the floor [angle 0-180] | 床で仮定するロウヒットの斜度[角度　０〜180]"</Description>
+  <Color>000080</Color>
+  <VariableType>Float</VariableType>
+  <Address>DarkSoulsIII.exe+4581470</Address>
+</CheatEntry>

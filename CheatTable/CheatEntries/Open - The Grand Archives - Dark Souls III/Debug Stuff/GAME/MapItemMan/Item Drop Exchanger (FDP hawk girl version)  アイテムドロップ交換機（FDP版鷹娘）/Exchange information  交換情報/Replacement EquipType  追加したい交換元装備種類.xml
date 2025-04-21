@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337098239</ID>
+  <Description>"Replacement EquipType | 追加したい交換元装備種類"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Weapon | 武器
+1:Protecter | 防具
+2:Accessory | 装飾
+4:Goods | 道具
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>4C</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,11 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+DarkSoulsIII.exe+583a5d:
+  db 0F 57 F6 90
+
+[DISABLE]
+DarkSoulsIII.exe+583a5d:
+  db F3 0F 58 F0

@@ -1,0 +1,173 @@
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+local win = MIGForm:new()
+Ring = Item:new()
+
+function Ring:new(attributes)
+  o = Item:new(attributes.id, attributes.typ, attributes.quantity, attributes.dlc, attributes.cutContent)
+  setmetatable(o, self)
+  self.__index = self
+  return o
+end
+
+local rings = {
+  Ring:new({id = 0x20004E20}),	--Life Ring
+  Ring:new({id = 0x20004E21}),	--Life Ring+1
+  Ring:new({id = 0x20004E22}),	--Life Ring+2
+  Ring:new({id = 0x20004E23}),	--Life Ring+3
+  Ring:new({id = 0x20004E2A}),	--Chloranthy Ring
+  Ring:new({id = 0x20004E2B}),	--Chloranthy Ring+1
+  Ring:new({id = 0x20004E2C}),	--Chloranthy Ring+2
+  Ring:new({id = 0x20004E2D, dlc = 2}),	--Chloranthy Ring +3
+  Ring:new({id = 0x20004E34}),	--Havel's Ring
+  Ring:new({id = 0x20004E35}),	--Havel's Ring+1
+  Ring:new({id = 0x20004E36}),	--Havel's Ring+2
+  Ring:new({id = 0x20004E37, dlc = 2}),	--Havel's Ring +3
+  Ring:new({id = 0x20004E3E}),	--Ring of Favor
+  Ring:new({id = 0x20004E3F}),	--Ring of Favor+1
+  Ring:new({id = 0x20004E40}),	--Ring of Favor+2
+  Ring:new({id = 0x20004E41, dlc = 2}),	--Ring of Favor +3
+  Ring:new({id = 0x20004E48}),	--Ring of Steel Protection
+  Ring:new({id = 0x20004E49}),	--Ring of Steel Protection+1
+  Ring:new({id = 0x20004E4A}),	--Ring of Steel Protection+2
+  Ring:new({id = 0x20004E4B, dlc = 2}),	--Ring of Steel Protection +3
+  Ring:new({id = 0x20004E52}),	--Flame Stoneplate Ring
+  Ring:new({id = 0x20004E53}),	--Flame Stoneplate Ring+1
+  Ring:new({id = 0x20004E54}),	--Flame Stoneplate Ring+2
+  Ring:new({id = 0x20004E5C}),	--Thunder Stoneplate Ring
+  Ring:new({id = 0x20004E5D}),	--Thunder Stoneplate Ring+1
+  Ring:new({id = 0x20004E5E}),	--Thunder Stoneplate Ring+2
+  Ring:new({id = 0x20004E66}),	--Magic Stoneplate Ring
+  Ring:new({id = 0x20004E67}),	--Magic Stoneplate Ring+1
+  Ring:new({id = 0x20004E68}),	--Magic Stoneplate Ring+2
+  Ring:new({id = 0x20004E70}),	--Dark Stoneplate Ring
+  Ring:new({id = 0x20004E71}),	--Dark Stoneplate Ring+1
+  Ring:new({id = 0x20004E72}),	--Dark Stoneplate Ring+2
+  Ring:new({id = 0x20004E7A}),	--Speckled Stoneplate Ring
+  Ring:new({id = 0x20004E7B}),	--Speckled Stoneplate Ring+1
+  Ring:new({id = 0x20004E84}),	--Bloodbite Ring
+  Ring:new({id = 0x20004E85}),	--Bloodbite Ring+1
+  Ring:new({id = 0x20004E8E}),	--Poisonbite Ring
+  Ring:new({id = 0x20004E8F}),	--Poisonbite Ring+1
+  Ring:new({id = 0x20004E98}),	--Cursebite Ring
+  Ring:new({id = 0x20004EA2}),	--Fleshbite Ring
+  Ring:new({id = 0x20004EA3}),	--Fleshbite Ring+1
+  Ring:new({id = 0x20004EAC}),	--Wood Grain Ring
+  Ring:new({id = 0x20004EAD}),	--Wood Grain Ring+1
+  Ring:new({id = 0x20004EAE}),	--Wood Grain Ring+2
+  Ring:new({id = 0x20004EB6}),	--Scholar Ring
+  Ring:new({id = 0x20004EC0}),	--Priestess Ring
+  Ring:new({id = 0x20004ECA}),	--Red Tearstone Ring
+  Ring:new({id = 0x20004ED4}),	--Blue Tearstone Ring
+  Ring:new({id = 0x20004EDE}),	--Wolf Ring
+  Ring:new({id = 0x20004EDF}),	--Wolf Ring+1
+  Ring:new({id = 0x20004EE0}),	--Wolf Ring+2
+  Ring:new({id = 0x20004EE1, dlc = 2}),	--Wolf Ring +3
+  Ring:new({id = 0x20004EE8}),	--Leo Ring
+--Ring:new({id = 0x20004F74, cutContent = true}),	--Ring of the Sun's Firstborn
+  Ring:new({id = 0x20004EF2}),	--Ring of Sacrifice
+  Ring:new({id = 0x20004F06}),	--Young Dragon Ring
+  Ring:new({id = 0x20004F07}),	--Bellowing Dragoncrest Ring
+  Ring:new({id = 0x20004F10}),	--Great Swamp Ring
+  Ring:new({id = 0x20004F11}),	--Witch's Ring
+  Ring:new({id = 0x20004F1A}),	--Morne's Ring
+  Ring:new({id = 0x20004F1B}),	--Ring of the Sun's First Born
+  Ring:new({id = 0x20004F2E}),	--Lingering Dragoncrest Ring
+  Ring:new({id = 0x20004F2F}),	--Lingering Dragoncrest Ring+1
+  Ring:new({id = 0x20004F30}),	--Lingering Dragoncrest Ring+2
+  Ring:new({id = 0x20004F38}),	--Sage Ring
+  Ring:new({id = 0x20004F39}),	--Sage Ring+1
+  Ring:new({id = 0x20004F3A}),	--Sage Ring+2
+  Ring:new({id = 0x20004F42}),	--Slumbering Dragoncrest Ring
+  Ring:new({id = 0x20004F4C}),	--Dusk Crown Ring
+  Ring:new({id = 0x20004F56}),	--Saint's Ring
+  Ring:new({id = 0x20004F60}),	--Deep Ring
+  Ring:new({id = 0x20004F6A}),	--Darkmoon Ring
+  Ring:new({id = 0x20004F92}),	--Hawk Ring
+  Ring:new({id = 0x20004F9C}),	--Hornet Ring
+  Ring:new({id = 0x20004FA6}),	--Covetous Gold Serpent Ring
+  Ring:new({id = 0x20004FA7}),	--Covetous Gold Serpent Ring+1
+  Ring:new({id = 0x20004FA8}),	--Covetous Gold Serpent Ring+2
+  Ring:new({id = 0x20004FA9, dlc = 2}),	--Covetous Gold Serpent Ring +3
+  Ring:new({id = 0x20004FB0}),	--Covetous Silver Serpent Ring
+  Ring:new({id = 0x20004FB1}),	--Covetous Silver Serpent Ring+1
+  Ring:new({id = 0x20004FB2}),	--Covetous Silver Serpent Ring+2
+  Ring:new({id = 0x20004FB3, dlc = 2}),	--Covetous Silver Serpent Ring +3
+  Ring:new({id = 0x20004FBA}),	--Sun Princess Ring
+  Ring:new({id = 0x20004FC4}),	--Silvercat Ring
+  Ring:new({id = 0x20004FCE}),	--Skull Ring
+  Ring:new({id = 0x20004FD8}),	--Untrue White Ring
+  Ring:new({id = 0x20004FE2}),	--Carthus Milkring
+  Ring:new({id = 0x20004FEC}),	--Knight's Ring
+  Ring:new({id = 0x20004FF6}),	--Hunter's Ring
+  Ring:new({id = 0x20005000}),	--Knight Slayer's Ring
+  Ring:new({id = 0x2000500A}),	--Magic Clutch Ring
+  Ring:new({id = 0x20005014}),	--Lightning Clutch Ring
+  Ring:new({id = 0x2000501E}),	--Fire Clutch Ring
+  Ring:new({id = 0x20005028}),	--Dark Clutch Ring
+  Ring:new({id = 0x2000503C}),	--Flynn's Ring
+  Ring:new({id = 0x20005046}),	--Prisoner's Chain
+  Ring:new({id = 0x20005050}),	--Untrue Dark Ring
+  Ring:new({id = 0x20005064}),	--Obscuring Ring
+  Ring:new({id = 0x2000506E}),	--Ring of the Evil Eye
+  Ring:new({id = 0x2000506F}),	--Ring of the Evil Eye+1
+  Ring:new({id = 0x20005070}),	--Ring of the Evil Eye+2
+  Ring:new({id = 0x20005071, dlc = 2}),	--Ring of the Evil Eye +3
+  Ring:new({id = 0x20005078}),	--Calamity Ring
+  Ring:new({id = 0x20005082}),	--Farron Ring
+  Ring:new({id = 0x2000508C}),	--Aldrich's Ruby
+  Ring:new({id = 0x20005096}),	--Aldrich's Sapphire
+  Ring:new({id = 0x200050B4}),	--Lloyd's Sword Ring
+  Ring:new({id = 0x200050BE}),	--Lloyd's Shield Ring
+  Ring:new({id = 0x200050DC}),	--Estus Ring
+  Ring:new({id = 0x200050E6}),	--Ashen Estus Ring
+  Ring:new({id = 0x200050F0}),	--Horsehoof Ring
+  Ring:new({id = 0x200050FA}),	--Carthus Bloodring
+  Ring:new({id = 0x20005104}),	--Reversal Ring
+  Ring:new({id = 0x2000510E}),	--Pontiff's Right Eye
+  Ring:new({id = 0x20005136}),	--Pontiff's Left Eye
+  Ring:new({id = 0x2000515E}),	--Dragonscale Ring
+  Ring:new({id = 0x20005208, dlc = 1})	--Chillbite Ring
+}
+
+function createWindow()
+  local formName = 'Rings'
+  win:create('TCEForm', nil, {Caption = formName})
+  win:initDefaultForm(formName)
+
+  win:create('TGroupBox', formName, {Caption = 'DLC', Left = 10, ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', LeftRightSpacing = 5}})
+  win:create('TCheckBox', 'DLC', {Caption = 'Base Game', Checked = true})
+  win:create('TCheckBox', 'DLC', {Caption = 'Ashes of Ariandel', Checked = true})
+  win:create('TCheckBox', 'DLC', {Caption = 'Ringed City', Checked = true})
+  win:fixSize('DLC', 52, 25)
+
+  win:create('TGroupBox', formName, {Caption = 'Content', Left = 10, Top = win.ctrl['DLC'].y, ChildSizing = {Layout = 'cclTopToBottomThenLeftToRight', LeftRightSpacing = 5}})
+  win:create('TCheckBox', 'Content', {Caption = 'Game Content', Checked = true})
+  win:create('TCheckBox', 'Content', {Caption = 'Cut Content', Checked = false})
+  win:fixSize('Content', 5, 25)
+
+  win:fillGap('DLC', {x = 'Extras'})
+  win:fixSize(formName, 10, 60)
+  win:create('TButton', formName, {Caption = 'Spawn', Width = win.ctrl[formName].Width - 20, Height = 40, Left = 10, Top = win.ctrl[formName].Height - 50})
+  win.ctrl['Spawn'].onClick = spawn
+end
+
+function spawn()
+  local checkBoxes = win.ctrl
+  local baseAddress = GetAddress('ItemArray')
+  local totalItems = 0
+  for _, ring in pairs(rings) do
+       if(ring:checkAll(checkBoxes)) then
+         totalItems = totalItems + 1
+         baseAddress = ring:spawn(baseAddress)
+       end
+  end
+  WriteInteger(GetAddress('ItemArray'), totalItems)
+  autoAssemble('CreateThread(MassItemGib)')
+  win.ctrl.Rings.close()
+end
+
+[ENABLE]
+createWindow()
+
+[DISABLE]

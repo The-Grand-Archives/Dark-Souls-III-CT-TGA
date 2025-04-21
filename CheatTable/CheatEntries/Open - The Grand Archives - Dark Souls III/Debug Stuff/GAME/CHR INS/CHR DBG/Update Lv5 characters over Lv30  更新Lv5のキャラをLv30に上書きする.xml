@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337189978</ID>
+  <Description>"Update Lv5 characters over Lv30 | 更新Lv5のキャラをLv30に上書きする"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>13</Offset>
+  </Offsets>
+</CheatEntry>

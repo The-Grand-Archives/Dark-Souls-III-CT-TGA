@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337190146</ID>
+  <Description>"Distance (height)"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1B8</Offset>
+    <Offset>3018</Offset>
+  </Offsets>
+</CheatEntry>

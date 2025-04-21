@@ -1,0 +1,16 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local HailSpam = { --effect param mods
+  {11373200,0x80,"1E"}, --NumShoot [30 in Array of Byte]
+}
+paramUtils:paramIterator("Bullet",HailSpam,"HSpam") --Save values on 'enable'
+
+{$asm}
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+ paramUtils:paramDepatcher("HSpam") --Restore default values on 'disable'
+
+
+

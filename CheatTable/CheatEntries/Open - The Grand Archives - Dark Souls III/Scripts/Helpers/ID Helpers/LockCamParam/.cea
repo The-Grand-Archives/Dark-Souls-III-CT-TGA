@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(LockCamParamHelper,8)
+registersymbol(LockCamParamHelper)
+[DISABLE]
+dealloc(LockCamParamHelper)
+unregistersymbol(LockCamParamHelper)

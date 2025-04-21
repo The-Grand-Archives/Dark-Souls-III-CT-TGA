@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337098059</ID>
+  <Description>"Sound ID"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjSound</Address>
+  <Offsets>
+    <Offset>C</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

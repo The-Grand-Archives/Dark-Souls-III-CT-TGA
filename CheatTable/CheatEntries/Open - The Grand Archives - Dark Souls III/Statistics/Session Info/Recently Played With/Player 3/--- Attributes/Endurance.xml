@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>80913</ID>
+  <Description>"Endurance"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>4C</Offset>
+    <Offset>540+0950*2</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

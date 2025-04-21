@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337190353</ID>
+  <Description>"5 custom weapons with unused cut models"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337190363"/>
+    <id id="1337190352"/>
+    <id id="1337190354"/>
+    <id id="1337190355"/>
+    <id id="1337190360"/>
+    <id id="1337190361"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

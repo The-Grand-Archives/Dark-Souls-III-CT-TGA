@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337180612</ID>
+  <Description>"Water surface quality | 水面品質"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:LOW
+2:MEDIUM
+3:HIGH
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSWindow</Address>
+  <Offsets>
+    <Offset>F0</Offset>
+  </Offsets>
+</CheatEntry>

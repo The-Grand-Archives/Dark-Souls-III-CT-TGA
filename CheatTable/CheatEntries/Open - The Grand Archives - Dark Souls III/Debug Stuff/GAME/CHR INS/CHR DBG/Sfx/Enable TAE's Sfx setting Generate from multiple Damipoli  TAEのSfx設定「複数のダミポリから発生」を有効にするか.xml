@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337190039</ID>
+  <Description>"Enable TAE's Sfx setting "Generate from multiple Damipoli" | TAEのSfx設定「複数のダミポリから発生」を有効にするか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>173</Offset>
+  </Offsets>
+</CheatEntry>

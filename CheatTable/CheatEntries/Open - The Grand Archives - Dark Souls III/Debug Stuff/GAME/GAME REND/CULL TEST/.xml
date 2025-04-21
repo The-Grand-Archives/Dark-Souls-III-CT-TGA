@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337187831</ID>
+  <Description>"CULL TEST"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337187832"/>
+    <id id="1337187833"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337187805</ID>
+  <Description>"?"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>374</Offset>
+  </Offsets>
+</CheatEntry>

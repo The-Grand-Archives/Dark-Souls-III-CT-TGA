@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337078708</ID>
+  <Description>"SpEffectCategory"</Description>
+  <DropDownList DisplayValueAsItem="1">3:Sorcery
+4:Miracle
+10:Pyromancy
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>+24</Address>
+</CheatEntry>

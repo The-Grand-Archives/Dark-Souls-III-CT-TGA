@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>94082</ID>
+  <Description>"Archdragon Peak"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78202"/>
+    <id id="78203"/>
+    <id id="78204"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>88213</ID>
+  <Description>"Coordinates #1"</Description>
+  <VariableType>Float</VariableType>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>80</Offset>
+    <Offset>68</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

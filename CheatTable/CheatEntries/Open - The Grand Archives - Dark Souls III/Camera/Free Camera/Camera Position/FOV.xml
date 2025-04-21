@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>81124</ID>
+  <Description>"FOV"</Description>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>50</Offset>
+    <Offset>E8</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337019859</ID>
+  <Description>"HUD"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+2:Auto
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>11</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

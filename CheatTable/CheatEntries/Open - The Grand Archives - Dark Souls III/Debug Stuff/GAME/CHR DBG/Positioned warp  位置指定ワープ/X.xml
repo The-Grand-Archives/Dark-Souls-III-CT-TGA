@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097898</ID>
+  <Description>"X"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>160</Offset>
+  </Offsets>
+</CheatEntry>

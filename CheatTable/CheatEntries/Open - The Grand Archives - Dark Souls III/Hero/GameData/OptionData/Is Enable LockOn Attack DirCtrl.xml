@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337081042</ID>
+  <Description>"Is Enable LockOn Attack DirCtrl"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:0
+1:1
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>1E</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

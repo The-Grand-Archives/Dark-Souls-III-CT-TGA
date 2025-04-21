@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337078867</ID>
+  <Description>"PrimaryLeftWep"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>32C</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

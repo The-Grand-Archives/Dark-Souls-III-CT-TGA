@@ -1,0 +1,2830 @@
+<CheatEntry>
+  <ID>1337257113</ID>
+  <Description>"SP_EFFECT_ID"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">0:0 : Test
+1:1 : Pledge effect test
+2:2 : test_enchantweapon
+3:3 : test_cure
+4:4 : White Sign Soapstone
+5:5 : test_cureitem
+6:6 : Black Crystal Kick
+7:7 : Black Crystal Leave Session
+8:8 : Parameter change of [ system ] ghost when
+9:9 : Parameter change of the system when the black
+10:10 : Red Sign Soapstone
+11:11 : Red Eye orb
+12:12 : [ System ] bloodSign
+13:13 : [ System ] Seoul Steel [ multi ]
+14:14 : [ System ] blue sign visualization
+15:15 : Entry into the [ system ] NPC
+16:16 : Eye of Death
+17:17 : [ System ] l arena exit
+20:20 : Message rated heal
+21:21 : [ System ] point light source equipment
+22:22 : test_change_wep0
+23:23 : test_change_wep1
+24:24 : [ System ] relief request
+25:25 : [ System ] revival production for effect
+26:26 : Blue Eye Orb
+27:27 : Dragon Eye
+28:28 : Dried Finger
+29:29 :
+30:30 : Parry to be deformed state (conditions throw )
+31:31 : Counterhit thrust damage vulnerability
+32:32 : Player falling to (conditions throw )
+33:33 : Curse
+34:34 : Crystal Curse
+35:35 : Invalid state throw
+36:36 : Hornet Ring
+37:37 : Throw Seoul drain state (conditions throw )
+38:38 : Hornet Ring Damage Boost
+39:39 : Invalid state _ Saddle anti- throw [ DLC ]
+40:40 : No Miracle Resonance (idle effect)
+41:41 : Miracle Resonance Lv1
+42:42 : Miracle Resonance Lv2
+43:43 : Miracle Resonance Lv3
+44:44 : Miracle Resonance Lv4
+45:45 : Frost Curse
+46:46 :
+50:50 : Nature of magic ( +3 slot version)
+52:52 : PG test : detection
+53:53 : PG test : Waiting cooperation
+54:54 : PG test : cooperation
+55:55 : PG test : Submit cooperation
+57:57 : PG test : gravity invalid
+59:59 : Cooperation Lv1
+60:60 : Cooperation Lv2
+61:61 : Cooperation Lv3
+62:62 : Cooperation wait release
+63:63 : Evil eye Lv1
+64:64 : Evil Eye Lv2
+65:65 : Evil Eye ( for user )
+71:71 : Curse effect _LV1
+72:72 : Curse effect _LV2
+73:73 : Curse effect _LV3
+74:74 : Curse effect _LV4
+80:80 : Curse effect [ strengthening ] Tairei
+90:90 :
+91:91 :
+92:92 :
+93:93 : Humanity revival
+94:94 :
+95:95 :
+96:96 : Stops enemies from attacking
+97:97 :
+100:100 : Bonfire recovery effect 1
+101:101 : Bonfire recovery effect 2
+102:102 : Bonfire recovery Effect 3
+103:103 : Bonfire recovery effect 4
+104:104 : Bonfire recovery effect 5
+105:105 : Bonfire recovery effect 6
+106:106 : Bonfire recovery effect 7
+107:107 : Bonfire recovery effect 8
+108:108 : Bonfire recovery effect 9
+109:109 : Bonfire recovery effect 10
+110:110 : Respawn recovery effect 1
+111:111 : Respawn recovery effect 2
+112:112 : Respawn recovery Effect 3
+113:113 : Respawn recovery effect 4
+114:114 : Respawn recovery effect 5
+115:115 : Respawn recovery effect 6
+116:116 : Respawn recovery effect 7
+117:117 : Respawn recovery effect 8
+118:118 : Respawn recovery effect 9
+119:119 : Respawn recovery effect 10
+150:150 :
+151:151 :
+152:152 :
+153:153 :
+154:154 :
+155:155 :
+156:156 :
+157:157 :
+158:158 :
+159:159 :
+170:170 : Bloodred Moss Clump
+180:180 : Purple Moss Clump
+190:190 : Blooming Purple Moss Clump
+195:195 : Rime Moss Clump
+201:201 :
+202:202 :
+203:203 :
+206:206 :
+207:207 : Max HP lowered
+208:208 : Max HP lowered +
+211:211 :
+212:212 :
+221:221 :
+222:222 :
+231:231 :
+232:232 :
+236:236 : Max HP lowered
+237:237 : Max HP lowered
+311:311 :
+312:312 :
+321:321 :
+322:322 :
+331:331 :
+332:332 :
+336:336 :
+337:337 : Max HP lowered
+401:401 : ???
+402:402 : Torch flame cycle effect
+403:403 :
+404:404 :
+407:407 :
+412:412 :
+420:420 : Oil Urn
+421:421 :
+425:425 : Lose some HP
+430:430 : Lose more HP
+440:440 :
+490:490 : Ember (Host)
+491:491 :
+499:499 : Ember (Client)
+500:500 : Ring around chest
+510:510 :
+520:520 : Aural Decoy
+530:530 : Hidden Body
+531:531 : Hidden Body
+540:540 : Silence
+550:550 :
+560:560 : Tears of Denial
+561:561 :
+570:570 : ???
+571:571 : ???
+580:580 : Homeward
+581:581 : Homeward
+600:600 : Vow of Silence
+610:610 : Vow of Silence2
+611:611 : Vow of Silence3
+620:620 : Cast Light
+630:630 :
+640:640 : Spook
+650:650 : ???
+651:651 :
+1000:1000 : Magic Weapon
+1010:1010 : Great Magic Weap
+1020:1020 : Crystal Magic Weap
+1040:1040 : Magic Shield
+1050:1050 : Great Magic Shield
+1060:1060 : Invisible Weapon
+1070:1070 : Sunlight Blade
+1080:1080 : Darkmoon Blade
+1081:1081 : Darkmoon Blade LV1
+1082:1082 : Darkmoon Blade LV2
+1083:1083 : Darkmoon Blade LV3
+1090:1090 : Power Within
+1100:1100 : Carthus Flame Arc
+1120:1120 : Flash Sweat
+1130:1130 :
+1140:1140 :
+1150:1150 :
+1160:1160 : Magic Barrier?
+1170:1170 : Great Magic Barrier?
+1200:1200 : Poison Mist
+1210:1210 : Toxic Mist
+1220:1220 : Acid Surge
+1230:1230 : ???
+1240:1240 : ???
+1300:1300 : Stop something?
+1301:1301 : Stop Bleeding
+1302:1302 : Stop Poison
+1303:1303 : Stop Toxic
+1320:1320 :
+1321:1321 :
+1330:1330 : Repair?
+1340:1340 : Dispel?
+1350:1350 :
+1400:1400 : HP Recovery
+1401:1401 : HP Recovery
+1405:1405 : HP Recovery
+1406:1406 :
+1420:1420 : HP Recovery
+1421:1421 : HP Recovery
+1430:1430 : HP Recovery
+1431:1431 : HP Recovery
+1440:1440 : HP Recovery
+1441:1441 : HP Recovery
+1450:1450 : Profuse Sweat visuals
+1500:1500 : Chameleon
+1510:1510 : Chameleon
+1520:1520 : Dragon change 1
+1530:1530 : Dragon change 2
+1600:1600 : Drain
+1610:1610 : Drain
+1620:1620 : Drain
+1630:1630 : Drain
+1700:1700 :
+1710:1710 :
+1720:1720 :
+1800:1800 :
+1810:1810 :
+1820:1820 : Dark Blade
+1900:1900 :
+1901:1901 :
+1902:1902 :
+1903:1903 :
+1904:1904 :
+1905:1905 :
+1906:1906 :
+1907:1907 :
+1998:1998 : some vfx?
+1999:1999 : Silvercat ring landing effect
+2000:2000 : Estus flask +0
+2001:2001 : Estus flask +1
+2002:2002 : Estus flask +2
+2003:2003 : Estus flask +3
+2004:2004 : Estus flask +4
+2005:2005 : Estus flask +5
+2006:2006 : Estus flask +6
+2007:2007 : Estus flask +7
+2008:2008 : Estus flask +8
+2009:2009 : Estus flask +9
+2010:2010 : Estus flask +10
+2020:2020 : Ashen Estus flask +0
+2021:2021 : Ashen Estus flask +1
+2022:2022 : Ashen Estus flask +2
+2023:2023 : Ashen Estus flask +3
+2024:2024 : Ashen Estus flask +4
+2025:2025 : Ashen Estus flask +5
+2026:2026 : Ashen Estus flask +6
+2027:2027 : Ashen Estus flask +7
+2028:2028 : Ashen Estus flask +8
+2029:2029 : Ashen Estus flask +9
+2030:2030 : Ashen Estus flask +10
+2100:2100 : Fire Resin
+2110:2110 : Short Fire Resin
+2120:2120 : Lightning Resin
+2130:2130 : Short Light Resin
+2140:2140 :
+2150:2150 : Poison Resin
+2151:2151 : Resin Buildup
+2160:2160 : Short poison Resin
+2161:2161 : Large resin buildup
+2170:2170 : Human Pine Resin
+2180:2180 : Bleed Resin
+2181:2181 : Bleed resin buildup
+2190:2190 : Magic Resin
+2300:2300 : Fire resin
+2310:2310 : Short fire resin
+2320:2320 : Lightning resin
+2330:2330 : Short light resin
+2340:2340 :
+2350:2350 : Poison resin
+2351:2351 : Poison buildup
+2360:2360 : Short poison resin
+2361:2361 : Large poison buildup
+2370:2370 : Dark resin
+2380:2380 : Bleed resin
+2381:2381 : Bleed buildup
+2390:2390 : Magic resin
+3000:3000 : Divine Blessing
+3001:3001 : HP recovery
+3002:3002 : HP recovery
+3003:3003 : HP recovery
+3040:3040 : Stamina Regen
+3041:3041 : Stamina Regen
+3042:3042 : Stamina Regen
+3050:3050 : Bloodred Moss Clump
+3051:3051 : Bloodred Moss Clump, Divine Blessing
+3052:3052 :
+3060:3060 : Purple Moss Clump and Blooming Purple Moss Clump
+3061:3061 : Purple Moss Clump, Blooming Purple Moss Clump, Divine Blessing
+3070:3070 : Blooming Purple Moss
+3071:3071 : Blooming Purple Moss Clump, Divine Blessing
+3080:3080 : Divine Blessing
+3090:3090 : Hollowing Reversed
+3091:3091 : Rime-blue Moss Clump, Divine Blessing
+3092:3092 : Rime-blue Moss Clump
+3093:3093 : Hollowing Reversed
+3094:3094 :
+3100:3100 : Repair Powder
+3110:3110 : Poison Throwing Knives?
+3115:3115 : Bleed
+3120:3120 : Toxic
+3121:3121 : Toxic from Oceiros Garden
+3130:3130 :
+3140:3140 :
+3150:3150 :
+3151:3151 : Undead Hunter Charm
+3152:3152 : n
+3160:3160 : Either Charcoal Pine Resin or bundle
+3161:3161 : Charcoal Pine Bundle
+3170:3170 : Gold Pine Resin
+3171:3171 : Gold Pine Bundle
+3180:3180 :
+3210:3210 :
+3220:3220 : Homeward Bone
+3221:3221 : Dark Sign
+3222:3222 :
+3223:3223 :
+3224:3224 :
+3225:3225 :
+3226:3226 : Dark Sign
+3230:3230 : Crashes the game.
+3231:3231 : Gain Humanity (unused)
+3240:3240 : Binoc in
+3241:3241 :
+3250:3250 : Covenant Icon returns to default while active
+3269:3269 : Souls+
+3270:3270 : Souls+
+3271:3271 : Souls+
+3272:3272 : Souls+
+3273:3273 : Souls+
+3274:3274 : Souls+
+3275:3275 : Souls+
+3276:3276 : Souls+
+3277:3277 : Souls+
+3278:3278 : Souls+
+3279:3279 : Souls+
+3280:3280 : Souls+ from NG+
+3281:3281 : Souls+ from NG+
+3282:3282 : Souls+ from NG+
+3283:3283 : Souls+ from NG+
+3284:3284 : Souls+ from NG+
+3285:3285 : Souls+ from NG+
+3286:3286 : Souls+ from NG+
+3287:3287 : Souls+ from NG+
+3288:3288 : Souls+ from NG+
+3289:3289 : Souls+ from NG+
+3290:3290 : Ember
+3291:3291 : Ember
+3292:3292 : Ember
+3293:3293 : Ember
+3294:3294 : Ember
+3295:3295 : Ember
+3296:3296 : Ember Heal
+3297:3297 : Ember
+3298:3298 : Ember
+3330:3330 : Fire Keeper Soul (DS1)
+3340:3340 : Hidden Blessing
+3350:3350 : Duel Charm
+3400:3400 : Souls+
+3401:3401 : Souls+
+3402:3402 : Souls+
+3403:3403 : Souls+
+3404:3404 : Souls+
+3405:3405 : Souls+
+3406:3406 : Souls+
+3407:3407 : Souls+
+3408:3408 : Souls+
+3409:3409 : Souls+
+3410:3410 : Souls+
+3411:3411 : Souls+
+3412:3412 : Souls+
+3413:3413 : Souls+
+3414:3414 : Souls+
+3415:3415 : Souls+
+3416:3416 : Souls+
+3417:3417 : Souls+
+3418:3418 : Souls+
+3419:3419 : Souls+
+3420:3420 : Souls+
+3421:3421 : Souls+
+3422:3422 : Souls+
+3423:3423 : Souls+
+3424:3424 : Souls+
+3425:3425 : Souls+
+3426:3426 : Souls+
+3427:3427 : Souls+
+3428:3428 : Souls+
+3429:3429 : Souls+
+3430:3430 : Souls+
+3431:3431 : Souls+
+3432:3432 : Souls+
+3433:3433 : Souls+
+3434:3434 : Souls+
+3435:3435 : Souls+
+3600:3600 : Dragon Head
+3610:3610 : Dragon Body
+3620:3620 :
+3630:3630 :
+3640:3640 : Twinkling Dragon Head
+3650:3650 : Dragon torso buff
+3700:3700 : Seed of a giant tree
+3701:3701 : Actual Seed Effect
+3710:3710 : Actual Seed Effect
+3720:3720 : Invader Trackers
+3730:3730 : Way of White Circlet
+3740:3740 : Forked Pale Tongue
+3750:3750 : Proof of a Concord Well Kept
+3800:3800 : Blue Tearstone Ring
+3810:3810 :
+3820:3820 :
+3830:3830 :
+3840:3840 :
+3850:3850 :
+3851:3851 :
+3860:3860 :
+3870:3870 : Chameleon effect
+3871:3871 :
+3880:3880 : Rusted Coin
+3890:3890 : Rusted Gold Coin
+3900:3900 :
+3901:3901 :
+3910:3910 : "Blue Bug Pellet:"
+3920:3920 : "Red Bug Pellet:"
+3930:3930 : Yellow Bug Pellet
+3940:3940 : Black Bug Pellet
+4000:4000 :
+4001:4001 : Farron swamp poison
+4002:4002 : Farron swamp poison
+4003:4003 : Farron swamp poison
+4004:4004 : Farron swamp poison
+4010:4010 :
+4011:4011 :
+4012:4012 :
+4013:4013 :
+4020:4020 : atk effect from lava textures in demon ruins
+4021:4021 : atk effect from lava textures in demon ruins
+4022:4022 : atk effect from lava textures in demon ruins
+4050:4050 :
+4060:4060 :
+4070:4070 :
+4080:4080 :
+4085:4085 :
+4100:4100 : Overencumbered state aka Edgy slow walk
+4101:4101 : Overencumbered state
+4150:4150 : 汎用扉の内鍵
+4200:4200 : Curse Bar
+4201:4201 : Curse Bar
+4300:4300 : Has to do with Toxic
+4310:4310 :
+4400:4400 : n
+4410:4410 :
+4420:4420 :
+4430:4430 :
+4500:4500 : Covenant Invasion Territory?
+4501:4501 : Covenant Invasion Territory?
+4502:4502 : ???
+4510:4510 : ???
+4600:4600 : Wax Head
+4610:4610 : Permament Wax Head
+4620:4620 : atk effect
+4621:4621 :
+4630:4630 : Full Invisibility
+4640:4640 : Invisibility With Effect
+4641:4641 : This is another invisibility effect, similar to 4630
+4650:4650 : -
+4660:4660 : -
+4670:4670 :
+4680:4680 :
+4690:4690 : Unique 'blank' offset.
+4700:4700 :
+4800:4800 : -
+4900:4900 : -
+4901:4901 : -
+4902:4902 : Freeze self
+5000:5000 : -
+5001:5001 : -
+5002:5002 : -
+5020:5020 : -
+5021:5021 : -
+5022:5022 : -
+5023:5023 : -
+5024:5024 : -
+5025:5025 :
+5026:5026 :
+5027:5027 :
+5028:5028 :
+5029:5029 :
+5030:5030 :
+5031:5031 :
+5032:5032 :
+5033:5033 :
+5034:5034 :
+5040:5040 :
+5041:5041 :
+5042:5042 :
+5043:5043 :
+5044:5044 :
+5045:5045 :
+5046:5046 :
+5047:5047 :
+5048:5048 :
+5049:5049 :
+5050:5050 :
+5051:5051 :
+5052:5052 :
+5053:5053 : n
+5054:5054 :
+5055:5055 :
+5056:5056 :
+5057:5057 : n
+5058:5058 :
+5059:5059 :
+5100:5100 : Leeches
+5101:5101 : Leeches
+5105:5105 : Blood leeches from Ariandel. Causes quick blood bleedup.
+5106:5106 : Blood buildup
+5110:5110 :
+5111:5111 :
+5120:5120 :
+5121:5121 :
+5122:5122 :
+5124:5124 :
+5125:5125 :
+5247:5247 :
+5300:5300 :
+ staggering
+5301:5301 :
+5302:5302 :
+5303:5303 :
+5304:5304 :
+5305:5305 :
+5306:5306 :
+5307:5307 :
+5308:5308 :
+5309:5309 :
+5310:5310 :
+5311:5311 :
+5312:5312 :
+5320:5320 :
+5321:5321 :
+5322:5322 :
+5323:5323 :
+5324:5324 :
+5325:5325 :
+5326:5326 :
+5327:5327 :
+5328:5328 : n
+5329:5329 :
+5330:5330 :
+5331:5331 :
+5332:5332 :
+5333:5333 :
+5334:5334 :
+5335:5335 :
+5350:5350 :
+5351:5351 :
+5352:5352 :
+5353:5353 :
+5354:5354 :
+5355:5355 :
+5356:5356 : Small blood buildup that stops building
+5360:5360 :
+5361:5361 :
+5362:5362 :
+5363:5363 :
+5364:5364 :
+5370:5370 :
+5371:5371 :
+5372:5372 :
+5373:5373 :
+5374:5374 :
+5380:5380 :
+5400:5400 :
+5404:5404 :
+5405:5405 :
+5406:5406 : n
+5407:5407 :
+5408:5408 :
+5440:5440 : Auto-Block?
+5441:5441 : n
+5442:5442 : n
+5450:5450 : n
+5460:5460 : n
+5461:5461 : n
+5462:5462 : n
+5463:5463 : n
+5540:5540 : n
+5600:5600 : n
+5700:5700 : n
+5701:5701 : n
+5702:5702 : n
+5703:5703 : n
+5704:5704 : n
+5705:5705 : n
+5706:5706 : n
+5707:5707 : n
+5708:5708 : n
+5709:5709 : n
+5710:5710 : n
+5711:5711 : n
+5712:5712 : n
+5713:5713 : n
+5714:5714 : n
+5715:5715 : n
+5750:5750 : n
+5751:5751 : n
+5752:5752 : n
+5800:5800 : n
+5820:5820 : n
+5821:5821 : n
+5830:5830 : n
+5831:5831 : n
+5832:5832 : n
+5833:5833 : n
+5840:5840 : n
+5900:5900 : n
+5901:5901 :
+5902:5902 :
+5903:5903 :
+5904:5904 :
+5905:5905 :
+6000:6000 :
+6001:6001 :
+6002:6002 : n
+6003:6003 :
+6010:6010 : Divine Blessing
+6020:6020 : Hidden Blessing
+6021:6021 :
+6030:6030 :
+6050:6050 :
+6060:6060 : Prevents death, forever
+6061:6061 :
+6062:6062 :
+6070:6070 :
+6071:6071 :
+6200:6200 : special effect for attacks (stamina drain)
+6201:6201 :
+6202:6202 :
+6203:6203 :
+6210:6210 :
+6211:6211 :
+6212:6212 :
+6213:6213 :
+6220:6220 :
+6221:6221 :
+6222:6222 :
+6223:6223 :
+6230:6230 :
+6231:6231 :
+6232:6232 :
+6233:6233 :
+6300:6300 : Poise (DS1)
+6310:6310 : Armor of Thorns
+6311:6311 : Armor of Thorns
+6312:6312 : Armor of Thorns
+6313:6313 : Armor of Thorns
+6320:6320 : Symbol of Avarice
+6321:6321 : Symbol of Avarice
+6325:6325 : Blindfold Mask
+6326:6326 : Blindfold Mask
+6330:6330 : Crown of Dusk
+6331:6331 : Crown of Dusk
+6335:6335 :
+6340:6340 :
+6350:6350 :
+6351:6351 :
+6352:6352 :
+6353:6353 :
+6354:6354 :
+6360:6360 :
+6370:6370 :
+6380:6380 : Naked Head debuff
+6381:6381 : Naked Chest debuff
+6382:6382 : Naked Hands debuff
+6383:6383 : Naked Legs debuff
+6400:6400 : 6400-6405 blood builds up
+6401:6401 :
+6402:6402 :
+6403:6403 :
+6404:6404 :
+6405:6405 :
+6500:6500 : 30 poison build-up (Poison Arrows)
+6501:6501 : 33 poison build-up
+6502:6502 : 36 poison build-up
+6503:6503 : 39 poison build-up
+6504:6504 : 42 poison build-up
+6505:6505 : 45 poison build-up
+6510:6510 : 30 poison build-up
+6511:6511 : 30 poison build-up
+6512:6512 : 30 poison build-up
+6513:6513 : 30 poison build-up
+6514:6514 : 30 poison build-up
+6515:6515 : 30 poison build-up
+6600:6600 : toxic
+6601:6601 :
+6602:6602 :
+6603:6603 :
+6604:6604 :
+6605:6605 :
+6700:6700 : 10 Frostbite Build-up
+6701:6701 : 20 Frostbite Build-up
+6702:6702 : 30 Frostbite Build-up
+6703:6703 : 40 Frostbite Build-up
+6704:6704 : 50 Frostbite Build-up
+6705:6705 : 100 Frostbite Build-up
+6800:6800 :
+6801:6801 :
+6802:6802 :
+6803:6803 :
+6804:6804 :
+6805:6805 :
+6900:6900 :
+6901:6901 :
+6902:6902 : Freehand R1 uses this Effect ID
+6903:6903 :
+6904:6904 : (an effect attached to some charged R2 attacks)
+6906:6906 : Effect attached to most charged R2 attacks
+6980:6980 : Evangelist and Worker Hat                No idea what it does
+7000:7000 :
+7010:7010 :
+7020:7020 :
+7030:7030 :
+7040:7040 :
+7045:7045 :
+7060:7060 :
+7070:7070 :
+7080:7080 :
+7090:7090 :
+7092:7092 :
+7093:7093 :
+7095:7095 :
+7120:7120 :
+7130:7130 :
+7135:7135 :
+7140:7140 :
+7150:7150 :
+7160:7160 :
+7170:7170 :
+7300:7300 :
+7400:7400 :
+7410:7410 :
+7420:7420 :
+7430:7430 :
+7440:7440 :
+7445:7445 :
+7460:7460 :
+7470:7470 :
+7480:7480 :
+7490:7490 :
+7492:7492 :
+7493:7493 :
+7495:7495 :
+7520:7520 :
+7530:7530 :
+7535:7535 : n
+7540:7540 :
+7550:7550 : n
+7560:7560 : n
+9000:9000 : Watchdogs of Farron Invasion Trigger
+9010:9010 : Aldrich Faithful Invasion Trigger
+9020:9020 : Spear of the Church Invasion Trigger
+9100:9100 : Bandits territory of forest
+9110:9110 : Spear of the Church role related
+9120:9120 : Spear of the Church role related
+9130:9130 : Unknown
+9131:9131 : Unknown
+9132:9132 : Unknown
+9133:9133 : Unknown
+9134:9134 : Unknown
+9135:9135 : Unknown
+9136:9136 : Unknown
+9137:9137 : Unknown
+9138:9138 : Unknown
+9139:9139 : Unknown
+9150:9150 : Spear of the Church vs Solo Host
+9151:9151 : Spear of the Church vs Solo Host Poise
+9160:9160 : Spear of the Church vs 1 Phantom
+9161:9161 : Spear of the Church vs 1 Phantom Poise
+9170:9170 : Spear of the Church vs 2 Phantoms
+9171:9171 : Spear of the Church vs 2 Phantoms Poise
+9180:9180 : Spear of the Church vs 3 Phantoms
+9181:9181 : Spear of the Church vs 3 Phantoms Poise
+9190:9190 : Poise glow?
+9195:9195 : Damage buff
+9200:9200 : red eye orb icon
+9201:9201 : black eye orb icon
+9400:9400 : Moundmakers burst
+9500:9500 : Unknown
+9501:9501 : Unknown
+9600:9600 : Password Summon Level Scaling
+9700:9700 : Password set
+9800:9800 : Spear Boss Soulmass vs Solo Host Lv0
+9801:9801 : Spear Boss Soulmass vs 1 Phantom Lv0
+9802:9802 : Spear Boss Soulmass vs 2 Phantoms Lv0
+9803:9803 : Spear Boss Soulmass vs 3 Phantoms Lv0
+9810:9810 : Spear Boss Soulmass vs Solo Host Lv1
+9811:9811 : Spear Boss Soulmass vs 1 Phantom Lv1
+9812:9812 : Spear Boss Soulmass vs 2 Phantoms Lv1
+9813:9813 : Spear Boss Soulmass vs 3 Phantoms Lv1
+9820:9820 : Spear Boss Soulmass vs Solo Host Lv2
+9821:9821 : Spear Boss Soulmass vs 1 Phantom Lv2
+9822:9822 : Spear Boss Soulmass vs 2 Phantoms Lv2
+9823:9823 : Spear Boss Soulmass vs 3 Phantoms Lv2
+9830:9830 : Spear Boss Soulmass vs Solo Host Lv3
+9831:9831 : Spear Boss Soulmass vs 1 Phantom Lv3
+9832:9832 : Spear Boss Soulmass vs 2 Phantoms Lv3
+9833:9833 : Spear Boss Soulmass vs 3 Phantoms Lv3
+9840:9840 : Spear Boss Soulmass vs Solo Host Lv4
+9841:9841 : Spear Boss Soulmass vs 1 Phantom Lv4
+9842:9842 : Spear Boss Soulmass vs 2 Phantoms Lv4
+9843:9843 : Spear Boss Soulmass vs 3 Phantoms Lv4
+9850:9850 : Spear Boss Soulmass vs Solo Host Lv5
+9851:9851 : Spear Boss Soulmass vs 1 Phantom Lv5
+9852:9852 : Spear Boss Soulmass vs 2 Phantoms Lv5
+9853:9853 : Spear Boss Soulmass vs 3 Phantoms Lv5
+9860:9860 : Spear Boss Soulmass vs Solo Host Lv6
+9861:9861 : Spear Boss Soulmass vs 1 Phantom Lv6
+9862:9862 : Spear Boss Soulmass vs 2 Phantoms Lv6
+9863:9863 : Spear Boss Soulmass vs 3 Phantoms Lv6
+9870:9870 : Spear Boss Soulmass vs Solo Host Lv7
+9871:9871 : Spear Boss Soulmass vs 1 Phantom Lv7
+9872:9872 : Spear Boss Soulmass vs 2 Phantoms Lv7
+9873:9873 : Spear Boss Soulmass vs 3 Phantoms Lv7
+9880:9880 : Spear Boss Soulmass vs Solo Host Lv8
+9881:9881 : Spear Boss Soulmass vs 1 Phantom Lv8
+9882:9882 : Spear Boss Soulmass vs 2 Phantoms Lv8
+9883:9883 : Spear Boss Soulmass vs 3 Phantoms Lv8
+9890:9890 : Spear Boss Soulmass vs Solo Host Lv9
+9891:9891 : Spear Boss Soulmass vs 1 Phantom Lv9
+9892:9892 : Spear Boss Soulmass vs 2 Phantoms Lv9
+9893:9893 : Spear Boss Soulmass vs 3 Phantoms Lv9
+9900:9900 : Spear Boss Soulmass vs Solo Host Lv10
+9901:9901 : Spear Boss Soulmass vs 1 Phantom Lv10
+9902:9902 : Spear Boss Soulmass vs 2 Phantoms Lv10
+9903:9903 : Spear Boss Soulmass vs 3 Phantoms Lv10
+9910:9910 : Spear Boss Soulmass vs Solo Host Lv11
+9911:9911 : Spear Boss Soulmass vs 1 Phantom Lv11
+9912:9912 : Spear Boss Soulmass vs 2 Phantoms Lv11
+9913:9913 : Spear Boss Soulmass vs 3 Phantoms Lv11
+9920:9920 : Spear Boss Soulmass vs Solo Host Lv12
+9921:9921 : Spear Boss Soulmass vs 1 Phantom Lv12
+9922:9922 : Spear Boss Soulmass vs 2 Phantoms Lv12
+9923:9923 : Spear Boss Soulmass vs 3 Phantoms Lv12
+9930:9930 : Spear Boss Soulmass vs Solo Host Lv13
+9931:9931 : Spear Boss Soulmass vs 1 Phantom Lv13
+9932:9932 : Spear Boss Soulmass vs 2 Phantoms Lv13
+9933:9933 : Spear Boss Soulmass vs 3 Phantoms Lv13
+9940:9940 : Spear Boss Soulmass vs Solo Host Lv14
+9941:9941 : Spear Boss Soulmass vs 1 Phantom Lv14
+9942:9942 : Spear Boss Soulmass vs 2 Phantoms Lv14
+9943:9943 : Spear Boss Soulmass vs 3 Phantoms Lv14
+9950:9950 : Spear Boss Soulmass vs Solo Host Lv15
+9951:9951 : Spear Boss Soulmass vs 1 Phantom Lv15
+9952:9952 : Spear Boss Soulmass vs 2 Phantoms Lv15
+9953:9953 : Spear Boss Soulmass vs 3 Phantoms Lv15
+9960:9960 : Spear Boss Soulmass vs Solo Host Lv16
+9961:9961 : Spear Boss Soulmass vs 1 Phantom Lv16
+9962:9962 : Spear Boss Soulmass vs 2 Phantoms Lv16
+9963:9963 : Spear Boss Soulmass vs 3 Phantoms Lv16
+9970:9970 : Spear Boss Soulmass vs Solo Host Lv17
+9971:9971 : Spear Boss Soulmass vs 1 Phantom Lv17
+9972:9972 : Spear Boss Soulmass vs 2 Phantoms Lv17
+9973:9973 : Spear Boss Soulmass vs 3 Phantoms Lv17
+9980:9980 : Spear Boss Soulmass vs Solo Host Lv18
+9981:9981 : Spear Boss Soulmass vs 1 Phantom Lv18
+9982:9982 : Spear Boss Soulmass vs 2 Phantoms Lv18
+9983:9983 : Spear Boss Soulmass vs 3 Phantoms Lv18
+10000:10000 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv0
+10001:10001 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv0
+10002:10002 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv0
+10003:10003 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv0
+10010:10010 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv1
+10011:10011 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv1
+10012:10012 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv1
+10013:10013 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv1
+10020:10020 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv2
+10021:10021 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv2
+10022:10022 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv2
+10023:10023 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv2
+10030:10030 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv3
+10031:10031 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv3
+10032:10032 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv3
+10033:10033 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv3
+10040:10040 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv4
+10041:10041 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv4
+10042:10042 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv4
+10043:10043 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv4
+10050:10050 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv5
+10051:10051 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv5
+10052:10052 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv5
+10053:10053 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv5
+10060:10060 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv6
+10061:10061 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv6
+10062:10062 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv6
+10063:10063 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv6
+10070:10070 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv7
+10071:10071 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv7
+10072:10072 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv7
+10073:10073 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv7
+10080:10080 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv8
+10081:10081 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv8
+10082:10082 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv8
+10083:10083 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv8
+10090:10090 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv9
+10091:10091 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv9
+10092:10092 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv9
+10093:10093 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv9
+10100:10100 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv10
+10101:10101 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv10
+10102:10102 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv10
+10103:10103 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv10
+10110:10110 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv11
+10111:10111 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv11
+10112:10112 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv11
+10113:10113 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv11
+10120:10120 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv12
+10121:10121 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv12
+10122:10122 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv12
+10123:10123 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv12
+10130:10130 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv13
+10131:10131 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv13
+10132:10132 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv13
+10133:10133 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv13
+10140:10140 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv14
+10141:10141 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv14
+10142:10142 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv14
+10143:10143 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv14
+10150:10150 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv15
+10151:10151 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv15
+10152:10152 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv15
+10153:10153 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv15
+10160:10160 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv16
+10161:10161 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv16
+10162:10162 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv16
+10163:10163 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv16
+10170:10170 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv17
+10171:10171 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv17
+10172:10172 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv17
+10173:10173 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv17
+10180:10180 : Spear Boss (Young Grass Dew) Soulmass vs Solo Host Lv18
+10181:10181 : Spear Boss (Young Grass Dew) Soulmass vs 1 Phantom Lv18
+10182:10182 : Spear Boss (Young Grass Dew) Soulmass vs 2 Phantoms Lv18
+10183:10183 : Spear Boss (Young Grass Dew) Soulmass vs 3 Phantoms Lv18
+10200:10200 : Spear Boss Spawn Protection Lv0
+10201:10201 : Spear Boss Spawn Protection Instant Lv0
+10205:10205 : Spear Boss Spawn Protection Lv1
+10206:10206 : Spear Boss Spawn Protection Instant Lv1
+10210:10210 : Spear Boss Spawn Protection Lv2
+10211:10211 : Spear Boss Spawn Protection Instant Lv2
+10215:10215 : Spear Boss Spawn Protection Lv3
+10216:10216 : Spear Boss Spawn Protection Instant Lv3
+10220:10220 : Spear Boss Spawn Protection Lv4
+10221:10221 : Spear Boss Spawn Protection Instant Lv4
+10225:10225 : Spear Boss Spawn Protection Lv5
+10226:10226 : Spear Boss Spawn Protection Instant Lv5
+10230:10230 : Spear Boss Spawn Protection Lv6
+10231:10231 : Spear Boss Spawn Protection Instant Lv6
+10235:10235 : Spear Boss Spawn Protection Lv7
+10236:10236 : Spear Boss Spawn Protection Instant Lv7
+10240:10240 : Spear Boss Spawn Protection Lv8
+10241:10241 : Spear Boss Spawn Protection Instant Lv8
+10245:10245 : Spear Boss Spawn Protection Lv9
+10246:10246 : Spear Boss Spawn Protection Instant Lv9
+10250:10250 : Spear Boss Spawn Protection Lv10
+10251:10251 : Spear Boss Spawn Protection Instant Lv10
+10255:10255 : Spear Boss Spawn Protection Lv11
+10256:10256 : Spear Boss Spawn Protection Instant Lv11
+10260:10260 : Spear Boss Spawn Protection Lv12
+10261:10261 : Spear Boss Spawn Protection Instant Lv12
+10265:10265 : Spear Boss Spawn Protection Lv13
+10266:10266 : Spear Boss Spawn Protection Instant Lv13
+10270:10270 : Spear Boss Spawn Protection Lv14
+10271:10271 : Spear Boss Spawn Protection Instant Lv14
+10275:10275 : Spear Boss Spawn Protection Lv15
+10276:10276 : Spear Boss Spawn Protection Instant Lv15
+10280:10280 : Spear Boss Spawn Protection Lv16
+10281:10281 : Spear Boss Spawn Protection Instant Lv16
+10285:10285 : Spear Boss Spawn Protection Lv17
+10286:10286 : Spear Boss Spawn Protection Instant Lv17
+10290:10290 : Spear Boss Spawn Protection Lv18
+10291:10291 : Spear Boss Spawn Protection Instant Lv18
+10400:10400 : Spear Boss (Young Grass Dew) Spawn Protection Lv0
+10401:10401 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv0
+10405:10405 : Spear Boss (Young Grass Dew) Spawn Protection Lv1
+10406:10406 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv1
+10410:10410 : Spear Boss (Young Grass Dew) Spawn Protection Lv2
+10411:10411 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv2
+10415:10415 : Spear Boss (Young Grass Dew) Spawn Protection Lv3
+10416:10416 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv3
+10420:10420 : Spear Boss (Young Grass Dew) Spawn Protection Lv4
+10421:10421 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv4
+10425:10425 : Spear Boss (Young Grass Dew) Spawn Protection Lv5
+10426:10426 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv5
+10430:10430 : Spear Boss (Young Grass Dew) Spawn Protection Lv6
+10431:10431 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv6
+10435:10435 : Spear Boss (Young Grass Dew) Spawn Protection Lv7
+10436:10436 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv7
+10440:10440 : Spear Boss (Young Grass Dew) Spawn Protection Lv8
+10441:10441 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv8
+10445:10445 : Spear Boss (Young Grass Dew) Spawn Protection Lv9
+10446:10446 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv9
+10450:10450 : Spear Boss (Young Grass Dew) Spawn Protection Lv10
+10451:10451 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv10
+10455:10455 : Spear Boss (Young Grass Dew) Spawn Protection Lv11
+10456:10456 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv11
+10460:10460 : Spear Boss (Young Grass Dew) Spawn Protection Lv12
+10461:10461 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv12
+10465:10465 : Spear Boss (Young Grass Dew) Spawn Protection Lv13
+10466:10466 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv13
+10470:10470 : Spear Boss (Young Grass Dew) Spawn Protection Lv14
+10471:10471 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv14
+10475:10475 : Spear Boss (Young Grass Dew) Spawn Protection Lv15
+10476:10476 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv15
+10480:10480 : Spear Boss (Young Grass Dew) Spawn Protection Lv16
+10481:10481 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv16
+10485:10485 : Spear Boss (Young Grass Dew) Spawn Protection Lv17
+10486:10486 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv17
+10490:10490 : Spear Boss (Young Grass Dew) Spawn Protection Lv18
+10491:10491 : Spear Boss (Young Grass Dew) Spawn Protection Instant Lv18
+10500:10500 : Some blue effect on enteriy body
+10501:10501 :
+10502:10502 :
+10503:10503 :
+10504:10504 :
+10505:10505 :
+10506:10506 :
+10507:10507 :
+10508:10508 :
+10510:10510 :
+10511:10511 :
+10512:10512 :
+10513:10513 : n
+10514:10514 :
+10515:10515 :
+10516:10516 :
+10530:10530 : deep soul effect on right arm
+10531:10531 : deep soul effect on left arm
+10532:10532 :
+10533:10533 :
+10534:10534 : deep soul effect on entire body
+10540:10540 :
+10549:10549 :
+10550:10550 :
+10551:10551 :
+10552:10552 :
+10553:10553 :
+10554:10554 :
+10555:10555 :
+10556:10556 :
+10557:10557 :
+10558:10558 :
+10559:10559 :
+10560:10560 :
+10561:10561 :
+10562:10562 : fire on body
+10563:10563 : n
+10564:10564 : Undead Hunter Charm
+10565:10565 : n
+10570:10570 : n
+10571:10571 : n
+10572:10572 : n
+10573:10573 : n
+10574:10574 : n
+10575:10575 : n
+10576:10576 : n
+10577:10577 : n
+10578:10578 : n
+10579:10579 : n
+10580:10580 : n
+10581:10581 : n
+10582:10582 : n
+10583:10583 : n
+10590:10590 : n
+10591:10591 : n
+10600:10600 : n
+10601:10601 : n
+10602:10602 : n
+10603:10603 :
+10604:10604 :
+10605:10605 :
+10606:10606 :
+10607:10607 :
+10608:10608 :
+10609:10609 :
+10610:10610 :
+10611:10611 :
+10612:10612 :
+10613:10613 :
+10614:10614 :
+10615:10615 :
+10616:10616 :
+10617:10617 :
+10618:10618 :
+10619:10619 :
+10620:10620 :
+10621:10621 :
+10622:10622 :
+10623:10623 :
+10624:10624 :
+10625:10625 :
+10629:10629 :
+10630:10630 :
+10631:10631 :
+10632:10632 :
+10633:10633 :
+10634:10634 :
+10635:10635 :
+10636:10636 :
+10637:10637 :
+10638:10638 :
+10639:10639 :
+10640:10640 :
+10641:10641 :
+10642:10642 :
+10650:10650 :
+10651:10651 :
+10652:10652 :
+10653:10653 :
+10654:10654 :
+10700:10700 :
+10800:10800 : Buff HP
+10801:10801 :
+10802:10802 :
+10803:10803 :
+10804:10804 :
+10805:10805 :
+10806:10806 :
+10807:10807 :
+10820:10820 :
+10830:10830 :
+10831:10831 :
+10850:10850 :
+10851:10851 :
+10852:10852 :
+10853:10853 :
+10854:10854 :
+10855:10855 :
+10856:10856 : Perseverance
+10857:10857 : dark mist from shoulders
+10858:10858 : AnimationIdOffset 3000000
+10859:10859 :
+10900:10900 :
+10901:10901 :
+10902:10902 : frost decals
+10920:10920 : fire that follows behind your ass
+10921:10921 :
+10922:10922 :
+10930:10930 : Boss cinder
+10931:10931 :
+10932:10932 : Pontiff Left Eye
+10933:10933 :
+10934:10934 :
+10935:10935 : Eleonora Weapon art
+10936:10936 :
+10950:10950 :
+10951:10951 :
+11000:11000 :
+11001:11001 :
+11002:11002 :
+11003:11003 :
+11004:11004 :
+11005:11005 :
+11006:11006 :
+11007:11007 :
+11008:11008 : purple blood on floor
+11009:11009 :
+11010:11010 :
+11011:11011 :
+11012:11012 :
+11013:11013 : Instadeath effect
+11020:11020 :
+11021:11021 :
+11022:11022 :
+11023:11023 :
+11030:11030 :
+11031:11031 :
+11032:11032 :
+11040:11040 :
+11060:11060 :
+11100:11100 :
+11101:11101 :
+11102:11102 :
+11103:11103 : n
+11200:11200 :
+11201:11201 :
+11202:11202 :
+11210:11210 :
+11211:11211 :
+11212:11212 :
+11213:11213 :
+11280:11280 :
+11281:11281 :
+11282:11282 :
+11283:11283 :
+11284:11284 :
+11285:11285 :
+11290:11290 :
+11291:11291 :
+11292:11292 :
+11300:11300 :
+11301:11301 :
+11400:11400 : Yhorm's fire visuals
+11401:11401 :
+11402:11402 :
+11410:11410 :
+11420:11420 : The effect of bullet 100063730, Add damage for storm ruler WA bullet
+11421:11421 : The effect of bullet 100063730, Add damage for storm ruler WA bullet
+11430:11430 : Damage
+11431:11431 :
+11432:11432 :
+11433:11433 :
+11434:11434 :
+11435:11435 :
+11436:11436 :
+11437:11437 :
+11438:11438 :
+11439:11439 :
+11440:11440 :
+11441:11441 :
+11442:11442 :
+11443:11443 :
+11444:11444 :
+11445:11445 :
+11446:11446 :
+11447:11447 :
+11448:11448 :
+11449:11449 :
+11450:11450 :
+11451:11451 :
+11452:11452 :
+11453:11453 :
+11460:11460 :
+11461:11461 :
+11462:11462 :
+11463:11463 :
+11464:11464 :
+11465:11465 :
+11466:11466 :
+11467:11467 : Damage
+11500:11500 :
+11501:11501 :
+11502:11502 :
+11503:11503 :
+11504:11504 :
+11511:11511 :
+11512:11512 :
+11513:11513 :
+11514:11514 :
+11515:11515 :
+11516:11516 :
+11517:11517 :
+11519:11519 :
+11520:11520 :
+11521:11521 : Big red fumes
+11522:11522 : Little flame on the right hand
+11523:11523 :
+11530:11530 :
+11531:11531 :
+11532:11532 :
+11533:11533 :
+11534:11534 :
+11535:11535 :
+11536:11536 :
+11537:11537 :
+11538:11538 :
+11539:11539 :
+11540:11540 :
+11541:11541 :
+11542:11542 :
+11543:11543 :
+11544:11544 :
+11550:11550 :
+11551:11551 :
+11552:11552 :
+11553:11553 :
+11554:11554 : 11554-11556 are used by the Deacons to activate the curse fog
+11555:11555 :
+11556:11556 :
+11557:11557 : Peasantry curse fog
+11558:11558 :
+11559:11559 :
+11560:11560 :
+11561:11561 :
+11562:11562 :
+11563:11563 :
+11564:11564 :
+11565:11565 : n
+11600:11600 : Lorian Resurrection
+11601:11601 :
+11602:11602 :
+11603:11603 :
+11604:11604 :
+11605:11605 : Some kind of fire restricted to Lothric Castle
+11606:11606 :
+11607:11607 :
+11610:11610 : nn
+11611:11611 :
+11612:11612 :
+11700:11700 :
+11710:11710 :
+11720:11720 :
+11721:11721 :
+11730:11730 :
+11731:11731 :
+11800:11800 :
+11801:11801 : (marked as -150 souls)
+11880:11880 :
+11881:11881 :
+11882:11882 :
+11890:11890 :
+11895:11895 : Blue dot on floor, dog eye?
+11896:11896 : Golden dot on floor, eye of Jailer?
+11897:11897 :
+11898:11898 : Jailer HP drain SFX
+11899:11899 :
+11900:11900 :
+11901:11901 :
+11902:11902 : Blue dot on floor
+11903:11903 : Yellow dot
+11904:11904 :
+11905:11905 :
+11906:11906 :
+11907:11907 :
+11908:11908 : Searing Iron
+11909:11909 :
+11910:11910 :
+11911:11911 :
+11912:11912 :
+11913:11913 :
+11920:11920 :
+11921:11921 :
+11922:11922 :
+11923:11923 :
+11926:11926 :
+11950:11950 :
+11951:11951 :
+11952:11952 :
+11960:11960 :
+11970:11970 :
+11980:11980 :
+11990:11990 :
+11991:11991 : ???
+12000:12000 : Some light circles around body
+12010:12010 : White-Blue dot on floor
+12011:12011 : Grey dot on floor
+12012:12012 : White snow puff
+12013:12013 : n
+12020:12020 : n
+12021:12021 : Grand Archives Scholar wax
+12022:12022 : n
+12023:12023 : n
+12024:12024 : n
+12030:12030 : n
+12035:12035 : n
+12040:12040 : n
+12041:12041 : n
+12042:12042 : n
+12043:12043 : n
+12044:12044 : n
+12045:12045 : Embers on body if not already embered
+12050:12050 : Overencumbered state (edgy slow walk)
+12060:12060 : n
+12061:12061 : Nameless King's Storm Aura
+12062:12062 : n
+12063:12063 : n
+12070:12070 : White dot in front of player
+12071:12071 : n
+12080:12080 : n
+12090:12090 : n
+12091:12091 : n
+12095:12095 : n
+12100:12100 : n
+12110:12110 : n
+12111:12111 : n
+12112:12112 : n
+12113:12113 : Cool Fire Effect
+12114:12114 : n
+12115:12115 : Some lighting aura
+12116:12116 :
+12117:12117 : Soul of Cinder's Power Within
+12118:12118 : Some lighting aura 2
+12119:12119 : Restores health to full
+12120:12120 : Some sorcery aura
+12121:12121 : n
+12122:12122 : Some red aura, possibly cinder's power within
+12123:12123 : n
+12125:12125 : n
+12126:12126 : n
+12127:12127 : n
+12128:12128 : n
+12129:12129 : n
+12130:12130 : Visual aura from crystal chime WA
+12131:12131 : n
+12132:12132 : n
+12140:12140 : n
+12141:12141 : n
+12142:12142 : n
+12143:12143 : n
+12144:12144 : n
+12145:12145 : n
+12146:12146 : Red dot in front of player
+12150:12150 : ???
+12151:12151 : n
+12152:12152 : n
+12153:12153 : ???
+12155:12155 : Black Smoke From Irithyll NPCs
+12160:12160 : n
+12170:12170 : Crystal Lizard shimmer
+12180:12180 : n
+12189:12189 : n
+12191:12191 : n
+12192:12192 : n
+12193:12193 : n
+12194:12194 : n
+12200:12200 : Toxic bar?
+12201:12201 : n
+12202:12202 : n
+12203:12203 : n
+12204:12204 : n
+12205:12205 : n
+12210:12210 : n
+12211:12211 : Looks a bit like warmth heal
+12212:12212 : n
+12213:12213 : n
+12214:12214 : Some healing miracles under feet?
+12215:12215 : n
+12216:12216 : Secret Oath, better sacred oath from lothric priests
+12217:12217 : n
+12220:12220 : n
+12230:12230 : n
+12231:12231 : n
+12240:12240 : nn
+12241:12241 : n
+12242:12242 : n
+12243:12243 : n
+12244:12244 : n
+12245:12245 : n
+12246:12246 : n
+12247:12247 : n
+12248:12248 : n
+12250:12250 : n
+12251:12251 : n
+12252:12252 : n
+12253:12253 : n
+12254:12254 : n
+12255:12255 : n
+12256:12256 : n
+12257:12257 : n
+12258:12258 : n
+12259:12259 : n
+12270:12270 : n
+12300:12300 : n
+12301:12301 : n
+12302:12302 : n
+12303:12303 : n
+12304:12304 : n
+12305:12305 : n
+12306:12306 : n
+12310:12310 : n
+12311:12311 : n
+12340:12340 : n
+12341:12341 : n
+12342:12342 : n
+12343:12343 : n
+12344:12344 : n
+12345:12345 : n
+12346:12346 : n
+12400:12400 : n
+12500:12500 : n
+12501:12501 : n
+12502:12502 : n
+12503:12503 : n
+12600:12600 : n
+12601:12601 : n
+12602:12602 : n
+12603:12603 : n
+12604:12604 : n
+12605:12605 : n
+12610:12610 : n
+12611:12611 : n
+12612:12612 : n
+12613:12613 : n
+12614:12614 : HP damage
+12615:12615 : HP damage
+12616:12616 : n
+12617:12617 : n
+12618:12618 : n
+12620:12620 : n
+12621:12621 : n
+12630:12630 : 5 durability damage on hit
+12700:12700 : n
+12710:12710 : n
+12720:12720 : n
+13002:13002 : Entire body puffs into flames
+13050:13050 : Null glow
+13051:13051 : minor
+13052:13052 : medium
+13053:13053 : normal
+13090:13090 : Right hip on fire
+13091:13091 : Also right hip on fire
+13093:13093 : Right hip on fire
+13095:13095 : the snowy glow of Followers in Ariandel
+13106:13106 : Right hand red fumes
+13123:13123 : Multiplies hp
+13144:13144 : Lose 99.99% HP
+15026:15026 : Some burning effect probably from Demon Prince
+15034:15034 : Sozin's Comet (Demon Prince's Giant Fireball summon)
+15036:15036 : Demon Prince's Floating Chaos
+15041:15041 : Same burning effect less bright
+15042:15042 : Burning effect more flames more sparks
+16202:16202 : Gael's red skull smoke
+16190:16190 : Dark foggy shit
+16254:16254 : Angel dust and feathers
+16269:16269 : Flaming spear going sideways through your dick
+16270:16270 : Basilisk curse sitting on your back
+16278:16278 : Basilisk curse sitting on your back
+16288:16288 :
+16323:16323 : Humanity Head
+16325:16325 : Humanity Head
+16330:16330 : Dripping with sticky white stuff (lots of sloshy sounds)
+16500:16500 :
+16501:16501 :
+16505:16505 : Another glowing poise-like effect
+17000:17000 : Lose 100% of total health
+17001:17001 : Lose 90% of total health
+17002:17002 : Lose 80% of total health
+17003:17003 : Lose 70% of total health
+17004:17004 : Lose 60% of total health
+17005:17005 : Lose 50% of total health
+17006:17006 : Lose 40% of total health
+17007:17007 : Lose 30% of total health
+17008:17008 : Lose 20% of total health
+17009:17009 : Lose 20% of total health
+20000:20000 : n
+20001:20001 : n
+20002:20002 : n
+20003:20003 : n
+20004:20004 : n
+20005:20005 : n
+20006:20006 : n
+20007:20007 : n
+20008:20008 : n
+20009:20009 : n
+20010:20010 : n
+20011:20011 : n
+20012:20012 : n
+20013:20013 : n
+20014:20014 : n
+20015:20015 : n
+20016:20016 : n
+20017:20017 : n
+20018:20018 : n
+20019:20019 : n
+20100:20100 : Poison Bar
+21000:21000 :
+21001:21001 :
+21002:21002 :
+21003:21003 :
+21004:21004 :
+21005:21005 :
+21006:21006 :
+21007:21007 :
+21008:21008 :
+21009:21009 :
+21010:21010 :
+21011:21011 :
+21012:21012 :
+21013:21013 :
+21014:21014 :
+21015:21015 :
+21016:21016 :
+21017:21017 :
+21018:21018 :
+21019:21019 :
+22000:22000 :
+22001:22001 :
+22002:22002 :
+22003:22003 :
+22004:22004 :
+22005:22005 :
+22006:22006 :
+22007:22007 :
+22008:22008 :
+22009:22009 :
+22010:22010 :
+22011:22011 :
+22012:22012 :
+22013:22013 :
+22014:22014 :
+22015:22015 :
+22016:22016 :
+22017:22017 :
+22018:22018 :
+22019:22019 :
+22100:22100 :
+22101:22101 :
+23000:23000 :
+23001:23001 :
+23002:23002 :
+23003:23003 :
+23004:23004 :
+23005:23005 :
+23006:23006 :
+23007:23007 :
+23008:23008 :
+23009:23009 :
+23010:23010 :
+23011:23011 :
+23012:23012 :
+23013:23013 :
+23014:23014 :
+23015:23015 :
+23016:23016 :
+23017:23017 :
+23018:23018 :
+23019:23019 :
+23100:23100 : Curse builds up
+24000:24000 :
+24001:24001 :
+24002:24002 :
+24003:24003 :
+24004:24004 : frostbite builds up
+24005:24005 :
+24006:24006 :
+24007:24007 :
+24008:24008 :
+24009:24009 :
+24010:24010 :
+24011:24011 :
+24012:24012 :
+24013:24013 :
+24014:24014 :
+24015:24015 :
+24016:24016 :
+24017:24017 :
+24018:24018 :
+24019:24019 :
+24100:24100 :
+24101:24101 :
+24110:24110 :
+24111:24111 :
+24112:24112 :
+24120:24120 :
+24130:24130 : Frost body effect
+30000:30000 :
+30010:30010 :
+30020:30020 :
+30030:30030 :
+30040:30040 :
+30100:30100 :
+30200:30200 :
+71100:71100 :
+71110:71110 :
+71111:71111 :
+80000:80000 :
+80011:80011 :
+80101:80101 :
+80111:80111 :
+81001:81001 :
+81011:81011 :
+81101:81101 :
+81111:81111 :
+90000:90000 : All Invalid
+90001:90001 :
+90010:90010 :
+90011:90011 :
+90100:90100 :
+90101:90101 :
+90110:90110 :
+90111:90111 : Poison Invalid
+91000:91000 :
+91001:91001 :
+91010:91010 :
+91011:91011 : Disable Bleeding
+91100:91100 :
+91101:91101 : Disable Toxic
+91110:91110 : Disable Curse
+91111:91111 : All Invalid
+99000:99000 :
+99001:99001 :
+99002:99002 :
+99003:99003 :
+99004:99004 :
+99005:99005 :
+99006:99006 :
+99007:99007 :
+99008:99008 :
+99013:99013 :
+99014:99014 :
+99020:99020 : Increases all physical absorptions, magic absorptions and lightning absorptions to 100%
+99050:99050 : Curse Buildup
+99060:99060 :
+99061:99061 :
+99062:99062 :
+99070:99070 :
+99071:99071 :
+99080:99080 : Dead AF
+99100:99100 : Increases fire absorption to 100%
+99101:99101 : Decreases HP rapidly, lasts forever
+99102:99102 :
+99200:99200 :
+99201:99201 :
+99300:99300 :
+99310:99310 :
+99311:99311 :
+99312:99312 :
+99313:99313 :
+99314:99314 :
+99400:99400 :
+99401:99401 :
+99402:99402 : n
+99410:99410 :
+99420:99420 :
+99430:99430 :
+99440:99440 :
+99441:99441 :
+99450:99450 :
+99451:99451 :
+99500:99500 : Alerts enemies at a greater distance
+99600:99600 : n
+99700:99700 :
+99800:99800 : n
+99810:99810 : n
+100000:100000 : Something with Purple Moss Clump
+100001:100001 : n
+100002:100002 :
+100005:100005 :
+100006:100006 :
+100007:100007 :
+100010:100010 : n
+100020:100020 :
+100030:100030 :
+100040:100040 :
+100050:100050 :
+100060:100060 :
+100070:100070 :
+100080:100080 :
+100090:100090 :
+100100:100100 :
+100110:100110 :
+100120:100120 :
+100130:100130 : Broken walk; hip twists to walk sideways while you walk straight
+100140:100140 : Broken walk; looks like you shit your pants
+100150:100150 : Broken walk; Same as 100130, but other leg is in front
+100160:100160 : Same as above
+100170:100170 :
+100180:100180 :
+100190:100190 :
+100200:100200 : n
+100210:100210 :
+100220:100220 : Makes it so you always run, impossible to walk.
+100230:100230 :
+100240:100240 :
+100250:100250 :
+100260:100260 :
+100270:100270 :
+100280:100280 :
+100290:100290 :
+100300:100300 :
+100310:100310 :
+100320:100320 :
+100330:100330 : Invisible Effect triggered by Ringed Knight Straight Sword WA
+100340:100340 :
+100350:100350 : Estus Soup
+100360:100360 : Some kind of effect when eating consumables (Moss and blossom tested)
+100370:100370 : DS1 roll
+100380:100380 :
+100390:100390 :
+100900:100900 : Storm ruler charging
+100901:100901 : Storm ruler charging left hand
+100910:100910 : Storm Ruler Charged
+100911:100911 :
+100920:100920 :
+100921:100921 : Storm Ruler's release left hand
+100930:100930 :
+100931:100931 :
+100950:100950 : Storm ruler's release right hand
+100960:100960 : Storm ruler's release left hand
+120000:120000 : Warcry
+120010:120010 :
+120020:120020 :
+120110:120110 :
+120210:120210 :
+120310:120310 :
+120410:120410 :
+120500:120500 :
+120501:120501 : Temp Sorcery Boost?
+120510:120510 :
+120511:120511 :
+120610:120610 :
+120700:120700 : Perseverence
+120710:120710 :
+120750:120750 : Perseverence
+120770:120770 : Perseverence
+120800:120800 : Unfaltering prayers for all talismans except Saint's/Sunlight
+120801:120801 :
+120810:120810 :
+120811:120811 :
+120820:120820 :
+120821:120821 :
+120830:120830 :
+120831:120831 :
+120840:120840 : Sunlight Talisman WA
+120841:120841 :
+120850:120850 :
+120851:120851 :
+120910:120910 :
+121010:121010 :
+121020:121020 :
+121110:121110 : n
+121210:121210 :
+121310:121310 :
+121410:121410 :
+121510:121510 : n
+121610:121610 :
+121710:121710 : n
+121810:121810 :
+130000:130000 : n
+130010:130010 : Water slowdown
+130020:130020 : Farron Keep Swamp Body Effect
+130040:130040 :
+130100:130100 :
+130110:130110 :
+135000:135000 : Ghoulish looking smoke on body
+139990:139990 :
+139995:139995 :
+140001:140001 : HP/Resist Buff
+140002:140002 :
+140003:140003 :
+140101:140101 : HP/Resist Buff
+140102:140102 : HP/Resist Buff
+140103:140103 : HP/Resist Buff
+140201:140201 :
+140202:140202 : HP/Resist Buff
+140203:140203 : HP/Resist Buff
+140211:140211 : HP/Resist Buff
+140212:140212 : HP/Resist Buff
+140213:140213 : HP/Resist Buff
+140221:140221 : HP/Resist Buff
+140222:140222 : HP/Resist Buff
+140223:140223 : HP/Resist Buff
+140231:140231 : HP/Resist Buff
+140232:140232 : HP/Resist Buff
+140233:140233 : HP/Resist Buff
+140241:140241 : HP/Resist Buff
+140242:140242 : HP/Resist Buff
+140243:140243 : HP/Resist Buff
+140251:140251 : HP/Resist Buff
+140252:140252 : HP/Resist Buff
+140253:140253 : HP/Resist Buff
+140261:140261 : HP/Resist Buff
+140262:140262 : HP/Resist Buff
+140263:140263 : HP/Resist Buff
+140271:140271 : HP/Resist Buff
+140272:140272 :
+140273:140273 :
+140281:140281 :
+140282:140282 :
+140283:140283 :
+140291:140291 :
+140292:140292 :
+140293:140293 :
+140301:140301 :
+140302:140302 :
+140303:140303 :
+140311:140311 :
+140312:140312 :
+140313:140313 :
+140321:140321 :
+140322:140322 :
+140323:140323 :
+140331:140331 :
+140332:140332 :
+140333:140333 :
+140341:140341 : Hp buff/resistance buff
+140342:140342 : Hp buff/resistance buff
+140343:140343 : Hp buff/resistance buff
+140421:140421 : Hp buff/resistance buff
+140422:140422 : Hp buff/resistance buff
+140423:140423 : Hp buff/resistance buff
+140431:140431 : Hp buff/resistance buff
+140432:140432 : Hp buff/resistance buff
+140433:140433 : Hp buff/resistance buff
+140441:140441 : Hp buff/resistance buff
+140442:140442 : Hp buff/resistance buff
+140443:140443 : Hp buff/resistance buff
+140451:140451 : Hp buff/resistance buff
+140452:140452 : Hp buff/resistance buff
+140453:140453 : Hp buff/resistance buff
+140461:140461 : Hp buff/resistance buff
+140462:140462 : Hp buff/resistance buff
+140463:140463 : Hp buff/resistance buff
+141000:141000 : MultiPlayerSuccess
+141001:141001 :
+141002:141002 :
+141003:141003 :
+141004:141004 :
+141005:141005 :
+141006:141006 :
+224680:224680 :
+224690:224690 :
+224691:224691 :
+224692:224692 :
+224693:224693 :
+224699:224699 :
+224700:224700 :
+224800:224800 :
+224801:224801 :
+224802:224802 :
+224803:224803 :
+225000:225000 :
+225020:225020 :
+225100:225100 :
+225101:225101 :
+225120:225120 :
+225121:225121 :
+225200:225200 :
+225201:225201 :
+225202:225202 :
+225203:225203 :
+225204:225204 :
+225220:225220 :
+225221:225221 :
+225222:225222 :
+225223:225223 :
+225300:225300 :
+225301:225301 :
+225302:225302 :
+225400:225400 :
+225401:225401 :
+225402:225402 :
+225420:225420 :
+225500:225500 :
+225501:225501 :
+225600:225600 :
+225601:225601 :
+225700:225700 :
+225701:225701 :
+225702:225702 :
+225703:225703 :
+225800:225800 :
+225801:225801 :
+225802:225802 :
+225820:225820 :
+225821:225821 : become powerful
+226000:226000 : HP Buff
+226001:226001 :
+226002:226002 :
+226003:226003 :
+226004:226004 :
+226005:226005 :
+226006:226006 :
+226007:226007 :
+226008:226008 :
+226009:226009 :
+226020:226020 : HP Buff
+226021:226021 :
+226100:226100 :
+226101:226101 :
+226102:226102 :
+226103:226103 :
+226104:226104 :
+226200:226200 :
+226201:226201 :
+226202:226202 :
+226203:226203 :
+226204:226204 :
+226300:226300 :
+226301:226301 :
+226302:226302 :
+226320:226320 :
+227300:227300 :
+227320:227320 :
+227321:227321 :
+227420:227420 :
+227440:227440 :
+227441:227441 :
+227500:227500 :
+227520:227520 :
+227521:227521 :
+227620:227620 :
+227700:227700 :
+227701:227701 :
+227720:227720 :
+227740:227740 :
+227820:227820 :
+227821:227821 :
+227822:227822 :
+227890:227890 :
+227891:227891 :
+227900:227900 :
+227920:227920 :
+228000:228000 :
+228040:228040 :
+228100:228100 :
+228200:228200 :
+228300:228300 :
+228400:228400 :
+228600:228600 :
+228700:228700 :
+228800:228800 :
+228900:228900 :
+229000:229000 :
+229100:229100 : Bonfire rest related
+229200:229200 :
+229220:229220 :
+229240:229240 :
+229241:229241 :
+229340:229340 :
+229341:229341 :
+229440:229440 :
+229540:229540 :
+324700:324700 :
+324800:324800 :
+324801:324801 :
+324802:324802 :
+324803:324803 :
+325000:325000 :
+325020:325020 :
+325100:325100 :
+325101:325101 :
+325120:325120 :
+325121:325121 :
+325200:325200 :
+325201:325201 :
+325202:325202 :
+325203:325203 :
+325204:325204 :
+325220:325220 :
+325221:325221 :
+325222:325222 :
+325223:325223 :
+325300:325300 :
+325301:325301 :
+325302:325302 :
+325400:325400 :
+325401:325401 :
+325402:325402 :
+325420:325420 :
+325500:325500 :
+325501:325501 :
+325600:325600 :
+325601:325601 :
+325700:325700 :
+325701:325701 :
+325702:325702 :
+325703:325703 :
+325800:325800 :
+325801:325801 :
+325802:325802 :
+325820:325820 :
+325821:325821 :
+326000:326000 :
+326001:326001 :
+326002:326002 :
+326003:326003 :
+326004:326004 :
+326005:326005 :
+326006:326006 :
+326007:326007 :
+326008:326008 :
+326009:326009 :
+326020:326020 :
+326021:326021 :
+326100:326100 :
+326101:326101 :
+326102:326102 :
+326103:326103 :
+326104:326104 :
+326200:326200 :
+326201:326201 :
+326202:326202 :
+326203:326203 :
+326204:326204 :
+326300:326300 :
+326301:326301 :
+326302:326302 :
+326320:326320 :
+327300:327300 :
+327320:327320 :
+327321:327321 :
+327420:327420 :
+327440:327440 :
+327441:327441 :
+327500:327500 :
+327520:327520 :
+327521:327521 :
+327620:327620 :
+327700:327700 :
+327701:327701 :
+327720:327720 :
+327740:327740 :
+327820:327820 :
+327821:327821 :
+327822:327822 :
+327890:327890 :
+327891:327891 :
+327900:327900 :
+327920:327920 :
+328000:328000 :
+328040:328040 :
+328100:328100 :
+328200:328200 :
+328300:328300 :
+328400:328400 :
+328600:328600 :
+328700:328700 :
+328800:328800 :
+328900:328900 :
+329000:329000 :
+329100:329100 :
+329200:329200 :
+329220:329220 :
+329240:329240 :
+329241:329241 :
+329340:329340 :
+329341:329341 :
+329440:329440 :
+329540:329540 :
+900000:900000 : Estus restored
+900100:900100 : Estus restored
+900200:900200 :
+900201:900201 :
+900202:900202 :
+900203:900203 :
+900210:900210 : Increases stamina/equip load
+900211:900211 : Increases stamina/equip load
+900212:900212 : Increases stamina/equip load
+910000:910000 : AR boost
+910010:910010 : AR boost
+910020:910020 : AR boost
+920000:920000 : AR boost
+950000:950000 : Carthus beacon AR boost
+950010:950010 : Carthus beacon AR boost
+1062301:1062301 : Warcry buff
+1062311:1062311 : Warcry buff when out of Fp
+1062351:1062351 : Warcry buff left
+1062361:1062361 : Warcry buff left when out of Fp
+1070101:1070101 : Warcry buff
+1070111:1070111 : Warcry buff when out of Fp
+1070151:1070151 : Warcry buff left
+1070161:1070161 : Warcry buff left
+1070401:1070401 : Warcry buff
+1070411:1070411 : Warcry buff
+1070451:1070451 : Warcry buff left
+1070461:1070461 : Warcry buff left
+1070501:1070501 : Warcry buff
+1070511:1070511 : Warcry buff when out of Fp
+1070551:1070551 : Warcry buff left
+1070561:1070561 : Warcry buff left
+1080001:1080001 : Warcry buff
+1080011:1080011 : Warcry buff when out of Fp
+1080051:1080051 : Warcry buff left
+1080061:1080061 : Warcry buff left when out of Fp
+1080601:1080601 : Warcry buff
+1080611:1080611 : Warcry buff when out of Fp
+1080651:1080651 : Warcry buff left
+1080661:1080661 : Warcry buff left when out of Fp
+1083201:1083201 : AR up from Ledo's Hammer WA
+1083251:1083251 : AR up from Ledo's Hammer WA on offhand
+1092401:1092401 : Ringed Knight Spear Fire Effect
+1092411:1092411 : Ringed Knight Spear Fire Effect
+1092451:1092451 : Ringed Knight Spear Fire Effect Left hand
+1092461:1092461 : Ringed Knight Spear Fire Effect Left hand
+1420000:1420000 : White burst from chest from arena
+1420010:1420010 : Arena spawn effect, followed by Wrath of the Gods
+1420011:1420011 : White glowing star-like object on chest, then wrath of the gods fires
+1420020:1420020 : Spawns wrath of the gods from arena
+1420030:1420030 :
+1420040:1420040 : Gold crown from arena
+1420050:1420050 : Silver crown from arena
+1420060:1420060 :
+1420100:1420100 : Estus (I'm guessing from the dlc pyro hand)
+1420110:1420110 : Estus
+1420200:1420200 : Estus
+1420210:1420210 : Estus
+82100000:82100000 : Lloyd's Shield Ring
+101310000:101310000 : Magic Weapon
+101311000:101311000 : Great Magic Weapon
+101312000:101312000 : Crystal Magic Weapon
+101313000:101313000 : Frost Weapon
+101313010:101313010 : Frostbite effect
+101330000:101330000 : Magic Shield
+101331000:101331000 : Great Magic Shield
+101340000:101340000 : Invisible Weapon
+101341000:101341000 : Hidden Body
+101341100:101341100 : Hidden Body
+101350000:101350000 : Cast light
+101353000:101353000 : Repair
+101354000:101354000 : Spook
+101354100:101354100 : Silvercat Ring, but only for a little while
+101355000:101355000 : Chameleon
+101355100:101355100 : Slow walk?
+101356000:101356000 : n
+101740000:101740000 : PestilentMercuryHpDrain
+101741000:101741000 : Frostbite
+101741010:101741010 : Frostbite
+102420000:102420000 : Poison mist
+102421000:102421000 : Toxic mist
+102422000:102422000 : Acid surge
+102423000:102423000 : Vow of Silence?
+102430000:102430000 : Iron Flesh
+102430100:102430100 : Iron Flesh
+102430200:102430200 : Iron Flesh
+102430300:102430300 : Iron Flesh
+102431000:102431000 : Flash Sweat
+102435000:102435000 : Carthus Flame Arc
+102436000:102436000 : Rapport
+102436010:102436010 :
+102440000:102440000 : Power Within
+102470000:102470000 : Warmth
+102562000:102562000 : Profuse Sweat
+102650000:102650000 : Carthus Beacon
+102650010:102650010 :
+103490000:103490000 : Warmth's tick
+103490100:103490100 : Warmth's tick
+103500000:103500000 : Restores HP
+103500009:103500009 : Restores HP
+103500100:103500100 :
+103500109:103500109 :
+103501000:103501000 : Restores HP
+103501009:103501009 :
+103501100:103501100 :
+103501109:103501109 :
+103502000:103502000 : Great Heal
+103502100:103502100 :
+103503000:103503000 : Soothing Sunlight
+103503100:103503100 :
+103504000:103504000 : Replenishment
+103505000:103505000 : Bountiful Sunlight
+103505100:103505100 :
+103507000:103507000 : Bountiful Light
+103508000:103508000 : Caressing Tears
+103508100:103508100 :
+103508200:103508200 :
+103508300:103508300 :
+103520000:103520000 : Tears of Denial
+103520100:103520100 : Tears of Denial
+103521000:103521000 :
+103521100:103521100 :
+103540000:103540000 : Seek Guidance
+103540010:103540010 : Seek Guidance
+103554000:103554000 : Bleed? 1/3
+103555000:103555000 : Bleed? 2/3 (210 bleed damage?)
+103560000:103560000 : Magic Barrier
+103561000:103561000 : Great Magic Barrier
+103563000:103563000 : Sacred Oath
+103563100:103563100 : Armor up icon appears for a little while
+103581000:103581000 : VOW
+103581100:103581100 : Also Vow of Silence
+103581200:103581200 :
+103590000:103590000 : Lightning Blade
+103591000:103591000 : Darkmoon Blade
+103591100:103591100 : Darkmkoon Blade v2
+103591200:103591200 : Darkmkoon Blade v3
+103591300:103591300 : Darkmkoon Blade v4
+103640000:103640000 : Dark Weapon
+103700000:103700000 : Dead Again
+103700100:103700100 : Dead Again?
+103730000:103730000 : Life Steal
+103730100:103730100 : Life Steal
+103730200:103730200 : Life Steal
+103730300:103730300 : Life Steal
+103730400:103730400 : Life Steal
+103731000:103731000 : Life Steal
+103731100:103731100 : Life Steal
+103731200:103731200 : Life Steal
+103731300:103731300 : Life Steal
+103731400:103731400 : Life Steal
+103750000:103750000 :
+103750010:103750010 :
+103750100:103750100 : Delayed hit?
+103750110:103750110 : Damage
+103750200:103750200 : Delayed punch?
+103750210:103750210 : ReplaceSpEffect For Darkmoon autoinvasion trigger
+103750300:103750300 :
+103750310:103750310 :
+103750400:103750400 : DEATH
+103750410:103750410 : INSTA DEATH
+103760000:103760000 : Blessed weapon
+103770000:103770000 : Deep Protection
+103770100:103770100 : Armor up, poise up, and stam up icons flash for a little while
+103770200:103770200 : Same as above without armor
+103770300:103770300 : Just poise up
+103780000:103780000 : Attonement
+111000000:111000000 : Blade of the Darkmoon autoinvasion trigger
+111001000:111001000 : Spear of the Church autoinvasion trigger
+111002000:111002000 : Watchdog of Farron autoinvasion trigger
+111003000:111003000 : Aldrich Faithful autoinvasion trigger
+111004000:111004000 : Blue Sentinel autoinvasion trigger
+112000000:112000000 : Life Ring
+112000100:112000100 : Life Ring +1
+112000200:112000200 : Life Ring +2
+112000300:112000300 : Life Ring +3
+112001000:112001000 : Chloranthy Ring effect
+112001100:112001100 : Chloranthy Ring effect+1
+112001200:112001200 : Chloranthy Ring +2 effect
+112001300:112001300 : Chloranthy Ring +3 effect
+112002000:112002000 : Havel's Ring effect
+112002100:112002100 : Havel's Ring +1 effect
+112002200:112002200 : Havel's Ring +2 effect
+112002300:112002300 : Havel's Ring +3 effect
+112003000:112003000 : Ring of Favor effect
+112003100:112003100 : Ring of Favor +1 effect
+112003200:112003200 : Ring of Favor +2 effect
+112003300:112003300 : Ring of Favor +3 effect
+112004000:112004000 : Ring of Steel Protection effect
+112004100:112004100 : Ring of Steel Protection +1 effect
+112004200:112004200 : Ring of Steel Protection +2 effect
+112004300:112004300 : Ring of Steel Protection +3 effect
+112005000:112005000 : Flame Stoneplate Ring effect
+112005100:112005100 : Flame Stoneplate Ring +1 effect
+112005200:112005200 : Flame Stoneplate Ring +2 effect
+112006000:112006000 : Thunder Stoneplate Ring effect
+112006100:112006100 : Thunder Stoneplate Ring +1 effect
+112006200:112006200 : Thunder Stoneplate Ring +2 effect
+112007000:112007000 : Magic Stoneplate Ring
+112007100:112007100 : Magic Stoneplate Ring +1
+112007200:112007200 : Magic Stoneplate Ring +2
+112008000:112008000 : Dark Stoneplate Ring effect
+112008100:112008100 : Dark Stoneplate Ring +1 effect
+112008200:112008200 : Dark Stoneplate Ring +2 effect
+112009000:112009000 : Speckled Stoneplate Ring effect
+112009100:112009100 : Speckled Stoneplate Ring +1 effect
+112010000:112010000 : Bloodbite Ring effect
+112010100:112010100 : Bloodbite Ring +1  effect
+112011000:112011000 : Poisonbite Ring effect
+112011100:112011100 : Poisonbite Ring +1 effect
+112012000:112012000 : Cursebite Ring effect
+112013000:112013000 : Fleshbite Ring effect
+112013100:112013100 : Fleshbite Ring +1 effect
+112014000:112014000 : Wood Grain Ring effect?
+112014100:112014100 : Wood Grain Ring +1 effect?
+112014200:112014200 : Wood Grain Ring +2 effect?
+112015000:112015000 : Scholar's Ring
+112016000:112016000 : Priestess Ring
+112017000:112017000 : Red Tearstone Ring
+112018000:112018000 : Blue Tearstone Ring
+112019000:112019000 : Wolf Ring effect
+112019100:112019100 : Wolf Ring +1 effect
+112019200:112019200 : Wolf Ring +2 effect
+112019300:112019300 : Wolf Ring +3 effect
+112020000:112020000 : Leo Ring
+112021000:112021000 : Ring of Sacrifice
+112022000:112022000 : Rare Ring of Sacrifice
+112023000:112023000 : Young Dragon Ring
+112023100:112023100 : Bellowing Dragoncrest Ring
+112024000:112024000 : Great Swamp Ring
+112024100:112024100 : Witch's Ring
+112025000:112025000 : Morne's Ring
+112025100:112025100 : Ring of the Sun's First Born
+112027000:112027000 : Lingering Dragoncrest Ring
+112027100:112027100 : Lingering Dragoncrest Ring +1
+112027200:112027200 : Lingering Dragoncrest Ring +2
+112028000:112028000 : Sage Ring
+112028100:112028100 : Sage Ring +1
+112028200:112028200 : Sage Ring +2
+112029000:112029000 : Slumbering Dragoncrest Ring effect
+112030000:112030000 : Dusk crown ring
+112031000:112031000 : Saint's ring
+112032000:112032000 : Deep ring
+112033000:112033000 : Darkmoon Ring
+112037000:112037000 : Hawk Ring effect
+112038000:112038000 : Hornet Ring
+112039000:112039000 : Gold Serpent Ring effect
+112039100:112039100 : Gold Serpent Ring +1 effect
+112039200:112039200 : Gold Serpent Ring +2 effect
+112039300:112039300 : Gold Serpent Ring +3 effect
+112040000:112040000 : Covetous Silver Serpent Ring effect
+112040100:112040100 : Covetous Silver Serpent Ring +1 effect
+112040200:112040200 : Covetous Silver Serpent Ring +2 effect
+112040300:112040300 : Covetous Silver Serpent Ring +3 effect
+112041000:112041000 : Sun Princess Ring Effect
+112042000:112042000 : Silvercat Ring effect
+112043000:112043000 : Skull Ring Effect
+112044000:112044000 : Untrue White Ring effect
+112045000:112045000 : Carthus Milkring
+112045010:112045010 :
+112046000:112046000 : Knight's Ring effect
+112047000:112047000 : Hunter's Ring effect
+112048000:112048000 : Knight slayer's ring
+112049000:112049000 : Magic clutch ring
+112050000:112050000 : Lightning clutch ring
+112051000:112051000 : Fire clutch ring
+112052000:112052000 : Dark clutch ring
+112054000:112054000 : Flynn's ring
+112055000:112055000 : Prisoner's Chain
+112056000:112056000 : Untrue Dark Ring effect
+112058000:112058000 : Obscuring ring
+112059000:112059000 : Ring of the Evil Eye effect
+112059010:112059010 : Ring of the Evil Eye +1 effect
+112059100:112059100 : Ring of the Evil Eye +2 effect
+112059110:112059110 : Actual effect from Ring of Evil Eye
+112059200:112059200 : Actual effect from Ring of Evil Eye
+112059210:112059210 : Actual effect from Ring of Evil Eye
+112059310:112059310 : Actual effect from Ring of Evil Eye
+112060000:112060000 : Calamity Ring effect
+112061000:112061000 : Farron Ring
+112062000:112062000 : Aldrich's Ruby
+112062001:112062001 :
+112062002:112062002 :
+112063000:112063000 : Aldrich's Sapphire
+112063001:112063001 : First Hit with Reposte Ring (Hornet Ring)
+112063002:112063002 :
+112066000:112066000 : Lloyd's Sword Ring
+112067000:112067000 : Lloyd's Shield Ring
+112070000:112070000 : Estus Ring
+112071000:112071000 : Ashen Estus Ring
+112072000:112072000 : Horsehoof Ring
+112073000:112073000 : Carthus Bloodring
+112074000:112074000 : Reversal Ring
+112075000:112075000 : Pontiff's Right Eye
+112075010:112075010 :
+112075020:112075020 :
+112075030:112075030 :
+112075100:112075100 : Actual effect of Right Eye
+112075110:112075110 : Actual effect of Right Eye
+112075120:112075120 : Actual effect of Right Eye
+112075130:112075130 :
+112079000:112079000 : Pontiff's Left Eye
+112079100:112079100 :
+112083000:112083000 : Dragonscale Ring
+112099999:112099999 :
+129000500:129000500 : Simple gem infusion.
+129000501:129000501 :
+129000502:129000502 :
+129000503:129000503 :
+129000504:129000504 :
+129000505:129000505 :
+129000506:129000506 :
+129000507:129000507 :
+129000508:129000508 :
+129000509:129000509 :
+129000510:129000510 :
+129001000:129001000 : HP Regen
+129001010:129001010 : HP Regen
+129001100:129001100 : Poison
+129001101:129001101 :
+129001102:129001102 :
+129001103:129001103 :
+129001104:129001104 :
+129001105:129001105 :
+129001106:129001106 :
+129001107:129001107 :
+129001108:129001108 :
+129001109:129001109 :
+129001110:129001110 :
+129001200:129001200 : Bleed
+129001201:129001201 :
+129001202:129001202 :
+129001203:129001203 :
+129001204:129001204 :
+129001205:129001205 :
+129001206:129001206 :
+129001207:129001207 :
+129001208:129001208 :
+129001209:129001209 :
+129001210:129001210 :
+129001400:129001400 : Blessed HP regen
+129001401:129001401 :
+129001402:129001402 :
+129001403:129001403 :
+129001404:129001404 :
+129001405:129001405 :
+129001406:129001406 :
+129001407:129001407 :
+129001408:129001408 :
+129001409:129001409 :
+129001410:129001410 : Blessed HP regen
+129001500:129001500 :
+129001501:129001501 :
+129001502:129001502 :
+129001503:129001503 :
+129001504:129001504 :
+129001505:129001505 :
+129001506:129001506 :
+129001507:129001507 :
+129001508:129001508 :
+129001509:129001509 :
+129001510:129001510 : Blessed HP Regen
+129010500:129010500 :
+129010501:129010501 :
+129010502:129010502 :
+129010503:129010503 :
+129010504:129010504 :
+129010505:129010505 :
+129010506:129010506 :
+129010507:129010507 :
+129010508:129010508 :
+129010509:129010509 :
+129010510:129010510 :
+129011100:129011100 : Poison+
+129011101:129011101 :
+129011102:129011102 :
+129011103:129011103 :
+129011104:129011104 :
+129011105:129011105 :
+129011106:129011106 :
+129011107:129011107 : Poison
+129011108:129011108 :
+129011109:129011109 :
+129011110:129011110 : Poison++
+129011200:129011200 : Bleed+
+129011201:129011201 :
+129011202:129011202 :
+129011203:129011203 :
+129011204:129011204 :
+129011205:129011205 :
+129011206:129011206 :
+129011207:129011207 :
+129011208:129011208 :
+129011209:129011209 :
+129011210:129011210 : Bleed++
+129011400:129011400 :
+129011401:129011401 :
+129011402:129011402 :
+129011403:129011403 :
+129011404:129011404 :
+129011405:129011405 :
+129011406:129011406 :
+129011407:129011407 :
+129011408:129011408 :
+129011409:129011409 :
+129011410:129011410 : Blessed HP regen
+129021100-10:129021100-10 : Poison Buildup
+129021200-10:129021200-10 : Bleed Buildup
+129031100-10:129031100-10 : Poison Buildup
+129031200-10:129031200-10 : Bleed Buildup
+129041100-10:129041100-10 : Poison Buildup
+129041200-10:129041200-10 : Bleed Buildup
+129051100-10:129051100-10 : Poison Buildup
+129051200-10:129051200-10 : Bleed Buildup
+130004450:130004450 : Low Bleed?
+130004451:130004451 :
+130004460:130004460 :
+130004462:130004462 : Super low bleed (?)
+130010700:130010700 : ???
+130010701:130010701 :
+130010702:130010702 :
+130010750:130010750 :
+130010751:130010751 :
+130010752:130010752 :
+130010790:130010790 :
+130011200:130011200 : Handmaid's Dagger 1 FP per hit
+130011201:130011201 :
+130011210:130011210 : Darkmoon Blade(?)
+130011211:130011211 : Handmaid's Dagger 1 FP per hit
+130011212:130011212 : DMB (?)
+130011260:130011260 :
+130011261:130011261 :
+130021100:130021100 : Oath of Sunlight
+130021101:130021101 : ???
+130021105:130021105 : Sacred Oath
+130021106:130021106 : ???
+130021110:130021110 :
+130021111:130021111 :
+130021400:130021400 :
+130021401:130021401 :
+130021402:130021402 :
+130021450:130021450 :
+130021451:130021451 :
+130021452:130021452 :
+130021600:130021600 :
+130021601:130021601 :
+130021602:130021602 :
+130021650:130021650 :
+130021651:130021651 :
+130021652:130021652 :
+130021800:130021800 : Morion Blade
+130022200:130022200 : FP on kill
+130022210:130022210 : Result of FP on kill
+130022300:130022300 : ??? HP regen???
+130022400:130022400 : Onyx Blade buff
+130022401:130022401 : Onyx blade buff
+130022451:130022451 : Onyx Blade buff left hand
+130030400:130030400 : Item discovery up?
+130040700:130040700 : pontiff curved sword
+130040701:130040701 : Frozen weapon?
+130041000:130041000 : Moonlight GS green buff
+130050200:130050200 : Self Damage on-hit
+130050201:130050201 : Chaos Blade Vfx on hit
+130050400:130050400 : Self damage on equip
+130050401:130050401 : Blood loss with no effect
+130050420:130050420 : Bloodlust Weapon buff
+130050421:130050421 : Actual Bloodlust WA buff (When bloodlust is held in right-hand)
+130050450:130050450 :
+130050451:130050451 : Actual Bloodlust WA buff (When bloodlust is held in left-hand)
+130061700:130061700 : DMB
+130061701:130061701 : DMB
+130061702:130061702 : DMB
+130061750:130061750 :
+130061751:130061751 : DMB left hand
+130061752:130061752 : DMB left hand
+130061800:130061800 : Flame Buff
+130061801:130061801 : From Profaned Greatsword
+130061850:130061850 :
+130061851:130061851 : Flame Buff left hand
+130061860:130061860 : Profaned UGS's charged R2 Fire effect
+130062300:130062300 : Right hand red fumes and attack up
+130062310:130062310 : Right hand red fumes and attack up
+130062700:130062700 : Lothric Knight Sword Buff
+130062701:130062701 : Blessed SFX applied during Twin Princes Greatsword L2R1
+130062710:130062710 : useless flame buff
+130062711:130062711 : Flame SFX applied during Twin Princes Greatsword's L2R2
+130062750:130062750 :
+130062751:130062751 : Blessed weapon left hand
+130062760:130062760 :
+130062761:130062761 : Carthus flame arc left hand
+130063400:130063400 : Carthus Flame Arc
+130063401:130063401 : Flame buff
+130063450:130063450 :
+130063451:130063451 : flame buff left hand
+130063600:130063600 : Old Wolf Curved Sword
+130063610:130063610 :
+130063620:130063620 : Old Wolf Curved Sword
+130063625:130063625 :
+130063630:130063630 : Old Wolf Curved Sword
+130063635:130063635 :
+130063700:130063700 : Storm Ruler Charging
+130063701:130063701 : Storm ruler charging
+130063710:130063710 : Storm Ruler Charged
+130063711:130063711 : Storm Ruler Charged
+130063720:130063720 :
+130063721:130063721 :
+130069500:130069500 : Lorian Fire Buff
+130069501:130069501 : Lorian Fire Buff
+130069511:130069511 :
+130069550:130069550 :
+130069551:130069551 : Lorian Fire Buff
+130069600:130069600 : Lothric Knight Sword Buff
+130069601:130069601 : Lothric's Holy Sword Stance
+130069650:130069650 :
+130069651:130069651 : Blessed weapon left hand
+130070100:130070100 : Warcy
+130070110:130070110 : Warcry
+130070150:130070150 :
+130070160:130070160 :
+130070400:130070400 : Warcry
+130070410:130070410 : Warcry
+130070450:130070450 :
+130070460:130070460 :
+130070500:130070500 : Warcry
+130070510:130070510 : Warcry
+130070550:130070550 :
+130070560:130070560 :
+130070700:130070700 : 2HP on hit
+130070701:130070701 :
+130070702:130070702 : 12HP on hit
+130070710:130070710 : Sharpen Buff effect
+130070720:130070720 : same as above
+130070721:130070721 :
+130070760:130070760 :
+130070770:130070770 : Sharpen Buff - Sparkly stuff down left arm
+130070777:130070777 :
+130071300:130071300 :
+130071303:130071303 : ???
+130071310:130071310 :
+130071311:130071311 :
+130071320:130071320 :
+130071330:130071330 : Eleonora's WA effect.
+130071331:130071331 :
+130071350:130071350 :
+130071360:130071360 :
+130071361:130071361 :
+130071370:130071370 :
+130071380:130071380 : Eleonora's WA effect on offhand.
+130071381:130071381 :
+130080000:130080000 : Warcry
+130080010:130080010 : Warcry
+130080050:130080050 :
+130080060:130080060 :
+130080600:130080600 : Warcry
+130080610:130080610 : Warcry
+130080650:130080650 :
+130080660:130080660 :
+130081900:130081900 :
+130082100:130082100 :
+130082400:130082400 : Stamina recovery up
+130082401:130082401 :
+130082450:130082450 :
+130082451:130082451 : Stamina recovery up
+130082600:130082600 : mag/fire res up
+130082700:130082700 : Heal on-hit
+130083210:130083210 : Adds 9 fucking damage
+130090900:130090900 : Poise boost
+130091400:130091400 :
+130091600:130091600 : Sunlight weapon effect
+130091601:130091601 : Lightning buff from swordspear
+130091650:130091650 :
+130091651:130091651 : Lightning buff from swordspear on offhand.
+130091700:130091700 : Kills heal HP
+130091710:130091710 : Yellow shit attacks your chest
+130091900:130091900 : Pacify
+130091910:130091910 : Resulting effect from Pacify
+130091911:130091911 : Resulting effect from Pacify
+130091950:130091950 : Pacify
+130091960:130091960 : Pacify left hand
+130091961:130091961 :
+130092200:130092200 : Cosmetic lightning effect from Dragonslayer Spear WA, lasts 2 seconds
+130092400:130092400 : Ringed knight spear fire effect
+130092410:130092410 : Ringed knight spear fire effect
+130092500:130092500 : Lothric War Banner buff and beams
+130092501:130092501 : Lothric War Banner red beams around you
+130092505:130092505 : Lothric War Banner buff and beams repeat quickly
+130092506:130092506 : Lothric War Banner beams repeat quickly
+130092510:130092510 : Lothric War Banner buff
+130092551:130092551 : Lothric War Banner beams repeat quickly
+130092600:130092600 : Lothric War Banner buff and beams with perseverence buff?
+130092630:130092630 : Lothric War Banner buff and beams
+130092650:130092650 : Lothric War Banner buff long duration cosmetic?
+130100700:130100700 : Frost weapon
+130100710:130100710 : Pontiff knight Scythe Frost Effect
+130100711:130100711 : Frost weapon
+130100750:130100750 :
+130100760:130100760 : Pontiff knight Scythe Frost Effect on offhand
+130100761:130100761 :
+130100780:130100780 : Pontiff Knight Great Scythe's WA aura
+130100790:130100790 : Low Bleed
+130110400:130110400 :
+130110410:130110410 :
+130110450:130110450 :
+130120400:130120400 : Fire Flash effect
+130120700:130120700 : Star-like gold glowing around torso and magic up
+130120701:130120701 : Star-like gold glowing around torso and magic up
+130120751:130120751 : Star-like gold glowing around torso and magic up
+130120760:130120760 : Star-like gold glowing around torso and magic up
+130130700:130130700 : Tiny poison buildup
+130130710:130130710 :
+130130720:130130720 :
+130130800:130130800 : Souls gained +
+130131600:130131600 : Steady Chant
+130131601:130131601 :
+130131650:130131650 :
+130131651:130131651 :
+130131900:130131900 :
+130132300:130132300 : Cast speed up?
+130134111:130134111 : Ghoulish looking smoke on body
+130134200:130134200 : Murky Longstaff Buff
+130134201:130134201 : Murky Longstaff Buff
+130134251:130134251 : Murky Longstaff Buff
+130134300:130134300 : Sacred Chime of Filianore
+130141300:130141300 :
+130141301:130141301 : Darkmoon blade
+130141350:130141350 :
+130141351:130141351 : Darkmoon blade
+130160500:130160500 :
+130160501:130160501 : Sharpened
+130160550:130160550 :
+130160551:130160551 : Sharpened Off-hand
+130201500:130201500 : Stone Flesh
+130201510:130201510 :
+130201520:130201520 :
+130202900:130202900 : Fast health regen
+130212000:130212000 : Stamina regen +
+130212800:130212800 : Souls gained +
+130213000:130213000 : Slow health regen
+130220500:130220500 : Moan
+130220700:130220700 : Poise boost
+130220900:130220900 : Status effect res up?
+130221100:130221100 : Stam regen down
+140000000:140000000 : Best Humanity Head
+140010400:140010400 : Poison
+140021200:140021200 : Poison
+140091200:140091200 : Poison
+140091700:140091700 : Poison
+140120600:140120600 : Poison
+140201300:140201300 : Poison
+142010100:142010100 : Bleed
+142021800:142021800 : Bleed
+142022100:142022100 : Bleed
+142040500:142040500 : Bleed
+142040600:142040600 : Bleed
+142040900:142040900 : Bleed
+142041100:142041100 : Bleed
+142050000:142050000 : Bleed
+142050100:142050100 : Bleed
+142050200:142050200 : Bleed
+142050300:142050300 : Bleed
+142050400:142050400 : Bleed
+142050500:142050500 : Bleed
+142061400:142061400 : Bleed
+142080200:142080200 : Bleed
+142080300:142080300 : Bleed
+142082100:142082100 : Bleed
+142083000:142083000 : Bleed
+142100000:142100000 : Bleed
+142100800:142100800 : Bleed
+142100810:142100810 : Bleed
+142110000:142110000 : Bleed
+142110200:142110200 : Bleed
+142120500:142120500 : Bleed
+142160200:142160200 : Bleed
+142160900:142160900 : Bleed
+142211300:142211300 : Bleed
+143021400:143021400 : Frostbite
+143021410:143021410 :
+143021900:143021900 : Friede's Great Scythe's Frostbite (45 frostbite)
+143030500:143030500 : Frostbite
+143030510:143030510 :
+143040700:143040700 : Pontiff Curved Sword's first L2 hit with the weapon.
+143040710:143040710 : Pontiff Curved Sword's second L2 hit with the weapon. 55 frostbite
+143040720:143040720 : Pontiff Curved Sword's second L2 hit with the Frost Blade.
+143081800:143081800 : Frostbite
+143081810:143081810 :
+150001000:150001000 : Regeneration
+150001001:150001001 :
+150001050:150001050 :
+150001051:150001051 :
+150002000:150002000 :
+150003000:150003000 : Steady chant effect
+150003001:150003001 : Steady Chant Effect applied when the staff is held in the off-hand
+150003050:150003050 :
+150003051:150003051 : Steady Chant, when used by Sorcerer's Staff on Off Hand
+150004000:150004000 : Gentle prayer effect I think
+150004001:150004001 : Same as above
+150004050:150004050 : Same as above
+150004051:150004051 : Same as above
+150004060:150004060 : Gentle prayer effect
+160000000:160000000 : Power within visual effect
+160000010:160000010 : White transparent (less visible than ghost)
+160000020:160000020 : Poisoned(?) visual effect
+160000030:160000030 : Crystal weapon visual effect
+</DropDownList>
+  <ShowAsSigned>0</ShowAsSigned>
+  <GroupHeader>1</GroupHeader>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>492933</ID>
+  <Description>"Controller"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>8 Bytes</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>148</Offset>
+  </Offsets>
+</CheatEntry>

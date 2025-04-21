@@ -1,0 +1,15 @@
+{gate 15/02/2023.
+clears the register containing the
+value that the "hits until next
+durability point loss" counter increases to.
+no idea if it is checked by the anticheat!}
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[enable]
+darksoulsiii.exe+58bfe4:
+db 31 d2 // xor edx,edx
+[disable]
+darksoulsiii.exe+58bfe4:
+db 8b d3 // mov edx,ebx

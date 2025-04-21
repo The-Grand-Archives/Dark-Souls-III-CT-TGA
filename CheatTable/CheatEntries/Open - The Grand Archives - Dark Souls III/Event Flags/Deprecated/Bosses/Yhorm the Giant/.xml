@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>78069</ID>
+  <Description>"Yhorm the Giant"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78071"/>
+    <id id="78072"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

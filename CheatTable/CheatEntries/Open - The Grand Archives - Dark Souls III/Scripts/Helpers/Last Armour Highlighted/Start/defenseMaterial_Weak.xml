@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337035728</ID>
+  <Description>"defenseMaterial_Weak"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+d6</Address>
+</CheatEntry>

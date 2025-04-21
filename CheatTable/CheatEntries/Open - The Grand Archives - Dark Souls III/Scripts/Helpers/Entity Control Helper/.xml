@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>89761</ID>
+  <Description>"Entity Control Helper"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="89762"/>
+    <id id="89763"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

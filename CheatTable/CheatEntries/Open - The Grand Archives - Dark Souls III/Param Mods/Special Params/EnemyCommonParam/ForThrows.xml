@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337099219</ID>
+  <Description>"ForThrows"</Description>
+  <VariableType>Float</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>4</Offset>
+    <Offset>60</Offset>
+    <Offset>A0</Offset>
+  </Offsets>
+</CheatEntry>

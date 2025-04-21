@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337099014</ID>
+  <Description>"BlendRateM.y"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>E4</Offset>
+    <Offset>68</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

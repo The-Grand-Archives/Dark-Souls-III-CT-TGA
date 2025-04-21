@@ -1,0 +1,20 @@
+<CheatEntry>
+  <ID>1337096540</ID>
+  <Description>"State"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:None
+1:Try to Create Session
+2:Failed To Create Session
+3:Host
+4:Try to Join Session
+5:Failed To Join Session
+6:Client
+7:On Leave Session
+8:Failed To Leave Session
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>16C</Offset>
+  </Offsets>
+</CheatEntry>

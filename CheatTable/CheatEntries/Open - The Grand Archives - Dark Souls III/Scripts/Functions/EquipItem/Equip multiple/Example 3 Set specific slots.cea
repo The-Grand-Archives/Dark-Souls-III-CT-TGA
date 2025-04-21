@@ -1,0 +1,29 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local items = {
+    -- slot, item id
+    {1, 0x002191CA},  -- PrimaryRightWep
+    {0, 0x01430755},  -- PrimaryLeftWep
+    {2, 0x00CA7BFA},  -- SecondaryLeftWep
+    {12, 0x144AA200}, -- Helmet
+    {13, 0x144AA5E8}, -- Armor
+    {14, 0x144AA9D0}, -- Gauntlet
+    {15, 0x144AADB8}, -- Leggings
+    {17, 0x20004E41}, -- Accessory 1
+    {18, 0x20004E4B}, -- Accessory 2
+    {19, 0x20004FBA}, -- Accessory 3
+    {20, 0x20004EDE}, -- Accessory 4
+    {21, 0x20002738}  -- Covenant
+}
+
+for _,v in ipairs(items) do
+    local idx = getItemIdx(v[2])
+    if idx then
+        equipItem(v[1], idx)
+    end
+end
+
+disableMemrec(memrec)
+
+[DISABLE]

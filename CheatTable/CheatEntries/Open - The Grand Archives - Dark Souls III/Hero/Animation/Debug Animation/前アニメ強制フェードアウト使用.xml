@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337180563</ID>
+  <Description>"前アニメ強制フェードアウト使用"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>119</Offset>
+    <Offset>10</Offset>
+    <Offset>50</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

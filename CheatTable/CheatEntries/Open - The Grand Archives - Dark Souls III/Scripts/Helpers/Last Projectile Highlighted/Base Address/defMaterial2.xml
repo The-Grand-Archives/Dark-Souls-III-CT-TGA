@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337045730</ID>
+  <Description>"defMaterial2"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">100:Normal
+102:Wood
+103:Magic
+104:Shield
+105:Small Shield
+129:Greatshield
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>+0106</Address>
+</CheatEntry>

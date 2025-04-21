@@ -1,0 +1,18 @@
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local dragonarmor = {
+    {167,0x20,"","Armor1"},
+    {96,0x20,"","Armor2"}
+  }
+  paramUtils:paramIterator("SpEffectVfxParam", dragonarmor)
+end
+
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  local dragonarmor = {}
+  paramUtils:paramIterator("SpEffectVfxParam", dragonarmor)
+  unregisterSymbol("Armor1")
+  unregisterSymbol("Armor2")
+end

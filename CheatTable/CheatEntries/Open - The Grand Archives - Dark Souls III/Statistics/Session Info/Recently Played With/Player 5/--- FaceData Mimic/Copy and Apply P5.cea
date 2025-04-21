@@ -1,0 +1,19 @@
+[ENABLE]
+
+[[GameDataMan]+10]+6bc:
+readmem([[[GameDataMan]+18]+2118]+6bc,192) //Facedata silders
+
+[[GameDataMan]+10]+AA:
+readmem([[[GameDataMan]+18]+2118+AA,3) //Gender, Voice...
+
+[[GameDataMan]+10]+3B0:
+readmem([[[GameDataMan]+18]+2118]+3B0,28) //Body Sizes
+
+[[GameDataMan]+10]+6b8:
+readmem([[[GameDataMan]+18]+2118]+6b8,1) //Age
+
+[DISABLE]
+
+
+
+

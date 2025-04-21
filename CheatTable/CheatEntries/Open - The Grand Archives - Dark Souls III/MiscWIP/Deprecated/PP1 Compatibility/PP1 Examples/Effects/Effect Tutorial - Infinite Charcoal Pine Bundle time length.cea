@@ -1,0 +1,16 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local CharcoalPineBundle = { --effect param mods
+  {2110,0x08,"00 00 80 BF"} --Effect Duration [-1 Unlimited In Array of Bytes format]
+  --Follows this formula: "ID of what you want to change", 0x"Offset for what you want to change in it", "Array of Byte that you want to change it to"
+}
+paramUtils:paramIterator("SpEffectParam",CharcoalPineBundle,"CBEffect") --Save values on 'enable'
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+ paramUtils:paramDepatcher("CBEffect") --Restore default values on 'disable'
+
+
+

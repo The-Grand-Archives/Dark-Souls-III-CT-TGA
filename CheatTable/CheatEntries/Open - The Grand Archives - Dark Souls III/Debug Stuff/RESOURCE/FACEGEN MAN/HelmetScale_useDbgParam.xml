@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337099340</ID>
+  <Description>"HelmetScale_useDbgParam"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+474CC18</Address>
+</CheatEntry>

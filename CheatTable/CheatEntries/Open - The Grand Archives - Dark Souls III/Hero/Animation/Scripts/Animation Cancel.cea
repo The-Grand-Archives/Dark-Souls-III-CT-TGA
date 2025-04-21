@@ -1,0 +1,22 @@
+[ENABLE]
+aobscanmodule(canmove1, DarkSoulsIII.exe, E9 ?? ?? ?? ?? 48 ?? ?? 58 00 80 00 00 E9)
+alloc(newmem, 128, canmove1)
+label(return)
+
+newmem:
+or dword ptr [rbx+10],01
+jmp return
+
+canmove1+5:
+jmp newmem
+nop 3
+return:
+
+registersymbol(canmove1)
+
+[DISABLE]
+canmove1+5:
+or qword ptr [rbx+58],00008000
+
+dealloc(newmem)
+unregistersymbol(canmove1)

@@ -1,0 +1,60 @@
+<CheatEntry>
+  <ID>1337033335</ID>
+  <Description>"Start"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>last_covenant_ptr</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337032818"/>
+    <id id="1337032819"/>
+    <id id="1337032820"/>
+    <id id="1337032821"/>
+    <id id="1337032822"/>
+    <id id="1337032823"/>
+    <id id="1337032824"/>
+    <id id="1337032825"/>
+    <id id="1337032826"/>
+    <id id="1337032827"/>
+    <id id="1337032828"/>
+    <id id="1337032829"/>
+    <id id="1337032830"/>
+    <id id="1337032831"/>
+    <id id="1337032832"/>
+    <id id="1337032833"/>
+    <id id="1337032834"/>
+    <id id="1337032835"/>
+    <id id="1337032836"/>
+    <id id="1337032837"/>
+    <id id="1337032838"/>
+    <id id="1337032839"/>
+    <id id="1337032840"/>
+    <id id="1337032841"/>
+    <id id="1337032842"/>
+    <id id="1337032843"/>
+    <id id="1337032844"/>
+    <id id="1337032845"/>
+    <id id="1337032846"/>
+    <id id="1337032847"/>
+    <id id="1337032848"/>
+    <id id="1337032849"/>
+    <id id="1337032850"/>
+    <id id="1337032851"/>
+    <id id="1337032852"/>
+    <id id="1337032853"/>
+    <id id="1337032854"/>
+    <id id="1337032855"/>
+    <id id="1337032856"/>
+    <id id="1337032857"/>
+    <id id="1337032858"/>
+    <id id="1337032859"/>
+    <id id="1337032860"/>
+    <id id="1337032861"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

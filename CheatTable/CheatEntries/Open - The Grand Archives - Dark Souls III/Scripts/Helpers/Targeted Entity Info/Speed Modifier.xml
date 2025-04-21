@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337045214</ID>
+  <Description>"Speed Modifier"</Description>
+  <VariableType>Float</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>A58</Offset>
+    <Offset>28</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

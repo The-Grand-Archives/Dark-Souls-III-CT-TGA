@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>489920</ID>
+  <Description>"Attacked?"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>7</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>AC</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337075975</ID>
+  <Description>"Screen Mode"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Windowed
+1:Full-screen
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>0</Address>
+</CheatEntry>

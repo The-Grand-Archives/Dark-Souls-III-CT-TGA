@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>90655</ID>
+  <Description>"Float value"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WalkingAnimationsSpeed+4</Address>
+</CheatEntry>

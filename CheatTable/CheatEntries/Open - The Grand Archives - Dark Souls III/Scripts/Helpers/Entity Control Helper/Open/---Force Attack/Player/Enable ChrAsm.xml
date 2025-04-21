@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>89825</ID>
+  <Description>"Enable ChrAsm"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>2098</Offset>
+    <Offset>8</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

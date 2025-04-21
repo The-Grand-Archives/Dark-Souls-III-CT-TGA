@@ -1,0 +1,37 @@
+<CheatEntry>
+  <ID>89765</ID>
+  <Description>"ID"</Description>
+  <DropDownList DisplayValueAsItem="1">c5140_0000:Pontiff
+c5150_0001:Aldrich
+c2240_0000:Vordt
+c5270_0001:Dancer
+c2090_0000:Oceiros
+c5280_0000:Soul of Cinder
+c3141_0000:Ancient Wyvern
+c5010_0000:Nameless King
+c5030_0000:King of the Storm
+c3160_0000:Dragonslayer Armor
+c5250_0001:Lorian Phase 1
+c5250_0000:Lorian Phase 2
+c5251_0000:Prince Lothric
+c5110_0001:Champion Gundyr
+c5260_0000:Yhorm
+c3040_0000:Abyss Watcher
+c6020_0001:Friede Phase One
+c6010_0001:Friede Phase Two
+c6010_0000:Ariandel
+c6020_0000:Blackflame Friede
+c0000_0009:Champion Gravetender
+</DropDownList>
+  <VariableType>String</VariableType>
+  <Length>32</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>XE</Address>
+  <Offsets>
+    <Offset>130</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

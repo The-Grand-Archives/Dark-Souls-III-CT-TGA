@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>86624</ID>
+  <Description>"Effect1620 "-""</Description>
+  <DropDownList DisplayValueAsItem="1">07:Default
+04:Restricted
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Byte</VariableType>
+  <Address>Effect1620</Address>
+</CheatEntry>

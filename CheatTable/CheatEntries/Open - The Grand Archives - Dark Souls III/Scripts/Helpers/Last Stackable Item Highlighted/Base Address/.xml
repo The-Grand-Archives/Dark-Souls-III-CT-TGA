@@ -1,0 +1,17 @@
+<CheatEntry>
+  <ID>73</ID>
+  <Description>"Base Address"</Description>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>last_item_ptr</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="81"/>
+    <id id="74"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

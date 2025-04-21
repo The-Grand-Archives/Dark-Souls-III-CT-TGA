@@ -1,0 +1,5 @@
+[ENABLE]
+createthread(BulletSpawn)
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+[DISABLE]

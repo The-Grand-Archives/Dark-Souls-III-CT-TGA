@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096686</ID>
+  <Description>"IsOnlineMode"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>B1C</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099133</ID>
+  <Description>"ChrLockRangeMaxRadius_forPitchDark"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2928</Offset>
+  </Offsets>
+</CheatEntry>

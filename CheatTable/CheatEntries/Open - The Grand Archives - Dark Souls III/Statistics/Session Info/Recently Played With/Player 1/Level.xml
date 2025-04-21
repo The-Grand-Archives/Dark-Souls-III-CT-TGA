@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>80839</ID>
+  <Description>"Level"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>70</Offset>
+    <Offset>540</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

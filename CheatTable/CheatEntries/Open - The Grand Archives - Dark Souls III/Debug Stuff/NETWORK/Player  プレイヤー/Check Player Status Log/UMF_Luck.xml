@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097087</ID>
+  <Description>"UMF_Luck"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>4EC</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>

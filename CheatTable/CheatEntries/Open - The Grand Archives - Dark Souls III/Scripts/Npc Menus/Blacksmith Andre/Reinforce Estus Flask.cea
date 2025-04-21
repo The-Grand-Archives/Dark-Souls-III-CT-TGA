@@ -1,0 +1,47 @@
+//Author: inuNorii
+//Upgrades Estus Flask number once
+[ENABLE]
+aobscanmodule(REstus_AOB,$process,44 0f b6 c2 66 0f 6e c0 0f 5b c0 f3 0f 59 81 fc 07 00 00 f3 0f 2c c0)
+define(REstus_Call,REstus_AOB-24)
+aobscanmodule(FError_Call,$process,40 57 48 83 ec 60 48 c7 44 24 20 fe ff ff ff 48 89 5c 24 70 48 8b f9 48 8b ?? ?? ?? ?? ?? 83 b8 c8 03 00 00 00)
+alloc(EstusFlaskAllocateUpgrade,$100,DarkSoulsIII.exe)
+alloc(ErrorText,$80)
+createthread(EstusFlaskAllocateUpgrade)
+
+EstusFlaskAllocateUpgrade:
+mov rax,[GameDataMan]
+mov rax,[rax+10]
+test rax,rax
+je short EstusFlaskAllocateUpgrade
+sub rsp,48
+mov esi,[rax+102]
+mov edi,[rax+103]
+add dil,sil
+cmp dil,0F
+jge short FlaskMax
+xor edi,edi
+movzx esi,sil
+inc esi
+mov edx,esi
+mov ecx,edi
+call REstus_Call
+add rsp,48
+ret
+
+FlaskMax:
+lea rax,[ErrorText]
+mov [rsp+30],rax
+lea rcx,[rsp+30]
+call FError_Call
+add rsp,48
+ret
+
+ErrorText:
+dw 'Cannot reinforce further',0
+
+{$lua}
+disableMemrec(memrec,100)
+{$asm}
+[DISABLE]
+dealloc(EstusFlaskAllocateUpgrade)
+dealloc(ErrorText)

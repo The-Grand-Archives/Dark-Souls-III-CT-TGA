@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098341</ID>
+  <Description>"Replacement EquipId | 追加したい交換元装備ID"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>50</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+</CheatEntry>

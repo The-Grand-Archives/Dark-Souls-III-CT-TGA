@@ -1,0 +1,67 @@
+[ENABLE]
+aobscanmodule(LastHitBase,DarkSoulsIII.exe,49 8B 80 xx 1F 00 00 48 8B 88 90)
+alloc(newmem,$1000,LastHitBase)
+alloc(lasthit_ptr,8)
+alloc(lasthit_event,8)
+label(code)
+label(return)
+
+newmem:
+  mov rax,lasthit_ptr
+  mov [rax],r8
+  mov rax,[r8+58]
+  mov rax,[rax+320]
+  add rax,7420
+  push rax
+  mov rax,lasthit_event
+  pop qword ptr [rax]
+
+code:
+  mov rax,[r8+1F90]
+  jmp return
+
+LastHitBase:
+  jmp newmem
+  nop
+  nop
+return:
+registersymbol(LastHitBase)
+registersymbol(lasthit_ptr)
+registersymbol(lasthit_event)
+
+[DISABLE]
+LastHitBase:
+  db 49 8B 80 90 1F 00 00
+unregistersymbol(lasthit_ptr)
+unregistersymbol(lasthit_event)
+unregistersymbol(LastHitBase)
+dealloc(newmem)
+dealloc(lasthit_ptr)
+dealloc(lasthit_event)
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+9B972E
+
+"DarkSoulsIII.exe"+9B9716: 74 0F                 -  je DarkSoulsIII.exe+9B9727
+"DarkSoulsIII.exe"+9B9718: 80 E9 02              -  sub cl,02
+"DarkSoulsIII.exe"+9B971B: 80 F9 01              -  cmp cl,01
+"DarkSoulsIII.exe"+9B971E: 77 02                 -  ja DarkSoulsIII.exe+9B9722
+"DarkSoulsIII.exe"+9B9720: 32 C0                 -  xor al,al
+"DarkSoulsIII.exe"+9B9722: 48 83 C4 38           -  add rsp,38
+"DarkSoulsIII.exe"+9B9726: C3                    -  ret
+"DarkSoulsIII.exe"+9B9727: B0 01                 -  mov al,01
+"DarkSoulsIII.exe"+9B9729: 48 83 C4 38           -  add rsp,38
+"DarkSoulsIII.exe"+9B972D: C3                    -  ret
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+9B972E: 49 8B 80 80 1F 00 00  -  mov rax,[r8+1F90]
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+9B9735: 48 8B 88 90 00 00 00  -  mov rcx,[rax+00000090]
+"DarkSoulsIII.exe"+9B973C: 48 8B 49 08           -  mov rcx,[rcx+08]
+"DarkSoulsIII.exe"+9B9740: 48 8B 01              -  mov rax,[rcx]
+"DarkSoulsIII.exe"+9B9743: FF 90 78 01 00 00     -  call qword ptr [rax+00000178]
+"DarkSoulsIII.exe"+9B9749: 48 8B C8              -  mov rcx,rax
+"DarkSoulsIII.exe"+9B974C: 48 8B 00              -  mov rax,[rax]
+"DarkSoulsIII.exe"+9B974F: 48 89 44 24 20        -  mov [rsp+20],rax
+"DarkSoulsIII.exe"+9B9754: 48 8B 41 08           -  mov rax,[rcx+08]
+"DarkSoulsIII.exe"+9B9758: 48 85 C0              -  test rax,rax
+"DarkSoulsIII.exe"+9B975B: 74 C3                 -  je DarkSoulsIII.exe+9B9720
+}

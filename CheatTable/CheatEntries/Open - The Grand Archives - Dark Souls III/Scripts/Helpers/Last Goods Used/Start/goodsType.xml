@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337045468</ID>
+  <Description>"goodsType"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Goods
+1:Keys
+2:Materials
+3:Keys
+4:Keys
+5:Spells
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>+3A</Address>
+</CheatEntry>

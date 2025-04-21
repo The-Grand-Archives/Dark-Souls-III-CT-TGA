@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(SpEffectParamHelper,8)
+registersymbol(SpEffectParamHelper)
+[DISABLE]
+dealloc(SpEffectParamHelper)
+unregistersymbol(SpEffectParamHelper)

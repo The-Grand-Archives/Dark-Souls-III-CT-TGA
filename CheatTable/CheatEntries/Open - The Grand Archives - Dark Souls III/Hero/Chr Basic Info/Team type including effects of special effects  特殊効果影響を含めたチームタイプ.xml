@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098031</ID>
+  <Description>"Team type including effects of special effects | 特殊効果影響を含めたチームタイプ"</Description>
+  <Color>C0C0C0</Color>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>74</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337190059</ID>
+  <Description>"Flag1"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>199</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337190188</ID>
+  <Description>"Bleed Max"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>2c</Offset>
+    <Offset>20</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

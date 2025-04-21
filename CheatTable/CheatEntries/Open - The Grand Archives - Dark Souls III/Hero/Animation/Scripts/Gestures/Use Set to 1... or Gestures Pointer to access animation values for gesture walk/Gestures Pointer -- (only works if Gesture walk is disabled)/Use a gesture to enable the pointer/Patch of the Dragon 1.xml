@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337011385</ID>
+  <Description>"Patch of the Dragon 1"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+A20</Address>
+</CheatEntry>

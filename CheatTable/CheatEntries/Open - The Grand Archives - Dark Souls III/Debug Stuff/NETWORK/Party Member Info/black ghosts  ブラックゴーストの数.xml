@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337081409</ID>
+  <Description>"black ghosts | ブラックゴーストの数"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>D2C</Offset>
+  </Offsets>
+</CheatEntry>

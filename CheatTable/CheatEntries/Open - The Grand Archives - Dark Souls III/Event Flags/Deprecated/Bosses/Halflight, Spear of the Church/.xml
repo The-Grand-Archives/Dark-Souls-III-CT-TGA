@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>92055</ID>
+  <Description>"Halflight, Spear of the Church"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="94086"/>
+    <id id="94087"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

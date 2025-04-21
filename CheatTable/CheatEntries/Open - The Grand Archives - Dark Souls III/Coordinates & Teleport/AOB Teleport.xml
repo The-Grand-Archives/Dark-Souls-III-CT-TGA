@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>273</ID>
+  <Description>"AOB Teleport"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>12</ByteLength>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>80</Offset>
+    <Offset>28</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

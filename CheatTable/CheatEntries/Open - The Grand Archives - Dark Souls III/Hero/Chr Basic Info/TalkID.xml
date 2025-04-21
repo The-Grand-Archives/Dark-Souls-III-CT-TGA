@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337081669</ID>
+  <Description>"TalkID"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>94</Offset>
+    <Offset>8</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

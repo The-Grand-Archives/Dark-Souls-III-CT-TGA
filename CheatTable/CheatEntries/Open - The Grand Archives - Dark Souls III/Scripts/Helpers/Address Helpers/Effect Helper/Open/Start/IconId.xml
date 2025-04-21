@@ -1,0 +1,51 @@
+<CheatEntry>
+  <ID>1337063748</ID>
+  <Description>"IconId"</Description>
+  <DropDownList DisplayValueAsItem="1">-1:None
+10004:Expanded Multiplayer
+10005:Second Chance
+10006:Invasion Queued
+10007:Black Eye Orb
+10008:Estus Down
+10009:Attack UP
+10010:Magic Attack UP
+10011:Defense UP
+10012:Resistance UP
+10013:Stamina UP
+10014:HP Regen
+10015:MP Regen
+10016:Estus UP
+10017:Ashen UP
+10018:HP Leech
+10019:MP Leech
+10020:Magic FP Cost Down
+10021:Skill FP Cost Down
+10022:Durability UP
+10023:Altered Roll
+10024:Fall Damage Null
+10025:Stealth UP
+10026:Sacrifice
+10027:Bow Range UP
+10028:Counter Damage UP
+10029:Seek Guidance
+10030:Item Find UP
+10031:Souls UP
+10032:Attract Enemies
+10033:Poise UP
+10034:Defense Down
+10035:Seed
+10036:Head damaged
+10037:Head broken
+10038:Body damaged
+10039:Body broken
+10040:Arms damaged
+10041:Arms broken
+10042:Legs damaged
+10043:Legs broken
+10044:Password
+10045:Level Sync
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+0</Address>
+</CheatEntry>

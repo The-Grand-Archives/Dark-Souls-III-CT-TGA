@@ -1,0 +1,40 @@
+<CheatEntry>
+  <ID>1337183586</ID>
+  <Description>"AreaNo (Default : 99)"</Description>
+  <DropDownList DisplayValueAsItem="1">21:Base
+30:Lothric
+31:Undead Settlement
+32:Archdragon Peak
+33:Farron
+34:Grand Archives
+35:Cathedral of the Deep
+36:God Grave (Cut)
+37:Irithyll
+38:Carthus
+39:Irithyll Dungeon
+40:Firelink
+41:Kiln of the First Flame
+45:Ariandel
+46:Arena - Grand Roof
+47:Arena - Kiln of Flame
+50:Dreg Heap
+51:The Ringed City
+53:Arena - Dragon Ruins
+53:Arena - Round Plaza
+90:?
+91:?
+92:?
+93:?
+94:?
+95:?
+96:?
+97:?
+98:?
+99:?
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjRemo</Address>
+  <Offsets>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

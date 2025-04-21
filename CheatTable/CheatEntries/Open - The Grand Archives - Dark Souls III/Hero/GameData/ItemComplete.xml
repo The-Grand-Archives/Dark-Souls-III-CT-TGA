@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337078902</ID>
+  <Description>"ItemComplete"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>84</Offset>
+  </Offsets>
+</CheatEntry>

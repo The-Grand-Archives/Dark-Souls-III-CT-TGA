@@ -1,0 +1,17 @@
+//Sacred flame tutorial script
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local ID = 4100501
+local Atk = AtkParam_Pc:new("SacredFlameDmgUUID", ID)
+Atk:SpecialEffectId0(33)
+Atk:AtkPhys(200)
+Atk:AtkMag(200)
+Atk:AtkThun(200)
+Atk:AtkFire(200)
+Atk:AtkStam(200)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("SacredFlameDmgUUID")

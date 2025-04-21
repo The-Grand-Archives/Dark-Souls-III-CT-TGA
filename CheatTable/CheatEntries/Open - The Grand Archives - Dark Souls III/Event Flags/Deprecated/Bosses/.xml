@@ -1,0 +1,32 @@
+<CheatEntry>
+  <ID>2816</ID>
+  <Description>"Bosses"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="2819"/>
+    <id id="2821"/>
+    <id id="78002"/>
+    <id id="78026"/>
+    <id id="78225"/>
+    <id id="78013"/>
+    <id id="78032"/>
+    <id id="78127"/>
+    <id id="78069"/>
+    <id id="78057"/>
+    <id id="78066"/>
+    <id id="2866"/>
+    <id id="78129"/>
+    <id id="78210"/>
+    <id id="78090"/>
+    <id id="78115"/>
+    <id id="78101"/>
+    <id id="78105"/>
+    <id id="86442"/>
+    <id id="86434"/>
+    <id id="92055"/>
+    <id id="94088"/>
+    <id id="92048"/>
+    <id id="489841"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

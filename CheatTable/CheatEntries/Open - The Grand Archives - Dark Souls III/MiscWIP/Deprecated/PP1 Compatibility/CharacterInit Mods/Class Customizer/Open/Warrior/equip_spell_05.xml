@@ -1,0 +1,116 @@
+<CheatEntry>
+  <ID>1337018752</ID>
+  <Description>"equip_spell_05"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">FFFFFFFF:Empty
+00124F80:Farron Dart
+00127690:Great Farron Dart
+0013D620:Soul Arrow
+0013DA08:Great Soul Arrow
+0013DDF0:Heavy Soul Arrow
+0013E1D8:Great Heavy Soul Arrow
+0013E5C0:Homing Soulmass
+0013E9A8:Homing Crystal Soulmass
+0013ED90:Soul Spear
+0013F178:Crystal Soul Spear
+0013F560:Deep Soul
+0013F948:Great Deep Soul
+0013FD30:Magic Weapon
+00100118:Great Magic Weapon
+00140500:Crystal Magic Weapon
+00144B50:Magic Shield
+00144F38:Great Magic Shield
+00147260:Hidden Weapon
+00147648:Hidden Body
+00149970:Cast Light
+0014A528:Repair
+0014A910:Spook
+0014ACF8:Chameleon
+0014B0E0:Aural Decoy
+0014E790:White Dragon Breath
+0014EF60:Farron Hail
+0014F348:Crystal Hail
+0014F730:Soul Greatsword
+0014FB18:Farron Flashsword
+001875B8:Affinity
+00189CC8:Dark Edge
+0018B820:Soul Stream
+00193138:Twisted Wall of Light
+001A8CE0:Pestilent Mercury
+00249F00:Fireball
+0024A6D0:Fire Orb
+0024AAB8:Firestorm
+0024B288:Fire Surge
+0024B670:Fire Whip
+0024BA58:Black Serpent
+0024C610:Combustion
+0024C9F8:Great Combustion
+0024ED20:Poison Mist
+0024F108:Toxic Mist
+0024F4F0:Acid Surge
+00251430:Iron Flesh
+00251818:Flash Sweat
+002527B8:Carthus Flame Arc
+00252BA0:Rapport
+00253B40:Power Within
+00256250:Great Chaos Fire Orb
+00256638:Chaos Storm
+00256A20:Fire Whip
+00256E08:Black Flame
+002575D8:Profaned Flame
+002579C0:Chaos Bed Vestiges
+0025B070:Warmth
+002717D0:Profuse Sweat
+0027AC40:Dark Orb
+0027D350:Black Fire Orb
+0027FA60:Bursting Fireball
+00282170:Boulder Heave
+00284880:Sacred Flame
+00286F90:Carthus Beacon
+003540D0:Heal Aid
+003567E0:Heal
+00356BC8:Med Heal
+00356FB0:Great Heal
+00357398:Soothing Sunlight
+00357780:Replenishment
+00357B68:Bountiful Sunlight
+00358338:Bountiful Light
+00358720:Caressing Tears
+00359AA8:Morbid Temptation
+0035B600:Tears of Denial
+0035B9E8:Homeward
+0035DD10:Force
+00140118:Great Magic Weapon
+0035E0F8:Wrath of the Gods
+0035E4E0:Emit Force
+00360420:Seek Guidance
+00362B30:Lightning Spear
+00362F18:Great Lightning Spear
+00363300:Sunlight Spear
+003636E8:Lightning Storm
+00363AD0:Gnaw
+00363EB8:Dorhys' Gnawing
+00365240:Magic Barrier
+00365628:Great Magic Barrier
+00365DF8:Sacred Oath
+0036A448:Vow of Silence
+0036C770:Lightning Blade
+0036CB58:Darkmoon Blade
+00378AC0:Dark Blade
+00387520:Dead Again
+00389C30:Lightning Stake
+0038C340:Divine Pillars of Light
+0038EA50:Lifehunt Scythe
+00393870:Dorris Swarm
+00395F80:Blessed Weapon
+00398690:Deep Protection
+0039ADA0:Atonement
+001408E8:Frozen Weapon
+001A90C8:Snap Freeze
+00257DA8:Floating Chaos
+003642A0:Way of White Corona
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+70</Address>
+</CheatEntry>

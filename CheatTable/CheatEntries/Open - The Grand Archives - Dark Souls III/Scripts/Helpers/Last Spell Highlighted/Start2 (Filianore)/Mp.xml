@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337078691</ID>
+  <Description>"Mp"</Description>
+  <DropDownList DisplayValueAsItem="1">0:test
+3:farron dart
+</DropDownList>
+  <VariableType>2 Bytes</VariableType>
+  <Address>+C</Address>
+</CheatEntry>

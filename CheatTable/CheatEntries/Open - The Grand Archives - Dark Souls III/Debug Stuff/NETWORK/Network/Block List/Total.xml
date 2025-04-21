@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081765</ID>
+  <Description>"Total"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>28</Offset>
+    <Offset>108</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

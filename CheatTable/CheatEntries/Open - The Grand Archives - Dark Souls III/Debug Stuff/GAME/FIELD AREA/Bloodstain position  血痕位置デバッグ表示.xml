@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081112</ID>
+  <Description>"Bloodstain position | 血痕位置デバッグ表示"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4743A7C</Address>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73291</ID>
+  <Description>"Expansion"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>703</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080972</ID>
+  <Description>"Total Soul Over"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>138</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

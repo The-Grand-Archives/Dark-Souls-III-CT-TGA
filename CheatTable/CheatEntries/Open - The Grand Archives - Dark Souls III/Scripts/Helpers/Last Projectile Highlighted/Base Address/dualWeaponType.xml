@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337045764</ID>
+  <Description>"dualWeaponType"</Description>
+  <DropDownList DisplayValueAsItem="1">24:One-hand Weapon
+25:Two-hand Weapon
+26:Dual Weapon
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>+178</Address>
+</CheatEntry>

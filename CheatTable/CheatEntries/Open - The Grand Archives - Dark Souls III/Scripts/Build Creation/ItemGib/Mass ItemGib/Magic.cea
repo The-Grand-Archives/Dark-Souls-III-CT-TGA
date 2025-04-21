@@ -1,0 +1,186 @@
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+local win = MIGForm:new()
+
+Magic = Item:new()
+function Magic:new(attributes)
+  o = Item:new(attributes.id, attributes.typ, attributes.quantity, attributes.dlc, attributes.cutContent)
+  setmetatable(o, self)
+  self.__index = self
+  return o
+end
+
+local magics = {
+  Magic:new({id = 0x40124F80, typ = "Sorceries"}),	--Farron Dart
+  Magic:new({id = 0x40127690, typ = "Sorceries"}),	--Great Farron Dart
+  Magic:new({id = 0x4013D620, typ = "Sorceries"}),	--Soul Arrow
+  Magic:new({id = 0x4013DA08, typ = "Sorceries"}),	--Great Soul Arrow
+  Magic:new({id = 0x4013DDF0, typ = "Sorceries"}),	--Heavy Soul Arrow
+  Magic:new({id = 0x4013E1D8, typ = "Sorceries"}),	--Great Heavy Soul Arrow
+  Magic:new({id = 0x4013E5C0, typ = "Sorceries"}),	--Homing Soulmass
+  Magic:new({id = 0x4013E9A8, typ = "Sorceries"}),	--Homing Crystal Soulmass
+  Magic:new({id = 0x4013ED90, typ = "Sorceries"}),	--Soul Spear
+  Magic:new({id = 0x4013F178, typ = "Sorceries"}),	--Crystal Soul Spear
+  Magic:new({id = 0x4013F560, typ = "Sorceries"}),	--Deep Soul
+  Magic:new({id = 0x4013F948, typ = "Sorceries"}),	--Great Deep Soul
+  Magic:new({id = 0x4013FD30, typ = "Sorceries"}),	--Magic Weapon
+  Magic:new({id = 0x40140118, typ = "Sorceries"}),	--Great Magic Weapon
+  Magic:new({id = 0x40140500, typ = "Sorceries"}),	--Crystal Magic Weapon
+  Magic:new({id = 0x40144B50, typ = "Sorceries"}),	--Magic Shield
+  Magic:new({id = 0x40144F38, typ = "Sorceries"}),	--Great Magic Shield
+  Magic:new({id = 0x40147260, typ = "Sorceries"}),	--Hidden Weapon
+  Magic:new({id = 0x40147648, typ = "Sorceries"}),	--Hidden Body
+  Magic:new({id = 0x40149970, typ = "Sorceries"}),	--Cast Light
+  Magic:new({id = 0x4014A528, typ = "Sorceries"}),	--Repair
+  Magic:new({id = 0x4014A910, typ = "Sorceries"}),	--Spook
+  Magic:new({id = 0x4014ACF8, typ = "Sorceries"}),	--Chameleon
+  Magic:new({id = 0x4014B0E0, typ = "Sorceries"}),	--Aural Decoy
+  Magic:new({id = 0x4014E790, typ = 'Sorceries'}),	--White Dragon Breath
+  Magic:new({id = 0x4014EF60, typ = 'Sorceries'}),	--Farron Hail ery
+  Magic:new({id = 0x4014F348, typ = 'Sorceries'}),	--Crystal Hail
+  Magic:new({id = 0x4014F730, typ = 'Sorceries'}),	--Soul Greatsword
+  Magic:new({id = 0x4014FB18, typ = 'Sorceries'}),	--Farron Flashsword
+  Magic:new({id = 0x401875B8, typ = 'Sorceries'}),	--Affinity
+  Magic:new({id = 0x40189CC8, typ = 'Sorceries'}),	--Dark Edge
+  Magic:new({id = 0x4018B820, typ = 'Sorceries'}),	--Soul Stream
+  Magic:new({id = 0x40193138, typ = 'Sorceries'}),	--Twisted Wall of Light
+  Magic:new({id = 0x401A8CE0, typ = 'Sorceries'}),	--Pestilent Mercury
+  Magic:new({id = 0x401408E8, typ = 'Sorceries', dlc = 1}),	--Frozen Weapon
+  Magic:new({id = 0x401A90C8, typ = 'Sorceries', dlc = 1}),	--Snap Freeze
+  Magic:new({id = 0x4014FF00, typ = 'Sorceries', dlc = 2}),	--Old Moonlight
+  Magic:new({id = 0x401879A0, typ = 'Sorceries', dlc = 2}),	--Great Soul Dregs
+
+  Magic:new({id = 0x40249F00, typ = 'Pyromancies'}),	--Fireball
+  Magic:new({id = 0x4024A6D0, typ = 'Pyromancies'}),	--Fire Orb
+  Magic:new({id = 0x4024AAB8, typ = 'Pyromancies'}),	--Firestorm
+  Magic:new({id = 0x4024B288, typ = 'Pyromancies'}),	--Fire Surge
+  Magic:new({id = 0x4024BA58, typ = 'Pyromancies'}),	--Black Serpent
+--Magic:new({id = 0x4024C610, typ = 'Pyromancies', cutContent = true}),	--Combustion
+  Magic:new({id = 0x4024C9F8, typ = 'Pyromancies'}),	--Great Combustion
+  Magic:new({id = 0x4024ED20, typ = 'Pyromancies'}),	--Poison Mist
+  Magic:new({id = 0x4024F108, typ = 'Pyromancies'}),	--Toxic Mist
+  Magic:new({id = 0x4024F4F0, typ = 'Pyromancies'}),	--Acid Surge
+  Magic:new({id = 0x40251430, typ = 'Pyromancies'}),	--Iron Flesh
+  Magic:new({id = 0x40251818, typ = 'Pyromancies'}),	--Flash Sweat
+  Magic:new({id = 0x402527B8, typ = 'Pyromancies'}),	--Carthus Flame Arc
+  Magic:new({id = 0x40252BA0, typ = 'Pyromancies'}),	--Rapport
+  Magic:new({id = 0x40253B40, typ = 'Pyromancies'}),	--Power Within
+  Magic:new({id = 0x40256250, typ = 'Pyromancies'}),	--Great Chaos Fire Orb
+  Magic:new({id = 0x40256638, typ = 'Pyromancies'}),	--Chaos Storm
+  Magic:new({id = 0x40256A20, typ = 'Pyromancies'}),	--Fire Whip
+  Magic:new({id = 0x40256E08, typ = 'Pyromancies'}),	--Black Flame
+  Magic:new({id = 0x402575D8, typ = 'Pyromancies'}),	--Profaned Flame
+  Magic:new({id = 0x402579C0, typ = 'Pyromancies'}),	--Chaos Bed Vestiges
+  Magic:new({id = 0x4025B070, typ = 'Pyromancies'}),	--Warmth
+  Magic:new({id = 0x402717D0, typ = 'Pyromancies'}),	--Profuse Sweat
+--Magic:new({id = 0x4027AC40, typ = 'Pyromancies', cutContent = true}),	--Dark Orb
+  Magic:new({id = 0x4027D350, typ = 'Pyromancies'}),	--Black Fire Orb
+  Magic:new({id = 0x4027FA60, typ = 'Pyromancies'}),	--Bursting Fireball
+  Magic:new({id = 0x40282170, typ = 'Pyromancies'}),	--Boulder Heave
+  Magic:new({id = 0x40284880, typ = 'Pyromancies'}),	--Sacred Flame
+  Magic:new({id = 0x40286F90, typ = 'Pyromancies'}),	--Carthus Beacon
+  Magic:new({id = 0x40257DA8, typ = 'Pyromancies', dlc = 1}),	--Floating Chaos
+  Magic:new({id = 0x40258190, typ = 'Pyromancies', dlc = 2}),	--Flame Fan
+  Magic:new({id = 0x402896A0, typ = 'Pyromancies', dlc = 2}),	--Seething Chaos
+
+  Magic:new({id = 0x403540D0, typ = 'Miracles'}),	--Heal Aid
+  Magic:new({id = 0x403567E0, typ = 'Miracles'}),	--Heal
+  Magic:new({id = 0x40356BC8, typ = 'Miracles'}),	--Med Heal
+  Magic:new({id = 0x40356FB0, typ = 'Miracles'}),	--Great Heal
+  Magic:new({id = 0x40357398, typ = 'Miracles'}),	--Soothing Sunlight
+  Magic:new({id = 0x40357780, typ = 'Miracles'}),	--Replenishment
+  Magic:new({id = 0x40357B68, typ = 'Miracles'}),	--Bountiful Sunlight
+  Magic:new({id = 0x40358338, typ = 'Miracles'}),	--Bountiful Light
+  Magic:new({id = 0x40358720, typ = 'Miracles'}),	--Caressing Tears
+--Magic:new({id = 0x40359AA8, typ = 'Miracles', cutContent = true}),	--Morbid Temptation
+  Magic:new({id = 0x4035B600, typ = 'Miracles'}),	--Tears of Denial
+  Magic:new({id = 0x4035B9E8, typ = 'Miracles'}),	--Homeward
+  Magic:new({id = 0x4035DD10, typ = 'Miracles'}),	--Force
+  Magic:new({id = 0x4035E0F8, typ = 'Miracles'}),	--Wrath of the Gods
+  Magic:new({id = 0x4035E4E0, typ = 'Miracles'}),	--Emit Force
+  Magic:new({id = 0x40360420, typ = 'Miracles'}),	--Seek Guidance
+  Magic:new({id = 0x40362B30, typ = 'Miracles'}),	--Lightning Spear
+  Magic:new({id = 0x40362F18, typ = 'Miracles'}),	--Great Lightning Spear
+  Magic:new({id = 0x40363300, typ = 'Miracles'}),	--Sunlight Spear
+  Magic:new({id = 0x403636E8, typ = 'Miracles'}),	--Lightning Storm
+  Magic:new({id = 0x40363AD0, typ = 'Miracles'}),	--Gnaw
+  Magic:new({id = 0x40363EB8, typ = 'Miracles'}),	--Dorhys' Gnawing
+  Magic:new({id = 0x40365240, typ = 'Miracles'}),	--Magic Barrier
+  Magic:new({id = 0x40365628, typ = 'Miracles'}),	--Great Magic Barrier
+  Magic:new({id = 0x40365DF8, typ = 'Miracles'}),	--Sacred Oath
+  Magic:new({id = 0x4036A448, typ = 'Miracles'}),	--Vow of Silence
+  Magic:new({id = 0x4036C770, typ = 'Miracles'}),	--Lightning Blade
+  Magic:new({id = 0x4036CB58, typ = 'Miracles'}),	--Darkmoon Blade
+  Magic:new({id = 0x40378AC0, typ = 'Miracles'}),	--Dark Blade
+  Magic:new({id = 0x40387520, typ = 'Miracles'}),	--Dead Again
+  Magic:new({id = 0x40389C30, typ = 'Miracles'}),	--Lightning Stake
+  Magic:new({id = 0x4038C340, typ = 'Miracles'}),	--Divine Pillars of Light
+  Magic:new({id = 0x4038EA50, typ = 'Miracles'}),	--Lifehunt Scythe
+--Magic:new({id = 0x40393870, typ = 'Miracles', cutContent = true}),	--Dorris Swarm
+  Magic:new({id = 0x40395F80, typ = 'Miracles'}),	--Blessed Weapon
+  Magic:new({id = 0x40398690, typ = 'Miracles'}),	--Deep Protection
+  Magic:new({id = 0x4039ADA0, typ = 'Miracles'}),	--Atonement
+  Magic:new({id = 0x403642A0, typ = 'Miracles', dlc = 1}),	--Way of White Corona
+  Magic:new({id = 0x40358B08, typ = 'Miracles', dlc = 2}),	--Lightning Arrow
+  Magic:new({id = 0x40364688, typ = 'Miracles', dlc = 2})	--Projected Heal
+}
+
+function Magic:checkDlc(checkBox)
+  if(self.dlc == 0) then
+    return checkBox["BaseGame"].Checked
+  elseif(self.dlc == 1) then
+    return (checkBox["AshesofAriandel"].Checked and dlc1Owned)
+  else
+    return (checkBox["RingedCity"].Checked and dlc2Owned)
+  end
+end
+
+function createWindow()
+  local formName = 'Magic'
+  win:create('TCEForm', nil, {Caption = formName})
+  win:initDefaultForm(formName)
+
+  win:create('TGroupBox', formName, {Caption = 'Include', Left = 10, ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', LeftRightSpacing = 5}})
+  win:create('TCheckBox', 'Include', {Caption = 'Sorceries', Checked = true})
+  win:create('TCheckBox', 'Include', {Caption = 'Miracles', Checked = true})
+  win:create('TCheckBox', 'Include', {Caption = 'Pyromancies', Checked = true})
+  win:fixSize('Include', 20, 25)
+
+
+  win:create('TGroupBox', formName, {Caption = 'DLC', Left = win.ctrl['Include'].x + 10, ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', LeftRightSpacing = 5}})
+  win:create('TCheckBox', 'DLC', {Caption = 'Base Game', Checked = true})
+  win:create('TCheckBox', 'DLC', {Caption = 'Ashes of Ariandel', Checked = true})
+  win:create('TCheckBox', 'DLC', {Caption = 'Ringed City', Checked = true})
+
+  win:fixSize('DLC', 10, 25)
+
+  win:create('TGroupBox', formName, {Caption = 'Content', Height = 45, Left = 10, Top = win.ctrl['Include'].y, ChildSizing = {Layout = 'cclTopToBottomThenLeftToRight', LeftRightSpacing = 5, HorizontalSpacing = 10}})
+  win:create('TCheckBox', 'Content', {Caption = 'Game Content', Checked = true})
+  win:create('TCheckBox', 'Content', {Caption = 'Cut Content', Checked = false})
+  win:fillGap('Content',{x = 'DLC'})
+
+  win:fixSize(formName, 10, 60)
+  win:create('TButton', formName, {Caption = 'Spawn', Width = win.ctrl[formName].Width - 20, Height = 40, Left = 10, Top = win.ctrl[formName].Height - 50})
+  win.ctrl['Spawn'].onClick = spawn
+end
+
+function spawn()
+  local checkBoxes = win.ctrl
+  local baseAddress = GetAddress('ItemArray')
+  local totalItems = 0
+  for _, magic in pairs(magics) do
+       if(magic:checkAll(checkBoxes)) then
+         totalItems = totalItems + 1
+         baseAddress = magic:spawn(baseAddress)
+       end
+  end
+  WriteInteger(GetAddress('ItemArray'), totalItems)
+  autoAssemble('CreateThread(MassItemGib)')
+  win.ctrl.Magic.close()
+end
+
+[ENABLE]
+createWindow()
+
+[DISABLE]
+

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337098006</ID>
+  <Description>"BonfireWarp"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337098007"/>
+    <id id="1337098008"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

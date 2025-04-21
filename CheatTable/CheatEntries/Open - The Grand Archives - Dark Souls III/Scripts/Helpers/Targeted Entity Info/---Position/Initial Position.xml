@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337045263</ID>
+  <Description>"Initial Position"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>12</ByteLength>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>150</Offset>
+    <Offset>68</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

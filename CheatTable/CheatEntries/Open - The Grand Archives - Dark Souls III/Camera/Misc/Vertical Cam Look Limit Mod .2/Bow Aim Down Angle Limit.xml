@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>72341</ID>
+  <Description>"Bow Aim Down Angle Limit"</Description>
+  <VariableType>Float</VariableType>
+  <Address>fCusAimLookDownAngle</Address>
+</CheatEntry>

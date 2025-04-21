@@ -1,0 +1,183 @@
+[ENABLE]
+alloc(MassItemGib,128,DarkSoulsIII.exe)
+registersymbol(MassItemGib)
+
+alloc(ItemArray,$1000)
+registersymbol(ItemArray)
+
+registersymbol(MassGibDone)
+
+MassItemGib:
+sub rsp,28
+mov [MassGibDone], 0
+lea rcx,[ItemArray]
+call tga.SpawnItems
+mov [MassGibDone], 1
+add rsp,28
+ret
+
+MassGibDone:
+dd 00
+
+{$lua}
+if syntaxcheck then return end
+dlc1Owned = (readBytes(GetAddress('[CsDlc]+11')) == 1) or false
+dlc2Owned = (readBytes(GetAddress('[CsDlc]+12')) == 1) or false
+
+Item = {id, typ, quantity, dlc, isCutContent}
+
+function Item:new (id, typ, quantity, dlc, isCutContent)
+  o = {
+    id = id,
+    typ = typ or "item",
+    quantity = quantity or 0xFFFFFFFF,
+    dlc = dlc or 0,
+    isCutContent = isCutContent or false,
+  }
+  setmetatable(o, self)
+  self.__index = self
+  return o
+end
+
+function Item:spawn(baseAddress, offset)
+  offset = offset or 0
+  baseAddress = baseAddress + 4
+  WriteInteger(baseAddress,self.id + offset)
+  baseAddress = baseAddress + 4
+  WriteInteger(baseAddress,self.quantity)
+  baseAddress = baseAddress + 4
+  WriteInteger(baseAddress,0xFFFFFFFF)
+  return baseAddress
+end
+
+function Item:checkType(checkBox)
+  if(self.typ == "item") then return true end
+  return checkBox[self.typ].Checked
+end
+
+function Item:checkCutContent(checkBox)
+  if(self.isCutContent) then
+    return checkBox["CutContent"].Checked
+  end
+  return checkBox["GameContent"].Checked
+end
+
+function Item:checkDlc(checkBox)
+  if(self.dlc == 0) then
+    return checkBox["BaseGame"].Checked
+  elseif(self.dlc == 1) then
+    return checkBox["AshesofAriandel"].Checked
+  else
+    return checkBox["RingedCity"].Checked
+  end
+end
+
+function Item:checkAll(checkboxes)
+  if(not self:checkType(checkboxes)) then return false end
+  if(not self:checkDlc(checkboxes)) then return false end
+  if(not self:checkCutContent(checkboxes)) then return false end
+  return true
+end
+
+MIGForm = {ctrl}
+function MIGForm:new()
+  o = {
+    ctrl = {}
+  }
+  setmetatable(o, self)
+  self.__index = self
+  return o
+end
+
+function MIGForm:create(typ, parent, properties, customName)
+  parent = self.ctrl[parent]
+  local control = createComponentClass(typ, parent)
+  control.Parent = parent
+  self:initialize(control, properties)
+  control['x'] = control.Left + control.Width
+  control['y'] = control.Top + control.Height
+  local name = customName or properties.Caption
+  name = string.gsub(name, "%s", "")
+  self.ctrl[name] = control
+end
+
+function MIGForm:initialize(control, properties)
+  if(type(control) == 'string') then control = self.ctrl[control] end
+  for propertyName, property in pairs(properties) do
+    if (type(property) == 'table') then
+      for subPropertyName, subProperty in pairs(property) do
+        control[propertyName][subPropertyName] = subProperty
+      end
+    else
+    control[propertyName] = property
+    end
+  end
+end
+
+function MIGForm:initDefaultForm(formName)
+  self.ctrl[formName].BorderStyle = bsDialog
+  self.ctrl[formName].show()
+  self.ctrl[formName].centerScreen()
+  self.ctrl[formName].BorderStyle = bsDialog
+  self.ctrl[formName].OnClose = function (sender)
+    return caFree
+  end
+end
+
+function MIGForm:addItems(control, items, checked)
+  checked = checked or false
+  control = self.ctrl[control]
+  for _, item in pairs(items) do
+    control.items.add(item)
+  end
+  control.setItemIndex(0)
+end
+
+function MIGForm:fixSize(parentName, x, y)
+  x = x or 0
+  y = y or 0
+  local parent = self.ctrl[parentName]
+  local width, height = 0,0
+  local tempWidth, tempHeight
+  for i = 0, parent.ComponentCount - 1 do
+    tempWidth = parent.Component[i].Left +  parent.Component[i].Width
+    if (tempWidth > width) then
+        width = tempWidth
+    end
+    tempHeight =  parent.Component[i].Top +  parent.Component[i].Height
+    if (tempHeight > height) then
+       height = tempHeight
+    end
+  end
+  parent.Width = width + x
+  parent.x = parent.Width + parent.Left
+  parent.Height = height + y
+  parent.y = parent.Height + parent.Top
+end
+
+function MIGForm:fillGap(controlName, targetName)
+  local control = self.ctrl[controlName]
+  local target = {
+    x = self.ctrl[targetName.x] or nil,
+    y = self.ctrl[targetName.y] or nil
+  }
+  if(target.x) then control.Width = control.Width + target.x.Width + target.x.Left - control.Width - control.Left end
+  if(target.y) then control.Height = control.Height + target.y.Height + target.y.Top - control.Height - control.Top end
+end
+
+function MIGForm:changeCheckBoxes(parent)
+  parent = self.ctrl[parent]
+  for i = 1, parent.ComponentCount - 1 do
+    parent.Component[i].Checked = parent.Component[0].Checked
+  end
+end
+
+[DISABLE]
+{$asm}
+dealloc(MassItemGib)
+unregistersymbol(MassItemGib)
+
+dealloc(ItemArray)
+unregistersymbol(ItemArray)
+
+unregistersymbol(MassGibDone)

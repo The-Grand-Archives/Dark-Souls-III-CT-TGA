@@ -1,0 +1,60 @@
+[ENABLE]
+aobscanmodule(Cameramovetest,DarkSoulsIII.exe,41 0F 29 56 30 45)
+alloc(newmem,$1000,Cameramovetest)
+
+label(code)
+label(return)
+
+newmem:
+  mov rax,[lasthit_ptr]
+  mov rax,[rax+1F90]
+  mov rax,[rax+68]
+  movups xmm2,[rax+80]
+  movaps [r14+30],xmm2
+  jmp return
+
+
+code:
+  movaps [r14+30],xmm2
+  jmp return
+
+Cameramovetest:
+  jmp newmem
+return:
+registersymbol(Cameramovetest)
+
+[DISABLE]
+
+Cameramovetest:
+  db 41 0F 29 56 30
+
+unregistersymbol(Cameramovetest)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+5144B6
+
+"DarkSoulsIII.exe"+514487: 0F 28 95 20 15 00 00     -  movaps xmm2,[rbp+00001520]
+"DarkSoulsIII.exe"+51448E: 0F 5C CA                 -  subps xmm1,xmm2
+"DarkSoulsIII.exe"+514491: 0F 29 8D 80 07 00 00     -  movaps [rbp+00000780],xmm1
+"DarkSoulsIII.exe"+514498: F3 0F 10 86 A8 01 00 00  -  movss xmm0,[rsi+000001A8]
+"DarkSoulsIII.exe"+5144A0: 0F C6 C0 00              -  shufps xmm0,xmm0,00
+"DarkSoulsIII.exe"+5144A4: 0F 59 C8                 -  mulps xmm1,xmm0
+"DarkSoulsIII.exe"+5144A7: F3 41 0F 10 C6           -  movss xmm0,xmm14
+"DarkSoulsIII.exe"+5144AC: 0F C6 C0 00              -  shufps xmm0,xmm0,00
+"DarkSoulsIII.exe"+5144B0: 0F 59 C1                 -  mulps xmm0,xmm1
+"DarkSoulsIII.exe"+5144B3: 0F 58 D0                 -  addps xmm2,xmm0
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+5144B6: 41 0F 29 56 30           -  movaps [r14+30],xmm2
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+5144BB: 45 0F 57 ED              -  xorps xmm13,xmm13
+"DarkSoulsIII.exe"+5144BF: 44 0F 29 AD 60 02 00 00  -  movaps [rbp+00000260],xmm13
+"DarkSoulsIII.exe"+5144C7: 66 41 0F 6F 0E           -  movdqa xmm1,[r14]
+"DarkSoulsIII.exe"+5144CC: 66 0F 6F C1              -  movdqa xmm0,xmm1
+"DarkSoulsIII.exe"+5144D0: 0F 28 2D E9 52 7C 03     -  movaps xmm5,[DarkSoulsIII.exe+3CD97C0]
+"DarkSoulsIII.exe"+5144D7: 66 0F DB C5              -  pand xmm0,xmm5
+"DarkSoulsIII.exe"+5144DB: 66 0F 76 C5              -  pcmpeqd xmm0,xmm5
+"DarkSoulsIII.exe"+5144DF: 66 0F 6F 25 F9 52 7C 03  -  movdqa xmm4,[DarkSoulsIII.exe+3CD97E0]
+"DarkSoulsIII.exe"+5144E7: 66 0F DB CC              -  pand xmm1,xmm4
+"DarkSoulsIII.exe"+5144EB: 66 0F 6F 1D BD 52 7C 03  -  movdqa xmm3,[DarkSoulsIII.exe+3CD97B0]
+}

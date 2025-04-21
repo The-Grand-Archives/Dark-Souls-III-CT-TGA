@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>88195</ID>
+  <Description>"Chr Type"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>70</Offset>
+  </Offsets>
+</CheatEntry>

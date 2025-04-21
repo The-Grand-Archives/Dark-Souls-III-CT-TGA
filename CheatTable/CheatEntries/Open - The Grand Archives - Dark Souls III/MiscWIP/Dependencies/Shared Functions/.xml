@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>300</ID>
+  <Description>"Shared Functions"</Description>
+  <Options moActivateChildrenAsWell="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337272807"/>
+    <id id="1337272823"/>
+    <id id="1337272824"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

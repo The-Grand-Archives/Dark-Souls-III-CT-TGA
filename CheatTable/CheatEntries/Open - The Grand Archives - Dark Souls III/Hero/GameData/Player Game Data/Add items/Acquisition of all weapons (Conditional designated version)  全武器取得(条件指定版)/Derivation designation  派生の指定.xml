@@ -1,0 +1,27 @@
+<CheatEntry>
+  <ID>1337097245</ID>
+  <Description>"Derivation designation | 派生の指定"</Description>
+  <DropDownList DisplayValueAsItem="1">0:Normal
+100:Heavy
+200:Sharp
+300:Refined
+400:Simple
+500:Crystal
+600:Fire
+700:Chaos
+800:Lightning
+900:Deep
+1000:Dark
+1100:Poison
+1200:Blood
+1300:Raw
+1400:Blessed
+1500:Hollow
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>690</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

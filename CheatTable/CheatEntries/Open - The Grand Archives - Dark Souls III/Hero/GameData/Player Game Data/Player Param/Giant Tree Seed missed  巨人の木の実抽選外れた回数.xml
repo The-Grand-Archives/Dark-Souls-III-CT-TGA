@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080974</ID>
+  <Description>"Giant Tree Seed missed | 巨人の木の実抽選外れた回数"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>10E</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

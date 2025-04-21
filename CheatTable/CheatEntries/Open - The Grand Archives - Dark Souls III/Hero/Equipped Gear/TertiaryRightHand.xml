@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337078872</ID>
+  <Description>"TertiaryRightHand"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>340</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,17 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local RosariaPhantom = RoleParam:new("RosariaRoleExample",50001)
+RosariaPhantom:displayTeamTypeName(331146)
+
+local RosariaInvader = RoleParam:new("RosariaRoleExample",50002)
+RosariaInvader:phantomParamId(89)
+
+local RosariaArena = RoleParam:new("RosariaRoleExample",50013)
+RosariaArena:phantomParamId(89)
+RosariaArena:displayTeamTypeName(331146)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("RosariaRoleExample")

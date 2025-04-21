@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097798</ID>
+  <Description>"LOD level display (Lv0 green Lv1 blue Lv2 red) | LODレベル表示 (Lv0緑 Lv1青 Lv2赤)"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>6D</Offset>
+  </Offsets>
+</CheatEntry>

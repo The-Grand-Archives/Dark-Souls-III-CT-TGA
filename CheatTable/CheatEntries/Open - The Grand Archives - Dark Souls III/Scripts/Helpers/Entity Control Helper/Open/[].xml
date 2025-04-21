@@ -1,0 +1,100 @@
+<CheatEntry>
+  <ID>89764</ID>
+  <Description>"[]"</Description>
+  <DropDownList>0:Reset
+-1:Default
+90710:Leonard idle
+90300:Yuria idle
+90900:Horace idle
+90740:Anri Sitting
+90390:Orbeck of Vinheim idle
+90760:Anri Confused
+90340:sitting
+90360:sitting
+90380:dead
+90410:sitting
+90415:disappear
+90420:sitting
+90425:?
+90430:?
+90435:?
+90460:?
+90475:?
+90495:disappear
+90505:?
+90510:?
+90515:dead animation
+90550:?
+90560:?
+90585:disappear
+90590:?
+90595:?
+90605:dead
+90610:Firekeeper
+90615:firekeeper level up
+90620:firekeeper level up
+90625:sit
+90630:lay
+90650:Eyegon?
+90660:staying
+90670:lay
+90680:sitting
+90690:standing
+90705:lay
+90720:standing
+90730:
+90750:standing
+90760:anri facepalm
+90770:lay
+90780:standing
+90790:Anri
+90800:upset
+90810:patches
+90820:?
+90830:?
+90840:?
+90850:?
+90860:nap
+90865:nap
+90870:frozen sitting animation
+90875:tost
+90890?
+90930:sitting
+90935:?
+90940:?
+90945:?
+90950:on your knees and moving?
+90955:dead animation
+90960:on your knees
+90970:?
+90980:?
+90985:dead animation
+90990:?
+90995:dead animation
+91000:dead
+91015:on your knees
+91020:greirat upset
+91025:black sepration crystal
+91035:bonfire
+91045:bonfire
+91055:dragon sit
+91060:Gael
+91080:sitting
+91090:moving in circles
+91095:standing
+91100:Vinhelm?
+91115:disappear (invisibility)
+91120:gael
+91145:gael
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>XE</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

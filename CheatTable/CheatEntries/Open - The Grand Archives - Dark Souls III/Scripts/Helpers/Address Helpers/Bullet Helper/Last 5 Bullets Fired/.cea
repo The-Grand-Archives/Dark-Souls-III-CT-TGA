@@ -1,0 +1,49 @@
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+define(LastBullet,DarkSoulsIII.exe+97E6E2)
+registersymbol(LastBullet)
+alloc(newmem, 512, LastBullet)
+label(return)
+label(jumphere)
+label(lastfired)
+
+newmem:
+cmp [newmem+100],rax
+je jumphere
+push rax
+mov rax,[newmem+118]
+mov [newmem+120],rax
+mov rax,[newmem+110]
+mov [newmem+118],rax
+mov rax,[newmem+108]
+mov [newmem+110],rax
+mov rax,[newmem+100]
+mov [newmem+108],rax
+pop rax
+mov [newmem+100],rax
+jumphere:
+mov edi,[rax]
+mov rcx,rsi
+jmp return
+
+LastBullet:
+jmp newmem
+return:
+
+registersymbol(lastfired)
+
+newmem+100:
+lastfired:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+LastBullet:
+mov edi,[rax]
+mov rcx,rsi
+
+dealloc(newmem)
+unregistersymbol(LastBullet)
+unregistersymbol(lastfired)
+
+
+

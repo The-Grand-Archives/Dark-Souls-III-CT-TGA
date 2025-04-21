@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>80833</ID>
+  <Description>"Parry (Read Only)"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>2</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>58</Offset>
+    <Offset>0</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

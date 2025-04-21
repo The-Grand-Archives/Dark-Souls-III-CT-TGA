@@ -1,0 +1,43 @@
+//Decrease Cooldown of the soapstone before they update by the server
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+define(SignTime,DarkSoulsIII.exe+CB1B88) // should be unique
+alloc(newmemw,$150,SignTime)
+
+label(codew)
+label(returnw)
+label(checkw)
+
+globalalloc(Time, 4)
+
+newmemw:
+  cmp eax,(float)[Time]
+  jge checkw
+  jmp codew
+checkw:
+  mov eax,(float)[Time]
+codew:
+  mov [rbx+24],eax
+  mov rbx,[rsp+48]
+  jmp returnw
+
+SignTime:
+  jmp newmemw
+  nop
+  nop
+  nop
+returnw:
+registersymbol(SignTime)
+
+Time:
+db 00 00 A0 40
+
+[DISABLE]
+SignTime:
+  db 89 43 24 48 8B 5C 24 48
+
+unregistersymbol(SignTime)
+dealloc(newmemw)

@@ -1,0 +1,11 @@
+{Gate 07/08/2019}
+{$lua}
+if syntaxcheck then return end
+[enable]
+local EquipRing = EquipParamAccessory:new("SaveVal")
+EquipRing:patchAll2Byte(0x44,65535)
+--Using the multiple of the same level ring does nothing
+--because they would all use the same Speffect,
+--so use a different ring level (+0, +1, +2, +3)
+[disable]
+paramUtils:restore("SaveVal")

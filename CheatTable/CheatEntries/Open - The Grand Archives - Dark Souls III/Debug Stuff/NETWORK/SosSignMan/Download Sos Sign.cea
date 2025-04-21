@@ -1,0 +1,15 @@
+[ENABLE]
+alloc(Debug_DownloadSosSign,$100,DarkSoulsIII.exe)
+createthread(Debug_DownloadSosSign)
+
+Debug_DownloadSosSign:
+sub rsp,28
+mov edx,000005E6
+call DarkSoulsIII.exe+846190
+add rsp,28
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_DownloadSosSign)

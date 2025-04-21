@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>92040</ID>
+  <Description>"Attach Camera"</Description>
+  <Options moHideChildren="1"/>
+  <Color>000080</Color>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="92041"/>
+    <id id="92042"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

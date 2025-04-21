@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>1337081401</ID>
+  <Description>"Treat # as blocked | fdp#の人をブロックリスト扱い（-1で無効）"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <Color>C0C0C0</Color>
+  <VariableType>4 Bytes</VariableType>
+  <Address>0</Address>
+</CheatEntry>

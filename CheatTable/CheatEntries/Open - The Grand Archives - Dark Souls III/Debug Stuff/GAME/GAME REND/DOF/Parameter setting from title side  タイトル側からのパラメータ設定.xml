@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337187840</ID>
+  <Description>"Parameter setting from title side | タイトル側からのパラメータ設定"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>C1</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081270</ID>
+  <Description>"Cheek_Blush_Light_Red"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>765</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(SwordArtsParamHelper,8)
+registersymbol(SwordArtsParamHelper)
+[DISABLE]
+dealloc(SwordArtsParamHelper)
+unregistersymbol(SwordArtsParamHelper)

@@ -1,0 +1,128 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+define(iframe,DarkSoulsIII.exe+5E1C87)
+alloc(newmem,$1000,iframe)
+label(code)
+label(return)
+label(iframe_ptr)
+
+newmem:
+
+code:
+  mov rbx,iframe_ptr
+  mov [rbx],rcx
+  mov rbx,[rcx+58]
+  lea rbx,[rbx]
+  mov rcx,r14
+  jmp return
+
+iframe_ptr:
+  dq 0
+
+iframe:
+  jmp newmem
+  nop
+  nop
+return:
+registersymbol(iframe)
+registersymbol(iframe_ptr)
+
+define(iframe_write,DarkSoulsIII.exe+98DC8C)
+alloc(newmem2,$1000,iframe_write)
+
+label(code2)
+label(return2)
+
+newmem2:
+  mov rbp,iframe_ptr
+  cmp [rbp],rcx
+  jne code2
+  or rax,1
+code2:
+  mov [rcx+58],rax
+  lea rbx,[rcx+60]
+  jmp return2
+
+iframe_write:
+  jmp newmem2
+  nop
+  nop
+  nop
+return2:
+registersymbol(iframe_write)
+[DISABLE]
+iframe:
+  db 48 8B 59 58 49 8B CE
+unregistersymbol(iframe)
+unregistersymbol(iframe_ptr)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+5D49A7
+
+"DarkSoulsIII.exe"+5D4977: 33 D2                          -  xor edx,edx
+"DarkSoulsIII.exe"+5D4979: 49 8B C8                       -  mov rcx,r8
+"DarkSoulsIII.exe"+5D497C: E8 5F B9 E8 FF                 -  call DarkSoulsIII.exe+4602E0
+"DarkSoulsIII.exe"+5D4981: 4C 8B F0                       -  mov r14,rax
+"DarkSoulsIII.exe"+5D4984: 48 8B 8F D8 02 00 00           -  mov rcx,[rdi+000002D8]
+"DarkSoulsIII.exe"+5D498B: 48 8B 71 50                    -  mov rsi,[rcx+50]
+"DarkSoulsIII.exe"+5D498F: C7 87 34 04 00 00 00 00 00 00  -  mov [rdi+00000434],00000000
+"DarkSoulsIII.exe"+5D4999: 48 8B 4E 08                    -  mov rcx,[rsi+08]
+"DarkSoulsIII.exe"+5D499D: 48 8B 91 70 1F 00 00           -  mov rdx,[rcx+00001F70]
+"DarkSoulsIII.exe"+5D49A4: 48 8B 0A                       -  mov rcx,[rdx]
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+5D49A7: 48 8B 59 58                    -  mov rbx,[rcx+58]
+"DarkSoulsIII.exe"+5D49AB: 49 8B CE                       -  mov rcx,r14
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+5D49AE: 48 C1 EB 29                    -  shr rbx,29
+"DarkSoulsIII.exe"+5D49B2: E8 C9 05 21 00                 -  call DarkSoulsIII.exe+7E4F80
+"DarkSoulsIII.exe"+5D49B7: 49 8B CE                       -  mov rcx,r14
+"DarkSoulsIII.exe"+5D49BA: F3 0F 10 3D 8E CB 71 03        -  movss xmm7,[DarkSoulsIII.exe+3CF1550]
+"DarkSoulsIII.exe"+5D49C2: 0F 28 F0                       -  movaps xmm6,xmm0
+"DarkSoulsIII.exe"+5D49C5: 0F 57 F7                       -  xorps xmm6,xmm7
+"DarkSoulsIII.exe"+5D49C8: E8 33 06 21 00                 -  call DarkSoulsIII.exe+7E5000
+"DarkSoulsIII.exe"+5D49CD: F3 44 0F 10 15 A2 B6 71 03     -  movss xmm10,[DarkSoulsIII.exe+3CF0078]
+"DarkSoulsIII.exe"+5D49D6: 45 0F 57 C0                    -  xorps xmm8,xmm8
+"DarkSoulsIII.exe"+5D49DA: 0F 57 C7                       -  xorps xmm0,xmm7
+}
+
+iframe_write:
+  db 48 89 41 58 48 8D 59 60
+unregistersymbol(iframe_write)
+dealloc(newmem2)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+96AE9C
+
+"DarkSoulsIII.exe"+96AE77: 4C 8B E9                    -  mov r13,rcx
+"DarkSoulsIII.exe"+96AE7A: 8B 41 14                    -  mov eax,[rcx+14]
+"DarkSoulsIII.exe"+96AE7D: 89 41 18                    -  mov [rcx+18],eax
+"DarkSoulsIII.exe"+96AE80: 80 A1 B4 09 00 00 FE        -  and byte ptr [rcx+000009B4],-02
+"DarkSoulsIII.exe"+96AE87: 8B 41 58                    -  mov eax,[rcx+58]
+"DarkSoulsIII.exe"+96AE8A: 48 C1 E8 0B                 -  shr rax,0B
+"DarkSoulsIII.exe"+96AE8E: 24 01                       -  and al,01
+"DarkSoulsIII.exe"+96AE90: 08 81 B4 09 00 00           -  or [rcx+000009B4],al
+"DarkSoulsIII.exe"+96AE96: 33 C0                       -  xor eax,eax
+"DarkSoulsIII.exe"+96AE98: 48 89 41 10                 -  mov [rcx+10],rax
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+96AE9C: 48 89 41 58                 -  mov [rcx+58],rax
+"DarkSoulsIII.exe"+96AEA0: 48 8D 59 60                 -  lea rbx,[rcx+60]
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+96AEA4: 48 8B EB                    -  mov rbp,rbx
+"DarkSoulsIII.exe"+96AEA7: 48 F7 DD                    -  neg rbp
+"DarkSoulsIII.exe"+96AEAA: 83 E5 03                    -  and ebp,03
+"DarkSoulsIII.exe"+96AEAD: 48 8B 83 88 00 00 00        -  mov rax,[rbx+00000088]
+"DarkSoulsIII.exe"+96AEB4: 4C 8D 34 C3                 -  lea r14,[rbx+rax*8]
+"DarkSoulsIII.exe"+96AEB8: 4C 03 F5                    -  add r14,rbp
+"DarkSoulsIII.exe"+96AEBB: 4C 8D 3C 2B                 -  lea r15,[rbx+rbp]
+"DarkSoulsIII.exe"+96AEBF: 4D 3B F7                    -  cmp r14,r15
+"DarkSoulsIII.exe"+96AEC2: 73 1D                       -  jae DarkSoulsIII.exe+96AEE1
+"DarkSoulsIII.exe"+96AEC4: 4C 8D 05 CD FC 34 03        -  lea r8,[DarkSoulsIII.exe+3CBAB98]
+}
+
+
+
+

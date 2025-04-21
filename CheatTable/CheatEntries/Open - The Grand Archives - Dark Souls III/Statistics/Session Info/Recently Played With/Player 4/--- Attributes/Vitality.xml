@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>80946</ID>
+  <Description>"Vitality"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6C</Offset>
+    <Offset>540+0950*3</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,8 @@
+[ENABLE]
+CreateNpc_Data:
+dd 00000001
+createthread(CreateNpc)
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]

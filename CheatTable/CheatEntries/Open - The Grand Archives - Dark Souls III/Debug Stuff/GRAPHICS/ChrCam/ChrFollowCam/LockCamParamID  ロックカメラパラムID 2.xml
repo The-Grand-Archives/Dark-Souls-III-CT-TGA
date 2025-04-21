@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337098948</ID>
+  <Description>"LockCamParamID | ロックカメラパラムID"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <DropDownList DisplayValueAsItem="1">-1:default
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>3C0</Offset>
+    <Offset>60</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337045436</ID>
+  <Description>"AutoFollow"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>7410</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,50 @@
+<CheatEntry>
+  <ID>1337098168</ID>
+  <Description>"TrophyID"</Description>
+  <DropDownList ReadOnly="1" DisplayValueAsItem="1">0:The Dark Soul
+1:To Link The First Flame
+2:The End of Fire
+3:The Usurpation of Fire
+4:Lords of Cinder: Abyss Watchers
+5:Lord of Cinder: Yhorm the Giant
+6:Lord of Cinder: Aldrich, Devourer of Gods
+7:Lord of Cinder: Younger Prince
+8:Supreme Weapon Reinforcement
+9:Master of Infusion
+10:Master of Sorceries
+11:Master of Pyromancies
+12:Master of Miracles
+13:Master of Rings
+14:Master of Expressions
+15:Ultimate Bonfire
+16:Ultimate Estus
+17:Covenant: Warrior of Sunlight
+18:Covenant: Way of Blue
+19:Covenant: Blue Sentinels
+20:Covenant: Blade of the Darkmoon
+21:Covenant: Rosaria's Fingers
+22:Covenant: Mound-makers
+23:Covenant: Watchdogs of Farron
+24:Covenant: Aldrich Faithful
+25:Untended Graves
+26:Archdragon Peak
+27:Iudex Gundyr
+28:Vordt of the Boreal Valley
+29:Curse-rotted Greatwood
+30:Crystal Sage
+31:Deacons of the Deep
+32:High Lord Wolnir
+33:Pontiff Sulyvahn
+34:Dancer of the Boreal Valley
+35:Dragonslayer Armour
+36:Old Demon King
+37:Oceiros, the Consumed King
+38:Champion Gundyr
+39:Ancient Wyvern
+40:The Nameless King
+41:Enkindle
+42:Embrace the Flame
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>TrophyData</Address>
+</CheatEntry>

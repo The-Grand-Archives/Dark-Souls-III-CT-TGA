@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337080835</ID>
+  <Description>"Disable the help menu? (For when the start button is covered and it is an obstacle when displaying the debug menu)"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:False
+1:True
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>NewMenuSystem</Address>
+  <Offsets>
+    <Offset>3084</Offset>
+  </Offsets>
+</CheatEntry>

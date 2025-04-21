@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>489900</ID>
+  <Description>"Unbreakable Patches"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="489921"/>
+    <id id="489920"/>
+    <id id="489910"/>
+    <id id="489914"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

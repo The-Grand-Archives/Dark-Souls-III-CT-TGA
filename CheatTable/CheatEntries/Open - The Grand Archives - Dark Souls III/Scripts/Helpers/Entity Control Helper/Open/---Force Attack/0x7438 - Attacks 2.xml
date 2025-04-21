@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>91785</ID>
+  <Description>"0x7438 - Attacks 2"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>XE</Address>
+  <Offsets>
+    <Offset>7438</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

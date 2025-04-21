@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099240</ID>
+  <Description>"MaxMpBarCapAdjust"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>20</Offset>
+    <Offset>60</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

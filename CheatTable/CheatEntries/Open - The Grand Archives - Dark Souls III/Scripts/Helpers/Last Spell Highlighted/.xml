@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337033626</ID>
+  <Description>"Last Spell Highlighted"</Description>
+  <Options moHideChildren="1"/>
+  <Color>C0C0C0</Color>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337033016"/>
+    <id id="1337023463"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

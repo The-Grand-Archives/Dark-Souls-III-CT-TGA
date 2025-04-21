@@ -1,0 +1,120 @@
+// Prevent CE VEH Debugger detection by clearing debug information from thread contexts
+// Note: Script cannot be disabled, patches will last for the lifetime of the process!
+// Author: tremwil
+
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+-- Manually compile the C code of the patch so it never gets deallocated
+local symbols, err = compile([[
+#include <stdlib.h>
+#include <winapi/windows.h>
+#include <tga/iat.h>
+
+PVECTORED_EXCEPTION_HANDLER gameHandler = NULL;
+PVOID hookHandle = NULL;
+
+void clearContextDebugInfo(CONTEXT* ctx) {
+    ctx->Dr0 = 0;
+    ctx->Dr1 = 0;
+    ctx->Dr2 = 0;
+    ctx->Dr3 = 0;
+    ctx->Dr6 = 0;
+    ctx->Dr7 = 0;
+    ctx->LastBranchToRip = 0;
+    ctx->LastBranchFromRip = 0;
+    ctx->LastExceptionToRip = 0;
+    ctx->LastExceptionFromRip = 0;
+}
+
+BOOL hGetThreadContext(HANDLE hThread, LPCONTEXT lpContext) {
+    BOOL result = GetThreadContext(hThread, lpContext);
+    if (result) {
+        clearContextDebugInfo(lpContext);
+    }
+    return result;
+}
+
+LONG hVehHandler(EXCEPTION_POINTERS* ExceptionInfo) {
+    // We need to do this garbage because of a TCC bug with struct alignment
+    CONTEXT* ctx = *(CONTEXT**)((uint8_t*)ExceptionInfo + 8);
+    CONTEXT backup = *ctx;
+
+    clearContextDebugInfo(ctx);
+    LONG ret = gameHandler(ExceptionInfo);
+
+    *ctx = backup;
+    return ret;
+}
+
+PVOID hAddVectoredExceptionHandler(ULONG First, PVECTORED_EXCEPTION_HANDLER Handler) {
+    PVOID handle = AddVectoredExceptionHandler(First, hVehHandler);
+    if (handle) {
+        gameHandler = Handler;
+        hookHandle = handle;
+    }
+    return handle;
+}
+
+ULONG hRemoveVectoredExceptionHandler(PVOID Handle) {
+    ULONG result = RemoveVectoredExceptionHandler(Handle);
+    if (result && Handle == hookHandle)
+        hookHandle = NULL;
+
+    return result;
+}
+
+size_t apply_patches() {
+    HMODULE ds3 = GetModuleHandle(NULL);
+    void** iat_gtc = resolve_iat_ptr(ds3, "KERNEL32.DLL", "GetThreadContext");
+    void** iat_add_veh = resolve_iat_ptr(ds3, "KERNEL32.DLL", "AddVectoredExceptionHandler");
+    void** iat_rem_veh = resolve_iat_ptr(ds3, "KERNEL32.DLL", "RemoveVectoredExceptionHandler");
+
+    if (!iat_gtc || !iat_add_veh || !iat_rem_veh) {
+       return 1;
+    }
+
+    // Check if the script already ran by looking for existing IAT hooks
+    void* gtc_address = (void*)GetProcAddress(GetModuleHandle("KERNEL32.dll"), "GetThreadContext");
+    if (*iat_gtc != gtc_address) {
+       return 2;
+    }
+
+    *iat_gtc = hGetThreadContext;
+    *iat_add_veh = hAddVectoredExceptionHandler;
+    *iat_rem_veh = hRemoveVectoredExceptionHandler;
+
+    return 0;
+};
+]])
+
+local function err(msg)
+    print(msg)
+    error(msg)
+end
+
+if symbols == nil then
+    err(string.format("C code compilation failed: %s", err))
+end
+
+local result = executeCode(symbols.apply_patches)
+if result == 0 then return
+elseif result == 1 then
+    print("Anti-anti VEH debug error: Failed to resolve IAT addresses")
+elseif result == 2 and tga.config.printProgress then
+    print("Anti-anti debug: patches already applied, skipping")
+end
+
+-- If script failed or patches were already applied, free the memory
+local free_addr = (1 << 63) - 1;
+for sym, addr in pairs(symbols) do
+    if free_addr > addr then free_addr = addr end
+end
+if executeCodeEx(0, 1000, getAddress("KERNEL32.VirtualFree"), free_addr, 0, 0x8000) == 0 then
+    err(string.format("Failed to free C code compiled at %x", free_addr))
+end
+disableMemrec(memrec)
+
+[DISABLE]
+

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337190029</ID>
+  <Description>"Enable animation movement adjustment | アニメ移動量調節を有効化するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4768F83</Address>
+</CheatEntry>

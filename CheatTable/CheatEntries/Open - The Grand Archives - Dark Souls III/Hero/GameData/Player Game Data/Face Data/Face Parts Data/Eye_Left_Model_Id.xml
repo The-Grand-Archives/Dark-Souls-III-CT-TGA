@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081226</ID>
+  <Description>"Eye_Left_Model_Id"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6C0</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

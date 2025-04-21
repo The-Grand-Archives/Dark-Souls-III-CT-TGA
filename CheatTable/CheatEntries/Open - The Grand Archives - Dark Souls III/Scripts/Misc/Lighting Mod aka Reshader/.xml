@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337097681</ID>
+  <Description>"Lighting Mod aka "Reshader""</Description>
+  <Options moHideChildren="1"/>
+  <Color>C0C0C0</Color>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337097683"/>
+    <id id="1337097684"/>
+    <id id="1337097688"/>
+    <id id="1337097689"/>
+    <id id="1337097690"/>
+    <id id="1337097692"/>
+    <id id="1337097698"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

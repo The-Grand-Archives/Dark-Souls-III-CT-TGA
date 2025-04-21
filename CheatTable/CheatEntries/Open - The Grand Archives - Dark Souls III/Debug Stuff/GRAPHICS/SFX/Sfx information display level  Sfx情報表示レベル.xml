@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337098110</ID>
+  <Description>"Sfx information display level | Sfx情報表示レベル"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No Display | 表示なし
+1:SfxId Only | SfxIdのみ
+2:Detailed | 詳細表示
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjSfx</Address>
+  <Offsets>
+    <Offset>D0</Offset>
+  </Offsets>
+</CheatEntry>

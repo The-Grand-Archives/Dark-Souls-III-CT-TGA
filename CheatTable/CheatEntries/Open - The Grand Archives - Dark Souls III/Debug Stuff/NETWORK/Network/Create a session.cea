@@ -1,0 +1,26 @@
+[ENABLE]
+alloc(Debug_CreateSession,$100,DarkSoulsIII.exe)
+createthread(Debug_CreateSession)
+
+Debug_CreateSession:
+sub rsp,38
+mov rcx,[SprjSessionManager]
+test rcx,rcx
+je short end
+mov rcx,[rcx+10]
+lea rdx,[DebugMenuInput]
+mov [rdx+3C],02001000
+mov r8d,0000001E
+call 140782560
+end:
+add rsp,38
+ret
+
+DebugMenuInput:
+dq 0000000000000000
+
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_CreateSession)

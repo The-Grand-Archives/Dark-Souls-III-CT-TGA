@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337190025</ID>
+  <Description>"TAE debug function | TAEデバッグ機能"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337190026"/>
+    <id id="1337190027"/>
+    <id id="1337190028"/>
+    <id id="1337190029"/>
+    <id id="1337190030"/>
+    <id id="1337190031"/>
+    <id id="1337190032"/>
+    <id id="1337190033"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097889</ID>
+  <Description>"Target | 一括変更対象"</Description>
+  <DropDownList DisplayValueAsItem="1">-1:All valid chars | 全有効キャラ
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>158</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,19 @@
+[ENABLE]
+alloc(Debug_EraseAll,256,DarkSoulsIII.exe)
+createthread(Debug_EraseAll)
+
+Debug_EraseAll:
+sub rsp,48
+mov rcx,[WorldChrMan]
+mov rcx,[rcx+80]
+mov rcx,[rcx+18]
+mov rcx,[rcx+18]
+mov edx,00000001
+call DarkSoulsIII.exe+9F3C30
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_EraseAll)

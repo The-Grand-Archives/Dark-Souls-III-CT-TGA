@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337271280</ID>
+  <Description>"RemoveItem"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337272730"/>
+    <id id="1337272003"/>
+    <id id="1337272808"/>
+    <id id="1337272004"/>
+    <id id="1337272809"/>
+    <id id="1337272731"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

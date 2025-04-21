@@ -1,0 +1,9 @@
+[ENABLE]
+
+[target_ptr]+1EE9:
+  db 80
+
+[DISABLE]
+
+[target_ptr]+1EE9:
+  db 00

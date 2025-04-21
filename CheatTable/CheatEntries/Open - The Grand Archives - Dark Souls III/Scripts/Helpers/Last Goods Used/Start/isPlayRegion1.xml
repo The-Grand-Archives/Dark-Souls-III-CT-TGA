@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337045526</ID>
+  <Description>"isPlayRegion1"</Description>
+  <Options moHideChildren="1"/>
+  <ShowAsSigned>1</ShowAsSigned>
+  <Color>C0C0C0</Color>
+  <VariableType>Binary</VariableType>
+  <BitStart>1</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+68</Address>
+</CheatEntry>

@@ -1,0 +1,17 @@
+{
+	Author: Igromanru
+	Description: Place a red sign on equipping a Long Sword.
+}
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local WeaponId = 0x1EAB90 --Long Sword
+  local weapon = EquipParamWeapon:new("LongSwordPlaceRedSignOnEquip", WeaponId)
+  weapon:residentSpEffectId(10)
+end
+
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  paramUtils:restore("LongSwordPlaceRedSignOnEquip")
+end

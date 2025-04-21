@@ -1,0 +1,54 @@
+<CheatEntry>
+  <ID>1337081752</ID>
+  <Description>"Slot 6"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:None
+2:Point Forward
+4:Point Up
+6:Point down
+8:Wave
+10:Beckon
+12:Call over
+14:Welcome
+16:Applause
+18:Quiet Resolve
+20:Jump For Joy
+22:Joy
+24:Rejoice
+26:hurrah
+28:Praise the Sun
+32:Bow
+30:My thanks
+34:Proper Bow
+36:Dignified Bow
+38:Duel Bow
+40:Legion Etiquette
+42:Darkmoon Loyality
+44:Be my sword
+46:Prayer
+48:Silent Ally
+50:Rest
+52:Collapse
+54:Patches Squad
+56:Prostration
+58:Toast
+60:Sleep
+62:Curl Up
+64:Stretch out
+66:Patch of the Dragon
+68:Unmannered Bow
+70:Lord of Cinder
+72:FDP_MenuText(301140)
+74:FDP_MenuText(301141)
+76:FDP_MenuText(301142)
+78:FDP_MenuText(301143)
+80:FDP_MenuText(301144)
+82:FDP_MenuText(301145)
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>24</Offset>
+    <Offset>528</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

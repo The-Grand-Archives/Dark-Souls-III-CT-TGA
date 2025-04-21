@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>11342</ID>
+  <Description>"Is Break by Player Collide"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>1</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+9</Address>
+</CheatEntry>

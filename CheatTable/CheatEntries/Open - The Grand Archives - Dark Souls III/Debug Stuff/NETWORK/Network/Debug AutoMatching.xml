@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337096563</ID>
+  <Description>"Debug AutoMatching"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>181</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

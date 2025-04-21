@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098220</ID>
+  <Description>"Item Drop Exchanger (FDP hawk girl version) | アイテムドロップ交換機（FDP版鷹娘）"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337098338"/>
+    <id id="1337098243"/>
+    <id id="1337098372"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

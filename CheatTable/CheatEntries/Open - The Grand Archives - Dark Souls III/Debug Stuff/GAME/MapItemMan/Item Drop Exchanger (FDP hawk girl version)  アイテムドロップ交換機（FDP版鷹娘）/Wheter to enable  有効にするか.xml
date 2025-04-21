@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337098372</ID>
+  <Description>"Wheter to enable | 有効にするか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>178</Offset>
+  </Offsets>
+</CheatEntry>

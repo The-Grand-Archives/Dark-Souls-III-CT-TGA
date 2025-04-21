@@ -1,0 +1,18 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local Custom_Name_of_Table = {
+  {340,0x00,"80 40 2F 06"} --Effect Blessed ID [In Array of Bytes format]
+  --Follows this formula: "ID of what you want to change", 0x"Offset for what you want to change in it", "Array of Byte that you want to change it to"
+}
+paramUtils:paramIterator("EquipParamGoods",Custom_Name_of_Table,"Custom_Indentifier_for_Injected_Code") --Save values on 'enable'
+--Follows this forumula: ""Name of param that holds what you want to change"","Name of table","Indentifier for code"
+
+{$asm}
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+ paramUtils:paramDepatcher("Custom_Indentifier_for_Injected_Code") --Restore default values on 'disable'
+
+
+

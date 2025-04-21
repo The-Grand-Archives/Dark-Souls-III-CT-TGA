@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(BulletAddressToUse,8)
+registersymbol(BulletAddressToUse)
+[DISABLE]
+dealloc(BulletAddressToUse)
+unregistersymbol(BulletAddressToUse)

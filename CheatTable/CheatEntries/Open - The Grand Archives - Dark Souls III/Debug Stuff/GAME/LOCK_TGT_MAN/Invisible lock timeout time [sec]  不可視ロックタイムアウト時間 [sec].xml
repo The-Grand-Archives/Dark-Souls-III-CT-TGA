@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099106</ID>
+  <Description>"Invisible lock timeout time [sec] | 不可視ロックタイムアウト時間 [sec]"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2910</Offset>
+  </Offsets>
+</CheatEntry>

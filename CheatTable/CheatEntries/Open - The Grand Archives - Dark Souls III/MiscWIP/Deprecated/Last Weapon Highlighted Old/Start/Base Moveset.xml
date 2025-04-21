@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337046215</ID>
+  <Description>"Base Moveset"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+e3</Address>
+</CheatEntry>

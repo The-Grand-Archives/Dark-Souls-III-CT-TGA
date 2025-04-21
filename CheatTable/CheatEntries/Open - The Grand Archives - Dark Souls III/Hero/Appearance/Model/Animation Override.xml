@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>489665</ID>
+  <Description>"Animation Override"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>20</Offset>
+    <Offset>58</Offset>
+    <Offset>xa</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

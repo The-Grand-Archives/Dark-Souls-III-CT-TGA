@@ -1,0 +1,18 @@
+[ENABLE]
+alloc(PositionedWarp,$100,DarkSoulsIII.exe)
+createthread(PositionedWarp)
+
+PositionedWarp:
+mov rdx,[WorldChrManDbg]
+mov rcx,[WorldChrMan]
+mov rcx,[rcx+80]
+mov rcx,[rcx+50]
+mov byte ptr [rcx+0000018A],01
+movaps xmm0,[rdx+160]
+movdqa [rcx+00000190],xmm0
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(PositionedWarp)

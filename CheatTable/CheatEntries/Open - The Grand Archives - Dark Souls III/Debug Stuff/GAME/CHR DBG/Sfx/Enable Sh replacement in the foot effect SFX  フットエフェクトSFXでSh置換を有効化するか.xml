@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097964</ID>
+  <Description>"Enable Sh replacement in the foot effect SFX | フットエフェクトSFXでSh置換を有効化するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>178</Offset>
+  </Offsets>
+</CheatEntry>

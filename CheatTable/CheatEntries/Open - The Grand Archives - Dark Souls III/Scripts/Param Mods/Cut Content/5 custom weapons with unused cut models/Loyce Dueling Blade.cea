@@ -1,0 +1,132 @@
+//replaces crescent moon sword with loyce dueling blade
+//additional overwrites: gargoyle flame spear weapon art, weapon art name, as well as the stun of it.
+//buff may have issues in offhand
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local weapon = EquipParamWeapon:new("loycecrescent",4100000)
+weapon:behaviorVariationId(3650)
+weapon:sortId(80736)
+weapon:weight(2.5)
+weapon:fixPrice(500)
+weapon:basicPrice(500)
+weapon:sellValue(500)
+weapon:correctStrength(-1)
+weapon:correctAgility(100)
+weapon:correctMagic(35)
+weapon:correctFaith(0)
+weapon:physGuardCutRate(50)
+weapon:magGuardCutRate(50)
+weapon:fireGuardCutRate(50)
+weapon:thunGuardCutRate(50)
+weapon:materialSetId(2200)
+weapon:originEquipWep(4100000)
+weapon:originEquipWep1(4100000)
+weapon:originEquipWep2(4100000)
+weapon:originEquipWep3(4100000)
+weapon:originEquipWep4(4100000)
+weapon:originEquipWep5(4100000)
+weapon:iconId(4009)
+weapon:equipModelId(8006)
+weapon:attackBasePhysics(70)
+weapon:attackBaseMagic(35)
+weapon:attackBaseStamina(50)
+weapon:saWeaponDamage(20)
+weapon:guardAngle(60)
+weapon:staminaGuardDef(40)
+weapon:reinforceTypeId(4600)
+weapon:weaponCategory(3)
+weapon:wepmotionCategory(28)
+weapon:spAttribute(3)
+weapon:spAtkcategory(175)
+weapon:wepmotionOneHandId(0)
+weapon:wepmotionBothHandId(10)
+weapon:properStrength(10)
+weapon:properAgility(18)
+weapon:properMagic(13)
+weapon:properFaith(0)
+weapon:attackBaseParry(0)
+weapon:defenseBaseParry(0)
+weapon:guardBaseRepel(10)
+weapon:attackBaseRepel(66)
+weapon:guardCutCancelRate(0)
+weapon:poisonGuardResist(20)
+weapon:diseaseGuardResist(20)
+weapon:bloodGuardResist(20)
+weapon:curseGuardResist(20)
+weapon:guardLevel(2)
+weapon:isBlowAttackType(0)
+weapon:isThrustAttackType(0)
+weapon:isSlashAttackType(1)
+weapon:isNormalAttackType(0)
+weapon:isEnhance(0)
+weapon:Group0_DummyPolyId1(301)
+weapon:weaponPosition(28)
+weapon:patchByte(0x178,25)
+weapon:correctTypeDark(0)
+weapon:correctTypeMagic(1)
+weapon:darkGuardCutRate(50)
+weapon:AtkThrowEscapeA(10)
+weapon:AtkThrowEscapeB(10)
+weapon:swordArt(1309)
+weapon:correctLuck(0)
+weapon:categoryName(9)
+weapon:AttackElementCorrect(10000)
+weapon:residentSpEffectId1(0)
+
+local newWa = BehaviorParam_PC:new("loycecrescent",103650700)
+newWa:refType(2)
+newWa:refId(1902)
+newWa:stamina(30)
+
+local bonusVfx = SpEffectParam:new("loycecrescent",1902)
+bonusVfx:cycleOccurrenceSpEffectId(1903)
+bonusVfx:effectSfx(800000)
+
+local ivoryWeapon = SpEffectParam:new("loycecrescent",1903)
+ivoryWeapon:effectEndurance(60)
+ivoryWeapon:spCategory(20)
+ivoryWeapon:effectSfx(91040700)--91040700
+ivoryWeapon:spAttribute(3)
+ivoryWeapon:stateInfo(152)
+ivoryWeapon:wepParamChange(1)
+ivoryWeapon:magicAttackPower(75)
+ivoryWeapon:atkOccurrenceSpEffectId(101313010)
+
+local chargeBuff =  AtkParam_Pc:new("loycecrescent", 3650800)
+chargeBuff:DamageLevel(3)
+
+local chargeFix = AtkParam_Pc:new("loycecrescent", 3650705)
+chargeFix:AtkFireCorrection(0)
+chargeFix:AtkMagCorrection(190)
+chargeFix:SpecialAttributes(3)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+1B350:
+dw 'Loyce Dueling Blade',0
+[[[[MsgRepository]+8]+0]+C0]+87462:
+dw 'The blade of a dignitary who hailed from the cold domain of a distant monarch in search of aid.',A
+dw '',A
+dw 'He died, hopeless and alone in a foreign land, and this curious blade pried from his cold dead hands.',A
+dw '',A
+dw 'Skill: Ivory Splendor',A
+dw 'Brace and charge forward, then ignite the signature magic of Eleum Loyce.',0
+[[[[MsgRepository]+08]+00]+0640]+A562:
+dw 'Ivory Splendor',0
+
+[DISABLE]
+{$lua}
+paramUtils:restore("loycecrescent")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+1B350:
+dw 'Crescent Moon Sword',0
+[[[[MsgRepository]+8]+0]+C0]+87462:
+dw 'Ringfinger Leonhard',27,'s weapon of choice, a type of shotel imbued with the power of the moon.',A
+dw '',A
+dw 'Leonhard set out on a journey of rebirth, but decided instead to serve the goddess as a knight, and inherited this weapon.',A
+dw '',A
+dw 'Skill: Crescent Blade',A
+dw 'Assume a broad stance and fire off crescent moon blades.',0
+[[[[MsgRepository]+08]+00]+0640]+A562:
+dw 'Kindled Charge',0

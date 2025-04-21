@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>1337080345</ID>
+  <Description>"ID"</Description>
+  <DropDownListLink>LOCK_CAM_ID</DropDownListLink>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>8 Bytes</VariableType>
+  <Address>LockCamParamHelper</Address>
+</CheatEntry>

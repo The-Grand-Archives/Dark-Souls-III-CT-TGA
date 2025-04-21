@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>89780</ID>
+  <Description>"---Resistances"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="89781"/>
+    <id id="89782"/>
+    <id id="89783"/>
+    <id id="89784"/>
+    <id id="89785"/>
+    <id id="89786"/>
+    <id id="89787"/>
+    <id id="91760"/>
+    <id id="91761"/>
+    <id id="91762"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

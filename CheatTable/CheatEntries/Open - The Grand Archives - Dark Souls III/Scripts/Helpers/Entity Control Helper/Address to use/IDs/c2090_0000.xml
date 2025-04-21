@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>88526</ID>
+  <Description>"c2090_0000"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>8 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>2060</Offset>
+    <Offset>440</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

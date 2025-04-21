@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099124</ID>
+  <Description>"LockRangeRadiusBonusDampingEndAngle [rad] | ロック範囲半径ボーナス減衰終了角度 [rad]"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>291C</Offset>
+  </Offsets>
+</CheatEntry>

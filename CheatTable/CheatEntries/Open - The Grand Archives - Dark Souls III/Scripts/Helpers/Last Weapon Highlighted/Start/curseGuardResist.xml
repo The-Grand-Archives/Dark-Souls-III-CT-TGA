@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337038842</ID>
+  <Description>"curseGuardResist"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+FF</Address>
+</CheatEntry>

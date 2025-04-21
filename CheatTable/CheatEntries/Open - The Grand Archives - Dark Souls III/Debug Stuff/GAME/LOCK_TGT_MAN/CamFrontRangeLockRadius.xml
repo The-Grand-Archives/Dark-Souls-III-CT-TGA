@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099141</ID>
+  <Description>"CamFrontRangeLockRadius"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>294C</Offset>
+  </Offsets>
+</CheatEntry>

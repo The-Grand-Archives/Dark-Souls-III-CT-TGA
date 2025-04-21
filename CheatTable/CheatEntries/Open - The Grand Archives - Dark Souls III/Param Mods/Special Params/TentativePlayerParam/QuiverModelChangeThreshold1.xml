@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099281</ID>
+  <Description>"QuiverModelChangeThreshold1"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>6C</Offset>
+    <Offset>60</Offset>
+    <Offset>70</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73315</ID>
+  <Description>"Horiz. Facial"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>73B</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,21 @@
+//Author: inuNorii
+[ENABLE]
+BrightnessMod:
+dd (float)-1.0
+
+DarkSoulsIII.exe+3D6C0C0:
+dd (float)5.0 (float)5.0 (float)5.0
+
+DarkSoulsIII.exe+1717B28:
+dd (float)0.05
+
+DarkSoulsIII.exe+4727638:
+dd (float)0.5
+
+DarkSoulsIII.exe+0212450:
+dd (float)0.5
+
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]

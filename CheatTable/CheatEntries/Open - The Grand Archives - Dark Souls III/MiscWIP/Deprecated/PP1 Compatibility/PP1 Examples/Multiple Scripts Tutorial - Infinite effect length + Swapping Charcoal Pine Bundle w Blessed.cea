@@ -1,0 +1,22 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local CB2 = { --effect param mods
+  {340,0x00,"80 40 2F 06"} -- Blessed Effect ID [Array of Byte format]
+}
+paramUtils:paramIterator("EquipParamGoods",CB2,"CB2") --Save values on 'enable'
+
+local CBE2 = { --effect param mods
+  {103760000,0x08,"00 00 80 BF"} --Effect Duration [-1 Unlimited Array of Byte format]
+}
+paramUtils:paramIterator("SpEffectParam",CBE2,"CBE2") --Save values on 'enable'
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+ paramUtils:paramDepatcher("CB2") --Restore default values on 'disable'
+ paramUtils:paramDepatcher("CBE2") --Restore default values on 'disable'
+
+
+
+

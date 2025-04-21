@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099368</ID>
+  <Description>"TextId - Impossible Ritual [Atonement]"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>74</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

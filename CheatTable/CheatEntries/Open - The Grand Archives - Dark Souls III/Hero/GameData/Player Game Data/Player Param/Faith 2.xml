@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337080947</ID>
+  <Description>"Faith"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <Color>C0C0C0</Color>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>21C</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

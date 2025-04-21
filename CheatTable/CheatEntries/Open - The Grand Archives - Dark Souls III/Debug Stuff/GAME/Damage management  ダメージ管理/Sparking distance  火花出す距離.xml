@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096512</ID>
+  <Description>"Sparking distance | 火花出す距離"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>DamageMan</Address>
+  <Offsets>
+    <Offset>1C</Offset>
+  </Offsets>
+</CheatEntry>

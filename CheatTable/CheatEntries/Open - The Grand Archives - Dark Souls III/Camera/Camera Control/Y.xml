@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>73113</ID>
+  <Description>"Y"</Description>
+  <VariableType>Float</VariableType>
+  <Address>camera_val+8</Address>
+</CheatEntry>

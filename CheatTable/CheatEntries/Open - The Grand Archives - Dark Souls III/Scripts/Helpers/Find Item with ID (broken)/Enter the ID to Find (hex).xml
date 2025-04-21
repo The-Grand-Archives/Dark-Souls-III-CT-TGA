@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>72407</ID>
+  <Description>"Enter the ID to Find (hex)"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>itemid_value</Address>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337020999</ID>
+  <Description>"Remove color"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>SoloParamRepository</Address>
+  <Offsets>
+    <Offset>1F58</Offset>
+    <Offset>68</Offset>
+    <Offset>68</Offset>
+    <Offset>10C0</Offset>
+  </Offsets>
+</CheatEntry>

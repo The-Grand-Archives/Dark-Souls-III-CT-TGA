@@ -1,0 +1,22 @@
+<CheatEntry>
+  <ID>1337098550</ID>
+  <Description>"BallistaAimCam"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337099056"/>
+    <id id="1337099057"/>
+    <id id="1337099058"/>
+    <id id="1337099060"/>
+    <id id="1337099061"/>
+    <id id="1337099062"/>
+    <id id="1337099063"/>
+    <id id="1337099059"/>
+    <id id="1337099064"/>
+    <id id="1337099065"/>
+    <id id="1337099066"/>
+    <id id="1337099067"/>
+    <id id="1337099068"/>
+    <id id="1337099069"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

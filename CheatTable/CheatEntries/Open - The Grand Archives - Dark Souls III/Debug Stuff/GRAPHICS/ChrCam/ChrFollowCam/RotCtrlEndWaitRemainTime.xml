@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337098949</ID>
+  <Description>"RotCtrlEndWaitRemainTime"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>134</Offset>
+    <Offset>60</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

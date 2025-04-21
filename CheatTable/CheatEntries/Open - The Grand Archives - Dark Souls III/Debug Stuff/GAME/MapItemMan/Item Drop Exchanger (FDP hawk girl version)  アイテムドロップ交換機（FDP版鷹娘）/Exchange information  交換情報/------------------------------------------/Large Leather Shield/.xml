@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>1337098481</ID>
+  <Description>"Large Leather Shield"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>10*A</Offset>
+    <Offset>28</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337098482"/>
+    <id id="1337098483"/>
+    <id id="1337098484"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

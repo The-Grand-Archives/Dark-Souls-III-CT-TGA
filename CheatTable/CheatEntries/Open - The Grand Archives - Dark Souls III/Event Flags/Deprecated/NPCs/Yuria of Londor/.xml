@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337190409</ID>
+  <Description>"Yuria of Londor"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337190408"/>
+    <id id="1337190407"/>
+    <id id="1337190402"/>
+    <id id="1337190405"/>
+    <id id="1337190412"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

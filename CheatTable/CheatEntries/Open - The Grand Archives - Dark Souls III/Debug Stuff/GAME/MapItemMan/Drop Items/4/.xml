@@ -1,0 +1,19 @@
+<CheatEntry>
+  <ID>1337098288</ID>
+  <Description>"4"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>0</Offset>
+    <Offset>0</Offset>
+    <Offset>0</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337098293"/>
+    <id id="1337098294"/>
+    <id id="1337098295"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

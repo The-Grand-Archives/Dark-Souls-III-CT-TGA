@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337190504</ID>
+  <Description>"Ludleth of Courland"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337190505"/>
+    <id id="1337190506"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

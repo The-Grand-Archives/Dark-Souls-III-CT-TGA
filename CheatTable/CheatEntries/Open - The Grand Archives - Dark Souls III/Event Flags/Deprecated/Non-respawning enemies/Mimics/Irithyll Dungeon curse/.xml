@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>489783</ID>
+  <Description>"Irithyll Dungeon curse"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>1</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>5528</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="489784"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

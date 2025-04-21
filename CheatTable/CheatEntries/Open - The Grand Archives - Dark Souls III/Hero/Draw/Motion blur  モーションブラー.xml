@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081650</ID>
+  <Description>"Motion blur | モーションブラー"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1A55</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

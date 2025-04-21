@@ -1,0 +1,11 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local Inventory = ShopLineupParam:new("AccessAllShopInventory")
+Inventory:patchAll4Byte(0x8,-1)
+Inventory:patchAll4Byte(0x10,-1)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("AccessAllShopInventory")

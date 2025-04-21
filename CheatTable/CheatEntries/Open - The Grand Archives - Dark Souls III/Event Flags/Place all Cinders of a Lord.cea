@@ -1,0 +1,28 @@
+{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+local flags = {
+9213, -- Activate Lord of Cinders in Firelink Shrine - Cinder of Abyss Watchers
+9212, -- Activate Lord of Cinders in Firelink Shrine - Cinder of Aldrich, Devourer of Gods
+9211, -- Activate Lord of Cinders in Firelink Shrine - Cinder of Prince Lothric
+9214, -- Activate Lord of Cinders in Firelink Shrine - Cinder of Yhorm the Giant
+9210 -- Enable "True Heir" Scene in Firelink
+}
+ef.runThread1 = true
+local thread = createThread(function()
+	local r = #flags
+  local p1, p2, count = 0, 0
+  local t = os.clock()
+  for i,v in ipairs(flags) do
+		if not ef.runThread1 then break end
+    ef.setFlag(v, 1)
+    p1 = i*100//r
+    if p1 ~= p2 then print(p1.."% "..(os.clock() - t)*100//1/100) p2 = p1 end
+  end
+  print(string.format("Set %s flags!", r))
+	ef.runThread1 = false
+end)
+
+[DISABLE]
+ef.runThread1 = false

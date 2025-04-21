@@ -1,0 +1,17 @@
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local Objects = {
+    {400,0,"88 13 00 00"}, --WhiteDoorsvalue
+    {401,0,"88 13 00 00"}, --WhiteDoorsvalue
+    {402,0,"88 13 00 00"}, --WhiteDoorsvalue
+    {370600,0,"88 13 00 00"} --WhiteDoorsvalue
+  }
+  paramUtils:paramIterator("ObjectParam",Objects,"BreakableWhiteDoors")
+end
+
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  paramUtils:paramDepatcher("BreakableWhiteDoors")
+end

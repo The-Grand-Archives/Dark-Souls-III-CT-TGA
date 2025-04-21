@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>86627</ID>
+  <Description>"Effect12153  "Invisibility""</Description>
+  <DropDownList DisplayValueAsItem="1">07:Default
+04:Restricted
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Byte</VariableType>
+  <Address>Effect12153</Address>
+</CheatEntry>

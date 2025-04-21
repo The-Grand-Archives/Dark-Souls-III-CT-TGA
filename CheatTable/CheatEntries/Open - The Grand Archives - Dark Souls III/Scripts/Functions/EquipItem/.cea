@@ -1,0 +1,39 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local equipGear_addr = AOBScanModuleUnique(process, "?? 8b f1 ?? 8b d8 ?? 63 ea ?? 8b f9") - 0x2B
+local equipGoods_addr = AOBScanModuleUnique(process, "?? fa ?? ?? 0f ?? 81 c1 ?? ?? ?? ?? ?? 8b c1 e9")
+local addr = 0
+
+equipItem_data = allocateMemory(0x20, getAddress(process))
+
+function equipItem(slot, invIdx)
+    if invIdx == nil or invIdx < 0 then return false end
+
+    if slot == nil or slot < 0 then
+        return false
+    elseif slot <= 21 then
+        addr = equipGear_addr
+    elseif slot <= 36 then
+        addr = equipGoods_addr
+        slot = slot - 22
+    else
+        return false
+    end
+
+    local GameDataMan = readPointer("GameDataMan")
+    local PlayerGameData = readPointer(GameDataMan + 0x10)
+    local EquipGameData = PlayerGameData + 0x228
+    local EquipInventoryData = PlayerGameData + 0x3D0
+
+    local tailDataIdx = readInteger(EquipInventoryData + 0x24)
+
+    writeInteger(equipItem_data + 0x10, getItemByIdx(invIdx))
+
+    return executeCodeEx(0, 100, addr, EquipGameData, slot, equipItem_data + 0x10, invIdx + tailDataIdx, 1, 1, 0)
+end
+
+[DISABLE]
+deAlloc(equipItem_data)
+equipItem_data = nil
+equipItem = nil

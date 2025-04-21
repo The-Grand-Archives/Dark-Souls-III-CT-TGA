@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337096754</ID>
+  <Description>"Display the downloaded ghost in debug? | ダウンロードした幻影をデバッグ表示するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>87</Offset>
+    <Offset>B98</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097736</ID>
+  <Description>"RecvBufferOver MaxTime"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>370</Offset>
+  </Offsets>
+</CheatEntry>

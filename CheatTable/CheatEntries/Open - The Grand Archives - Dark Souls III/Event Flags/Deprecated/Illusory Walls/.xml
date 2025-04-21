@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>89077</ID>
+  <Description>"Illusory Walls"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="89081"/>
+    <id id="89084"/>
+    <id id="89078"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

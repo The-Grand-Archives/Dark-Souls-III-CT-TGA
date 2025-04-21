@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337190205</ID>
+  <Description>"Coordinates #2"</Description>
+  <VariableType>Float</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>70</Offset>
+    <Offset>40</Offset>
+    <Offset>a8</Offset>
+    <Offset>68</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,25 @@
+<CheatEntry>
+  <ID>1337098060</ID>
+  <Description>"Sound Type"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:a : ambient
+1:c : CharacterMotion
+2:f : FrontEnd
+3:o : Object
+4:p : PolyGeki
+5:s : SFX
+6:m : BGM
+7:v : Voice
+8:x : XMaterial
+9:b : Body
+10:g : Ghost
+11:y : MultiChannelStreaming
+12:z : Material
+13:e : Foot Effect
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjSound</Address>
+  <Offsets>
+    <Offset>8</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

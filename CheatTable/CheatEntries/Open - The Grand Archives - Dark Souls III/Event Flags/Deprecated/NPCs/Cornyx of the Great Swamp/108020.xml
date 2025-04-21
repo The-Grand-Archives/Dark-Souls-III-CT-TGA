@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>108020</ID>
+  <Description>"???"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>7</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>9D</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337096601</ID>
+  <Description>"Permission for parental control etc. | ペアレンタルコントロールなどの許可"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>9</Offset>
+    <Offset>178</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

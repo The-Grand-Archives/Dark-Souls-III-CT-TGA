@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>2935</ID>
+  <Description>"Rebirth 4"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>2</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>2D016</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

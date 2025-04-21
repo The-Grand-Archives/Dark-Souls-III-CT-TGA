@@ -1,0 +1,24 @@
+[ENABLE]
+aobscanmodule(NpcControlTarget_AOB,DarkSoulsIII.exe,48 8B 80 xx 1F 00 00 48 8B 08 48 8B 51)
+registerSymbol(NpcControlTarget_AOB)
+alloc(newmem,$100,NpcControlTarget_AOB)
+
+newmem:
+mov [NpcControl_Data+04],rax
+code:
+mov rax,[rax+00001F90]
+jmp return
+
+NpcControlTarget_AOB:
+jmp newmem
+nop
+nop
+return:
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+NpcControlTarget_AOB:
+  db 48 8B 80 90 1F 00 00
+dealloc(newmem)
+unregisterSymbol(NpcControlTarget_AOB)

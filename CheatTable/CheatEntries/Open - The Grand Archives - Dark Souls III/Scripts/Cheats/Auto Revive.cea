@@ -1,0 +1,46 @@
+{
+  Author: Igromanru
+  Game Version: 1.14
+  Date: 23.05.2017
+  Description: After the dead, reviving you after about 2sec with Load in area animation
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+-- you can customize this
+local reviveAnimation = 63000 -- Load in area animation
+local reviveDelay = 2000 -- 2sec
+
+
+-- Don't change the code below
+local currentHpPtr = "[[[[WorldChrMan]+80]+1F90]+18]+D8"
+local maxHpPtr = "[[[[WorldChrMan]+80]+1F90]+18]+E0"
+local indleAnimationPtr = "[[[[WorldChrMan]+80]+1F90]+58]+20"
+
+igroAutoReviveTimer = createTimer(getMainForm())
+igroAutoReviveTimer.Interval = 100
+igroAutoReviveTimer.OnTimer = function(timer)
+  local currentHp = readInteger(currentHpPtr)
+  if(currentHp ~= nil and currentHp < 1) then
+    local reviveTimer = createTimer(getMainForm())
+    reviveTimer.Interval = reviveDelay
+    reviveTimer.OnTimer = function(reviveTimer)
+      local maxHp = readInteger(maxHpPtr)
+      if(maxHp ~= nil) then
+        writeInteger(currentHpPtr, maxHp)
+        writeInteger(indleAnimationPtr, reviveAnimation)
+      end
+      reviveTimer.destroy()
+    end
+    reviveTimer.setEnabled(true)
+  end
+end
+igroAutoReviveTimer.setEnabled(true)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+if igroAutoReviveTimer ~= nil then
+  igroAutoReviveTimer.setEnabled(false)
+end

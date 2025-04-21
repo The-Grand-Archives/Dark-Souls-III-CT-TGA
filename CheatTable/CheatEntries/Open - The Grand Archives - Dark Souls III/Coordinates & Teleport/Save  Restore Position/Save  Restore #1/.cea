@@ -1,0 +1,13 @@
+[ENABLE]
+alloc(teleportsave1,12)
+teleportsave1:
+readmem([[[WorldChrMan]+40]+28]+80,12)
+registersymbol(teleportsave1)
+[DISABLE]
+dealloc(teleportsave1)
+[[[WorldChrMan]+40]+28]+80:
+readmem(teleportsave1,12)
+unregistersymbol(teleportsave1)
+
+
+

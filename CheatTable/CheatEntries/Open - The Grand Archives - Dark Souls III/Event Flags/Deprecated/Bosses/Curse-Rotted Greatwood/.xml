@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>78002</ID>
+  <Description>"Curse-Rotted Greatwood"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78010"/>
+    <id id="78003"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

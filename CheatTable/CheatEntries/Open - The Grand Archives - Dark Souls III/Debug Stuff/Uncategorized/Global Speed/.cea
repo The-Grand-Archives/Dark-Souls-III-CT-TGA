@@ -1,0 +1,9 @@
+[ENABLE]
+aobscanmodule(EntitySpeedAOB,DarkSoulsIII.exe,00 00 80 3F F3 0F 10 8B)
+registersymbol(EntitySpeedAOB)
+EntitySpeedAOB:
+
+[DISABLE]
+EntitySpeedAOB:
+dd (float)1
+unregistersymbol(EntitySpeedAOB)

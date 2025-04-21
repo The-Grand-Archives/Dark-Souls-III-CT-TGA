@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337012250</ID>
+  <Description>"Hollowing"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>204E</Offset>
+  </Offsets>
+</CheatEntry>

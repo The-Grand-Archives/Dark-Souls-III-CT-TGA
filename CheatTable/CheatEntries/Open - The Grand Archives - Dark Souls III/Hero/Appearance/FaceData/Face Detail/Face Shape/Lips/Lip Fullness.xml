@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73206</ID>
+  <Description>"Lip Fullness"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>746</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

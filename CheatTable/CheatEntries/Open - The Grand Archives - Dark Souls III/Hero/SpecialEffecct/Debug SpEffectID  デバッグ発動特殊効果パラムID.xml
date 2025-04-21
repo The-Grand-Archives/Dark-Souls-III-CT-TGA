@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337082106</ID>
+  <Description>"Debug SpEffectID | デバッグ発動特殊効果パラムID"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>30</Offset>
+    <Offset>18</Offset>
+    <Offset>18</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

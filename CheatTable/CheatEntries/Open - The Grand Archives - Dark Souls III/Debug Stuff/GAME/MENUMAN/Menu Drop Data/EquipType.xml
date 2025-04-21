@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097659</ID>
+  <Description>"EquipType"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MenuDropData</Address>
+  <Offsets>
+    <Offset>840</Offset>
+  </Offsets>
+</CheatEntry>

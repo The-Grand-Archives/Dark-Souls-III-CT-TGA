@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>89787</ID>
+  <Description>"Toxic Max"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>XE</Address>
+  <Offsets>
+    <Offset>28</Offset>
+    <Offset>20</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

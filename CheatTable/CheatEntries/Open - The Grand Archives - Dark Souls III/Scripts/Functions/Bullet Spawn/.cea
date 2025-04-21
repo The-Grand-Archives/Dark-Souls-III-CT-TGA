@@ -1,0 +1,47 @@
+//Author: inuNorii
+//Probably unstable, so be nice to it
+[ENABLE]
+aobscanmodule(BS_Call_Call,$process,?? ?? ?? ?? 8b 08 89 4b 0c 83 f9 ff 74 1f f6 47 3c 01 75 03 89 4b 08)
+alloc(BulletSpawn,$100,DarkSoulsIII.exe)
+alloc(BulletData,$100)
+define(BulletID,BulletData+40)
+define(BulletCoords,BulletData+7C)
+registerSymbol(BulletData)
+registerSymbol(BulletID)
+registerSymbol(BulletCoords)
+registerSymbol(BulletSpawn)
+
+
+BulletSpawn:
+sub rsp,48
+mov rcx,BS_Call_Call
+movsxd rcx,dword ptr [rcx]
+mov rax,BS_Call_Call+4
+add rax,rcx
+mov rcx,[SprjBulletManager]
+lea rdx,[BulletData]
+lea rdi,[rdx+30]
+mov r8,rdi
+call rax
+add rsp,48
+ret
+
+BulletData:
+
+BulletID:
+dd #256
+
+BulletCoords:
+dd (float)0.00
+BulletCoords+10:
+dd (float)0.00
+BulletCoords+20:
+dd (float)0.00
+
+[DISABLE]
+dealloc(BulletSpawn)
+dealloc(BulletData)
+unregisterSymbol(BulletSpawn)
+unregisterSymbol(BulletData)
+unregisterSymbol(BulletID)
+unregisterSymbol(BulletCoords)

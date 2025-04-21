@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>89461</ID>
+  <Description>"Drop Item?"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+0+11C</Address>
+</CheatEntry>

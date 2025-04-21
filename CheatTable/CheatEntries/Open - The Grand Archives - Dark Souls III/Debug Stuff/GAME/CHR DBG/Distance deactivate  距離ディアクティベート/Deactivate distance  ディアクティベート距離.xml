@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097955</ID>
+  <Description>"Deactivate distance | ディアクティベート距離"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>194</Offset>
+  </Offsets>
+</CheatEntry>

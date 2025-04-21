@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081835</ID>
+  <Description>"UseCullCam"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>DE</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,17 @@
+<CheatEntry>
+  <ID>1337080394</ID>
+  <Description>"CharacterLoadParam"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>SoloParamRepository</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>68</Offset>
+    <Offset>68</Offset>
+    <Offset>1AE0</Offset>
+  </Offsets>
+</CheatEntry>

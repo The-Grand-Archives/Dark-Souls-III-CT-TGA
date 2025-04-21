@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337190149</ID>
+  <Description>"NpcThinkParam ID"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>124</Offset>
+    <Offset>3018</Offset>
+  </Offsets>
+</CheatEntry>

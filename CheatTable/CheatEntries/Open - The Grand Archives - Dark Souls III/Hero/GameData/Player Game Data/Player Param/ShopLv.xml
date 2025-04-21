@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080906</ID>
+  <Description>"ShopLv"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>AC</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

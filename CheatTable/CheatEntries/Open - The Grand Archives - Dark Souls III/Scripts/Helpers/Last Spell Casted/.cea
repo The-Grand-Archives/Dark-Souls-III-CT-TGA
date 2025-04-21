@@ -1,0 +1,63 @@
+//Highlight info about spell on cast
+[ENABLE]
+aobscanmodule(last_spell_fired,DarkSoulsIII.exe,44 0F B6 78 25 48 8B 01 FF)
+alloc(newmem,$1000,last_spell_fired)
+
+label(code)
+label(return)
+label(last_spell_fired_ptr)
+
+newmem:
+
+code:
+  mov r15,last_spell_fired_ptr
+  mov [r15],rax
+  movzx r15d,byte ptr [rax+25]
+  jmp return
+
+last_spell_fired_ptr:
+  dq 0
+
+last_spell_fired:
+  jmp code
+return:
+registersymbol(last_spell_fired)
+registersymbol(last_spell_fired_ptr)
+
+[DISABLE]
+last_spell_fired:
+  db 44 0F B6 78 25
+unregistersymbol(last_spell_fired)
+unregistersymbol(last_spell_fired_ptr)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+BD58B8
+
+"DarkSoulsIII.exe"+BD5893: 75 0F                    -  jne DarkSoulsIII.exe+BD58A4
+"DarkSoulsIII.exe"+BD5895: 8B D6                    -  mov edx,esi
+"DarkSoulsIII.exe"+BD5897: 48 8B CF                 -  mov rcx,rdi
+"DarkSoulsIII.exe"+BD589A: E8 41 0A 00 00           -  call DarkSoulsIII.exe+BD62E0
+"DarkSoulsIII.exe"+BD589F: E9 13 01 00 00           -  jmp DarkSoulsIII.exe+BD59B7
+"DarkSoulsIII.exe"+BD58A4: 81 FE F6 01 00 00        -  cmp esi,000001F6
+"DarkSoulsIII.exe"+BD58AA: 75 27                    -  jne DarkSoulsIII.exe+BD58D3
+"DarkSoulsIII.exe"+BD58AC: 48 8B 85 A8 02 00 00     -  mov rax,[rbp+000002A8]
+"DarkSoulsIII.exe"+BD58B3: 48 85 C0                 -  test rax,rax
+"DarkSoulsIII.exe"+BD58B6: 74 05                    -  je DarkSoulsIII.exe+BD58BD
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+BD58B8: 44 0F B6 78 1D           -  movzx r15d,byte ptr [rax+1D]
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+BD58BD: 45 0F B6 C7              -  movzx r8d,r15l
+"DarkSoulsIII.exe"+BD58C1: BA F6 01 00 00           -  mov edx,000001F6
+"DarkSoulsIII.exe"+BD58C6: 48 8B CF                 -  mov rcx,rdi
+"DarkSoulsIII.exe"+BD58C9: E8 22 6A 00 00           -  call DarkSoulsIII.exe+BDC2F0
+"DarkSoulsIII.exe"+BD58CE: E9 E4 00 00 00           -  jmp DarkSoulsIII.exe+BD59B7
+"DarkSoulsIII.exe"+BD58D3: 81 FE F7 01 00 00        -  cmp esi,000001F7
+"DarkSoulsIII.exe"+BD58D9: 75 3C                    -  jne DarkSoulsIII.exe+BD5917
+"DarkSoulsIII.exe"+BD58DB: 48 8B 85 A8 02 00 00     -  mov rax,[rbp+000002A8]
+"DarkSoulsIII.exe"+BD58E2: 48 85 C0                 -  test rax,rax
+"DarkSoulsIII.exe"+BD58E5: 74 1B                    -  je DarkSoulsIII.exe+BD5902
+}
+
+
+

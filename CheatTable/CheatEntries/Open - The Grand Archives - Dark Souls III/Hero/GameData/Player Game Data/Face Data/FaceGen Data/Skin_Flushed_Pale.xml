@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081262</ID>
+  <Description>"Skin_Flushed_Pale"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>77E</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337075979</ID>
+  <Description>"Quality Setting"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Low
+1:Medium
+2:High
+3:Max
+4:Custom
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>0</Address>
+</CheatEntry>

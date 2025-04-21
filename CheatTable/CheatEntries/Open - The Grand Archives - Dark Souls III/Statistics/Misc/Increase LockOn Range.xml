@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337011498</ID>
+  <Description>"Increase LockOn Range"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2914</Offset>
+  </Offsets>
+</CheatEntry>

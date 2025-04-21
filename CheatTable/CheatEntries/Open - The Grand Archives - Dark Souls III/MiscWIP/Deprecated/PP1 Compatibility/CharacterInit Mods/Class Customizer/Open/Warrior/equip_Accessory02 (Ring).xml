@@ -1,0 +1,123 @@
+<CheatEntry>
+  <ID>1337018733</ID>
+  <Description>"equip_Accessory02 (Ring)"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">FFFFFFFF:Empty
+00004E20:Life Ring
+00004E21:Life Ring+1
+00004E22:Life Ring+2
+00004E23:Life Ring+3
+00004E2A:Chloranthy Ring
+00004E2B:Chloranthy Ring+1
+00004E2C:Chloranthy Ring+2
+00004E34:Havel's Ring
+00004E35:Havel's Ring+1
+00004E36:Havel's Ring+2
+00004E3E:Ring of Favor
+00004E3F:Ring of Favor+1
+00004E40:Ring of Favor+2
+00004E48:Ring of Steel Protection
+00004E49:Ring of Steel Protection+1
+00004E4A:Ring of Steel Protection+2
+00004E52:Flame Stoneplate Ring
+00004E53:Flame Stoneplate Ring+1
+00004E54:Flame Stoneplate Ring+2
+00004E5C:Thunder Stoneplate Ring
+00004E5D:Thunder Stoneplate Ring+1
+00004E5E:Thunder Stoneplate Ring+2
+00004E66:Magic Stoneplate Ring
+00004E67:Magic Stoneplate Ring+1
+00004E68:Magic Stoneplate Ring+2
+00004E70:Dark Stoneplate Ring
+00004E71:Dark Stoneplate Ring+1
+00004E72:Dark Stoneplate Ring+2
+00004E7A:Speckled Stoneplate Ring
+00004E7B:Speckled Stoneplate Ring+1
+00004E84:Bloodbite Ring
+00004E85:Bloodbite Ring+1
+00004E8E:Poisonbite Ring
+00004E8F:Poisonbite Ring+1
+00004E98:Cursebite Ring
+00004EA2:Fleshbite Ring
+00004EA3:Fleshbite Ring+1
+00004EAC:Wood Grain Ring
+00004EAD:Wood Grain Ring+1
+00004EAE:Wood Grain Ring+2
+00004EB6:Scholar Ring
+00004EC0:Priestess Ring
+00004ECA:Red Tearstone Ring
+00004ED4:Blue Tearstone Ring
+00004EDE:Wolf Ring
+00004EDF:Wolf Ring+1
+00004EE0:Wolf Ring+2
+00004EE8:Leo Ring
+00004EF2:Ring of Sacrifice
+00004EFC:Rare Ring of Sacrifice
+00004F06:Young Dragon Ring
+00004F07:Bellowing Dragoncrest Ring
+00004F10:Great Swamp Ring
+00004F11:Witch's Ring
+00004F1A:Morne's Ring
+00004F1B:Ring of the Sun's First Born
+00004F2E:Lingering Dragoncrest Ring
+00004F2F:Lingering Dragoncrest Ring+1
+00004F30:Lingering Dragoncrest Ring+2
+00004F38:Sage Ring
+00004F39:Sage Ring+1
+00004F3A:Sage Ring+2
+00004F42:Slumbering Dragoncrest Ring
+00004F4C:Dusk Crown Ring
+00004F56:Saint's Ring
+00004F60:Deep Ring
+00004F6A:Darkmoon Ring
+00004F74:Ring of the Sun's Firstborn
+00004F7E:Darkmoon Blade Covenant Ring
+00004F88:Leo Ring
+00004F92:Hawk Ring
+00004F9C:Hornet Ring
+00004FA6:Covetous Gold Serpent Ring
+00004FA7:Covetous Gold Serpent Ring+1
+00004FA8:Covetous Gold Serpent Ring+2
+00004FB0:Covetous Silver Serpent Ring
+00004FB1:Covetous Silver Serpent Ring+1
+00004FB2:Covetous Silver Serpent Ring+2
+00004FBA:Sun Princess Ring
+00004FC4:Silvercat Ring
+00004FCE:Skull Ring
+00004FD8:Untrue White Ring
+00004FE2:Carthus Milkring
+00004FEC:Knight's Ring
+00004FF6:Hunter's Ring
+00005000:Knight Slayer's Ring
+0000500A:Magic Clutch Ring
+00005014:Lightning Clutch Ring
+0000501E:Fire Clutch Ring
+00005028:Dark Clutch Ring
+0000503C:Flynn's Ring
+00005046:Prisoner's Chain
+00005050:Untrue Dark Ring
+0000505A:Yorgh's Ring
+00005064:Obscuring Ring
+0000506E:Ring of the Evil Eye
+0000506F:Ring of the Evil Eye+1
+00005070:Ring of the Evil Eye+2
+00005078:Calamity Ring
+00005082:Farron Ring
+0000508C:Aldrich's Ruby
+00005096:Aldrich's Sapphire
+000050B4:Lloyd's Sword Ring
+000050BE:Lloyd's Shield Ring
+000050D2:Ring of Hiding
+000050DC:Estus Ring
+000050E6:Ashen Estus Ring
+000050F0:Horsehoof Ring
+000050FA:Carthus Bloodring
+00005104:Reversal Ring
+0000510E:Pontiff's Right Eye
+00005136:Pontiff's Left Eye
+0000515E:Dragonscale Ring
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+44</Address>
+</CheatEntry>

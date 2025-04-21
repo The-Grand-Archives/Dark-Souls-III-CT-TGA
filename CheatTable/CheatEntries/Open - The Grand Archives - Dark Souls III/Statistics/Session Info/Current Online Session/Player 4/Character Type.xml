@@ -1,0 +1,22 @@
+<CheatEntry>
+  <ID>86919</ID>
+  <Description>"Character Type"</Description>
+  <DropDownList DisplayValueAsItem="1">0:Host
+1:White Phantom
+2:Dark Spirit
+3:Ghost
+4:Ghost
+8:Hollow
+10:Transparent
+11:Invisible
+12:Dragon
+13:Arena
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>70</Offset>
+    <Offset>E0</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

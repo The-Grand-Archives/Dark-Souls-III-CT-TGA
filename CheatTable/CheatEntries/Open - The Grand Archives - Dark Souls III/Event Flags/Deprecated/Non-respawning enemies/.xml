@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>489922</ID>
+  <Description>"Non-respawning enemies"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="489923"/>
+    <id id="489924"/>
+    <id id="489930"/>
+    <id id="489728"/>
+    <id id="489770"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

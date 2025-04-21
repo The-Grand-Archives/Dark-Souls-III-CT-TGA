@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080922</ID>
+  <Description>"CurseLv"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>FB</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

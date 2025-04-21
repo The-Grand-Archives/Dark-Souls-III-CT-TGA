@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>86966</ID>
+  <Description>"Level"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>70</Offset>
+    <Offset>1FA0</Offset>
+    <Offset>118</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

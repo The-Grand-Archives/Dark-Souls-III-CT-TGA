@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337080842</ID>
+  <Description>"Menu Drop Data"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097659"/>
+    <id id="1337080845"/>
+    <id id="1337080847"/>
+    <id id="1337080846"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>86507</ID>
+  <Description>"Sir Vilhelm"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="86509"/>
+    <id id="86508"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

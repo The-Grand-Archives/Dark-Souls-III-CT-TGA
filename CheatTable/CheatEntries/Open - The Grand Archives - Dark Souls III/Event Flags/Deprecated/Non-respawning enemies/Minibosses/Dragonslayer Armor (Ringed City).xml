@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>489929</ID>
+  <Description>"Dragonslayer Armor (Ringed City)"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>2</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>1</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>7820</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

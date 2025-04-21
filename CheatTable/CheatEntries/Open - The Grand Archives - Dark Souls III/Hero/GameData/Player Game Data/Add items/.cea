@@ -1,0 +1,7 @@
+[ENABLE]
+aobscanmodule(AddItems_Call_,$process,48 89 9C ?? ?? ?? ?? ?? 4C 63 CA 48 8B F1 41 83 F9 1B)
+define(AddItems_Call,AddItems_Call_-20)
+registersymbol(AddItems_Call)
+
+[DISABLE]
+unregistersymbol(AddItems_Call)

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>7</ID>
+  <Description>"RemoId (Default : 0000)"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjRemo</Address>
+  <Offsets>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

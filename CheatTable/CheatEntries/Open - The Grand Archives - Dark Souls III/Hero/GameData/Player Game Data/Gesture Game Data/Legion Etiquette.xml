@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>73668</ID>
+  <Description>"Legion Etiquette"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">40:Locked
+41:Unlocked
+</DropDownList>
+  <VariableType>2 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>5C</Offset>
+    <Offset>7B8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

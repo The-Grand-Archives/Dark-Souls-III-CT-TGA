@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337081613</ID>
+  <Description>"Draw Hit"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>2</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1EE8</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

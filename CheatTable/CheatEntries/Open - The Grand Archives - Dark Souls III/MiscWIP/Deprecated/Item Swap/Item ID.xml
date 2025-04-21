@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>72941</ID>
+  <Description>"Item ID"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>pickup_ptr</Address>
+  <Offsets>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

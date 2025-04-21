@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337045276</ID>
+  <Description>"StayAnimID"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>20</Offset>
+    <Offset>58</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

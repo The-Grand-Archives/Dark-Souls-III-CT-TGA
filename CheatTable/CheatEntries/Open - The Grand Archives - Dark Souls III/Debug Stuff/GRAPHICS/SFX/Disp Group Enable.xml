@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337096665</ID>
+  <Description>"Disp Group Enable"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSfx</Address>
+  <Offsets>
+    <Offset>73</Offset>
+  </Offsets>
+</CheatEntry>

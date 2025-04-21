@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>9</ID>
+  <Description>"Lower Body"</Description>
+  <VariableType>Float</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>3B8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

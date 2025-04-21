@@ -1,0 +1,22 @@
+<CheatEntry>
+  <ID>1337080907</ID>
+  <Description>"ArcheType"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Knight
+1:Mercenary
+2:Warrior
+3:Herald
+4:Thief
+5:Assassin
+6:Sorcerer
+7:Pyromancer
+8:Cleric
+9:Deprived
+10:Debug
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>AE</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

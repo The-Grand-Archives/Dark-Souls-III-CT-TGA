@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73307</ID>
+  <Description>"Facial Aesthetic"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>71F</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337046306</ID>
+  <Description>"wepmotionBothHandId"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+ec+1</Address>
+</CheatEntry>

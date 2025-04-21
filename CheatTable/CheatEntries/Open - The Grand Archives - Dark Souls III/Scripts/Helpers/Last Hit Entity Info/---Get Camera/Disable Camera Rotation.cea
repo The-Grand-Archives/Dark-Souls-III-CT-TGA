@@ -1,0 +1,15 @@
+[ENABLE]
+aobscanmodule(camrttn,$process,0F 29 86 E0 00 00 00 F3)
+registersymbol(camrttn)
+
+camrttn:
+
+db 90 90 90 90 90 90 90
+
+[DISABLE]
+
+camrttn:
+  db 0F 29 86 E0 00 00 00
+
+unregistersymbol(camrttn)
+

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096617</ID>
+  <Description>"Shake FPS for debugging Increased value | デバッグ用にFPSをぶれさせる 増加値"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjFlipper</Address>
+  <Offsets>
+    <Offset>35C</Offset>
+  </Offsets>
+</CheatEntry>

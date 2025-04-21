@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78266</ID>
+  <Description>"Cinder of Yhorm the Giant"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>1</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>499</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

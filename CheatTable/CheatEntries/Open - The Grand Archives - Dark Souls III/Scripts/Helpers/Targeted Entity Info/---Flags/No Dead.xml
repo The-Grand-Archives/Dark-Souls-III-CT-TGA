@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337045229</ID>
+  <Description>"No Dead"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>2</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>1C0</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337096755</ID>
+  <Description>"Always show my wandering ghost | 自分の徘徊ゴースト常時表示するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>86</Offset>
+    <Offset>B98</Offset>
+  </Offsets>
+</CheatEntry>

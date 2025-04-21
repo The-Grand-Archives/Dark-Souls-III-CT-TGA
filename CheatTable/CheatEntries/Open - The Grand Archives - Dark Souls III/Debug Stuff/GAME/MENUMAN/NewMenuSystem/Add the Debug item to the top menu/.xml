@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337080288</ID>
+  <Description>"Add the Debug item to the top menu?"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:False
+1:True
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>NewMenuSystem</Address>
+  <Offsets>
+    <Offset>3083</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337180541"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

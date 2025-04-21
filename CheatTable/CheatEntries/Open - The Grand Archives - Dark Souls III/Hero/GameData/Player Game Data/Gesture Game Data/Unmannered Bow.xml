@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>73682</ID>
+  <Description>"Unmannered Bow"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">68:Locked
+69:Unlocked
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>2 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>94</Offset>
+    <Offset>7B8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

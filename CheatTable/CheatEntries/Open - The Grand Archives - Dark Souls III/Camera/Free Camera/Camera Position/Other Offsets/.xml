@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>86112</ID>
+  <Description>"Other Offsets"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="81128"/>
+    <id id="81131"/>
+    <id id="81130"/>
+    <id id="81129"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

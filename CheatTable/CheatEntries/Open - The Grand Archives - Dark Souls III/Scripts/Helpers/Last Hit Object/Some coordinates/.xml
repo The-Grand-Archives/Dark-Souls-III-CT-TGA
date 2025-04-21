@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>91891</ID>
+  <Description>"Some coordinates?"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="91888"/>
+    <id id="91889"/>
+    <id id="91890"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

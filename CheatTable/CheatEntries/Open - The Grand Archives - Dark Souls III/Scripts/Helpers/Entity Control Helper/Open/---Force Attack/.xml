@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>91781</ID>
+  <Description>"---Force Attack"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="89827"/>
+    <id id="89828"/>
+    <id id="91784"/>
+    <id id="91785"/>
+    <id id="91786"/>
+    <id id="91787"/>
+    <id id="91788"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

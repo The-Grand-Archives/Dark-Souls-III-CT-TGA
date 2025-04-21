@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097369</ID>
+  <Description>"Local Or Sign In"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>A35</Offset>
+  </Offsets>
+</CheatEntry>

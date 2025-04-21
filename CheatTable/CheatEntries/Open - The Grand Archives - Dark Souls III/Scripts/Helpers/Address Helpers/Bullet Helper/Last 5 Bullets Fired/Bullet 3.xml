@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>107593</ID>
+  <Description>"Bullet 3"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>8 Bytes</VariableType>
+  <Address>lastfired+10</Address>
+</CheatEntry>

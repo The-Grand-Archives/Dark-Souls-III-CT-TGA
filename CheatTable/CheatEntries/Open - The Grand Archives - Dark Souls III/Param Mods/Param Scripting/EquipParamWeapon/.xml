@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337018655</ID>
+  <Description>"EquipParamWeapon"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337018801"/>
+    <id id="1337097374"/>
+    <id id="489726"/>
+    <id id="1337018802"/>
+    <id id="1337018803"/>
+    <id id="1337018806"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

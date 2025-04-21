@@ -1,0 +1,18 @@
+[ENABLE]
+alloc(Debug_AddInventoryData,256,DarkSoulsIII.exe)
+createthread(Debug_AddInventoryData)
+
+Debug_AddInventoryData:
+sub rsp,48
+mov rcx,[GameDataMan]
+mov rcx,[rcx+10]
+lea rcx,[rcx+228]
+mov edx,02
+call 140586630
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_AddInventoryData)

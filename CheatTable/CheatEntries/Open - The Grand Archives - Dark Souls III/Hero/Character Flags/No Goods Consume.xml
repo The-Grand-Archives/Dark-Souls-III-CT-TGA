@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>86081</ID>
+  <Description>"No Goods Consume"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1EEA</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

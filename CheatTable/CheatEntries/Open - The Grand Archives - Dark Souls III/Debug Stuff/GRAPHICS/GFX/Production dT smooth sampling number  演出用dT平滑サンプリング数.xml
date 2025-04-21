@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096633</ID>
+  <Description>"Production dT smooth sampling number | 演出用dT平滑サンプリング数"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>SprjFlipper</Address>
+  <Offsets>
+    <Offset>350</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,28 @@
+{
+  Author: Jessica (from Reverse Souls)
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local warmth = 12470000
+
+local bonfireWarmth = { --Gives Bonfire Effect on Warmth
+      {warmth,0x6C,"64 00 00 00"}, --Full HP and Mana
+}
+local chloranthyWarmth = { --Gives Chloranty Ring +2 Effect
+      {warmth,0x7C,"B0 00 AD 06"},
+}
+local rangeWarmth = { --Increases the range of Warmth
+      {warmth,0x44,"00 00 FA 43"},
+}
+ParamIterator ("Bullet",bonfireWarmth,"bonfireWarmthOriginal")
+ParamIterator ("Bullet",chloranthyWarmth,"chloranthyWarmthOriginal")
+ParamIterator ("Bullet",rangeWarmth,"rangeWarmthOriginal")
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:paramDepatcher("bonfireWarmthOriginal")
+paramUtils:paramDepatcher("chloranthyWarmthOriginal")
+paramUtils:paramDepatcher("rangeWarmthOriginal")
+

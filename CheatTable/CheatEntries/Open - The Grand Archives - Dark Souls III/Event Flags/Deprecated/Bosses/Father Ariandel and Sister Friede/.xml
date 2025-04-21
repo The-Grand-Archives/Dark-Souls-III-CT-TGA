@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>86434</ID>
+  <Description>"Father Ariandel and Sister Friede"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="86433"/>
+    <id id="86432"/>
+    <id id="86426"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

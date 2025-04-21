@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337078719</ID>
+  <Description>"VowType3: Mound-makers"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+2C</Address>
+</CheatEntry>

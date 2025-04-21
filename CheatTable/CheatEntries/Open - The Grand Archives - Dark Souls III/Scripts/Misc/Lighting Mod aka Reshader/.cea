@@ -1,0 +1,85 @@
+//Author: inuNorii, original findings by Zullie the Witch
+//Lets you mess with the lighting
+//reverse engineered from a publicly available DLL
+
+//This has been tested for 2 weeks and confirmed safe by Dahoom
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.0")
+{$asm}
+[ENABLE]
+alloc(LightingMod,$100,"DarkSoulsIII.exe"+629C7D)
+alloc(BrightnessMod,4)
+registerSymbol(BrightnessMod)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+BrightnessMod: //Changes the game brightness past the intended limit
+dd (float)-2.0
+
+DarkSoulsIII.exe+3D6C0C0: //Vfx R/G/B
+dd (float)2.0 //Red
+dd (float)2.0 //Green
+dd (float)2.0 //Blue
+
+DarkSoulsIII.exe+1717B28: //Map Brightness
+dd (float)0.5
+
+DarkSoulsIII.exe+4727638: //Vfx Brightness
+dd (float)5.0
+
+DarkSoulsIII.exe+0212450: //Glow Brightness
+dd (float)0.2
+
+DarkSoulsIII.exe+4786138: //The Fire FadesTM Edition
+db 01
+
+LightingMod:
+cmp [BrightnessMod],0
+je originalcode
+movss xmm0,[BrightnessMod]
+movss xmm2,[BrightnessMod] //[DarkSoulsIII.exe+3D6ADD0]
+jmp exit
+
+//VFX:: -> Reshaded
+
+originalcode:
+movss xmm2,[DarkSoulsIII.exe+3D6ADD0]
+
+exit:
+jmp returnhere
+
+"DarkSoulsIII.exe"+629C7D:
+jmp LightingMod
+nop 3
+returnhere:
+{$lua}
+if syntaxcheck then return end
+--this needs a better solution
+memoryrecord_freeze(getAddressList().getMemoryRecordByDescription("VFXReshadedPopup"))
+{$asm}
+[DISABLE]
+"DarkSoulsIII.exe"+629C7D:
+movss xmm2,[DarkSoulsIII.exe+3D6ADD0]
+
+dealloc(LightingMod)
+dealloc(BrightnessMod)
+unregisterSymbol(BrightnessMod)
+
+DarkSoulsIII.exe+3D6C0C0:
+dd 3F800000
+dd 3F800000
+dd 3F800000
+
+DarkSoulsIII.exe+1717B28:
+dd 3F800000
+
+DarkSoulsIII.exe+4727638:
+dd 3F800000
+
+DarkSoulsIII.exe+0212450:
+dd 3F800000
+
+DarkSoulsIII.exe+4786138:
+db 00

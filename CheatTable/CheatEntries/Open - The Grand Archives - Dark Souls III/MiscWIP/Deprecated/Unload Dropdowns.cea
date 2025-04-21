@@ -1,0 +1,9 @@
+[ENABLE]
+{$lua}
+WeaponDropdownRemover()
+RingDropdownRemover()
+
+[DISABLE]
+{$lua}
+WeaponDropdownRemover()
+RingDropdownRemover()

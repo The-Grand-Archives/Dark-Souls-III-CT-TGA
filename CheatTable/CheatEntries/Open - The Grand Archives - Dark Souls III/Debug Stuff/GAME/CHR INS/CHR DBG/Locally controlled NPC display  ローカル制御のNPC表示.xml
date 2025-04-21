@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337189979</ID>
+  <Description>"Locally controlled NPC display | ローカル制御のNPC表示"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>67</Offset>
+  </Offsets>
+</CheatEntry>

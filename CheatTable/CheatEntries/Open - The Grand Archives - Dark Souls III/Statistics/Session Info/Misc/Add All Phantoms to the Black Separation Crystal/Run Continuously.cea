@@ -1,0 +1,16 @@
+{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+function addAllPhantomsToBlackCrystal()
+  getAddressList().getMemoryRecordByDescription("Add All Phantoms to the Black Separation Crystal").Active = true
+end
+
+addAllPhantomsToBlackCrystalTimer = createTimer(getMainForm())
+addAllPhantomsToBlackCrystalTimer.Interval = 1000
+addAllPhantomsToBlackCrystalTimer.OnTimer = addAllPhantomsToBlackCrystal
+
+[DISABLE]
+if (addAllPhantomsToBlackCrystalTimer ~= nil) then
+  addAllPhantomsToBlackCrystalTimer.destroy()
+end

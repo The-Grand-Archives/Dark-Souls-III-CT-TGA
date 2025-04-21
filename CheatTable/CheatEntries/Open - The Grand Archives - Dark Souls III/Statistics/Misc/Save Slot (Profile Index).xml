@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>73030</ID>
+  <Description>"Save Slot (Profile Index)"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>A60</Offset>
+  </Offsets>
+</CheatEntry>

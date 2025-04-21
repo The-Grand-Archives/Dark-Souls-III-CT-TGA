@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337098526</ID>
+  <Description>"Gesture ID"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>148</Offset>
+    <Offset>BA0</Offset>
+  </Offsets>
+</CheatEntry>

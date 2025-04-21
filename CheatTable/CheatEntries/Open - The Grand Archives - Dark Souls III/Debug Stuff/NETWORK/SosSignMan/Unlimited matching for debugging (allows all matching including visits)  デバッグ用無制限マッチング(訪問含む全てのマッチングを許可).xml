@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096854</ID>
+  <Description>"Unlimited matching for debugging (allows all matching including visits) | デバッグ用無制限マッチング(訪問含む全てのマッチングを許可)"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4766BE5</Address>
+</CheatEntry>

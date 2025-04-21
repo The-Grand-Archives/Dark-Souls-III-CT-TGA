@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>92042</ID>
+  <Description>"Open"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="92039"/>
+    <id id="92043"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

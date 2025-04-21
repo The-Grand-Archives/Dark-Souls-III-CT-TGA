@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337098926</ID>
+  <Description>"UseTerritoryAvoidance | テリトリ回避を使用するか"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>37C</Offset>
+    <Offset>60</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

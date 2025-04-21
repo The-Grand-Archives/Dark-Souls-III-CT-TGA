@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>492926</ID>
+  <Description>"EventStop"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>SprjDbgEvent</Address>
+  <Offsets>
+    <Offset>D4</Offset>
+  </Offsets>
+</CheatEntry>

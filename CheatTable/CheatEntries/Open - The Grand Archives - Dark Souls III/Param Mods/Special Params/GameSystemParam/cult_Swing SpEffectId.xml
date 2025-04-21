@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099360</ID>
+  <Description>"cult_Swing SpEffectId"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>30</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

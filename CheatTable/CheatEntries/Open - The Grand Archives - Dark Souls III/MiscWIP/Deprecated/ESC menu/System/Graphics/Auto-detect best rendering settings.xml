@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337075980</ID>
+  <Description>"Auto-detect best rendering settings"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>0</Address>
+</CheatEntry>

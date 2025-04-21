@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337075972</ID>
+  <Description>"Mouse X-axis"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Reversed
+1:Normal
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>0</Address>
+</CheatEntry>

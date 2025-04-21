@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73311</ID>
+  <Description>"Nose/Forehead Ratio"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>736</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

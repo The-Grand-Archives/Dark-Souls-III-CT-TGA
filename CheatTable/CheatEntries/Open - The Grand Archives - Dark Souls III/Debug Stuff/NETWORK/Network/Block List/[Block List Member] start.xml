@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337080207</ID>
+  <Description>"[Block List Member] start"</Description>
+  <VariableType>String</VariableType>
+  <Length>16</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>08</Offset>
+    <Offset>108</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

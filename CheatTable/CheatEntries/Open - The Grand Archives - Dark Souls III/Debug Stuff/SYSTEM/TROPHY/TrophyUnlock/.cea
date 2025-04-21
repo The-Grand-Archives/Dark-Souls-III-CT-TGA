@@ -1,0 +1,23 @@
+[ENABLE]
+aobscanmodule(trophyAOB,$process,74 2c 80 7b 4c 00 74 26 c6 43 4d 00)
+define(trophy_func,trophyAOB-1D)
+alloc(TrophyUnlock,$100,DarkSoulsIII.exe)
+registerSymbol(TrophyUnlock)
+
+TrophyUnlock:
+sub rsp,28
+mov rcx,[CSTrophy]
+mov rcx,[rcx+08]
+lea rdx,[TrophyData]
+call trophy_func
+add rsp,28
+ret
+
+TrophyData:
+registerSymbol(TrophyData)
+dd 0000002A
+
+[DISABLE]
+dealloc(TrophyUnlock)
+unregisterSymbol(TrophyUnlock)
+unregisterSymbol(TrophyData)

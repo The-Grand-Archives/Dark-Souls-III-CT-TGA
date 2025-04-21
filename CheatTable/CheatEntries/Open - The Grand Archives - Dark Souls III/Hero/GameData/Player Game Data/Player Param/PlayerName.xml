@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337080903</ID>
+  <Description>"PlayerName"</Description>
+  <VariableType>String</VariableType>
+  <Length>16</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>88</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

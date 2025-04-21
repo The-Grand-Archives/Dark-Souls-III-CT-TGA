@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>1337081949</ID>
+  <Description>"Draw back lead navigation mesh (hit) | バックリードナビメッシュ(ヒット)を描画"</Description>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4743A99</Address>
+</CheatEntry>

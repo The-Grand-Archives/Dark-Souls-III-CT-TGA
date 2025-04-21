@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097817</ID>
+  <Description>"Invalidate per enemy? | 敵あたり無効化するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:OFF
+1:ON
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>48</Offset>
+  </Offsets>
+</CheatEntry>

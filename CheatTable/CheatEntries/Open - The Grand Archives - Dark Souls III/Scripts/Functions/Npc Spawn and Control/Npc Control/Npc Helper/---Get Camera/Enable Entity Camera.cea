@@ -1,0 +1,12 @@
+[ENABLE]
+
+
+[WorldChrManDbg]+150:
+readmem(NpcControl_Data+04,8)
+
+[DISABLE]
+
+[WorldChrManDbg]+150:
+
+db 00 00 00 00 00 00 00 00
+

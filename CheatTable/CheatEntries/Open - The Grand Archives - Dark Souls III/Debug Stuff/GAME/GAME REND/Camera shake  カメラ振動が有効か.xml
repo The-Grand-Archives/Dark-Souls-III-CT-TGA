@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337187834</ID>
+  <Description>"Camera shake | カメラ振動が有効か"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>F8</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

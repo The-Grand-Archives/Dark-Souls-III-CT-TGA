@@ -1,0 +1,31 @@
+<CheatEntry>
+  <ID>1337256172</ID>
+  <Description>"Start"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <GroupHeader>1</GroupHeader>
+  <Address>LockCamParamHelper+8</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337256171"/>
+    <id id="1337080349"/>
+    <id id="1337080350"/>
+    <id id="1337080351"/>
+    <id id="1337080352"/>
+    <id id="1337080353"/>
+    <id id="1337080354"/>
+    <id id="1337080355"/>
+    <id id="1337080356"/>
+    <id id="1337080357"/>
+    <id id="1337080358"/>
+    <id id="1337080359"/>
+    <id id="1337080360"/>
+    <id id="1337080361"/>
+    <id id="1337080362"/>
+    <id id="1337080363"/>
+    <id id="1337080364"/>
+    <id id="1337080365"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

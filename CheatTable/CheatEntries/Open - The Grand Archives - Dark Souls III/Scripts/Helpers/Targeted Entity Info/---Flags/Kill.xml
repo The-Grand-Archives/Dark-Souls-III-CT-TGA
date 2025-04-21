@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337045235</ID>
+  <Description>"Kill"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>1</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>1a0a</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337075966</ID>
+  <Description>"Input device"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337075970"/>
+    <id id="1337075972"/>
+    <id id="1337075971"/>
+    <id id="1337075973"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

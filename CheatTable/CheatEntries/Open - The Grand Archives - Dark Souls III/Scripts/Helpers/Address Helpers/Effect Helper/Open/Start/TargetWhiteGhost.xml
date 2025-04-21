@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337063867</ID>
+  <Description>"TargetWhiteGhost"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>7</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+015F</Address>
+</CheatEntry>

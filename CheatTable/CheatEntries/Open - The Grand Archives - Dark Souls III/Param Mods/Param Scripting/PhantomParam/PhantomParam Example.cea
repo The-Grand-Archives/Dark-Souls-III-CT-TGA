@@ -1,0 +1,30 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local WhitePhantom = PhantomParam:new("PhantomParamExample",1)
+WhitePhantom:Brightness(1.0)
+WhitePhantom:Brightness1(2.0)
+WhitePhantom:Brightness2(3.0)
+WhitePhantom:Brightness3(4.0)
+WhitePhantom:Brightness4(5.0)
+WhitePhantom:Red(1)
+WhitePhantom:Red1(2)
+WhitePhantom:Red2(3)
+WhitePhantom:Red3(4)
+WhitePhantom:Red4(5)
+WhitePhantom:Green(1)
+WhitePhantom:Green1(2)
+WhitePhantom:Green2(3)
+WhitePhantom:Green3(4)
+WhitePhantom:Green4(5)
+WhitePhantom:Blue(1)
+WhitePhantom:Blue1(2)
+WhitePhantom:Blue2(3)
+WhitePhantom:Blue3(4)
+WhitePhantom:Blue4(5)
+WhitePhantom:Fade(1.0)
+WhitePhantom:Fade1(2.0)
+WhitePhantom:FadeType(1)
+
+[DISABLE]
+paramUtils:restore("PhantomParamExample")

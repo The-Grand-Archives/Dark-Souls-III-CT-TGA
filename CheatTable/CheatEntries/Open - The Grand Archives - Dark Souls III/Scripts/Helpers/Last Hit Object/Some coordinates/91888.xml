@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>91888</ID>
+  <Description>""</Description>
+  <VariableType>Float</VariableType>
+  <Address>object_ptr</Address>
+  <Offsets>
+    <Offset>25C</Offset>
+  </Offsets>
+</CheatEntry>

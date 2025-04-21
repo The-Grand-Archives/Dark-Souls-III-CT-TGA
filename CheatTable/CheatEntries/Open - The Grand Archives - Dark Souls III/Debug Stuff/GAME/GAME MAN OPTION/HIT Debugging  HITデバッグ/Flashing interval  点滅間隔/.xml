@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337096699</ID>
+  <Description>"Flashing interval | 点滅間隔"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>CB4</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337096715"/>
+    <id id="1337096716"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

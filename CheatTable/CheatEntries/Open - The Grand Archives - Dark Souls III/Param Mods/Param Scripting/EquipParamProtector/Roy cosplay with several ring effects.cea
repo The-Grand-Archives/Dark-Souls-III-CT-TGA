@@ -1,0 +1,48 @@
+{
+  Author: Igromanru
+  Description: My Roy cosplay with several ring effects
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local infoTable = {
+ {
+  0x1C22260, -- Shira's Crown
+  112056000, --Untrue Dark Ring
+  -1,
+  -1,
+ },
+ {
+  0x53EC9E8, -- Drakeblood Armor
+  112004300, --Ring of Steel Protection +3
+  112000300, --Life Ring +3
+  112005200, --Flame Stoneplate Ring +2
+ },
+ {
+  0x1C9CB50, -- Sorcerer Gloves
+  112011100, --Poisonbite Ring +1
+  112019300, --Wolf Ring +3
+  112020000, --Leo Ring
+ },
+ {
+  0x58B1CF8, -- Dragonslayer Leggings
+  112042000, --Silvercat Ring
+  112045000, --Carthus Milkring
+  112058000, --Obscuring Ring Effect
+ }
+}
+
+for i,arr in pairs(infoTable) do
+  if(arr ~= nil) then
+    local object = EquipParamProtector:new("MyRoycosplaywithseveralringeffects",arr[1])
+	object:residentSpEffectId(arr[2])
+	object:residentSpEffectId2(arr[3])
+	object:residentSpEffectId3(arr[4])
+	object:weight(0)
+  end
+end
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("MyRoycosplaywithseveralringeffects")

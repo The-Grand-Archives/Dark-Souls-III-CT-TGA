@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337098953</ID>
+  <Description>"ResetCamRot"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>13D</Offset>
+    <Offset>60</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

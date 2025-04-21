@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>489805</ID>
+  <Description>"Crystal Sage"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>7</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>1</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>371a</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

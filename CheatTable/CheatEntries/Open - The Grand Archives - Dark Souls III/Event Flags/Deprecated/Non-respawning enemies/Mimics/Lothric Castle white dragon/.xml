@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>489803</ID>
+  <Description>"Lothric Castle white dragon"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>7</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>1</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>1449</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="489804"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,201 @@
+//replaces butcher's knife with revenant
+//additional overwrites: bloodlust wa, wa name, and effects associated with the wa
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local weapon = EquipParamWeapon:new("butcherrevenant",7070000)
+weapon:behaviorVariationId(2001)
+weapon:sortId(40901)
+weapon:weight(2)
+weapon:fixPrice(500)
+weapon:basicPrice(500)
+weapon:sellValue(500)
+weapon:correctStrength(5)
+weapon:correctAgility(25)
+weapon:correctMagic(0)
+weapon:correctFaith(0)
+weapon:physGuardCutRate(50)
+weapon:magGuardCutRate(50)
+weapon:fireGuardCutRate(50)
+weapon:thunGuardCutRate(50)
+weapon:spEffectBehaviorId1(6513)
+weapon:materialSetId(2200)
+weapon:originEquipWep(7070000)
+weapon:originEquipWep1(7070000)
+weapon:originEquipWep2(7070000)
+weapon:originEquipWep3(7070000)
+weapon:originEquipWep4(7070000)
+weapon:originEquipWep5(7070000)
+weapon:originEquipWep6(-1)
+weapon:originEquipWep7(-1)
+weapon:originEquipWep8(-1)
+weapon:originEquipWep9(-1)
+weapon:originEquipWep10(-1)
+weapon:iconId(4013)
+weapon:equipModelId(8003)
+weapon:attackBasePhysics(72)
+weapon:attackBaseMagic(0)
+weapon:attackBaseStamina(30)
+weapon:saWeaponDamage(15)
+weapon:guardAngle(60)
+weapon:staminaGuardDef(40)
+weapon:reinforceTypeId(4600)
+weapon:weaponCategory(0)
+weapon:wepmotionCategory(20)
+weapon:spAttribute(1)
+weapon:spAtkcategory(198)
+weapon:wepmotionOneHandId(0)
+weapon:wepmotionBothHandId(10)
+weapon:properStrength(6)
+weapon:properAgility(9)
+weapon:properMagic(0)
+weapon:properFaith(0)
+weapon:attackBaseParry(0)
+weapon:defenseBaseParry(0)
+weapon:guardBaseRepel(10)
+weapon:attackBaseRepel(66)
+weapon:guardCutCancelRate(0)
+weapon:poisonGuardResist(20)
+weapon:diseaseGuardResist(20)
+weapon:bloodGuardResist(20)
+weapon:curseGuardResist(20)
+weapon:guardLevel(2)
+weapon:isBlowAttackType(0)
+weapon:isThrustAttackType(1)
+weapon:isSlashAttackType(1)
+weapon:isNormalAttackType(0)
+weapon:isEnhance(0)
+weapon:Group0_DummyPolyId1(301)
+weapon:weaponPosition(20)
+weapon:patchByte(0x178,25)
+weapon:correctTypeDark(0)
+weapon:correctTypeMagic(1)
+weapon:darkGuardCutRate(50)
+weapon:AtkThrowEscapeA(10)
+weapon:AtkThrowEscapeB(10)
+weapon:swordArt(801)
+weapon:correctLuck(43)
+weapon:categoryName(1)
+weapon:AttackElementCorrect(10015)
+weapon:residentSpEffectId1(0)
+
+local selfPoison = SpEffectParam:new("butcherrevenant",130050400)
+selfPoison:poizonAttackPower(200)
+selfPoison:registBlood(0)
+selfPoison:stateInfo(2)
+selfPoison:effectEndurance(60)
+selfPoison:motionInterval(.5)
+selfPoison:changeHpRate(.1)
+selfPoison:changeHpPoint(4)
+selfPoison:effectSfx(40002)
+
+local selfToxic = SpEffectParam:new("butcherrevenant",130050401)
+selfToxic:registIllness(150)
+selfToxic:registBlood(0)
+selfToxic:stateInfo(5)
+selfToxic:effectEndurance(30)
+selfToxic:motionInterval(.25)
+selfToxic:changeHpRate(.4)
+selfToxic:changeHpPoint(10)
+selfToxic:effectSfx(40005)
+
+local newDamR = SpEffectParam:new("butcherrevenant",130050420)
+newDamR:changeHpRate(5)
+newDamR:changeHpPoint(5)
+
+local newDamL = SpEffectParam:new("butcherrevenant",130050450)
+newDamL:changeHpRate(5)
+newDamL:changeHpPoint(5)
+
+local newVfxR = SpEffectParam:new("butcherrevenant",130050421)
+newVfxR:effectEndurance(15)
+newVfxR:effectSfx(152)
+newVfxR:cycleOccurrenceSpEffectId(12240)
+
+local newVfxL = SpEffectParam:new("butcherrevenant",130050451)
+newVfxL:effectEndurance(15)
+newVfxL:effectSfx(5652)
+newVfxL:cycleOccurrenceSpEffectId(12240)
+
+local newBuffR = SpEffectParam:new("butcherrevenant",130050432)--atkOccurrenceSpEffectId(130050432) from speffectid 130050431
+newBuffR:registIllness(30)
+newBuffR:registBlood(0)
+newBuffR:stateInfo(5)
+newBuffR:effectEndurance(45)
+newBuffR:motionInterval(1)
+newBuffR:changeHpRate(0.15)
+newBuffR:changeHpPoint(30)
+newBuffR:effectSfx(40005)
+
+local newBuffL = SpEffectParam:new("butcherrevenant",130050462)--atkOccurrenceSpEffectId(130050462) from speffectid 130050461
+newBuffL:registIllness(30)
+newBuffL:registBlood(0)
+newBuffL:stateInfo(5)
+newBuffL:effectEndurance(45)
+newBuffL:motionInterval(1)
+newBuffL:changeHpRate(0.15)
+newBuffL:changeHpPoint(30)
+newBuffL:effectSfx(40002)
+
+local soulBoost = SpEffectParam:new("butcherrevenant", 12240)
+soulBoost:iconId(10031)
+soulBoost:effectEndurance(30)
+soulBoost:cycleOccurrenceSpEffectId(12241)
+soulBoost:stateInfo(76)
+soulBoost:soulRate(1.3)
+
+local itemBoost = SpEffectParam:new("butcherrevenant", 12241)
+itemBoost:iconId(10030)
+itemBoost:effectEndurance(30)
+itemBoost:stateInfo(66)
+itemBoost:itemDiscovery(0.75)
+
+local newInnatePoison = SpEffectParam:new("butcherrevenant", 6513)
+newInnatePoison:effectEndurance(90)
+newInnatePoison:registBlood(0)
+
+poison = createTimer(getMainForm())
+poison.Interval = 250
+poison.setEnabled(true)
+
+poison.OnTimer = function(timer)
+
+currentLuck = readBytes("[[GameDataMan]+10]+60")
+luckCalc = (-0.011759*currentLuck*currentLuck)+(1.51513*currentLuck)+1.7983
+newInnatePoison:poizonAttackPower(math.floor(luckCalc))
+
+end
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+1F4AE:
+dw 'Revenant',0
+[[[[MsgRepository]+8]+0]+C0]+C7FFC:
+dw 'A long lost relic of the toxic ruins deep within the profaned capital, this blade was once feared and revered.',A
+dw '',A
+dw 'It was once a sacrificial blade used by the sorcerers of the capital to fulfill their greed.',A
+dw '',A
+dw 'Skill: Forsaken',A
+dw 'Feed this ravenous blade one',27,'s lifeforce, granting a fragment of the user',27,'s desires in return.',0
+[[[[MsgRepository]+08]+00]+0640]+A436:
+dw 'Forsaken',0
+
+[DISABLE]
+{$lua}
+paramUtils:restore("butcherrevenant")
+if(poison ~= nil) then
+poison.setEnabled(false)
+end
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+1F4AE:
+dw 'Butcher Knife',0
+[[[[MsgRepository]+8]+0]+C0]+C7FFC:
+dw 'Butcher',27,'s knife with an oddly large blade wielded by the madwoman haunting the Road of Sacrifices.',A
+dw '',A
+dw 'Squarely-landed hits restore HP.',A
+dw '',A
+dw 'Back in the Undead Settlement, the woman acquired a taste for human flesh, of which she took glee in partaking.',A
+dw '',A
+dw 'Skill: Sharpen',A
+dw 'Sharpening the blade increases HP restored with each successful hit.',0
+[[[[MsgRepository]+08]+00]+0640]+A436:
+dw 'Bloodlust',0

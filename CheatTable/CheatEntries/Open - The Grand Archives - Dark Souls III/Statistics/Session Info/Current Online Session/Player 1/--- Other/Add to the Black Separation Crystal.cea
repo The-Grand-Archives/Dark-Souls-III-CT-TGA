@@ -1,0 +1,12 @@
+[ENABLE]
+{$lua}
+local v=readInteger("[[WorldChrMan]+80]+70")
+if not ((v == 0) or (v == 8)) then
+  error('invalid value')
+end
+{$asm}
+[[[WorldChrMan]+40]+38]+70:
+dd (int)1
+[DISABLE]
+
+

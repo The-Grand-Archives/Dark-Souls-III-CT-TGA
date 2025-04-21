@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097789</ID>
+  <Description>"Omitted update level judgment distance [m] (Ragdoll priority decrease distance) | 省略更新レベル判定距離[m]（ラグドール優先度低下距離）"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>44</Offset>
+  </Offsets>
+</CheatEntry>

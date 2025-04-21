@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096756</ID>
+  <Description>"Number of initial tickets for your wandering illusion | 自分の徘徊幻影初期チケット枚数"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>80</Offset>
+    <Offset>B98</Offset>
+  </Offsets>
+</CheatEntry>

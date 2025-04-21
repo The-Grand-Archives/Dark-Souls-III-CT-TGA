@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>72936</ID>
+  <Description>"Aldrich Faithful"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>D3</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

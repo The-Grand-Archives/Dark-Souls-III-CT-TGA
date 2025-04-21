@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081118</ID>
+  <Description>"Major display for debugging | デバッグ用メジャー表示"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <Color>C0C0C0</Color>
+  <VariableType>Byte</VariableType>
+  <Address>0</Address>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>2821</ID>
+  <Description>"Vordt of the Boreal Valley"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="2877"/>
+    <id id="2876"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081315</ID>
+  <Description>"Nares_Small_Large"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>77C</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

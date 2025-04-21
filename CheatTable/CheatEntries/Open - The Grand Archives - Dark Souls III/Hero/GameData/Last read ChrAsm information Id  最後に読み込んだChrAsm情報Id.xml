@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099168</ID>
+  <Description>"Last read ChrAsm information Id | 最後に読み込んだChrAsm情報Id"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>12C</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081310</ID>
+  <Description>"Nose_region_concave_convex"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>757</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

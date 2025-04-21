@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78158</ID>
+  <Description>"Cruifixion Woods"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>2D03</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

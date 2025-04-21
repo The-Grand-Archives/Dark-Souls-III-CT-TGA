@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>1337098377</ID>
+  <Description>"Blacksmith Hammer"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>10*1</Offset>
+    <Offset>28</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337098378"/>
+    <id id="1337098379"/>
+    <id id="1337098380"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

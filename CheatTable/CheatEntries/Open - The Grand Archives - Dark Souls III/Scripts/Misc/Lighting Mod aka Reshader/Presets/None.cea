@@ -1,0 +1,21 @@
+//Author: FROMSOFTWARE
+[ENABLE]
+BrightnessMod:
+dd (float)0.0
+
+DarkSoulsIII.exe+3D6C0C0:
+dd (float)1.0 (float)1.0 (float)1.0
+
+DarkSoulsIII.exe+1717B28:
+dd (float)1.0
+
+DarkSoulsIII.exe+4727638:
+dd (float)1.0
+
+DarkSoulsIII.exe+0212450:
+dd (float)1.0
+
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]

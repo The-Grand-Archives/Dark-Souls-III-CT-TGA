@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096612</ID>
+  <Description>"DT"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>SprjFlipper</Address>
+  <Offsets>
+    <Offset>361</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,21 @@
+<CheatEntry>
+  <ID>1337038972</ID>
+  <Description>"attackElementCorrectId (AttackElementCorrect)"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">-1:No scaling
+10000:Normal
+10014:Phys Fth 10014
+10015:Phys Lck
+12000:Phys Fth 12000
+13000:Phys Int
+15000:Phys Fth Lck
+16000:Normal 16000
+10010030:Magic Fth Int
+10131000:Man-grub's Staff
+10131100:Archdeacon's Great Staff
+10131200:Golden Ritual Spear
+10160420:Magic Str Dex
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+228</Address>
+</CheatEntry>

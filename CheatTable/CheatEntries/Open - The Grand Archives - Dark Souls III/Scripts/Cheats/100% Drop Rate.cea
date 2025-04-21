@@ -1,0 +1,31 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+define(AlwaysDropAOB,DarkSoulsIII.exe+E31179)
+alloc(newmem,32,AlwaysDropAOB)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  movzx r8d,word ptr [r9+40]
+  mov r8,1
+  jmp return
+
+AlwaysDropAOB:
+  jmp code
+return:
+registersymbol(AlwaysDropAOB)
+
+[DISABLE]
+AlwaysDropAOB:
+  db 45 0F B7 41 40
+unregistersymbol(AlwaysDropAOB)
+dealloc(newmem)
+
+
+

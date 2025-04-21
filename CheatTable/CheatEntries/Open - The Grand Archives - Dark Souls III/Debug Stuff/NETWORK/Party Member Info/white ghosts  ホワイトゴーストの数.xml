@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337081407</ID>
+  <Description>"white ghosts | ホワイトゴーストの数"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>D28</Offset>
+  </Offsets>
+</CheatEntry>

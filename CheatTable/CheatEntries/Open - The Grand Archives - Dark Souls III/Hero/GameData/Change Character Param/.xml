@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337097273</ID>
+  <Description>"Change Character Param"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337097373"/>
+    <id id="1337097276"/>
+    <id id="1337097275"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,32 @@
+<CheatEntry>
+  <ID>78520</ID>
+  <Description>"Invasion Type"</Description>
+  <DropDownList ReadOnly="1" DisplayValueAsItem="1">0:Host
+-1:Summon: White
+-2:Summon: Red
+-3:Invade: Red
+-4:Summon: Purple White
+-6:Covenant: Spear of the Church
+-7:Covenant: Blade of the Darkmoon
+-8:(Guardian of Rosaria)
+-9:Covenant: Watchdog of Farron
+-10:Covenant: Aldrich Faithful
+-11:(Avatar)
+-12:Arena: Battle Royal
+-13:(Umbasa White)
+-14:Summon: Sunlight White
+-15:Summon: Sunlight Dark
+-16:Summon: Purple Dark
+-17:Invade: Sunlight Dark
+-18:Invade: Purple Dark
+-19:(Force Join Session)
+-20:(Red Hunter)
+-21:Covenant: Blue Sentinel
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>C54</Offset>
+  </Offsets>
+</CheatEntry>

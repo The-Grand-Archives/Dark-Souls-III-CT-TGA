@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>1337081767</ID>
+  <Description>"Item Name"</Description>
+  <DropDownListLink>ITEM_ID</DropDownListLink>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>ItemGibData+04</Address>
+</CheatEntry>

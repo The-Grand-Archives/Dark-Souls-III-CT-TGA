@@ -1,0 +1,18 @@
+{
+  Author: Pavuk
+  Description: Behavior script tutorial
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local AoeRape = {
+     {40,0x128,"8E 3F 00 00"}, --40 your own body effect , "Curse sitting on your back" effect spawn behaviorID
+     {16270,0x98,"0C 56 42 06"}, --behavior swap , Curse sitting on your back->Pontiff Scythe AOE Frost Circle
+     {16270,0x156,"4E"}, --state info 78 for 0 damage from WA
+}
+paramUtils:paramIterator("SpEffectParam",AoeRape,"AoeRapeF")
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+  paramUtils:paramDepatcher("AoeRapeF")

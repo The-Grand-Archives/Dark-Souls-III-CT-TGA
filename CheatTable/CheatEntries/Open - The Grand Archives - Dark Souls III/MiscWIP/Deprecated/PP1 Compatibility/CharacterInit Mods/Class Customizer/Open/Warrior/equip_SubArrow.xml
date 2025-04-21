@@ -1,0 +1,20 @@
+<CheatEntry>
+  <ID>1337018743</ID>
+  <Description>"equip_SubArrow"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">-1:Empty
+400000:Standard Arrow
+400100:Fire Arrow
+400200:Poison Arrow
+400300:Large Arrow
+400400:Feather Arrow
+400500:Moonlight Arrow
+400600:Wood Arrow
+400700:Dark Arrow
+402000:Dragonslayer Greatarrow
+402200:Dragonslayer Lightning Arrow
+402300:Onislayer Greatarrow
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+38</Address>
+</CheatEntry>

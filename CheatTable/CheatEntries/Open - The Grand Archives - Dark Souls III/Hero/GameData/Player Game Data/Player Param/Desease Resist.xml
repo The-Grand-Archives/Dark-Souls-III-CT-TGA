@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080915</ID>
+  <Description>"Desease Resist"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>E8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

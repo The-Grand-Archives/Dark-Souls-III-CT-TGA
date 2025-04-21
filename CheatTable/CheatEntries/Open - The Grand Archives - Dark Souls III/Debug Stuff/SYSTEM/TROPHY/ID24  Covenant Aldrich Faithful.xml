@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337098144</ID>
+  <Description>"ID:24 &lt; Covenant: Aldrich Faithful"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Locked
+1:Unlocked
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>CSTrophy</Address>
+  <Offsets>
+    <Offset>102*18</Offset>
+    <Offset>40</Offset>
+    <Offset>8</Offset>
+  </Offsets>
+</CheatEntry>

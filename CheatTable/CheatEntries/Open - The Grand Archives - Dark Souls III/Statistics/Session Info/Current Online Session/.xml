@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>86747</ID>
+  <Description>"Current Online Session"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="86748"/>
+    <id id="86802"/>
+    <id id="86855"/>
+    <id id="86908"/>
+    <id id="86961"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

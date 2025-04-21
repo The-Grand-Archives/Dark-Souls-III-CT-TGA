@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081347</ID>
+  <Description>"Jaw_wide_thin"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>741</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

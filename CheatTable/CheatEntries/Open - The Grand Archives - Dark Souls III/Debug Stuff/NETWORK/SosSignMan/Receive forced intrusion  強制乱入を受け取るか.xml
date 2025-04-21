@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096849</ID>
+  <Description>"Receive forced intrusion? | 強制乱入を受け取るか "</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+458171D</Address>
+</CheatEntry>

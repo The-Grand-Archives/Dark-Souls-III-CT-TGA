@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>90654</ID>
+  <Description>"Speed of Walking Animations"</Description>
+  <Options moHideChildren="1"/>
+  <Color>000080</Color>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="90655"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>2931</ID>
+  <Description>"Rebirths (Go in order)"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="2932"/>
+    <id id="2933"/>
+    <id id="2934"/>
+    <id id="2935"/>
+    <id id="2938"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337096779</ID>
+  <Description>"Blood Messages (others) | 血文字(配信の)"</Description>
+  <Options moHideChildren="1"/>
+  <Color>C0C0C0</Color>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097740"/>
+    <id id="1337097741"/>
+    <id id="1337097744"/>
+    <id id="1337097742"/>
+    <id id="1337097745"/>
+    <id id="1337097749"/>
+    <id id="1337097748"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

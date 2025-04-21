@@ -1,0 +1,35 @@
+{
+	Author: Igromanru
+	Description: Makes projectiles not consumable
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local goods = {
+  0x40000122, --Kukri
+  0x40000124, --Firebomb
+  0x40000125, --Dung Pie
+  0x40000126, --Alluring Skull
+  0x40000128, --Undead Hunter Charm
+  0x40000129, --Black Firebomb
+  0x4000012B, --Rope Firebomb
+  0x4000012C, --Lightning Urn
+  0x4000012E, --Rope Black Firebomb
+  0x4000012F, --Stalk Dung Pie
+  0x40000130, --Duel Charm
+  0x40000136, --Throwing Knife
+  0x40000137, --Poison Throwing Knife
+}
+
+for i,id in pairs(goods) do
+  if(id ~= nil) then
+	local good = EquipParamGoods:new("MakesprojectilesnotconsumableUuidge2",id)
+	good:isConsume(0)
+  end
+end
+
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  paramUtils:restore("MakesprojectilesnotconsumableUuidge2")
+end

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097953</ID>
+  <Description>"Enable the landing SE matrix. | 着弾SEマトリクスを有効化。"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>188</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>1337257040</ID>
+  <Description>"Address"</Description>
+  <DropDownListLink>SP_EFFECT_VFX_ID</DropDownListLink>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>8 Bytes</VariableType>
+  <Address>SpEffectVfxParamHelper</Address>
+</CheatEntry>

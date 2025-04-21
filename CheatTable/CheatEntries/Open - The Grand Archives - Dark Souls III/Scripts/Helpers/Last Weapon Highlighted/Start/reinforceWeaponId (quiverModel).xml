@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337038936</ID>
+  <Description>"reinforceWeaponId (quiverModel)"</Description>
+  <DropDownList DisplayValueAsItem="1">63990000:Arrow Quiver
+67000000:Bolt Quiver
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+019C</Address>
+</CheatEntry>

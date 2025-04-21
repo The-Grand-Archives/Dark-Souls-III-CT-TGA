@@ -1,0 +1,20 @@
+{
+  Author: Fockboxx (from Reverse Souls)
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local Gonthcounter = {
+  {12470000,0x6C,"7C D7 01 00"}, -- Warmth; Perserverence Effect
+  {12470000,0x70,"1C 0C 00 00"}, -- Repair
+  {12470000,0x10,"00 3C 1C 46"}, -- Life of bullet
+  {12470000,0x44,"00 3C 1C 46"}, -- Range
+  {12470000,0x48,"00 00 80 BF"}, -- Range
+}
+paramUtils:paramIterator("Bullet",Gonthcounter,"PerserverenceWarmth") --Save values on 'enable'
+
+{$asm}
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+ paramUtils:paramDepatcher("PerserverenceWarmth") --Restore default values on 'disable'

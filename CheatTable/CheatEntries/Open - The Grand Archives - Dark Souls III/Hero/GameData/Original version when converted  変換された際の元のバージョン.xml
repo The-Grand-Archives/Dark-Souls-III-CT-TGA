@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337080864</ID>
+  <Description>"Original version when converted | 変換された際の元のバージョン"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>EC</Offset>
+  </Offsets>
+</CheatEntry>

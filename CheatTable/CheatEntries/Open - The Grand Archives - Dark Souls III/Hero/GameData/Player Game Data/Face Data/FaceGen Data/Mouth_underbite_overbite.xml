@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081333</ID>
+  <Description>"Mouth_underbite_overbite"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>74C</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

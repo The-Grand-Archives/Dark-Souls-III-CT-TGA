@@ -1,0 +1,39 @@
+//Start Character
+//Author : Pavuk
+//How to use : Start new game - > Open Script - > Choose ID and Change Class
+//Im not sure if some of these characters are safe to play with , you may get banned for using some of them
+[ENABLE]
+
+define(LoadCharacterID,DarkSoulsIII.exe+E1AC50)
+alloc(newmem,256,LoadCharacterID) //"DarkSoulsIII.exe"+E1AC50
+
+label(code)
+label(return)
+
+globalalloc(ChrParamID, 4)
+
+newmem:
+  push r15
+  mov r15d,[ChrParamID]
+  mov rcx,00
+code:
+  lea eax,[rcx+r15d]
+  pop r15
+  jmp return
+
+LoadCharacterID:
+  jmp newmem
+  nop
+return:
+registersymbol(LoadCharacterID)
+
+ChrParamID:
+  dd #3000
+
+[DISABLE]
+
+LoadCharacterID:
+  db 8D 81 B8 0B 00 00
+
+unregistersymbol(LoadCharacterID)
+dealloc(newmem)

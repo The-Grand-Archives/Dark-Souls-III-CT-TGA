@@ -1,0 +1,72 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+{
+  Author: LuceChrome
+}
+[ENABLE]
+ define(SignVac_AOB,DarkSoulsIII.exe+8500D3)
+ registersymbol(SignVac_AOB)
+ alloc(SignVac,1024,DarkSoulsIII.exe)
+ label(SignVac_Return)
+
+ SignVac:
+   movss xmm6,[rsi+08]
+
+   push rax
+   push rbx
+//mov rax,[[[[[["DarkSoulsIII.exe"+472D098]+5d8]+18]+18]+28]+80]
+   mov rbx,[WorldChrMan]
+   mov rbx,[rbx+40]
+   mov rbx,[rbx+28]
+   mov eax,[rbx+80]
+   mov [rsi+08],eax
+   mov eax,[rax+84]
+   mov [rsi+0C],eax
+   mov eax,[rax+88]
+   mov [rsi+10],eax
+   pop rbx
+   pop rax
+
+   jmp SignVac_Return
+
+ SignVac_AOB:
+ jmp SignVac
+ SignVac_Return:
+
+ //-------------------------------------------------- SignVac --------------------------------------------------//
+ [DISABLE]
+ SignVac_AOB:
+   db F3 0F 10 76 08
+ unregistersymbol(SignVac_AOB)
+ dealloc(SignVac)
+
+ //-------------------------------------------------- SignVac --------------------------------------------------//
+ {
+ // ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+8409A3
+
+ "DarkSoulsIII.exe"+840975: 40 32 FF              -  xor dil,dil
+ "DarkSoulsIII.exe"+840978: 48 8D 4C 24 40        -  lea rcx,[rsp+40]
+ "DarkSoulsIII.exe"+84097D: E8 8E 82 58 00        -  call DarkSoulsIII.exe+DC8C10
+ "DarkSoulsIII.exe"+840982: F6 40 2C 01           -  test byte ptr [rax+2C],01
+ "DarkSoulsIII.exe"+840986: 0F 84 40 01 00 00     -  je DarkSoulsIII.exe+840ACC
+ "DarkSoulsIII.exe"+84098C: 40 84 FF              -  test dil,dil
+ "DarkSoulsIII.exe"+84098F: 0F 84 37 01 00 00     -  je DarkSoulsIII.exe+840ACC
+ "DarkSoulsIII.exe"+840995: 41 0F 28 C8           -  movaps xmm1,xmm8
+ "DarkSoulsIII.exe"+840999: F3 0F 10 46 10        -  movss xmm0,[rsi+10]
+ "DarkSoulsIII.exe"+84099E: F3 0F 10 56 0C        -  movss xmm2,[rsi+0C]
+ // ---------- INJECTING HERE ----------
+ "DarkSoulsIII.exe"+8409A3: F3 0F 10 76 08        -  movss xmm6,[rsi+08]
+ // ---------- DONE INJECTING  ----------
+ "DarkSoulsIII.exe"+8409A8: 0F 14 F0              -  unpcklps xmm6,xmm0
+ "DarkSoulsIII.exe"+8409AB: 0F 14 D1              -  unpcklps xmm2,xmm1
+ "DarkSoulsIII.exe"+8409AE: 0F 14 F2              -  unpcklps xmm6,xmm2
+ "DarkSoulsIII.exe"+8409B1: F3 0F 10 4E 14        -  movss xmm1,[rsi+14]
+ "DarkSoulsIII.exe"+8409B6: 48 8D 4C 24 50        -  lea rcx,[rsp+50]
+ "DarkSoulsIII.exe"+8409BB: E8 00 C1 7D FF        -  call DarkSoulsIII.exe+1CAC0
+ "DarkSoulsIII.exe"+8409C0: 0F 28 1D B9 29 17 03  -  movaps xmm3,[DarkSoulsIII.exe+39B3380]
+ "DarkSoulsIII.exe"+8409C7: 0F 28 C3              -  movaps xmm0,xmm3
+ "DarkSoulsIII.exe"+8409CA: 0F C6 C3 55           -  shufps xmm0,xmm3,55
+ "DarkSoulsIII.exe"+8409CE: 0F 59 40 10           -  mulps xmm0,[rax+10]
+}

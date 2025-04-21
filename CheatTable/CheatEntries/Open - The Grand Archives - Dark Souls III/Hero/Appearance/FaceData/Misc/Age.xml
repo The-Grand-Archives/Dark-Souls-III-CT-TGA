@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>73330</ID>
+  <Description>"Age"</Description>
+  <DropDownList DisplayValueAsItem="1">0:Young
+1:Mature
+2:Aged
+3:Gael's Beard
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6B8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

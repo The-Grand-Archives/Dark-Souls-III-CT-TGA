@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096688</ID>
+  <Description>"Did you return without operation for a certain time | 一定時間無操作帰還をしたか"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>AC8</Offset>
+  </Offsets>
+</CheatEntry>

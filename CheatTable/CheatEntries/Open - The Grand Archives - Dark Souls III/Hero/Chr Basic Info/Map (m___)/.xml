@@ -1,0 +1,17 @@
+<CheatEntry>
+  <ID>1337097180</ID>
+  <Description>"Map (m??_??_??_??)"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1FE0</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337097757"/>
+    <id id="1337097760"/>
+    <id id="1337097759"/>
+    <id id="1337097758"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

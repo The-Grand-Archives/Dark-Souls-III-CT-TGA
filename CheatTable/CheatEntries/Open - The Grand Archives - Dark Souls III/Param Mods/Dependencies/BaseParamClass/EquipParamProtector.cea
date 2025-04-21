@@ -1,0 +1,386 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+--[[START EquipParamProtector class]]--
+EquipParamProtector = BaseParamClass:new()
+
+function EquipParamProtector:new(uuid, id, address)
+	local o = {}
+	self.__index = self
+	setmetatable(o, self)
+
+	o:init("EquipParamProtector", uuid, id, address)
+	return o
+end
+
+function EquipParamProtector:sortId(value)
+	self:patch4Byte(0x0, value)
+end
+
+function EquipParamProtector:wanderingEquipId(value)
+	self:patch4Byte(0x4, value)
+end
+
+function EquipParamProtector:vagrantItemLotId(value)
+	self:patch4Byte(0x8, value)
+end
+
+function EquipParamProtector:vagrantBonusEneDropItemLotId(value)
+	self:patch4Byte(0xC, value)
+end
+
+function EquipParamProtector:vagrantItemEneDropItemLotId(value)
+	self:patch4Byte(0x10, value)
+end
+
+--Prices
+function EquipParamProtector:fixPrice(value)
+	self:patch4Byte(0x14, value)
+end
+
+function EquipParamProtector:basicPrice(value)
+	self:patch4Byte(0x18, value)
+end
+
+function EquipParamProtector:sellValue(value)
+	self:patch4Byte(0x1C, value)
+end
+
+function EquipParamProtector:weight(value)
+	self:patchFloat(0x20, value)
+end
+
+--Effect On Equip
+function EquipParamProtector:residentSpEffectId(value)
+	self:patch4Byte(0x24, value)
+end
+
+function EquipParamProtector:residentSpEffectId2(value)
+	self:patch4Byte(0x28, value)
+end
+
+function EquipParamProtector:residentSpEffectId3(value)
+	self:patch4Byte(0x2C, value)
+end
+
+
+function EquipParamProtector:materialSetId(value)
+	self:patch4Byte(0x30, value)
+end
+
+function EquipParamProtector:partsDamageRate(value)
+	self:patchFloat(0x34, value)
+end
+
+function EquipParamProtector:corectSARecover(value)
+	self:patchFloat(0x38, value)
+end
+
+--Origin Equip Pros
+function EquipParamProtector:originEquipPro(value)
+	self:patch4Byte(0x3C, value)
+end
+
+function EquipParamProtector:originEquipPro1(value)
+	self:patch4Byte(0x40, value)
+end
+
+function EquipParamProtector:originEquipPro2(value)
+	self:patch4Byte(0x44, value)
+end
+
+function EquipParamProtector:originEquipPro3(value)
+	self:patch4Byte(0x48, value)
+end
+
+function EquipParamProtector:originEquipPro4(value)
+	self:patch4Byte(0x4C, value)
+end
+
+function EquipParamProtector:originEquipPro5(value)
+	self:patch4Byte(0x50, value)
+end
+
+function EquipParamProtector:originEquipPro6(value)
+	self:patch4Byte(0x54, value)
+end
+
+function EquipParamProtector:originEquipPro7(value)
+	self:patch4Byte(0x58, value)
+end
+
+function EquipParamProtector:originEquipPro8(value)
+	self:patch4Byte(0x5C, value)
+end
+
+function EquipParamProtector:originEquipPro9(value)
+	self:patch4Byte(0x60, value)
+end
+
+function EquipParamProtector:originEquipPro10(value)
+	self:patch4Byte(0x64, value)
+end
+
+function EquipParamProtector:originEquipPro11(value)
+	self:patch4Byte(0x68, value)
+end
+
+function EquipParamProtector:originEquipPro12(value)
+	self:patch4Byte(0x6C, value)
+end
+
+function EquipParamProtector:originEquipPro13(value)
+	self:patch4Byte(0x70, value)
+end
+
+function EquipParamProtector:originEquipPro14(value)
+	self:patch4Byte(0x74, value)
+end
+
+function EquipParamProtector:originEquipPro15(value)
+	self:patch4Byte(0x78, value)
+end
+
+--faceScale
+
+function EquipParamProtector:faceScaleM_ScaleX(value)
+	self:patchFloat(0x7C, value)
+end
+
+function EquipParamProtector:faceScaleM_ScaleZ(value)
+	self:patchFloat(0x80, value)
+end
+
+function EquipParamProtector:faceScaleM_MaxX(value)
+	self:patchFloat(0x84, value)
+end
+
+function EquipParamProtector:faceScaleM_MaxZ(value)
+	self:patchFloat(0x88, value)
+end
+
+function EquipParamProtector:faceScaleF_ScaleX(value)
+	self:patchFloat(0x8C, value)
+end
+
+function EquipParamProtector:faceScaleF_ScaleZ(value)
+	self:patchFloat(0x90, value)
+end
+
+function EquipParamProtector:faceScaleF_MaxX(value)
+	self:patchFloat(0x94, value)
+end
+
+function EquipParamProtector:faceScaleF_MaxZ(value)
+	self:patchFloat(0x98, value)
+end
+
+function EquipParamProtector:qwcId(value)
+	self:patch4Byte(0x9C, value)
+end
+
+
+function EquipParamProtector:equipModelId(value)
+	self:patch2Byte(0xA0, value)
+end
+
+function EquipParamProtector:iconIdM(value)
+	self:patch2Byte(0xA2, value)
+end
+
+function EquipParamProtector:iconIdF(value)
+	self:patch4Byte(0xA4, value)
+end
+
+function EquipParamProtector:knockbackBounceRate(value)
+	self:patch2Byte(0xA8, value)
+end
+
+--Durability
+function EquipParamProtector:durability(value)
+	self:patch2Byte(0xAA, value)
+end
+
+function EquipParamProtector:durabilityMax(value)
+	self:patch2Byte(0xAC, value)
+end
+
+function EquipParamProtector:saDurability(value)
+	self:patch2Byte(0xAE, value)
+end
+
+
+function EquipParamProtector:defFlickPower(value)
+	self:patch2Byte(0xB0, value)
+end
+
+function EquipParamProtector:defensePhysics(value)
+	self:patch2Byte(0xB2, value)
+end
+
+function EquipParamProtector:defenseMagic(value)
+	self:patch2Byte(0xB4, value)
+end
+
+function EquipParamProtector:defenseFire(value)
+	self:patch2Byte(0xB6, value)
+end
+
+function EquipParamProtector:defenseThunder(value)
+	self:patch2Byte(0xB8, value)
+end
+
+function EquipParamProtector:defenseSlash(value)
+	self:patch2Byte(0xBA, value)
+end
+
+function EquipParamProtector:defenseBlow(value)
+	self:patch2Byte(0xBC, value)
+end
+
+function EquipParamProtector:defenseThrust(value)
+	self:patch2Byte(0xBE, value)
+end
+
+
+--Resistence
+function EquipParamProtector:resistPoison(value)
+	self:patch2Byte(0xC0, value)
+end
+
+function EquipParamProtector:resistDisease(value)
+	self:patch2Byte(0xC2, value)
+end
+
+function EquipParamProtector:resistBlood(value)
+	self:patch2Byte(0xC4, value)
+end
+
+function EquipParamProtector:resistCurse(value)
+	self:patch2Byte(0xC6, value)
+end
+
+function EquipParamProtector:reinforceTypeId(value)
+	self:patch2Byte(0xC8, value)
+end
+
+function EquipParamProtector:trophySGradeId(value)
+	self:patch2Byte(0xCA, value)
+end
+
+function EquipParamProtector:shopLv(value)
+	self:patch2Byte(0xCC, value)
+end
+
+function EquipParamProtector:knockbackParamId(value)
+	self:patchByte(0xCE, value)
+end
+
+function EquipParamProtector:flickDamageCutRate(value)
+	self:patchByte(0xCF, value)
+end
+
+function EquipParamProtector:equipModelCategory(value)
+	self:patchByte(0xD0, value)
+end
+
+function EquipParamProtector:equipModelGender(value)
+	self:patchByte(0xD0, value)
+end
+
+function EquipParamProtector:protectorCategory(value)
+    self:patchByte(0xD2, value)
+end
+
+function EquipParamProtector:defenseMaterial(value)
+    self:patchByte(0xD3, value)
+end
+
+function EquipParamProtector:defenseMaterialSfx(value)
+    self:patchByte(0xD4, value)
+end
+
+function EquipParamProtector:partsDmgType(value)
+    self:patchByte(0xD5, value)
+end
+
+function EquipParamProtector:defenseMaterial_Weak(value)
+    self:patchByte(0xD6, value)
+end
+
+function EquipParamProtector:defenseMaterialSfx_Weak(value)
+    self:patchByte(0xD7, value)
+end
+
+
+function EquipParamProtector:isDiscard(value)
+    self:patchBinary(0xDF, value, 0)
+end
+
+function EquipParamProtector:isDrop(value)
+    self:patchBinary(0xDF, value, 1)
+end
+
+
+
+--Defense
+function EquipParamProtector:absorbtionPhysical(value)
+	self:patchFloat(0xE0, value)
+end
+
+function EquipParamProtector:absorbtionSlash(value)
+	self:patchFloat(0xE4, value)
+end
+
+function EquipParamProtector:absorbtionStrike(value)
+	self:patchFloat(0xE8, value)
+end
+
+function EquipParamProtector:absorbtionThrust(value)
+	self:patchFloat(0xEC, value)
+end
+
+function EquipParamProtector:absorbtionMagic(value)
+	self:patchFloat(0xF0, value)
+end
+
+function EquipParamProtector:absorbtionFire(value)
+	self:patchFloat(0xF4, value)
+end
+
+function EquipParamProtector:absorbtionThunder(value)
+	self:patchFloat(0xF8, value)
+end
+
+
+function EquipParamProtector:poise(value)
+	self:patchFloat(0x110, value)
+end
+
+function EquipParamProtector:absorbtionDark(value)
+	self:patchFloat(0x118, value)
+end
+
+function EquipParamProtector:defenseDark(value)
+	self:patch2Byte(0x11C, value)
+end
+
+function EquipParamProtector:UpperArmID(value)
+	self:patch4Byte(0x124, value)
+end
+
+function EquipParamProtector:shopPrice(value)
+	self:patch4Byte(0x128, value)
+end
+
+function EquipParamProtector:resistFrost(value)
+	self:patch2Byte(0x12C, value)
+end
+
+--[[END EquipParamProtector class]]--
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+

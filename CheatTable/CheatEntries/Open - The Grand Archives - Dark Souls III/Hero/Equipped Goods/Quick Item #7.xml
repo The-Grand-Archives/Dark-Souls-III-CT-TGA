@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337081696</ID>
+  <Description>"Quick Item #7"</Description>
+  <Options moHideChildren="1"/>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>5C4</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

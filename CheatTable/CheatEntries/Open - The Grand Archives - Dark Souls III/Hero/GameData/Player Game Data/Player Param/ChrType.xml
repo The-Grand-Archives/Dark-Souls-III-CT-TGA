@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337080902</ID>
+  <Description>"ChrType"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">0:Host
+1:Phantom
+2:Dark Spirit
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>84</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099352</ID>
+  <Description>"Hollow Reset Ritual Sword Id"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>50</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

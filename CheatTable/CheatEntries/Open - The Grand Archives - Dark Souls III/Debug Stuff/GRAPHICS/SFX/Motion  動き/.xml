@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337096674</ID>
+  <Description>"Motion | 動き"</Description>
+  <Options moHideChildren="1"/>
+  <Color>C0C0C0</Color>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337096680"/>
+    <id id="1337096683"/>
+    <id id="1337096682"/>
+    <id id="1337096681"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

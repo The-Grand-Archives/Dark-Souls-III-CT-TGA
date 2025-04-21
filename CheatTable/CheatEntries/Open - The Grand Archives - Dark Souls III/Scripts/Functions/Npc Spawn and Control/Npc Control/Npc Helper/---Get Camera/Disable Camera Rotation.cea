@@ -1,0 +1,6 @@
+[ENABLE]
+DarkSoulsIII.exe+516BAE:
+db 90 90 90 90 90 90 90
+[DISABLE]
+DarkSoulsIII.exe+516BAE:
+  db 0F 29 86 E0 00 00 00

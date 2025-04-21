@@ -1,0 +1,37 @@
+[ENABLE]
+
+aobscanmodule(MessEditAOB,DarkSoulsIII.exe,48 63 8B 60 0A 00 00 48 03 C9 48 8D) // should be unique
+alloc(newmem,$1000,"DarkSoulsIII.exe"+A51467)
+
+label(code)
+label(return)
+label(MesData)
+registersymbol(MesData)
+
+newmem:
+
+code:
+  lea rcx,[rbx+00000A60]
+  mov [MesData],rcx
+  movsxd  rcx,dword ptr [rbx+00000A60]
+  jmp return
+  MesData:
+
+MessEditAOB:
+  jmp code
+  nop
+  nop
+return:
+registersymbol(MessEditAOB)
+
+[DISABLE]
+
+MessEditAOB:
+  db 48 63 8B 60 0A 00 00
+
+unregistersymbol(MessEditAOB)
+unregistersymbol(MesData)
+dealloc(newmem)
+
+
+

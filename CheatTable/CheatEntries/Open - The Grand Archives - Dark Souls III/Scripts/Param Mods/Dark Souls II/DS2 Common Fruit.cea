@@ -1,0 +1,52 @@
+//Written by Boblord
+//replaces concord well kept with common fruit from ds2
+
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local WellKept = EquipParamGoods:new("commonfruit",369)
+WellKept:refId(155)
+WellKept:goodsUseAnim(0)
+WellKept:iconId(5004) -- icon: chloro ring
+WellKept:sfxId1(301021) -- green blossom buff effect
+WellKept:maxNum(10) -- holds up to 10 at a time
+
+local PoisonToxinResistBuff = SpEffectParam:new("commonfruit",155)
+PoisonToxinResistBuff:effectEndurance(90)
+PoisonToxinResistBuff:effectEndurance(90)
+PoisonToxinResistBuff:motionInterval(0)
+PoisonToxinResistBuff:effectSfx(75)
+PoisonToxinResistBuff:patch4Byte(0x204,200)
+PoisonToxinResistBuff:patch4Byte(0x208,200)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+29D0:
+dw 'Common Fruit',0
+[[[[MsgRepository]+8]+0]+C0]+C2C8:
+dw 'A spotted fruit.',A
+dw 'Temporarily boosts poison and toxic resist.',A
+dw '',A
+dw 'This common fruit has no taste,',A
+dw 'but when facing a true test of mettle,',A
+dw 'it',27,'s benefits could make the difference',A
+dw 'between life and death.',0
+[[[[MsgRepository]+08]+00]+A0]+3912:
+dw 'Boosts poison and toxic resist',0
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("commonfruit")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+29D0:
+dw 'Proof of a Concord Well Kept',0
+[[[[MsgRepository]+8]+0]+C0]+C2C8:
+dw 'Distinguished proof that one has hunted the enemies of the gods, as per the ancient accord with the Way of Blue.',A
+dw '',A
+dw 'The layered ear of a dark spirit is the mark of a particularly guilty offender, one who has flagrantly violated one god or another.',A
+dw '',A
+dw 'Use to acquire two Proof of a Concord Kept.',0
+[[[[MsgRepository]+08]+00]+A0]+3912:
+dw 'Proof a dark spirit was felled by a Blue Sentinel',0
+

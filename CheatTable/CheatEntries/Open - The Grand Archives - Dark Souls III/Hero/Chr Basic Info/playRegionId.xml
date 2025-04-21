@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337098019</ID>
+  <Description>"playRegionId"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1ABC</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,60 @@
+<CheatEntry>
+  <ID>1337033289</ID>
+  <Description>"Start"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>last_ring_ptr</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337045553"/>
+    <id id="1337045554"/>
+    <id id="1337045555"/>
+    <id id="1337045556"/>
+    <id id="1337045557"/>
+    <id id="1337045558"/>
+    <id id="1337045559"/>
+    <id id="1337045560"/>
+    <id id="1337045561"/>
+    <id id="1337045562"/>
+    <id id="1337045563"/>
+    <id id="1337045564"/>
+    <id id="1337045565"/>
+    <id id="1337045566"/>
+    <id id="1337045567"/>
+    <id id="1337045568"/>
+    <id id="1337045569"/>
+    <id id="1337045570"/>
+    <id id="1337045571"/>
+    <id id="1337045572"/>
+    <id id="1337045573"/>
+    <id id="1337045574"/>
+    <id id="1337045575"/>
+    <id id="1337045576"/>
+    <id id="1337045577"/>
+    <id id="1337045578"/>
+    <id id="1337045579"/>
+    <id id="1337045580"/>
+    <id id="1337045581"/>
+    <id id="1337045582"/>
+    <id id="1337045583"/>
+    <id id="1337045584"/>
+    <id id="1337045585"/>
+    <id id="1337045586"/>
+    <id id="1337045587"/>
+    <id id="1337045588"/>
+    <id id="1337045589"/>
+    <id id="1337045590"/>
+    <id id="1337045591"/>
+    <id id="1337045592"/>
+    <id id="1337045593"/>
+    <id id="1337045594"/>
+    <id id="1337045595"/>
+    <id id="1337045596"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337081052</ID>
+  <Description>"Blood Lv"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:0
+1:1
+2:2
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>F</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337045698</ID>
+  <Description>"arrowSlotEquipable"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+100+1</Address>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081280</ID>
+  <Description>"Brow_Ride_Inner_down_up"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>723</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

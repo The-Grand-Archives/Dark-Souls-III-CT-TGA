@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099347</ID>
+  <Description>"Character Turning Animation Right (°180)"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>10</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

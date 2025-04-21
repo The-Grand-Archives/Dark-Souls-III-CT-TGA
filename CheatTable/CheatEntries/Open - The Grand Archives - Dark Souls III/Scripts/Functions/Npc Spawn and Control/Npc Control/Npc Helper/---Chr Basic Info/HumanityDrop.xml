@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337190176</ID>
+  <Description>"HumanityDrop"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>1ABC</Offset>
+  </Offsets>
+</CheatEntry>

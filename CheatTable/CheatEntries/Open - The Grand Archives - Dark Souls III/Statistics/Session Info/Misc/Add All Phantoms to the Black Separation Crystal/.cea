@@ -1,0 +1,24 @@
+{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+function setInvadersToFriendlyPhantoms()
+  -- if we're not the host, don't do anything
+  if (readInteger("[[WorldChrMan]+80]+70") ~= 0) then
+    return
+  end
+  local playerOffsets = {"38", "70", "A8", "E0", "118"}
+  for _, playerOffset in ipairs(playerOffsets) do
+    local characterTypeAddress = string.format("[[[WorldChrMan]+40]+%s]+70", playerOffset)
+    local teamTypeAddress = string.format("[[[WorldChrMan]+40]+%s]+74", playerOffset)
+    -- if team type is not white phantom, change character type to white phantom
+    if (readInteger(teamTypeAddress) ~= 2) then
+      writeInteger(characterTypeAddress, 1)
+    end
+  end
+end
+
+setInvadersToFriendlyPhantoms()
+disableMemrec(memrec)
+
+[DISABLE]

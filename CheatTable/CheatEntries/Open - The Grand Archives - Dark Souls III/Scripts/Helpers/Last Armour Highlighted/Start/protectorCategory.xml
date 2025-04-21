@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337024038</ID>
+  <Description>"protectorCategory"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">0:Head
+1:Chest
+2:Hands
+3:Legs
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>+D2</Address>
+</CheatEntry>

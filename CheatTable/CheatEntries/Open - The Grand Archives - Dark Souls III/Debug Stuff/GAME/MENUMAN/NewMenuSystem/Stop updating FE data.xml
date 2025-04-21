@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097658</ID>
+  <Description>"Stop updating FE data."</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:False
+1:True
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>NewMenuSystem</Address>
+  <Offsets>
+    <Offset>3085</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,22 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local TransposeIds = {
+30000, 30001, 30020, 30021, 30030, 30031, 30040, 30041, 30050, 30051, 30060,
+30061, 30070, 30071, 30080, 30081, 30090, 30091, 30092, 30110, 30111, 30120,
+30121, 30130, 30131, 30140, 30141, 30153, 30160, 30161, 30170, 30171, 30180,
+30181, 30190, 30191, 30200, 30201, 30210, 30211, 30220, 30221, 30230, 30231,
+30240, 30241, 30250, 30251
+}
+
+for i,id in ipairs(TransposeIds) do
+local Inventory = ShopLineupParam:new("FreeTranspose",id)
+Inventory:Value(0)
+Inventory:MtrlId(-1)
+Inventory:qwcID(-1)
+end
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("FreeTranspose")

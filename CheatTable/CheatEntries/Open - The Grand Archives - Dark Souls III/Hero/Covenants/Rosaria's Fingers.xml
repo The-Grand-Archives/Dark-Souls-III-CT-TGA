@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>72888</ID>
+  <Description>"Rosaria's Fingers"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>D1</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

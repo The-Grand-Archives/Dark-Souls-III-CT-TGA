@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081305</ID>
+  <Description>"Nose_nostrils_small_large"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>755</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

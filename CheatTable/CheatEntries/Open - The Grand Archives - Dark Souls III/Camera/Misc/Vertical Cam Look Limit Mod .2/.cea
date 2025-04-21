@@ -1,0 +1,238 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.0")
+{$asm}
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+define(lookUpRawAngleReadAOB,DarkSoulsIII.exe+514A2A)
+registersymbol(lookUpRawAngleReadAOB)
+
+label(fCusLookUpAngle)
+registersymbol(fCusLookUpAngle)
+
+alloc(newmem,2048,lookUpRawAngleReadAOB) //"DarkSoulsIII.exe"+50F2EA)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+movss xmm0,[fCusLookUpAngle]
+jmp exit
+
+originalcode:
+movss xmm0,[rcx+04]
+
+exit:
+jmp returnhere
+
+///
+fCusLookUpAngle:
+dd (float)-70
+///
+
+lookUpRawAngleReadAOB: //"DarkSoulsIII.exe"+50F2EA:
+jmp newmem
+returnhere:
+
+///*************************************************///
+
+define(lookDownCalAngleCmpConstAOB,DarkSoulsIII.exe+5166A5)
+registersymbol(lookDownCalAngleCmpConstAOB)
+
+label(fCusLookDownAngle)
+registersymbol(fCusLookDownAngle)
+
+alloc(newmem1,2048,lookDownCalAngleCmpConstAOB) //"DarkSoulsIII.exe"+510F65)
+label(returnhere1)
+label(originalcode1)
+label(exit1)
+
+newmem1: //this is allocated memory, you have read,write,execute access
+//place your code here
+fld dword ptr [fCusLookDownAngle]
+fmul dword ptr [fCusLookDownAngle+4]
+fstp dword ptr [fCusLookDownAngle+8]
+push rdi
+lea rdi,[fCusLookDownAngle+8]
+
+originalcode1:
+comiss xmm1,[rdi]
+cmova rax,rdi
+pop rdi
+//lea rdi,[rsi+200]
+
+exit1:
+jmp returnhere1
+
+///
+fCusLookDownAngle:
+dd (float)89
+dd 3C8EFA35
+dd (float)1.396262169
+///
+
+lookDownCalAngleCmpConstAOB: //"DarkSoulsIII.exe"+510F65:
+jmp newmem1
+nop
+nop
+returnhere1:
+
+///*************************************************///
+
+define(lookDownCalAngleCmpOnCamMoveAOB,DarkSoulsIII.exe+5169A9)
+registersymbol(lookDownCalAngleCmpOnCamMoveAOB)
+
+alloc(newmem2,2048,lookDownCalAngleCmpOnCamMoveAOB) //"DarkSoulsIII.exe"+511269)
+label(returnhere2)
+label(originalcode2)
+label(exit2)
+
+newmem2: //this is allocated memory, you have read,write,execute access
+//place your code here
+push rdi
+lea rdi,[fCusLookDownAngle+8]
+
+originalcode2:
+comiss xmm3,[rdi]
+cmova rbx,rdi
+pop rdi
+
+exit2:
+jmp returnhere2
+
+///
+
+lookDownCalAngleCmpOnCamMoveAOB: //"DarkSoulsIII.exe"+511269:
+jmp newmem2
+nop
+nop
+returnhere2:
+
+///*************************************************///
+
+define(aimUpRawAngleReadAOB,DarkSoulsIII.exe+50DDF6)
+registersymbol(aimUpRawAngleReadAOB)
+
+label(fCusAimLookUpAngle)
+registersymbol(fCusAimLookUpAngle)
+
+alloc(newmem3,2048,aimUpRawAngleReadAOB) //"DarkSoulsIII.exe"+5086B6)
+label(returnhere3)
+label(originalcode3)
+label(exit3)
+
+newmem3: //this is allocated memory, you have read,write,execute access
+//place your code here
+movss xmm0,[fCusAimLookUpAngle]
+
+originalcode3:
+mulss xmm0,xmm6
+andps xmm2,xmm1
+
+exit3:
+jmp returnhere3
+
+///
+fCusAimLookUpAngle:
+dd (float)-90
+///
+
+aimUpRawAngleReadAOB: //"DarkSoulsIII.exe"+5086B6:
+jmp newmem3
+nop
+nop
+returnhere3:
+
+///*************************************************///
+
+define(aimDownRawAngleReadAOB,DarkSoulsIII.exe+50DE19)
+registersymbol(aimDownRawAngleReadAOB)
+
+label(fCusAimLookDownAngle)
+registersymbol(fCusAimLookDownAngle)
+
+alloc(newmem4,2048,aimDownRawAngleReadAOB) //"DarkSoulsIII.exe"+5086D9)
+label(returnhere4)
+label(originalcode4)
+label(exit4)
+
+newmem4: //this is allocated memory, you have read,write,execute access
+//place your code here
+movss xmm1,[fCusAimLookDownAngle]
+
+originalcode4:
+mulss xmm1,xmm6
+subps xmm5,xmm2
+
+exit4:
+jmp returnhere4
+
+///
+fCusAimLookDownAngle:
+dd (float)90
+///
+
+aimDownRawAngleReadAOB: //"DarkSoulsIII.exe"+5086D9:
+jmp newmem4
+nop
+nop
+returnhere4:
+
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+lookUpRawAngleReadAOB: //"DarkSoulsIII.exe"+50F2EA:
+db F3 0F 10 41 04
+//Alt: movss xmm0,[rcx+04]
+unregistersymbol(lookUpRawAngleReadAOB)
+
+unregistersymbol(fCusLookUpAngle)
+
+///*************************************************///
+
+dealloc(newmem1)
+lookDownCalAngleCmpConstAOB: //"DarkSoulsIII.exe"+510F65:
+db 0F 2F 0F 48 0F 47 C7
+//Alt: comiss xmm1,[rdi]
+//Alt: cmova rax,rdi
+unregistersymbol(lookDownCalAngleCmpConstAOB)
+
+unregistersymbol(fCusLookDownAngle)
+
+///*************************************************///
+
+dealloc(newmem2)
+lookDownCalAngleCmpOnCamMoveAOB: //"DarkSoulsIII.exe"+511269:
+db 0F 2F 1F 48 0F 47 DF
+//Alt: comiss xmm3,[rdi]
+//Alt: cmova rbx,rdi
+unregistersymbol(lookDownCalAngleCmpOnCamMoveAOB)
+
+///*************************************************///
+
+dealloc(newmem3)
+aimUpRawAngleReadAOB: //"DarkSoulsIII.exe"+5086B6:
+db F3 0F 59 C6 0F 54 D1
+//Alt: mulss xmm0,xmm6
+//Alt: andps xmm2,xmm1
+unregistersymbol(aimUpRawAngleReadAOB)
+
+unregistersymbol(fCusAimLookUpAngle)
+
+///*************************************************///
+
+dealloc(newmem4)
+aimDownRawAngleReadAOB: //"DarkSoulsIII.exe"+5086D9:
+db F3 0F 59 CE 0F 5C EA
+//Alt: mulss xmm1,xmm6
+//Alt: subps xmm5,xmm2
+unregistersymbol(aimDownRawAngleReadAOB)
+
+unregistersymbol(fCusAimLookDownAngle)
+
+
+

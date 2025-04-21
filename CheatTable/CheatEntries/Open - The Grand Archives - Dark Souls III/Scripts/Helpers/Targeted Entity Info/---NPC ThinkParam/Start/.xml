@@ -1,0 +1,52 @@
+<CheatEntry>
+  <ID>1337045395</ID>
+  <Description>"Start"</Description>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>30</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337045396"/>
+    <id id="1337045397"/>
+    <id id="1337045398"/>
+    <id id="1337045399"/>
+    <id id="1337045400"/>
+    <id id="1337045401"/>
+    <id id="1337045402"/>
+    <id id="1337045403"/>
+    <id id="1337045404"/>
+    <id id="1337045405"/>
+    <id id="1337045406"/>
+    <id id="1337045407"/>
+    <id id="1337045408"/>
+    <id id="1337045409"/>
+    <id id="1337045410"/>
+    <id id="1337045411"/>
+    <id id="1337045412"/>
+    <id id="1337045413"/>
+    <id id="1337045414"/>
+    <id id="1337045415"/>
+    <id id="1337045416"/>
+    <id id="1337045417"/>
+    <id id="1337045418"/>
+    <id id="1337045419"/>
+    <id id="1337045420"/>
+    <id id="1337045421"/>
+    <id id="1337045422"/>
+    <id id="1337045423"/>
+    <id id="1337045424"/>
+    <id id="1337045425"/>
+    <id id="1337045426"/>
+    <id id="1337045427"/>
+    <id id="1337045428"/>
+    <id id="1337045429"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

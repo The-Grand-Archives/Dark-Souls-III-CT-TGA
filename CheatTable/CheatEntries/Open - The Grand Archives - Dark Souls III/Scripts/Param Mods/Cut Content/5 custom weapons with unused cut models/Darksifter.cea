@@ -1,0 +1,163 @@
+//replaces anri's with darksifter
+//additional overwrites: wolnir's holy sword wa, as well as the name of the wa
+//buff may have issues in offhand
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local weapon = EquipParamWeapon:new("anrisdarksifter",2230000)
+weapon:behaviorVariationId(2512)
+weapon:sortId(60901)
+weapon:weight(5)
+weapon:fixPrice(500)
+weapon:basicPrice(500)
+weapon:sellValue(500)
+weapon:correctStrength(10)
+weapon:correctAgility(10)
+weapon:correctMagic(60)
+weapon:correctFaith(0)
+weapon:physGuardCutRate(50)
+weapon:magGuardCutRate(50)
+weapon:fireGuardCutRate(50)
+weapon:thunGuardCutRate(50)
+weapon:materialSetId(2200)
+weapon:originEquipWep(2230000)
+weapon:originEquipWep1(2230000)
+weapon:originEquipWep2(2230000)
+weapon:originEquipWep3(2230000)
+weapon:originEquipWep4(2230000)
+weapon:originEquipWep5(2230000)
+weapon:iconId(4112)
+weapon:equipModelId(8005)
+weapon:attackBasePhysics(83)
+weapon:attackBaseDark(5)
+weapon:attackBaseStamina(63)
+weapon:saWeaponDamage(30)
+weapon:guardAngle(60)
+weapon:staminaGuardDef(40)
+weapon:reinforceTypeId(4600)
+weapon:wepmotionCategory(25)
+weapon:spAttribute(9)
+weapon:spAtkcategory(156)
+weapon:wepmotionOneHandId(2)
+weapon:wepmotionBothHandId(12)
+weapon:properStrength(18)
+weapon:properAgility(15)
+weapon:properMagic(15)
+weapon:properFaith(0)
+weapon:attackBaseParry(0)
+weapon:defenseBaseParry(0)
+weapon:guardBaseRepel(10)
+weapon:attackBaseRepel(66)
+weapon:guardCutCancelRate(0)
+weapon:poisonGuardResist(20)
+weapon:diseaseGuardResist(20)
+weapon:bloodGuardResist(20)
+weapon:curseGuardResist(20)
+weapon:guardLevel(2)
+weapon:isBlowAttackType(0)
+weapon:isThrustAttackType(0)
+weapon:isNormalAttackType(1)
+weapon:isEnhance(0)
+weapon:Group0_DummyPolyId1(301)
+weapon:weaponPosition(25)
+weapon:patchByte(0x178,25)
+weapon:correctTypeDark(4)
+weapon:darkGuardCutRate(50)
+weapon:AtkThrowEscapeA(10)
+weapon:AtkThrowEscapeB(10)
+weapon:swordArt(301)
+weapon:correctLuck(0)
+weapon:categoryName(5)
+weapon:AttackElementCorrect(10000)
+weapon:residentSpEffectId1(0)
+
+local newWa = BehaviorParam_PC:new("anrisdarksifter",102512705)
+newWa:refType(2)
+newWa:refId(1900)
+
+local soulBuff = SpEffectParam:new("anrisdarksifter",1900)
+soulBuff:cycleOccurrenceSpEffectId(1901)
+soulBuff:effectSfx(95900000)
+
+local resonantWeapon = SpEffectParam:new("anrisdarksifter",1901)
+resonantWeapon:effectEndurance(60)
+resonantWeapon:spCategory(20)
+resonantWeapon:effectSfx(91091901)
+resonantWeapon:spAttribute(9)
+resonantWeapon:wepParamChange(1)
+resonantWeapon:stateInfo(152)
+
+local hollowScaling,souls,soulScaling,waAnim
+
+scaling = createTimer(getMainForm())
+scaling.Interval = 250
+scaling.setEnabled(true)
+
+scaling.OnTimer = function(timer)
+
+hollowScaling = readBytes("[GameMan]+204E")
+waAnim = readInteger("[[[[WorldChrMan]+80]+XA]+80]+C8")
+souls = readInteger("[[GameDataMan]+10]+74")
+
+weapon:attackBaseDark(hollowScaling*1.25)
+
+if(hollowScaling==0)
+then
+weapon:spAttribute(1)
+else
+weapon:spAttribute(9)
+end
+
+if(waAnim==156038400)
+then
+
+if(souls>=5000)
+then
+soulBuff:soul(-5000)
+soulScaling = 125
+else
+soulScaling =(math.floor(15*(1.00042^souls)))
+soulBuff:soul(-1*souls)
+end
+
+resonantWeapon:darkAttackPower(soulScaling)
+sleep(5500)
+
+end
+
+end
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+1985C:
+dw 'Darksifter',0
+[[[[MsgRepository]+8]+0]+C0]+6B38A:
+dw 'An ancient blade, retrieved by a nameless pilgrim from the old abyssal chasms.',A
+dw '',A
+dw 'This blade resonates to those with dark inside them, which flows freely through it.',A
+dw '',A
+dw 'Many replicas of this blade were created to reenact the rituals of old, yet which amount to nothing but a pale imitation.',A
+dw '',A
+dw 'Skill: Dark Resonance',A
+dw 'Impale the blade in the ground, and imbue it with a form of distorted life.',0
+[[[[MsgRepository]+08]+00]+0640]+A4EE:
+dw 'Dark Resonance',0
+
+[DISABLE]
+{$lua}
+paramUtils:restore("anrisdarksifter")
+if(scaling ~= nil) then
+scaling.setEnabled(false)
+end
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+1985C:
+dw 'Anri',27,'s Straight Sword',0
+[[[[MsgRepository]+8]+0]+C0]+6B38A:
+dw 'Sword precious to Anri, another Unkindled. The dullest type of blade found in the ruined land of Astora.',A
+dw '',A
+dw 'Only, it was once the sword of an earnest noble figure, and its attacks are boosted by that elusive, essential property unique to humans: luck.',A
+dw '',A
+dw 'Skill: Stance',A
+dw 'While in stance, use normal attack to break a foe',27,'s guard from below, and strong attack to slash upwards with a forward lunge.',0
+[[[[MsgRepository]+08]+00]+0640]+A4EE:
+dw 'Wrath of the Gods',0

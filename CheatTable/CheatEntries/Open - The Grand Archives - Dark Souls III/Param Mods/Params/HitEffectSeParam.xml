@@ -1,0 +1,17 @@
+<CheatEntry>
+  <ID>80312</ID>
+  <Description>"HitEffectSeParam "</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>SoloParamRepository</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>68</Offset>
+    <Offset>68</Offset>
+    <Offset>1270</Offset>
+  </Offsets>
+</CheatEntry>

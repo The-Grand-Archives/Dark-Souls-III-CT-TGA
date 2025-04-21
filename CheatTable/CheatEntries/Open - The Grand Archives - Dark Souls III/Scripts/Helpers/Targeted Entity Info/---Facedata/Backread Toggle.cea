@@ -1,0 +1,8 @@
+[ENABLE]
+{$lua}
+
+writeBytes("[[WorldChrMan]+80]+1ED9", 128)
+{$asm}
+[DISABLE]
+{$lua}
+writeBytes("[[WorldChrMan]+80]+1ED9", 0)

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096760</ID>
+  <Description>"Remaining time for the next phantom regular acquisition | 次の幻影定期取得残り時間"</Description>
+  <VariableType>Float</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>78</Offset>
+    <Offset>B98</Offset>
+  </Offsets>
+</CheatEntry>

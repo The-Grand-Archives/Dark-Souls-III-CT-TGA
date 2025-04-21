@@ -1,0 +1,7 @@
+[ENABLE]
+label(SpEffectVfxParam)
+registersymbol(SpEffectVfxParam)
+[VfxAddressToUse]:
+SpEffectVfxParam:
+[DISABLE]
+unregistersymbol(SpEffectVfxParam)

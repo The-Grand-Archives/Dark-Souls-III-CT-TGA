@@ -1,0 +1,29 @@
+[ENABLE]
+{$lua}
+CycleAddress = "7FF5B002BB90" --Address that you are going to change the value of
+
+CycleTable = { -- Table full of the values you want to change it to in decimal format
+50,
+75,
+90
+}
+----DO NOT CHANGE ANYTHING BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING OR ASK ME QUICK
+
+CycleTableValue = 0
+writeInteger(CycleAddress,CycleTable[CycleTableValue])
+function tablelength(T)
+  local count = 0
+  for _ in pairs(T) do count = count + 1 end
+  return count
+end
+CycleTableLength = tablelength(CycleTable)
+{$asm}
+[DISABLE]
+{$lua}
+CycleTable = nil
+CycleTableValue = nil
+CycleAddress = nil
+CycleTableLength = nil
+{$asm}
+
+

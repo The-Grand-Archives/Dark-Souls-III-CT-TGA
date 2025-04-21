@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098343</ID>
+  <Description>"Replacement TypeFlagId | 追加したい交換アイテム種類判定フラグID"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>5C</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+</CheatEntry>

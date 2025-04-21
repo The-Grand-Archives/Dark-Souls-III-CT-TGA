@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>88211</ID>
+  <Description>"MaxMP"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>EC</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

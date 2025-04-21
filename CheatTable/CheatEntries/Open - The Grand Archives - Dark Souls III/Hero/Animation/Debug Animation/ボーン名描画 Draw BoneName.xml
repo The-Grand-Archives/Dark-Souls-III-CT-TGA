@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337180557</ID>
+  <Description>"ボーン名描画 Draw BoneName"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>C5</Offset>
+    <Offset>10</Offset>
+    <Offset>50</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78190</ID>
+  <Description>"Irithyll of the Boreal Valley"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>4B03</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

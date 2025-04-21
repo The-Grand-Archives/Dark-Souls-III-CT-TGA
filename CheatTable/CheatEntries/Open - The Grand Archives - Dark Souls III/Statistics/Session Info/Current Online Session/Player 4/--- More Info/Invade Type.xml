@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>86933</ID>
+  <Description>"Invade Type"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>FC</Offset>
+    <Offset>1FA0</Offset>
+    <Offset>E0</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

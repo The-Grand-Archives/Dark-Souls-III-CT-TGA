@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099342</ID>
+  <Description>"Use FaceGen"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>FaceGenMan</Address>
+  <Offsets>
+    <Offset>190</Offset>
+  </Offsets>
+</CheatEntry>

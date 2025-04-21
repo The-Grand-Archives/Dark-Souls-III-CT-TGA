@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337078706</ID>
+  <Description>"EzStateBehaviorType"</Description>
+  <DropDownList DisplayValueAsItem="1">0:Sorcery
+1:Miracles
+2:Pyromancy
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>+22</Address>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081875</ID>
+  <Description>"Focus distance (m) | フォーカス距離(m)"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>C4</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

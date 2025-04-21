@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337033060</ID>
+  <Description>"VowType0: None"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+2C</Address>
+</CheatEntry>

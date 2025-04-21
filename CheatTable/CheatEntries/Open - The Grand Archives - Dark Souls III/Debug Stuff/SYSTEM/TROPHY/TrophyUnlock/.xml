@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098167</ID>
+  <Description>"TrophyUnlock"</Description>
+  <Options moHideChildren="1"/>
+  <Color>FF8000</Color>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337098168"/>
+    <id id="1337098169"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337098129</ID>
+  <Description>"ID:39 &lt; Ancient Wyvern"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Locked
+1:Unlocked
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>CSTrophy</Address>
+  <Offsets>
+    <Offset>102*27</Offset>
+    <Offset>40</Offset>
+    <Offset>8</Offset>
+  </Offsets>
+</CheatEntry>

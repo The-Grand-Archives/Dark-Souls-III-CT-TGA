@@ -1,0 +1,13 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+for id, _ in pairs(paramUtils:getParamIdTable("PlayRegionParam")) do
+  local play_region = PlayRegionParam:new("better_hosting", id)
+  play_region:multiPlayStartLimitEventFlagId(0)
+  play_region:multiPlayHostLimitEventFlagId(0)
+end
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("better_hosting")

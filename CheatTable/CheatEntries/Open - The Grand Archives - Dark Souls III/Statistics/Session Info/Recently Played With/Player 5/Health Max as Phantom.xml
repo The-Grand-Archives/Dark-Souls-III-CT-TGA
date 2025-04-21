@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>80972</ID>
+  <Description>"Health Max as Phantom"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>20</Offset>
+    <Offset>540+0950*4</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

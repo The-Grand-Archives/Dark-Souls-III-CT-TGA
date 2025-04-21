@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>86496</ID>
+  <Description>"Gates From Corvian Settlement"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>5</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>25344</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

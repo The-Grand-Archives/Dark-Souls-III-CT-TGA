@@ -1,0 +1,12 @@
+[ENABLE]
+globalalloc(newmem2,32)
+label(AttachAddressToUse)
+registersymbol(AttachAddressToUse)
+newmem2:
+AttachAddressToUse:
+[DISABLE]
+dealloc(newmem2)
+unregistersymbol(AttachAddressToUse)
+
+
+

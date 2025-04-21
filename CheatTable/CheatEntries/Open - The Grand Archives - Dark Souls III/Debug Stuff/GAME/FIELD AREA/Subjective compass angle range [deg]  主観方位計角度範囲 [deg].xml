@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>1337081105</ID>
+  <Description>"Subjective compass angle range [deg] | 主観方位計角度範囲 [deg]"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <Color>0000FF</Color>
+  <VariableType>2 Bytes</VariableType>
+  <Address>DarkSoulsIII.exe+4554A79</Address>
+</CheatEntry>

@@ -1,0 +1,17 @@
+<CheatEntry>
+  <ID>1337019895</ID>
+  <Description>"Password (max 8)"</Description>
+  <VariableType>String</VariableType>
+  <Length>8</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>34</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337019896"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

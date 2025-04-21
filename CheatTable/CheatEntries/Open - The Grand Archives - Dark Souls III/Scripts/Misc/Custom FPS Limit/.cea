@@ -1,0 +1,16 @@
+//Author: inuNorii
+//Just changes values in Debug Stuff > GRAPHICS > GFX
+//Customise it to your own preference
+[ENABLE]
+[SprjFlipper]+358: //Use Debug FPS
+db 01
+
+[SprjFlipper]+354: //Debug FPS
+dd (float)75.0
+
+[DISABLE]
+[SprjFlipper]+358: //Use Debug FPS
+db 00
+
+[SprjFlipper]+354: //Debug FPS
+dd (float)30.0

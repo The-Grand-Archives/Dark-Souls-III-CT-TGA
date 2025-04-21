@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337096538</ID>
+  <Description>"Is My World"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:0
+1:1
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>B1E</Offset>
+  </Offsets>
+</CheatEntry>

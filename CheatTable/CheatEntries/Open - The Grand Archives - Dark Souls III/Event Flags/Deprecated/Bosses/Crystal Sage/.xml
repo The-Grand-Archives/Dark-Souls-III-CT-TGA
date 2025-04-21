@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>78026</ID>
+  <Description>"Crystal Sage"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78027"/>
+    <id id="78025"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

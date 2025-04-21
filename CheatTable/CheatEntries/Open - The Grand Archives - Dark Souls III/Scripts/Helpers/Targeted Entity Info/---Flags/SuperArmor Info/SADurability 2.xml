@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337045256</ID>
+  <Description>"SADurability  /"</Description>
+  <VariableType>Float</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>24</Offset>
+    <Offset>48</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

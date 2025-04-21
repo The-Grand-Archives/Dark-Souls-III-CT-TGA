@@ -1,0 +1,39 @@
+[ENABLE]
+define(TargetedEntityMovement,DarkSoulsIII.exe+5CC85E) // should be unique
+alloc(newmem,10,"DarkSoulsIII.exe"+5CC85E)
+
+label(code)
+label(return)
+
+newmem:
+  push rdx
+  mov rdx,[target_ptr]
+  mov rdx,[rdx+58]
+  mov rdx,[rdx+320]
+  cmp rcx,rdx
+  pop rdx
+  je return
+code:
+  cmp [rcx+00007410],01
+  je return
+  mov r14d,[rcx+00007410]
+  jmp return
+
+TargetedEntityMovement:
+  jmp newmem
+  nop
+  nop
+return:
+registersymbol(TargetedEntityMovement)
+
+[[[target_ptr]+58]+320]+7410:
+  db 00
+
+[DISABLE]
+
+TargetedEntityMovement:
+  db 44 8B B1 10 74 00 00
+
+unregistersymbol(TargetedEntityMovement)
+dealloc(newmem)
+

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337190017</ID>
+  <Description>"Falling Death Camera | 落下死亡カメラ"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

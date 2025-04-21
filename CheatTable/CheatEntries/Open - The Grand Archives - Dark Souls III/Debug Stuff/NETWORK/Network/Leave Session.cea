@@ -1,0 +1,15 @@
+[ENABLE]
+alloc(LeaveSession,100,DarkSoulsIII.exe)
+createthread(LeaveSession)
+
+LeaveSession:
+sub rsp,28
+mov rcx,[SprjSessionManager]
+call DarkSoulsIII.exe+DEB7F0
+add rsp,28
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(LeaveSession)

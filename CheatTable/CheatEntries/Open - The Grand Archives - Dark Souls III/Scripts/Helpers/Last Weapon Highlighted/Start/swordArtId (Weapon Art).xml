@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>1337038934</ID>
+  <Description>"swordArtId (Weapon Art)"</Description>
+  <DropDownListLink>SWORD_ART_ID</DropDownListLink>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+194</Address>
+</CheatEntry>

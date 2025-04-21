@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337159345</ID>
+  <Description>"DS2 Dark/Magic Elemental Urns"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337159985"/>
+    <id id="1337159986"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

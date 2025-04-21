@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097739</ID>
+  <Description>"RecvBufferSize Threshold"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>354</Offset>
+  </Offsets>
+</CheatEntry>

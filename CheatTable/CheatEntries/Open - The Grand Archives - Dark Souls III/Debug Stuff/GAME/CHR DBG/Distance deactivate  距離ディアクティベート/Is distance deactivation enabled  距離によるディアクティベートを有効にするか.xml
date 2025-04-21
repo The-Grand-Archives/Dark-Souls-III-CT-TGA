@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097954</ID>
+  <Description>"Is distance deactivation enabled | 距離によるディアクティベートを有効にするか"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>18B</Offset>
+  </Offsets>
+</CheatEntry>

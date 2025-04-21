@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337189981</ID>
+  <Description>"LOD level to cast shadow (if this value or less, drop shadow) | 影を落とすLODレベル（この値以下なら影を落とす）"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">-1:-1
+0:0
+1:1
+2:2
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>4C</Offset>
+  </Offsets>
+</CheatEntry>

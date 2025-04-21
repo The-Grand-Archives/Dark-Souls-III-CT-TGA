@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337081244</ID>
+  <Description>"Hair_Eyebrow_Beard_Color_b"</Description>
+  <Options moHideChildren="1" moRecursiveSetValue="1"/>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6E2</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337081245"/>
+    <id id="1337081246"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

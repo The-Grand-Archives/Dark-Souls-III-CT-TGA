@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337081020</ID>
+  <Description>"Quantity0"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <Color>C0C0C0</Color>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>1C</Offset>
+    <Offset>470</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

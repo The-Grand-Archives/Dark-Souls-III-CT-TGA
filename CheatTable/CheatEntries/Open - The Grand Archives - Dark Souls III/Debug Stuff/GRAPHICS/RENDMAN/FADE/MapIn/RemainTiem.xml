@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097503</ID>
+  <Description>"RemainTiem"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjFade</Address>
+  <Offsets>
+    <Offset>F8</Offset>
+    <Offset>28</Offset>
+    <Offset>0</Offset>
+    <Offset>8</Offset>
+    <Offset>8</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,885 @@
+<CheatEntry>
+  <ID>1337257110</ID>
+  <Description>"SP_EFFECT_VFX_ID"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">1:1 :
+2:2 :
+3:3 :
+4:4 :
+5:5 :
+6:6 : Blood
+7:7 :
+8:8 : Fog Ring
+9:9 :
+10:10 :
+11:11 :
+12:12 :
+13:13 :
+14:14 : humanity stolen message
+15:15 :
+16:16 :
+17:17 :
+18:18 :
+19:19 :
+20:20 :
+21:21 :
+22:22 :
+23:23 :
+24:24 : Vow of Silence
+25:25 :
+26:26 :
+27:27 :
+28:28 : Magic Weapon
+29:29 : Magic Barrier
+30:30 :
+31:31 :
+32:32 :
+33:33 :
+34:34 :
+35:35 :
+36:36 :
+37:37 :
+38:38 :
+39:39 :
+40:40 : Great Magic Barrier
+41:41 : Water slowly flowing down on entire body
+42:42 : Message Rated Heal or Warmth Heal Tick
+43:43 :
+44:44 :
+45:45 :
+46:46 :
+47:47 : Spook
+48:48 :
+49:49 :
+50:50 : Yellow Lines
+51:51 :
+52:52 :
+53:53 : Hidden Body?
+54:54 :
+55:55 :
+56:56 :
+57:57 :
+58:58 :
+59:59 : Giant Healing? Pulse
+60:60 : Magic Weapon
+61:61 : Crystal Magic Weapon
+62:62 : Fire Weapon
+63:63 :
+64:64 : Dark Moon Blade
+65:65 :
+66:66 :
+67:67 :
+68:68 :
+69:69 : Tears of Denial
+70:70 :
+71:71 :
+72:72 : Some huge purple aura
+73:73 :
+74:74 :
+75:75 : Green Lines
+76:76 : Quite large snowy aura
+77:77 :
+78:78 :
+79:79 :
+80:80 :
+91:91 :
+92:92 :
+93:93 :
+94:94 :
+95:95 : Fade into complete Invisibility
+96:96 : Dragon Head
+97:97 :
+98:98 :
+99:99 :
+100:100 :
+101:101 :
+102:102 : Tranquil Walk of Peace
+103:103 :
+104:104 :
+105:105 :
+106:106 :
+107:107 :
+108:108 :
+109:109 :
+110:110 :
+111:111 :
+112:112 :
+113:113 :
+114:114 : Does something strange to your hair, when it is removed you gain some permanent white aura. Can be stacked with itself
+115:115 :
+116:116 :
+117:117 :
+118:118 :
+119:119 :
+120:120 :
+121:121 :
+122:122 :
+123:123 :
+124:124 :
+125:125 :
+126:126 :
+127:127 :
+128:128 :
+129:129 :
+130:130 :
+131:131 :
+132:132 :
+133:133 :
+134:134 :
+135:135 :
+136:136 :
+137:137 :
+138:138 :
+139:139 :
+140:140 :
+141:141 :
+142:142 :
+143:143 :
+144:144 :
+145:145 :
+146:146 :
+147:147 : Cast Light
+148:148 :
+149:149 :
+150:150 :
+151:151 : Lightning Weapon
+152:152 : Poison Weapon
+153:153 :
+154:154 : White Smoke
+155:155 :
+156:156 :
+157:157 :
+158:158 : Strange blue light on offhand
+159:159 :
+160:160 :
+161:161 :
+162:162 :
+163:163 :
+164:164 :
+165:165 :
+166:166 :
+167:167 : Dragon Body
+168:168 :
+169:169 :
+170:170 :
+171:171 :
+172:172 :
+173:173 :
+174:174 :
+175:175 : Black sludge. Doesn't repeat
+176:176 :
+177:177 :
+178:178 :
+179:179 :
+180:180 :
+181:181 :
+182:182 :
+183:183 :
+184:184 : Weapon disappears after a short delay
+185:185 :
+186:186 :
+187:187 :
+188:188 :
+189:189 :
+190:190 :
+191:191 :
+192:192 : Does something strange to your hair, when it is removed you gain some permanent white aura. Can be stacked with itself
+193:193 :
+194:194 :
+195:195 :
+196:196 :
+197:197 :
+198:198 :
+199:199 :
+200:200 : Red Fumes
+201:201 :
+202:202 : Orange Smoldering, Distortion
+203:203 :
+204:204 : Large dark blue aura on offhand
+205:205 :
+206:206 :
+207:207 :
+208:208 :
+209:209 :
+210:210 :
+211:211 :
+212:212 :
+213:213 :
+214:214 :
+215:215 :
+216:216 :
+217:217 :
+218:218 :
+219:219 :
+220:220 :
+221:221 :
+222:222 :
+223:223 :
+224:224 :
+225:225 :
+226:226 :
+227:227 :
+228:228 :
+229:229 :
+230:230 :
+231:231 :
+232:232 :
+233:233 :
+234:234 :
+235:235 :
+236:236 :
+237:237 :
+238:238 :
+239:239 :
+240:240 :
+241:241 :
+242:242 :
+243:243 :
+244:244 :
+245:245 :
+246:246 :
+247:247 :
+248:248 :
+249:249 :
+250:250 :
+251:251 :
+252:252 :
+253:253 :
+254:254 :
+255:255 :
+256:256 :
+257:257 :
+258:258 :
+259:259 :
+260:260 :
+261:261 : Leeches
+262:262 :
+263:263 :
+264:264 :
+265:265 :
+266:266 :
+267:267 :
+268:268 :
+269:269 :
+270:270 :
+271:271 :
+272:272 :
+273:273 :
+274:274 :
+275:275 :
+276:276 :
+277:277 :
+278:278 :
+279:279 :
+280:280 :
+281:281 :
+282:282 :
+283:283 :
+284:284 :
+285:285 :
+286:286 :
+287:287 :
+288:288 :
+289:289 :
+290:290 :
+291:291 :
+292:292 :
+293:293 :
+294:294 :
+295:295 :
+296:296 :
+297:297 :
+298:298 :
+299:299 :
+300:300 :
+301:301 :
+302:302 :
+303:303 :
+304:304 :
+305:305 :
+306:306 :
+307:307 :
+308:308 :
+309:309 :
+310:310 :
+311:311 :
+312:312 :
+313:313 :
+314:314 :
+315:315 :
+316:316 :
+317:317 :
+318:318 :
+319:319 :
+320:320 :
+321:321 : Hollowing Reversed, White Ember Effect
+322:322 :
+323:323 :
+324:324 :
+325:325 :
+326:326 :
+5000:5000 :
+5001:5001 :
+5010:5010 :
+5011:5011 : Host of Embers sparks on steroids
+5020:5020 : Short fire on hand
+5021:5021 :
+5022:5022 : Short fire on upper body
+5023:5023 : Short fire on lower body
+5024:5024 : Short fire on body
+5025:5025 :
+5026:5026 :
+5027:5027 :
+5028:5028 :
+5100:5100 : Light Yellow Smoke
+5110:5110 : Dark Blue Lines
+5120:5120 : Light Green Lines
+5130:5130 : Pink Lines
+5140:5140 : Magic Weapon
+5150:5150 : Dark Weapon
+5160:5160 : Bloodlust
+5170:5170 : Yellow Lines
+5180:5180 : Invisibility
+5190:5190 :
+5200:5200 : Blue Magic Barrier
+5210:5210 : Red Magic Barrier
+5220:5220 : Yellow Magic Barrier
+5230:5230 : Purple Magic Barrier
+5240:5240 : Orange Lines
+5562:5562 : Fire Weapon Offhand
+5651:5651 : Lightning Weapon Offhand
+5652:5652 : Poison Weapon Offhand
+5840:5840 : Magic Weapon Offhand
+5850:5850 : Dark Weapon Offhand
+5860:5860 : Bloodlust Offhand
+6900:6900 : Red Smoke on hand
+6910:6910 : Magic Weapon Glow
+6911:6911 : Magic Weapon Glow Offhand
+6920:6920 : Poise Art with white smoke
+6930:6930 : Yellow Poise Art with yellow smoke
+6940:6940 : Yellow Poise Art with yellow smoke
+6950:6950 : Yellow Poise Art with yellow smoke
+6960:6960 : Dark Weapon Glow
+6961:6961 : Dark Weapon Glow Offhand
+6999:6999 : When applied an orange line moves towards you. When removed you pulse orange smoke (DLC Pyro Hand?)
+8000:8000 : Fire Weapon
+8010:8010 :
+8020:8020 :
+8030:8030 : Lightning Weapon
+8040:8040 : Yellow pulse (these are from healing miracles)
+8041:8041 :
+8042:8042 : Yellow pulse
+8043:8043 : Yellow pulse
+8044:8044 : Orange pulse
+8050:8050 : Orange Smoke and a sound (Sacred Oath?)
+8060:8060 : Dark Weapon
+8070:8070 : Warmth Heal Tick
+8090:8090 : Dark Yellow Lines
+8100:8100 : Dark Yellow Lines
+8110:8110 : Very small yellow water effect on chest
+9500:9500 :
+9501:9501 : Hard to see blue aura on body
+10000:10000 :
+10010:10010 :
+10020:10020 :
+10030:10030 :
+40002:40002 : Hard to see purple smoke
+40005:40005 : More intense darker purple smoke
+40253:40253 :
+40260:40260 : Frost effect (White Curse)
+42300:42300 :
+42900:42900 :
+50000:50000 :
+50001:50001 :
+50002:50002 :
+50003:50003 :
+50004:50004 :
+50010:50010 :
+50020:50020 :
+50021:50021 :
+50029:50029 :
+50030:50030 :
+50031:50031 :
+50032:50032 :
+50033:50033 :
+50034:50034 :
+50035:50035 :
+50036:50036 :
+50037:50037 :
+50039:50039 : Increased Glow
+50040:50040 :
+50048:50048 :
+50049:50049 :
+50050:50050 :
+50051:50051 :
+50052:50052 :
+50053:50053 : frost body
+50054:50054 :
+50055:50055 :
+50058:50058 :
+50059:50059 :
+50060:50060 :
+50061:50061 :
+50062:50062 :
+50063:50063 :
+50064:50064 :
+50065:50065 :
+50066:50066 :
+50067:50067 :
+50068:50068 :
+50069:50069 :
+50070:50070 :
+50071:50071 :
+50072:50072 :
+50073:50073 :
+50074:50074 :
+50075:50075 : Transparency
+50076:50076 :
+50080:50080 :
+50081:50081 : Giant Fire and Smoke
+50082:50082 : Giant Fire and Smoke
+50083:50083 : Giant Fire and Smoke
+50084:50084 : Giant Fire and Smoke
+50085:50085 : Giant Fire and Smoke
+50090:50090 :
+50091:50091 :
+50092:50092 :
+50093:50093 :
+50094:50094 :
+50095:50095 :
+50096:50096 :
+50097:50097 :
+50098:50098 :
+50099:50099 :
+50100:50100 :
+50101:50101 :
+50102:50102 :
+50103:50103 :
+50104:50104 :
+50105:50105 :
+50106:50106 :
+50107:50107 :
+50110:50110 :
+50111:50111 : White Smoke
+50120:50120 :
+50121:50121 :
+50122:50122 :
+50123:50123 :
+50124:50124 :
+50125:50125 :
+50130:50130 :
+50150:50150 :
+50151:50151 :
+50152:50152 :
+50153:50153 :
+50154:50154 :
+50155:50155 :
+50156:50156 :
+50160:50160 :
+50200:50200 : Large snowy effect on head
+50201:50201 : Snow effect on head
+50202:50202 : Snow effect on hand
+50203:50203 : Snow effect on hand
+50204:50204 : Snow effect on right foot
+50205:50205 : Snow effect on left foot
+50206:50206 : Snow effect from legs sent forward
+50207:50207 : Strange little blue light infront of feet
+50210:50210 : Bigger Snow effect on head
+50211:50211 :
+50212:50212 :
+50220:50220 :
+50221:50221 : Yellow Lines
+50222:50222 : Hard to see blue aura on body
+50223:50223 :
+50224:50224 :
+50225:50225 :
+50226:50226 : Very small flame on hand, emits light
+50227:50227 :
+50228:50228 :
+50230:50230 : Immolation Tinder Fire
+50240:50240 :
+50241:50241 :
+50242:50242 :
+50243:50243 :
+50244:50244 :
+50245:50245 :
+50246:50246 :
+50247:50247 :
+50248:50248 :
+50250:50250 : Snow effect covering body, Intense
+50251:50251 : Snow effect around you, Waterfall
+50252:50252 : Snow effect above you, Intense
+50253:50253 : Snow effect around you, Waterfall
+50254:50254 : Icy Eyes
+50260:50260 :
+50261:50261 : Increased Glow, Insanely
+50262:50262 :
+50263:50263 :
+50264:50264 : Host of Ember sparks in a larger area
+50265:50265 : Host of Ember sparks in a larger area
+50266:50266 :
+50267:50267 :
+50270:50270 :
+50280:50280 :
+50290:50290 :
+50300:50300 :
+50301:50301 :
+50302:50302 :
+50310:50310 : 12070 effect what spawn mini marker on floor
+50320:50320 : Small fire in offhand, emits light
+50325:50325 :
+50329:50329 :
+50330:50330 :
+50331:50331 :
+50332:50332 :
+50333:50333 :
+50334:50334 :
+50335:50335 :
+50336:50336 :
+50337:50337 :
+50338:50338 :
+50339:50339 :
+50340:50340 : Increased Glow, Moderate
+50341:50341 :
+50350:50350 :
+50351:50351 :
+50352:50352 :
+50353:50353 :
+50354:50354 : Black smoke on head
+50355:50355 : Black smoke on head
+50360:50360 : Crystal Lizard Shimmer
+50370:50370 :
+50371:50371 :
+50372:50372 : Increased Glow, Moderate
+50380:50380 :
+50390:50390 :
+50400:50400 :
+50401:50401 :
+50410:50410 :
+50420:50420 :
+50421:50421 :
+50422:50422 :
+50423:50423 :
+50424:50424 : Orange light, then orange flames
+50425:50425 : Yellow pulse
+50440:50440 : Yellow Lines on offhand
+50441:50441 : Blessed Weapon Effect but out of your back and above your head?
+50443:50443 :
+50444:50444 : Poise Glow with white smoke
+50445:50445 : Darkness flowing upwards from head
+50460:50460 : Lightning 'Bridge' through you
+50470:50470 : Increased Glow, Moderate
+50471:50471 :
+50472:50472 :
+50480:50480 :
+50481:50481 :
+50482:50482 :
+50483:50483 :
+50484:50484 :
+50490:50490 : Nameless King stomp
+50491:50491 : Nameless king stomp
+50492:50492 :
+50500:50500 :
+50501:50501 :
+50510:50510 :
+50511:50511 :
+50520:50520 :
+50530:50530 :
+50540:50540 :
+50550:50550 :
+50560:50560 :
+50561:50561 :
+50562:50562 :
+50563:50563 :
+50564:50564 :
+50565:50565 :
+50566:50566 :
+50567:50567 :
+50568:50568 :
+50569:50569 :
+50570:50570 : fireboard
+50571:50571 :
+50572:50572 :
+50573:50573 :
+50574:50574 : Burst of fire consuming entire body
+50600:50600 :
+50601:50601 :
+60000:60000 : Large flame right of chest
+60001:60001 : Large flame left of chest
+60005:60005 : Blue Glow on body
+60100:60100 :
+60110:60110 :
+60200:60200 :
+60201:60201 : Water slowly flowing down on entire body
+60210:60210 :
+60220:60220 : Increased Glow, Insanely
+60221:60221 :
+60300:60300 :
+60301:60301 :
+60900:60900 :
+60901:60901 : Glow blink effect
+60902:60902 :
+61000:61000 :
+61001:61001 :
+61900:61900 :
+62000:62000 :
+62001:62001 : curse mist
+62100:62100 :
+62101:62101 :
+62102:62102 :
+62103:62103 :
+62104:62104 :
+62105:62105 :
+62106:62106 :
+62107:62107 :
+62108:62108 :
+62109:62109 :
+62112:62112 :
+62113:62113 :
+62114:62114 :
+62115:62115 :
+62116:62116 :
+62117:62117 :
+62300:62300 :
+62301:62301 :
+62500:62500 :
+62501:62501 : Angel Feather and dust
+62600:62600 : demon prince floating chaos
+62601:62601 :
+62602:62602 :
+62700:62700 : Curse Crystal Back and Dark Smoke
+62701:62701 : Curse Crystal Back
+62900:62900 :
+63200:63200 : Humanity Head
+63300:63300 : ringed city locust preacher sticky stuff
+63400:63400 :
+63401:63401 :
+65000:65000 :
+65001:65001 : Soozin Comet
+65010:65010 :
+65020:65020 :
+65021:65021 :
+65022:65022 :
+65023:65023 :
+65024:65024 :
+65025:65025 :
+65026:65026 :
+65027:65027 :
+65028:65028 :
+65029:65029 :
+65030:65030 :
+65031:65031 :
+65032:65032 :
+65033:65033 :
+65034:65034 :
+65035:65035 :
+65100:65100 :
+100000:100000 : Wax Head
+100010:100010 : Invisibility
+100020:100020 : Homeward Bone effect
+100021:100021 : Invisibility
+100030:100030 :
+100031:100031 : Transparency, Slightly more than Fog Ring and Hidden Body
+100040:100040 : Short Intense Fire on legs
+100050:100050 :
+100100:100100 :
+100101:100101 : Transparency, Slightly more than Fog Ring and Hidden Body
+100200:100200 :
+100201:100201 : Transparency, Slightly more than Fog Ring and Hidden Body
+100210:100210 : Invisibility
+100211:100211 : Transparency, Slightly more than Fog Ring and Hidden Body
+800000:800000 : Arena Player Killed Burst
+800010:800010 : Arena Respawn Light
+800011:800011 : Arena Respawn Light
+800040:800040 : Gold Arena Crown
+800050:800050 : Silver Arena Crown
+800100:800100 :
+800110:800110 : Estus?
+800200:800200 : Estus?
+800210:800210 : Estus?
+90000000:90000000 : Estus?
+90013100:90013100 : Magic Weapon
+90013110:90013110 : Great Magic Weapon
+90013120:90013120 : Crystal Magic Weapon
+90013130:90013130 : Frost Weapon
+90013300:90013300 : Magic Weapon Glow Offhand
+90013310:90013310 : Dark Weapon Glow Offhand
+90013400:90013400 : Weapon disappears after a short delay
+90013410:90013410 : Hidden Body
+90013500:90013500 : Cast Light
+90013510:90013510 :
+90013530:90013530 :
+90013540:90013540 : Spook
+90013550:90013550 : Invisibility
+90013760:90013760 : Storm Ruler Wind Burst on hand?
+90013765:90013765 : Storm Ruler Wind Burst on offhand?
+90024230:90024230 : Large Dark Purple Vow of Silence Circle, Has a few other strange SFX
+90024300:90024300 :
+90024310:90024310 : Water slowly flowing down on entire body
+90024350:90024350 : Fire Weapon
+90024360:90024360 : Red Smoke
+90024400:90024400 : Power Within?
+90024700:90024700 : Miracle heal burst?
+90025620:90025620 : Yellow water slowly flowing down on entire body
+90026500:90026500 : Yellow smoke on entire body
+90034900:90034900 : Miracle heal burst (Lesser Heal)
+90035000:90035000 : Miracle heal burst (Heal)
+90035010:90035010 : Miracle heal burst (Med Heal)
+90035020:90035020 : Miracle heal burst (Great Heal)
+90035030:90035030 : Miracle heal burst (Sunlight Heal)
+90035040:90035040 : Yellow Lines
+90035050:90035050 : Yellow Lines
+90035070:90035070 : Yellow Lines
+90035080:90035080 : Caressing Tears?
+90035200:90035200 : Tears of Denial
+90035210:90035210 : Tears of Denial Explosion
+90035600:90035600 : Magic Barrier
+90035610:90035610 : Great Magic Barrier
+90035630:90035630 : Sacred Oath?
+90035810:90035810 : Vow of Silence
+90035900:90035900 : Lightning Weapon
+90035910:90035910 : Dark Moon Blade
+90036400:90036400 : Dark Weapon
+90037300:90037300 : Some sort of miracle impulse
+90037600:90037600 : Blessed Weapon
+90037700:90037700 : Deep Protection
+90037800:90037800 : Dark Purple Smoke
+90037900:90037900 : Miracle heal burst?
+91007001:91007001 :
+91007051:91007051 :
+91011200:91011200 :
+91011211:91011211 : Dark Moon Blade
+91011261:91011261 : Dark Moon Blade Offhand
+91021100:91021100 : Sacred Oath?
+91021110:91021110 : Yellow Poise on weapon?
+91021400:91021400 : Snow between feet
+91021601:91021601 :
+91021651:91021651 :
+91022210:91022210 : Ashen Estus Gain?
+91022401:91022401 : Black Fire Weapon (Onyx Blade)
+91022451:91022451 : Black Fire Weapon Offhand
+91040700:91040700 : Pontiff Curved Sword
+91040701:91040701 : Snow coming off weapon
+91041000:91041000 : Green Dark Moon Blade?
+91050200:91050200 : Bloodlust
+91050401:91050401 : Bloodlust
+91050451:91050451 : Bloodlust Offhand
+91061701:91061701 : Dark Moon Blade
+91061751:91061751 : Dark Moon Blade
+91061800:91061800 : Fire Weapon
+91061850:91061850 : Fire Weapon Offhand
+91062311:91062311 : Orange Smoke from hand
+91062351:91062351 : Orange Smoke from offhand
+91062701:91062701 : Blessed Weapon
+91062711:91062711 : Strange Fire on weapon
+91062751:91062751 : Blessed Weapon offhand
+91062761:91062761 : Strange Fire on weapon
+91063400:91063400 : Fire Weapon
+91063450:91063450 : Fire Weapon offhand
+91063700:91063700 : Storm Ruler Wind Weapon
+91063701:91063701 : Storm Ruler Wind Weapon offhand
+91063710:91063710 : Storm Ruler Wind Charged Weapon
+91063711:91063711 : Storm Ruler Wind Charged Weapon offhand
+91063720:91063720 : Storm Ruler Wind Release Weapon
+91063721:91063721 : Storm Ruler Wind Release Weapon offhand
+91069501:91069501 : Strange Fire on weapon
+91069551:91069551 : Strange Fire on weapon offhand
+91069601:91069601 : Blessed Weapon
+91069651:91069651 : Blessed Weapon offhand
+91070111:91070111 : Orange smoke from hand
+91070151:91070151 : Orange smoke from offhand
+91070411:91070411 : Orange smoke from hand
+91070451:91070451 : Orange smoke from offhand
+91070511:91070511 : Orange smoke from hand
+91070551:91070551 : Orange smoke from offhand
+91070700:91070700 : Shiny stuff on weapon's lower half
+91070711:91070711 : Shiny stuff on weapon's upper half
+91070751:91070751 : Shiny stuff on weapon offhand
+91071301:91071301 :
+91071351:91071351 :
+91080011:91080011 : Orange smoke from hand
+91080051:91080051 : Orange smoke from offhand
+91080611:91080611 : Orange smoke from hand
+91080651:91080651 : Orange smoke from offhand
+91081800:91081800 : Snow coming off weapon
+91081810:91081810 : Orange Lightning Weapon
+91081900:91081900 : Magma Weapon
+91083211:91083211 :
+91083212:91083212 :
+91083251:91083251 :
+91083252:91083252 :
+91091400:91091400 : Branded Symbol
+91091600:91091600 : Orange Lightning Weapon
+91091650:91091650 : Orange Lightning Weapon offhand
+91091901:91091901 : Accursed Weapon (Pacify)
+91091910:91091910 : Accursed Pulse from chest
+91091951:91091951 : Accursed Weapon offhand
+91092200:91092200 : Lightning Weapon
+91092210:91092210 : Buff Sound
+91092411:91092411 : Lothric Spear Fire Spear Art
+91092451:91092451 : Lothric Spear Fire Spear Art offhand
+91092500:91092500 : Red Lines
+91092510:91092510 : Red Lines
+91092600:91092600 : Purple Lines
+91100700:91100700 : Snow coming off weapon
+91100750:91100750 : Snow coming off weapon offhand
+91120400:91120400 : Strange Fire Weapon
+91120701:91120701 : Radiance on chest
+91120751:91120751 : Radiance on chest
+91130700:91130700 : Storyteller Poison
+91130750:91130750 :
+91134111:91134111 :
+91134120:91134120 : DLC pyro flame charged aura
+91134131:91134131 :
+91160500:91160500 : Shiny stuff on tip of weapon
+91160550:91160550 : Shiny stuff near offhand weapon
+91201500:91201500 : Rock Golem (Havel Shield Weapon Art)
+92001000:92001000 :
+92003000:92003000 :
+92017000:92017000 : Red Lines
+92018000:92018000 : Dark Blue Lines
+92019000:92019000 :
+92029000:92029000 :
+92038000:92038000 :
+92041000:92041000 :
+92043000:92043000 :
+92045010:92045010 : Invisibility with some ground effect
+92054000:92054000 :
+92054010:92054010 :
+92058000:92058000 :
+92019000:92019000 :
+92029000:92029000 :
+92038000:92038000 :
+92041000:92041000 :
+92043000:92043000 :
+92045010:92045010 : Invisibility with some ground effect
+92054000:92054000 :
+92054010:92054010 :
+92058000:92058000 :
+92059010:92059010 : Line from far infront moving towards you, gives a miracle healing burst on contact?
+92062001:92062001 : Line from far infront moving towards you, gives a miracle healing burst on contact?
+92063001:92063001 : Line from far infront moving towards you, gives a small blue burst on contact?
+92066000:92066000 : Red Lines
+92067000:92067000 : Dark Blue Lines
+92073000:92073000 :
+92075000:92075000 : Dark Orange Lines
+92079000:92079000 : Light Blue Lines
+92083000:92083000 :
+93000000:93000000 :
+94000000:94000000 :
+94044000:94044000 : White Ring
+94056000:94056000 : On equip?
+95001000:95001000 : Yellow Lines
+95004000:95004000 : Yellow Lines
+95100000:95100000 : Blue poof of smoke between legs
+95100010:95100010 :
+95900000:95900000 : Mound Maker Kill Burst
+96000000:96000000 : Humanity Head
+99000000:99000000 : Power Within? (soul of cinder)
+99000010:99000010 : Ghost (Transparent + White Ring)
+99000020:99000020 : Slight Purple Smoke
+99000030:99000030 : Crystal Magic Weapon
+99900000:99900000 : Glow Nullification
+</DropDownList>
+  <ShowAsSigned>0</ShowAsSigned>
+  <GroupHeader>1</GroupHeader>
+</CheatEntry>

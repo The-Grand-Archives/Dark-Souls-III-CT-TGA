@@ -2,6 +2,7 @@
 ## [Unreleased]
 ### Changed
  - Move World Flags into Deprecated unter Event Flags
+ - Adjusted the event flags aob to work with seamless co-op
 ### Fixed
  - EquipItem
  - Restored old AOBs for Hero -> Animation -> Scripts, making the scripts usable again

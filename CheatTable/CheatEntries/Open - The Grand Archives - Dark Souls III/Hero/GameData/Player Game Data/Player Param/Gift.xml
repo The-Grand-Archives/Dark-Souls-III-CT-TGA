@@ -1,0 +1,22 @@
+<CheatEntry>
+  <ID>1337080909</ID>
+  <Description>"Gift"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:None
+1:Life Ring
+2:Divine Blessing
+3:Hidden Blessing
+4:Black Firebomb
+5:Fire Gem
+6:Sovereignless Soul
+7:Rusted Gold Coin
+8:Cracked Red Eye Orb
+9:Young White Branch
+10:Debug
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>B0</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

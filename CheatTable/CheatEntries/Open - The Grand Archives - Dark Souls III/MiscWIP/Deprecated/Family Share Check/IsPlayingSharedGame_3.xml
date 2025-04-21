@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>86857</ID>
+  <Description>"IsPlayingSharedGame_3"</Description>
+  <DropDownList DisplayValueAsItem="1">0:Real account
+</DropDownList>
+  <VariableType>String</VariableType>
+  <Length>32</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>count_address3</Address>
+</CheatEntry>

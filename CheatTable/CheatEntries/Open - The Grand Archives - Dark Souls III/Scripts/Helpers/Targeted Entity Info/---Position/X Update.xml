@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337045265</ID>
+  <Description>"X Update"</Description>
+  <VariableType>Float</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>80</Offset>
+    <Offset>68</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,112 @@
+[ENABLE]
+define(INJECT,DarkSoulsIII.exe+1FC3736)
+alloc(newmem,$1000,INJECT)
+
+label(code)
+label(return)
+registersymbol(INJECT)
+label(test)
+registersymbol(test)
+
+newmem:
+push rsi
+push rdi
+push rcx
+mov rsi, [WorldChrMan]
+cmp rsi, 0
+jz code
+mov rsi, [rsi+40]
+cmp rsi, 0
+jz code
+mov rsi, [rsi+38]
+cmp rsi, 0
+jz code
+mov rsi, [rsi+1F90]
+cmp rsi, 0
+jz code
+
+cmp rsi, r14
+jne code
+push rsi
+add rsi, AA
+
+mov rdi, [GameDataMan]
+mov rdi, [rdi+10]
+mov [test], rdi
+add rdi, AA
+push rsi
+push rdi
+
+mov rcx, 1
+repe movsb
+
+pop rdi
+pop rsi
+add rsi, 60E
+add rdi, 60E
+mov rcx, c4
+repe movsb
+
+pop rsi
+push rsi
+add rsi, 3b0
+mov rdi, [test]
+add rdi, 3b0
+
+mov rcx, 1c
+repe movsb
+
+pop rsi
+add rsi, 88
+push rsi
+
+mov rdi, [test]
+add rdi, 88
+
+mov rcx, 8
+repe movsd
+
+pop rsi
+push rsi
+mov rdi, [test]
+mov rdi, [rdi+7b8]
+mov rdi, [rdi+c0]
+add rdi, 38
+
+mov rcx, 8
+repe movsd
+
+pop rsi
+mov rdi, [test]
+mov rdi, [rdi+7c0]
+mov rdi, [rdi]
+add rdi, 38
+
+mov rcx, 8
+repe movsd
+
+
+
+code:
+pop rcx
+pop rdi
+pop rsi
+mov rcx,r8
+repe movsb
+jmp return
+
+test:
+dq 00
+
+INJECT:
+  jmp newmem
+return:
+
+[DISABLE]
+
+INJECT:
+  db 49 8B C8 F3 A4
+
+unregistersymbol(test)
+unregistersymbol(INJECT)
+dealloc(newmem)

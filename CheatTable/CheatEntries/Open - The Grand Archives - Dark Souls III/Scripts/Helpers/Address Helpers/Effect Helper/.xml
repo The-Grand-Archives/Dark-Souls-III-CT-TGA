@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>89959</ID>
+  <Description>"Effect Helper"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="89960"/>
+    <id id="89961"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

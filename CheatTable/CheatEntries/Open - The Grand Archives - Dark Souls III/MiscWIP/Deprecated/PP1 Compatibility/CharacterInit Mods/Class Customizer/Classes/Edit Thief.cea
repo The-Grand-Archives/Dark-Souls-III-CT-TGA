@@ -1,0 +1,41 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local ChrIniEntry_List = {
+  "ChrInitEntry3000",
+  "ChrInitEntry3001",
+  "ChrInitEntry3002",
+  "ChrInitEntry3003",
+  "ChrInitEntry3004",
+  "ChrInitEntry3005",
+  "ChrInitEntry3006",
+  "ChrInitEntry3007",
+  "ChrInitEntry3008",
+  "ChrInitEntry3009"
+}
+local ChrIniEntry_Names = {
+  "Knight",
+  "Merc",
+  "Warrior",
+  "Herald",
+  "Thief",
+  "Assassin",
+  "Sorcerer",
+  "Pyro",
+  "Cleric",
+  "Deprived"
+}
+if ChrIniEntry_Entry == nil then
+  ChrIniEntry_Entry = getAddressList().getMemoryRecordByID(91934)
+end
+ChrIniEntry_Index = (ChrIniEntry_Index or 1) + 1
+if ChrIniEntry_Index > #ChrIniEntry_List then
+  ChrIniEntry_Index = 1
+end
+ChrIniEntry_Entry.Address = "ChrInitEntry3004"
+ChrIniEntry_Entry.Description = "Thief"
+assert(false)
+[DISABLE]
+
+
+

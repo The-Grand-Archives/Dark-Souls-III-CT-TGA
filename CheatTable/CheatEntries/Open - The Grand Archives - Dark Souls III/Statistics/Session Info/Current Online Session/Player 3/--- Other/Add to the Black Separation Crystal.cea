@@ -1,0 +1,8 @@
+[ENABLE]
+[[[WorldChrMan]+40]+a8]+70:
+dd (int)1
+[DISABLE]
+
+
+
+

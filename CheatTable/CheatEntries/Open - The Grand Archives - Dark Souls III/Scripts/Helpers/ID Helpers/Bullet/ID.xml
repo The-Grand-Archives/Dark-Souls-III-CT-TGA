@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>1337256189</ID>
+  <Description>"ID"</Description>
+  <DropDownListLink>BULLET_ID</DropDownListLink>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>8 Bytes</VariableType>
+  <Address>BulletHelper</Address>
+</CheatEntry>

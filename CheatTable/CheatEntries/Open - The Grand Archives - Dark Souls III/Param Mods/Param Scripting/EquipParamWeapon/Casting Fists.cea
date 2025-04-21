@@ -1,0 +1,16 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local Fists = EquipParamWeapon:new("CastingFists",110000)
+Fists:bothHandEquipable(1)
+Fists:wepmotionCategory(41)
+Fists:correctMagic(20)
+Fists:correctFaith(20)
+--Fists:spAtkcategory(178) --cast on R2 instead, comment out wepmotionCategory
+Fists:enableMagic(1)
+Fists:enablePyromancy(1)
+Fists:enableMiracle(1)
+Fists:enableVowMagic(1)
+
+[DISABLE]
+paramUtils:restore("CastingFists")

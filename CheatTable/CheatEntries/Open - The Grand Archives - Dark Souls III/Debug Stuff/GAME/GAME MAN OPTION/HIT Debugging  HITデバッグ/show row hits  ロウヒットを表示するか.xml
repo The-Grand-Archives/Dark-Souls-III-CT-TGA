@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096701</ID>
+  <Description>"show row hits | ロウヒットを表示するか"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>CBE</Offset>
+  </Offsets>
+</CheatEntry>

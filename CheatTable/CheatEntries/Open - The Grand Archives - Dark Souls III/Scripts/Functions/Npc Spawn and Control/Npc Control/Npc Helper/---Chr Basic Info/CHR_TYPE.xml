@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337190174</ID>
+  <Description>"CHR_TYPE"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>70</Offset>
+  </Offsets>
+</CheatEntry>

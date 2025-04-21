@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>1337098085</ID>
+  <Description>"Coord X"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>BulletCoords</Address>
+</CheatEntry>

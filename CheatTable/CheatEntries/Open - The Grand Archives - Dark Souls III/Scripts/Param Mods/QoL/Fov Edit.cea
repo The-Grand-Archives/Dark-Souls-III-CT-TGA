@@ -1,0 +1,12 @@
+//Author: inuNorii
+//Fov edit via LockCamParam
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local NewFOV = 60 --customise this value
+
+local cam = LockCamParam:new("CustomFov")
+cam:patchAllFloat(0x14,NewFOV)
+
+[DISABLE]
+paramUtils:restore("CustomFov")

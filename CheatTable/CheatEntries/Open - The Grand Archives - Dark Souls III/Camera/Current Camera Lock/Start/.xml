@@ -1,0 +1,40 @@
+<CheatEntry>
+  <ID>90661</ID>
+  <Description>"Start"</Description>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>LockCam</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="90668"/>
+    <id id="90669"/>
+    <id id="90670"/>
+    <id id="90671"/>
+    <id id="90672"/>
+    <id id="90673"/>
+    <id id="90674"/>
+    <id id="90675"/>
+    <id id="90676"/>
+    <id id="90677"/>
+    <id id="90678"/>
+    <id id="90679"/>
+    <id id="90680"/>
+    <id id="90681"/>
+    <id id="90682"/>
+    <id id="90683"/>
+    <id id="90684"/>
+    <id id="90685"/>
+    <id id="90686"/>
+    <id id="90666"/>
+    <id id="90665"/>
+    <id id="90662"/>
+    <id id="90667"/>
+    <id id="90664"/>
+    <id id="90663"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

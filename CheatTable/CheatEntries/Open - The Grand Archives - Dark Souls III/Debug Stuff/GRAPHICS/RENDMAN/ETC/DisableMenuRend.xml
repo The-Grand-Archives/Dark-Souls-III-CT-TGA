@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097460</ID>
+  <Description>"DisableMenuRend"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>RendMan</Address>
+  <Offsets>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

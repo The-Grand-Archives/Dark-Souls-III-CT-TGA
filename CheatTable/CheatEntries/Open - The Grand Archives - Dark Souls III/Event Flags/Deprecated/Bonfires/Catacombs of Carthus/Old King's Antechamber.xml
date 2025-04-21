@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78231</ID>
+  <Description>"Old King's Antechamber"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>5</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>5003</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

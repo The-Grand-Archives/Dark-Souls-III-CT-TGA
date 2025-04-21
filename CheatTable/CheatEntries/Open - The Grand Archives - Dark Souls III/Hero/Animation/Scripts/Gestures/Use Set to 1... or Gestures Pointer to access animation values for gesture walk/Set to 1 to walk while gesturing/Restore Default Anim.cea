@@ -1,0 +1,20 @@
+[ENABLE]
+{$lua}
+writeBytes("[[[[WorldChrMan]+80]+1F90]+58]+20", 0)
+local timer = createTimer(nil,false)
+timer.Enabled = true
+timer.Interval = 500
+timer.OnTimer = function(timer)
+  writeInteger("[[[[WorldChrMan]+1F90]+58]+20", FFFFFFFF)
+  timer.Destroy()
+end
+[DISABLE]
+{$lua}
+writeBytes("[[[[WorldChrMan]+80]+1F90]+58]+20", 0)
+local timer = createTimer(nil,false)
+timer.Enabled = true
+timer.Interval = 500
+timer.OnTimer = function(timer)
+  writeInteger("[[[[WorldChrMan]+80]+1F90]+58]+20", FFFFFFFF)
+  timer.Destroy()
+end

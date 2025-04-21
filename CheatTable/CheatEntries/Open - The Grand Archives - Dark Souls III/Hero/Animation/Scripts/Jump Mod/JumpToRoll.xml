@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337033259</ID>
+  <Description>"JumpToRoll"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Roll
+0.5:Jump
+</DropDownList>
+  <VariableType>Float</VariableType>
+  <Address>jump_ptr</Address>
+  <Offsets>
+    <Offset>-680</Offset>
+  </Offsets>
+</CheatEntry>

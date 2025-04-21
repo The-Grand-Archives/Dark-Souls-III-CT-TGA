@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73336</ID>
+  <Description>"Skin Color Layer 1"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>780</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

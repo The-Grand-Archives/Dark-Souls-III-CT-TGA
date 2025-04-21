@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337079002</ID>
+  <Description>"Rank Register Profile Idx"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>1A</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

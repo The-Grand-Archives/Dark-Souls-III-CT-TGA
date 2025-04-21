@@ -1,0 +1,173 @@
+{
+  Author: inuNorii
+  Desc: Shows parts of Session Info in a separate window
+        made with CEs Form Editor and some bad lua
+
+        no booli
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+SessionInfo.Show()
+
+local EmptyPlayerName = "None"
+local EmptyPlayerValues = ""
+
+local charTypeT = {}
+charTypeT[0] = "Host"
+charTypeT[1] = "White Phantom"
+charTypeT[2] = "Dark Spirit"
+charTypeT[3] = "Ghost"
+charTypeT[4] = "Ghost"
+charTypeT[8] = "Hollow"
+charTypeT[10] = "Transparent"
+charTypeT[11] = "Invisible"
+charTypeT[12] = "Dragon"
+charTypeT[13] = "Arena"
+
+local teamTypeT = {}
+teamTypeT[0] = "Invalid"
+teamTypeT[1] = "Host"
+teamTypeT[2] = "Phantom"
+teamTypeT[3] = "Black Phantom"
+teamTypeT[4] = "Hollow"
+teamTypeT[6] = "Enemy"
+teamTypeT[7] = "Boss"
+teamTypeT[8] = "Friend"
+teamTypeT[9] = "AngryFriend"
+teamTypeT[10] = "DecoyEnemy"
+teamTypeT[11] = "BloodChild"
+teamTypeT[12] = "BattleFriend"
+teamTypeT[13] = "Dragon"
+teamTypeT[16] = "Dark Spirit"
+teamTypeT[17] = "Watchdog of Farron"
+teamTypeT[18] = "Aldrich Faithful"
+teamTypeT[24] = "Darkwraiths"
+teamTypeT[26] = "NPC"
+teamTypeT[27] = "Hostile NPC"
+teamTypeT[29] = "Arena"
+teamTypeT[31] = "Mad Phantom"
+teamTypeT[32] = "Mad Spirit"
+teamTypeT[33] = "Giant crabs,Dragons from Lothric castle"
+
+function P1_CopyProfileClick(sender)
+local CheatTable = getAddressList()
+local HexID = CheatTable.getMemoryRecordByDescription("SteamID64 (H3x) 1").value
+local WebAddress = "https://steamcommunity.com/profiles/" .. tostring(tonumber(HexID, 16))
+writeToClipboard(WebAddress)
+end
+
+function P2_CopyProfileClick(sender)
+local CheatTable = getAddressList()
+local HexID = CheatTable.getMemoryRecordByDescription("SteamID64 (H3x) 2").value
+local WebAddress = "https://steamcommunity.com/profiles/" .. tostring(tonumber(HexID, 16))
+writeToClipboard(WebAddress)
+end
+
+function P3_CopyProfileClick(sender)
+local CheatTable = getAddressList()
+local HexID = CheatTable.getMemoryRecordByDescription("SteamID64 (H3x) 3").value
+local WebAddress = "https://steamcommunity.com/profiles/" .. tostring(tonumber(HexID, 16))
+writeToClipboard(WebAddress)
+end
+
+function P4_CopyProfileClick(sender)
+local CheatTable = getAddressList()
+local HexID = CheatTable.getMemoryRecordByDescription("SteamID64 (H3x) 4").value
+local WebAddress = "https://steamcommunity.com/profiles/" .. tostring(tonumber(HexID, 16))
+writeToClipboard(WebAddress)
+end
+
+function P5_CopyProfileClick(sender)
+local CheatTable = getAddressList()
+local HexID = CheatTable.getMemoryRecordByDescription("SteamID64 (H3x) 5").value
+local WebAddress = "https://steamcommunity.com/profiles/" .. tostring(tonumber(HexID, 16))
+writeToClipboard(WebAddress)
+end
+
+function SessionInfoUpdate(timer)
+if readInteger("[[[WorldChrMan]+40]+38]+0") == nil then
+control_setCaption(SessionInfo.P1_Name, EmptyPlayerName)
+control_setCaption(SessionInfo.P1_Value_CharType, EmptyPlayerValues)
+control_setCaption(SessionInfo.P1_Value_TeamType, EmptyPlayerValues)
+control_setCaption(SessionInfo.P1_Value_Level, EmptyPlayerValues)
+control_setCaption(SessionInfo.P1_Value_Upgrade, EmptyPlayerValues)
+else
+control_setCaption(SessionInfo.P1_Name, readString("[[[[WorldChrMan]+40]+38]+1FA0]+88",32,1))
+control_setCaption(SessionInfo.P1_Value_CharType, charTypeT[readInteger("[[[WorldChrMan]+40]+38]+70")])
+control_setCaption(SessionInfo.P1_Value_TeamType, teamTypeT[readInteger("[[[WorldChrMan]+40]+38]+74")])
+control_setCaption(SessionInfo.P1_Value_Level, readInteger("[[[[WorldChrMan]+40]+38]+1FA0]+70"))
+control_setCaption(SessionInfo.P1_Value_Upgrade, readBytes("[[[[WorldChrMan]+40]+38]+1FA0]+B3"))
+end
+
+if readInteger("[[[WorldChrMan]+40]+70]+0") == nil then
+control_setCaption(SessionInfo.P2_Name, EmptyPlayerName)
+control_setCaption(SessionInfo.P2_Value_CharType, EmptyPlayerValues)
+control_setCaption(SessionInfo.P2_Value_TeamType, EmptyPlayerValues)
+control_setCaption(SessionInfo.P2_Value_Level, EmptyPlayerValues)
+control_setCaption(SessionInfo.P2_Value_Upgrade, EmptyPlayerValues)
+else
+control_setCaption(SessionInfo.P2_Name, readString("[[[[WorldChrMan]+40]+70]+1FA0]+88",32,1))
+control_setCaption(SessionInfo.P2_Value_CharType, charTypeT[readInteger("[[[WorldChrMan]+40]+70]+70")])
+control_setCaption(SessionInfo.P2_Value_TeamType, teamTypeT[readInteger("[[[WorldChrMan]+40]+70]+74")])
+control_setCaption(SessionInfo.P2_Value_Level, readInteger("[[[[WorldChrMan]+40]+70]+1FA0]+70"))
+control_setCaption(SessionInfo.P2_Value_Upgrade, readBytes("[[[[WorldChrMan]+40]+70]+1FA0]+B3"))
+end
+
+if readInteger("[[[WorldChrMan]+40]+A8]+0") == nil then
+control_setCaption(SessionInfo.P3_Name, EmptyPlayerName)
+control_setCaption(SessionInfo.P3_Value_CharType, EmptyPlayerValues)
+control_setCaption(SessionInfo.P3_Value_TeamType, EmptyPlayerValues)
+control_setCaption(SessionInfo.P3_Value_Level, EmptyPlayerValues)
+control_setCaption(SessionInfo.P3_Value_Upgrade, EmptyPlayerValues)
+else
+control_setCaption(SessionInfo.P3_Name, readString("[[[[WorldChrMan]+40]+A8]+1FA0]+88",32,1))
+control_setCaption(SessionInfo.P3_Value_CharType, charTypeT[readInteger("[[[WorldChrMan]+40]+A8]+70")])
+control_setCaption(SessionInfo.P3_Value_TeamType, teamTypeT[readInteger("[[[WorldChrMan]+40]+A8]+74")])
+control_setCaption(SessionInfo.P3_Value_Level, readInteger("[[[[WorldChrMan]+40]+A8]+1FA0]+70"))
+control_setCaption(SessionInfo.P3_Value_Upgrade, readBytes("[[[[WorldChrMan]+40]+A8]+1FA0]+B3"))
+end
+
+if readInteger("[[[WorldChrMan]+40]+E0]+0") == nil then
+control_setCaption(SessionInfo.P4_Name, EmptyPlayerName)
+control_setCaption(SessionInfo.P4_Value_CharType, EmptyPlayerValues)
+control_setCaption(SessionInfo.P4_Value_TeamType, EmptyPlayerValues)
+control_setCaption(SessionInfo.P4_Value_Level, EmptyPlayerValues)
+control_setCaption(SessionInfo.P4_Value_Upgrade, EmptyPlayerValues)
+else
+control_setCaption(SessionInfo.P4_Name, readString("[[[[WorldChrMan]+40]+E0]+1FA0]+88",32,1))
+control_setCaption(SessionInfo.P4_Value_CharType, charTypeT[readInteger("[[[WorldChrMan]+40]+E0]+70")])
+control_setCaption(SessionInfo.P4_Value_TeamType, teamTypeT[readInteger("[[[WorldChrMan]+40]+E0]+74")])
+control_setCaption(SessionInfo.P4_Value_Level, readInteger("[[[[WorldChrMan]+40]+E0]+1FA0]+70"))
+control_setCaption(SessionInfo.P4_Value_Upgrade, readBytes("[[[[WorldChrMan]+40]+E0]+1FA0]+B3"))
+end
+
+if readInteger("[[[WorldChrMan]+40]+118]+0") == nil then
+control_setCaption(SessionInfo.P5_Name, EmptyPlayerName)
+control_setCaption(SessionInfo.P5_Value_CharType, EmptyPlayerValues)
+control_setCaption(SessionInfo.P5_Value_TeamType, EmptyPlayerValues)
+control_setCaption(SessionInfo.P5_Value_Level, EmptyPlayerValues)
+control_setCaption(SessionInfo.P5_Value_Upgrade, EmptyPlayerValues)
+else
+control_setCaption(SessionInfo.P5_Name, readString("[[[[WorldChrMan]+40]+118]+1FA0]+88",32,1))
+control_setCaption(SessionInfo.P5_Value_CharType, charTypeT[readInteger("[[[WorldChrMan]+40]+118]+70")])
+control_setCaption(SessionInfo.P5_Value_TeamType, teamTypeT[readInteger("[[[WorldChrMan]+40]+118]+74")])
+control_setCaption(SessionInfo.P5_Value_Level, readInteger("[[[[WorldChrMan]+40]+118]+1FA0]+70"))
+control_setCaption(SessionInfo.P5_Value_Upgrade, readBytes("[[[[WorldChrMan]+40]+118]+1FA0]+B3"))
+end
+
+end
+
+SessionInfoTimer = createTimer(getMainForm())
+SessionInfoTimer.Interval = 200
+SessionInfoTimer.OnTimer = SessionInfoUpdate
+SessionInfoTimer.setEnabled(true)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+SessionInfo.Hide()
+
+if(SessionInfoTimer ~= nil) then
+SessionInfoTimer.destroy()
+end

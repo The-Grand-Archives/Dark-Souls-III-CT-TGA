@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>86629</ID>
+  <Description>"Effect5101 "Leeches""</Description>
+  <DropDownList DisplayValueAsItem="1">07:Default
+04:Restricted
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Byte</VariableType>
+  <Address>Effect5101</Address>
+</CheatEntry>

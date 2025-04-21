@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097735</ID>
+  <Description>"RecvBufferOver Time"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>360</Offset>
+  </Offsets>
+</CheatEntry>

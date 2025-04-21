@@ -1,0 +1,21 @@
+{
+	Author: Igromanru
+	Description: Multibuff, cycles all pine and bundle effects.
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local pines = {2100,2110,2120,2130,2150,2170,2180,2190,2100}
+
+for i,id in ipairs(pines) do
+  if(pines[i+1] ~= nil) then
+	local effect = SpEffectParam:new("MultibuffPineCycle",id)
+	effect:cycleOccurrenceSpEffectId(pines[i+1])
+  end
+end
+
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  paramUtils:restore("MultibuffPineCycle")
+end

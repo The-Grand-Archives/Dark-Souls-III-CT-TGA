@@ -1,0 +1,217 @@
+//Author: inuNorii
+//Translated some of the start menu debug strings
+[ENABLE]
+//Main screen
+DarkSoulsIII.exe+28DF400:
+dw 'FontDebug',0
+
+DarkSoulsIII.exe+28DF418:
+dw 'DialogDebug',0
+
+DarkSoulsIII.exe+28DF438:
+dw 'Item',0
+
+DarkSoulsIII.exe+28DF448:
+dw 'BloodDbg',0
+
+DarkSoulsIII.exe+28DF460:
+dw 'Optio',0
+
+DarkSoulsIII.exe+28DF470:
+dw 'TitlDbg',0
+
+DarkSoulsIII.exe+28DF480:
+dw 'LvlUp',0
+
+DarkSoulsIII.exe+28DF498:
+dw 'DeadLvUp',0
+
+DarkSoulsIII.exe+28DF4B0:
+dw 'ZeroLvlUp',0
+
+DarkSoulsIII.exe+28DF4C8:
+dw 'StatusDbg',0
+
+DarkSoulsIII.exe+28DF4E0:
+dw 'Magc',0
+
+DarkSoulsIII.exe+28DF4F0:
+dw 'CreateChrNG',0
+
+DarkSoulsIII.exe+28DF510:
+dw 'CreateChrInG',0
+
+DarkSoulsIII.exe+28DF530:
+dw 'Rank',0
+
+DarkSoulsIII.exe+28DF540:
+dw 'KickOutDebug',0
+
+DarkSoulsIII.exe+28DF560:
+dw 'TombDbg',0
+
+DarkSoulsIII.exe+28DF570:
+dw 'WarpDbg',0
+
+DarkSoulsIII.exe+28DF588:
+dw 'NpcTalkDbg',0
+
+DarkSoulsIII.exe+28DF5A0:
+dw 'EstusSet',0
+
+DarkSoulsIII.exe+28DF5B8:
+dw 'MatchDbg',0
+
+DarkSoulsIII.exe+28DF5D0:
+dw 'SendQMData',0
+
+DarkSoulsIII.exe+28DF5E8:
+dw 'XboxOneDefect',0
+
+DarkSoulsIII.exe+28DF608:
+dw 'FakeLoading',0
+
+DarkSoulsIII.exe+28DF620:
+dw 'TextDebug',0
+
+//Item Menu
+DarkSoulsIII.exe+28DF650:
+dw 'Shop',0
+
+DarkSoulsIII.exe+28DF660:
+dw 'Trade',0
+
+DarkSoulsIII.exe+28DF670:
+dw 'St',0
+
+DarkSoulsIII.exe+28DF678:
+dw 'Sell',0
+
+DarkSoulsIII.exe+28DF688:
+dw 'Enhanc',0
+
+DarkSoulsIII.exe+28DF698:
+dw 'Infuse',0
+
+DarkSoulsIII.exe+28DF6A8:
+dw 'Repair',0
+
+DarkSoulsIII.exe+28DF6B8:
+dw 'Multiple',0
+
+DarkSoulsIII.exe+28DF6D0:
+dw 'Item Status Test',0
+
+DarkSoulsIII.exe+28DF6F8:
+dw 'Break',0
+
+DarkSoulsIII.exe+28F4248:
+dw 'Break all?',0
+
+[DISABLE]
+//Main screen
+DarkSoulsIII.exe+28DF400:
+dw 'フォントデバッグ用',0
+
+DarkSoulsIII.exe+28DF418:
+dw '汎用ダイアログデバッグ用',0
+
+DarkSoulsIII.exe+28DF438:
+dw 'アイテム',0
+
+DarkSoulsIII.exe+28DF448:
+dw '血文字デバッグ用',0
+
+DarkSoulsIII.exe+28DF460:
+dw 'オプション',0
+
+DarkSoulsIII.exe+28DF470:
+dw 'タイトルフロー',0
+
+DarkSoulsIII.exe+28DF480:
+dw '通常レベルアップ',0
+
+DarkSoulsIII.exe+28DF498:
+dw '亡者レベルアップ',0
+
+DarkSoulsIII.exe+28DF4B0:
+dw 'ゼロソウルレベルアップ',0
+
+DarkSoulsIII.exe+28DF4C8:
+dw 'ステータス振り直し',0
+
+DarkSoulsIII.exe+28DF4E0:
+dw '魔法装備',0
+
+DarkSoulsIII.exe+28DF4F0:
+dw 'キャラメイク(Newgame)',0
+
+DarkSoulsIII.exe+28DF510:
+dw 'キャラメイク(Ingame)',0
+
+DarkSoulsIII.exe+28DF530:
+dw 'ランキング',0
+
+DarkSoulsIII.exe+28DF540:
+dw 'キックアウト デバッグ用',0
+
+DarkSoulsIII.exe+28DF560:
+dw '墓 デバッグ用',0
+
+DarkSoulsIII.exe+28DF570:
+dw 'ワープ デバッグ用',0
+
+DarkSoulsIII.exe+28DF588:
+dw 'ＮＰＣ会話デバッグ用',0
+
+DarkSoulsIII.exe+28DF5A0:
+dw 'エスト瓶振り分け',0
+
+DarkSoulsIII.exe+28DF5B8:
+dw 'マッチングメニュー',0
+
+DarkSoulsIII.exe+28DF5D0:
+dw 'クイックマッチ結果送信',0
+
+DarkSoulsIII.exe+28DF5E8:
+dw 'XboxOne不具合確認用',0
+
+DarkSoulsIII.exe+28DF608:
+dw 'ロード画面(うんちく)',0
+
+DarkSoulsIII.exe+28DF620:
+dw 'テキストデバッグ用',0
+
+//Item Menu
+DarkSoulsIII.exe+28DF650:
+dw 'アイテム購入',0
+
+DarkSoulsIII.exe+28DF660:
+dw 'アイテム交換',0
+
+DarkSoulsIII.exe+28DF670:
+dw '倉庫',0
+
+DarkSoulsIII.exe+28DF678:
+dw 'アイテム売却',0
+
+DarkSoulsIII.exe+28DF688:
+dw 'アイテム強化',0
+
+DarkSoulsIII.exe+28DF698:
+dw 'アイテム進化',0
+
+DarkSoulsIII.exe+28DF6A8:
+dw 'アイテム修理',0
+
+DarkSoulsIII.exe+28DF6B8:
+dw 'アイテム個数選択',0
+
+DarkSoulsIII.exe+28DF6D0:
+dw 'アイテムステータス画面 単体表示',0
+
+DarkSoulsIII.exe+28DF6F8:
+dw 'アイテム全破壊',0
+
+DarkSoulsIII.exe+28F4248:
+dw '全ての武器を破壊します',0

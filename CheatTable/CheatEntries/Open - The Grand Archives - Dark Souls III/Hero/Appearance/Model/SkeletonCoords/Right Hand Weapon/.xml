@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337180498</ID>
+  <Description>"Right Hand Weapon"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337176121"/>
+    <id id="1337180496"/>
+    <id id="1337180497"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

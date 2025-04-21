@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097368</ID>
+  <Description>"Force Sign Out"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>A32</Offset>
+  </Offsets>
+</CheatEntry>

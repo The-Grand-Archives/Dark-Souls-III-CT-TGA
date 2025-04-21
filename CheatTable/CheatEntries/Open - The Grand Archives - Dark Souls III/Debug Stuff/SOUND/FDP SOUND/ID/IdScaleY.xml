@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337098070</ID>
+  <Description>"IdScaleY"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjSound</Address>
+  <Offsets>
+    <Offset>14</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

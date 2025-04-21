@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337097059</ID>
+  <Description>"Backread Play Area | バックリードプレイ領域"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>8</ByteLength>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>8</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337097060"/>
+    <id id="1337097061"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

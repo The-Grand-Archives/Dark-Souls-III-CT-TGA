@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73287</ID>
+  <Description>"Tattoo/Mark Color Blue"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6FA</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

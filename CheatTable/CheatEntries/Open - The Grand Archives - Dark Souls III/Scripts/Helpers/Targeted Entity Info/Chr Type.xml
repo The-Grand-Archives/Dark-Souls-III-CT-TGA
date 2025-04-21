@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337045203</ID>
+  <Description>"Chr Type"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>70</Offset>
+  </Offsets>
+</CheatEntry>

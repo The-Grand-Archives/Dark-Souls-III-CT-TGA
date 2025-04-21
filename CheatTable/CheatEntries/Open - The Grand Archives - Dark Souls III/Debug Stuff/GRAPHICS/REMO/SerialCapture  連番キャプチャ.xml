@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337183589</ID>
+  <Description>"SerialCapture | 連番キャプチャ"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjRemo</Address>
+  <Offsets>
+    <Offset>1B0</Offset>
+  </Offsets>
+</CheatEntry>

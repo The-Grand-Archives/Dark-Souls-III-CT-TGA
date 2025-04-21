@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337078883</ID>
+  <Description>"Hair"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">FFFFFFFF:Unused
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>1</ShowAsSigned>
+  <Color>C0C0C0</Color>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>36C</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

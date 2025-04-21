@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097224</ID>
+  <Description>"TestAnimLoop"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>A60</Offset>
+    <Offset>28</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

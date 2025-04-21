@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337096600</ID>
+  <Description>"Restricted mode | 制限モード：%s"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>A</Offset>
+    <Offset>178</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

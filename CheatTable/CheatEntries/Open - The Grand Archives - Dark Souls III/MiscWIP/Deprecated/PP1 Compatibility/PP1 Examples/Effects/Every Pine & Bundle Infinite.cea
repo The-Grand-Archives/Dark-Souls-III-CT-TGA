@@ -1,0 +1,22 @@
+{
+  Author: Jessica (from Reverse Souls)
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+  local infiniteResin = { --Makes Every Pine & Bundle Infinite
+      {2100,0x128,"34 08 00 00"}, --Charcoal Pine Bundle
+      {2110,0x128,"3E 08 00 00"}, --Charcoal Pine Resin
+      {2120,0x128,"48 08 00 00"}, --Gold Pine Bundle
+      {2130,0x128,"52 08 00 00"}, --Gold Pine Resin
+      {2150,0x128,"66 08 00 00"}, --Rotten Pine Resin
+      {2170,0x128,"7A 08 00 00"}, --Human Pine Resin
+      {2180,0x128,"84 08 00 00"}, --Carthus Rouge
+      {2190,0x128,"8E 08 00 00"}, --Pale Pine Resin
+  }
+  paramUtils:paramIterator("SpEffectParam",infiniteResin,"infiniteResinOriginal")
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+  ParamDepatcher("infiniteResinOriginal")

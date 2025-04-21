@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>92041</ID>
+  <Description>"Address (X coordinate)"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>8 Bytes</VariableType>
+  <Address>AttachAddressToUse</Address>
+</CheatEntry>

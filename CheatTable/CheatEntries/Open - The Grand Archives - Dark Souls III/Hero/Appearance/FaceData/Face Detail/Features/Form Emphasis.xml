@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73306</ID>
+  <Description>"Form Emphasis"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>720</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

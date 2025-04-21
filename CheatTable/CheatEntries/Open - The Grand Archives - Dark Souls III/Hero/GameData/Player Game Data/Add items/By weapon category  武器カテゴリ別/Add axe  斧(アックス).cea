@@ -1,0 +1,20 @@
+[ENABLE]
+alloc(Debug_AddAll,256,DarkSoulsIII.exe)
+createthread(Debug_AddAll)
+
+Debug_AddAll:
+sub rsp,48
+mov rcx,[GameDataMan]
+mov rcx,[rcx+10]
+mov rcx,[rcx+470]
+mov rcx,[rcx+10]
+mov edx,00000009
+call AddItems_Call
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_AddAll)
+unregistersymbol(Debug_AddAll)

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096827</ID>
+  <Description>"Network channel (current value) | ネットワークチャンネル(現在値)"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>30</Offset>
+  </Offsets>
+</CheatEntry>

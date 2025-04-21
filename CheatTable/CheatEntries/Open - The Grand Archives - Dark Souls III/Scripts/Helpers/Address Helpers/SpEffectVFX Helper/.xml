@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337024456</ID>
+  <Description>"SpEffectVFX Helper"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337024457"/>
+    <id id="1337024458"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,59 @@
+//Author: inuNorii
+//stats based on an old build of DS3
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local Heavy = EquipParamWeapon:new("preNerfASS",2200100)
+Heavy:correctStrength(26)
+Heavy:correctAgility(0)
+
+local Sharp = EquipParamWeapon:new("preNerfASS",2200200)
+Sharp:correctStrength(26)
+Sharp:correctAgility(20)
+
+local Simple = EquipParamWeapon:new("preNerfASS",2200400)
+Simple:attackBasePhysics(109)
+Simple:attackBaseMagic(109)
+
+local Crystal = EquipParamWeapon:new("preNerfASS",2200500)
+Crystal:attackBasePhysics(109)
+Crystal:attackBaseMagic(109)
+
+local Fire = EquipParamWeapon:new("preNerfASS",2200600)
+Fire:attackBasePhysics(109)
+Fire:attackBaseFire(109)
+
+local Chaos = EquipParamWeapon:new("preNerfASS",2200700)
+Chaos:attackBasePhysics(109)
+Chaos:attackBaseFire(109)
+
+local Lightning = EquipParamWeapon:new("preNerfASS",2200800)
+Lightning:attackBasePhysics(109)
+Lightning:attackBaseThunder(109)
+
+local Deep = EquipParamWeapon:new("preNerfASS",2200900)
+Deep:attackBasePhysics(109)
+Deep:attackBaseDark(109)
+
+local Dark = EquipParamWeapon:new("preNerfASS",2201000)
+Dark:attackBasePhysics(109)
+Dark:attackBaseDark(109)
+
+local Poison = EquipParamWeapon:new("preNerfASS",2201100)
+Poison:correctLuck(14)
+
+local Blood = EquipParamWeapon:new("preNerfASS",2201200)
+Blood:correctLuck(14)
+
+local Raw = EquipParamWeapon:new("preNerfASS",2201300)
+Raw:attackBasePhysics(129)
+
+local Blessed = EquipParamWeapon:new("preNerfASS",2201400)
+Blessed:attackBasePhysics(109)
+
+local Hollow = EquipParamWeapon:new("preNerfASS",2201500)
+Hollow:attackBasePhysics(109)
+Hollow:correctLuck(14)
+
+[DISABLE]
+paramUtils:restore("preNerfASS")

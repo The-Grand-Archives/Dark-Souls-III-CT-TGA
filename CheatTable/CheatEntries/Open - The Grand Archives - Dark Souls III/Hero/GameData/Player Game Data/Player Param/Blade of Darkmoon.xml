@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080957</ID>
+  <Description>"Blade of Darkmoon"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>CD</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

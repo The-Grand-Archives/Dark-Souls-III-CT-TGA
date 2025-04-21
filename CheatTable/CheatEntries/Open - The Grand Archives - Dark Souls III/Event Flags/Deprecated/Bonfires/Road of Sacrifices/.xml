@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>94077</ID>
+  <Description>"Road of Sacrifices"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78159"/>
+    <id id="78162"/>
+    <id id="78158"/>
+    <id id="78165"/>
+    <id id="78161"/>
+    <id id="78160"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

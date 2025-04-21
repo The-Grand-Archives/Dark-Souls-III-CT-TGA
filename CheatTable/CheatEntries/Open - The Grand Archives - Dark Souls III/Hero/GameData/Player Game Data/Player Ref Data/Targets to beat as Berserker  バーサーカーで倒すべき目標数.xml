@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081183</ID>
+  <Description>"Targets to beat as Berserker | バーサーカーで倒すべき目標数"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>909</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

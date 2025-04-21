@@ -1,0 +1,19 @@
+<CheatEntry>
+  <ID>1337097192</ID>
+  <Description>"igAng rad"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>12</ByteLength>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>70</Offset>
+    <Offset>28</Offset>
+    <Offset>18</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337097754"/>
+    <id id="1337097755"/>
+    <id id="1337097756"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

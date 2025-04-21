@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337033262</ID>
+  <Description>"PvP Signs Cooldown"</Description>
+  <Options moHideChildren="1"/>
+  <Color>000080</Color>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337033263"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

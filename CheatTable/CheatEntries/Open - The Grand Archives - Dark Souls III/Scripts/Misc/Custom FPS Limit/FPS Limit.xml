@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337098531</ID>
+  <Description>"FPS Limit"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjFlipper</Address>
+  <Offsets>
+    <Offset>354</Offset>
+  </Offsets>
+</CheatEntry>

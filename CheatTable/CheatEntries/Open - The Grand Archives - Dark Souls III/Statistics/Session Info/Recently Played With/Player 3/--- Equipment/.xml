@@ -1,0 +1,23 @@
+<CheatEntry>
+  <ID>80920</ID>
+  <Description>"--- Equipment"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="80921"/>
+    <id id="80922"/>
+    <id id="80923"/>
+    <id id="80924"/>
+    <id id="80925"/>
+    <id id="80926"/>
+    <id id="80927"/>
+    <id id="80928"/>
+    <id id="80929"/>
+    <id id="80930"/>
+    <id id="80931"/>
+    <id id="80932"/>
+    <id id="80933"/>
+    <id id="80934"/>
+    <id id="1337079050"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

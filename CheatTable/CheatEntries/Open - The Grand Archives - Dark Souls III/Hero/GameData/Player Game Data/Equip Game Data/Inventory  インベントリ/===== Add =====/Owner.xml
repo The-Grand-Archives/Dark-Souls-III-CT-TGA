@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097399</ID>
+  <Description>"Owner"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Equip
+2:Repository
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>244</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337081425</ID>
+  <Description>"Slot 1"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337081415"/>
+    <id id="1337081416"/>
+    <id id="1337081419"/>
+    <id id="1337081418"/>
+    <id id="1337081417"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

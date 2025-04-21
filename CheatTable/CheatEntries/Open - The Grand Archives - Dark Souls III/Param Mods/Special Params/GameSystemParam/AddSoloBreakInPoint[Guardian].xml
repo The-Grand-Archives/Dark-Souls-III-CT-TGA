@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099443</ID>
+  <Description>"AddSoloBreakInPoint[Guardian]"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>2 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>17E</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

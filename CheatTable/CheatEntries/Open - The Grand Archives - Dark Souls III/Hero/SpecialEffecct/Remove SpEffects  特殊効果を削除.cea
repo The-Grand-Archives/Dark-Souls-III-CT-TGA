@@ -1,0 +1,19 @@
+[ENABLE]
+alloc(Debug_RemoveSpEffects,256,DarkSoulsIII.exe)
+createthread(Debug_RemoveSpEffects)
+
+Debug_RemoveSpEffects:
+sub rsp,48
+mov rcx,[WorldChrMan]
+mov rcx,[rcx+80]
+mov rcx,[rcx+18]
+mov rcx,[rcx+18]
+mov edx,00000003
+call DarkSoulsIII.exe+9F3C30
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_RemoveSpEffects)

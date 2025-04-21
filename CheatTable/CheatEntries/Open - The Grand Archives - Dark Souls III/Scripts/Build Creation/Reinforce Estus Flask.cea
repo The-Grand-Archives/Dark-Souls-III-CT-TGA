@@ -1,0 +1,31 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local EstusAllocationUpdate_addr = AOBScanModuleUnique(process,"44 0f b6 c2 66 0f 6e c0 0f 5b c0 f3 0f 59 81 fc 07 00 00 f3 0f 2c c0")-0x24
+
+local function GetEstusAllocation(flaskType)
+    local GameDataMan = readPointer("GameDataMan")
+    local PlayerGameData = readPointer(GameDataMan + 0x10)
+    if flaskType == 0 then
+        return readByte(PlayerGameData + 0x102) -- EstusFlaskAllocateNum_byHp
+    else
+        return readByte(PlayerGameData + 0x103) -- EstusFlaskAllocateNum_byMp
+    end
+end
+
+local function EstusAllocationUpdate(newQuantity, flaskType)
+    executeCodeEx(0, 100, EstusAllocationUpdate_addr, flaskType, newQuantity)
+end
+
+if GetEstusAllocation(0) + GetEstusAllocation(1) <= 14 then
+    EstusAllocationUpdate(GetEstusAllocation(0)+1, 0)
+    if tga.config.printProgress then
+        print("Reinforced Estus Flask, increasing number of uses")
+    end
+else
+    ShowMessage("Cannot reinforce further")
+end
+
+disableMemrec(memrec)
+
+[DISABLE]

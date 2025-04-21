@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73298</ID>
+  <Description>"Leg 2"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>70A</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

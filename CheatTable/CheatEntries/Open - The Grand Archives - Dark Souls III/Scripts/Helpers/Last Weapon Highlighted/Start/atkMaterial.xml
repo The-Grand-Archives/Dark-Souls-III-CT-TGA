@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337038817</ID>
+  <Description>"atkMaterial"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Normal
+1:Fire?
+2:Wood
+3:Fists
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>+e5</Address>
+</CheatEntry>

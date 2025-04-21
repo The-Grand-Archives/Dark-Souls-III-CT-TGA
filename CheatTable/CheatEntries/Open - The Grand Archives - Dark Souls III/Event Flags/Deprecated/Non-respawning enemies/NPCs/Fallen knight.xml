@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>489733</ID>
+  <Description>"Fallen knight"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>1</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>1</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>3c20</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

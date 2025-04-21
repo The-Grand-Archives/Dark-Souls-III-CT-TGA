@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337031678</ID>
+  <Description>"disableGuard"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>7</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+07E</Address>
+</CheatEntry>

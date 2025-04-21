@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337180605</ID>
+  <Description>"Motion blur | モーションブラー品質"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:OFF
+1:LOW
+2:MEDIUM
+3:HIGH
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSWindow</Address>
+  <Offsets>
+    <Offset>DC</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099456</ID>
+  <Description>"Pvp Arena Time1_1"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>198</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,37 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+define(JumpHeightAOB,DarkSoulsIII.exe+9AC186) // should be unique
+alloc(newmem,32,JumpHeightAOB)
+
+label(code)
+label(return)
+label(JHeight)
+registersymbol(JHeight)
+
+newmem:
+
+code:
+  addss xmm6,[JHeight]
+  jmp return
+  JHeight:
+  dd (float)-20
+
+JumpHeightAOB:
+  jmp code
+return:
+registersymbol(JumpHeightAOB)
+
+[DISABLE]
+JumpHeightAOB:
+  db F3 0F 58 75 04
+
+unregistersymbol(JumpHeightAOB)
+unregistersymbol(JHeight)
+dealloc(newmem)
+
+
+
+

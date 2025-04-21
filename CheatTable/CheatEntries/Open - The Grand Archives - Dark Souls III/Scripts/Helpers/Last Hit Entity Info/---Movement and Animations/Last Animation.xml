@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>88298</ID>
+  <Description>"Last Animation"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>c8</Offset>
+    <Offset>80</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096826</ID>
+  <Description>"NetworkChannelChange ReLogin"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>70</Offset>
+  </Offsets>
+</CheatEntry>

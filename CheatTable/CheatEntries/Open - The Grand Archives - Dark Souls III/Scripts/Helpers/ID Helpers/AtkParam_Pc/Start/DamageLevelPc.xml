@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337256393</ID>
+  <Description>"DamageLevelPc"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+018B</Address>
+</CheatEntry>

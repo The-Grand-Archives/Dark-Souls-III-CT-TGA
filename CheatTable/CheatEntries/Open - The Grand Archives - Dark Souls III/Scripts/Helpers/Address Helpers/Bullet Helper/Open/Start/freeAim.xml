@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337028869</ID>
+  <Description>"freeAim"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>5</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+C3</Address>
+</CheatEntry>

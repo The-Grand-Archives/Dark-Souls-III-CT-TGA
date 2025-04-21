@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>1337096784</ID>
+  <Description>"Overall level of bonfire | 篝火全体レベル"</Description>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+454A228</Address>
+</CheatEntry>

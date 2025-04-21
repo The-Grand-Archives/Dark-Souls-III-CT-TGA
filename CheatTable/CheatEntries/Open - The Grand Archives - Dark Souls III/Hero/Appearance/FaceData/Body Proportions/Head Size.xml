@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73354</ID>
+  <Description>"Head Size"</Description>
+  <VariableType>Float</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>3B0</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

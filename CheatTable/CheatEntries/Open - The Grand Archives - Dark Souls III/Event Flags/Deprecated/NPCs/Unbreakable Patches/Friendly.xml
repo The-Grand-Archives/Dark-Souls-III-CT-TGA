@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>489910</ID>
+  <Description>"Friendly"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>AD</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

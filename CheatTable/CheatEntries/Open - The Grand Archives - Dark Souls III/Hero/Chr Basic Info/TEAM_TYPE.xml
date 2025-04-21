@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081666</ID>
+  <Description>"TEAM_TYPE"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>74</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>489761</ID>
+  <Description>"Carthus worm"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>2</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>1</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>502c</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,15 @@
+//Gives throwing knives curse, user test
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local knives = {
+  300, 301, 302, 305
+}
+for i,id in ipairs(knives) do
+  local yes = EquipParamWeapon:new("curseKnivesMeme",id)
+  yes:spEffectId5(34) -- Curse
+end
+
+
+[DISABLE]
+paramUtils:restore("curseKnivesMeme")

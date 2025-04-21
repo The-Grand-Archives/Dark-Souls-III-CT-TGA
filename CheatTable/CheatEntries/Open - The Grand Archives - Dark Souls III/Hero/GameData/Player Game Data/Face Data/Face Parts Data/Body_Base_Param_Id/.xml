@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081230</ID>
+  <Description>"Body_Base_Param_Id"</Description>
+  <Options moHideChildren="1" moRecursiveSetValue="1"/>
+  <Color>C0C0C0</Color>
+  <VariableType>4 Bytes</VariableType>
+  <Address>0</Address>
+  <x-ce2fs-child-order>
+    <id id="1337081231"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

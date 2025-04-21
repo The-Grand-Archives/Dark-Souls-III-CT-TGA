@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>86089</ID>
+  <Description>"Ghost alpha | ゴーストα"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1A44</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

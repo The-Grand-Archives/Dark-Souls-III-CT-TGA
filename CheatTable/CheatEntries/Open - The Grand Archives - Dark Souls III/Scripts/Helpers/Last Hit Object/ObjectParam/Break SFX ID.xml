@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>11353</ID>
+  <Description>"Break SFX ID"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+C</Address>
+</CheatEntry>

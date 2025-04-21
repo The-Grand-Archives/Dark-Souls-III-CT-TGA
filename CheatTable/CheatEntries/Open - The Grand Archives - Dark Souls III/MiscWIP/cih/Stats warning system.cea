@@ -1,0 +1,171 @@
+{
+    [ Original scrib credit ]
+        Author: Spamstein // Original: Igromanru
+        Description: Checks players stats and warn user.
+}
+{$LUA}
+[ENABLE]
+--  Please set Config according to your preferences.
+local Config = {
+--  This is your SteamApiKey. (https://steamcommunity.com/dev/apikey)
+--  If set, and valid, this will proc an additional message informing
+--    if the player owns the game, and if not, display the owner name
+--    and steam profile URL
+--  Never share your SteamApiKey with anyone else, not even Valve.
+    SteamApiKey = "",
+
+--  Should we use TextToSpeech.
+    TextToSpeech = true,
+
+--  How many StatColumns should be displayed for stats?
+    StatColumns = 3,
+}
+local f = string.format
+local function CalculateStats(a,b)local d=0 for e,f in pairs(b)do d=d+(a[f]or 0)end return d end
+local PlayerCache = {}
+local SteamEndpoints = {
+    API = "https://api.steampowered.com/",
+    Profiles = "https://steamcommunity.com/profiles/%d?xml=1",
+    ProfileLink = "https://steamcommunity.com/profiles/%d",
+    IsPlayingSharedGame = "IPlayerService/IsPlayingSharedGame/v0001/?key=%s&steamid=%s&appid_playing=%d&format=json",
+}
+SteamUserCache = SteamUserCache or {}
+PlayerCheckTimer = createTimer(nil, true)
+PlayerCheckTimer.interval = 100
+PlayerCheckTimer.ontimer = function()
+    for i = 1, 5 do
+        local PlayerBase = f("[[[WorldChrMan]+40]+%X]+1FA0", i * 56)
+        if readInteger(PlayerBase) then
+--          Read main attributes.
+            local Player = PlayerCache[i] or {
+                SoulLv = readInteger(f("[%s]+70", PlayerBase)),
+                Name = readString(f("[%s]+88", PlayerBase), 32, true),
+                SteamID64 = readString(f("[%s]+7D8", PlayerBase), 32, true),
+            }
+            local StatContainer = {"Vig","Att","End","Str","Dex","Int","Fth","Lck","Vit"}
+            for sn = 1, 8 do
+                Player[StatContainer[sn]] = readInteger(f("[%s]+%X", PlayerBase, 0x40 + 4 * sn))
+            end
+            Player[StatContainer[9]] = readInteger(f("[%s]+%X", PlayerBase, 0x6C))
+--          Fetch steam information.
+            if not SteamUserCache[Player.SteamID64] then
+                local SteamUser = {}
+                SteamUserCache[Player.SteamID64] = SteamUser
+                Player.FetchingInfo = true
+                createThread(function()
+--                  Establish a Steam connection.
+                    local SteamConnection = getInternet()
+--                  Fetch information about the player.
+                    local Profile = SteamConnection.getURL(f(
+                        SteamEndpoints.Profiles,
+                        tonumber(Player.SteamID64, 16)
+                    )):gsub("%s+","")
+                    SteamUser.SteamID = Profile:match("<steamID><!%[CDATA%[(.-)%]%]><%/steamID>")
+                    SteamUser.SteamID64 = Profile:match("<steamID64>(.-)<%/steamID64>")
+--                  Check if the player owns the product.
+                    if Config.SteamApiKey then
+                        local IsPlayingSharedGame = SteamConnection.getURL(f(
+                            f("%s%s", SteamEndpoints.API, SteamEndpoints.IsPlayingSharedGame),
+                            Config.SteamApiKey,
+                            tonumber(Player.SteamID64, 16),
+                            374320
+                        )):gsub("%s+","")
+                        if not IsPlayingSharedGame:match("Forbidden") then
+                            local OwnerID64 = IsPlayingSharedGame:match("([^\"]+)\"}}$")
+                            if OwnerID64 and OwnerID64 ~= "" and OwnerID64 ~= "0" then
+                                SteamUser.OwnerID64 = OwnerID64
+                            end
+                        else
+                            print(f(
+                                "IsPlayingSharedGame encountered an issue with your API key:\r\n%s",
+                                IsPlayingSharedGame
+                            ))
+                            return PlayerCheckTimer.destroy()
+                        end
+                    end
+--                  Tag the player as shared.
+                    if SteamUser.OwnerID64 and SteamUser.OwnerID64 ~= SteamUser.SteamID64 then
+                        local OwnerProfile = SteamConnection.getURL(f(
+                            SteamEndpoints.Profiles,
+                            tonumber(SteamUser.OwnerID64)
+                        )):gsub("%s+", "")
+                        SteamUser.OwnerID = OwnerProfile:match("<steamID><!%[CDATA%[(.-)%]%]><%/steamID>")
+                    end
+                    SteamConnection.destroy()
+                    Player.FetchingInfo = false
+                end)
+            end
+--          Verify stats.
+            local ValidStats = true
+            for k, v in pairs(StatContainer) do
+                if not Player[StatContainer[k]] then
+                    ValidStats = false
+                end
+            end
+            if ValidStats then
+--              Handle player data.
+                Player._SoulLv = -89 + CalculateStats(Player, StatContainer)
+                if Player.SoulLv ~= Player._SoulLv then
+--                  First Flag.
+                    if not Player.WarningTriggered and not Player.FetchingInfo then
+--                      Append header.
+                        local Warning = f([[%s: Player #%d, %s's stats don't add up.
+                                            Soul Level: %d ... Should Be: %d]],
+                            os.date(),
+                            i,
+                            Player.Name,
+                            Player.SoulLv,
+                            Player._SoulLv
+                        )
+--                      Construct stat section.
+                        for sn = 1, 9 do
+                            local Stat = StatContainer[sn]
+                            Warning = f("%s%s| %s %02d ",
+                                Warning,
+                                (sn % Config.StatColumns == 1) and "\r\n" or "",
+                                Stat,
+                                Player[Stat]
+                            )
+                        end
+--                      Append SteamUser section.
+                        local SteamUser = SteamUserCache[Player.SteamID64]
+                        Warning = f("%s%s\r\n\r\n",
+                            Warning,
+                            SteamUser.OwnerID64 and (f("\r\n[ %s -> %s ( %s ) ]",
+                                SteamUser.SteamID,
+                                SteamUser.OwnerID,
+                                f(SteamEndpoints.ProfileLink, tonumber(SteamUser.OwnerID64))
+                            )) or (f("\r\n[ %s ( %s ) ]",
+                                SteamUser.SteamID,
+                                f(SteamEndpoints.ProfileLink, tonumber(SteamUser.SteamID64))
+                            ))
+                        )
+--                      Trimming.
+                        local WarningMessage = ""
+                        for s in Warning:gmatch("[^\r\n]+") do
+                            WarningMessage = f("%s%s\r\n", WarningMessage, s:match "^%s*(.-)%s*$")
+                        end
+                        print(WarningMessage)
+                        if Config.TextToSpeech then
+                            speakEnglish("Cheaterino detected.")
+                        end
+                        Player.WarningTriggered = true
+                        Player.WarningTrigger = Player._SoulLv
+--                  Condition reset first flag.
+                    elseif Player.WarningTriggered then
+                        if Player.WarningTrigger ~= Player._SoulLv then
+                            Player.WarningTriggered = false
+                        end
+                    end
+                end
+--              Cache the player to slot.
+                PlayerCache[i] = Player
+            end
+        else
+--          Reset the slot.
+            PlayerCache[i] = nil
+        end
+    end
+end
+[DISABLE]
+PlayerCheckTimer.destroy()

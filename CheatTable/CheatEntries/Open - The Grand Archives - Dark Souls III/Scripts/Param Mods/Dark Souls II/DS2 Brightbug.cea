@@ -1,0 +1,74 @@
+//script created and written by Boblord
+//replaces lightning urn with brightbug. just like ds2, cant use it during online activity.
+//pve friendly version
+
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local LightningUrn  = EquipParamGoods:new("brightBug", 300) -- should replace lightning urn+ be able to overwrite holy water after it
+LightningUrn:refCategory(2) -- sets what type of effect gets called when the item is used, in this case an effect(buff)
+LightningUrn:refId(153) -- called custom effect #1 here, called Bugbuff
+LightningUrn:maxNum(3) -- hold 3 at a time
+LightningUrn:isConsume(1) -- consumed when used, not needed but still here
+LightningUrn:enable_multi(0) -- no online use?
+LightningUrn:reinforceTypeId(-1) -- scaling set to null across the board
+LightningUrn:goodsUseAnim(6) -- prayer anim
+LightningUrn:iconId(98) -- brightbug icon, actually in the files so this makes my life easy
+LightningUrn:sfxId(302153) -- duel charm effect for visuals, shifts into the body version in the actual effect
+LightningUrn:sfxId1(302240) -- giant seed effect kinda looks like og brightbug visual effect
+LightningUrn:sfxId2(-1) -- removes any lingering vfx
+
+local BugBuff = SpEffectParam:new("brightBug", 153) -- empty effect slot that shouldnt mess with lifegem script
+BugBuff:effectEndurance(120) -- 120 secs for the 2m duration
+BugBuff:motionInterval(0) -- effect triggers once
+BugBuff:iconId(10009) -- attack buff icon
+BugBuff:effectSfx(5100) -- actual duel charm effect
+BugBuff:pveAttackPhys(1.2) -- all this buffs attack by 20%
+BugBuff:pveAttackMag(1.2)
+BugBuff:pveAttackFire(1.2)
+BugBuff:pveAttackThun(1.2)
+BugBuff:pveAttackDark(1.2)
+BugBuff:cycleOccurrenceSpEffectId(154) -- calling the next custom spEffect, in this case 154 which is the defense buffs(BugDef)
+
+local BugDef = SpEffectParam:new("brightbug", 154) --literally just the defense stuff, shit game workaround and its a bit neater
+BugDef:effectEndurance(120) -- 120 secs
+BugDef:motionInterval(0) -- single proc
+BugDef:iconId(10011) -- defense buff icon
+BugDef:pveAbsorbtionPhys(0.8) -- all this reduces damage by 20%, so defense buff
+BugDef:pveAbsorbtionMag(0.8)
+BugDef:pveAbsorbtionFire(0.8)
+BugDef:pveAbsorbtionThun(0.8)
+BugDef:pveAbsorbtionDark(0.8)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+2724:
+dw 'Brightbug',0
+[[[[MsgRepository]+8]+0]+C0]+9B52:
+dw 'A tiny bug that produces light.',A
+dw '',A
+dw 'Brightbugs are said to comfort the dead, and are found in the marshlands leading to the Undead Crypt.',A
+dw '',A
+dw 'By ingesting a brightbug just before death, the moment at which they glow most brightly, one attains great power for a short time.',A
+dw '',A
+dw 'Often utilized as a last-resort for adventurers who have lost their way.',0
+[[[[MsgRepository]+8]+0]+A0]+32C2:
+dw 'Inflict more damage, receive less',0
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("brightBug")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+2724:
+dw 'Lightning Urn',0
+[[[[MsgRepository]+8]+0]+C0]+9B52:
+dw 'Dragon-hunting tool used by Lothric knights. Explodes upon contact, inflicting lightning damage.',A
+dw '',A
+dw 'The knights of Lothric have since tamed dragons, but were once hunters of dragons themselves.',A
+dw '',A
+dw 'This explains their special hunting gear, and why they worshipped the sun.',0
+[[[[MsgRepository]+8]+0]+A0]+32C2:
+dw 'Explodes, inflicting lightning damage',0
+
+

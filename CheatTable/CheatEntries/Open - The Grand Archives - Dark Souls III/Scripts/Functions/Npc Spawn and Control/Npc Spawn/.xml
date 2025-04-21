@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>1337190143</ID>
+  <Description>"Npc Spawn"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337190144"/>
+    <id id="1337190145"/>
+    <id id="1337190146"/>
+    <id id="1337190147"/>
+    <id id="1337190148"/>
+    <id id="1337190149"/>
+    <id id="1337190150"/>
+    <id id="1337190151"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>1337098405</ID>
+  <Description>"Priest's Chime"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>10*5</Offset>
+    <Offset>28</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337098406"/>
+    <id id="1337098407"/>
+    <id id="1337098408"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

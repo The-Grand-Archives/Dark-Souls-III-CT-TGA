@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>1337097209</ID>
+  <Description>"MoveDir"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>12</ByteLength>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>10</Offset>
+    <Offset>58</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337097761"/>
+    <id id="1337097762"/>
+    <id id="1337097763"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,17 @@
+<CheatEntry>
+  <ID>1337098204</ID>
+  <Description>"All SFX style debug drawing | 全ＳＦＸ風デバッグ描画"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WindWorld</Address>
+  <Offsets>
+    <Offset>101</Offset>
+    <Offset>10</Offset>
+    <Offset>0</Offset>
+    <Offset>0</Offset>
+    <Offset>0</Offset>
+    <Offset>38</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337189338</ID>
+  <Description>"chr id|キャラID"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1B0</Offset>
+    <Offset>3018</Offset>
+  </Offsets>
+</CheatEntry>

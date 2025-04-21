@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337014490</ID>
+  <Description>"Durability"</Description>
+  <VariableType>2 Bytes</VariableType>
+  <Address>pickup_ptr</Address>
+  <Offsets>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

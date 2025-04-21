@@ -1,0 +1,307 @@
+<CheatEntry>
+  <ID>1337063852</ID>
+  <Description>"stateInfo"</Description>
+  <DropDownList DisplayValueAsItem="1">0:Test
+1:? E
+1:Flame
+2:Poison
+3:Hill
+4:Corrosion
+5:Epidemic
+6:Bleeding
+8:Hidden figure
+9:Gravity user
+10:Abnormal state recovery [ poison ]
+11:Abnormal state recovery [ plague ]
+12:Abnormal state recovery [ bleeding ]
+13:Abnormal state recovery [ all-around ]
+14:Seoul Steel
+15:Zoom
+16:Warp
+17:Demon's Souls
+18:Black ghost dispel
+19:Strength ghost
+20:White hope
+21:Black hope
+22:Black ghosting
+23:Resuscitation
+24:Magic disabled
+25:Miracle motion extension
+26:Grindstone
+27:Asphyxia resuscitation
+28:Weapon enhancement (Magic Weapon)
+29:Protection shield (Magic Barrier)
+30:Thread covered
+31:[ System ] ghost Parham change
+32:Sleep paralysis
+33:Flies racketeering
+34:Flame Phantom _ first stage
+35:Flame Phantom _ the second stage
+36:Flame Phantom _ third stage
+37:Flame Phantom _ fourth stage
+38:Auditory hallucination
+39:Seoul coin
+40:Strong defense shield (Great Magic Barrier)
+41:Fire -resistant shield (Flash Sweat)
+42:HP recovery state (Light Heal)
+43:Force ghost of the first stage
+44:Force ghost of the second stage
+45:Force ghosted third stage
+46:Pheromone
+47:Cat landing (Fall Control)
+48:Pinch attack power up (Red Tearstone Ring)
+49:Pinch Def. (Blue Tearstone Ring)
+50:Rijenereito (Replenishment)
+51:Torch
+52:Weak Rijenereito (Weak Replenishment)
+54:Weak figure hidden (Silence)
+55:Tip blood character
+56:Hill Foot
+57:Kikoromo
+58:Point light source
+59:Blood character evaluation
+60:Weapon enhancement [ medium ] (Great Magic Weapon)
+61:Weapons Inc Large (Crystal Magic Weapon)
+62:Flame strengthening (Charcoal Pine Resin)
+63:Flame Inc Large (Fire Shield)
+64:Magic enhancement (Darkmoon Blade)
+65:Chimeric strengthening
+66:Dropped correction
+67:MP Rijenereito
+68:Weak MP Rijenereito (Black curse sfx?)
+69:When revival dead (Escape Death)
+70:Poison -resistant UP
+71:Magic power UP
+72:Magic defense UP
+73:Bleeding -resistant UP
+74:Plague -resistant UP
+75:Stamina recovery UP
+76:Seoul acquisition UP
+77:Flame -resistant UP
+78:Shield one step left foot of the king
+79:Shield two-step left foot of the king
+80:Shield three stages left foot of the king
+91:Shield one step right foot of the king
+92:Two-step right foot shield of the king
+93:3 shield stage right foot of the king
+94:Judge stomach bleeding
+95:Chameleon
+96:Dragon Head
+97:Gassmann
+98:Detection
+99:Wait cooperation
+100:Cooperation (Sfx similar to green sfx above bloodstain appears on body)
+101:Submit cooperation (Massive burst of green particles rising from body)
+102:Gravity (Tranquil Walk of Peace)
+103:Evil Eye
+104:State release [ waiting ] cooperation
+105:effect  Lv1
+106:effect  Lv2
+107:effect  Lv3
+108:Evil eye Lv1
+109:Evil Eye Lv2
+110:Counter
+111:Uetamago standby
+112:Uetamago
+113:Egghead standby
+114:Egghead
+115:Ultra-light travel
+116:Curse
+117:Mineralization
+118:Curse release
+119:Human nature damage
+120:Damage anime change _SA time limit
+121:Damage anime change _ Add
+122:Underwater behavior
+123:Weapon head
+124:Arms body
+125:Weapon hand
+126:Arms legs
+127:Sleep
+128:_ Mimic mimicry
+129:_ Mimic mimicry sleep
+130:_ Mimic normal
+131:Mimic _ usually sleep
+132:Fascination
+133:Blood character acquisition
+134:Force shockwave and smoke around body
+135:Lots of smoke around body and white sparks
+136:Crystallization
+137:Resonance Lv0
+138:Resonance Lv1
+139:Resonance Lv2
+140:Resonance Lv3
+141:Resonance Lv4
+142:Action ID specified
+143:Enemy _ immortality
+144:Enemy _ asphyxia
+145:St. attribute
+146:Systemic grindstone
+147:Light magic
+148:Relief request
+149:White relief
+150:Black relief
+151:Gold Pine Resin
+152:Rotten Pine Resin
+153:Sunlight Blade
+154:Lloyd's Talisman
+155:Wolf Ring
+156:Durability decrease invalid
+157:Estus Heal around body but white
+158:Magic Shield
+159:Ring of Sacrifice
+160:Rare Ring of Sacrifice
+161:Warp B
+162:Warp C
+163:Warp D
+164:Warp E
+165:Dark Sign
+166:Pledge destroyed
+167:Dragon Body
+168:Precision enhancement
+169:Resonance enhancement
+170:Karmic Justice
+171:Retributive justice explosion
+172:Sheath invincible 1
+173:Sheath invincible 2
+174:Sheath invincible 3
+175:Humanity revival
+176:Seoul coin ( immortality system)
+177:Seoul coin ( beast system)
+178:Chaneller's Trident
+179:Curse effect Lv1
+180:Curse effect Lv2
+181:Curse effect Lv3
+182:Curse effect Lv4
+183:SOS visible
+184:Invisible Weapon
+185:Eye of Death
+186:Flame kick
+187:Death of
+188:Bandits summons hope the forest
+189:Bandits territory of forest
+190:Ohaha brother summoned hope
+191:Ohahaototo territory
+192:Final Egghead stage
+193:Lifetime extension
+194:Magic number of uses up
+195:Dragon Newt Sign
+196:Dragon Eye
+197:Up counter
+198:The beat egg
+199:HP drain
+200:Power Within
+201:Vow of Silence
+202:Dragon roar
+203:Use magic number down
+204:Guard Inc Large
+205:[ DLC ] darkness strengthening
+206:Arena one-to-one [ small ] territory
+207:Arena 2 vs 2 [ small ] territory
+208:Arena Battle Royal [ small ] territory
+209:Arena one-to-one [ small ] summons hope A
+210:Arena one-to-one [ small ] summons hope B
+211:Arena 2 vs 2 [ small ] summons hope A1
+212:Arena 2 vs 2 [ small ] summons would like A2
+213:Arena 2 vs 2 [ small ] summons would like B1
+214:Arena 2 vs 2 [ small ] summons would like B2
+215:Arena Battle Royal [ small ] summons hope A
+216:Arena Battle Royal [ small ] summons hope B
+217:Arena Battle Royal [ small ] summons hope C
+218:Arena Battle Royal [ small ] summons hope D
+219:Arena one-to-one [ large ] territory
+220:Arena 2 vs 2 [ large ] territory
+221:Arena Battle Royal [ large ] territory
+222:Arena one-to-one [ large ] summons hope A
+223:Arena one-to-one [ large ] summons hope B
+224:Arena 2 vs 2 [ large ] summons hope A1
+225:Arena 2 vs 2 [ large ] summons would like A2
+226:Arena 2 vs 2 [ large ] summons would like B1
+227:Arena 2 vs 2 [ large ] summons would like B2
+228:Arena Battle Royal [ large ] summons hope A
+229:Arena Battle Royal [ large ] summons hope B
+230:Arena Battle Royal [ large ] summons hope C
+231:Arena Battle Royal [ large ] summons hope D
+232:Arena disabled item disabled
+233:Arena death
+234:1 in arena interim
+235:Arena NoDead
+236:1 in the arena the same rate
+237:Calamity Ring
+238:10 wins or more arena
+239:30 wins or more arena
+240:50 wins or more arena
+241:100 wins or more arena
+242:The maximum number ( Inhibited )
+252:effect 420
+253:effect 421
+259:effect 90
+260:Frostbite
+261:Leeches
+266:effect 4050,4080
+267:effect 11800
+269:effect 1906
+275:Twinkling Dragon Head
+276:effect 3092
+277:Ember
+278:Being invaded
+280:Covenant Invasion Zone: Watchdogs of Farron
+281:Water/Swamp Slowdown
+282:HP/Resist Buff
+283:Tears of Denial?
+284:Warmth
+285:effect 29
+286:Overencumbered normal roll
+287:Overencumbered fat roll
+288:Aldrich's Ruby
+289:Aldrich's Sapphire
+290:Carthus Bloodring
+291:Carthus Milk Ring
+293:Repair
+294:Covenant Invasion: Aldrich Faithful
+295:Covenant Invasion Zone: Aldrich Faithful
+296:Turret
+297:Dead Again 2
+298:Dragonscale Ring
+299:Seed of a giant tree 3700
+300:Seed of a giant tree 3710
+301:Yellow cloud around chest
+302:Homeward DS3
+303:effect 10510-10516
+304:effect 12252
+305:effect 12254
+306:effect 12256-12258
+307:Old Wolf Curved Sword
+308:Old Wolf Curved Sword 2
+309:Old Wolf Curved Sword 3
+310:effect 11880,11881
+311:Ghoulish looking smoke on body
+312:effect 9130-9138
+313:effect 103540010
+314:effect 6900-6904
+315:Flynn's ring
+317:effect 3730
+318:effect Dead Again
+319:effect 4901
+320:Freeze self
+321:Hollowing Reversed Crash
+322:effect 139995
+323:effect 139990
+324:effect 440
+325:Iron Flesh purple (effect102430300)
+326:Reversal Ring
+327:Ember 3290,3293
+328:effect 107
+329:effect 130134131
+330:Covenant Invasion Zone: Spear of the Church
+331:effect 16188,16286
+332:effect 16189,16288
+333:Sacred Chime of Filianore
+334:Spear of the Church Boss
+335:effect 16555
+336:effect 16556
+</DropDownList>
+  <Color>FF8000</Color>
+  <VariableType>2 Bytes</VariableType>
+  <Address>+156</Address>
+</CheatEntry>

@@ -1,0 +1,21 @@
+<CheatEntry>
+  <ID>80903</ID>
+  <Description>"Player 3"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="80904"/>
+    <id id="81140"/>
+    <id id="80905"/>
+    <id id="1337190564"/>
+    <id id="80906"/>
+    <id id="80907"/>
+    <id id="80908"/>
+    <id id="81175"/>
+    <id id="81176"/>
+    <id id="1337078861"/>
+    <id id="80910"/>
+    <id id="80920"/>
+    <id id="88443"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

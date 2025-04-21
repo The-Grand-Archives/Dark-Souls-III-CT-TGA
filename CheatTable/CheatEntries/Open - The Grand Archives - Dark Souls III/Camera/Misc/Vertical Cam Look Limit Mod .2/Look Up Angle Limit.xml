@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>72404</ID>
+  <Description>"Look Up Angle Limit"</Description>
+  <VariableType>Float</VariableType>
+  <Address>fCusLookUpAngle</Address>
+</CheatEntry>

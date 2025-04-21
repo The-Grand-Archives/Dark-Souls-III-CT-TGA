@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337080840</ID>
+  <Description>"NewMenuSystem"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097658"/>
+    <id id="1337080838"/>
+    <id id="1337080837"/>
+    <id id="1337080836"/>
+    <id id="1337080288"/>
+    <id id="1337080835"/>
+    <id id="1337080839"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,27 @@
+<CheatEntry>
+  <ID>1337029848</ID>
+  <Description>"Start"</Description>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>WeaponArtHighlited_ptr</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337029849"/>
+    <id id="1337029850"/>
+    <id id="1337029851"/>
+    <id id="1337029852"/>
+    <id id="1337029853"/>
+    <id id="1337029854"/>
+    <id id="1337029855"/>
+    <id id="1337029856"/>
+    <id id="1337029857"/>
+    <id id="1337029858"/>
+    <id id="1337029859"/>
+    <id id="1337029860"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337045268</ID>
+  <Description>"Angle Update"</Description>
+  <VariableType>Float</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>8C</Offset>
+    <Offset>68</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

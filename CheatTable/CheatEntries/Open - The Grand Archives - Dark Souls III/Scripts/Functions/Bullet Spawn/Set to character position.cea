@@ -1,0 +1,12 @@
+[ENABLE]
+BulletCoords:
+readmem([[[[WorldChrMan]+80]+18]+28]+80,4)
+
+BulletCoords+10:
+readmem([[[[WorldChrMan]+80]+18]+28]+84,4)
+
+BulletCoords+20:
+readmem([[[[WorldChrMan]+80]+18]+28]+88,4)
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+[DISABLE]

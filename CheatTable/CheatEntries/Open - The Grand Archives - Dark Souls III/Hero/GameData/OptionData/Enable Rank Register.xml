@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337078899</ID>
+  <Description>"Enable Rank Register"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>16</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

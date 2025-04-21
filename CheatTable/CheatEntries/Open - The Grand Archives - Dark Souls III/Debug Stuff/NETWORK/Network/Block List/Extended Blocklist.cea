@@ -1,0 +1,26 @@
+//Author: inuNorii
+//Extend blocklist to 4000 IDs
+//Make sure to adjust the alloc size if you want to increase it further
+[ENABLE]
+alloc(BlockListMember,$FA08,DarkSoulsIII.exe)
+registerSymbol(BlockListMember)
+
+BlockListMember:
+readmem([[[SprjSessionManager]+10]+108]+08,24)
+
+[[[SprjSessionManager]+10]+108]+28:
+dd #4000
+
+[[[SprjSessionManager]+10]+108]+08:
+dq BlockListMember+18
+dq BlockListMember+FA28  // adjust offset if you increase alloc and list size
+
+[DISABLE]
+[[[SprjSessionManager]+10]+108]+08:
+readmem(BlockListMember,16)
+
+[[[SprjSessionManager]+10]+108]+28:
+dd #1000
+
+dealloc(BlockListMember)
+unregisterSymbol(BlockListMember)

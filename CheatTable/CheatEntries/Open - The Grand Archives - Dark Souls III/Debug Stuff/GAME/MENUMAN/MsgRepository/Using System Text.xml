@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097286</ID>
+  <Description>"Using System Text"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Steam
+1:PS4
+2:Xbox One
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>MsgRepository</Address>
+  <Offsets>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

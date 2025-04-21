@@ -1,0 +1,190 @@
+<CheatEntry>
+  <ID>1337045778</ID>
+  <Description>"swordArt (Weapon Art)"</Description>
+  <DropDownList DisplayValueAsItem="1">0:None
+1:None
+10:Weapon Skill
+11:(Fists)
+60:Weapon Skill
+70:Weapon Skill
+80:Weapon Skill
+90:Parry (small)
+91:Parry (medium)
+92:Spell Parry
+93:Spell Parry
+99:Parry
+100:Quickstep (Dagger)
+101:Blind Spot
+102:Unleash Dragon
+103:Guiding Light
+104:Blind Spot
+105:Shieldsplitter
+106:Stance (Dagger)
+107:Crystal Blade
+108:Quickstep (Dagger)
+200:Stance (SS)
+201:Stomp (SS)
+202:Guiding Light (SS)
+203:Oath of Sunlight
+204:Sacred Lothric Light
+205:Stance (SS)
+206:Lion Stance
+207:Ember (SS)
+300:Stance (GS)
+301:Wrath of the Gods (GS)
+302:Ember (Firelink GS)
+303:Moonlight Vortex
+304:Stance of Judgement
+305:Sacred Light and Flame
+306:Wolf Sword
+307:Stomp (GS)
+308:Stomp (GS)
+309:Storm King
+310:Perseverance
+311:Elfriede's Blackflame
+312:Blade of Peril
+400:Stomp (UGS)
+401:Parry
+402:Charge (UGS)
+403:Profaned Flame
+404:Flame of Lorian
+405:Stomp (UGS)
+406:Stomp (UGS)
+407:Stomp (UGS)
+410:Ember (paired UGS)
+500:Stance (TS)
+501:Shield Splitter
+502:Ricard's Lunge and Press
+503:Quill Dart
+600:Spin Slash (CS)
+601:Crescent Blade
+602:Tornado
+603:Frost Blade
+604:Spin Slash (CS)
+605:Spin Slash (CS)
+606:Chained Dance
+607:Prying Wedge
+608:Spin Slash (CS)
+700:Spin Slash (CGS)
+701:Wolf Leap
+702:Spin Slash (CGS)
+703:Spin Slash (CGS)
+704:Sever
+800:Hold (Katana)
+801:Bloodlust
+802:Hold (Katana)
+803:Darkdrift
+804:Hold (Frayed Blade)
+900:Warcry (Axe)
+901:Sharpen (Axe)
+902:Fest Bell
+903:Quickstep (Axe)
+904:Warcry (Axe)
+1000:Warcry (GA)
+1002:Demonic Flare
+1003:Falling Bolt (GA)
+1004:Warcry (GA)
+1005:Sharp (GA)
+1006:Earthen Wrath
+1100:Perseverance (Hammer)
+1101:Warcry (Hammer)
+1102:Steady Chant (Hammer)
+1103:Galvanize
+1104:Breathe Fire
+1200:Perseverance (GH)
+1201:Molten Persverance
+1202:Kindled Flurry
+1203:Warcry (GH)
+1204:Morne's Rage
+1205:Spin Bash (GH)
+1206:Galvanize (GH)
+1207:Quake
+1208:Call to Stone
+1300:Charge (Spear)
+1301:Falling Bolt (Swordspear)
+1302:Pacify
+1303:Shield Splitter
+1304:Steady Chant
+1305:Unleash Dragon
+1306:Charge (Spear)
+1307:Charge (Spear)
+1308:Lightning Charge
+1309:Kindled Charge
+1310:Charge (Spear)
+1311:Spin Sweep (Spear)
+1312:Hurl Spear
+1313:Ember (Spear)
+1314:Lothric War Banner
+1400:Spin Sweep (Halberd)
+1401:Chain Spin
+1402:Champion's Charge
+1404:Punitive Flame
+1405:Warcry (Halberd)
+1406:Charge (Halberd)
+1407:Perseverance (Halberd)
+1408:Wind Wheel
+1409:Mad King's Folly
+1500:Neck Swipe
+1501:1501?
+1502:Frost
+1600:Impact
+1601:Flame Whip
+1700:Quickstep (Fists)
+1701:Flame Whirlwind
+1702:Lifedrain
+1703:Perseverance (Fists)
+1800:Leaping Slash
+1801:Quickstep (Claws)
+1802:Quickstep (Claws)
+1803:Raptor Flurry
+1900:Rapid Fire
+1901:Puncture
+1902:Pharis Triple-shot
+1903:Darkmoon Arrow
+1904:Unseen Arrow
+2000:Puncturing Arrow
+2001:Puncturing Arrow
+2002:Pierce Earth
+2101:Tackle
+2102:Quickstep (xbow)
+2103:Repeat Fire
+2200:Steady Chant
+2201:Steady Chant
+2202:Poison Spores
+2203:Steady Chant
+2204:Chant from the Depths
+2205:Feasting Branch
+2300:Unfaltering Prayer
+2301:Gentle Prayer
+2302:Combustion
+2303:Unfaltering Prayer (Saint's Talisman)
+2304:Unfaltering Prayer (Sunlight Talisman)
+2305:Awakening
+2306:Pray for Favor
+2400:Combustion
+2401:Parting Flame
+2500:Quickstep (twindagger)
+2600:Spin Slash (twinswords)
+2700:Spin Slash (twinblades)
+2701:Spin Slash ?
+2710:(Golden Dual Swords)
+2720:Dancer's Grace
+2800:Onislayer
+2900:Charge (twinspears)
+3000:Chain Spin ?
+3100:Spin Bash ?
+3200:Shield Bash (Shield)
+3201:Shield Strike
+3300:Shield Bash (GShield)
+3301:Moan
+3310:Stone Flesh
+3320:Wheel of Fate
+3321:Dragon Roar?
+3330:Lockout
+3400:Shield Bash?
+3401:Dragon Breath?
+65536:65536
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>+194</Address>
+</CheatEntry>

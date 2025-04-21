@@ -1,0 +1,11 @@
+[ENABLE]
+aobscanmodule(WalkingAnimationsSpeed,DarkSoulsIII.exe,88 00 00 00 xx xx xx xx C7 86 A0 00 00 00 00 00 80 BF 33)
+registersymbol(WalkingAnimationsSpeed)
+WalkingAnimationsSpeed:
+[DISABLE]
+WalkingAnimationsSpeed+4:
+dd (float)1
+unregistersymbol(WalkingAnimationsSpeed)
+
+
+

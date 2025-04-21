@@ -1,0 +1,115 @@
+{
+Dynamically adds souls required for leveling up while you are doing it.
+If you start leveling up having 42 souls this script should make so
+that when you end leveling up and exit the menu you still have 42 souls.
+
+Since you can't have more than 999'999'999 souls at once
+you'll need to confirm leveling up couple times if you going for 802 level.
+Just press "Confirm" and continue leveling up.
+
+Author: ametalon
+Date: 2019-08-23
+}
+{$lua}
+
+if getCEVersion() < 6.82 and not syntaxcheck then
+  print("Requires Cheat Engine 6.8.2 or later.")
+  error()
+end
+
+local GetCost_Func = AOBScanModuleUnique(process,"40 53 48 83 EC ?? 8B D9 48 8D 4C 24 ?? BA ???????? 0F29 74 24 ?? C7 44 24 ?? FFFFFFFF 48 C7 44 24 28 00000000 0F 29 7C 24")
+local AddSoul_Func = AOBScanModuleUnique(process,"48 89 5C 24 ?? 48 89 74 24 ?? 57 48 83 EC ?? 8B DA 48 8B F9 E8 ???????? 8D 14 18")
+local addr = AOBScanModuleUnique(process,"48 8d 05 ???????? 49 89 06 8B 07 41 89 86 90 10 00 00")
+local AppMenu_PlayerLevelUpDialog_vftable = addr + readInteger(addr + 3) + 7
+
+if not NoCostLevelup then
+  NoCostLevelup = {costs = {}}
+
+  function NoCostLevelup:reset()
+    NoCostLevelup.level = self:player_level()
+    NoCostLevelup.credit = 0
+  end
+
+  function NoCostLevelup:start()
+    self:reset()
+    local t = createTimer(getMainForm())
+    t.interval = 100
+    t.onTimer = function(t)
+      if self:is_levelup_menu_open() then
+        t.interval = 100
+        self:check_if_credit_needed()
+      else
+        t.interval = 1000
+        self:balance()
+      end
+    end
+    self.timer = t
+  end
+
+  function NoCostLevelup:stop()
+    self.timer.destroy()
+    NoCostLevelup:balance()
+  end
+
+  function NoCostLevelup:balance()
+    local debit = self:get_total_cost(self.level, self:player_level())
+    self:add_souls(debit - self.credit)
+    self:reset()
+  end
+
+  function NoCostLevelup:check_if_credit_needed()
+    local current_souls = self:player_souls()
+    if current_souls == 999999999 then return end
+    local diff =
+      self:get_total_cost(self:player_level(), readInteger("[[NewMenuSystem]+50]+10E8")+2)
+      - current_souls
+    if diff > 0 then
+      self:add_souls(diff)
+    end
+  end
+
+  function NoCostLevelup:get_total_cost(start, target, sum)
+    sum = sum or 0
+    if start >= target then return sum end
+    return self:get_total_cost(start, target-1, sum+self:get_cost(target))
+  end
+
+  function NoCostLevelup:get_cost(level)
+    if level > 802 then return 0 end
+    if not self.costs[level] then
+      self.costs[level] = executeCodeEx(0, -1, GetCost_Func,
+        {type=0, value=level})
+    end
+    return self.costs[level]
+  end
+
+  function NoCostLevelup:add_souls(value)
+    if value == 0 then return end
+    local actually_added = executeCodeEx(0, -1, AddSoul_Func,
+      {type=0, value=readPointer("[GameDataMan]+10")},
+      {type=0, value=value})
+    --print("req add souls", value, actually_added)
+    self.credit = self.credit + actually_added
+  end
+
+  function NoCostLevelup:is_levelup_menu_open()
+    -- AppMenu::PlayerLevelUpDialog::vftable
+    return readPointer("[[NewMenuSystem]+50]") == AppMenu_PlayerLevelUpDialog_vftable
+  end
+
+  function NoCostLevelup:player_level()
+    return readInteger("[[GameDataMan]+10]+70")
+  end
+
+  function NoCostLevelup:player_souls()
+    return readInteger("[[GameDataMan]+10]+74")
+  end
+end
+
+
+if syntaxcheck then return end
+[ENABLE]
+NoCostLevelup:start()
+
+[DISABLE]
+NoCostLevelup:stop()

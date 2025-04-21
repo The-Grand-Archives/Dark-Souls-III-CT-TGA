@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>72523</ID>
+  <Description>"Found Item ID (decimal)"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>itemid_found</Address>
+  <Offsets>
+    <Offset>C</Offset>
+  </Offsets>
+</CheatEntry>

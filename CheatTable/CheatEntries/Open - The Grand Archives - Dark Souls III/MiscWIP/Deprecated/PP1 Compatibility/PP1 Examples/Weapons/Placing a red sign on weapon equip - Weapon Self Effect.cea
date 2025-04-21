@@ -1,0 +1,18 @@
+{
+  Author: Igromanru
+  Description: Place red sign on equipping a weapon.
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+  local WeaponId = 0x1EAB90 --Long Sword
+
+  local WeaponsArray = {
+    {WeaponId,0x4C,igro:decToByteArray(10,4)}, --0x4C is the Effect on Self 1 offset --ID dec 10 is Red Soapstone
+  }
+  paramUtils:paramIterator("EquipParamWeapon",WeaponsArray,"WeaponOnSelfEffect")
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+  paramUtils:paramDepatcher("WeaponOnSelfEffect")

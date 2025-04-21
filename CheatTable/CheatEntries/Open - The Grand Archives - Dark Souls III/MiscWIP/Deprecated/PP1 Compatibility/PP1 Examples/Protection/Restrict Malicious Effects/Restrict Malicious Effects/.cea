@@ -1,0 +1,71 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local stopeffect = {
+  {13,0x16c,"","Effect13"}, --13
+  {33,0x16c,"","Effect33"}, --33
+  {34,0x16c,"","Effect34"}, --34
+  {45,0x16c,"","Effect45"}, --45
+  {7020,0x16c,"","Effect7020"}, --7020
+  {7030,0x16c,"","Effect7030"}, --7030
+  {7080,0x16c,"","Effect7080"}, --7080
+  {7092,0x16c,"","Effect7092"}, --7092
+  {7130,0x16c,"","Effect7130"}, --7130
+  {7135,0x16c,"","Effect7135"}, --7135
+  {7120,0x16c,"","Effect7120"}, --7120
+  {7140,0x16c,"","Effect7140"}, --7140
+  {7150,0x16c,"","Effect7150"}, --7150
+  {7160,0x16c,"","Effect7160"}, --7160
+  {7300,0x16c,"","Effect7300"}, --7300
+  {7400,0x16c,"","Effect7400"}, --7400
+  {1600,0x16c,"","Effect1600"}, --1600
+  {1610,0x16c,"","Effect1610"}, --1610
+  {1620,0x16c,"","Effect1620"}, --1620
+  {11013,0x16c,"","Effect11013"}, --11013
+  {12150,0x16c,"","Effect12150"}, --12150
+  {12153,0x16c,"","Effect12153"}, --12153
+  {103750410,0x16c,"Effect103750410"}, --103750410
+  {5100,0x16c,"","Effect5100"}, --5100
+  {5101,0x16c,"","Effect5101"}, --5101
+  {4902,0x156,"","Effect4902"}, --4902
+  {3121,0x156,"","Effect3121"}, --3121
+}
+paramUtils:paramIterator("SpEffectParam",stopeffect)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+local stopeffect = {
+}
+paramUtils:paramIterator("SpEffectParam",stopeffect)
+unregisterSymbol("Effect13")
+unregisterSymbol("Effect33")
+unregisterSymbol("Effect34")
+unregisterSymbol("Effect45")
+unregisterSymbol("Effect7020")
+unregisterSymbol("Effect7030")
+unregisterSymbol("Effect7080")
+unregisterSymbol("Effect7092")
+unregisterSymbol("Effect7130")
+unregisterSymbol("Effect7135")
+unregisterSymbol("Effect7120")
+unregisterSymbol("Effect7140")
+unregisterSymbol("Effect7150")
+unregisterSymbol("Effect7160")
+unregisterSymbol("Effect7300")
+unregisterSymbol("Effect7400")
+unregisterSymbol("Effect1600")
+unregisterSymbol("Effect1610")
+unregisterSymbol("Effect1620")
+unregisterSymbol("Effect11013")
+unregisterSymbol("Effect12150")
+unregisterSymbol("Effect12153")
+unregisterSymbol("Effect103750410")
+unregisterSymbol("Effect5100")
+unregisterSymbol("Effect5101")
+unregisterSymbol("Effect4902")
+unregisterSymbol("Effect3121")
+
+
+
+

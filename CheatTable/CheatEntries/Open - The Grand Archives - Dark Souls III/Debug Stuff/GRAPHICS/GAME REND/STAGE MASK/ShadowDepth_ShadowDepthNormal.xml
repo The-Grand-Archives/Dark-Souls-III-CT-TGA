@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337081863</ID>
+  <Description>"ShadowDepth_ShadowDepthNormal"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>DC</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

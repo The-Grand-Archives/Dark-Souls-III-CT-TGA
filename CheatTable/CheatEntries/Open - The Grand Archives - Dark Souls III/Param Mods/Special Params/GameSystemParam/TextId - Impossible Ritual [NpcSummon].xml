@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099367</ID>
+  <Description>"TextId - Impossible Ritual [NpcSummon]"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>78</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

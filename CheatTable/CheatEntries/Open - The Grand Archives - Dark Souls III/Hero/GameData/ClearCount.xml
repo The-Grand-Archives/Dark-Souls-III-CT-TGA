@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337080316</ID>
+  <Description>"ClearCount"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>78</Offset>
+  </Offsets>
+</CheatEntry>

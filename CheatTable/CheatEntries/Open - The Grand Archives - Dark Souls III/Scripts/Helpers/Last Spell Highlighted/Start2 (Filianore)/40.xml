@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337078744</ID>
+  <Description>"40"</Description>
+  <DropDownList DisplayValueAsItem="1">0:Normal
+2:Lifehunt Scythe
+3:Sorceries?
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <Color>C0C0C0</Color>
+  <VariableType>Byte</VariableType>
+  <Address>+40</Address>
+</CheatEntry>

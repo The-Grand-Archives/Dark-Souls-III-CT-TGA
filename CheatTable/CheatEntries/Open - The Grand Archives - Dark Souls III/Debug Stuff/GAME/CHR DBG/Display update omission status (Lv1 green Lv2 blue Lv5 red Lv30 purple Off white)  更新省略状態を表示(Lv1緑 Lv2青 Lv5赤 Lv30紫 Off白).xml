@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097799</ID>
+  <Description>"Display update omission status (Lv1 green Lv2 blue Lv5 red Lv30 purple Off white) | 更新省略状態を表示(Lv1緑 Lv2青 Lv5赤 Lv30紫 Off白)"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>11</Offset>
+  </Offsets>
+</CheatEntry>

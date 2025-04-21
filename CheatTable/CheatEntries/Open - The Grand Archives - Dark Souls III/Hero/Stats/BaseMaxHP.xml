@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337046599</ID>
+  <Description>"BaseMaxHP"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>E0</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

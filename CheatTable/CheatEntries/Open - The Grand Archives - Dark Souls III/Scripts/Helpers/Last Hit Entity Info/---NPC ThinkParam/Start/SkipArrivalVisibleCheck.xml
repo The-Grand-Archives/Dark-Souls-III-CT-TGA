@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>89399</ID>
+  <Description>"SkipArrivalVisibleCheck"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+5E</Address>
+</CheatEntry>

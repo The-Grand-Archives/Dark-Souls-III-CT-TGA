@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>94080</ID>
+  <Description>"Irithyll of the Boreal Valley"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78190"/>
+    <id id="78191"/>
+    <id id="78192"/>
+    <id id="78193"/>
+    <id id="78189"/>
+    <id id="78185"/>
+    <id id="78187"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337080954</ID>
+  <Description>"IsUseConsumeInvadeType"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>930</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

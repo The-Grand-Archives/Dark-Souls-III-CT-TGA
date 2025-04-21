@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337046332</ID>
+  <Description>"isCustom"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>1</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+102+1</Address>
+</CheatEntry>

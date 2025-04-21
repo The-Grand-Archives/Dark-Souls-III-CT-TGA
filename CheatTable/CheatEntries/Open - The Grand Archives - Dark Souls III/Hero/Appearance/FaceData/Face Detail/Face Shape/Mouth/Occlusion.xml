@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73213</ID>
+  <Description>"Occlusion"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>74C</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

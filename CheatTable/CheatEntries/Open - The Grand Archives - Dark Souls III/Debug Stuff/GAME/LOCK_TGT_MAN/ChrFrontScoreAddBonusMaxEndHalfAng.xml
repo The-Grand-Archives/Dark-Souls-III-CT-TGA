@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099137</ID>
+  <Description>"ChrFrontScoreAddBonusMaxEndHalfAng"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>293C</Offset>
+  </Offsets>
+</CheatEntry>

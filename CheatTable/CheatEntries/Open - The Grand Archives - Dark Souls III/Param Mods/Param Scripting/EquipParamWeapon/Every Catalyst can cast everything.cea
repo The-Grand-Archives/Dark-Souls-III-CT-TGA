@@ -1,0 +1,26 @@
+{
+	Author: Igromanru
+	Description: Patch all catalyst to allow cast any sorcery, pyromancy and miracle
+}
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local catalysts = {13050000, 13260000, 13290000, 13270000, 13280000, 13300000, 13210000, 13220000, 13230000,
+	13430000, 13240000, 13250000, 13140000, 13060000, 13170000, 13180000, 13190000, 13070000, 13080000, 13420000,
+	13200000, 13110000, 13100000, 13440000, 13160000, 13400000, 13410000, 2160000, 4130000, 13120000, 8220000,
+	10160000, 12070000
+  }
+
+  for i,id in ipairs(catalysts) do
+	local weapon = EquipParamWeapon:new("EveryCatalystCanCastEverything", id)
+	weapon:enableMagic(1)
+	weapon:enablePyromancy(1)
+	weapon:enableMiracle(1)
+  end
+end
+
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  paramUtils:restore("EveryCatalystCanCastEverything")
+end

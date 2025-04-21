@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>86978</ID>
+  <Description>"Endurance"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>4C</Offset>
+    <Offset>1FA0</Offset>
+    <Offset>118</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

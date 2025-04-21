@@ -1,0 +1,50 @@
+{
+	Author: Igromanru
+	Description: Simple example how to modify a weapon.
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+local WeaponId = 0x4C4B40 -- Uchigatana
+
+local equipWeapon = EquipParamWeapon:new("weaponModificationTut",WeaponId)
+-- Attack Damage
+equipWeapon:attackBasePhysics(200) -- Physical Damage - 200
+equipWeapon:attackBaseMagic(50)    -- Magic Damage - 50
+equipWeapon:attackBaseFire(50)     -- Fire Damage - 50
+equipWeapon:attackBaseThunder(50)  -- Lightning Damage - 50
+equipWeapon:attackBaseDark(150)    -- Dark Damage - 150
+-- Requirements
+equipWeapon:properStrength(0)      -- Required STR - 0
+equipWeapon:properAgility(0)       -- Required DEX - 0
+equipWeapon:properMagic(0)         -- Required INT - 0
+equipWeapon:properFaith(0)         -- Required FTH - 0
+-- Scaling
+equipWeapon:correctStrength(150)   -- STR Scaling - 150
+equipWeapon:correctAgility(150)    -- DEX Scaling - 150
+equipWeapon:correctMagic(50)       -- INT Scaling - 50
+equipWeapon:correctFaith(50)       -- FTH Scaling - 50
+-- Block
+equipWeapon:physGuardCutRate(50)   -- Physical Block - 50
+equipWeapon:magGuardCutRate(50)    -- Magic Block - 50
+equipWeapon:fireGuardCutRate(50)   -- Fire Block - 50
+equipWeapon:thunGuardCutRate(50)   -- Lightning Block - 50
+equipWeapon:darkGuardCutRate(50)   -- Dark Block - 50
+--Effects on Hit
+equipWeapon:spEffectBehaviorId(3151) --Effect on Hit 1 -- Undead Hunter Charm
+equipWeapon:spEffectBehaviorId1(110) --Effect on Hit 2 -- Bonfire
+equipWeapon:spEffectBehaviorId2(2030)--Effect on Hit 2 -- Green Moss
+--Effects on Self
+equipWeapon:residentSpEffectId(112079000)  --Effect on Self 1 -- Pontiff's Left Eye effect
+equipWeapon:residentSpEffectId1(112042000) --Effect on Self 2 -- Silvercat Ring effect
+equipWeapon:residentSpEffectId2(112042000) --Effect on Self 2 -- Carthus Milkring
+
+equipWeapon:saWeaponDamage(0)     -- Poise Damage - 100
+
+equipWeapon:weight(0)             -- Weight - 0
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("weaponModificationTut")

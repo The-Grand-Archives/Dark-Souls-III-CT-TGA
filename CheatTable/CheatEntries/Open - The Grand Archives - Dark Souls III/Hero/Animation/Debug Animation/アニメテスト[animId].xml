@@ -1,0 +1,21 @@
+<CheatEntry>
+  <ID>1337180555</ID>
+  <Description>"アニメテスト[animId]"</Description>
+  <DropDownList DisplayValueAsItem="1">68000:BonfireInitialize
+68001:BonfireHumanRestore
+68002:BonfireGiveHeroPoint
+68010:BonfireStart
+68011:BonfireLoop
+68012:BonfireEnd
+68100:BonfireWarp
+68101:BonfireWarp2
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>F8</Offset>
+    <Offset>10</Offset>
+    <Offset>50</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

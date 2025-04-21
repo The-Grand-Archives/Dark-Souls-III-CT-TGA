@@ -1,0 +1,32 @@
+[ENABLE]
+aobscanmodule(Cameramovetest,DarkSoulsIII.exe,41 0F 29 56 30 45)
+alloc(newmem,$1000,Cameramovetest)
+
+label(code)
+label(return)
+
+newmem:
+  mov rax,[NpcControl_Data+04]
+  mov rax,[rax+1F90]
+  mov rax,[rax+68]
+  movups xmm2,[rax+80]
+  movaps [r14+30],xmm2
+  jmp return
+
+
+code:
+  movaps [r14+30],xmm2
+  jmp return
+
+Cameramovetest:
+  jmp newmem
+return:
+registersymbol(Cameramovetest)
+
+[DISABLE]
+
+Cameramovetest:
+  db 41 0F 29 56 30
+
+unregistersymbol(Cameramovetest)
+dealloc(newmem)

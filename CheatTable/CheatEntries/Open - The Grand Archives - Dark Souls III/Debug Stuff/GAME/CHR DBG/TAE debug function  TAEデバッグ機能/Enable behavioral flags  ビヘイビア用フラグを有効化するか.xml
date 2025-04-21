@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097906</ID>
+  <Description>"Enable behavioral flags | ビヘイビア用フラグを有効化するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4768F80</Address>
+</CheatEntry>

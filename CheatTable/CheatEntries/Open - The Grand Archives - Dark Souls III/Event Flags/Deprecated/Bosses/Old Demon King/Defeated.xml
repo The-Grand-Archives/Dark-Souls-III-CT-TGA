@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78128</ID>
+  <Description>"Defeated"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>1</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>5064</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

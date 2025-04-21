@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081919</ID>
+  <Description>"直線で移動可能な位置を取得 - Test Find Direct Path"</Description>
+  <Color>C0C0C0</Color>
+  <VariableType>String</VariableType>
+  <Length>100</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>14295DCC0</Address>
+</CheatEntry>

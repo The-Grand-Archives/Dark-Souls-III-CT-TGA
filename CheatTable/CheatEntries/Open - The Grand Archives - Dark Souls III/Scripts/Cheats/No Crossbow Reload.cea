@@ -1,0 +1,62 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+define(hasvalue,DarkSoulsIII.exe+868e81)
+alloc(newmem,256,hasvalue)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov byte ptr [rdx+rbx+000000DC],01
+  cmp byte ptr [rdx+rbx+000000DC],00
+  jmp return
+
+hasvalue:
+  jmp code
+  nop
+  nop
+  nop
+return:
+registersymbol(hasvalue)
+
+[DISABLE]
+hasvalue:
+  db 80 BC 1A DC 00 00 00 00
+unregistersymbol(hasvalue)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+84D8E1
+
+"DarkSoulsIII.exe"+84D8CB: CC                          -  int 3
+"DarkSoulsIII.exe"+84D8CC: CC                          -  int 3
+"DarkSoulsIII.exe"+84D8CD: CC                          -  int 3
+"DarkSoulsIII.exe"+84D8CE: CC                          -  int 3
+"DarkSoulsIII.exe"+84D8CF: CC                          -  int 3
+"DarkSoulsIII.exe"+84D8D0: 40 53                       -  push rbx
+"DarkSoulsIII.exe"+84D8D2: 48 83 EC 20                 -  sub rsp,20
+"DarkSoulsIII.exe"+84D8D6: 48 8B D9                    -  mov rbx,rcx
+"DarkSoulsIII.exe"+84D8D9: E8 82 F6 FF FF              -  call DarkSoulsIII.exe+84CF60
+"DarkSoulsIII.exe"+84D8DE: 48 63 D0                    -  movsxd  rdx,eax
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+84D8E1: 80 BC 1A DC 00 00 00 00     -  cmp byte ptr [rdx+rbx+000000DC],00
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+84D8E9: 0F 95 C0                    -  setne al
+"DarkSoulsIII.exe"+84D8EC: 48 83 C4 20                 -  add rsp,20
+"DarkSoulsIII.exe"+84D8F0: 5B                          -  pop rbx
+"DarkSoulsIII.exe"+84D8F1: C3                          -  ret
+"DarkSoulsIII.exe"+84D8F2: CC                          -  int 3
+"DarkSoulsIII.exe"+84D8F3: CC                          -  int 3
+"DarkSoulsIII.exe"+84D8F4: CC                          -  int 3
+"DarkSoulsIII.exe"+84D8F5: CC                          -  int 3
+"DarkSoulsIII.exe"+84D8F6: CC                          -  int 3
+"DarkSoulsIII.exe"+84D8F7: CC                          -  int 3
+}
+
+
+

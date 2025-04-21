@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73276</ID>
+  <Description>"Tone Around Eyes"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>766</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

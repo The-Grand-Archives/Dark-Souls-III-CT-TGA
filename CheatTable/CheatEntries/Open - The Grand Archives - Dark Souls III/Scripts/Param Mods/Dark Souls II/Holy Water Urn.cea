@@ -1,0 +1,36 @@
+//A proper recreation isnt possible, AtkParam lacks antUndeadDamageRate
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local Bullet = Bullet:new("holyWaterUrn",160)
+Bullet:atkId_Bullet(13556000)
+Bullet:sfxId_Bullet(300181)
+Bullet:hitRadius(0.08)
+Bullet:hitRadiusMax(-1)
+Bullet:spreadTime(0)
+
+local Bullet2 = Bullet:new("holyWaterUrn",161)
+Bullet2:atkId_Bullet(13556010)
+Bullet2:sfxId_Bullet(300182)
+Bullet2:life(0.07)
+Bullet2:hitRadius(1.6)
+Bullet2:hitRadiusMax(-1)
+Bullet2:spreadTime(0)
+Bullet2:dmgHitRecordLifeTime(5)
+
+local goods = EquipParamGoods:new("holyWaterUrn",296)
+goods:iconId(92)
+goods:reinforceTypeId(2000)
+goods:sfxId(300180)
+
+{$asm}
+[[[[144782838]+2950]+50]+18]+1F4A:
+dw 'Holy Water Urn',0
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("holyWaterUrn")
+{$asm}
+[[[[144782838]+2950]+50]+18]+1F4A:
+dw 'Undead Hunter Charm',0

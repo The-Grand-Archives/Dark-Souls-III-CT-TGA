@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>489693</ID>
+  <Description>"The Ringed City"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="489698"/>
+    <id id="489699"/>
+    <id id="489705"/>
+    <id id="489704"/>
+    <id id="489703"/>
+    <id id="489702"/>
+    <id id="489701"/>
+    <id id="489700"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

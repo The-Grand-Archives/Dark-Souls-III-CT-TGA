@@ -1,0 +1,27 @@
+<CheatEntry>
+  <ID>1337190155</ID>
+  <Description>"Npc Helper"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337190156"/>
+    <id id="1337190157"/>
+    <id id="1337190158"/>
+    <id id="1337190159"/>
+    <id id="1337190160"/>
+    <id id="1337190161"/>
+    <id id="1337190162"/>
+    <id id="1337190163"/>
+    <id id="1337190164"/>
+    <id id="1337190165"/>
+    <id id="1337190166"/>
+    <id id="1337272778"/>
+    <id id="1337272785"/>
+    <id id="1337190167"/>
+    <id id="1337190180"/>
+    <id id="1337190191"/>
+    <id id="1337190203"/>
+    <id id="1337190209"/>
+    <id id="1337190213"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

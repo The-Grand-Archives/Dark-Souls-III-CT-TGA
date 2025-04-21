@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>72938</ID>
+  <Description>"Watchdogs of Farron"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>D2</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337099077</ID>
+  <Description>"Durability"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">-1:Normal
+0:Broken
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>ItemGibData+08</Address>
+</CheatEntry>

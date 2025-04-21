@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>88445</ID>
+  <Description>"--- FaceData Mimic"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="88440"/>
+    <id id="88450"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

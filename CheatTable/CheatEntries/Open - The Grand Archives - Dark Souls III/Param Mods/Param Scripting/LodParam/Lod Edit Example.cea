@@ -1,0 +1,22 @@
+{Gate 05/08/2019}
+{$lua}
+if syntaxcheck then return end
+[enable]
+local lodids = {19, 50, 54, 61}
+for i,lt in ipairs(lodids) do
+local lod = LodParam:new("LodEdit",lt)
+lod:lv01_BorderDist(5)
+lod:lv01_PlayDist(1)
+lod:lv12_BorderDist(15)
+lod:lv12_PlayDist(2)
+lod:textureLod(0)
+lod:lv23_BorderDist(15)
+lod:lv23_PlayDist(1)
+lod:lv34_BorderDist(15)
+lod:lv34_PlayDist(1)
+lod:lv45_BorderDist(15)
+lod:lv45_PlayDist(1)
+lod:distanceScaleId(1)
+end
+[disable]
+paramUtils:restore("LodEdit")

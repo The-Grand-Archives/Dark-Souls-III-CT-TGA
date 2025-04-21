@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337032440</ID>
+  <Description>"isEndlessHit (spawn at feet)"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+9a</Address>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081302</ID>
+  <Description>"Nose_bridge_shallow_deep"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>750</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337187442</ID>
+  <Description>"Addition rate of the previous movement direction of the sliding bullet | すべる弾の前回の移動方向の加算率"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>SprjBulletManager</Address>
+  <Offsets>
+    <Offset>1C8</Offset>
+  </Offsets>
+</CheatEntry>

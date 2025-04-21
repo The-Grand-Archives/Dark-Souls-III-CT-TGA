@@ -1,0 +1,12 @@
+//Changes the Firelink Shrine choice in the first menu to Pontiff
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local Bonfire = BonfireWarpParam:new("ChangeFirelinkBonfire",1)
+Bonfire:WarpEventId(3701951)
+Bonfire:BonfireNameId(211295)
+Bonfire:DescriptionTextId(211695)
+Bonfire:PictureId(10062)
+
+[DISABLE]
+paramUtils:restore("ChangeFirelinkBonfire")

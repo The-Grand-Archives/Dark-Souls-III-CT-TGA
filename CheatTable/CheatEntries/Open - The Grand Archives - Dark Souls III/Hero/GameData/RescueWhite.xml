@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337079003</ID>
+  <Description>"RescueWhite"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>88</Offset>
+  </Offsets>
+</CheatEntry>

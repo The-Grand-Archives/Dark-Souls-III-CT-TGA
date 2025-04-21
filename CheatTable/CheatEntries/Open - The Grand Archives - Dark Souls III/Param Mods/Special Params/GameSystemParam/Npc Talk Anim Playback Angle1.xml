@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099343</ID>
+  <Description>"Npc Talk Anim Playback Angle1"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>20</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

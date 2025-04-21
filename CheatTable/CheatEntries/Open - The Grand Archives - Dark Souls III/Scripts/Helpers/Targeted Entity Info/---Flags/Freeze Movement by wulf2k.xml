@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337045242</ID>
+  <Description>"Freeze Movement by wulf2k"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Nothing
+1:Freeze
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>20</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

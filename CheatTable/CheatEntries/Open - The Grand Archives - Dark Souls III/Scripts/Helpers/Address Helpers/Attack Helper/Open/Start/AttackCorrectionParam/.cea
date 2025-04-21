@@ -1,0 +1,40 @@
+[ENABLE]
+
+[[[[Param]+1660]+68]+68]+23B8:
+  db 00 00 00 00
+
+define(AtkCorr,DarkSoulsIII.exe+E17DA8)
+alloc(newmem,$100,AtkCorr)
+
+label(code)
+label(return)
+label(atkcorrection_ptr)
+
+newmem:
+
+code:
+  mov rbx,atkcorrection_ptr
+  mov [rbx],rdx
+  movzx eax,byte ptr [rdx]
+  movss xmm3,[DarkSoulsIII.exe+3D6ACE8]
+  jmp return
+
+atkcorrection_ptr:
+  dq 0
+
+AtkCorr:
+  jmp code
+return:
+registersymbol(AtkCorr)
+registersymbol(atkcorrection_ptr)
+
+[DISABLE]
+AtkCorr:
+  db 0F B6 02 F3 0F 10 1D 35 2F F5 02
+
+unregistersymbol(AtkCorr)
+unregistersymbol(atkcorrection_ptr)
+dealloc(newmem)
+
+[[[[Param]+1660]+68]+68]+23B8:
+  db 10 27 00 00

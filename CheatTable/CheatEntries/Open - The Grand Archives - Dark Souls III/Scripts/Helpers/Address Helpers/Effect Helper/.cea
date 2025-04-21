@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(EffecAddressToUse,8)
+registersymbol(EffecAddressToUse)
+[DISABLE]
+dealloc(EffecAddressToUse)
+unregistersymbol(EffecAddressToUse)

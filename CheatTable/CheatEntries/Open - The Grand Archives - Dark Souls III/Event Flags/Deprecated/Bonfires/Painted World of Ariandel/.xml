@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>94084</ID>
+  <Description>"Painted World of Ariandel"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="86295"/>
+    <id id="86296"/>
+    <id id="86299"/>
+    <id id="86297"/>
+    <id id="86300"/>
+    <id id="86298"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

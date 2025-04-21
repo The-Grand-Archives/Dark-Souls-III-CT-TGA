@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097348</ID>
+  <Description>"diable net game contents"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>A28</Offset>
+  </Offsets>
+</CheatEntry>

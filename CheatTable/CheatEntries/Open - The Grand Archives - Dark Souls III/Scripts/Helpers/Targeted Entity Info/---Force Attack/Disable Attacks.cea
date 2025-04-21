@@ -1,0 +1,37 @@
+//Author : Pavuk
+//Disable Input For Attacks 2 (Game using only [rax+7434] pointer)
+//You can still use [rax+7414] for your own input
+[ENABLE]
+define(DisableAttacks,DarkSoulsIII.exe+5CC53A)
+alloc(newmem,128,DisableAttacks) //"DarkSoulsIII.exe"+5CC53A
+
+label(code)
+label(return)
+
+newmem:
+
+  push r15
+  mov r15,[target_ptr]
+  mov r15,[r15+58]
+  mov r15,[r15+320]
+  cmp rax,r15
+  pop r15
+
+  je return
+code:
+  mov ebx,[rax+00007434]
+  jmp return
+
+DisableAttacks:
+  jmp newmem
+  nop
+return:
+registersymbol(DisableAttacks)
+
+[DISABLE]
+
+DisableAttacks:
+  db 8B 98 34 74 00 00
+
+unregistersymbol(DisableAttacks)
+dealloc(newmem)

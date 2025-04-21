@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337256646</ID>
+  <Description>"emitterSpawnInterval"</Description>
+  <VariableType>Float</VariableType>
+  <Address>+b4</Address>
+</CheatEntry>

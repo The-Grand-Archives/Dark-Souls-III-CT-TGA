@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337079067</ID>
+  <Description>"SpEffectParam"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disabled
+1:Enabled
+</DropDownList>
+  <ShowAsSigned>0</ShowAsSigned>
+  <Color>FF8000</Color>
+  <VariableType>Byte</VariableType>
+  <Address>SoloParamRepository</Address>
+  <Offsets>
+    <Offset>4A0</Offset>
+  </Offsets>
+</CheatEntry>

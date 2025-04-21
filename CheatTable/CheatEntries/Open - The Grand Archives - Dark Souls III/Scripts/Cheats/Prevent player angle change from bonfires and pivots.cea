@@ -1,0 +1,11 @@
+//Author: saucy
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+DarkSoulsIII.exe+9DFDB1:
+db 90 90 90 90
+[DISABLE]
+DarkSoulsIII.exe+9DFDB1:
+movaps [rbx+70],xmm4

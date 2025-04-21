@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099136</ID>
+  <Description>"ChrFrontScoreAddBonusMax"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2938</Offset>
+  </Offsets>
+</CheatEntry>

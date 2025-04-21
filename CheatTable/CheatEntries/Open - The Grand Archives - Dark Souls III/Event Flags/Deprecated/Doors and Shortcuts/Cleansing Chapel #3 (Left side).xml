@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78383</ID>
+  <Description>"Cleansing Chapel #3 (Left side)"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>22B19</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337080860</ID>
+  <Description>"Number of collaborators at the start of the boss battle | ボス戦開始時協力者数"</Description>
+  <VariableType>Float</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>B8</Offset>
+  </Offsets>
+</CheatEntry>

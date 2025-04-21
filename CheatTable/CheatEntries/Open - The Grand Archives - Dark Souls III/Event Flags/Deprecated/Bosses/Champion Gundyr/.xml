@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>78210</ID>
+  <Description>"Champion Gundyr"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78211"/>
+    <id id="78212"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

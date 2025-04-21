@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337256558</ID>
+  <Description>"useLimitCategory2"</Description>
+  <DropDownList DisplayValueAsItem="1">0:None
+223:Spear of the Church
+224:Red Eye Orb
+</DropDownList>
+  <VariableType>2 Bytes</VariableType>
+  <Address>+76</Address>
+</CheatEntry>

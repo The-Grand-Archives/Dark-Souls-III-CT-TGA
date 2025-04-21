@@ -1,0 +1,20 @@
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+[[GameDataMan]+10]+88:
+
+db 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+[[[[GameDataMan]+10]+7b8]+c0]+38:
+
+db 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+[[[[GameDataMan]+10]+7c0]+0]+38:
+
+db 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+
+
+

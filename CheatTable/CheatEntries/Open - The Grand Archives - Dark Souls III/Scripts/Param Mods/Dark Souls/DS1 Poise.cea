@@ -1,0 +1,222 @@
+//Author: inuNorii
+//Restores poise functionality from DS1 for specific armour sets
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+--why do these have the poise effect lmao
+local nakedIds = {900000, 901000, 902000, 903000}
+for i,id in ipairs(nakedIds) do
+local protector = EquipParamProtector:new("DS1Poise",id)
+protector:residentSpEffectId2(-1)
+end
+
+--set poise effect and SARecover
+local sharedArmourIds = {
+      54000000,54001000,54002000,54003000,
+      54500000,54501000,54502000,54503000,
+      70000000,70001000,70002000,70003000,
+      71000000,71001000,71002000,71003000,
+      72000000,72001000,72002000,72003000,
+      74000000,74001000,74002000,74003000,
+      74500000,74501000,74502000,74503000,
+      75000000,75001000,75002000,75003000,
+      82000000,82001000,82002000,82003000,
+      83000000,83001000,83002000,83003000,
+      84000000,84001000,84002000,84003000,
+      85000000,85001000,85002000,85003000,
+      87000000,87001000,87002000,87003000,
+      90000000,90001000,90002000,90003000,
+      92000000,92001000,92002000,92003000,
+      93000000,93001000,93002000,93003000,
+      94000000,94001000,94002000,94003000,
+      96000000,96001000,96002000,96003000
+}
+for i,id in ipairs(sharedArmourIds) do
+local protector2 = EquipParamProtector:new("DS1Poise",id)
+protector2:residentSpEffectId2(6300)
+protector2:corectSARecover(-0.1)
+protector2:poise(1)
+end
+
+--Black Knight Set
+local BK0 = EquipParamProtector:new("DS1Poise",54000000)
+BK0:saDurability(8)
+local BK1 = EquipParamProtector:new("DS1Poise",54001000)
+BK1:saDurability(21)
+local BK2 = EquipParamProtector:new("DS1Poise",54002000)
+BK2:saDurability(10)
+local BK3 = EquipParamProtector:new("DS1Poise",54003000)
+BK3:saDurability(1)
+
+--Dark Set
+local DRK0 = EquipParamProtector:new("DS1Poise",54500000)
+DRK0:saDurability(6)
+local DRK1 = EquipParamProtector:new("DS1Poise",54501000)
+DRK1:saDurability(16)
+local DRK2 = EquipParamProtector:new("DS1Poise",54502000)
+DRK2:saDurability(9)
+local DRK3 = EquipParamProtector:new("DS1Poise",54503000)
+DRK3:saDurability(9)
+
+--Chain Set
+local CH0 = EquipParamProtector:new("DS1Poise",70000000)
+CH0:saDurability(5)
+local CH1 = EquipParamProtector:new("DS1Poise",70001000)
+CH1:saDurability(9)
+local CH2 = EquipParamProtector:new("DS1Poise",70002000)
+CH2:saDurability(5)
+local CH3 = EquipParamProtector:new("DS1Poise",70003000)
+CH3:saDurability(7)
+
+--Nameless Knight Set
+local NK0 = EquipParamProtector:new("DS1Poise",71000000)
+NK0:saDurability(8)
+local NK1 = EquipParamProtector:new("DS1Poise",71001000)
+NK1:saDurability(20)
+local NK2 = EquipParamProtector:new("DS1Poise",71002000)
+NK2:saDurability(6)
+local NK3 = EquipParamProtector:new("DS1Poise",71003000)
+NK3:saDurability(12)
+
+--Elite Knight Set
+local EK0 = EquipParamProtector:new("DS1Poise",72000000)
+EK0:saDurability(8)
+local EK1 = EquipParamProtector:new("DS1Poise",72001000)
+EK1:saDurability(20)
+local EK2 = EquipParamProtector:new("DS1Poise",72002000)
+EK2:saDurability(6)
+local EK3 = EquipParamProtector:new("DS1Poise",72003000)
+EK3:saDurability(12)
+
+--Catarina Set
+local CA0 = EquipParamProtector:new("DS1Poise",74000000)
+CA0:saDurability(8)
+local CA1 = EquipParamProtector:new("DS1Poise",74001000)
+CA1:saDurability(21)
+local CA2 = EquipParamProtector:new("DS1Poise",74002000)
+CA2:saDurability(13)
+local CA3 = EquipParamProtector:new("DS1Poise",74003000)
+CA3:saDurability(13)
+
+--Hard Leather Set
+local HL0 = EquipParamProtector:new("DS1Poise",74500000)
+HL0:saDurability(5)
+local HL1 = EquipParamProtector:new("DS1Poise",74501000)
+HL1:saDurability(0)
+local HL2 = EquipParamProtector:new("DS1Poise",74502000)
+HL2:saDurability(0)
+local HL3 = EquipParamProtector:new("DS1Poise",74503000)
+HL3:saDurability(0)
+
+--Havel Set
+local Havel0 = EquipParamProtector:new("DS1Poise",75000000)
+Havel0:saDurability(18)
+local Havel1 = EquipParamProtector:new("DS1Poise",75001000)
+Havel1:saDurability(47)
+local Havel2 = EquipParamProtector:new("DS1Poise",75002000)
+Havel2:saDurability(28)
+local Havel3 = EquipParamProtector:new("DS1Poise",75003000)
+Havel3:saDurability(28)
+
+--Eastern Set
+local EA0 = EquipParamProtector:new("DS1Poise",82000000)
+EA0:saDurability(8)
+local EA1 = EquipParamProtector:new("DS1Poise",82001000)
+EA1:saDurability(20)
+local EA2 = EquipParamProtector:new("DS1Poise",82002000)
+EA2:saDurability(8)
+local EA3 = EquipParamProtector:new("DS1Poise",82003000)
+EA3:saDurability(11)
+
+--Favor Set
+local FA0 = EquipParamProtector:new("DS1Poise",83000000)
+FA0:saDurability(8)
+local FA1 = EquipParamProtector:new("DS1Poise",83001000)
+FA1:saDurability(20)
+local FA2 = EquipParamProtector:new("DS1Poise",83002000)
+FA2:saDurability(8)
+local FA3 = EquipParamProtector:new("DS1Poise",83003000)
+FA3:saDurability(11)
+
+--Brass Set
+local BR0 = EquipParamProtector:new("DS1Poise",84000000)
+BR0:saDurability(8)
+local BR1 = EquipParamProtector:new("DS1Poise",84001000)
+BR1:saDurability(16)
+local BR2 = EquipParamProtector:new("DS1Poise",84002000)
+BR2:saDurability(8)
+local BR3 = EquipParamProtector:new("DS1Poise",84003000)
+BR3:saDurability(9)
+
+--Silver Knight Set
+local SK0 = EquipParamProtector:new("DS1Poise",85000000)
+SK0:saDurability(8)
+local SK1 = EquipParamProtector:new("DS1Poise",85001000)
+SK1:saDurability(19)
+local SK2 = EquipParamProtector:new("DS1Poise",85002000)
+SK2:saDurability(9)
+local SK3 = EquipParamProtector:new("DS1Poise",85003000)
+SK3:saDurability(11)
+
+--Iron Set
+local IRN0 = EquipParamProtector:new("DS1Poise",87000000)
+IRN0:saDurability(8)
+local IRN1 = EquipParamProtector:new("DS1Poise",87001000)
+IRN1:saDurability(16)
+local IRN2 = EquipParamProtector:new("DS1Poise",87002000)
+IRN2:saDurability(7)
+local IRN3 = EquipParamProtector:new("DS1Poise",87003000)
+IRN3:saDurability(9)
+
+--Black Iron Set
+local BI0 = EquipParamProtector:new("DS1Poise",90000000)
+BI0:saDurability(12)
+local BI1 = EquipParamProtector:new("DS1Poise",90001000)
+BI1:saDurability(31)
+local BI2 = EquipParamProtector:new("DS1Poise",90002000)
+BI2:saDurability(18)
+local BI3 = EquipParamProtector:new("DS1Poise",90003000)
+BI3:saDurability(18)
+
+--Wolf Knight Set
+local WK0 = EquipParamProtector:new("DS1Poise",92000000)
+WK0:saDurability(6)
+local WK1 = EquipParamProtector:new("DS1Poise",92001000)
+WK1:saDurability(15)
+local WK2 = EquipParamProtector:new("DS1Poise",92002000)
+WK2:saDurability(7)
+local WK3 = EquipParamProtector:new("DS1Poise",92003000)
+WK3:saDurability(9)
+
+--Dragonslayer Set
+local DS0 = EquipParamProtector:new("DS1Poise",93000000)
+DS0:saDurability(9)
+local DS1 = EquipParamProtector:new("DS1Poise",93001000)
+DS1:saDurability(19)
+local DS2 = EquipParamProtector:new("DS1Poise",93002000)
+DS2:saDurability(6)
+local DS3 = EquipParamProtector:new("DS1Poise",93003000)
+DS3:saDurability(11)
+
+--Smough's Set
+local SM0 = EquipParamProtector:new("DS1Poise",94000000)
+SM0:saDurability(14)
+local SM1 = EquipParamProtector:new("DS1Poise",94001000)
+SM1:saDurability(35)
+local SM2 = EquipParamProtector:new("DS1Poise",94002000)
+SM2:saDurability(21)
+local SM3 = EquipParamProtector:new("DS1Poise",94003000)
+SM3:saDurability(21)
+
+--Thorns Set
+local TH0 = EquipParamProtector:new("DS1Poise",96000000)
+TH0:saDurability(6)
+local TH1 = EquipParamProtector:new("DS1Poise",96001000)
+TH1:saDurability(16)
+local TH2 = EquipParamProtector:new("DS1Poise",96002000)
+TH2:saDurability(9)
+local TH3 = EquipParamProtector:new("DS1Poise",96003000)
+TH3:saDurability(9)
+
+[DISABLE]
+paramUtils:restore("DS1Poise")

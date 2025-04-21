@@ -1,0 +1,57 @@
+//Author: inuNorii
+//Enable different stat scaling for crossbows
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local LightCrossbow = EquipParamWeapon:new("scalingCrossbows",14040000)
+LightCrossbow:correctStrength(20)
+LightCrossbow:correctAgility(16)
+LightCrossbow:attackBasePhysics(94)
+LightCrossbow:reinforceTypeId(0)
+LightCrossbow:swordArt(2102)
+
+local HeavyCrossbow = EquipParamWeapon:new("scalingCrossbows",14110000)
+HeavyCrossbow:correctStrength(30)
+HeavyCrossbow:correctAgility(15)
+HeavyCrossbow:attackBasePhysics(102)
+HeavyCrossbow:reinforceTypeId(0)
+HeavyCrossbow:correctType(1)
+
+local SniperCrossbow = EquipParamWeapon:new("scalingCrossbows",14170000)
+SniperCrossbow:correctStrength(36)
+SniperCrossbow:correctAgility(32)
+SniperCrossbow:attackBasePhysics(95)
+SniperCrossbow:reinforceTypeId(0)
+SniperCrossbow:correctType(8)
+
+local Arbalest = EquipParamWeapon:new("scalingCrossbows",14050000)
+Arbalest:correctStrength(36)
+Arbalest:correctAgility(16)
+Arbalest:attackBasePhysics(95)
+Arbalest:reinforceTypeId(0)
+Arbalest:correctType(1)
+
+local KnightsCrossbow = EquipParamWeapon:new("scalingCrossbows",14100000)
+KnightsCrossbow:correctStrength(24)
+KnightsCrossbow:correctAgility(16)
+KnightsCrossbow:attackBasePhysics(24)
+KnightsCrossbow:attackBaseThunder(60)
+KnightsCrossbow:reinforceTypeId(65)
+KnightsCrossbow:correctType(0)
+
+local Avelyn = EquipParamWeapon:new("scalingCrossbows",14090000)
+Avelyn:correctStrength(32)
+Avelyn:correctAgility(28)
+Avelyn:attackBasePhysics(48)
+Avelyn:reinforceTypeId(0)
+Avelyn:correctType(2)
+
+local RepeatingCrossbow = EquipParamWeapon:new("scalingCrossbows",14190000)
+RepeatingCrossbow:correctStrength(32)
+RepeatingCrossbow:correctAgility(40)
+RepeatingCrossbow:attackBasePhysics(102)
+RepeatingCrossbow:reinforceTypeId(2100)
+RepeatingCrossbow:correctType(22)
+
+[DISABLE]
+paramUtils:restore("scalingCrossbows")

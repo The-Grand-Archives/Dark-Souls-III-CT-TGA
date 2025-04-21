@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(BehaviorParam_PCHelper,8)
+registersymbol(BehaviorParam_PCHelper)
+[DISABLE]
+dealloc(BehaviorParam_PCHelper)
+unregistersymbol(BehaviorParam_PCHelper)

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>492875</ID>
+  <Description>"IsEnableAllAreaObjBreak"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>CC5</Offset>
+  </Offsets>
+</CheatEntry>

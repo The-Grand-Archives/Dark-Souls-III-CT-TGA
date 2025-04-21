@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337189341</ID>
+  <Description>"create Angle|出現向き[deg]（0：プレイヤーと同じ向き"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1BC</Offset>
+    <Offset>3018</Offset>
+  </Offsets>
+</CheatEntry>

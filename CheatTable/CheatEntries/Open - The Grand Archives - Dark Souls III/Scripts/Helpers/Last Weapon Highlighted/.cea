@@ -1,0 +1,61 @@
+[ENABLE]
+aobscanmodule(weapon,DarkSoulsIII.exe,0F B7 80 BE 00 00 00 48 8B 5C 24 60 48 83 C4 50 5F C3 8B)
+alloc(newmem,$1000,weapon)
+
+label(code)
+label(return)
+label(weapon_ptr)
+
+newmem:
+
+code:
+  mov rbx,weapon_ptr
+  mov [rbx],rax
+  movzx eax,word ptr [rax+000000BE]
+  jmp return
+
+weapon_ptr:
+  dq 0
+
+weapon:
+  jmp code
+  nop
+  nop
+return:
+registersymbol(weapon)
+registersymbol(weapon_ptr)
+
+[DISABLE]
+weapon:
+  db 0F B7 80 BE 00 00 00
+unregistersymbol(weapon)
+unregistersymbol(weapon_ptr)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+6ADC18
+
+"DarkSoulsIII.exe"+6ADBEC: C7 44 24 38 FF FF FF FF  -  mov [rsp+38],FFFFFFFF
+"DarkSoulsIII.exe"+6ADBF4: 48 89 7C 24 40           -  mov [rsp+40],rdi
+"DarkSoulsIII.exe"+6ADBF9: E8 52 89 73 00           -  call DarkSoulsIII.exe+DE6550
+"DarkSoulsIII.exe"+6ADBFE: 48 8D 4C 24 20           -  lea rcx,[rsp+20]
+"DarkSoulsIII.exe"+6ADC03: 8B D3                    -  mov edx,ebx
+"DarkSoulsIII.exe"+6ADC05: 89 7C 24 48              -  mov [rsp+48],edi
+"DarkSoulsIII.exe"+6ADC09: E8 82 61 73 00           -  call DarkSoulsIII.exe+DE3D90
+"DarkSoulsIII.exe"+6ADC0E: 48 8B 44 24 28           -  mov rax,[rsp+28]
+"DarkSoulsIII.exe"+6ADC13: 48 85 C0                 -  test rax,rax
+"DarkSoulsIII.exe"+6ADC16: 74 12                    -  je DarkSoulsIII.exe+6ADC2A
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+6ADC18: 0F B7 80 BE 00 00 00     -  movzx eax,word ptr [rax+000000BE]
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+6ADC1F: 48 8B 5C 24 60           -  mov rbx,[rsp+60]
+"DarkSoulsIII.exe"+6ADC24: 48 83 C4 50              -  add rsp,50
+"DarkSoulsIII.exe"+6ADC28: 5F                       -  pop rdi
+"DarkSoulsIII.exe"+6ADC29: C3                       -  ret
+"DarkSoulsIII.exe"+6ADC2A: 8B C7                    -  mov eax,edi
+"DarkSoulsIII.exe"+6ADC2C: 48 8B 5C 24 60           -  mov rbx,[rsp+60]
+"DarkSoulsIII.exe"+6ADC31: 48 83 C4 50              -  add rsp,50
+"DarkSoulsIII.exe"+6ADC35: 5F                       -  pop rdi
+"DarkSoulsIII.exe"+6ADC36: C3                       -  ret
+"DarkSoulsIII.exe"+6ADC37: CC                       -  int 3
+}

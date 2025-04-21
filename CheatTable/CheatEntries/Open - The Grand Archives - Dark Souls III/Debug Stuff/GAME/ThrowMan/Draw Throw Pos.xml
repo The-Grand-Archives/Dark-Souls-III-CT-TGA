@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337187607</ID>
+  <Description>"Draw Throw Pos"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Binary</VariableType>
+  <BitStart>1</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>ThrowMan</Address>
+  <Offsets>
+    <Offset>E8</Offset>
+  </Offsets>
+</CheatEntry>

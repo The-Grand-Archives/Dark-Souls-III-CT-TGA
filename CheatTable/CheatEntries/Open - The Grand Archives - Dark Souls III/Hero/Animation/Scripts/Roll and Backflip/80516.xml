@@ -1,0 +1,17 @@
+<CheatEntry>
+  <ID>80516</ID>
+  <Description>"&gt;"</Description>
+  <DropDownList DisplayValueAsItem="1">0:Backflip
+1:Fastroll
+2:Midroll
+3:Fatroll
+4:Overencumbered
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>2B4</Offset>
+    <Offset>50</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

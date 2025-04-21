@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099135</ID>
+  <Description>"ChrFrontRangeLockRadius"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2934</Offset>
+  </Offsets>
+</CheatEntry>

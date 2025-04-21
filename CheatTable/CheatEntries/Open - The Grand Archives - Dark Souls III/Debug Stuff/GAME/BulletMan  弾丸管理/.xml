@@ -1,0 +1,20 @@
+<CheatEntry>
+  <ID>1337183968</ID>
+  <Description>"BulletMan | 弾丸管理"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337183969"/>
+    <id id="1337183972"/>
+    <id id="1337187444"/>
+    <id id="1337187451"/>
+    <id id="1337187449"/>
+    <id id="1337187452"/>
+    <id id="1337187442"/>
+    <id id="1337187443"/>
+    <id id="1337187450"/>
+    <id id="1337187447"/>
+    <id id="1337183970"/>
+    <id id="1337187448"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

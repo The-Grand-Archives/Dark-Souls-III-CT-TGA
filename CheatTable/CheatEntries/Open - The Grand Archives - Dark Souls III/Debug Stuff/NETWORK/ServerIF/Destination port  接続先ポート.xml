@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097079</ID>
+  <Description>"Destination port | 接続先ポート"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>68</Offset>
+  </Offsets>
+</CheatEntry>

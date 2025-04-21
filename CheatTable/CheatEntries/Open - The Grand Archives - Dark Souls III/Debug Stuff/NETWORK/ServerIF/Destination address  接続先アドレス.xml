@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337097046</ID>
+  <Description>"Destination address | 接続先アドレス"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>String</VariableType>
+  <Length>55</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>38</Offset>
+  </Offsets>
+</CheatEntry>

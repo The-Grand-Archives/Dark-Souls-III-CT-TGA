@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337098062</ID>
+  <Description>"3D Sound Position Y[m]"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjSound</Address>
+  <Offsets>
+    <Offset>18</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

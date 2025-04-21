@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337099069</ID>
+  <Description>"OutBloomPow"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>C8</Offset>
+    <Offset>78</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

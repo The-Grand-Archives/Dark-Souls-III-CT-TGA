@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337033334</ID>
+  <Description>"Current Covenant in Slot"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337033335"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

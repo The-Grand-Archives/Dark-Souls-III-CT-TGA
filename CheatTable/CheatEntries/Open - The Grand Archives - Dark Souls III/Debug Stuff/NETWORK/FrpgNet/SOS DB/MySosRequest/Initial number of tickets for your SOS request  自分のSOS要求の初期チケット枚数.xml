@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096734</ID>
+  <Description>"Initial number of tickets for your SOS request | 自分のSOS要求の初期チケット枚数"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>78</Offset>
+    <Offset>B90</Offset>
+  </Offsets>
+</CheatEntry>

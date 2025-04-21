@@ -1,0 +1,22 @@
+<CheatEntry>
+  <ID>1337098089</ID>
+  <Description>"MOBANK"</Description>
+  <Options moHideChildren="1"/>
+  <Color>C0C0C0</Color>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337098090"/>
+    <id id="1337098093"/>
+    <id id="1337098092"/>
+    <id id="1337098091"/>
+    <id id="1337098095"/>
+    <id id="1337098094"/>
+    <id id="1337098096"/>
+    <id id="1337098101"/>
+    <id id="1337098100"/>
+    <id id="1337098099"/>
+    <id id="1337098098"/>
+    <id id="1337098097"/>
+    <id id="1337098102"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

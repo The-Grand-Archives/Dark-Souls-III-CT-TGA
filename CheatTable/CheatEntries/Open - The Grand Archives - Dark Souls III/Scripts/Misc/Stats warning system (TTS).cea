@@ -1,0 +1,68 @@
+{
+  Author: Igromanru
+  Game Version: 1.14
+  Date: 20.06.2017
+  Description: Checks players stats and warn user.
+}
+[ENABLE]
+{$lua}
+if(syntaxcheck) then return end
+
+local MAX_LEGIT_STATS = 4
+local PLAYER_SIZE = 56
+
+local playersHolder = {
+	player1 = "",
+	player2 = "",
+	player3 = "",
+	player4 = "",
+	player5 = "",
+}
+
+function getPlayerPtr(number)
+	if(number == nil) then number = 1 end
+	return "[[[WorldChrMan]+40]+"..igro:toHex(number * PLAYER_SIZE).."]+1FA0"
+end
+
+function warnUser(playerPtr, playerNr)
+	local playerName = readString("["..playerPtr.."]+88", 32, true)
+	local steamId = readString("["..playerPtr.."]+7D8", 32, true)
+	if(playersHolder[playerNr-1] ~= steamId) then
+		playersHolder[playerNr-1] = steamId
+		speakEnglish("Warning! Player "..playerNr..", "..playerName.." is a hacker!")
+		print(os.date()..": Player "..playerNr..", "..playerName.." got über stats!")
+	end
+end
+
+function checkStats(playerPtr, playerNr)
+	local uberStatsCount = 0
+	for i = 1, 9 do
+		if(readInteger("["..playerPtr.."]+"..igro:toHex(0x40+4*i)) > 80) then
+			uberStatsCount = uberStatsCount + 1
+		end
+	end
+	if(uberStatsCount > MAX_LEGIT_STATS) then
+		warnUser(playerPtr, playerNr)
+	end
+end
+
+function checkPlayers(timer)
+	for i = 1, 5 do
+		local playerPtr = getPlayerPtr(i)
+		if(readQword(playerPtr) ~= nil) then
+			checkStats(playerPtr, i)
+		end
+	end
+end
+
+igroPlayerCheckTimer = createTimer(getMainForm())
+igroPlayerCheckTimer.Interval = 100
+igroPlayerCheckTimer.OnTimer = checkPlayers
+igroPlayerCheckTimer.setEnabled(true)
+
+[DISABLE]
+{$lua}
+if(syntaxcheck) then return end
+if(igroPlayerCheckTimer ~= nil) then
+  igroPlayerCheckTimer.setEnabled(false)
+end

@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>492839</ID>
+  <Description>"ID"</Description>
+  <DropDownListLink>SWORD_ARTS_ID</DropDownListLink>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>8 Bytes</VariableType>
+  <Address>SwordArtsParamHelper</Address>
+</CheatEntry>

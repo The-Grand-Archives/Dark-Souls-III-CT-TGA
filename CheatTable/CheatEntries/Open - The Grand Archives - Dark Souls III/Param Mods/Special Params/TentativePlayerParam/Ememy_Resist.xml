@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099275</ID>
+  <Description>"Ememy_Resist"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>84</Offset>
+    <Offset>60</Offset>
+    <Offset>70</Offset>
+  </Offsets>
+</CheatEntry>

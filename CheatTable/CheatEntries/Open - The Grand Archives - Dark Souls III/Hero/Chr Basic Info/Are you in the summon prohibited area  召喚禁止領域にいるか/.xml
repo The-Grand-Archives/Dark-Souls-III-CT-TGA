@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337098029</ID>
+  <Description>"Are you in the summon prohibited area? | 召喚禁止領域にいるか"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <Color>C0C0C0</Color>
+  <VariableType>4 Bytes</VariableType>
+  <Address>0</Address>
+  <x-ce2fs-child-order>
+    <id id="1337098024"/>
+    <id id="1337098025"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

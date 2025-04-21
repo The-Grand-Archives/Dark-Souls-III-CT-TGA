@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>89769</ID>
+  <Description>"Team Type"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>XE</Address>
+  <Offsets>
+    <Offset>74</Offset>
+  </Offsets>
+</CheatEntry>

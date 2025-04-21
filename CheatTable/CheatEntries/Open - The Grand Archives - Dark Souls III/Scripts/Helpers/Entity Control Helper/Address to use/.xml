@@ -1,0 +1,33 @@
+<CheatEntry>
+  <ID>89762</ID>
+  <Description>"Address to use"</Description>
+  <Options moHideChildren="1"/>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">(c5140_0000):Pontiff
+(c5150_0001):Aldrich
+(c2240_0000):Vordt
+(c5270_0001):Dancer
+(c2090_0000):Oceiros
+(c5280_0000):Soul of Cinder
+(c3141_0000):Ancient Wyvern
+(c5010_0000):Nameless King
+(c5030_0000):King of the Storm
+(c3160_0000):Dragonslayer Armor
+(c5250_0001):Lorian Phase 1
+(c5250_0000):Lorian Phase 2
+(c5251_0000):Prince Lothric
+(c5110_0001):Champion Gundyr
+(c5260_0000):Yhorm
+(c3040_0000):Abyss Watcher
+(c6020_0001):Friede Phase One
+(c6010_0001):Friede Phase Two
+(c6010_0000):Ariandel
+(c6020_0000):Blackflame Friede
+(c0000_0009):Champion Gravetender
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>8 Bytes</VariableType>
+  <Address>XE</Address>
+  <x-ce2fs-child-order>
+    <id id="89824"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

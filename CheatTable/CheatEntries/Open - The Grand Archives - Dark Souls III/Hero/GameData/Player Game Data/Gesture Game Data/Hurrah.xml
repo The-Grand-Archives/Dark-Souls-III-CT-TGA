@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>73661</ID>
+  <Description>"Hurrah"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">26:Locked
+27:Unlocked
+</DropDownList>
+  <VariableType>2 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>40</Offset>
+    <Offset>7B8</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

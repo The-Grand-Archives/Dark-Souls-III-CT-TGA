@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337079008</ID>
+  <Description>"LockRangeRadiusBonus"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2914</Offset>
+  </Offsets>
+</CheatEntry>

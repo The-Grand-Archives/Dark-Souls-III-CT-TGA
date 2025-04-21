@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337098339</ID>
+  <Description>"Area to add | 追加したい領域"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>60</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+</CheatEntry>

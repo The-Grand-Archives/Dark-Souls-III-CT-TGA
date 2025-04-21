@@ -1,0 +1,34 @@
+{
+  Author: vbk
+}
+[ENABLE]
+aobscanmodule(bloodstain_coords_ptr_1,DarkSoulsIII.exe,89 0A 8B 48 04 89 4A 04 8B 48 08 89 4A 08 48 8B 53 60 8B 48 0C 89 4A 0C 8B 48 10 89 4A 10 8B 40)
+alloc(newmem,$1000,bloodstain_coords_ptr_1)
+
+label(code)
+label(return)
+label(bloodstain_coords_ptr_2)
+
+newmem:
+
+code:
+  mov [bloodstain_coords_ptr_2],rdx
+  mov [rdx],ecx
+  mov ecx,[rax+04]
+  jmp return
+
+bloodstain_coords_ptr_2:
+  dq 0
+
+bloodstain_coords_ptr_1:
+  jmp code
+return:
+registersymbol(bloodstain_coords_ptr_1)
+registersymbol(bloodstain_coords_ptr_2)
+
+[DISABLE]
+bloodstain_coords_ptr_1:
+  db 89 0A 8B 48 04 89 4A
+unregistersymbol(bloodstain_coords_ptr_1)
+unregistersymbol(bloodstain_coords_ptr_2)
+dealloc(newmem)

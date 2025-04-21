@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>1337272841</ID>
+  <Description>"Magic ID"</Description>
+  <DropDownListLink>MAGIC_ID</DropDownListLink>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>changeMagic_data+4</Address>
+</CheatEntry>

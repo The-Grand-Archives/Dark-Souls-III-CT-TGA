@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337045241</ID>
+  <Description>"Spawn Clone by wulf2k"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>10</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

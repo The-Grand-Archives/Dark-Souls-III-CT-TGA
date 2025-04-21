@@ -1,0 +1,32 @@
+<CheatEntry>
+  <ID>86630</ID>
+  <Description>"Manual Control"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="86625"/>
+    <id id="86626"/>
+    <id id="86627"/>
+    <id id="86606"/>
+    <id id="86622"/>
+    <id id="86623"/>
+    <id id="86624"/>
+    <id id="86607"/>
+    <id id="86608"/>
+    <id id="86609"/>
+    <id id="86628"/>
+    <id id="86629"/>
+    <id id="86610"/>
+    <id id="86611"/>
+    <id id="86612"/>
+    <id id="86613"/>
+    <id id="86616"/>
+    <id id="86614"/>
+    <id id="86615"/>
+    <id id="86617"/>
+    <id id="86618"/>
+    <id id="86619"/>
+    <id id="86620"/>
+    <id id="86621"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

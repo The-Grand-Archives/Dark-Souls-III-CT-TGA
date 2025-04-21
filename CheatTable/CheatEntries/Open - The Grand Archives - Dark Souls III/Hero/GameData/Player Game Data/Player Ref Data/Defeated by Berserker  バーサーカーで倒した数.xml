@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081164</ID>
+  <Description>"Defeated by Berserker | バーサーカーで倒した数"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>908</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

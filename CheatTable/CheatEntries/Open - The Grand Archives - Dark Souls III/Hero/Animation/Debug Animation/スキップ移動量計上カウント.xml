@@ -1,0 +1,19 @@
+<CheatEntry>
+  <ID>1337180560</ID>
+  <Description>"スキップ移動量計上カウント"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:0
+1:1
+2:2
+3:3
+4:4
+5:5
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>74</Offset>
+    <Offset>10</Offset>
+    <Offset>50</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,150 @@
+[ENABLE]
+define(p5VAC_1,DarkSoulsIII.exe+9CF463)
+define(p5VAC_2,DarkSoulsIII.exe+9D17F2)
+alloc(newmem,2048,p5VAC_1)
+label(returnhere)
+label(originalcode)
+label(exit)
+label(returnhere2)
+label(originalcode2)
+label(newmem2)
+label(_1)
+label(_2)
+label(Lock)
+label(X)
+label(Y)
+label(Z)
+registersymbol(Lock)
+registersymbol(X)
+registersymbol(Y)
+registersymbol(Z)
+registersymbol(p5VAC_1)
+registersymbol(p5VAC_2)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+push rax
+push rbx
+
+//mov rax,[[[[[DarkSoulsIII.exe+46C5DC8]+40]+38]+18]+28]
+
+mov rax,[WorldChrMan]
+mov rax,[rax+40]
+mov rax,[rax+118]
+cmp rax,0
+je originalcode
+mov rax,[rax+18]
+mov rax,[rax+28]
+add rax,80
+mov rbx,rcx
+add rbx,80
+cmp rbx,rax
+jne originalcode
+
+_1:
+mov rax,0
+cmp [Lock],rax
+jne _2
+mov [Lock],1
+mov rax,[[[[WorldChrMan]+40]+28]+80]
+mov [X],rax
+mov rax,[[[[WorldChrMan]+40]+28]+84]
+mov [Y],rax
+mov rax,[[[[WorldChrMan]+40]+28]+88]
+mov [Z],rax
+_2:
+
+mov rax,[X]
+mov [rcx+00000080],rax
+mov rax,[Y]
+mov [rcx+00000084],rax
+mov rax,[Z]
+mov [rcx+00000088],rax
+
+
+
+originalcode:
+pop rbx
+pop rax
+movaps xmm0,[rcx+00000080]
+
+exit:
+jmp returnhere
+
+newmem2:
+push rax
+push rdx
+
+mov rax,[WorldChrMan]
+mov rax,[rax+40]
+mov rax,[rax+118]
+cmp rax,0
+je originalcode2
+mov rax,[rax+18]
+mov rax,[rax+28]
+add rax,80
+mov rdx,rcx
+add rdx,80
+cmp rdx,rax
+jne originalcode2
+
+mov rax,[X]
+mov [rcx+00000080],rax
+mov rax,[Y]
+mov [rcx+00000084],rax
+mov rax,[Z]
+mov [rcx+00000088],rax
+
+originalcode2:
+pop rdx
+pop rax
+movaps xmm0,[rcx+00000080]
+jmp returnhere2
+
+Lock:
+db 00
+X:
+dd 00
+Y:
+dd 00
+Z:
+dd 00
+
+p5VAC_1:
+jmp newmem
+nop
+nop
+returnhere:
+
+p5VAC_2:
+jmp newmem2
+nop
+nop
+returnhere2:
+
+InstaStuff3+38:
+
+db 02
+
+[DISABLE]
+unregistersymbol(Lock)
+unregistersymbol(X)
+unregistersymbol(Y)
+unregistersymbol(Z)
+//code from here till the end of the code will be used to disable the cheat
+
+p5VAC_1:
+db 0F 28 81 80 00 00 00 66 0F 7F 02
+p5VAC_2:
+db 0F 28 81 80 00 00 00 66 0F 7F 81 70 01 00 00
+unregistersymbol(p5VAC_1)
+unregistersymbol(p5VAC_2)
+dealloc(newmem)
+
+InstaStuff3+38:
+
+db 01
+//Alt: db 0F 28 81 80 00 00 00
+
+
+

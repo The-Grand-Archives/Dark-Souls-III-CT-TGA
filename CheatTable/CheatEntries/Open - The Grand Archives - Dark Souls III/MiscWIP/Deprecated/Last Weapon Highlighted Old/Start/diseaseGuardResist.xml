@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337046318</ID>
+  <Description>"diseaseGuardResist"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+fc+1</Address>
+</CheatEntry>

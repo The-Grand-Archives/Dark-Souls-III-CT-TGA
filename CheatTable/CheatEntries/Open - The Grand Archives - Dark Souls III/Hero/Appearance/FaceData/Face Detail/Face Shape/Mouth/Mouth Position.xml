@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73214</ID>
+  <Description>"Mouth Position"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>74D</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

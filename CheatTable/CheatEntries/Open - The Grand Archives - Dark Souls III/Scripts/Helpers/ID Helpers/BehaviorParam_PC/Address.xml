@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>489724</ID>
+  <Description>"Address"</Description>
+  <DropDownListLink>BEHAVIOR_PC_ID</DropDownListLink>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>8 Bytes</VariableType>
+  <Address>BehaviorParam_PCHelper</Address>
+</CheatEntry>

@@ -1,0 +1,29 @@
+[ENABLE]
+
+aobscanmodule(NoMatAOB,DarkSoulsIII.exe,41 0F BE 40 14) // should be unique
+alloc(newmem,32,NoMatAOB)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov eax,0
+  jmp return
+
+NoMatAOB:
+  jmp code
+return:
+registersymbol(NoMatAOB)
+
+[DISABLE]
+
+NoMatAOB:
+  db 41 0F BE 40 14
+
+unregistersymbol(NoMatAOB)
+dealloc(newmem)
+
+
+

@@ -1,0 +1,40 @@
+<CheatEntry>
+  <ID>1337045290</ID>
+  <Description>"Start"</Description>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>RoleParam_PTR</Address>
+  <Offsets>
+    <Offset>0</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337045291"/>
+    <id id="1337045292"/>
+    <id id="1337045293"/>
+    <id id="1337045294"/>
+    <id id="1337045295"/>
+    <id id="1337045296"/>
+    <id id="1337045297"/>
+    <id id="1337045298"/>
+    <id id="1337045299"/>
+    <id id="1337045300"/>
+    <id id="1337045301"/>
+    <id id="1337045302"/>
+    <id id="1337045303"/>
+    <id id="1337045304"/>
+    <id id="1337045305"/>
+    <id id="1337045306"/>
+    <id id="1337045307"/>
+    <id id="1337045308"/>
+    <id id="1337045309"/>
+    <id id="1337045310"/>
+    <id id="1337045311"/>
+    <id id="1337045312"/>
+    <id id="1337045313"/>
+    <id id="1337045314"/>
+    <id id="1337045315"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>72403</ID>
+  <Description>"Vertical Cam Look Limit Mod .2"</Description>
+  <Options moHideChildren="1"/>
+  <Color>000080</Color>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="72341"/>
+    <id id="72340"/>
+    <id id="72405"/>
+    <id id="72404"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

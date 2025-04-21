@@ -1,0 +1,41 @@
+<CheatEntry>
+  <ID>1337018680</ID>
+  <Description>"Set Commoner to"</Description>
+  <Options moHideChildren="1" moRecursiveSetValue="1"/>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">646:Anri/Yuria
+676:Brigand
+644:Butcher
+653:Cornyx
+678:Court Sorcerer
+685:Creighton
+669:Cuculus
+682:Drang Soldier 1
+683:Drang Soldier 2
+642:Dunnel
+657:Eygon
+674:Exiles
+668:Gotthard
+643:Gravetender
+645:Greirat
+647:Hawkwood
+667:Heysel
+670:Hodrick
+664:Horace
+655:Irina
+654:Karla
+673:Kriemhild
+652:Orbeck
+661:Patches
+681:Rapier Guy
+663:Siegward
+649:Sirris
+665:Sword Master
+684:Tsorig
+640:Vilhelm
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>Commoner+10c</Address>
+  <x-ce2fs-child-order>
+    <id id="1337018681"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

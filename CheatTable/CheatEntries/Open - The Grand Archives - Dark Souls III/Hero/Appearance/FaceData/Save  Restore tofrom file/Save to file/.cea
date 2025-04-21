@@ -1,0 +1,42 @@
+{
+  Author: Igromanru
+  Game Version: 1.14
+  Date: 21.06.2017
+  Description: Saves character appearance data to a file.
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+function tableToString(tTable, name)
+	local result = ""
+	for i,v in ipairs(tTable) do
+		result = result..igro:toHex(v)..";"
+	end
+	return "<"..name..">"..result.."</"..name..">"
+end
+
+function saveFaceDataToFile(filename)
+	local facedata = readBytes("[[GameDataMan]+10]+6b8", 192, true)
+	local gender = readBytes("[[GameDataMan]+10]+AA", 4, true)
+	local body = readBytes("[[GameDataMan]+10]+3B0", 28, true)
+
+	local file = io.open(filename, "w+")
+	local fileContent = tableToString(facedata, "facedata")
+	fileContent = fileContent .. tableToString(gender, "gender")
+	fileContent = fileContent .. tableToString(body, "body")
+	file:write(fileContent)
+	file:close()
+end
+
+local saveDialog = createSaveDialog(getMainForm())
+saveDialog.InitalDir = TrainerOrigin
+if(saveDialog:execute()) then
+	saveFaceDataToFile(saveDialog.FileName)
+else
+	error("canceled")
+end
+
+
+[DISABLE]
+{$lua}

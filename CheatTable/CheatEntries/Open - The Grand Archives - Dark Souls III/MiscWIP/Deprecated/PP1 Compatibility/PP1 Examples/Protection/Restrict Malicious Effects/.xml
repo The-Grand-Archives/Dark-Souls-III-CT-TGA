@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>89264</ID>
+  <Description>"Restrict Malicious Effects"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="89265"/>
+    <id id="489718"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>78090</ID>
+  <Description>"Nameless King"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78089"/>
+    <id id="78091"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

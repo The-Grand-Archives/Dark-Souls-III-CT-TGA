@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337272800</ID>
+  <Description>""</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>2C</Offset>
+    <Offset>48</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

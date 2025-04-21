@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099430</ID>
+  <Description>"SpEffectID [Mound Maker]"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>154</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

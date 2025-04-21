@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337045687</ID>
+  <Description>"slashGuardCutRate"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+f8+1</Address>
+</CheatEntry>

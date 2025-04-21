@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>492938</ID>
+  <Description>"Hide Launch Settings"</Description>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4766584</Address>
+</CheatEntry>

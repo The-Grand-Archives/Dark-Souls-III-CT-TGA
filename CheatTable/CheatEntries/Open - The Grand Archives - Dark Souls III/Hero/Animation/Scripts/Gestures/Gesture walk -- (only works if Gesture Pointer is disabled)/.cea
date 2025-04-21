@@ -1,0 +1,96 @@
+{ Game   : DarkSoulsIII.exe
+  Version: 1.15
+  Author : Igromanru
+  Description: Allow you to walk while you're doing any gesture.
+}
+
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+-- Disable Gesture Pointer
+igro:getRecordById(489682).Active = false
+
+{$asm}
+aobscanmodule(GestureWalk,DarkSoulsIII.exe,8B 01 89 02 48 8B ? C3 ? 2B ? ? 54 DB ? ? ? ? EC)
+alloc(newmem,128,GestureWalk)
+
+label(code)
+label(GestureWalkOriginal)
+label(return)
+
+newmem:
+GestureWalkOriginal:
+  readmem(GestureWalk,7)
+{
+Gesture ID's are about from 80000-89000.
+So this is a fix to increase only Gesture ID's.
+C:
+if(value > 80000 && value < 89000)
+  ++value
+ASM:
+cmp [rax],13880
+jl return
+cmp [rax],15BA8
+jg return
+inc [rax]
+}
+code:
+  mov eax,[rcx]
+  mov [rdx],eax
+  mov rax,rdx
+  cmp [rax],13880
+  jl return
+  cmp [rax],15BA8
+  jg return
+  //or [rax],1
+  mov [rax],1
+  jmp return
+
+GestureWalk:
+  jmp newmem
+  nop
+  nop
+return:
+registersymbol(GestureWalk)
+registersymbol(GestureWalkOriginal)
+
+[DISABLE]
+
+GestureWalk:
+  readmem(GestureWalkOriginal,7)
+
+unregistersymbol(GestureWalk)
+unregistersymbol(GestureWalkOriginal)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+81D240
+
+"DarkSoulsIII.exe"+81D21B: FF 64 24 F8              -  jmp qword ptr [rsp-08]
+"DarkSoulsIII.exe"+81D21F: CC                       -  int 3
+"DarkSoulsIII.exe"+81D220: 48 83 79 08 00           -  cmp qword ptr [rcx+08],00
+"DarkSoulsIII.exe"+81D225: 74 0A                    -  je DarkSoulsIII.exe+81D231
+"DarkSoulsIII.exe"+81D227: 83 79 4C 00              -  cmp dword ptr [rcx+4C],00
+"DarkSoulsIII.exe"+81D22B: 0F 85 EF 02 00 00        -  jne DarkSoulsIII.exe+81D520
+"DarkSoulsIII.exe"+81D231: F3 C3                    - repe  ret
+"DarkSoulsIII.exe"+81D233: 48 03 45 38              -  add rax,[rbp+38]
+"DarkSoulsIII.exe"+81D237: 48 89 45 00              -  mov [rbp+00],rax
+"DarkSoulsIII.exe"+81D23B: E9 00 6B F9 04           -  jmp DarkSoulsIII.exe+57B3D40
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+81D240: 8B 01                    -  mov eax,[rcx]
+"DarkSoulsIII.exe"+81D242: 89 02                    -  mov [rdx],eax
+"DarkSoulsIII.exe"+81D244: 48 8B C2                 -  mov rax,rdx
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+81D247: C3                       -  ret
+"DarkSoulsIII.exe"+81D248: 48 8B CB                 -  mov rcx,rbx
+"DarkSoulsIII.exe"+81D24B: E9 DC B2 37 01           -  jmp DarkSoulsIII.exe+1B9852C
+"DarkSoulsIII.exe"+81D250: 48 83 EC 28              -  sub rsp,28
+"DarkSoulsIII.exe"+81D254: 48 8B 49 20              -  mov rcx,[rcx+20]
+"DarkSoulsIII.exe"+81D258: 48 85 C9                 -  test rcx,rcx
+"DarkSoulsIII.exe"+81D25B: 74 18                    -  je DarkSoulsIII.exe+81D275
+"DarkSoulsIII.exe"+81D25D: 48 83 79 08 00           -  cmp qword ptr [rcx+08],00
+"DarkSoulsIII.exe"+81D262: 74 11                    -  je DarkSoulsIII.exe+81D275
+"DarkSoulsIII.exe"+81D264: 48 8D 54 24 30           -  lea rdx,[rsp+30]
+}
+
+

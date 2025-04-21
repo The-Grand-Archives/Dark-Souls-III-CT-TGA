@@ -1,0 +1,29 @@
+[ENABLE]
+alloc(Debug_TestAnim,$100,DarkSoulsIII.exe)
+alloc(Debug_TestAnim_Data,$20)
+createthread(Debug_TestAnim)
+
+Debug_TestAnim:
+mov rcx,[WorldChrMan]
+test rcx,rcx
+je short Debug_TestAnim_Exit
+mov rcx,[rcx+80]
+test rcx,rcx
+je short Debug_TestAnim_Exit
+mov rcx,[rcx+50]
+mov rcx,[rcx+10]
+lea rdx,[Debug_TestAnim_Data]
+mov r8d,00000014
+mov r9,DarkSoulsIII.exe+8150B0
+jmp r9
+Debug_TestAnim_Exit:
+ret
+
+Debug_TestAnim_Data+18:
+dd 00001000
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_TestAnim)
+dealloc(Debug_TestAnim_Data)

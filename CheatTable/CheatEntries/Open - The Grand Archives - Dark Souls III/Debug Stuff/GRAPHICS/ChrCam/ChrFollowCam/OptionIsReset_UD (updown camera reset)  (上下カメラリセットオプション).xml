@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337098894</ID>
+  <Description>"OptionIsReset_UD (up/down camera reset) | (上下カメラリセットオプション)"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>2D2</Offset>
+    <Offset>60</Offset>
+    <Offset>28</Offset>
+  </Offsets>
+</CheatEntry>

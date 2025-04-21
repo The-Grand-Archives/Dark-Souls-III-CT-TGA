@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081260</ID>
+  <Description>"Face_wide_thin"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>73B</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

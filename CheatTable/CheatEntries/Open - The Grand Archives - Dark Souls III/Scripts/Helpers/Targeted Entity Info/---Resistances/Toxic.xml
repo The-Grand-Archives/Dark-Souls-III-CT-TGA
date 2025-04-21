@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337045217</ID>
+  <Description>"Toxic"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>14</Offset>
+    <Offset>20</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

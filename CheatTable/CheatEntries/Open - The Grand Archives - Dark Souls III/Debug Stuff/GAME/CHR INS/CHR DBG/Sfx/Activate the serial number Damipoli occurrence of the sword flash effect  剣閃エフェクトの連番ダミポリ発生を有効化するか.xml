@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337190041</ID>
+  <Description>"Activate the serial number Damipoli occurrence of the sword flash effect | 剣閃エフェクトの連番ダミポリ発生を有効化するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>175</Offset>
+  </Offsets>
+</CheatEntry>

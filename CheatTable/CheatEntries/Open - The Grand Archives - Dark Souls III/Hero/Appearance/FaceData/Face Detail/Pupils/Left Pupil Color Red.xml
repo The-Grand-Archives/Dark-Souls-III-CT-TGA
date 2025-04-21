@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73273</ID>
+  <Description>"Left Pupil Color Red"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6E4</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

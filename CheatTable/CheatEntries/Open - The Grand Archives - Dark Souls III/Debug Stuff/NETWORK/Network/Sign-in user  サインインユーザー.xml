@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337097714</ID>
+  <Description>"Sign-in user | サインインユーザー"</Description>
+  <Color>000080</Color>
+  <VariableType>String</VariableType>
+  <Length>16</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>DarkSoulsIII.exe+474D020</Address>
+</CheatEntry>

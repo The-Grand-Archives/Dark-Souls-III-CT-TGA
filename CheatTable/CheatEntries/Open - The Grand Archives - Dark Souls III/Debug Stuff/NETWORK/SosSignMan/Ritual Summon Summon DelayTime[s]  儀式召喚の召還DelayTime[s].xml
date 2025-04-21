@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>1337096850</ID>
+  <Description>"Ritual Summon Summon DelayTime[s] | 儀式召喚の召還DelayTime[s]"</Description>
+  <Color>000080</Color>
+  <VariableType>Float</VariableType>
+  <Address>DarkSoulsIII.exe+4766BE0</Address>
+</CheatEntry>

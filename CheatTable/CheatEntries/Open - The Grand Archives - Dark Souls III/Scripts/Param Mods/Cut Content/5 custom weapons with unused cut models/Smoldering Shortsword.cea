@@ -1,0 +1,101 @@
+//replaces fugs with smoldering shortsword(pretty much just smoldering straight sword.
+//additional overwrites: lorian's ugs weapon art name
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local weapon = EquipParamWeapon:new("smolderingfumesword",6350000)
+weapon:behaviorVariationId(2330)
+weapon:sortId(51360)
+weapon:weight(3)
+weapon:fixPrice(500)
+weapon:basicPrice(500)
+weapon:sellValue(500)
+weapon:correctStrength(75)
+weapon:correctAgility(25)
+weapon:correctMagic(10)
+weapon:correctFaith(10)
+weapon:physGuardCutRate(50)
+weapon:magGuardCutRate(50)
+weapon:fireGuardCutRate(50)
+weapon:thunGuardCutRate(50)
+weapon:materialSetId(2200)
+weapon:originEquipWep(890000)
+weapon:originEquipWep1(890000)
+weapon:originEquipWep2(890000)
+weapon:originEquipWep3(890000)
+weapon:originEquipWep4(890000)
+weapon:originEquipWep5(890000)
+weapon:iconId(4033)
+weapon:equipModelId(8002)
+weapon:attackBasePhysics(110)
+weapon:attackBaseFire(30)
+weapon:attackBaseStamina(50)
+weapon:saWeaponDamage(25)
+weapon:guardAngle(60)
+weapon:staminaGuardDef(35)
+weapon:reinforceTypeId(4600)
+weapon:wepmotionCategory(23)
+weapon:spAttribute(2)
+weapon:spAtkcategory(189)
+weapon:wepmotionOneHandId(1)
+weapon:wepmotionBothHandId(10)
+weapon:properStrength(16)
+weapon:properAgility(16)
+weapon:properMagic(0)
+weapon:properFaith(0)
+weapon:attackBaseParry(0)
+weapon:defenseBaseParry(0)
+weapon:guardBaseRepel(10)
+weapon:attackBaseRepel(66)
+weapon:guardCutCancelRate(0)
+weapon:poisonGuardResist(16)
+weapon:diseaseGuardResist(16)
+weapon:bloodGuardResist(16)
+weapon:curseGuardResist(16)
+weapon:isBlowAttackType(0)
+weapon:isThrustAttackType(1)
+weapon:isNormalAttackType(1)
+weapon:isEnhance(0)
+weapon:Group0_DummyPolyId1(301)
+weapon:weaponPosition(23)
+weapon:patchByte(0x178,25)
+weapon:correctTypeFire(4)
+weapon:darkGuardCutRate(50)
+weapon:AtkThrowEscapeA(10)
+weapon:AtkThrowEscapeB(10)
+weapon:swordArt(404)
+weapon:correctLuck(0)
+weapon:categoryName(117)
+weapon:AttackElementCorrect(10000)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+1E9AA:
+dw 'Smoldering Shortsword',0
+[[[[MsgRepository]+8]+0]+C0]+BD334:
+dw 'A relic from an age where the chaos flame burned bright.',A
+dw '',A
+dw 'Ravaged by time and neglect yet still smoldering with an inner flame.',A
+dw '',A
+dw 'Sometimes, just as a thing falls to pieces, it unleashes one last flash of great power...',A
+dw '',A
+dw 'Skill: Resurgent Chaos',A
+dw 'Lunge forward and follow through to reignite the scorched blade with a fraction of its former glory.',0
+[[[[MsgRepository]+08]+00]+0640]+A27E:
+dw 'Resurgent Chaos',0
+
+[DISABLE]
+{$lua}
+paramUtils:restore("smolderingfumesword")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+1E9AA:
+dw 'Fume Ultra Greatsword',0
+[[[[MsgRepository]+8]+0]+C0]+BD334:
+dw 'This twisted sword, the heaviest of all ultra greatswords, resembles black slate.',A
+dw '',A
+dw 'This weapon, said to belong to a traitor from long ago, was so heavy that it found no owner, and became a forgotten relic of history.',A
+dw '',A
+dw 'Skill: Stomp',A
+dw 'Use one',27,'s weight to lunge forward with a low stance and increased poise, and follow with a crushing strong attack.',0
+[[[[MsgRepository]+08]+00]+0640]+A27E:
+dw 'Flame of Lorian',0

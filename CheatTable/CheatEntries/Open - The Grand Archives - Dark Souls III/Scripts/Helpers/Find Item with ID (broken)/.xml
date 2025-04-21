@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>72521</ID>
+  <Description>"Find Item with ID (broken?)"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="72408"/>
+    <id id="72407"/>
+    <id id="72523"/>
+    <id id="72522"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

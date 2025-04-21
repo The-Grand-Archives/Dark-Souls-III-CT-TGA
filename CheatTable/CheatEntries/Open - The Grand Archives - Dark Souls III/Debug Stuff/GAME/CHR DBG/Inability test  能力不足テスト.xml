@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097815</ID>
+  <Description>"Inability test | 能力不足テスト"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4768F7F</Address>
+</CheatEntry>

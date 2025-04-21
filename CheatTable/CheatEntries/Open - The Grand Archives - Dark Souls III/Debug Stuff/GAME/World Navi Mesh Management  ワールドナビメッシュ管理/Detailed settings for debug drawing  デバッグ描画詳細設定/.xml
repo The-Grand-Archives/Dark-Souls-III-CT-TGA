@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337081900</ID>
+  <Description>"Detailed settings for debug drawing | デバッグ描画詳細設定"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337081981"/>
+    <id id="1337081906"/>
+    <id id="1337081905"/>
+    <id id="1337081904"/>
+    <id id="1337081903"/>
+    <id id="1337081902"/>
+    <id id="1337081901"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

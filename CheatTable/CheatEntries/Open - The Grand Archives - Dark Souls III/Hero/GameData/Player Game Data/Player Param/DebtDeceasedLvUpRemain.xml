@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080933</ID>
+  <Description>"DebtDeceasedLvUpRemain"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>10F</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

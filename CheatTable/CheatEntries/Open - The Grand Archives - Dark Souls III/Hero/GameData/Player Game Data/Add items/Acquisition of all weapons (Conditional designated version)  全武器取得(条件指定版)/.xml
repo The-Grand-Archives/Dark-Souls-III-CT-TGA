@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081091</ID>
+  <Description>"Acquisition of all weapons (Conditional designated version) | 全武器取得(条件指定版)"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097245"/>
+    <id id="1337097246"/>
+    <id id="1337097250"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

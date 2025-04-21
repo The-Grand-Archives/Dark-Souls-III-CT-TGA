@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337190242</ID>
+  <Description>"Anri (while at shrine)"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337190243"/>
+    <id id="1337190244"/>
+    <id id="1337190245"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

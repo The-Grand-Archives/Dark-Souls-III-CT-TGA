@@ -1,0 +1,15 @@
+[ENABLE]
+alloc(Debug_ReloadAllCharacters,256,DarkSoulsIII.exe)
+createthread(Debug_ReloadAllCharacters)
+
+Debug_ReloadAllCharacters:
+sub rsp,48
+mov edx,0000000C
+call DarkSoulsIII.exe+8D8750
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_ReloadAllCharacters)

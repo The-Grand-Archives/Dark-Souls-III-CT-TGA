@@ -1,0 +1,463 @@
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+local win = MIGForm:new()
+
+Armor = Item:new()
+function Armor:new(attributes)
+  o = Item:new(attributes.id, attributes.typ, attributes.quantity, attributes.dlc, attributes.cutContent)
+  setmetatable(o, self)
+  self.__index = self
+  return o
+end
+
+local armors = {
+  Armor:new({id = 0x1121EAC0, typ = 'Helms'}),	--Fallen Knight Helm
+  Armor:new({id = 0x1121EEA8, typ = 'Chests'}),	--Fallen Knight Armor
+  Armor:new({id = 0x1121F290, typ = 'Gauntlets'}),	--Fallen Knight Gauntlets
+  Armor:new({id = 0x1121F678, typ = 'Leggings'}),	--Fallen Knight Trousers
+  Armor:new({id = 0x11298BE0, typ = 'Helms'}),	--Knight Helm
+  Armor:new({id = 0x11298FC8, typ = 'Chests'}),	--Knight Armor
+  Armor:new({id = 0x112993B0, typ = 'Gauntlets'}),	--Knight Gauntlets
+  Armor:new({id = 0x11299798, typ = 'Leggings'}),	--Knight Leggings
+  Armor:new({id = 0x11406F40, typ = 'Helms'}),	--Firelink Helm
+  Armor:new({id = 0x11407328, typ = 'Chests'}),	--Firelink Armor
+  Armor:new({id = 0x11407710, typ = 'Gauntlets'}),	--Firelink Gauntlets
+  Armor:new({id = 0x11407AF8, typ = 'Leggings'}),	--Firelink Leggings
+  Armor:new({id = 0x11481060, typ = 'Helms'}),	--Sellsword Helm
+  Armor:new({id = 0x11481448, typ = 'Chests'}),	--Sellsword Armor
+  Armor:new({id = 0x11481830, typ = 'Gauntlets'}),	--Sellsword Gauntlet
+  Armor:new({id = 0x11481C18, typ = 'Leggings'}),	--Sellsword Trousers
+  Armor:new({id = 0x114FB180, typ = 'Helms'}),	--Herald Helm
+  Armor:new({id = 0x114FB568, typ = 'Chests'}),	--Herald Armor
+  Armor:new({id = 0x114FB950, typ = 'Gauntlets'}),	--Herald Gloves
+  Armor:new({id = 0x114FBD38, typ = 'Leggings'}),	--Herald Trousers
+  Armor:new({id = 0x115752A0, typ = 'Helms'}),	--Sunless Veil
+  Armor:new({id = 0x11575688, typ = 'Chests'}),	--Sunless Armor
+  Armor:new({id = 0x11575A70, typ = 'Gauntlets'}),	--Sunless Gauntlets
+  Armor:new({id = 0x11575E58, typ = 'Leggings'}),	--Sunless Leggings
+  Armor:new({id = 0x115EF3C0, typ = 'Helms'}),	--Black Hand Hat
+  Armor:new({id = 0x115EF7A8, typ = 'Chests'}),	--Black Hand Armor
+  Armor:new({id = 0x115EFB90, typ = 'Gauntlets'}),	--Assassin Gloves
+  Armor:new({id = 0x115EFF78, typ = 'Leggings'}),	--Assassin Trousers
+  Armor:new({id = 0x11607A60, typ = 'Helms'}),	--Assassin Hood
+  Armor:new({id = 0x11607E48, typ = 'Chests'}),	--Assassin Armor
+  Armor:new({id = 0x116694E0, typ = 'Helms'}),	--Xanthous Crown
+  Armor:new({id = 0x116698C8, typ = 'Chests'}),	--Xanthous Overcoat
+  Armor:new({id = 0x11669CB0, typ = 'Gauntlets'}),	--Xanthous Gloves
+  Armor:new({id = 0x1166A098, typ = 'Leggings'}),	--Xanthous Trousers
+  Armor:new({id = 0x116E3600, typ = 'Helms'}),	--Northern Helm
+  Armor:new({id = 0x116E39E8, typ = 'Chests'}),	--Northern Armor
+  Armor:new({id = 0x116E3DD0, typ = 'Gauntlets'}),	--Northern Gloves
+  Armor:new({id = 0x116E41B8, typ = 'Leggings'}),	--Northern Trousers
+  Armor:new({id = 0x1175D720, typ = 'Helms'}),	--Morne's Helm
+  Armor:new({id = 0x1175DB08, typ = 'Chests'}),	--Morne's Armor
+  Armor:new({id = 0x1175DEF0, typ = 'Gauntlets'}),	--Morne's Gauntlets
+  Armor:new({id = 0x1175E2D8, typ = 'Leggings'}),	--Morne's Leggings
+  Armor:new({id = 0x117D7840, typ = 'Helms'}),	--Silver Mask
+  Armor:new({id = 0x117D7C28, typ = 'Chests'}),	--Leonhard's Garb
+  Armor:new({id = 0x117D8010, typ = 'Gauntlets'}),	--Leonhard's Gauntlets
+  Armor:new({id = 0x117D83F8, typ = 'Leggings'}),	--Leonhard's Trousers
+  Armor:new({id = 0x11851960, typ = 'Helms'}),	--Sneering Mask
+  Armor:new({id = 0x11851D48, typ = 'Chests'}),	--Pale Shade Robe
+  Armor:new({id = 0x11852130, typ = 'Gauntlets'}),	--Pale Shade Gloves
+  Armor:new({id = 0x11852518, typ = 'Leggings'}),	--Pale Shade Trousers
+  Armor:new({id = 0x118CBA80, typ = 'Helms'}),	--Sunset Helm
+  Armor:new({id = 0x118CBE68, typ = 'Chests'}),	--Sunset Armor
+  Armor:new({id = 0x118CC250, typ = 'Gauntlets'}),	--Sunset Gauntlets
+  Armor:new({id = 0x118CC638, typ = 'Leggings'}),	--Sunset Leggings
+  Armor:new({id = 0x11945BA0, typ = 'Helms'}),	--Old Sage's Blindfold
+  Armor:new({id = 0x11945F88, typ = 'Chests'}),	--Cornyx's Garb
+  Armor:new({id = 0x11946370, typ = 'Gauntlets'}),	--Cornyx's Wrap
+  Armor:new({id = 0x11946758, typ = 'Leggings'}),	--Cornyx's Skirt
+  Armor:new({id = 0x119BFCC0, typ = 'Helms'}),	--Executioner Helm
+  Armor:new({id = 0x119C00A8, typ = 'Chests'}),	--Executioner Armor
+  Armor:new({id = 0x119C0490, typ = 'Gauntlets'}),	--Executioner Gauntlets
+  Armor:new({id = 0x119C0878, typ = 'Leggings'}),	--Executioner Leggings
+  Armor:new({id = 0x11A39DE0, typ = 'Helms'}),	--Billed Mask
+  Armor:new({id = 0x11A3A1C8, typ = 'Chests'}),	--Black Dress
+  Armor:new({id = 0x11A3A5B0, typ = 'Gauntlets'}),	--Black Gauntlets
+  Armor:new({id = 0x11A3A998, typ = 'Leggings'}),	--Black Leggings
+  Armor:new({id = 0x11AB3F00, typ = 'Helms'}),	--Pyromancer Crown
+  Armor:new({id = 0x11AB42E8, typ = 'Chests'}),	--Pyromancer Garb
+  Armor:new({id = 0x11AB46D0, typ = 'Gauntlets'}),	--Pyromancer Wrap
+  Armor:new({id = 0x11AB4AB8, typ = 'Leggings'}),	--Pyromancer Trousers
+  Armor:new({id = 0x11BA8140, typ = 'Helms'}),	--Court Sorcerer Hood
+  Armor:new({id = 0x11BA8528, typ = 'Chests'}),	--Court Sorcerer Robe
+  Armor:new({id = 0x11BA8910, typ = 'Gauntlets'}),	--Court Sorcerer Gloves
+  Armor:new({id = 0x11BA8CF8, typ = 'Leggings'}),	--Court Sorcerer Trousers
+  Armor:new({id = 0x11C9C380, typ = 'Helms'}),	--Sorcerer Hood
+  Armor:new({id = 0x11C9C768, typ = 'Chests'}),	--Sorcerer Robe
+  Armor:new({id = 0x11C9CB50, typ = 'Gauntlets'}),	--Sorcerer Gloves
+  Armor:new({id = 0x11C9CF38, typ = 'Leggings'}),	--Sorcerer Trousers
+  Armor:new({id = 0x11CB4E08, typ = 'Chests'}),	--Clandestine Coat
+  Armor:new({id = 0x11D905C0, typ = 'Helms'}),	--Cleric Hat
+  Armor:new({id = 0x11D909A8, typ = 'Chests'}),	--Cleric Blue Robe
+  Armor:new({id = 0x11D90D90, typ = 'Gauntlets'}),	--Cleric Gloves
+  Armor:new({id = 0x11D91178, typ = 'Leggings'}),	--Cleric Trousers
+--Armor:new({id = 0x11DA9048, typ = 'Chests', cutContent = true}),	--Dingy Maiden's Overcoat
+--Armor:new({id = 0x11F78A40, typ = 'Helms', cutContent = true}),	--Grotto Hat
+--Armor:new({id = 0x11F78E28, typ = 'Chests', cutContent = true}),	--Grotto Robe
+--Armor:new({id = 0x11F79210, typ = 'Gauntlets', cutContent = true}),	--Grotto Wrap
+--Armor:new({id = 0x11F795F8, typ = 'Leggings', cutContent = true}),	--Grotto Trousers
+  Armor:new({id = 0x12625A00, typ = 'Helms'}),	--Steel Soldier Helm
+  Armor:new({id = 0x12625DE8, typ = 'Chests'}),	--Deserter Armor
+--Armor:new({id = 0x126261D0, typ = 'Gauntlets', cutContent = true}),	--Soldier's Gauntlets
+  Armor:new({id = 0x126265B8, typ = 'Leggings'}),	--Deserter Trousers
+--Armor:new({id = 0x1263E0A0, typ = 'Helms', cutContent = true}),	--Soldier's Hood
+  Armor:new({id = 0x12656740, typ = 'Helms'}),	--Thief Mask
+--Armor:new({id = 0x14A62F80, typ = 'Helms', cutContent = true}),	--Thief Mask???itemgib
+  Armor:new({id = 0x129020C0, typ = 'Helms'}),	--Sage's Big Hat
+--Armor:new({id = 0x129024A8, typ = 'Chests', cutContent = true}),	--Elder's Robe
+  Armor:new({id = 0x129F6300, typ = 'Helms'}),	--Aristocrat's Mask
+  Armor:new({id = 0x129F66E8, typ = 'Chests'}),	--Jailer Robe
+  Armor:new({id = 0x129F6AD0, typ = 'Gauntlets'}),	--Jailer Gloves
+  Armor:new({id = 0x129F6EB8, typ = 'Leggings'}),	--Jailer Trousers
+--Armor:new({id = 0x12A70420, typ = 'Helms', cutContent = true}),	--Saint's Veil
+--Armor:new({id = 0x12A70808, typ = 'Chests', cutContent = true}),	--Saint's Dress
+--Armor:new({id = 0x12AEA540, typ = 'Helms', cutContent = true}),	--Footman's Hood
+--Armor:new({id = 0x12AEA928, typ = 'Chests', cutContent = true}),	--Footman's Overcoat
+--Armor:new({id = 0x12AEAD10, typ = 'Gauntlets', cutContent = true}),	--Footman's Bracelets
+--Armor:new({id = 0x12AEB0F8, typ = 'Leggings', cutContent = true}),	--Footman's Trousers
+  Armor:new({id = 0x12BDE780, typ = 'Helms'}),	--Grave Warden Hood
+  Armor:new({id = 0x12BDEB68, typ = 'Chests'}),	--Grave Warden Robe
+  Armor:new({id = 0x12BDEF50, typ = 'Gauntlets'}),	--Grave Warden Wrap
+  Armor:new({id = 0x12BDF338, typ = 'Leggings'}),	--Grave Warden Skirt
+  Armor:new({id = 0x12CD29C0, typ = 'Helms'}),	--Worker Hat
+  Armor:new({id = 0x12CD2DA8, typ = 'Chests'}),	--Worker Garb
+  Armor:new({id = 0x12CD3190, typ = 'Gauntlets'}),	--Worker Gloves
+  Armor:new({id = 0x12CD3578, typ = 'Leggings'}),	--Worker Trousers
+  Armor:new({id = 0x12D4CAE0, typ = 'Helms'}),	--Thrall Hood
+  Armor:new({id = 0x12DC6C00, typ = 'Helms'}),	--Evangelist Hat
+  Armor:new({id = 0x12DC6FE8, typ = 'Chests'}),	--Evangelist Robe
+  Armor:new({id = 0x12DC73D0, typ = 'Gauntlets'}),	--Evangelist Gloves
+  Armor:new({id = 0x12DC77B8, typ = 'Leggings'}),	--Evangelist Trousers
+  Armor:new({id = 0x12E40D20, typ = 'Helms', cutContent = true}),	--Scholar's Shed Skin
+  Armor:new({id = 0x12E41108, typ = 'Chests'}),	--Scholar's Robe
+  Armor:new({id = 0x12EBAE40, typ = 'Helms'}),	--Winged Knight Helm
+  Armor:new({id = 0x12EBB228, typ = 'Chests'}),	--Winged Knight Armor
+  Armor:new({id = 0x12EBB610, typ = 'Gauntlets'}),	--Winged Knight Gauntlets
+  Armor:new({id = 0x12EBB9F8, typ = 'Leggings'}),	--Winged Knight Leggings
+  Armor:new({id = 0x130291A0, typ = 'Helms'}),	--Cathedral Knight Helm
+  Armor:new({id = 0x13029588, typ = 'Chests'}),	--Cathedral Knight Armor
+  Armor:new({id = 0x13029970, typ = 'Gauntlets'}),	--Cathedral Knight Gauntlets
+  Armor:new({id = 0x13029D58, typ = 'Leggings'}),	--Cathedral Knight Leggings
+  Armor:new({id = 0x13197500, typ = 'Helms'}),	--Lothric Knight Helm
+  Armor:new({id = 0x131978E8, typ = 'Chests'}),	--Lothric Knight Armor
+  Armor:new({id = 0x13197CD0, typ = 'Gauntlets'}),	--Lothric Knight Gauntlets
+  Armor:new({id = 0x131980B8, typ = 'Leggings'}),	--Lothric Knight Leggings
+  Armor:new({id = 0x1328B740, typ = 'Helms'}),	--Outrider Knight Helm
+  Armor:new({id = 0x1328BB28, typ = 'Chests'}),	--Outrider Knight Armor
+  Armor:new({id = 0x1328BF10, typ = 'Gauntlets'}),	--Outrider Knight Gauntlets
+  Armor:new({id = 0x1328C2F8, typ = 'Leggings'}),	--Outrider Knight Leggings
+  Armor:new({id = 0x1337F980, typ = 'Helms'}),	--Black Knight Helm
+  Armor:new({id = 0x1337FD68, typ = 'Chests'}),	--Black Knight Armor
+  Armor:new({id = 0x13380150, typ = 'Gauntlets'}),	--Black Knight Gauntlets
+  Armor:new({id = 0x13380538, typ = 'Leggings'}),	--Black Knight Leggings
+  Armor:new({id = 0x133F9AA0, typ = 'Helms'}),	--Dark Mask
+  Armor:new({id = 0x133F9E88, typ = 'Chests'}),	--Dark Armor
+  Armor:new({id = 0x133FA270, typ = 'Gauntlets'}),	--Dark Gauntlets
+  Armor:new({id = 0x133FA658, typ = 'Leggings'}),	--Dark Leggings
+  Armor:new({id = 0x13473BC0, typ = 'Helms'}),	--Exile Mask
+  Armor:new({id = 0x13473FA8, typ = 'Chests'}),	--Exile Armor
+  Armor:new({id = 0x13474390, typ = 'Gauntlets'}),	--Exile Gauntlets
+  Armor:new({id = 0x13474778, typ = 'Leggings'}),	--Exile Leggings
+  Armor:new({id = 0x13567E00, typ = 'Helms'}),	--Pontiff Knight Crown
+  Armor:new({id = 0x135681E8, typ = 'Chests'}),	--Pontiff Knight Armor
+  Armor:new({id = 0x135685D0, typ = 'Gauntlets'}),	--Pontiff Knight Gauntlets
+  Armor:new({id = 0x135689B8, typ = 'Leggings'}),	--Pontiff Knight Leggings
+  Armor:new({id = 0x1365C040, typ = 'Helms'}),	--Golden Crown
+  Armor:new({id = 0x1365C428, typ = 'Chests'}),	--Dragonscale Armor
+  Armor:new({id = 0x1365C810, typ = 'Gauntlets'}),	--Golden Bracelets
+  Armor:new({id = 0x1365CBF8, typ = 'Leggings'}),	--Dragonscale Waistcloth
+  Armor:new({id = 0x136D6160, typ = 'Helms'}),	--Wolnir's Crown
+  Armor:new({id = 0x13750280, typ = 'Helms'}),	--Undead Legion Helm
+  Armor:new({id = 0x13750668, typ = 'Chests'}),	--Undead Legion Armor
+  Armor:new({id = 0x13750A50, typ = 'Gauntlets'}),	--Undead Legion Gauntlet
+  Armor:new({id = 0x13750E38, typ = 'Leggings'}),	--Undead Legion Leggings
+--Armor:new({id = 0x138BE5E0, typ = 'Helms', cutContent = true}),	--Man Serpent's Mask
+--Armor:new({id = 0x138BE9C8, typ = 'Chests', cutContent = true}),	--Man Serpent's Robe
+  Armor:new({id = 0x13938700, typ = 'Helms'}),	--Fire Witch Helm
+  Armor:new({id = 0x13938AE8, typ = 'Chests'}),	--Fire Witch Armor
+  Armor:new({id = 0x13938ED0, typ = 'Gauntlets'}),	--Fire Witch Gauntlets
+  Armor:new({id = 0x139392B8, typ = 'Leggings'}),	--Fire Witch Leggings
+  Armor:new({id = 0x13A2C940, typ = 'Helms'}),	--Lorian's Helm
+  Armor:new({id = 0x13A2CD28, typ = 'Chests'}),	--Lorian's Armor
+  Armor:new({id = 0x13A2D110, typ = 'Gauntlets'}),	--Lorian's Gauntlets
+  Armor:new({id = 0x13A2D4F8, typ = 'Leggings'}),	--Lorian's Leggings
+  Armor:new({id = 0x13AA6A60, typ = 'Helms'}),	--Hood of Prayer
+  Armor:new({id = 0x13AA6E48, typ = 'Chests'}),	--Robe of Prayer
+  Armor:new({id = 0x13AA7618, typ = 'Leggings'}),	--Skirt of Prayer
+--Armor:new({id = 0x13B20B80, typ = 'Helms', cutContent = true}),	--Giant's crown
+--Armor:new({id = 0x13B20F68, typ = 'Chests', cutContent = true}),	--Giant's Armor
+--Armor:new({id = 0x13B21350, typ = 'Gauntlets', cutContent = true}),	--Giant's Gauntlets
+--Armor:new({id = 0x13B21738, typ = 'Leggings', cutContent = true}),	--Giant's Leggings
+  Armor:new({id = 0x13C14DC0, typ = 'Helms'}),	--Dancer's Crown
+  Armor:new({id = 0x13C151A8, typ = 'Chests'}),	--Dancer's Armor
+  Armor:new({id = 0x13C15590, typ = 'Gauntlets'}),	--Dancer's Gauntlets
+  Armor:new({id = 0x13C15978, typ = 'Leggings'}),	--Dancer's Leggings
+  Armor:new({id = 0x13D09000, typ = 'Helms'}),	--Gundyr's Helm
+  Armor:new({id = 0x13D093E8, typ = 'Chests'}),	--Gundyr's Armor
+  Armor:new({id = 0x13D097D0, typ = 'Gauntlets'}),	--Gundyr's Gauntlets
+  Armor:new({id = 0x13D09BB8, typ = 'Leggings'}),	--Gundyr's Leggings
+--Armor:new({id = 0x13DFD240, typ = 'Helms', cutContent = true}),	--Old Monarch's Crown
+--Armor:new({id = 0x13DFD628, typ = 'Chests', cutContent = true}),	--Old Monarch's Robe
+  Armor:new({id = 0x13EF1480, typ = 'Helms'}),	--Archdeacon White Crown
+  Armor:new({id = 0x13EF1868, typ = 'Chests'}),	--Archdeacon Holy Garb
+  Armor:new({id = 0x13EF2038, typ = 'Leggings'}),	--Archdeacon Skirt
+  Armor:new({id = 0x13F6B988, typ = 'Chests'}),	--Deacon Robe
+  Armor:new({id = 0x13F6C158, typ = 'Leggings'}),	--Deacon Skirt
+  Armor:new({id = 0x13FE56C0, typ = 'Helms', cutContent = true}),	--Frigid Valley Mask
+  Armor:new({id = 0x140D9900, typ = 'Helms', cutContent = true}),	--Dingy Hood
+  Armor:new({id = 0x140D9CE8, typ = 'Chests'}),	--Fire Keeper Robe
+  Armor:new({id = 0x140DA0D0, typ = 'Gauntlets'}),	--Fire Keeper Gloves
+  Armor:new({id = 0x140DA4B8, typ = 'Leggings'}),	--Fire Keeper Skirt
+  Armor:new({id = 0x142C1D80, typ = 'Helms'}),	--Chain Helm
+  Armor:new({id = 0x142C2168, typ = 'Chests'}),	--Chain Armor
+  Armor:new({id = 0x142C2550, typ = 'Gauntlets'}),	--Leather Gauntlets
+  Armor:new({id = 0x142C2938, typ = 'Leggings'}),	--Chain Leggings
+  Armor:new({id = 0x143B5FC0, typ = 'Helms'}),	--Nameless Knight Helm
+  Armor:new({id = 0x143B63A8, typ = 'Chests'}),	--Nameless Knight Armor
+  Armor:new({id = 0x143B6790, typ = 'Gauntlets'}),	--Nameless Knight Gauntlets
+  Armor:new({id = 0x143B6B78, typ = 'Leggings'}),	--Nameless Knight Leggings
+  Armor:new({id = 0x144AA200, typ = 'Helms'}),	--Elite Knight Helm
+  Armor:new({id = 0x144AA5E8, typ = 'Chests'}),	--Elite Knight Armor
+  Armor:new({id = 0x144AA9D0, typ = 'Gauntlets'}),	--Elite Knight Gauntlets
+  Armor:new({id = 0x144AADB8, typ = 'Leggings'}),	--Elite Knight Leggings
+  Armor:new({id = 0x1459E440, typ = 'Helms'}),	--Faraam Helm
+  Armor:new({id = 0x1459E828, typ = 'Chests'}),	--Faraam Armor
+  Armor:new({id = 0x1459EC10, typ = 'Gauntlets'}),	--Faraam Gauntlets
+  Armor:new({id = 0x1459EFF8, typ = 'Leggings'}),	--Faraam Boots
+  Armor:new({id = 0x14692680, typ = 'Helms'}),	--Catarina Helm
+  Armor:new({id = 0x14692A68, typ = 'Chests'}),	--Catarina Armor
+  Armor:new({id = 0x14692E50, typ = 'Gauntlets'}),	--Catarina Gauntlets
+  Armor:new({id = 0x14693238, typ = 'Leggings'}),	--Catarina Leggings
+  Armor:new({id = 0x1470C7A0, typ = 'Helms'}),	--Standard Helm
+  Armor:new({id = 0x1470CB88, typ = 'Chests'}),	--Hard Leather Armor
+  Armor:new({id = 0x1470CF70, typ = 'Gauntlets'}),	--Hard Leather Gauntlets
+  Armor:new({id = 0x1470D358, typ = 'Leggings'}),	--Hard Leather Boots
+  Armor:new({id = 0x147868C0, typ = 'Helms'}),	--Havel's Helm
+  Armor:new({id = 0x14786CA8, typ = 'Chests'}),	--Havel's Armor
+  Armor:new({id = 0x14787090, typ = 'Gauntlets'}),	--Havel's Gauntlets
+  Armor:new({id = 0x14787478, typ = 'Leggings'}),	--Havel's Leggings
+  Armor:new({id = 0x148009E0, typ = 'Helms'}),	--Brigand Hood
+  Armor:new({id = 0x14800DC8, typ = 'Chests'}),	--Brigand Armor
+  Armor:new({id = 0x148011B0, typ = 'Gauntlets'}),	--Brigand Gauntlets
+  Armor:new({id = 0x14801598, typ = 'Leggings'}),	--Brigand Trousers
+  Armor:new({id = 0x1487AB00, typ = 'Helms'}),	--Pharis's Hat
+  Armor:new({id = 0x1487AEE8, typ = 'Chests'}),	--Leather Armor
+  Armor:new({id = 0x1487B2D0, typ = 'Gauntlets'}),	--Leather Gloves
+  Armor:new({id = 0x1487B6B8, typ = 'Leggings'}),	--Leather Boots
+  Armor:new({id = 0x148F4C20, typ = 'Helms'}),	--Ragged Mask
+  Armor:new({id = 0x148F5008, typ = 'Chests'}),	--Master's Attire
+  Armor:new({id = 0x148F53F0, typ = 'Gauntlets'}),	--Master's Gloves
+  Armor:new({id = 0x148F57D8, typ = 'Leggings'}),	--Loincloth
+  Armor:new({id = 0x1496ED40, typ = 'Helms'}),	--Old Sorcerer Hat
+  Armor:new({id = 0x1496F128, typ = 'Chests'}),	--Old Sorcerer Coat
+  Armor:new({id = 0x1496F510, typ = 'Gauntlets'}),	--Old Sorcerer Gauntlets
+  Armor:new({id = 0x1496F8F8, typ = 'Leggings'}),	--Old Sorcerer Boots
+  Armor:new({id = 0x149E8E60, typ = 'Helms'}),	--Conjurator Hood
+  Armor:new({id = 0x149E9248, typ = 'Chests'}),	--Conjurator Robe
+  Armor:new({id = 0x149E9630, typ = 'Gauntlets'}),	--Conjurator Manchettes
+  Armor:new({id = 0x149E9A18, typ = 'Leggings'}),	--Conjurator Boots
+  Armor:new({id = 0x14A63368, typ = 'Chests'}),	--Black Leather Armor
+  Armor:new({id = 0x14A63750, typ = 'Gauntlets'}),	--Black Leather Gloves
+  Armor:new({id = 0x14A63B38, typ = 'Leggings'}),	--Black Leather Boots
+  Armor:new({id = 0x14ADD0A0, typ = 'Helms'}),	--Symbol of Avarice
+  Armor:new({id = 0x14B571C0, typ = 'Helms'}),	--Creighton's Steel Mask
+  Armor:new({id = 0x14B575A8, typ = 'Chests'}),	--Mirrah Chain Mail
+  Armor:new({id = 0x14B57990, typ = 'Gauntlets'}),	--Mirrah Chain Gloves
+  Armor:new({id = 0x14B57D78, typ = 'Leggings'}),	--Mirrah Chain Leggings
+  Armor:new({id = 0x14BD12E0, typ = 'Helms'}),	--Maiden Hood
+  Armor:new({id = 0x14BD16C8, typ = 'Chests'}),	--Maiden Robe
+  Armor:new({id = 0x14BD1AB0, typ = 'Gauntlets'}),	--Maiden Gloves
+  Armor:new({id = 0x14BD1E98, typ = 'Leggings'}),	--Maiden Skirt
+  Armor:new({id = 0x14C4B400, typ = 'Helms'}),	--Alva Helm
+  Armor:new({id = 0x14C4B7E8, typ = 'Chests'}),	--Alva Armor
+  Armor:new({id = 0x14C4BBD0, typ = 'Gauntlets'}),	--Alva Gauntlets
+  Armor:new({id = 0x14C4BFB8, typ = 'Leggings'}),	--Alva Leggings
+  Armor:new({id = 0x14D3F640, typ = 'Helms'}),	--Shadow Mask
+  Armor:new({id = 0x14D3FA28, typ = 'Chests'}),	--Shadow Garb
+  Armor:new({id = 0x14D3FE10, typ = 'Gauntlets'}),	--Shadow Gauntlets
+  Armor:new({id = 0x14D401F8, typ = 'Leggings'}),	--Shadow Leggings
+  Armor:new({id = 0x14E33880, typ = 'Helms'}),	--Eastern Helm
+  Armor:new({id = 0x14E33C68, typ = 'Chests'}),	--Eastern Armor
+  Armor:new({id = 0x14E34050, typ = 'Gauntlets'}),	--Eastern Gauntlets
+  Armor:new({id = 0x14E34438, typ = 'Leggings'}),	--Eastern Leggings
+  Armor:new({id = 0x14F27AC0, typ = 'Helms'}),	--Helm of Favor
+  Armor:new({id = 0x14F27EA8, typ = 'Chests'}),	--Embraced Armor of Favor
+  Armor:new({id = 0x14F28290, typ = 'Gauntlets'}),	--Gauntlets of Favor
+  Armor:new({id = 0x14F28678, typ = 'Leggings'}),	--Leggings of Favor
+  Armor:new({id = 0x1501BD00, typ = 'Helms'}),	--Brass Helm
+  Armor:new({id = 0x1501C0E8, typ = 'Chests'}),	--Brass Armor
+  Armor:new({id = 0x1501C4D0, typ = 'Gauntlets'}),	--Brass Gauntlets
+  Armor:new({id = 0x1501C8B8, typ = 'Leggings'}),	--Brass Leggings
+  Armor:new({id = 0x1510FF40, typ = 'Helms'}),	--Silver Knight Helm
+  Armor:new({id = 0x15110328, typ = 'Chests'}),	--Silver Knight Armor
+  Armor:new({id = 0x15110710, typ = 'Gauntlets'}),	--Silver Knight Gauntlets
+  Armor:new({id = 0x15110AF8, typ = 'Leggings'}),	--Silver Knight Leggings
+  Armor:new({id = 0x15204180, typ = 'Helms'}),	--Lucatiel's Mask
+  Armor:new({id = 0x15204568, typ = 'Chests'}),	--Mirrah Vest
+  Armor:new({id = 0x15204950, typ = 'Gauntlets'}),	--Mirrah Gloves
+  Armor:new({id = 0x15204D38, typ = 'Leggings'}),	--Mirrah Trousers
+  Armor:new({id = 0x152F83C0, typ = 'Helms'}),	--Iron Helm
+  Armor:new({id = 0x152F87A8, typ = 'Chests'}),	--Armor of the Sun
+  Armor:new({id = 0x152F8B90, typ = 'Gauntlets'}),	--Iron Bracelets
+  Armor:new({id = 0x152F8F78, typ = 'Leggings'}),	--Iron Leggings
+  Armor:new({id = 0x153EC600, typ = 'Helms'}),	--Drakeblood Helm
+  Armor:new({id = 0x153EC9E8, typ = 'Chests'}),	--Drakeblood Armor
+  Armor:new({id = 0x153ECDD0, typ = 'Gauntlets'}),	--Drakeblood Gauntlets
+  Armor:new({id = 0x153ED1B8, typ = 'Leggings'}),	--Drakeblood Leggings
+  Armor:new({id = 0x154E0C28, typ = 'Chests'}),	--Drang Armor
+  Armor:new({id = 0x154E1010, typ = 'Gauntlets'}),	--Drang Gauntlets
+  Armor:new({id = 0x154E13F8, typ = 'Leggings'}),	--Drang Shoes
+  Armor:new({id = 0x155D4A80, typ = 'Helms'}),	--Black Iron Helm
+  Armor:new({id = 0x155D4E68, typ = 'Chests'}),	--Black Iron Armor
+  Armor:new({id = 0x155D5250, typ = 'Gauntlets'}),	--Black Iron Gauntlets
+  Armor:new({id = 0x155D5638, typ = 'Leggings'}),	--Black Iron Leggings
+  Armor:new({id = 0x156C8CC0, typ = 'Helms'}),	--Painting Guardian Hood
+  Armor:new({id = 0x156C90A8, typ = 'Chests'}),	--Painting Guardian Gown
+  Armor:new({id = 0x156C9490, typ = 'Gauntlets'}),	--Painting Guardian Gloves
+  Armor:new({id = 0x156C9878, typ = 'Leggings'}),	--Painting Guardian Waistcloth
+  Armor:new({id = 0x157BCF00, typ = 'Helms'}),	--Wolf Knight Helm
+  Armor:new({id = 0x157BD2E8, typ = 'Chests'}),	--Wolf Knight Armor
+  Armor:new({id = 0x157BD6D0, typ = 'Gauntlets'}),	--Wolf Knight Gauntlets
+  Armor:new({id = 0x157BDAB8, typ = 'Leggings'}),	--Wolf Knight Leggings
+  Armor:new({id = 0x158B1140, typ = 'Helms'}),	--Dragonslayer Helm
+  Armor:new({id = 0x158B1528, typ = 'Chests'}),	--Dragonslayer Armor
+  Armor:new({id = 0x158B1910, typ = 'Gauntlets'}),	--Dragonslayer Gauntlets
+  Armor:new({id = 0x158B1CF8, typ = 'Leggings'}),	--Dragonslayer Leggings
+  Armor:new({id = 0x159A5380, typ = 'Helms'}),	--Smough's Helm
+  Armor:new({id = 0x159A5768, typ = 'Chests'}),	--Smough's Armor
+  Armor:new({id = 0x159A5B50, typ = 'Gauntlets'}),	--Smough's Gauntlets
+  Armor:new({id = 0x159A5F38, typ = 'Leggings'}),	--Smough's Leggings
+--Armor:new({id = 0x15A995C0, typ = 'Helms', cutContent = true}),	--Hexer's Hood
+--Armor:new({id = 0x15A999A8, typ = 'Chests', cutContent = true}),	--Hexer's Robes
+--Armor:new({id = 0x15A99D90, typ = 'Gauntlets', cutContent = true}),	--Hexer's Gloves
+--Armor:new({id = 0x15A9A178, typ = 'Leggings', cutContent = true}),	--Hexer's Boots
+  Armor:new({id = 0x15B8D800, typ = 'Helms'}),	--Helm of Thorns
+  Armor:new({id = 0x15B8DBE8, typ = 'Chests'}),	--Armor of Thorns
+  Armor:new({id = 0x15B8DFD0, typ = 'Gauntlets'}),	--Gauntlets of Thorns
+  Armor:new({id = 0x15B8E3B8, typ = 'Leggings'}),	--Leggings of Thorns
+--Armor:new({id = 0x15C81A40, typ = 'Helms', cutContent = true}),	--Varangian Helm
+--Armor:new({id = 0x15C81E28, typ = 'Chests', cutContent = true}),	--Varangian Armor
+--Armor:new({id = 0x15C82210, typ = 'Gauntlets', cutContent = true}),	--Varangian Cuffs
+--Armor:new({id = 0x15C825F8, typ = 'Leggings', cutContent = true}),	--Varangian Leggings
+  Armor:new({id = 0x15D75C80, typ = 'Helms'}),	--Crown of Dusk
+  Armor:new({id = 0x15D76068, typ = 'Chests'}),	--Antiquated Dress
+  Armor:new({id = 0x15D76450, typ = 'Gauntlets'}),	--Antiquated Gloves
+  Armor:new({id = 0x15D76838, typ = 'Leggings'}),	--Antiquated Skirt
+  Armor:new({id = 0x15E69EC0, typ = 'Helms'}),	--Karla's Pointed Hat
+  Armor:new({id = 0x15E6A2A8, typ = 'Chests'}),	--Karla's Coat
+  Armor:new({id = 0x15E6A690, typ = 'Gauntlets'}),	--Karla's Gloves
+  Armor:new({id = 0x15E6AA78, typ = 'Leggings'}),	--Karla's Trousers
+  Armor:new({id = 0x137CA3A0, typ = 'Helms', dlc = 1}),	--Follower Helm
+  Armor:new({id = 0x137CA788, typ = 'Chests', dlc = 1}),	--Follower Armor
+  Armor:new({id = 0x137CAB70, typ = 'Gauntlets', dlc = 1}),	--Follower Gloves
+  Armor:new({id = 0x137CAF58, typ = 'Leggings', dlc = 1}),	--Follower Boots
+  Armor:new({id = 0x134EDCE0, typ = 'Helms', dlc = 1}),	--Slave Knight Hood
+  Armor:new({id = 0x134EE0C8, typ = 'Chests', dlc = 1}),	--Slave Knight Armor
+  Armor:new({id = 0x134EE4B0, typ = 'Gauntlets', dlc = 1}),	--Slave Knight Gauntlets
+  Armor:new({id = 0x134EE898, typ = 'Leggings', dlc = 1}),	--Slave Knight Leggings
+  Armor:new({id = 0x11312D00, typ = 'Helms', dlc = 1}),	--Vilhelm's Helm
+  Armor:new({id = 0x113130E8, typ = 'Chests', dlc = 1}),	--Vilhelm's Armor
+  Armor:new({id = 0x113134D0, typ = 'Gauntlets', dlc = 1}),	--Vilhelm's Gauntlets
+  Armor:new({id = 0x113134D0, typ = 'Leggings', dlc = 1}),	--Vilhelm's Leggings
+  Armor:new({id = 0x139B2820, typ = 'Helms', dlc = 1}),	--Millwood Knight Helm
+  Armor:new({id = 0x139B2C08, typ = 'Chests', dlc = 1}),	--Millwood Knight Armor
+  Armor:new({id = 0x139B2FF0, typ = 'Gauntlets', dlc = 1}),	--Millwood Knight Gauntlets
+  Armor:new({id = 0x139B33D8, typ = 'Leggings', dlc = 1}), --Millwood Knight Leggings
+  Armor:new({id = 0x135E1F20, typ = 'Helms', dlc = 1}),	--Ordained Hood
+  Armor:new({id = 0x135E2308, typ = 'Chests', dlc = 1}),	--Ordained Dress
+  Armor:new({id = 0x135E2AD8, typ = 'Leggings', dlc = 1}),	--Ordained Trousers
+  Armor:new({id = 0x11B2E408, typ = 'Chests', dlc = 2}),	--Antiquated Plain Garb
+  Armor:new({id = 0x11B2E7F0, typ = 'Gauntlets', dlc = 2}),	--Violet Wrappings
+  Armor:new({id = 0x11B2EBD8, typ = 'Leggings', dlc = 2}),	--Loincloth Not the one already in the game
+  Armor:new({id = 0x11C22260, typ = 'Helms', dlc = 2}),	--Shira's Crown
+  Armor:new({id = 0x11C22648, typ = 'Chests', dlc = 2}),	--Shira's Armor
+  Armor:new({id = 0x11C22A30, typ = 'Gauntlets', dlc = 2}),	--Shira's Gloves
+  Armor:new({id = 0x11C22E18, typ = 'Leggings', dlc = 2}),	--Shira's Trousers
+  Armor:new({id = 0x11E84800, typ = 'Helms', dlc = 2}),	--Lapp's Helm
+  Armor:new({id = 0x11E84BE8, typ = 'Chests', dlc = 2}),	--Lapp's Armor
+  Armor:new({id = 0x11E84FD0, typ = 'Gauntlets', dlc = 2}),	--Lapp's Gauntlets
+  Armor:new({id = 0x11E853B8, typ = 'Leggings', dlc = 2}),	--Lapp's Leggings
+  Armor:new({id = 0x13C8EEE0, typ = 'Helms', dlc = 2}),	--Ringed Knight Hood
+  Armor:new({id = 0x13C8F2C8, typ = 'Chests', dlc = 2}),	--Ringed Knight Armor
+  Armor:new({id = 0x13C8F6B0, typ = 'Gauntlets', dlc = 2}),	--Ringed Knight Gauntlets
+  Armor:new({id = 0x13C8FA98, typ = 'Leggings', dlc = 2}),	--Ringed Knight Leggings
+  Armor:new({id = 0x13D83508, typ = 'Chests', dlc = 2}),	--Harald Legion Armor
+  Armor:new({id = 0x13D838F0, typ = 'Gauntlets', dlc = 2}),	--Harald Legion Gauntlets
+  Armor:new({id = 0x13D83CD8, typ = 'Leggings', dlc = 2}),	--Harald Legion Leggings
+  Armor:new({id = 0x1405F7E0, typ = 'Helms', dlc = 2}),	--Iron Dragonslayer Helm
+  Armor:new({id = 0x1405FBC8, typ = 'Chests', dlc = 2}),	--Iron Dragonslayer Armor
+  Armor:new({id = 0x1405FFB0, typ = 'Gauntlets', dlc = 2}),	--Iron Dragonslayer Gauntlets
+  Armor:new({id = 0x14060398, typ = 'Leggings', dlc = 2}),	--Iron Dragonslayer Leggings
+  Armor:new({id = 0x14153A20, typ = 'Helms', dlc = 2}),	--White Preacher Head
+  Armor:new({id = 0x14CC5520, typ = 'Helms', dlc = 2}),	--Ruin Sentinel Helm
+  Armor:new({id = 0x14CC5908, typ = 'Chests', dlc = 2}),	--Ruin Sentinel Armor
+  Armor:new({id = 0x14CC5CF0, typ = 'Gauntlets', dlc = 2}),	--Ruin Sentinel Gauntlets
+  Armor:new({id = 0x14CC60D8, typ = 'Leggings', dlc = 2}),	--Ruin Sentinel Leggings
+  Armor:new({id = 0x14DB9760, typ = 'Helms', dlc = 2}),	--Desert Pyromancer Hood
+  Armor:new({id = 0x14DB9B48, typ = 'Chests', dlc = 2}),	--Desert Pyromancer Garb
+  Armor:new({id = 0x14DB9F30, typ = 'Gauntlets', dlc = 2}),	--Desert Pyromancer Gloves
+  Armor:new({id = 0x14DBA318, typ = 'Leggings', dlc = 2}),	--Desert Pyromancer Skirt
+  Armor:new({id = 0x14FA1BE0, typ = 'Helms', dlc = 2}),	--Black Witch Veil
+  Armor:new({id = 0x14EAD9A0, typ = 'Helms', dlc = 2}),	--Black Witch Hat
+  Armor:new({id = 0x14EADD88, typ = 'Chests', dlc = 2}),	--Black Witch Garb
+  Armor:new({id = 0x14EAE170, typ = 'Gauntlets', dlc = 2}),	--Black Witch Wrappings
+  Armor:new({id = 0x14EAE558, typ = 'Leggings', dlc = 2}),	--Black Witch Trousers
+  Armor:new({id = 0x15095E20, typ = 'Helms', dlc = 2}),	--Blindfold Mask
+  Armor:new({id = 0x100F4240, typ = 'Helms', cutContent = true}),	--Dragon's head
+  Armor:new({id = 0x100F4628, typ = 'Chests', cutContent = true}),	--Dragon's chestplace
+  Armor:new({id = 0x100F4A10, typ = 'Gauntlets', cutContent = true}),	--Dragon's gauntlets
+  Armor:new({id = 0x100F4DF8, typ = 'Leggings', cutContent = true})	--Dragon's leggins
+}
+
+function createWindow()
+  local formName = 'Armors'
+  win:create('TCEForm', nil, {Caption = formName})
+  win:initDefaultForm(formName)
+
+  win:create('TGroupBox', formName, {Caption = 'Include', Left = 10, ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', LeftRightSpacing = 5}})
+  win:create('TCheckBox', 'Include', {Caption = 'Helms', Checked = true})
+  win:create('TCheckBox', 'Include', {Caption = 'Chests', Checked = true})
+  win:create('TCheckBox', 'Include', {Caption = 'Gauntlets', Checked = true})
+  win:create('TCheckBox', 'Include', {Caption = 'Leggings', Checked = true})
+  win:fixSize('Include', 20, 25)
+
+  win:create('TGroupBox', formName, {Caption = 'DLC', Left = win.ctrl['Include'].x + 10, ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', LeftRightSpacing = 5}})
+  win:create('TCheckBox', 'DLC', {Caption = 'Base Game', Checked = true})
+  win:create('TCheckBox', 'DLC', {Caption = 'Ashes of Ariandel', Checked = true})
+  win:create('TCheckBox', 'DLC', {Caption = 'Ringed City', Checked = true})
+  win:fixSize('DLC', 10, 45)
+
+  win:create('TGroupBox', formName, {Caption = 'Content', Height = 45, Left = 10, Top = win.ctrl['Include'].y, ChildSizing = {Layout = 'cclTopToBottomThenLeftToRight', LeftRightSpacing = 5, HorizontalSpacing = 10}})
+  win:create('TCheckBox', 'Content', {Caption = 'Game Content', Checked = true})
+  win:create('TCheckBox', 'Content', {Caption = 'Cut Content', Checked = false})
+  win:fillGap('Content',{x = 'DLC'})
+
+
+  win:fixSize(formName, 10, 60)
+  win:create('TButton', formName, {Caption = 'Spawn', Width = win.ctrl[formName].Width - 20, Height = 40, Left = 10, Top = win.ctrl[formName].Height - 50})
+  win.ctrl['Spawn'].onClick = spawn
+end
+
+function spawn()
+  local checkBoxes = win.ctrl
+  local baseAddress = GetAddress('ItemArray')
+  local totalItems = 0
+  for _, armor in pairs(armors) do
+       if(armor:checkAll(checkBoxes)) then
+         totalItems = totalItems + 1
+         baseAddress = armor:spawn(baseAddress)
+       end
+  end
+  WriteInteger(GetAddress('ItemArray'), totalItems)
+  autoAssemble('CreateThread(MassItemGib)')
+  win.ctrl.Armors.close()
+end
+
+[ENABLE]
+createWindow()
+
+[DISABLE]
+

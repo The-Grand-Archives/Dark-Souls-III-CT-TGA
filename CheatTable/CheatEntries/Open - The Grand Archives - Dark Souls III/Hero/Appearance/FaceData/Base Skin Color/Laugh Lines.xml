@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73342</ID>
+  <Description>"Laugh Lines"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>77B</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

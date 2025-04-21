@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099470</ID>
+  <Description>"Animation Start Angle (°180)"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>2 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>16</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

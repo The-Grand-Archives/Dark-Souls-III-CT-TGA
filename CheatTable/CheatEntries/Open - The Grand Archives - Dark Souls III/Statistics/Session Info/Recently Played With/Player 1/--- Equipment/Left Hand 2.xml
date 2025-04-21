@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>80865</ID>
+  <Description>"Left Hand 2"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>334</Offset>
+    <Offset>540</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

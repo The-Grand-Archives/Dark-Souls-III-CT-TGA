@@ -1,0 +1,23 @@
+[ENABLE]
+{$lua}
+
+-- Prints out a set amount of valid IDs from a param. Does not describe them (obviously) but can be
+-- useful for finding if a value is missing or for testing
+local startaddress = "7FF5FF6AACF0" --Address of the param you wish to start from
+local size = 1000 --How many to print out
+
+------------------DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING------------------------
+
+local address = tonumber(startaddress,16)+16 --Redefines start address as decimal for use
+local currentaddress = "" -- Blank start
+local id = 0 -- Blank start
+for i=1,size do
+    currentaddress = string.format("%x", address)
+    id = readInteger(currentaddress)
+       print(id)
+    address = address + 24
+end
+{$asm}
+[DISABLE]
+
+

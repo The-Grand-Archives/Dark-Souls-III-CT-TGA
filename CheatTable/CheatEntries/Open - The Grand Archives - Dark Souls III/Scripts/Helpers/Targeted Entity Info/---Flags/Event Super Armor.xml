@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337045230</ID>
+  <Description>"Event Super Armor"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>10</Offset>
+    <Offset>40</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>86886</ID>
+  <Description>"CoopPlaySuccess Count"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>B8</Offset>
+    <Offset>1FA0</Offset>
+    <Offset>A8</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

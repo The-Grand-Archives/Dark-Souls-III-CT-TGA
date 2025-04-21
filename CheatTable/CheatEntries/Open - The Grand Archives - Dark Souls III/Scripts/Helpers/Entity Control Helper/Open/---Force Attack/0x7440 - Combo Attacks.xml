@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>91786</ID>
+  <Description>"0x7440 - Combo Attacks"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>XE</Address>
+  <Offsets>
+    <Offset>7440</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

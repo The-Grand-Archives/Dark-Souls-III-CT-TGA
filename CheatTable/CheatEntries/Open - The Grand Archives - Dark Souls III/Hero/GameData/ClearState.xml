@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337099167</ID>
+  <Description>"ClearState"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:none
+1:good
+2:bad
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>7C</Offset>
+  </Offsets>
+</CheatEntry>

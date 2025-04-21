@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337187593</ID>
+  <Description>"Throw Param Id | "</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>ThrowMan</Address>
+  <Offsets>
+    <Offset>E0</Offset>
+  </Offsets>
+</CheatEntry>

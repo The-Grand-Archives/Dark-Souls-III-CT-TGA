@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337081886</ID>
+  <Description>"Draw your own navigation mesh | 自分のいるナビメッシュを描画"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+477F498</Address>
+  <Offsets>
+    <Offset>1749</Offset>
+  </Offsets>
+</CheatEntry>

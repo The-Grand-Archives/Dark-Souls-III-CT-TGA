@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>88515</ID>
+  <Description>"0x7458 - Movement 2"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>7458</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

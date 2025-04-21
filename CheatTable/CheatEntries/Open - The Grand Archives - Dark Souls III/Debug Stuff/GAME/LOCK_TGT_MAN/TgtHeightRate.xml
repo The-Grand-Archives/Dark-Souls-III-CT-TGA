@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099116</ID>
+  <Description>"TgtHeightRate"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>2908</Offset>
+  </Offsets>
+</CheatEntry>

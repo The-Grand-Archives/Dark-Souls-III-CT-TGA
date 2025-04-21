@@ -1,0 +1,24 @@
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local bstp = {
+    {101,0,"","InstaStuff"},
+    {1000101,0,"","InstaStuff2"},
+    {100,0,"","InstaStuff3"}
+  }
+  paramUtils:paramIterator("ThrowParam",bstp)
+end
+
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  paramUtils:paramDepatcher("ThrowParam",bstp)
+  unregisterSymbol("InstaStuff")
+  unregisterSymbol("InstaStuff2")
+  unregisterSymbol("InstaStuff3")
+end
+
+
+
+

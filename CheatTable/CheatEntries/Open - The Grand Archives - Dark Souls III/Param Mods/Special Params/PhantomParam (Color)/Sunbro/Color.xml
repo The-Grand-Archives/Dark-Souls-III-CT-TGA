@@ -1,0 +1,100 @@
+<CheatEntry>
+  <ID>1337020982</ID>
+  <Description>"Color"</Description>
+  <DropDownList DisplayValueAsItem="1">0:White w/Less glow
+1:White w/More glow
+2:Faded brown with slight blue glow
+4:Faded brown with pink glow
+5:Bright blue with pink shade
+6:Brighter blue with pink shade
+7:Aqua Blue w/White tint
+8:Aqua Blue w/Slightly darker white tint
+9:Bright Aqua w/bright white tint
+10:Bright Aqua
+11:Glowing Grey
+12:Grey w/Dark purple shade
+13:White w/slight glow
+14:Translucent w/Grey shade
+15:Chalk White/Faded White
+16:Invisibility with dark green color
+17:Marine blue
+18:Brighter Marine
+19:Bright Yellow
+20:Light Orange
+21:Light Purple
+22:Light Green/Yellow
+23:Light Orange w/Less glow
+24:Darker Marine
+27:Similar to 15 but w/light purple shade
+28:Similar to 15 but w/Glow
+29:Like darkmoon blue w/fade
+30:Translucent Grey
+31:Transparent Grey, like ghost color
+32:Transparent w/Purple glow
+33:Normal colors w/Orange shade
+34:Like 34 but with peach glow
+35:Transparent teal color
+36:Completely Invisible
+37:Completely White
+38:Grey shade
+39:Bright Sky Blue shade
+40:Cyan glow
+41:Yellow glow
+42:Orange glow
+43:Purple glow
+44:Green/yellow glow
+45:Similar to 42 w/less glow
+51:Like 31 with more white glow
+52:Bright white color w/slight peach shade
+53:Bright gold glow
+54:Bright gold glow with red shade
+55:Purple glow
+56:Purple glow with red shade
+57:Turquoise glow
+58:Green glow with red shade
+59:Blue glow
+60:Darkmoon spirit color with bright white glow
+61:Darkmoon color with yellow glow
+62:Darkmoon color with green/yellow glow
+63:Transparent, ghost color
+64:Transparent with no glow
+65:Transparent with less glow
+66:White phantom color
+67:Dark spirit color w/Small normal colors
+68:Blue sentinel color
+69:Darkmoon spirit color
+71:Sunbro color
+72:Dark sunbro color
+73:Mound maker color
+75:Dark spirit color
+76:Dark blue glow with purple shade
+77:Aldrich faithful color
+78:Brown glow
+79:Like 0 with less glow
+81:Blue with orange shade
+82:Bright blue with orange shade
+83:Very bright cyan, brown shade
+84:Very bright cyan, more brown shade
+85:Very bright cyan, white shade
+86:Very bright cyan, more white shade
+87:Very bright cyan only
+89:Transparent with red shade
+90:Transparent with sunbro shade
+91:Transparent with dark sunbro shade
+92:Transparent with mound maker shade
+93:Black phantom
+94:Like 93 with white glow
+95:Like 93 with brown shade
+96:Bright blue with pink shade
+97:Bright cyab, slight darker shade
+101:Translucent white
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SoloParamRepository</Address>
+  <Offsets>
+    <Offset>1F4C</Offset>
+    <Offset>68</Offset>
+    <Offset>68</Offset>
+    <Offset>10C0</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081337</ID>
+  <Description>"Chin_forward_backward"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>72A</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

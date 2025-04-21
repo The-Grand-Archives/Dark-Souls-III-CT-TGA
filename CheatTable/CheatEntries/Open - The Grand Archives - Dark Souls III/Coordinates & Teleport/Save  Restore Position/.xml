@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>89227</ID>
+  <Description>"Save / Restore Position"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="88434"/>
+    <id id="89228"/>
+    <id id="89229"/>
+    <id id="89230"/>
+    <id id="89231"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337187658</ID>
+  <Description>"Member Limit"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>C</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

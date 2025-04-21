@@ -1,0 +1,16 @@
+{
+  Author: inuNorii
+  Description: Protects against dead meme
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local bullet = Bullet:new("NoMeme",113)
+bullet:life(0.1)
+bullet:hitRadiusMax(0)
+bullet:spreadTime(0)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("NoMeme")

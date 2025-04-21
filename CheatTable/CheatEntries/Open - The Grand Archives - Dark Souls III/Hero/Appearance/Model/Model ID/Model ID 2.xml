@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>489662</ID>
+  <Description>"Model ID 2"</Description>
+  <VariableType>String</VariableType>
+  <Length>4</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>Ba</Offset>
+    <Offset>8</Offset>
+    <Offset>xa</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

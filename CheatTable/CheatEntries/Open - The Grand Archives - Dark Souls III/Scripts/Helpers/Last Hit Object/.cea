@@ -1,0 +1,57 @@
+[ENABLE]
+
+aobscanmodule(Objectshit,DarkSoulsIII.exe,0F 28 93 80 02 00 00 0F)
+alloc(newmem,$1000,Objectshit)
+alloc(object_ptr,8)
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov [object_ptr],rbx
+  movaps xmm2,[rbx+00000270]
+  jmp return
+
+Objectshit:
+  jmp newmem
+  nop
+  nop
+return:
+registersymbol(Objectshit)
+registersymbol(object_ptr)
+[DISABLE]
+
+Objectshit:
+  db 0F 28 93 80 02 00 00 0F
+unregistersymbol(object_ptr)
+unregistersymbol(Objectshit)
+dealloc(newmem)
+dealloc(object_ptr)
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+65D7D5
+
+"DarkSoulsIII.exe"+65D79E: 48 8D 4C 24 30           -  lea rcx,[rsp+30]
+"DarkSoulsIII.exe"+65D7A3: 33 F6                    -  xor esi,esi
+"DarkSoulsIII.exe"+65D7A5: 89 85 B0 00 00 00        -  mov [rbp+000000B0],eax
+"DarkSoulsIII.exe"+65D7AB: C7 44 24 30 FF FF FF FF  -  mov [rsp+30],FFFFFFFF
+"DarkSoulsIII.exe"+65D7B3: 48 89 74 24 38           -  mov [rsp+38],rsi
+"DarkSoulsIII.exe"+65D7B8: E8 83 2C 7A 00           -  call DarkSoulsIII.exe+E00440
+"DarkSoulsIII.exe"+65D7BD: 8B 57 04                 -  mov edx,[rdi+04]
+"DarkSoulsIII.exe"+65D7C0: 48 8D 8D B0 00 00 00     -  lea rcx,[rbp+000000B0]
+"DarkSoulsIII.exe"+65D7C7: 0F 28 83 60 02 00 00     -  movaps xmm0,[rbx+00000260]
+"DarkSoulsIII.exe"+65D7CE: 0F 28 A3 50 02 00 00     -  movaps xmm4,[rbx+00000250]
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+65D7D5: 0F 28 93 70 02 00 00     -  movaps xmm2,[rbx+00000270]
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+65D7DC: 0F 28 DC                 -  movaps xmm3,xmm4
+"DarkSoulsIII.exe"+65D7DF: 0F C6 E0 EE              -  shufps xmm4,xmm0,-12
+"DarkSoulsIII.exe"+65D7E3: 0F C6 D8 44              -  shufps xmm3,xmm0,44
+"DarkSoulsIII.exe"+65D7E7: 0F 28 C2                 -  movaps xmm0,xmm2
+"DarkSoulsIII.exe"+65D7EA: 0F C6 05 2E A7 27 04 44  -  shufps xmm0,[DarkSoulsIII.exe+48D7F20],44
+"DarkSoulsIII.exe"+65D7F2: 0F C6 15 26 A7 27 04 EE  -  shufps xmm2,[DarkSoulsIII.exe+48D7F20],-12
+"DarkSoulsIII.exe"+65D7FA: 0F 28 CB                 -  movaps xmm1,xmm3
+"DarkSoulsIII.exe"+65D7FD: 0F C6 C8 88              -  shufps xmm1,xmm0,-78
+"DarkSoulsIII.exe"+65D801: 0F C6 D8 DD              -  shufps xmm3,xmm0,-23
+"DarkSoulsIII.exe"+65D805: 0F 28 C4                 -  movaps xmm0,xmm4
+}

@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337097744</ID>
+  <Description>"Start range when hint blood characters are invalid [m] | ヒント血文字無効時開始範囲[m]"</Description>
+  <VariableType>Float</VariableType>
+  <Address>DarkSoulsIII.exe+473F7A0</Address>
+</CheatEntry>

@@ -1,0 +1,7 @@
+[ENABLE]
+[[[WorldChrMan]+40]+28]+80:
+readmem([[[FieldArea]+18]+E8]+40,12)
+{$lua}
+if syntaxcheck then return end
+disableMemrec(memrec)
+[DISABLE]

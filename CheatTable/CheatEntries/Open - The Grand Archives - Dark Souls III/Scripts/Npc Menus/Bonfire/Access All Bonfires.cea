@@ -1,0 +1,9 @@
+//Author: inuNorii
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local bonfire = BonfireWarpParam:new("UnlockAllBonfires")
+bonfire:patchAll4Byte(0x00,14000000)
+
+[DISABLE]
+paramUtils:restore("UnlockAllBonfires")

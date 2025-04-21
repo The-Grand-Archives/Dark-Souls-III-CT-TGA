@@ -1,0 +1,19 @@
+<CheatEntry>
+  <ID>1337183137</ID>
+  <Description>"Windowed Resolution"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">000001C200000320:800x450
+0000024000000400:1024x576
+0000028800000480:1152x648
+000002D000000500:1280x720
+0000032A000005A0:1440x810
+0000038400000640:1600x900
+000003B100000690:1680x945
+0000043800000780:1920x1080
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>8 Bytes</VariableType>
+  <Address>CSWindow</Address>
+  <Offsets>
+    <Offset>B0</Offset>
+  </Offsets>
+</CheatEntry>

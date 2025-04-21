@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098512</ID>
+  <Description>"NormalWhiteCount"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>(SprjEventMan)</Address>
+  <Offsets>
+    <Offset>35C</Offset>
+    <Offset>40</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

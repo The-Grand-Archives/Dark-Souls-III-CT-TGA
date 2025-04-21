@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>1337256190</ID>
+  <Description>"ID"</Description>
+  <DropDownListLink>GOODS_ID</DropDownListLink>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>8 Bytes</VariableType>
+  <Address>EquipParamGoodsHelper</Address>
+</CheatEntry>

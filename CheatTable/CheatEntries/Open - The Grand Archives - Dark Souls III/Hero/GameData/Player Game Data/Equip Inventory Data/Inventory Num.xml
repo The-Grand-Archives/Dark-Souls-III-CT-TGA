@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337097672</ID>
+  <Description>"Inventory Num"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>3D0+20</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

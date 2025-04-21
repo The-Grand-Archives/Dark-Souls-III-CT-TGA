@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081269</ID>
+  <Description>"Nose_Pale_Red"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>77D</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

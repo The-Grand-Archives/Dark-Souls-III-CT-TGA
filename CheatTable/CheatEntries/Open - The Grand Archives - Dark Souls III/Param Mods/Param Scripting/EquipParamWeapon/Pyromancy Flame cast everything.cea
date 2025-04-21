@@ -1,0 +1,18 @@
+{
+	Author: Igromanru
+	Description: Patch Pyromancy Flame to allow cast any sorcery, pyromancy and miracle
+}
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local weapon = EquipParamWeapon:new("PyromancyFlameCastEverything", 0xCC77C0)
+  weapon:enableMagic(1)
+  weapon:enablePyromancy(1)
+  weapon:enableMiracle(1)
+end
+
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  paramUtils:restore("PyromancyFlameCastEverything")
+end

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337187443</ID>
+  <Description>"External force of sliding bullets | すべる弾の外力"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>SprjBulletManager</Address>
+  <Offsets>
+    <Offset>1CC</Offset>
+  </Offsets>
+</CheatEntry>

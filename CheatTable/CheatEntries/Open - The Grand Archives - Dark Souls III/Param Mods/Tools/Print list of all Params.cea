@@ -1,0 +1,13 @@
+{
+  Author: Igromanru
+  Description: Prints the address of a Param
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+paramUtils:printParams()
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end

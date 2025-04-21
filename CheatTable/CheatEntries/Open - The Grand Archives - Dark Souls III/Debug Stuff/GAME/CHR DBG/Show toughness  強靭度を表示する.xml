@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337080855</ID>
+  <Description>"Show toughness | 強靭度を表示する"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>6C</Offset>
+  </Offsets>
+</CheatEntry>

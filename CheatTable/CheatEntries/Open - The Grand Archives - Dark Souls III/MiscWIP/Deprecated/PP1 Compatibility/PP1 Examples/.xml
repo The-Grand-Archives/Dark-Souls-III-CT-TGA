@@ -1,0 +1,17 @@
+<CheatEntry>
+  <ID>92050</ID>
+  <Description>"PP1 Examples"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337012301"/>
+    <id id="1337011424"/>
+    <id id="1337011425"/>
+    <id id="1337011426"/>
+    <id id="1337011427"/>
+    <id id="1337011481"/>
+    <id id="107596"/>
+    <id id="92112"/>
+    <id id="107597"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73195</ID>
+  <Description>"Nostril Width"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>756</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>94078</ID>
+  <Description>"Cathedral of the Deep"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78217"/>
+    <id id="78218"/>
+    <id id="78219"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

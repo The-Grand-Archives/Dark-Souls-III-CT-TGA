@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096853</ID>
+  <Description>"Forced intrusion for debugging (only intrusion) | デバッグ用強制乱入許可(乱入のみ許可)"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4766BE4</Address>
+</CheatEntry>

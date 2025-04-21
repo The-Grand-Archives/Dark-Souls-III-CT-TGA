@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>108021</ID>
+  <Description>"Cornyx of the Great Swamp"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="108019"/>
+    <id id="108014"/>
+    <id id="108018"/>
+    <id id="108017"/>
+    <id id="108020"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

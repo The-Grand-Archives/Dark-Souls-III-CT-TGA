@@ -1,0 +1,59 @@
+<CheatEntry>
+  <ID>92100</ID>
+  <Description>"Set to "1" to walk while "gesturing""</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="92161"/>
+    <id id="489934"/>
+    <id id="1337011494"/>
+    <id id="92109"/>
+    <id id="92110"/>
+    <id id="92111"/>
+    <id id="1337011495"/>
+    <id id="92113"/>
+    <id id="92114"/>
+    <id id="92118"/>
+    <id id="92117"/>
+    <id id="92123"/>
+    <id id="92116"/>
+    <id id="92115"/>
+    <id id="1337011496"/>
+    <id id="92125"/>
+    <id id="92126"/>
+    <id id="92127"/>
+    <id id="92128"/>
+    <id id="92129"/>
+    <id id="92130"/>
+    <id id="1337011497"/>
+    <id id="92132"/>
+    <id id="92133"/>
+    <id id="92134"/>
+    <id id="92135"/>
+    <id id="92137"/>
+    <id id="92136"/>
+    <id id="92138"/>
+    <id id="92139"/>
+    <id id="92143"/>
+    <id id="92140"/>
+    <id id="92146"/>
+    <id id="92144"/>
+    <id id="92141"/>
+    <id id="92145"/>
+    <id id="92142"/>
+    <id id="92147"/>
+    <id id="92160"/>
+    <id id="92159"/>
+    <id id="92148"/>
+    <id id="92149"/>
+    <id id="92151"/>
+    <id id="92150"/>
+    <id id="92153"/>
+    <id id="92152"/>
+    <id id="92154"/>
+    <id id="92155"/>
+    <id id="92157"/>
+    <id id="92156"/>
+    <id id="92158"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

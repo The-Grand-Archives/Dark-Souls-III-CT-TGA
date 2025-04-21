@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097952</ID>
+  <Description>"Id1"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>1A4</Offset>
+  </Offsets>
+</CheatEntry>

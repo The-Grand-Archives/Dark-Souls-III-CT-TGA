@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337098225</ID>
+  <Description>"DbgDispDropItem"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>100</Offset>
+  </Offsets>
+</CheatEntry>

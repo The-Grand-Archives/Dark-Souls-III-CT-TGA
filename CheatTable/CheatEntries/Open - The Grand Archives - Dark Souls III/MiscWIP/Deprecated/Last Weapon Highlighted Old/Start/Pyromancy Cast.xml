@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337046249</ID>
+  <Description>"Pyromancy Cast"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+101+1</Address>
+</CheatEntry>

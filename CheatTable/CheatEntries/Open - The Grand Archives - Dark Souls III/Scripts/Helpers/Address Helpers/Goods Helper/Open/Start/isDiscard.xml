@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096936</ID>
+  <Description>"isDiscard"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+45</Address>
+</CheatEntry>

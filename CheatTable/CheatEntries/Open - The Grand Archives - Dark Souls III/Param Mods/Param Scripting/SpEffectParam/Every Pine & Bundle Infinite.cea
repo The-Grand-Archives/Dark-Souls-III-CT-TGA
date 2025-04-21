@@ -1,0 +1,21 @@
+{
+	Author: Igromanru
+	Description: Makes Every Pine & Bundle Infinite (cycle himself)
+    Credis: Jessica for base idea
+}
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local catalysts = {2100,2110,2120,2130,2150,2170,2180,2190}
+
+  for i,id in ipairs(catalysts) do
+	local effect = SpEffectParam:new("EveryPineAndBundleInfinite",id)
+	effect:cycleOccurrenceSpEffectId(id)
+  end
+end
+
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  paramUtils:restore("EveryPineAndBundleInfinite")
+end

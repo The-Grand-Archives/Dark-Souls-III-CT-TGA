@@ -1,0 +1,16 @@
+<CheatEntry>
+  <ID>73320</ID>
+  <Description>"Tattoo/Mark"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="73290"/>
+    <id id="73291"/>
+    <id id="73289"/>
+    <id id="73288"/>
+    <id id="73284"/>
+    <id id="73287"/>
+    <id id="73286"/>
+    <id id="73285"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

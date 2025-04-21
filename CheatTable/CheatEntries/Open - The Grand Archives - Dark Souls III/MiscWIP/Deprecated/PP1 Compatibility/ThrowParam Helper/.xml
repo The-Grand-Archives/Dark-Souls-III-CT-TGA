@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337018830</ID>
+  <Description>"ThrowParam Helper"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337018831"/>
+    <id id="1337018855"/>
+    <id id="1337018879"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

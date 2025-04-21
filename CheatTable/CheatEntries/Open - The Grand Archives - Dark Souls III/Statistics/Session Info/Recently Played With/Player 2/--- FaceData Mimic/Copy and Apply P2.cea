@@ -1,0 +1,22 @@
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+[[GameDataMan]+10]+6bc:
+readmem([[[GameDataMan]+18]+E88]+6bc,192) //Facedata silders
+
+[[GameDataMan]+10]+AA:
+readmem([[[GameDataMan]+18]+E88]+AA,3) //Gender, Voice...
+
+[[GameDataMan]+10]+3B0:
+readmem([[[GameDataMan]+18]+E88]+3B0,28) //Body Sizes
+
+[[GameDataMan]+10]+6b8:
+readmem([[[GameDataMan]+18]+E88]+6b8,1) //Age
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+
+
+

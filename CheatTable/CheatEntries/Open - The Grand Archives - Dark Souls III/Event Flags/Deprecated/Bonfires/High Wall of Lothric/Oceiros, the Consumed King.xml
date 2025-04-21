@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78153</ID>
+  <Description>"Oceiros, the Consumed King"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>6</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>F03</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

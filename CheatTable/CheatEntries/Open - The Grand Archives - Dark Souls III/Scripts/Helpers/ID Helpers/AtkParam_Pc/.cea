@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(AtkParam_PcHelper,8)
+registersymbol(AtkParam_PcHelper)
+[DISABLE]
+dealloc(AtkParam_PcHelper)
+unregistersymbol(AtkParam_PcHelper)

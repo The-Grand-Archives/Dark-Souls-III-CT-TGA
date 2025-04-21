@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>88218</ID>
+  <Description>"---Flags"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="88220"/>
+    <id id="88202"/>
+    <id id="88203"/>
+    <id id="88219"/>
+    <id id="88221"/>
+    <id id="88222"/>
+    <id id="88223"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

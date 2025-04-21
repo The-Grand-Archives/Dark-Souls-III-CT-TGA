@@ -1,0 +1,50 @@
+[ENABLE]
+[[[GameDataMan]+10]+7B8]+10:
+dw 0003 0000//Point Forward
+dw 0005 0001 //Point Up
+dw 0007 0002 //Point down
+dw 0009 0003 //Wave
+dw 000B 0004 //Beckon
+dw 000D 0005 //Call over
+dw 000F 0006 //Welcome
+dw 0011 0007 //Applause
+dw 0013 0008 //Quiet Resolve
+dw 0015 0009 //Jump For Joy
+dw 0017 000A //Joy
+dw 0019 000B //Rejoice
+dw 001B 000C //Hurrah
+dw 001D 000D //Praise the Sun
+dw 001F 000E //My Thanks
+dw 0021 000F //Bow
+dw 0023 0010 //Proper Bow
+dw 0025 0011 //Dignified Bow
+dw 0027 0012 //Duel Bow
+dw 0029 0013 //Legion Etiquette
+dw 002B 0014 //Darkmoon Loyality
+dw 002D 0015 //By my sword
+dw 002F 0016 //Prayer
+dw 0031 0017 //Silent Ally
+dw 0033 0018 //Rest
+dw 0035 0019 //Collapse
+dw 0037 001A //Patches Squat
+dw 0039 001B //Prostration
+dw 003B 001C //Toast
+dw 003D 001D //Sleep
+dw 003F 001E //Curl Up
+dw 0041 001F //Stretch out
+dw 0043 0020 //Path of the Dragon
+
+//dw 0045 0021 //Unmannered Bow
+//dw 0047 0022 //Lord of Cinder
+//dw 0049 0023 //FDP_MenuText(301140)
+//dw 004B 0024 //FDP_MenuText(301141)
+//dw 004D 0025 //FDP_MenuText(301142)
+//dw 004F 0026 //FDP_MenuText(301143)
+//dw 0051 0027 //FDP_MenuText(301144)
+//dw 0053 0028 //FDP_MenuText(301145)
+
+{$lua}
+if syntaxcheck then return end
+disableMemrec(memrec)
+
+[DISABLE]

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081648</ID>
+  <Description>"FadeOut From"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1A4C</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

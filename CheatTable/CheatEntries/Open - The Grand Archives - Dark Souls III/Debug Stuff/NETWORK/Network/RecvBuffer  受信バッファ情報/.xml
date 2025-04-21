@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097729</ID>
+  <Description>"RecvBuffer | 受信バッファ情報"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097737"/>
+    <id id="1337097739"/>
+    <id id="1337097735"/>
+    <id id="1337097736"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

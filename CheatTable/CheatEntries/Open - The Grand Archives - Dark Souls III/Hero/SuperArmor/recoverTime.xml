@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337190277</ID>
+  <Description>"recoverTime"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>34</Offset>
+    <Offset>40</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

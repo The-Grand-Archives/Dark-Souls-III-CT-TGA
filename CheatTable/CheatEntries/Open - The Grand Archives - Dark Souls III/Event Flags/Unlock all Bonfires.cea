@@ -1,0 +1,200 @@
+{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+local flagsBase = {
+14000101, -- Coiled Sword embed
+3001960,
+13000000, -- Enable Warp to High Wall of Lothric
+4001951,
+14000001, -- Cemetery of Ash
+4001952,
+14000002, -- Iudex Gundyr
+4001950,
+14000000, -- Firelink Shrine
+4001953,
+14000003, -- Untended Graves
+4001954,
+14000004, -- Champion Gundyr
+3001950,
+13000009, -- High Wall of Lothric
+3001955,
+13000005, -- Tower on the Wall
+3001952,
+13000002, -- Vordt of the Boreal Valley
+3001954,
+13000004, -- Dancer of the Boreal Valley
+3001951,
+13000001, -- Oceiros, the Consumed King
+3101954,
+13100004, -- Foot of the High Wall
+3101950,
+13100000, -- Undead Settlement
+3101953,
+13100003, -- Dilapidated Bridge
+3101952,
+13100002, -- Cliff Underside
+3101951,
+13100001, -- Pit of Hollows
+3301956,
+13300006, -- Road of Sacrifices
+3301950,
+13300000, -- Halfway Fortress
+3301957,
+13300007, -- Cruifixion Woods
+3301953,
+13300003, -- Farron Keep
+3301954,
+13300004, -- Keep Ruins
+3301955,
+13300005, -- Old Walf of Farron
+3301957,
+13300007, -- Crucifixion Woods
+3301952,
+13300002, -- Crystal Sage
+3301958,
+13300008, -- Farron Keep Perimeter
+3301954,
+13300004, -- Abyss Watchers
+3301955,
+13500003, -- Cathedral of the Deep
+3501950,
+13500000, -- Cleansing Chapel
+3501951,
+13500001, -- Deacons of the Deep
+3501952,
+13500002, -- Rosaria's Bed Chamber
+3801956,
+13800006, -- Catacombs of Carthus
+3801951,
+13800001, -- Abandoned Tomb
+3801953,
+13800003, -- Demon Ruins
+3801952,
+13800002, -- Old King's Antechamber
+3801950,
+13800000, -- High Lord Wolnir
+3801954,
+13800004, -- Old Demon King
+3701957,
+13700007, -- Irithyll of the Boreal Valley
+3701954,
+13700004, -- Central Irithyll
+3701950,
+13700000, -- Church of Yorshka
+3701955,
+13700005, -- Distant Manor
+3701951,
+13700001, -- Pontiff Sulyvahn
+3701956,
+13700006, -- Water Reserve
+3701953,
+13700003, -- Anor Londo
+3701958,
+13700008, -- Prison Tower
+3701952,
+13700002, -- Aldrich, Devourer of Gods
+3901950,
+13900000, -- Irithyll Dungeon
+3901952,
+13900002, -- Profaned Capital
+3901951,
+13900001, -- Yhorm the Giant
+3201950,
+13200000, -- Archdragon Peak
+3201953,
+13200003, -- Kin Mausoleum
+3201952,
+13200002, -- Great Belfry
+3201951,
+13200001, -- Nameless King
+3011950,
+13010000, -- Lothric Castle
+3011952,
+13010002, -- Dragon Barracks
+3011951,
+13010001, -- Dragonslayer Armor
+3411951,
+13410001, -- Grand Archives
+3411950,
+13410000, -- Twin Princes
+4101950,
+14100000, -- Flameless Shrine
+4101951,
+14100001, -- Kiln of the First Flame
+4101952,
+14100002, -- Soul of Cinder
+}
+local flagsDLC1 = {
+4501951,
+14500001, -- Snowfield
+4501952,
+14500002, -- Rope Bridge Cave
+4501955,
+14500005, -- Ariandel Chapel
+4501953,
+14500003, -- Corvian Settlement
+4501954,
+14500004, -- Snowy Mountain Pass
+4501950,
+14500000, -- Sister Friede
+4501956,
+14500006, -- Champion's Gravetender
+4501957,
+14500007, -- Depths of the Painting
+}
+local flagsDLC2 = {
+5001951,
+15000001, -- The Dreg Heap
+5001952,
+15000002, -- Earthen Peak Ruins
+5001953,
+15000003, -- Within the Earthen Peak Ruins
+5001950,
+15000000, -- The Demon Prince
+5101952,
+15100002, -- Mausoleum Lookout
+5101953,
+15100003, -- Ringed Inner Wall
+5101954,
+15100004, -- Ringed City Streets
+5101955,
+15100005, -- Shared Grave
+5101950,
+15100000, -- Church of Filianore
+5101951,
+15100001, -- Darkeater Midir
+5111951,
+15110001, -- Filianore's Rest
+5111950,
+15110000 -- Slave Knight Gael
+}
+
+local flags = {flagsBase}
+if readByte(readQword("CSDlc")+0x11) == 1 then table.insert(flags, flagsDLC1) end
+if readByte(readQword("CSDlc")+0x12) == 1 then table.insert(flags, flagsDLC2) end
+
+ef.runThread0 = true
+local thread = createThread(function()
+	local results = {}
+  local total = 0
+	for i,v in ipairs(flags) do
+		if not ef.runThread0 then break end
+  	n = #v
+    table.insert(results, n)
+    local p1, p2, count = 0, 0
+    local t = os.clock()
+    for i,v in ipairs(v) do
+		  if not ef.runThread0 then break end
+      ef.setFlag(v, 1)
+      p1 = i*100//n
+      if p1 ~= p2 then print(p1.."% "..(os.clock() - t)*100//1/100) p2 = p1 end
+    end
+	end
+  for i,v in ipairs(results) do total = total + v end
+  print(string.format("Set %s flags!", total))
+	ef.runThread0 = false
+end)
+
+[DISABLE]
+ef.runThread0 = false

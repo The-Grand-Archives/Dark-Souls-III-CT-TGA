@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73290</ID>
+  <Description>"Angle"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>702</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

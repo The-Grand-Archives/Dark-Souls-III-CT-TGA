@@ -1,0 +1,23 @@
+<CheatEntry>
+  <ID>1337099074</ID>
+  <Description>"Infusion"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Normal
+100:Heavy
+200:Sharp
+300:Refined
+400:Simple
+500:Crystal
+600:Fire
+700:Chaos
+800:Lightning
+900:Deep
+1000:Dark
+1100:Poison
+1200:Blood
+1300:Raw
+1400:Blessed
+1500:Hollow
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>ItemGibData+0C</Address>
+</CheatEntry>

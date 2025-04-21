@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337189986</ID>
+  <Description>"EzState fix randum integer number"</Description>
+  <DropDownList DisplayValueAsItem="1">-1:randum
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>138</Offset>
+  </Offsets>
+</CheatEntry>

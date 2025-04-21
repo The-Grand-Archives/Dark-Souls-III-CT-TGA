@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>78066</ID>
+  <Description>"Aldrich, Devourer of Gods"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78067"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

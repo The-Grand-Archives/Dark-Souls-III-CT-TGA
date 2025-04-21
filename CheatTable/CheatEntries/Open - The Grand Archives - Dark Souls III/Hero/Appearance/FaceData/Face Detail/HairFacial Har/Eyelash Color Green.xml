@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73258</ID>
+  <Description>"Eyelash Color Green"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6FD</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

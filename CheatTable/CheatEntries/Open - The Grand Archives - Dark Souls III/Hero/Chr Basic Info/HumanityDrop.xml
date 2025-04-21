@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097208</ID>
+  <Description>"HumanityDrop"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1ABC</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

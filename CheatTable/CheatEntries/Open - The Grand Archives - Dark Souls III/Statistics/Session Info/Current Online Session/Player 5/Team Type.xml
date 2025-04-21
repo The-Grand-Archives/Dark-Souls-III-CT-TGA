@@ -1,0 +1,35 @@
+<CheatEntry>
+  <ID>86973</ID>
+  <Description>"Team Type"</Description>
+  <DropDownList DisplayValueAsItem="1">1:Host
+2:Phantom
+3:Black Phantom
+4:Hollow
+6:Enemy
+7:Boss (giants, big lizard)
+8:Friend
+9:AngryFriend
+10:DecoyEnemy
+11:BloodChild
+12:BattleFriend
+13:Dragon
+16:Dark Spirit
+17:Watchdog of Farron
+18:Aldrich Faithful
+24:Darkwraiths
+26:NPC
+27:Hostile NPC
+29:Arena
+31:Mad Phantom
+32:Mad Spirit
+33:Giant crabs,Dragons from Lothric castle
+0:None
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>74</Offset>
+    <Offset>118</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

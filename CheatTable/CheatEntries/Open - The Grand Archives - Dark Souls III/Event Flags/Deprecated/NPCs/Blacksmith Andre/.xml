@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>2873</ID>
+  <Description>"Blacksmith Andre"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="2872"/>
+    <id id="2874"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

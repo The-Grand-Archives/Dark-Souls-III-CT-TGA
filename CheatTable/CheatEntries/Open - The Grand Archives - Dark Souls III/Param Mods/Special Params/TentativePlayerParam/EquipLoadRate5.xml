@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099306</ID>
+  <Description>"EquipLoadRate5"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>5F</Offset>
+    <Offset>60</Offset>
+    <Offset>70</Offset>
+  </Offsets>
+</CheatEntry>

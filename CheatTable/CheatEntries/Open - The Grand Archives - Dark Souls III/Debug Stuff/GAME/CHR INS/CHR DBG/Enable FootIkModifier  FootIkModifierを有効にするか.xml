@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337190024</ID>
+  <Description>"Enable FootIkModifier | FootIkModifierを有効にするか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjHkBehManager</Address>
+  <Offsets>
+    <Offset>51</Offset>
+  </Offsets>
+</CheatEntry>

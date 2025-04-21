@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081272</ID>
+  <Description>"Forehead_tall_short"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>73D</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

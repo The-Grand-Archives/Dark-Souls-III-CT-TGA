@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337097002</ID>
+  <Description>"Played areas end"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>0</ByteLength>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>818</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

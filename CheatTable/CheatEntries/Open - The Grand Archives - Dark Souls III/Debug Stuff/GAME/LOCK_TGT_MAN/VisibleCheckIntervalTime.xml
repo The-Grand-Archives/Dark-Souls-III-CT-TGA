@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099117</ID>
+  <Description>"VisibleCheckIntervalTime"</Description>
+  <VariableType>Float</VariableType>
+  <Address>LockTgtMan</Address>
+  <Offsets>
+    <Offset>290C</Offset>
+  </Offsets>
+</CheatEntry>

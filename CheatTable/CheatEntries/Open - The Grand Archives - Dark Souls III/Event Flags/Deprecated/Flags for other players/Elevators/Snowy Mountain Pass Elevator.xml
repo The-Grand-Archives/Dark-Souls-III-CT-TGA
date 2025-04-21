@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>86488</ID>
+  <Description>"Snowy Mountain Pass Elevator"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>1</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>643c</Offset>
+    <Offset>8</Offset>
+  </Offsets>
+</CheatEntry>

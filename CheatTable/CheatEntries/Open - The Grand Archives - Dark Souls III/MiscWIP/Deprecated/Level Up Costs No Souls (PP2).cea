@@ -1,0 +1,12 @@
+//Thanks to ametalon for finding the ID + relevant offsets
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local LevelCost = CalcCorrectGraph:new("NoLevelUpCost",200)
+LevelCost:init_inclination_soul(0)
+LevelCost:adjustment_value(0)
+LevelCost:boundry_inclination_soul(0)
+LevelCost:boundry_value(0)
+
+[DISABLE]
+paramUtils:restore("NoLevelUpCost")

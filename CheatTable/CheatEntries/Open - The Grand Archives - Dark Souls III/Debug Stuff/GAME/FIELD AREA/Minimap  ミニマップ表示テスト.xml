@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081115</ID>
+  <Description>"Minimap | ミニマップ表示テスト"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <Color>C0C0C0</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4743A7E</Address>
+</CheatEntry>

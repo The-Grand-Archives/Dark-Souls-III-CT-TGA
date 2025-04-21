@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>86111</ID>
+  <Description>"Camera Position"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="81124"/>
+    <id id="86112"/>
+    <id id="79008"/>
+    <id id="79009"/>
+    <id id="79007"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78286</ID>
+  <Description>"High Wall of Lothric"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>F26</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

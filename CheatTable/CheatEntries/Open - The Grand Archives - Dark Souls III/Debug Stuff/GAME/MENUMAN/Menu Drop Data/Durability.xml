@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337080847</ID>
+  <Description>"Durability"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MenuDropData</Address>
+  <Offsets>
+    <Offset>848</Offset>
+  </Offsets>
+</CheatEntry>

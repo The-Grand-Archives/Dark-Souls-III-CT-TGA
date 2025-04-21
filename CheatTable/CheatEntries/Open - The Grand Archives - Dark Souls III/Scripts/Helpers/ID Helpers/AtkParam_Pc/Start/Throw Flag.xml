@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337256252</ID>
+  <Description>"Throw Flag"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+07D</Address>
+</CheatEntry>

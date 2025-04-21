@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>78129</ID>
+  <Description>"Oceiros, the Consumed King"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78139"/>
+    <id id="78143"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

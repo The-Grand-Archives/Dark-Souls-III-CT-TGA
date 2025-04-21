@@ -1,0 +1,19 @@
+<CheatEntry>
+  <ID>1337097184</ID>
+  <Description>"igPos"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>12</ByteLength>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>80</Offset>
+    <Offset>28</Offset>
+    <Offset>18</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337097751"/>
+    <id id="1337097753"/>
+    <id id="1337097752"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

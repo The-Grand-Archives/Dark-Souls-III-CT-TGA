@@ -1,0 +1,94 @@
+<CheatEntry>
+  <ID>89429</ID>
+  <Description>"Start"</Description>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>20</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="89430"/>
+    <id id="89431"/>
+    <id id="89432"/>
+    <id id="89433"/>
+    <id id="89434"/>
+    <id id="89435"/>
+    <id id="89436"/>
+    <id id="89437"/>
+    <id id="89438"/>
+    <id id="89439"/>
+    <id id="89440"/>
+    <id id="89441"/>
+    <id id="89442"/>
+    <id id="89443"/>
+    <id id="89444"/>
+    <id id="89445"/>
+    <id id="89446"/>
+    <id id="89447"/>
+    <id id="89448"/>
+    <id id="89449"/>
+    <id id="89450"/>
+    <id id="89451"/>
+    <id id="89452"/>
+    <id id="89453"/>
+    <id id="89454"/>
+    <id id="89455"/>
+    <id id="89456"/>
+    <id id="89457"/>
+    <id id="89458"/>
+    <id id="89459"/>
+    <id id="89460"/>
+    <id id="89461"/>
+    <id id="89462"/>
+    <id id="89463"/>
+    <id id="89464"/>
+    <id id="89465"/>
+    <id id="89466"/>
+    <id id="89467"/>
+    <id id="89468"/>
+    <id id="89469"/>
+    <id id="89470"/>
+    <id id="89471"/>
+    <id id="89472"/>
+    <id id="89473"/>
+    <id id="89474"/>
+    <id id="89475"/>
+    <id id="89476"/>
+    <id id="89477"/>
+    <id id="89478"/>
+    <id id="89479"/>
+    <id id="89480"/>
+    <id id="89481"/>
+    <id id="89482"/>
+    <id id="89483"/>
+    <id id="89484"/>
+    <id id="89485"/>
+    <id id="89486"/>
+    <id id="89487"/>
+    <id id="89488"/>
+    <id id="89489"/>
+    <id id="89490"/>
+    <id id="89491"/>
+    <id id="89492"/>
+    <id id="89493"/>
+    <id id="89494"/>
+    <id id="89495"/>
+    <id id="89496"/>
+    <id id="89497"/>
+    <id id="89498"/>
+    <id id="89499"/>
+    <id id="89500"/>
+    <id id="89501"/>
+    <id id="89502"/>
+    <id id="89503"/>
+    <id id="89504"/>
+    <id id="89505"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

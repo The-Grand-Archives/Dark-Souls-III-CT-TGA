@@ -1,0 +1,20 @@
+<CheatEntry>
+  <ID>1337081894</ID>
+  <Description>"Path search test | パス検索テスト"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337081896"/>
+    <id id="1337081911"/>
+    <id id="1337081912"/>
+    <id id="1337081895"/>
+    <id id="1337081897"/>
+    <id id="1337081982"/>
+    <id id="1337081983"/>
+    <id id="1337081915"/>
+    <id id="1337081916"/>
+    <id id="1337081898"/>
+    <id id="1337081918"/>
+    <id id="1337081919"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

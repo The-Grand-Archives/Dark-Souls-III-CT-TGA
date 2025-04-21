@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337020991</ID>
+  <Description>"White Phantom"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337021004"/>
+    <id id="1337020970"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

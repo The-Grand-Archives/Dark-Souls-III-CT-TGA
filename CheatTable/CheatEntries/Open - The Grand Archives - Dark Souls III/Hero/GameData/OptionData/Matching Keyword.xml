@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337081063</ID>
+  <Description>"Matching Keyword"</Description>
+  <VariableType>String</VariableType>
+  <Length>9</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>34</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

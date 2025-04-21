@@ -1,0 +1,7 @@
+<CheatEntry>
+  <ID>492939</ID>
+  <Description>"MenuMan.EnableTitleFlowDebug"</Description>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+47666A8</Address>
+</CheatEntry>

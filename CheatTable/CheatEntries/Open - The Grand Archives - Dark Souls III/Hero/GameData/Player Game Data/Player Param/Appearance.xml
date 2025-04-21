@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337080908</ID>
+  <Description>"Appearance"</Description>
+  <DropDownList ReadOnly="1" DisplayValueAsItem="1">0:Default
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>AF</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

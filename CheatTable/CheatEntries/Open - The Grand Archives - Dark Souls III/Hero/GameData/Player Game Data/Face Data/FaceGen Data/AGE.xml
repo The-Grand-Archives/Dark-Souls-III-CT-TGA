@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081359</ID>
+  <Description>"AGE"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>71E</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

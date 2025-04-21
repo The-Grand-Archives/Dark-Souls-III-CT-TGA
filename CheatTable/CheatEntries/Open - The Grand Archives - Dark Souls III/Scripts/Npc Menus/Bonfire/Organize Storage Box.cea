@@ -1,0 +1,20 @@
+[ENABLE]
+aobscanmodule(BSB_Call_Call,$process,?? ?? ?? ?? 90 48 8B 50 08 48 89 53 08 48 8B 40 10 48 89 43 10 48 8D ?? ?? ?? ?? ?? 48 89 44 24 28 C7 43 18 03 00 00 00)
+alloc(BonfireStorageBox,100,DarkSoulsIII.exe)
+createthread(BonfireStorageBox)
+
+BonfireStorageBox:
+sub rsp,48
+mov rcx,BSB_Call_Call
+movsxd rcx,dword ptr [rcx]
+mov rax,BSB_Call_Call+4
+add rax,rcx
+lea rcx,[rsp+28]
+call rax
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(BonfireStorageBox)

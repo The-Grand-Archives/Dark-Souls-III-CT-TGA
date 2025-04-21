@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73278</ID>
+  <Description>"Eyelid Brightness"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>771</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

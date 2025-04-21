@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337029847</ID>
+  <Description>"Last Weapon Art used"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337029848"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

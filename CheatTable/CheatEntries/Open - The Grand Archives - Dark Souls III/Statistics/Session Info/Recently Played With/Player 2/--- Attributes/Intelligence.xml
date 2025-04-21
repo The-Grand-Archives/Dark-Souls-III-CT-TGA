@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>86381</ID>
+  <Description>"Intelligence"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>58</Offset>
+    <Offset>540+0950</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

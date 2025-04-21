@@ -1,0 +1,19 @@
+<CheatEntry>
+  <ID>1337081994</ID>
+  <Description>"Character Name"</Description>
+  <Options moHideChildren="1" moRecursiveSetValue="1"/>
+  <VariableType>String</VariableType>
+  <Length>48</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>1</ZeroTerminate>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>88</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337081995"/>
+    <id id="1337081996"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

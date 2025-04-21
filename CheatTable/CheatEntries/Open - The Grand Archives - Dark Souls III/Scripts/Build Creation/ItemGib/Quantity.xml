@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337099076</ID>
+  <Description>"Quantity"</Description>
+  <DropDownList DescriptionOnly="1" DisplayValueAsItem="1">-1:Max
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>ItemGibData</Address>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337033702</ID>
+  <Description>"Weapon Art Effect"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337033703"/>
+    <id id="1337033704"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337256533</ID>
+  <Description>"isAutoReplenish"</Description>
+  <Options moHideChildren="1"/>
+  <ShowAsSigned>1</ShowAsSigned>
+  <Color>C0C0C0</Color>
+  <VariableType>Byte</VariableType>
+  <Address>+47</Address>
+</CheatEntry>

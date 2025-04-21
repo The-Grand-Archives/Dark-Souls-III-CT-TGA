@@ -1,0 +1,16 @@
+{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+disableMemrec(memrec)
+showText([[
+Anri/Horace at Shrine is self explanatory
+"Talked to Anri" is the flag which then causes them to move away to the catacombs. It must be "0" for them to be at the shrine.
+
+If you want Anri/Horace at the shrine, set the "Anri/Horace at Shrine" to 1,
+"Talked to Anri (at shrine)" to 0, and "Anri/Horace at catacombs/smouldering lake"
+to 0.
+Anri/Horace can only be in one location at time, so you must disable the other flag locations for them to show up.
+]])
+
+[DISABLE]

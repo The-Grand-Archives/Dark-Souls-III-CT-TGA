@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(AttackAddressToUse,8)
+registersymbol(AttackAddressToUse)
+[DISABLE]
+dealloc(AttackAddressToUse)
+unregistersymbol(AttackAddressToUse)

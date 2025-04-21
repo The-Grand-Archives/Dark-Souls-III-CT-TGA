@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080968</ID>
+  <Description>"Prize neck ranking points | 賞金首ランキングポイント"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>D4</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

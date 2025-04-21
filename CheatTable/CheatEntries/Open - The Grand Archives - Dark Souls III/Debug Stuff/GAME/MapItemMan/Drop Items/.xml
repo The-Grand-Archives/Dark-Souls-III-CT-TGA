@@ -1,0 +1,19 @@
+<CheatEntry>
+  <ID>1337098219</ID>
+  <Description>"Drop Items"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337098257"/>
+    <id id="1337098264"/>
+    <id id="1337098272"/>
+    <id id="1337098288"/>
+    <id id="1337098296"/>
+    <id id="1337098304"/>
+    <id id="1337098312"/>
+    <id id="1337098320"/>
+    <id id="1337098324"/>
+    <id id="1337098328"/>
+    <id id="1337098344"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

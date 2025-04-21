@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>94085</ID>
+  <Description>"Kiln of the First Flame"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78214"/>
+    <id id="78215"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

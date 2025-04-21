@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096700</ID>
+  <Description>"display the map model | マップモデルを表示するか"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>CBD</Offset>
+  </Offsets>
+</CheatEntry>

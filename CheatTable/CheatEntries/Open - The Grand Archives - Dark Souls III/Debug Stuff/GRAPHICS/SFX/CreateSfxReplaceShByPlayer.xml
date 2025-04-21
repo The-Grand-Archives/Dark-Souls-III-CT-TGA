@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337096669</ID>
+  <Description>"CreateSfx:ReplaceShByPlayer"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSfx</Address>
+  <Offsets>
+    <Offset>76</Offset>
+  </Offsets>
+</CheatEntry>

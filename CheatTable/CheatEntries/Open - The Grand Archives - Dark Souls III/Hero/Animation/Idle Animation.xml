@@ -1,0 +1,259 @@
+<CheatEntry>
+  <ID>1337081653</ID>
+  <Description>"Idle Animation"</Description>
+  <DropDownList DisplayValueAsItem="1">-1:None
+0000:Idle
+26001:Turn Left
+26011:Turn Right
+26021:Turn Back
+26031:Turn Front
+60000:Open door - short
+60001:Closes door - short
+60002:Closes door - medium
+60003:Open door medium
+60010:Hold out hand in air
+60020:Unlock then open door - medium
+60030:Open door wide - medium
+60040:Open door wide - long
+60060:Walk through mist
+60070:Pick up item from chest
+60080:Open chest
+60090:Pick up item from chest
+60100:Black seperation crystal - no effect
+60160:Open door wide - long
+60170:Open door wide - very long - shakes screen
+60180:Similar to above
+60190:Same, but struggles a bit
+60200:Pull floor lever
+60202:Pull wall lever
+60210:Kick ladder down
+60220:Twist door wheel?
+60230:Push Anor Londo tower lever clockwise - shoulders break
+60231:Push Anor Londo tower lever counterclockwise - shoulders break
+60240:Pull something - arms break
+60241:Pull something - arms don't break
+60250:Hold up 2 fingers then goes invisible - warp sound effect
+60260:Go invisible - no sound - instant
+60270:Hold up 2 fingers at a lower angle - loops
+60370:Lift up door
+60380:Place item on table
+60390:T shape pose
+60400:Lift door again - slow
+60410:Dunk head in wax - SPAWNS WAX HEAD
+60420:Unlocks door then pushes to side
+60430:Place coiled sword(invisible) in firelink with fire effect
+60440:Kick - Heafty shove with leg
+60750:Pull sword out of Gundyr - normal
+60760:Pull sword high out by stepping up Gundyr - variation
+60780:Pull sword(maybe spear) out of Gundyr - variation
+60790:Pull sword(maybe spear) high out of Gundyr - variation
+60800:Prayer - does not loop
+60810:Look behind shoulder then go back to regular pose
+61000:Move legs around?
+63000:Load in area animation
+63010:Summoned animation
+63020:Summoned as sunbro animation
+63060:White Phantom Summon Animation == sfx
+63070:White Phantom Summon Animation -- Sunbro == sfx
+65012:Weird raising two hands while sitting
+65013:Standing up from previous animation
+65030:T shape pose 2
+65040:Crushes Soul
+68000:Light bonfire - gives text - cannot do a 2nd time in the same area
+68001:Kindle bonfire
+68002:Humanity restored at bonfire - loop
+68010:Sit at bonfire - moves into
+68011:Sit at bonfire - instant - loop
+68012:Stand up from bonfire
+68100:Shadow Realm
+68101:Bonfire warp. Does not actually warp anywhere
+69000:Covenant kneel - loops
+69001:Covenant kneel - instant - loops
+69002:Covenant kneel - stand up
+69003:Covenant Kneel -- redeem covenant item == purple sfx
+69010:Hand in prayer - like DS2 - doesn't loop
+69030:Variation of covenant kneel - doesn't loop
+69040:Place cinders of a lord on lower throne - no effect
+69050:Place cinders of a lord on higher throne - no effect
+69060:Hand in prayer - still no loop
+69070:Walk forward infinitely
+80000:Beckon gesture - loops
+80100:Praise gesture - loops
+80200:Point up - loops - can rotate
+80300:Point down - loops - can rotate
+80400:Duel bow - loops
+80500:Point forward - loops - can rotate
+80600:Welcome - loops
+80700:Prostration - loops
+80701:Prostration - instant - loops
+80702:Prostration - stand up
+80800:Proper bow - loops
+80900:Prayer - loops
+80901:Prayer - instant - loops
+80902:Prayer - stand up
+81000:Bow - loops
+81100:Wave - loops - can rotate
+81200:Hurrah! - loops - can rotate until cheer
+81300:Jump for joy - loops
+81400:Joy - loops
+81500:My thanks! - loops
+81600:Rejoice - loops
+81800:Rest gesture - loops
+81801:Rest gesture - instant - loops
+81802:Rest gesture - stand up
+82400:By my sword! - loops
+83300:Dignified Bow - loops
+83900:Unmannered Bow - loops
+84100:Throw item(like khukri) - loops aka 'Lord of Cinder'
+84200:Curl up - loops
+84201:Curl up - instant - loops
+84202:Curl up - stand up
+84300:Stretch out - loops
+84301:Stretch out - instant - loops
+84302:Stretch out - stand up
+84400:Call over - loops - makes sound
+84500:Collapse - loops
+84501:Collapse - instant - loops
+84502:Collapse - stand up
+84600:Quiet resolve - loops
+84700:Patches squat - loops
+84701:Patches squat - instant - loops
+84702:Patches squat - stand up
+85000:Applause - loops
+85100:Path of the dragon - loops
+85101:Path of the dragon - instant - loops
+85102:Path of the dragon - stand up
+85200:Legion etiquette - loops
+85300:Darkmoon loyalty - loops
+85301:Darkmoon loyalty - instant - loops
+85302:Darkmoon loyalty - stand up
+85400:Sleep - loops
+85401:Sleep - instant - loops
+85402:Sleep - stand up
+85500:Toast - loops - doesn't toast
+85501:Toast - instant - loops - doesn't toast
+85600:Silent ally - loops
+85601:Silent ally - instant - loops
+85602:Silent ally - stand up
+90250:Firekeeper Level Kneel
+90260:Firekeeper Level Stand
+90270:Firekeeper Level - instant
+90280:Touch Irina
+90290:Touch Irina - instant
+90291:Touch Irina - stand up
+90300:Yuria at firelink
+90340:Sirris sitting in firelink
+90360:Greirat sitting animation in cell
+90361:Greirat sitting with arm holding head
+90380:Greirat dead - laying on side
+90390:Arms crossed
+90400:Same as above
+90410:Path of dragon sit. Warping effect. Does not actually warp anywhere
+90420:Hawkwood's sitting pose
+90430:Karla sitting in cell
+90450:Karla sit again?
+90460:Karla sitting facing away
+90470:Karla sitting, looks up at player
+90480:Karla sitting loop
+90490:Karla sitting warp effect. Does not warp anywhere.
+90500:Karla taking damage
+90510:Karla dying. WILL KILL PLAYER
+90511:Go invisible - no sound - instant
+90550:Irina facing down
+90560:Irina looking at player
+90570:Same as above
+90580:Irina warping away. Does not warp anywhere
+90590:Irina taking damage
+90600:Irina dying. WILL KILL PLAYER
+90601:Go invisible - no sound - instant
+90610:Irina firekeeper reaching out hand out glowing
+90620:Irina firekeeper pulling hand away from glowing
+90630:Irina firekeeper hand glowing loop
+90640:Sleeping on side - breathes
+90641:Irina waking up
+90650:Eygon sitting outside of Irina's cell
+90660:Eygon arm crossed in firelink
+90670:Hodrick crushed - face down
+90671:Pulls out weapon
+90680:Hawkwood again
+90690:Leonhard arms crossed
+90691:Legion etiquette
+90700:Lying on side
+90710:Leonhard Lean. Leans further back than two above
+90720:Arms crossed - instant - loops - no leaning
+90721:Arms crossing - loops - no leaning
+90730:Irina firekeeper sit
+90740:Anri sitting at crossroads
+90750:Anri at firelink shrine
+90760:Anri headache
+90770:Gotthard's body before Grand Archives
+90780:Anri standing by Church of Yorshka
+90790:Anri's animation when being sacrificed. Laying down arms crossed. Causes small head
+90800:Anri collapses after Horace dies - instant - loops
+90801:Anri collapses after Horace dies - loops
+90810:Patches squatting
+90820:Standing with right arm around something
+90830:Standing with both arms grabbing something
+90831:Goes into standing with both arms
+90840:Sitting with legs hanging off edge with arms crossed
+90841:Gets off from sitting pose
+90850:Siegward sitting legs crossed
+90851:Goes into path of the dragon
+90860:Siegward sitting sleeping
+90861:Goes into Siegward toasting
+90870:Siegward toasting
+90890:Siegward sitting in jail
+90900:Standing arms crossed
+90930:Irina firekeeper taking damage
+90940:Anri lost horace - being hit
+90950:Anri getting killed after horace. WILL KILL PLAYER
+90951:Go invisible - no sound - instant
+90960:Kneeling before Irina - does not hold out arm to touch
+90970:Greirat sitting at firelink
+90980:Irina looking up at player
+90990:Irina firekeeper dying. WILL KILL PLAYER
+90991:Go invisible - no sound - instant
+91000:Dead - leaning on something
+91010:Darkmoon loyalty kneel
+91011:Darkmoon loyalty kneel - instant - loops
+91012:Darkmoon loyalty kneel - stand up
+91013:Darkmoon loyalty kneel - redeem covenant item
+91020:Curl up gesture
+91030:Black crystal animation. Has visible effect, but does not actually work as black crystal
+91040:Firelink warping. Does not actually warp anywhere.
+91050:Path of the Dragon
+91051:Path of the Dragon - instant - loops
+91052:Path of the Dragon warping. Does not actually warp anywhere.
+91060:Gael sitting face down.
+91061:Gael dying WILL KILL PLAYER
+91062:Go invisible - no sound - instant
+91070:Gael taking damage
+91080:Champion's gravetender sit
+91090:Champion's gravetender stand
+91100:Vinhelm standing
+91110:Vinhelm disappearing. Does not warp anywhere
+91120:Gael looking up to player - loop
+91130:Gael looks up to player then loops above
+91140:Gael looks away from player
+91150:Patches squat
+91160:Siegward sitting
+91170:Lapp crossed arms
+91180:Lapp squatting
+91190:Lapp crossing arms
+91200:Lapp toasting - crosses arms
+91210:Lapp in chair
+91220:Gael's point down - loop
+91230:Gael's point down - instant - loop
+99998:T shape pose 3
+99999:T shape pose 4
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>20</Offset>
+    <Offset>58</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

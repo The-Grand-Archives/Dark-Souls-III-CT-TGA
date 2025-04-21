@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337096759</ID>
+  <Description>"Whether to overwrite the received phantom life | 受信した幻影の寿命を上書きするか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>88</Offset>
+    <Offset>B98</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337080869</ID>
+  <Description>"Use NPC Player Debug Menu"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>128</Offset>
+  </Offsets>
+</CheatEntry>

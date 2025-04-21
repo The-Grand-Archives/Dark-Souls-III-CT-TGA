@@ -1,0 +1,19 @@
+<CheatEntry>
+  <ID>0</ID>
+  <Description>"Open - The Grand Archives v${CE2FS:TABLE_VERSION} - Dark Souls III ${CE2FS:GAME_VERSION}"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337099162"/>
+    <id id="92047"/>
+    <id id="72333"/>
+    <id id="72940"/>
+    <id id="1337080820"/>
+    <id id="253"/>
+    <id id="378"/>
+    <id id="95"/>
+    <id id="492852"/>
+    <id id="1337256131"/>
+    <id id="1337045834"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

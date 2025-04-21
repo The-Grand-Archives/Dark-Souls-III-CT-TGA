@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78524</ID>
+  <Description>"Catarina's Elevator"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>5</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>191C</Offset>
+    <Offset>8</Offset>
+  </Offsets>
+</CheatEntry>

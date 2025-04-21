@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096702</ID>
+  <Description>"Show high hits | ハイヒットを表示するか"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>CBF</Offset>
+  </Offsets>
+</CheatEntry>

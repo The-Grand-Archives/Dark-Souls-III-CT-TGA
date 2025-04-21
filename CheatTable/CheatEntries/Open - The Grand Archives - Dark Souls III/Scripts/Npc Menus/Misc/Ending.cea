@@ -1,0 +1,17 @@
+[ENABLE]
+aobscanmodule(Ending_AOB,$process,48 33 c4 48 89 84 24 88 00 00 00 48 8b d9 48 89 4c 24 38 33 ff)
+define(Ending_Call,Ending_AOB-21)
+alloc(Ending,100,DarkSoulsIII.exe)
+createthread(Ending)
+
+Ending:
+sub rsp,48
+lea rcx,[rsp+28]
+call Ending_Call
+add rsp,48
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Ending)

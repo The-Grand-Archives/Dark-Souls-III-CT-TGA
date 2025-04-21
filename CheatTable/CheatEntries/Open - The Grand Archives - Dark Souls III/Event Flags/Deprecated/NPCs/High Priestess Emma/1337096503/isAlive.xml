@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096506</ID>
+  <Description>"isAlive"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>4</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+0</Address>
+</CheatEntry>

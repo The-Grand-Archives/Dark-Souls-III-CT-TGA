@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337081394</ID>
+  <Description>"Animation Time"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>24</Offset>
+    <Offset>10</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

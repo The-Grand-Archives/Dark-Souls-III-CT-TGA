@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>72375</ID>
+  <Description>"Quantity"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>pickup_ptr</Address>
+  <Offsets>
+    <Offset>5C</Offset>
+  </Offsets>
+</CheatEntry>

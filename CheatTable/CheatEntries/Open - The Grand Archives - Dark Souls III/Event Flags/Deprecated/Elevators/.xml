@@ -1,0 +1,20 @@
+<CheatEntry>
+  <ID>78178</ID>
+  <Description>"Elevators"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="78183"/>
+    <id id="78409"/>
+    <id id="78381"/>
+    <id id="78394"/>
+    <id id="78359"/>
+    <id id="78180"/>
+    <id id="78176"/>
+    <id id="78286"/>
+    <id id="78166"/>
+    <id id="78175"/>
+    <id id="86487"/>
+    <id id="78361"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

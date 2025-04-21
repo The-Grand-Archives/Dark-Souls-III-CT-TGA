@@ -1,0 +1,40 @@
+[ENABLE]
+aobscanmodule(CurrentTargetAOB,DarkSoulsIII.exe,48 8B 80 xx 1F 00 00 48 8B 08 48 8B 51)
+alloc(newmem,$1000,CurrentTargetAOB)
+alloc(target_ptr,8)
+alloc(target_event,8)
+label(code)
+label(return)
+
+newmem:
+
+newmem:
+  mov rcx,[rax+58]
+  mov rcx,[rcx+320]
+  add rcx,7420
+  push rcx
+  mov rcx,target_event
+  pop qword ptr [rcx]
+code:
+  mov [target_ptr],rax
+  mov rax,[rax+1F90]
+  jmp return
+
+CurrentTargetAOB:
+  jmp newmem
+  nop
+  nop
+return:
+registersymbol(CurrentTargetAOB)
+registersymbol(target_ptr)
+registersymbol(target_event)
+[DISABLE]
+
+CurrentTargetAOB:
+  db 48 8B 80 90 1F 00 00
+unregistersymbol(target_event)
+unregistersymbol(target_ptr)
+unregistersymbol(CurrentTargetAOB)
+dealloc(newmem)
+dealloc(target_ptr)
+dealloc(target_event,8)

@@ -1,0 +1,16 @@
+{
+  Author: Igromanru
+  Description: Remove FP and Stamina costs from all spells
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local object = Magic:new("RemoveFPandStaminacostsfromallspells")
+object:patchAll2Byte(0xC,0) -- FPCost
+object:patchAll2Byte(0xE,0) -- StaminaCost
+
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("RemoveFPandStaminacostsfromallspells")

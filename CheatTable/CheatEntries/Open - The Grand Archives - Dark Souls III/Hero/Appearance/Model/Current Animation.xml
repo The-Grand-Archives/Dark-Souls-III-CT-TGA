@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>489664</ID>
+  <Description>"Current Animation"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>c8</Offset>
+    <Offset>80</Offset>
+    <Offset>xa</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

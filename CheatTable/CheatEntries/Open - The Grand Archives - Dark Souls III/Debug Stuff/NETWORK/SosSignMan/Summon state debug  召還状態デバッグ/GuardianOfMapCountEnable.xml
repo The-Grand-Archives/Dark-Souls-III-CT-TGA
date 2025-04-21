@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337098523</ID>
+  <Description>"GuardianOfMapCountEnable"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>(SprjEventMan)</Address>
+  <Offsets>
+    <Offset>328</Offset>
+    <Offset>40</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,554 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+
+-- Define NetworkParam Class
+
+NetworkParam = BaseParamClass:new()
+
+function NetworkParam:new(uuid, id, address)
+	local o = {}
+	self.__index = self
+	setmetatable(o, self)
+
+	o:init("NetworkParam", uuid, id, address)
+	return o
+end
+
+function NetworkParam:signVerticalOffset(value)
+    self:patchFloat(0x0, value)
+end
+
+function NetworkParam:maxSignPosCorrectionRange(value)
+    self:patchFloat(0x4, value)
+end
+
+function NetworkParam:signPuddleActiveMessageIntervalSec(value)
+    self:patchFloat(0x10, value)
+end
+
+function NetworkParam:reloadSignIntervalTime1(value)
+    self:patchFloat(0x18, value)
+end
+
+function NetworkParam:reloadSignIntervalTime2(value)
+    self:patchFloat(0x1C, value)
+end
+
+function NetworkParam:reloadSignTotalCount(value)
+    self:patch4Byte(0x20, value)
+end
+
+function NetworkParam:reloadSignCellCount(value)
+    self:patch4Byte(0x24, value)
+end
+
+function NetworkParam:updateSignIntervalTime(value)
+    self:patchFloat(0x28, value)
+end
+
+function NetworkParam:basicExclusiveRange(value)
+    self:patchFloat(0x2C, value)
+end
+
+function NetworkParam:basicExclusiveHeight(value)
+    self:patchFloat(0x30, value)
+end
+
+function NetworkParam:previewChrWaitingTime(value)
+    self:patchFloat(0x34, value)
+end
+
+function NetworkParam:signVisibleRange(value)
+    self:patchFloat(0x38, value)
+end
+
+function NetworkParam:cellGroupHorizontalRange(value)
+    self:patch4Byte(0x3C, value)
+end
+
+function NetworkParam:cellGroupTopRange(value)
+    self:patch4Byte(0x40, value)
+end
+
+function NetworkParam:cellGroupBottomRange(value)
+    self:patch4Byte(0x44, value)
+end
+
+function NetworkParam:minWhitePhantomLimitTimeScale(value)
+    self:patchFloat(0x48, value)
+end
+
+function NetworkParam:minSmallPhantomLimitTimeScale(value)
+    self:patchFloat(0x4C, value)
+end
+
+function NetworkParam:whiteKeywordLimitTimeScale(value)
+    self:patchFloat(0x50, value)
+end
+
+function NetworkParam:smallKeywordLimitTimeScale(value)
+    self:patchFloat(0x54, value)
+end
+
+function NetworkParam:blackKeywordLimitTimeScale(value)
+    self:patchFloat(0x58, value)
+end
+
+function NetworkParam:dragonKeywordLimitTimeScale(value)
+    self:patchFloat(0x5C, value)
+end
+
+function NetworkParam:singGetMax(value)
+    self:patch4Byte(0x60, value)
+end
+
+function NetworkParam:signDownloadSpan(value)
+    self:patchFloat(0x64, value)
+end
+
+function NetworkParam:signUpdateSpan(value)
+    self:patchFloat(0x68, value)
+end
+
+function NetworkParam:maxBreakInTargetListCount(value)
+    self:patch4Byte(0x70, value)
+end
+
+function NetworkParam:breakInRequestIntervalTimeSec(value)
+    self:patchFloat(0x74, value)
+end
+
+function NetworkParam:breakInRequestTimeOutSec(value)
+    self:patchFloat(0x78, value)
+end
+
+function NetworkParam:keyGuideRange(value)
+    self:patchFloat(0x80, value)
+end
+
+function NetworkParam:reloadSignTotalCount(value)
+    self:patch4Byte(0x88, value)
+end
+
+function NetworkParam:reloadNewSignCellCount(value)
+    self:patch4Byte(0x8C, value)
+end
+
+function NetworkParam:reloadRandomSignCellCount(value)
+    self:patch4Byte(0x90, value)
+end
+
+function NetworkParam:maxSignTotalCount(value)
+    self:patch4Byte(0x94, value)
+end
+
+function NetworkParam:maxSignCellCount(value)
+    self:patch4Byte(0x98, value)
+end
+
+function NetworkParam:basicExclusiveRange(value)
+    self:patchFloat(0x9C, value)
+end
+
+function NetworkParam:basicExclusiveHeight(value)
+    self:patchFloat(0xA0, value)
+end
+
+function NetworkParam:signVisibleRange(value)
+    self:patchFloat(0xA4, value)
+end
+
+function NetworkParam:maxWriteSignCount(value)
+    self:patch4Byte(0xA8, value)
+end
+
+function NetworkParam:maxReadSignCount(value)
+    self:patch4Byte(0xAC, value)
+end
+
+function NetworkParam:reloadSignIntervalTime(value)
+    self:patchFloat(0xB0, value)
+end
+
+function NetworkParam:cellGroupHorizontalRange(value)
+    self:patch4Byte(0xB4, value)
+end
+
+function NetworkParam:cellGroupTopRange(value)
+    self:patch4Byte(0xB8, value)
+end
+
+function NetworkParam:cellGroupBottomRange(value)
+    self:patch4Byte(0xBC, value)
+end
+
+function NetworkParam:downloadSpan(value)
+    self:patchFloat(0xC4, value)
+end
+
+function NetworkParam:downloadEvaluationSpan(value)
+    self:patchFloat(0xC8, value)
+end
+
+function NetworkParam:deadingGhostStartPosThreshold(value)
+    self:patchFloat(0xD0, value)
+end
+
+function NetworkParam:keyGuideRangePlayer(value)
+    self:patchFloat(0xD8, value)
+end
+
+function NetworkParam:keyGuideHeightPlayer(value)
+    self:patchFloat(0xDC, value)
+end
+
+function NetworkParam:reloadSignTotalCount(value)
+    self:patch4Byte(0xE0, value)
+end
+
+function NetworkParam:reloadSignCellCount(value)
+    self:patch4Byte(0xE4, value)
+end
+
+function NetworkParam:maxSignTotalCount(value)
+    self:patch4Byte(0xE8, value)
+end
+
+function NetworkParam:maxSignCellCount(value)
+    self:patch4Byte(0xEC, value)
+end
+
+function NetworkParam:reloadSignIntervalTime(value)
+    self:patchFloat(0xF0, value)
+end
+
+function NetworkParam:signVisibleRange(value)
+    self:patchFloat(0xF4, value)
+end
+
+function NetworkParam:basicExclusiveRange(value)
+    self:patchFloat(0xF8, value)
+end
+
+function NetworkParam:basicExclusiveHeight(value)
+    self:patchFloat(0xFC, value)
+end
+
+function NetworkParam:cellGroupHorizontalRange(value)
+    self:patch4Byte(0x100, value)
+end
+
+function NetworkParam:cellGroupTopRange(value)
+    self:patch4Byte(0x104, value)
+end
+
+function NetworkParam:cellGroupBottomRange(value)
+    self:patch4Byte(0x108, value)
+end
+
+function NetworkParam:recordDeadingGhostTotalTime(value)
+    self:patchFloat(0x110, value)
+end
+
+function NetworkParam:recordDeadingGhostMinTime(value)
+    self:patchFloat(0x114, value)
+end
+
+function NetworkParam:downloadSpan(value)
+    self:patchFloat(0x118, value)
+end
+
+function NetworkParam:statueCreatableDistance(value)
+    self:patchFloat(0x11C, value)
+end
+
+function NetworkParam:reloadGhostTotalCount(value)
+    self:patch4Byte(0x120, value)
+end
+
+function NetworkParam:reloadGhostCellCount(value)
+    self:patch4Byte(0x124, value)
+end
+
+function NetworkParam:maxGhostTotalCount(value)
+    self:patch4Byte(0x128, value)
+end
+
+function NetworkParam:distanceOfBeginRecordVersus(value)
+    self:patchFloat(0x12C, value)
+end
+
+function NetworkParam:distanceOfEndRecordVersus(value)
+    self:patchFloat(0x130, value)
+end
+
+function NetworkParam:updateWanderGhostIntervalTime(value)
+    self:patchFloat(0x134, value)
+end
+
+function NetworkParam:updateVersusGhostIntervalTime(value)
+    self:patchFloat(0x138, value)
+end
+
+function NetworkParam:recordWanderingGhostTime(value)
+    self:patchFloat(0x13C, value)
+end
+
+function NetworkParam:recordWanderingGhostMinTime(value)
+    self:patchFloat(0x140, value)
+end
+
+function NetworkParam:updateBonfireGhostIntervalTime(value)
+    self:patchFloat(0x144, value)
+end
+
+function NetworkParam:replayGhostRangeOnView(value)
+    self:patchFloat(0x148, value)
+end
+
+function NetworkParam:replayGhostRangeOutView(value)
+    self:patchFloat(0x14C, value)
+end
+
+function NetworkParam:replayBonfireGhostTime(value)
+    self:patchFloat(0x150, value)
+end
+
+function NetworkParam:minBonfireGhostValidRange(value)
+    self:patchFloat(0x154, value)
+end
+
+function NetworkParam:maxBonfireGhostValidRange(value)
+    self:patchFloat(0x158, value)
+end
+
+function NetworkParam:minReplayIntervalTime(value)
+    self:patchFloat(0x15C, value)
+end
+
+function NetworkParam:maxReplayIntervalTime(value)
+    self:patchFloat(0x160, value)
+end
+
+function NetworkParam:reloadGhostIntervalTime(value)
+    self:patchFloat(0x164, value)
+end
+
+function NetworkParam:cellGroupHorizontalRange(value)
+    self:patch4Byte(0x168, value)
+end
+
+function NetworkParam:cellGroupTopRange(value)
+    self:patch4Byte(0x16C, value)
+end
+
+function NetworkParam:replayBonfirePhantomParamIdForCodename(value)
+    self:patch4Byte(0x170, value)
+end
+
+function NetworkParam:replayBonfireModeRange(value)
+    self:patchFloat(0x174, value)
+end
+
+function NetworkParam:replayBonfirePhantomParamId(value)
+    self:patch4Byte(0x178, value)
+end
+
+function NetworkParam:reloadVisitListCoolTime(value)
+    self:patchFloat(0x180, value)
+end
+
+function NetworkParam:maxCoopBlueSummonCount(value)
+    self:patch4Byte(0x184, value)
+end
+
+function NetworkParam:maxBellGuardSummonCount(value)
+    self:patch4Byte(0x188, value)
+end
+
+function NetworkParam:maxVisitListCount(value)
+    self:patch4Byte(0x18C, value)
+end
+
+function NetworkParam:reloadSearch_CoopBlue_Min(value)
+    self:patchFloat(0x190, value)
+end
+
+function NetworkParam:reloadSearch_CoopBlue_Max(value)
+    self:patchFloat(0x194, value)
+end
+
+function NetworkParam:reloadSearch_BellGuard_Min(value)
+    self:patchFloat(0x198, value)
+end
+
+function NetworkParam:reloadSearch_BellGuard_Max(value)
+    self:patchFloat(0x19C, value)
+end
+
+function NetworkParam:reloadSearch_RatKing_Min(value)
+    self:patchFloat(0x1A0, value)
+end
+
+function NetworkParam:reloadSearch_RatKing_Max(value)
+    self:patchFloat(0x1A4, value)
+end
+
+function NetworkParam:srttMaxLimit(value)
+    self:patchFloat(0x1B0, value)
+end
+
+function NetworkParam:srttMeanLimit(value)
+    self:patchFloat(0x1B4, value)
+end
+
+function NetworkParam:srttMeanDeviationLimit(value)
+    self:patchFloat(0x1B8, value)
+end
+
+function NetworkParam:darkPhantomLimitBoostTime(value)
+    self:patchFloat(0x1BC, value)
+end
+
+function NetworkParam:darkPhantomLimitBoostScale(value)
+    self:patchFloat(0x1C0, value)
+end
+
+function NetworkParam:multiplayDisableLifeTime(value)
+    self:patchFloat(0x1C4, value)
+end
+
+function NetworkParam:abyssMultiplayLimit(value)
+    self:patchByte(0x1C8, value)
+end
+
+function NetworkParam:phantomWarpMinimumTime(value)
+    self:patchByte(0x1C9, value)
+end
+
+function NetworkParam:phantomReturnDelayTime(value)
+    self:patchByte(0x1CA, value)
+end
+
+function NetworkParam:terminateTimeoutTime(value)
+    self:patchByte(0x1CB, value)
+end
+
+function NetworkParam:penaltyPointLanDisconnect(value)
+    self:patch2Byte(0x1CC, value)
+end
+
+function NetworkParam:penaltyPointSignout(value)
+    self:patch2Byte(0x1CE, value)
+end
+
+function NetworkParam:penaltyPointReboot(value)
+    self:patch2Byte(0x1D0, value)
+end
+
+function NetworkParam:penaltyPointBeginPenalize(value)
+    self:patch2Byte(0x1D2, value)
+end
+
+function NetworkParam:penaltyForgiveItemLimitTime(value)
+    self:patchFloat(0x1D4, value)
+end
+
+function NetworkParam:allAreaSearchRate_CoopBlue(value)
+    self:patchByte(0x1D8, value)
+end
+
+function NetworkParam:allAreaSearchRate_VsBlue(value)
+    self:patchByte(0x1D9, value)
+end
+
+function NetworkParam:allAreaSearchRate_BellGuard(value)
+    self:patchByte(0x1DA, value)
+end
+
+function NetworkParam:bloodMessageEvalHealRate(value)
+    self:patchByte(0x1DB, value)
+end
+
+function NetworkParam:smallGoldSuccessHostRewardId(value)
+    self:patch4Byte(0x1DC, value)
+end
+
+function NetworkParam:doorInvalidPlayAreaExtents(value)
+    self:patchFloat(0x1E0, value)
+end
+
+function NetworkParam:signDisplayMax(value)
+    self:patchByte(0x1E4, value)
+end
+
+function NetworkParam:bloodStainDisplayMax(value)
+    self:patchByte(0x1E5, value)
+end
+
+function NetworkParam:bloodMessageDisplayMax(value)
+    self:patchByte(0x1E6, value)
+end
+
+function NetworkParam:summonMessageInterval(value)
+    self:patchFloat(0x210, value)
+end
+
+function NetworkParam:hostRegisterUpdateTime(value)
+    self:patchFloat(0x214, value)
+end
+
+function NetworkParam:guestUpdateTime(value)
+    self:patchFloat(0x21C, value)
+end
+
+function NetworkParam:guestPlayerNoTimeOutTime(value)
+    self:patchFloat(0x220, value)
+end
+
+function NetworkParam:hostPlayerNoTimeOutTime(value)
+    self:patchFloat(0x224, value)
+end
+
+function NetworkParam:requestSearchQuickMatchLimit(value)
+    self:patch4Byte(0x228, value)
+end
+
+function NetworkParam:AvatarMatchSearchMax(value)
+    self:patch4Byte(0x22C, value)
+end
+
+function NetworkParam:BattleRoyalMatchSearchMin(value)
+    self:patch4Byte(0x230, value)
+end
+
+function NetworkParam:BattleRoyalMatchSearchMax(value)
+    self:patch4Byte(0x234, value)
+end
+
+function NetworkParam:VisitorListMax(value)
+    self:patch4Byte(0x240, value)
+end
+
+function NetworkParam:DownloadSpan(value)
+    self:patchFloat(0x248, value)
+end
+
+function NetworkParam:VisitorGuestRequestMessageIntervalSec(value)
+    self:patchFloat(0x24C, value)
+end
+
+function NetworkParam:wanderGhostIntervalLifeTime(value)
+    self:patchFloat(0x250, value)
+end
+
+function NetworkParam:YellowMonkDownloadSpan(value)
+    self:patchFloat(0x264, value)
+end
+
+function NetworkParam:YellowMonkOverallFlowTimeOutTime(value)
+    self:patchFloat(0x268, value)
+end
+
+[DISABLE]

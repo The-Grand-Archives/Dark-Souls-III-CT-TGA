@@ -1,0 +1,14 @@
+//Function contributed by Luke_Yui
+[ENABLE]
+alloc(Debug_ExitGame,100,DarkSoulsIII.exe)
+createthread(Debug_ExitGame)
+
+Debug_ExitGame:
+sub rsp,8
+call DarkSoulsIII.exe+764170
+add rsp,8
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]

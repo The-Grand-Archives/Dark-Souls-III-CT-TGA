@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337099229</ID>
+  <Description>"Torch Emissive Intensity Scale"</Description>
+  <VariableType>Float</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>4</Offset>
+    <Offset>60</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

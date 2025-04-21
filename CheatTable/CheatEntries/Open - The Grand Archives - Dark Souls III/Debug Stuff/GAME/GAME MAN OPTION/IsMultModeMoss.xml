@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096687</ID>
+  <Description>"IsMultModeMoss"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>ADC</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,18 @@
+[ENABLE]
+{$lua}
+if CycleTableValue < CycleTableLength then
+   CycleTableValue = CycleTableValue + 1
+end
+print(CycleTableValue .. " : "..CycleTable[CycleTableValue])
+writeInteger(CycleAddress,CycleTable[CycleTableValue])
+{$asm}
+[DISABLE]
+{$lua}
+if CycleTableValue < CycleTableLength then
+   CycleTableValue = CycleTableValue + 1
+end
+print(CycleTableValue .. " : "..CycleTable[CycleTableValue])
+writeInteger(CycleAddress,CycleTable[CycleTableValue])
+{$asm}
+
+

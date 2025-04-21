@@ -1,0 +1,8 @@
+[ENABLE]
+DarkSoulsIII.exe+DE0DC0:
+db 90 90 90 90 90 90 90
+
+[DISABLE]
+DarkSoulsIII.exe+DE0DC0:
+db C6 80 42 0A 00 00 01
+

@@ -1,0 +1,34 @@
+//Author: inuNorii
+//Changes the Onikiri and Ubadachi weapon art to the cut version
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+
+local dualKatanas = {
+  16090000, -- Normal
+  16090100, -- Heavy
+  16090200, -- Sharp
+  16090300, -- Refined
+  16090400, -- Simple
+  16090500, -- Crystal
+  16090600, -- Fire
+  16090700, -- Chaos
+  16090800, -- Lightning
+  16090900, -- Deep
+  16091000, -- Dark
+  16091100, -- Poison
+  16091200, -- Blood
+  16091300, -- Raw
+  16091400, -- Blessed
+  16091500, -- Hollow
+}
+
+for i,id in ipairs(dualKatanas) do
+local weapon = EquipParamWeapon:new("DualKatanaSwordArt",id)
+weapon:swordArt(800)
+end
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("DualKatanaSwordArt")

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080935</ID>
+  <Description>"IsNetPenaltyChecking"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>115</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

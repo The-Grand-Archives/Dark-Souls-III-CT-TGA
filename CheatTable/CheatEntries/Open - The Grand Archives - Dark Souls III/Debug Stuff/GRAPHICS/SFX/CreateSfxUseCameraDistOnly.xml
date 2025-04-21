@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337096667</ID>
+  <Description>"CreateSfx:UseCameraDistOnly"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSfx</Address>
+  <Offsets>
+    <Offset>75</Offset>
+  </Offsets>
+</CheatEntry>

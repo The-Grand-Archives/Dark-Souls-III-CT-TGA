@@ -1,0 +1,204 @@
+//replaces ricards rapier with eternal glory
+//additional overwrites: earth seeker wa, wa name, and most of the greathammer weapon class' stam consumption
+//for some reason critical damage acts up, shieldpokes dont do dmg
+//buff may have issues in offhand
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local weapon = EquipParamWeapon:new("eternalrapier",3030000)
+weapon:behaviorVariationId(3205)
+weapon:sortId(110301)
+weapon:weight(3)
+weapon:fixPrice(500)
+weapon:basicPrice(500)
+weapon:sellValue(500)
+weapon:correctStrength(-1)
+weapon:correctAgility(35)
+weapon:correctMagic(-1)
+weapon:correctFaith(90)
+weapon:physGuardCutRate(50)
+weapon:magGuardCutRate(50)
+weapon:fireGuardCutRate(50)
+weapon:thunGuardCutRate(50)
+weapon:materialSetId(2200)
+weapon:originEquipWep(3030000)
+weapon:originEquipWep1(3030000)
+weapon:originEquipWep2(3030000)
+weapon:originEquipWep3(3030000)
+weapon:originEquipWep4(3030000)
+weapon:originEquipWep5(3030000)
+weapon:iconId(4049)
+weapon:equipModelId(8000)
+weapon:attackBasePhysics(90)
+weapon:attackBaseThunder(50)
+weapon:attackBaseStamina(50)
+weapon:saWeaponDamage(20)
+weapon:guardAngle(60)
+weapon:staminaGuardDef(30)
+weapon:reinforceTypeId(4600)
+weapon:weaponCategory(2)
+weapon:wepmotionCategory(27)
+weapon:spAttribute(6)
+weapon:spAtkcategory(242)
+weapon:wepmotionOneHandId(0)
+weapon:wepmotionBothHandId(10)
+weapon:properStrength(10)
+weapon:properAgility(17)
+weapon:properMagic(0)
+weapon:properFaith(14)
+weapon:attackBaseParry(0)
+weapon:defenseBaseParry(0)
+weapon:guardBaseRepel(10)
+weapon:attackBaseRepel(66)
+weapon:guardCutCancelRate(0)
+weapon:poisonGuardResist(20)
+weapon:diseaseGuardResist(20)
+weapon:bloodGuardResist(20)
+weapon:curseGuardResist(20)
+weapon:guardLevel(2)
+weapon:isBlowAttackType(0)
+weapon:isThrustAttackType(1)
+weapon:isSlashAttackType(0)
+weapon:isNormalAttackType(0)
+weapon:isEnhance(0)
+weapon:Group0_DummyPolyId1(301)
+weapon:weaponPosition(27)
+weapon:patchByte(0x178,25)
+weapon:correctTypeDark(0)
+weapon:correctTypeMagic(0)
+weapon:correctTypeThunder(1)
+weapon:darkGuardCutRate(50)
+weapon:AtkThrowEscapeA(10)
+weapon:AtkThrowEscapeB(10)
+weapon:swordArt(1006)
+weapon:correctLuck(0)
+weapon:categoryName(15)
+weapon:residentSpEffectId1(0)
+
+local wateredDownWa = BehaviorParam_PC:new("eternalrapier",103205710)
+wateredDownWa:refId(100071811)
+wateredDownWa:stamina(60)
+
+local onehandswingstam = BehaviorParam_PC:new("eternalrapier",103200000)
+onehandswingstam:stamina(19)
+
+local onehandswingstamsec = BehaviorParam_PC:new("eternalrapier",103200010)
+onehandswingstamsec:stamina(19)
+
+local onehandswingstamthird = BehaviorParam_PC:new("eternalrapier",103200020)
+onehandswingstamthird:stamina(19)
+
+local onehandheavystam = BehaviorParam_PC:new("eternalrapier",103200105)
+onehandheavystam:stamina(44)
+
+local onehandheavystamalt = BehaviorParam_PC:new("eternalrapier",103200100)
+onehandheavystamalt:stamina(34)
+
+local onehandheavystamsecond = BehaviorParam_PC:new("eternalrapier",103200115)
+onehandheavystamsecond:stamina(44)
+
+local onehandheavystamsecondalt = BehaviorParam_PC:new("eternalrapier",103200110)
+onehandheavystamsecondalt:stamina(34)
+
+local onehandrunning = BehaviorParam_PC:new("eternalrapier",103200520)
+onehandrunning:stamina(24)
+
+local onehandjumping = BehaviorParam_PC:new("eternalrapier",103200030)
+onehandjumping:stamina(49)
+
+local plunge = BehaviorParam_PC:new("eternalrapier",103200050)
+plunge:stamina(49)
+
+local onehandrolling = BehaviorParam_PC:new("eternalrapier",103200540)
+onehandrolling:stamina(29)
+
+local offhandswing = BehaviorParam_PC:new("eternalrapier",103200400)
+offhandswing:stamina(19)
+
+local offhandswingsec = BehaviorParam_PC:new("eternalrapier",103200402)
+offhandswingsec:stamina(19)
+
+local offhandswingthird = BehaviorParam_PC:new("eternalrapier",103200404)
+offhandswingthird:stamina(19)
+
+local twohandswingstam = BehaviorParam_PC:new("eternalrapier",103200200)
+twohandswingstam:stamina(24)
+
+local twohandswingstamsec = BehaviorParam_PC:new("eternalrapier",103200210)
+twohandswingstamsec:stamina(24)
+
+local twohandswingstamthird = BehaviorParam_PC:new("eternalrapier",103200220)
+twohandswingstamthird:stamina(24)
+
+local twohandheavyswingstam = BehaviorParam_PC:new("eternalrapier",103200305)
+twohandheavyswingstam:stamina(47)
+
+local twohandheavyswingstamalt = BehaviorParam_PC:new("eternalrapier",103200300)
+twohandheavyswingstamalt:stamina(37)
+
+local twohandheavyswingstamsec = BehaviorParam_PC:new("eternalrapier",103200315)
+twohandheavyswingstamsec:stamina(47)
+
+local twohandheavyswingstamsecalt = BehaviorParam_PC:new("eternalrapier",103200310)
+twohandheavyswingstamsecalt:stamina(37)
+
+local twohandrunningstam = BehaviorParam_PC:new("eternalrapier",103200530)
+twohandrunningstam:stamina(27)
+
+local twohandjumpingstam = BehaviorParam_PC:new("eternalrapier",103200230)
+twohandjumpingstam:stamina(54)
+
+local twohandrollingstam = BehaviorParam_PC:new("eternalrapier",103200580)
+twohandrollingstam:stamina(32)
+
+local lightningPre = Bullet:new("eternalrapier",100071801)
+lightningPre:sfxId_Bullet(525533)
+lightningPre:spAttribute(6)
+
+local lightningStrikes = Bullet:new("eternalrapier",100071802)
+lightningStrikes:sfxId_Bullet(440111)--440111
+lightningStrikes:spEffectIDForShooter(1070)
+lightningStrikes:spAttribute(6)
+
+local rapierSlam =  AtkParam_Pc:new("eternalrapier", 3205712)
+rapierSlam:AtkPhys(0)
+rapierSlam:DamageLevel(2)
+
+local strikeDmg =  AtkParam_Pc:new("eternalrapier", 3205710)
+strikeDmg:AtkThun(400)
+strikeDmg:SpecialAttributes(6)
+strikeDmg:AtkAttribute(4)
+strikeDmg:DamageLevel(3)
+
+local buffNerf = SpEffectParam:new("eternalrapier", 1070)
+buffNerf:thunderAttackPower(125)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+19E14:
+dw 'Eternal Glory',0
+[[[[MsgRepository]+8]+0]+C0]+72B5E:
+dw 'A blade gifted to a decorated dragonslayer in ancient times, imbued with the power of the sun lord.',A
+dw '',A
+dw 'The passing of ages has reduced this blade to a ceremonial tool for the dragon cults, its true calling abandoned in the pursuit of the everlasting.',A
+dw '',A
+dw 'Skill: Rain of Fury',A
+dw 'With a crack of thunder, call forth bolts of lightning with a fury reminiscent of the ancient war of the gods.',0
+[[[[MsgRepository]+08]+00]+0640]+E8E36:
+dw 'Rain of Fury',0
+
+[DISABLE]
+{$lua}
+paramUtils:restore("eternalrapier")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+19E14:
+dw 'Ricard',27,'s Rapier',0
+[[[[MsgRepository]+8]+0]+C0]+72B5E:
+dw 'A strikingly decorative rapier of an Undead prince spoken of in ancient stories.',A
+dw '',A
+dw 'Although many of the tales surrounding the prince are questionable, this thrusting weapon suggests that the stories of his graceful technique were in fact true.',A
+dw '',A
+dw 'Skill: Ricard',27,'s Lunge and Press',A
+dw 'Assume a quick stance, lunge forward, and execute a stunning chain attack. Sustain offensive with strong attack. ',0
+[[[[MsgRepository]+08]+00]+0640]+E8E36:
+dw 'Earthen Wrath',0

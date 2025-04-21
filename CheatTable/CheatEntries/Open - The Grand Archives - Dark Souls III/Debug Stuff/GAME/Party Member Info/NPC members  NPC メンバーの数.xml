@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337187665</ID>
+  <Description>"NPC members | NPC メンバーの数"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>D34</Offset>
+  </Offsets>
+</CheatEntry>

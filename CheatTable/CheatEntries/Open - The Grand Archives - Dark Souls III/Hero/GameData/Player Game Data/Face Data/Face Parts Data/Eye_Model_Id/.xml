@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337081228</ID>
+  <Description>"Eye_Model_Id"</Description>
+  <Options moHideChildren="1" moRecursiveSetValue="1"/>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>6C0</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337081229"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

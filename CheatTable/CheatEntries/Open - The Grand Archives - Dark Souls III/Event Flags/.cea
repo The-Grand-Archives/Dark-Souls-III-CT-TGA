@@ -1,0 +1,507 @@
+//authors: sfix and Dasaav
+[ENABLE]
+alloc(ef.flag_code,$400,$process)
+alloc(ef.flag_data,12,$process)
+
+aobscanmodule(ef.set_call,$process,?? ?? ?? ?? ?? 41 57 48 83 EC ?? 80 B9 ?? ?? ?? ?? 00 45 0F B6 F9 45 0F B6 E0)
+aobscanmodule(ef.get_call,$process,40 53 48 83 EC ?? 80 B9 ?? ?? ?? ?? 00 8B DA)
+
+ef.flag_data:
+registersymbol(ef.flag_data)
+dd #14000001
+dd 0
+dd 0
+
+ef.flag_code:
+registersymbol(ef.flag_code)
+
+label(ef.set_flag)
+registersymbol(ef.set_flag)
+ef.set_flag:
+sub rsp,48
+test cl,cl
+mov rcx,[SprjEventFlagMan]
+jne sf_call
+mov edx,[ef.flag_data]
+mov r8l,[ef.flag_data+04]
+sf_call:
+xor r9d,r9d
+call ef.set_call
+add rsp,48
+ret
+
+label(ef.get_flag)
+registersymbol(ef.get_flag)
+ef.get_flag:
+push rbx
+sub rsp,48
+mov bl,cl
+test cl,cl
+mov rcx,[SprjEventFlagMan]
+jne gf_call
+mov edx,[ef.flag_data]
+gf_call:
+call ef.get_call
+test bl,bl
+jne gf_skip
+mov [ef.flag_data+04],al
+gf_skip:
+add rsp,48
+pop rbx
+ret
+
+{$lua}
+if syntaxcheck then return end
+ef = ef or {}
+
+-- Sets a flag by ID to the specified state
+-- state can be binary or boolean
+-- Examples:
+-- ef.setFlag(14000001, 1)
+-- ef.setFlag(14000001, false)
+-- for more examples check Event Flags > Event Flags by ID > Examples
+-- @param id | signed int32, positive
+-- @param state | 0/1 or false/true
+function ef.setFlag(id, state)
+	if not getAddressSafe(process) then return end
+  assert(state and type(id) == "number" and id > 0 and id < 0x80000000, "ef.setFlag: bad argument")
+  id = math.floor(id)
+  state = state and state ~= 0 and 1 or 0
+  executeCodeEx(0, -1, "ef.set_flag", 1, id, state)
+end
+
+-- Returns the state of a flag by ID
+-- the return value type can be specified to be boolean
+-- Examples:
+-- print(ef.getFlag(14000001))
+-- if ef.getFlag(14000001, "boolean") then print("flag is set") end
+-- for more examples check Event Flags > Event Flags by ID > Examples
+-- @param id | signed int32, positive
+-- @param returnType | optional string | "boolean" to return boolean value
+function ef.getFlag(id, returnType)
+	if not getAddressSafe(process) then return end
+  assert(type(id) == "number" and id > 0 and id < 0x80000000, "ef.setFlag: bad argument")
+  id = math.floor(id)
+  returnType = returnType ~= "boolean"
+  local r = executeCodeEx(0, -1, "ef.get_flag", 1, id)&1
+  return returnType and r or r == 1 or false
+end
+
+ef.categories = {
+[[]],
+[[14000101:Cemetary of Ash - Coiled Sword embed
+14000001:Cemetary of Ash - Cemetery of Ash
+14000002:Cemetary of Ash - Iudex Gundyr
+14000000:Cemetary of Ash - Firelink Shrine
+14000003:Cemetary of Ash - Untended Graves
+14000004:Cemetary of Ash - Champion Gundyr
+13000000:Cemetary of Ash - Enable Warp to High Wall of Lothric
+13000009:High Wall of Lothric - High Wall of Lothric
+13000005:High Wall of Lothric - Tower on the Wall
+13000002:High Wall of Lothric - Vordt of the Boreal Valley
+13000004:High Wall of Lothric - Dancer of the Boreal Valley
+13000001:High Wall of Lothric - Oceiros, the Consumed King
+13100004:Undead Settlement - Foot of the High Wall
+13100000:Undead Settlement - Undead Settlement
+13100003:Undead Settlement - Dilapidated Bridge
+13100002:Undead Settlement - Cliff Underside
+13100001:Undead Settlement - Pit of Hollows
+13300006:Road of Sacrifices - Road of Sacrifices
+13300000:Road of Sacrifices - Halfway Fortress
+13300007:Road of Sacrifices - Cruifixion Woods
+13300002:Road of Sacrifices - Crystal Sage
+13300003:Road of Sacrifices - Farron Keep
+13300003:Road of Sacrifices - Farron Keep
+13300004:Road of Sacrifices - Keep Ruins
+13300005:Road of Sacrifices - Old Walf of Farron
+13300004:Road of Sacrifices - Abyss Watchers
+13500003:Cathedral of the Deep - Cathedral of the Deep
+13500000:Cathedral of the Deep - Cleansing Chapel
+13500002:Cathedral of the Deep - Rosaria's Bed Chamber
+13500001:Cathedral of the Deep - Deacons of the Deep
+13800006:Catacombs of Carthus - Catacombs of Carthus
+13800000:Catacombs of Carthus - High Lord Wolnir
+13800001:Catacombs of Carthus - Abandoned Tomb
+13800003:Catacombs of Carthus - Demon Ruins
+13800002:Catacombs of Carthus - Old King's Antechamber
+13800004:Catacombs of Carthus - Old Demon King
+13700007:Irithyll of the Boreal Valley - Irithyll of the Boreal Valley
+13700004:Irithyll of the Boreal Valley - Central Irithyll
+13700000:Irithyll of the Boreal Valley - Church of Yorshka
+13700005:Irithyll of the Boreal Valley - Distant Manor
+13700001:Irithyll of the Boreal Valley - Pontiff Sulyvahn
+13700006:Irithyll of the Boreal Valley - Water Reserve
+13700003:Irithyll of the Boreal Valley - Anor Londo
+13700008:Irithyll of the Boreal Valley - Prison Tower
+13700002:Irithyll of the Boreal Valley - Aldrich, Devourer of Gods
+13900000:Irithyll Dungeon - Irithyll Dungeon
+13900002:Irithyll Dungeon - Profaned Capital
+13900001:Irithyll Dungeon - Yhorm the Giant
+13200000:Archdragon Peak - Archdragon Peak
+13200003:Archdragon Peak - Dragon-Kin Mausoleum
+13200002:Archdragon Peak - Great Belfry
+13200001:Archdragon Peak - Nameless King
+13010000:Lothric Castle - Lothric Castle
+13010002:Lothric Castle - Dragon Barracks
+13010001:Lothric Castle - Dragonslayer Armor
+13410001:Lothric Castle - Grand Archives
+13410000:Lothric Castle - Twin Princes
+14100000:Kiln of the First Flame - Flameless Shrine
+14100001:Kiln of the First Flame - Kiln of the First Flame
+14100002:Kiln of the First Flame - Soul of Cinder]],
+[[14000800:Iudex Gundyr - Defeated
+14000801:Iudex Gundyr - Encountered
+14000802:Iudex Gundyr - Pulled Sword Out
+13000800:Vordt of the Boreal Valley - Defeated
+13000801:Vordt of the Boreal Valley - Encountered
+13100800:Curse-Rotted Greatwood - Defeated
+13100801:Curse-Rotted Greatwood - Encountered
+13300850:Crystal Sage - Defeated
+13300852:Crystal Sage - Encountered
+13500800:Deacons of the Deep - Defeated
+13500801:Deacons of the Deep - Encountered
+13300800:Abyss Watchers - Defeated
+13300801:Abyss Watchers - Encountered
+13800800:High Lord Wolnir - Defeated
+13800801:High Lord Wolnir - Encountered
+13800830:Old Demon King - Defeated
+13900800:Yhorm the Giant - Defeated
+13900801:Yhorm the Giant - Encountered
+13700850:Pontiff Sulyvahn - Defeated
+13700800:Aldrich, Devourer of Gods - Defeated
+13000890:Dancer of the Boreal Valley - Defeated
+13000830:Oceiros, the Consumed King - Defeated
+13000838:Oceiros, the Consumed King - Encountered
+14000830:Champion Gundyr - Defeated
+14000831:Champion Gundyr - Encountered
+13200800:Ancient Wyvern - Defeated
+13200850:Nameless King - Defeated
+13010800:Dragonslayer Armour - Defeated
+13410830:Twin Princes - Defeated
+13410831:Twin Princes - Encountered
+14100800:Soul of Cinder - Defeated
+14100801:Soul of Cinder - Encountered]],
+[[13700472:Anor Londo Cathedral
+64500572:Ariendel Chapel Basement
+64500630:Ariendel Chapel Main Gates
+63500201:Big Green Gates
+63500210:Cleansing Chapel #1
+63500213:Cleansing Chapel #2 (Right side)
+63500212:Cleansing Chapel #3 (Left side)
+63500211:Cleansing Chapel #4 (Elevator Room)
+63500220:Cleansing Chapel #5 (Staircase)
+13500405:Cleansing Chapel Bridge #1
+13500406:Cleansing Chapel Bridge #3
+13500407:Cleansing Chapel Bridge #3
+63100451:Entrance to Irina of Carim
+64000250:Firelink Tower #1
+64000252:Firelink Tower #2
+64500570:Gates From Corvian Settlement
+63100400:Gates to Catarina
+64000260:Gates to Firelink Shrine
+63410400:Grand Archives Main Door
+63000254:High Wall of Lothric Shortcut
+63900420:Irithyll Dungeon #1 (Next to bonfire)
+63900450:Irithyll Dungeon #2
+63900430:Irithyll Dungeon #3
+63700460:Pontiff's Shortcut
+63500202:Rosaria's Bedroom
+14500540:Shortcut tree #1
+14500542:Shortcut tree #2
+64500556:Snowy Mountain Pass Door #1
+14500610:Stairs to the Painter
+63410420:Twin Princes
+63100470:Undead Settlement Sewers Entrance
+13300410:Farron door open
+13300414:Farron Fire
+13300413:Farron Fire
+13300412:Farron Fire
+13300411:All farron fires put out]],
+[[13700500:Anor Londo
+13100250:Catarina's Elevator
+13500420:Cleansing Chapel #1
+13500430:Cleansing Chapel #2
+13500405:Cleansing Chapel Bridge #1
+13500406:Cleansing Chapel Bridge #3
+13500407:Cleansing Chapel Bridge #3
+13010450:Elevator to Dragonslayer Armour
+14000400:Firelink Shrine
+13410450:Grand Archives
+13000300:High Wall of Lothric
+13300405:Old Wolf of Farron
+13700420:Pontiff
+14500510:Snowy Mountain Pass Elevator
+13010460:Twin Princes]],
+[[14000433:Firelink Shrine
+13700535:Gwyn's Statue
+13000990:To Untended Graves]],
+[[1175:Blacksmith Andre - Friendly
+1176:Blacksmith Andre - Has Been Killed?
+1035:Ludleth of Courland - Friendly
+1038:Ludleth of Courland - Killed
+1155:Leonhard - Friendly
+1156:Leonhard - Attacked
+1158:Leonhard - Killed
+74000850:Leonhard - Talked to Leonhard (at shrine)
+1115:Hawkwood - Friendly
+1116:Hawkwood - Attacked
+1118:Hawkwood - Killed
+1201:Greirat - At Shrine
+1216:Greirat - Attacked?
+1200:Greirat - Disabled When At Shrine?
+1215:Greirat - Friendly
+1218:Greirat - Killed?
+1061:Yoel of Londor - At Shrine
+1075:Yoel of Londor - Alive
+1078:Yoel of Londor - Killed
+1041:Yuria of Londor - At Shrine
+1056:Yuria of Londor - Attacked
+1058:Yuria of Londor - Killed
+1055:Yuria of Londor - Interactable?
+74000600:Yuria of Londor - Talked to Yuria (at shrine)
+1281:Irina of Carim - At Shrine
+1295:Irina of Carim - Friendly
+1298:Irina of Carim - Killed
+1302:Eygon of Carim - At Shrine
+1303:Eygon of Carim - At another location?
+1301:Eygon of Carim - At another location?
+1300:Eygon of Carim - At Undead Settlement
+74000650:Eygon of Carim - Talked to Eygon (at shrine)
+1315:Eygon of Carim - Alive/Friendly
+1318:Eygon of Carim - Killed
+1316:Eygon of Carim - Attacked
+1317:Eygon of Carim - Hostile
+1121:Sirris of the Sunless Realms - At Shrine
+1122:Sirris of the Sunless Realms - At another location?
+74000750:Sirris of the Sunless Realms - Talked to Sirris (at shrine)
+1135:Sirris of the Sunless Realms - Friendly
+1138:Sirris of the Sunless Realms - Killed
+1136:Sirris of the Sunless Realms - Attacked
+1658:Sir Vilhelm - Killed
+1241:Cornyx of the Great Swamp - At Shrine
+1256:Cornyx of the Great Swamp - Attacked
+1255:Cornyx of the Great Swamp - Friendly
+1258:Cornyx of the Great Swamp - Killed
+1240:Cornyx of the Great Swamp - ???
+1342:Anri/Horace - WorksOnlyOneFlag - Anri at Shrine
+1482:Anri/Horace - WorksOnlyOneFlag - Horace at Shrine
+1484:Anri/Horace - WorksOnlyOneFlag - Catacombs - Horace at catacombs/scorching lake
+1344:Anri/Horace - WorksOnlyOneFlag - Catacombs - Anri at catacombs
+1355:Anri/Horace - Anri (while at shrine) - Anri friendly
+1356:Anri/Horace - Anri (while at shrine) - Anri attacked + dialogue trigger (at shrine)
+74000700:Anri/Horace - Anri (while at shrine) - Talked to Anri (at shrine)
+1495:Anri/Horace - Horace (while at shrine) - Horace Friendly
+1496:Anri/Horace - Horace (while at shrine) - Horace Attacked
+1221:Orbeck of Vinheim - At Shrine
+1235:Orbeck of Vinheim - Friendly
+1238:Orbeck of Vinheim - Killed
+1236:Orbeck of Vinheim - Attacked
+1261:Karla - At Shrine
+1275:Karla - Friendly
+1278:Karla - Killed
+1365:Unbreakable Patches - WorksOnlyOneFlag(Set Others to zero) - At Shrine
+1361:Unbreakable Patches - WorksOnlyOneFlag(Set Others to zero) - COTD disguise as ONION
+1364:Unbreakable Patches - WorksOnlyOneFlag(Set Others to zero) - AtTowerDoor
+1376:Unbreakable Patches - Attacked?
+1375:Unbreakable Patches - Friendly
+1362:Unbreakable Patches - ???]],
+[[9213:Activate Lord of Cinders in Firelink Shrine - Cinder of Abyss Watchers
+9212:Activate Lord of Cinders in Firelink Shrine - Cinder of Aldrich, Devourer of Gods
+9211:Activate Lord of Cinders in Firelink Shrine - Cinder of Prince Lothric
+9214:Activate Lord of Cinders in Firelink Shrine - Cinder of Yhorm the Giant
+9210:Enable "True Heir" Scene in Firelink
+73500170:Rebirths (Go in order) - Rebirth 1
+73500171:Rebirths (Go in order) - Rebirth 2
+73500172:Rebirths (Go in order) - Rebirth 3
+73500173:Rebirths (Go in order) - Rebirth 4
+73500174:Rebirths (Go in order) - Rebirth 5]],
+[[14000380:Minibosses - Ravenous Crystal Lizard - Cemetery of Ash
+13500290:Minibosses - Ravenous Crystal Lizard - Cathedral of the Deep
+13300384:Minibosses - Ravenous Crystal Lizard - Farron Keep
+13000481:Minibosses - High Wall dragon on the tower - Defeated
+13000480:Minibosses - High Wall dragon on the tower
+13100500:Minibosses - Demon (Undead Settlement)
+13100501:Minibosses - Outrider Knight (Road of Sacrifices)
+13500299:Minibosses - Deep Accursed (Cathedral)
+13500301:Minibosses - Cathedral Giant 1
+13500300:Minibosses - Cathedral Giant 2
+13300560:Minibosses - Stray demon
+13800380:Minibosses - Demon (Catacombs)
+13800200:Minibosses - Smouldering Lake ballista
+13800381:Minibosses - Carthus worm
+13700250:Minibosses - Sulyvahn's Beast bridge
+13700252:Minibosses - Sulyvahn's Beast sewer 1
+13700251:Minibosses - Sulyvahn's Beast sewer 2
+13700370:Minibosses - Deep Accursed (Irithyll)
+13900380:Minibosses - Irithyll Dungeon giant
+13010580:Minibosses - Lothric Castle dragon - white dragon on the balcony
+13010891:Minibosses - Lothric Castle dragon - golden dragon parasite awake
+13010890:Minibosses - Lothric Castle dragon - white dragon parasite awake
+13010896:Minibosses - Lothric Castle dragon - golden dragon parasite dead
+13010590:Minibosses - Outrider Knight (Lothric Castle)
+13410200:Minibosses - Crystal Sage
+13410201:Minibosses - Outrider Knight (Grand Archives)
+15100285:Minibosses - Dragonslayer Armor (Ringed City)
+14500200:Minibosses - Ariandel wolf 1
+14500210:Minibosses - Ariandel wolf 2
+15000237:Minibosses - Pilgrim Pupa 1 (Angel?)
+15000236:Minibosses - Pilgrim Pupa 2 (Angel?)
+15000235:Minibosses - Pilgrim Pupa 3 (Angel?)
+15100285:Minibosses - Dragonslayer Armor
+15100200:Minibosses - Midir at Bridge - Defeated
+15100230:Minibosses - Midir at Bridge
+53000960:Mimics - High Wall - Loot taken
+13000358:Mimics - High Wall
+53500980:Mimics - Cathedral of the Deep - Loot taken
+13500298:Mimics - Cathedral of the Deep
+53800940:Mimics - Catacombs - Loot taken
+13800390:Mimics - Catacombs
+53700980:Mimics - Irithyll - Loot taken
+13700400:Mimics - Irithyll
+53900995:Mimics - Irithyll Dungeon - Loot taken
+13900356:Mimics - Irithyll Dungeon
+53900990:Mimics - Irithyll Dungeon curse - Loot taken
+13900351:Mimics - Irithyll Dungeon curse
+53900940:Mimics - Irithyll Dungeon giant - Loot taken
+13900350:Mimics - Irithyll Dungeon giant
+53900950:Mimics - Irithyll Dungeon jailers - Loot taken
+13900353:Mimics - Irithyll Dungeon jailers
+53010960:Mimics - Lothric Castle golden dragon - Loot taken
+13010591:Mimics - Lothric Castle golden dragon
+53010950:Mimics - Lothric Castle white dragon - Loot taken
+13010592:Mimics - Lothric Castle white dragon
+15100298:Mimics - Mimic Ringed City
+9500:NPCs - Sword Master
+13100720:NPCs - Hodrick (Undead Settlement)
+13300395:NPCs - Butcher Knife Woman
+13300160:NPCs - Hodrick (Road of Sacrifices)
+13300397:NPCs - Exile greatclub
+13300396:NPCs - Exile greatsword
+13500286:NPCs - Fallen knight
+13500285:NPCs - Bandit
+1498:NPCs - Horace (hollow @ Smouldering Lake)
+13800398:NPCs - Tarkus (human)
+13700199:NPCs - Drang spear
+13700198:NPCs - Drang hammer
+1358:NPCs - Anri (hollow @ Cathedral of the Deep)
+13410204:NPCs - Black Hand Kamui
+13410203:NPCs - Daughter of Crystal Kriemhild
+13410202:NPCs - Lion Knight Albert
+14500176:NPCs - Livid Pyromancer Dunnel
+15000180:NPCs - Desert Pyromancer Zoey
+73700970:Other - Dorhy
+13700373:Other - Gwynevere silver knight 1
+13700372:Other - Gwynevere silver knight 2
+13700371:Other - Gwynevere silver knight 3]]
+}
+local bonfiresAddendumDLC1 = [[
+14500001:Painted World of Ariandel - Snowfield
+14500002:Painted World of Ariandel - Rope Bridge Cave
+14500005:Painted World of Ariandel - Ariandel Chapel
+14500003:Painted World of Ariandel - Corvian Settlement
+14500004:Painted World of Ariandel - Snowy Mountain Pass
+14500007:Painted World of Ariandel - Depths of the Painting
+14500000:Painted World of Ariandel - Sister Friede
+14500006:Painted World of Ariandel - Champion's Gravetender]]
+local bonfiresAddendumDLC2 = [[
+15000001:The Dreg Heap - The Dreg Heap
+15000002:The Dreg Heap - Earthen Peak Ruins
+15000003:The Dreg Heap - Within the Earthen Peak Ruins
+15000000:The Dreg Heap - The Demon Prince
+15100002:The Ringed City - Mausoleum Lookout
+15100003:The Ringed City - Ringed Inner Wall
+15100004:The Ringed City - Ringed City Streets
+15100005:The Ringed City - Shared Grave
+15100000:The Ringed City - Church of Filianore
+15100001:The Ringed City - Darkeater Midir
+15110001:The Ringed City - Filianore's Rest
+15110000:The Ringed City - Slave Knight Gael]]
+local bossesAddendumDLC1 = [[
+14500860:Champion's Gravetender - Defeated
+14500861:Champion's Gravetender - Encountered
+14500800:Father Ariandel and Sister Friede - Defeated
+14500801:Father Ariandel and Sister Friede - Encountered]]
+local bossesAddendumDLC2 = [[
+15000800:Demon Prince - Defeated
+14500620:Father Ariandel and Sister Friede - Unlock Ariendel's Room
+15100801:Halflight, Spear of the Church - Encountered
+15100800:Halflight, Spear of the Church - Defeated
+15100851:Darkeater Midir - Encountered
+15100850:Darkeater Midir - Defeated
+15110801:Slave Knight Gael - Encountered
+15110800:Slave Knight Gael - Defeated]]
+
+if readByte(readQword("CSDlc")+0x11) == 1 then
+	ef.categories[2] = ef.categories[2].."\n"..bonfiresAddendumDLC1
+	ef.categories[3] = ef.categories[3].."\n"..bossesAddendumDLC1
+end
+if readByte(readQword("CSDlc")+0x12) == 1 then
+	ef.categories[2] = ef.categories[2].."\n"..bonfiresAddendumDLC2
+	ef.categories[3] = ef.categories[3].."\n"..bossesAddendumDLC2
+end
+
+for i,v in ipairs(ef.categories) do
+	ef.categories[1] = ef.categories[1] == "" and v or ef.categories[1].."\n"..v
+end
+
+ef.updateTimer = createTimer(getMainForm())
+ef.updateTimer.Interval = 500
+ef.updateTimer.OnTimer = function()
+	if getAddressSafe(process) and not autoAssemble("createthread(ef.get_flag)") then
+		ef.updateTimer.destroy()
+  end
+end
+
+local memrec = getAddressList().getMemoryRecordByDescription("Event Flags by ID")
+for i = 1, memrec.Count do
+	local child = memrec.Child[i - 1]
+  local desc = child.Description
+  if desc == "Category" then ef.flagCategoryRec = child
+	elseif desc == "Event Flag ID" then ef.flagIDRec = child
+  elseif desc == "State" then ef.flagStateRec = child end
+end
+
+ef.flagCategoryRec.Value = 0
+ef.flagIDRec.DropDownList.setText(ef.categories[1])
+ef.flagIDRec.Value = ef.flagIDRec.DropDownValue[0]
+
+ef.flagCategoryRec.OnGetDisplayValue = function(sender, newValue)
+	if newValue == "??" then return end
+  if ef.oldCategory ~= newValue then
+  	ef.flagIDRec.DropDownList.setText(ef.categories[newValue + 1])
+		ef.flagIDRec.Value = ef.flagIDRec.DropDownValue[0]
+  end
+  ef.oldCategory = newValue
+  return false, newValue
+end
+
+ef.flagIDRec.OnGetDisplayValue = function(sender, newValue)
+	if newValue == "??" then return end
+  if ef.oldID ~= newValue then ef.idChanged = autoAssemble("createthread(ef.get_flag)") end
+  ef.oldID = newValue
+  return false, newValue
+end
+
+ef.flagStateRec.OnGetDisplayValue = function(sender, newValue)
+	if newValue == "??" then return end
+  if ef.oldState ~= newValue and not ef.idChanged then autoAssemble("createthread(ef.set_flag)") end
+  ef.idChanged = false
+  ef.oldState = newValue
+  return false, newValue
+end
+
+[DISABLE]
+{$asm}
+dealloc(ef.flag_code)
+dealloc(ef.flag_data)
+unregistersymbol(ef.flag_code)
+unregistersymbol(ef.flag_data)
+unregistersymbol(ef.set_flag)
+unregistersymbol(ef.get_flag)
+
+{$lua}
+if syntaxcheck then return end
+if ef.updateTimer then ef.updateTimer.destroy() end
+ef.flagCategoryRec.OnGetDisplayValue = nil
+ef.flagIDRec.OnGetDisplayValue = nil
+ef.flagStateRec.OnGetDisplayValue = nil

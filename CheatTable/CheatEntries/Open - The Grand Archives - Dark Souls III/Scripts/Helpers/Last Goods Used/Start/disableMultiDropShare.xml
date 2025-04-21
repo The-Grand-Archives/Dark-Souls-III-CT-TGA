@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337045511</ID>
+  <Description>"disableMultiDropShare"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+46</Address>
+</CheatEntry>

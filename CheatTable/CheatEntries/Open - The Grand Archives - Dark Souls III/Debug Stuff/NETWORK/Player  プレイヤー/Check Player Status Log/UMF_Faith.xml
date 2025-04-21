@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097088</ID>
+  <Description>"UMF_Faith"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>4E8</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>

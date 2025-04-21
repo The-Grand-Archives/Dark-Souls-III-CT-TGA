@@ -1,0 +1,18 @@
+{
+  Authror: Igromanru
+  Credits: Fockboxx (from Reverse Souls) (original script)
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local bullet = Bullet:new("PerseverenceWarmth",12470000)
+bullet:life(9999.0) -- Life of bullet
+bullet:hitRadius(9999.0)
+bullet:hitRadiusMax(-1.0)
+bullet:spEffectId1(120700) -- Perseverence Effect
+bullet:spEffectId2(3100) -- Repair Powder effect
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("PerseverenceWarmth")

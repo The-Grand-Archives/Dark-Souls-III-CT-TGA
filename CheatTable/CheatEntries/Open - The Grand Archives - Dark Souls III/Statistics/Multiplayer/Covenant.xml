@@ -1,0 +1,22 @@
+<CheatEntry>
+  <ID>1337080955</ID>
+  <Description>"Covenant"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">00000000:None
+A0002710:Blade of the Darkmoon
+A0002724:Watchdogs of Farron
+A000272E:Aldrich Faithful
+A0002738:Warrior of Sunlight
+A0002742:Mound-makers
+A000274C:Way of Blue
+A0002756:Blue Sentinels
+A0002760:Rosaria's Fingers
+A000276A:Spears of the Church
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>328</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

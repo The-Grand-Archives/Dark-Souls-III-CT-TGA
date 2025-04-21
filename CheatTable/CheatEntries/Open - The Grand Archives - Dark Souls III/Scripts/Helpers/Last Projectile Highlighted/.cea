@@ -1,0 +1,64 @@
+[ENABLE]
+aobscanmodule(projectile,DarkSoulsIII.exe,59 FF FF FF 0F B6 81 31 02 00 00)
+alloc(newmem,$1000,projectile)
+
+label(code)
+label(return)
+label(projectile_ptr)
+
+newmem:
+
+code:
+  mov rax,projectile_ptr
+  mov [rax],rcx
+  movzx eax,byte ptr [rcx+00000231]
+  jmp return
+
+projectile_ptr:
+  dq 0
+
+projectile+04:
+  jmp code
+  nop
+  nop
+return:
+registersymbol(projectile)
+registersymbol(projectile_ptr)
+
+[DISABLE]
+projectile+04:
+  db 0F B6 81 31 02 00 00
+unregistersymbol(projectile)
+unregistersymbol(projectile_ptr)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "DarkSoulsIII.exe"+630648
+
+"DarkSoulsIII.exe"+63061E: 89 5D F8              -  mov [rbp-08],ebx
+"DarkSoulsIII.exe"+630621: E8 6A 37 7B 00        -  call DarkSoulsIII.exe+DE3D90
+"DarkSoulsIII.exe"+630626: 48 8B 4D D8           -  mov rcx,[rbp-28]
+"DarkSoulsIII.exe"+63062A: 48 85 C9              -  test rcx,rcx
+"DarkSoulsIII.exe"+63062D: 0F 84 6E FF FF FF     -  je DarkSoulsIII.exe+6305A1
+"DarkSoulsIII.exe"+630633: 0F B6 91 E2 00 00 00  -  movzx edx,byte ptr [rcx+000000E2]
+"DarkSoulsIII.exe"+63063A: 80 FA 0D              -  cmp dl,0D
+"DarkSoulsIII.exe"+63063D: 74 09                 -  je DarkSoulsIII.exe+630648
+"DarkSoulsIII.exe"+63063F: 80 FA 0E              -  cmp dl,0E
+"DarkSoulsIII.exe"+630642: 0F 85 59 FF FF FF     -  jne DarkSoulsIII.exe+6305A1
+// ---------- INJECTING HERE ----------
+"DarkSoulsIII.exe"+630648: 0F B6 81 31 02 00 00  -  movzx eax,byte ptr [rcx+00000231]
+// ---------- DONE INJECTING  ----------
+"DarkSoulsIII.exe"+63064F: 48 8B 5C 24 70        -  mov rbx,[rsp+70]
+"DarkSoulsIII.exe"+630654: 48 8B 7C 24 78        -  mov rdi,[rsp+78]
+"DarkSoulsIII.exe"+630659: 48 83 C4 60           -  add rsp,60
+"DarkSoulsIII.exe"+63065D: 5D                    -  pop rbp
+"DarkSoulsIII.exe"+63065E: C3                    -  ret
+"DarkSoulsIII.exe"+63065F: CC                    -  int 3
+"DarkSoulsIII.exe"+630660: 48 89 5C 24 08        -  mov [rsp+08],rbx
+"DarkSoulsIII.exe"+630665: 48 89 7C 24 10        -  mov [rsp+10],rdi
+"DarkSoulsIII.exe"+63066A: 55                    -  push rbp
+"DarkSoulsIII.exe"+63066B: 48 8D 6C 24 A9        -  lea rbp,[rsp-57]
+}
+
+
+

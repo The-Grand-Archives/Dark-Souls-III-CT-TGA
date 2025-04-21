@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099265</ID>
+  <Description>"PC_LordOfCinder - SpEffectID5"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>28</Offset>
+    <Offset>60</Offset>
+    <Offset>70</Offset>
+  </Offsets>
+</CheatEntry>

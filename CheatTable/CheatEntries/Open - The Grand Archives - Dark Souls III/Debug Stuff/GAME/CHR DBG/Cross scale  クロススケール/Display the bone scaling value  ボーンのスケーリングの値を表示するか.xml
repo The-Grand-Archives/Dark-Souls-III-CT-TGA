@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097918</ID>
+  <Description>"Display the bone scaling value | ボーンのスケーリングの値を表示するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>171</Offset>
+  </Offsets>
+</CheatEntry>

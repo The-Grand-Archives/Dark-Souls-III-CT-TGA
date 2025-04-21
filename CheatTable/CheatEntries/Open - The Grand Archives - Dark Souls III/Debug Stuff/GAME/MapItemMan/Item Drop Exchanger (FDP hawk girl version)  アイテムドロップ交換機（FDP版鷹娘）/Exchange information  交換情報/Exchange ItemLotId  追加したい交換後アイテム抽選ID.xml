@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098340</ID>
+  <Description>"Exchange ItemLotId | 追加したい交換後アイテム抽選ID"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>54</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+</CheatEntry>

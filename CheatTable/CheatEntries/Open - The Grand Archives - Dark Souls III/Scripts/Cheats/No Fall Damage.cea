@@ -1,0 +1,41 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+
+define(FallDamAOB,DarkSoulsIII.exe+9C83CA) // should be unique
+alloc(newmem,$1000,FallDamAOB)
+
+label(code)
+label(return)
+label(FallSpoof)
+
+newmem:
+
+code:
+  movups xmm6,[FallSpoof]
+  jmp return
+  FallSpoof:
+  dd (float)0
+  dd (float)-2000
+  dd (float)0
+  dd (float)1
+
+FallDamAOB:
+  jmp code
+  nop
+  nop
+return:
+registersymbol(FallDamAOB)
+
+[DISABLE]
+
+FallDamAOB:
+  db 0F 28 B1 70 01 00 00
+
+unregistersymbol(FallDamAOB)
+dealloc(newmem)
+
+
+

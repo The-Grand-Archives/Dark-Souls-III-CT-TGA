@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>86449</ID>
+  <Description>"Unlock "Undead Match" in Firelink Shrine"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>33D</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

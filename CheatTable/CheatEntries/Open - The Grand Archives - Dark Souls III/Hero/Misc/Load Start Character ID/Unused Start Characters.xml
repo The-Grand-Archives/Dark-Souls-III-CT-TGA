@@ -1,0 +1,487 @@
+<CheatEntry>
+  <ID>1337045442</ID>
+  <Description>"Unused Start Characters"</Description>
+  <DropDownList DisplayValueAsItem="1">850001000:SL 0
+850001001:SL 0
+850001002:SL 0
+850001003:SL 0
+850001010:SL 6 Mage
+850001015:SL 17 Mage
+850001020:23 SL Mage
+850001025:29 SL Mage
+850001030:36 SL Mage
+850001035:39 SL Mage
+850001040:43 SL Mage
+850001045:51 SL Mage
+850001050:57 SL Mage
+850001055:61 SL Mage
+850001060:70 SL Mage
+850001065:76 SL Mage + Test Ring
+850001070:78 SL Mage + Test Ring
+850001075:79 SL Mage + Test Ring
+850001080:92 SL Mage + Test Ring
+850001085:98 SL Mage + Test Ring
+850001090:100 SL Mage + Test Ring
+850001100:92 SL Mage + Test Ring
+850001110:110 SL Mage + Test Ring
+850001120:125 SL Firekeeper Mage + Test Ring
+850001150:105 SL Mage with paired swords
+850001155:125 SL Firekeeper Mage with Friede Scythe + Paired Swords
+850001160:100 SL Cleric with Swordspear and paired swords
+850001165:125 SL Cleric with Whips
+850001180:Concord Farmer
+909999996:SL 0 + 0 Stats + 0 Items
+909999997:SL 0 + 0 Stats + 0 Items
+909999998:SL 0 + 0 Stats + 0 Items
+909999999:SL 0 + 0 Stats + 0 Items
+910000000:8 SL Knight + Zwei
+910000010:17 SL Knight + Zwei
+910000020:23 SL Knight + Zwei
+910000030:29 SL Knight + Zwei
+910000040:36 SL Knight + Zwei
+910000050:40 SL Knight + Zwei
+910000060:43 SL Knight + Zwei
+910000070:51 SL Knight + Zwei
+910000080:57 SL Knight + Zwei
+910000090:61 SL Knight + Zwei
+910000100:70 SL Knight + Zwei
+910000110:76 SL Knight + Zwei + Test Ring
+910000120:78 SL Knight + Zwei + Test Ring
+910000130:80 SL Knight + Zwei + Test Ring
+910000140:92 SL Knight + Zwei + Test Ring
+910000150:98 SL Knight + Zwei + Test Ring
+910000160:100 SL Knight + Zwei + Test Ring
+910000170:100 SL Knight + Zwei + Test Ring
+910000200:SL 0
+910000201:SL 0
+910000202:SL 0
+910000203:SL 0
+910000210:8 SL Knight + Claymore
+910000220:17 SL Knight + Claymore
+910000230:23 SL Knight + Claymore
+910000240:29 SL Knight + Claymore
+910000250:36 SL Knight + Claymore
+910000260:40 SL Knight + Claymore
+910000270:43 SL Knight + Claymore
+910000280:51 SL Knight + Claymore
+910000290:57 SL Knight + Claymore
+910000300:61 SL Knight + Claymore
+910000310:70 SL Knight + Claymore
+910000320:76 SL Knight + Claymore + Test Ring
+910000330:78 SL Knight + Claymore + Test Ring
+910000340:79 SL Knight + Claymore + Test Ring
+910000350:92 SL Knight + Claymore + Test Ring
+910000360:98 SL Knight + Claymore + Test Ring
+910000370:100 SL Knight + Claymore + Test Ring
+910000380:100 SL Knight + Claymore  +Test Ring
+910001000:SL 0
+910001001:SL 0
+910001002:SL 0
+910001003:SL 0
+910001010:6 SL Mage + Online Items
+910001020:17 SL Mage + Online Items
+910001030:23 SL Mage + Online Items
+910001040:29 SL Mage + Online Items
+910001050:36 SL Mage + Online Items
+910001060:39 SL Mage + Online Items
+910001070:43 SL Mage + Online Items
+910001080:51 SL Mage + Online Items
+910001090:57 SL Mage + Online Items
+910001100:61 SL Mage + Online Items
+910001110:70 SL Mage + Online Items
+910001120:76 SL Mage + Test Ring
+910001130:78 SL Mage + Test Ring
+910001140:79 SL Mage + Test Ring
+910001150:92 SL Mage + Test Ring
+910001160:98 SL Mage + Test Ring
+910001170:100 SL Mage + Test Ring
+910001180:100 SL Mage + Test Ring
+910002000:SL 0
+910002001:SL 0
+910002002:SL 0
+910002003:SL 0
+910002010:SL 8 Knight + Lightning Zwei
+910002020:SL 17 Knight + Lightning Zwei
+910002030:SL 23 Knight + Lightning Zwei
+910002040:SL 29 Knight + Lightning Zwei
+910002050:SL 36 Knight + Lightning Zwei
+910002060:SL 40 Knight + Lightning Zwei
+910002070:SL 43 Knight + Lightning Zwei
+910002080:SL 51 Knight + Lightning Zwei
+910002090:SL 57 Knight + Lightning Zwei
+910002100:SL 61 Knight + Lightning Zwei
+910002110:SL 70 Knight + Lightning Zwei
+910002120:SL 76 Knight + Lightning Zwei + Test Ring
+910002130:SL 78 Knight + Lightning Zwei + Test Ring
+910002140:SL 79 Knight + Lightning Zwei + Test Ring
+910002150:SL 92 Knight + Lightning Zwei + Test Ring
+910002160:SL 98 Knight + Lightning Zwei + Test Ring
+910002170:SL 100 Knight + Lightning Zwei + Test Ring
+910002180:SL 100 Knight + Lightning Zwei + Test Ring
+910003000:SL 0
+910003001:SL 0
+910003002:SL 0
+910003003:SL 0
+910003010:SL 8 Knight + Fire Bastard Sword
+910003020:SL 17 Knight + Fire Bastard Sword
+910003030:SL 23 Knight + Fire Bastard Sword
+910003040:SL 29 Knight + Fire Bastard Sword
+910003050:SL 36 Knight + Fire Bastard Sword
+910003060:SL 40 Knight + Fire Bastard Sword
+910003070:SL 43 Knight + Fire Bastard Sword
+910003080:SL 51 Knight + Fire Bastard Sword
+910003090:SL 57 Knight + Fire Bastard Sword
+910003100:SL 61 Knight + Fire Bastard Sword
+910003110:SL 70 Knight + Fire Bastard Sword
+910003120:SL 76 Knight + Fire Bastard Sword + Test Ring
+910003130:SL 78 Knight + Fire Bastard Sword + Test Ring
+910003140:SL 79 Knight + Fire Bastard Sword + Test Ring
+910003150:SL 92 Knight + Fire Bastard Sword + Test Ring
+910003160:SL 98 Knight + Fire Bastard Sword + Test Ring
+910003170:SL 100 Knight + Fire Bastard Sword + Test Ring
+910003180:SL 100 Knight + Fire Bastard Sword + Test Ring
+910004000:SL 0
+910004001:SL 0
+910004002:SL 0
+910004003:SL 0
+910004010:SL 8 + Chaos W. , Grave Warden Armor
+910004020:SL 17 + Chaos W. , Grave Warden Armor
+910004030:SL 23 + Chaos W. , Grave Warden Armor
+910004040:SL 29 + Chaos W. , Grave Warden Armor
+910004050:SL 36 + Chaos W. , Grave Warden Armor
+910004060:SL 40 + Chaos W. , Grave Warden Armor
+910004070:SL 43 + Chaos W. , Grave Warden Armor
+910004080:SL 51 + Chaos W. , Grave Warden Armor
+910004090:SL 57 + Chaos W. , Grave Warden Armor
+910004100:SL 61 + Chaos W. , Grave Warden Armor
+910004110:SL 70 + Chaos W. , Grave Warden Armor
+910004120:SL 76 + Chaos W. , Grave Warden Armor + Test Ring
+910004130:SL 78 + Chaos W. , Grave Warden Armor + Test Ring
+910004140:SL 79 + Chaos W. , Grave Warden Armor + Test Ring
+910004150:SL 92 + Chaos W. , Grave Warden Armor + Test Ring
+910004160:SL 98 + Chaos W. , Grave Warden Armor + Test Ring
+910004170:SL 100 + Chaos W. , Grave Warden Armor + Test Ring
+910004180:SL 100 + Chaos W. , Grave Warden Armor + Test Ring
+910005000:SL 0
+910005001:SL 0
+910005002:SL 0
+910005003:SL 0
+910005010:SL 8 Pyro + Chaos Sword
+910005020:SL 17 Pyro + Chaos Sword
+910005030:SL 23 Pyro + Chaos Sword
+910005040:SL 29 Pyro + Chaos Sword
+910005050:SL 36 Pyro + Chaos Sword
+910005060:SL 40 Pyro + Chaos Sword
+910005070:SL 43 Pyro + Chaos Sword
+910005080:SL 51 Pyro + Chaos Sword
+910005090:SL 57 Pyro + Chaos Sword
+910005100:SL 61 Pyro + Chaos Sword
+910005110:SL 70 Pyro + Chaos Sword
+910005120:SL 76 Pyro + Chaos Sword + Test Ring
+910005130:SL 78 Pyro + Chaos Sword + Test Ring
+910005140:SL 79 Pyro + Chaos Sword + Test Ring
+910005150:SL 92 Pyro + Chaos Sword + Test Ring
+910005160:SL 98 Pyro + Chaos Sword + Test Ring
+910005170:SL 100 Pyro + Chaos Sword + Test Ring
+910005180:SL 100 Pyro + Chaos Sword + Test Ring
+910006000:SL 0
+910006001:SL 0
+910006002:SL 0
+910006003:SL 0
+910006010:SL 7 Paladin-Knight
+910006020:SL 17 Paladin-Knight
+910006030:SL 23 Paladin-Knight
+910006040:SL 29 Paladin-Knight
+910006050:SL 36 Paladin-Knight
+910006060:SL 40 Paladin-Knight
+910006070:SL 43 Paladin-Knight
+910006080:SL 51 Paladin-Knight
+910006090:SL 57 Paladin-Knight
+910006100:SL 61 Paladin-Knight
+910006110:SL 70 Paladin-Knight
+910006120:SL 76 Paladin-Knight + Test Ring
+910006130:SL 78 Paladin-Knight + Test Ring
+910006140:SL 79 Paladin-Knight + Test Ring
+910006150:SL 92 Paladin-Knight + Test Ring
+910006160:SL 98 Paladin-Knight + Test Ring
+910006170:SL 100 Paladin-Knight + Test Ring
+910006180:SL 100 Paladin-Knight + Test Ring
+910007000:SL 0
+910007001:SL 0
+910007002:SL 0
+910007003:SL 0
+910007010:SL 7 Paladin-Cleric
+910007020:SL 17 Paladin-Cleric
+910007030:SL 23 Paladin-Cleric
+910007040:SL 30 Paladin-Cleric
+910007050:SL 35 Paladin-Cleric
+910007060:SL 40 Paladin-Cleric
+910007070:SL 43 Paladin-Cleric
+910007080:SL 51 Paladin-Cleric
+910007090:SL 57 Paladin-Cleric
+910007100:SL 61 Paladin-Cleric
+910007110:SL 70 Paladin-Cleric
+910007120:SL 76 Paladin-Cleric
+910007130:SL 78 Paladin-Cleric
+910007140:SL 79 Paladin-Cleric
+910007150:SL 92 Paladin-Cleric
+910007160:SL 98 Paladin-Cleric
+910007170:SL 100 Paladin-Cleric
+910007180:SL 100 Paladin-Cleric
+990000000:SL 0
+990000001:SL 0
+990000002:SL 0
+990000003:SL 0
+990000010:SL 8 Knight + Astora GS
+990000020:SL 17 Knight + Astora GS
+990000030:SL 23 Knight + Astora GS
+990000040:SL 29 Knight + Astora GS
+990000050:SL 36 Knight + Astora GS
+990000060:SL 40 Knight + Astora GS
+990000070:SL 43 Knight + Astora GS
+990000080:SL 51 Knight + Astora GS
+990000090:SL 57 Knight + Astora GS
+990000100:SL 61 Knight + Astora GS
+990000110:SL 70 Knight + Astora GS
+990000120:SL 76 Knight + Astora GS
+990000130:SL 78 Knight + Astora GS
+990000140:SL 79 Knight + Astora GS
+990000150:SL 92 Knight + Astora GS
+990000160:SL 98 Knight + Astora GS
+990000170:SL 100 Knight + Astora GS
+990100000:SL 0
+990100001:SL 0
+990100002:SL 0
+990100003:SL 0
+990100010:SL 8 Mage
+990100020:SL 17 Mage
+990100030:SL 23 Mage
+990100040:SL 29 Mage
+990100050:SL 36 Mage
+990100060:SL 40 Mage
+990100070:SL 43 Mage
+990100080:SL 51 Mage
+990100090:SL 57 Mage
+990100100:SL 61 Mage
+990100110:SL 70 Mage
+990100120:SL 76 Mage
+990100130:SL 78 Mage
+990100140:SL 79 Mage
+990100150:SL 92 Mage
+990100160:SL 98 Mage
+990100170:SL 100 Mage
+997000000:SL 0
+997000001:SL 0
+997000002:SL 0
+997000003:SL 0
+997000004:SL 8 Knight + Zwei and Parry Shield
+997000005:SL 17 Knight + Zwei and Parry Shield
+997000006:SL 23 Knight + Zwei and Parry Shield
+997000007:SL 29 Knight + Zwei and Parry Shield
+997000008:SL 36 Knight + Zwei and Parry Shield
+997000009:SL 40 Knight + Zwei and Parry Shield
+997000010:SL 43 Knight + Zwei and Parry Shield
+997000011:SL 51 Knight + Zwei and Parry Shield
+997000012:SL 57 Knight + Zwei and Parry Shield
+997000013:SL 61 Knight + Zwei and Parry Shield
+997000014:SL 70 Knight + Zwei and Parry Shield
+997000015:SL 76 Knight + Zwei and Parry Shield + Test Ring
+997000016:SL 78 Knight + Zwei and Parry Shield + Test Ring
+997000017:SL 80 Knight + Zwei and Parry Shield + Test Ring
+997000018:SL 92 Knight + Zwei and Parry Shield + Test Ring
+997000019:SL 98 Knight + Zwei and Parry Shield + Test Ring
+997000020:SL 100 Knight + Zwei and Parry Shield + Test Ring
+997000021:SL 100 Knight + Zwei and Parry Shield + Test Ring
+998000000:SL 0
+998000001:SL 0
+998000002:SL 0
+998000003:SL 0
+998000004:SL 50 Knight + Club and Avelyn
+998000005:SL 80 Knight + Club and Avelyn
+998000006:SL 80 Knight + Club and Avelyn
+998000007:SL 100 Knight + Club and Avelyn
+998000008:SL 100 Knight + Club and Avelyn
+998000009:SL 120 Knight + Club and Avelyn
+998000010:SL 150 Knight + Club and Avelyn
+998000011:SL 170 Knight + Club and Avelyn
+998000012:SL 200 Knight + Club and Avelyn
+998000013:SL 253 Knight + Club and Avelyn
+998000014:SL 300 Knight + Club and Avelyn
+998000015:SL 802 Knight + Club and Avelyn
+998100000:SL 0
+998100001:SL 0
+998100002:SL 0
+998100003:SL 0
+998100004:SL 70 Disarmed
+998100005:SL 77 Disarmed
+998100006:SL 80 Disarmed
+998100007:SL 83 Disarmed
+998100008:SL 85 Disarmed
+998100009:SL 86 Disarmed
+998100010:SL 89 Disarmed
+998100011:SL 92 Disarmed
+998100012:SL 94 Disarmed
+998100013:SL 98 Disarmed
+998100014:SL 100 Disarmed
+998100015:SL 102 Disarmed
+998100016:SL 105 Disarmed
+998100017:SL 109 Disarmed
+998100018:SL 112 Disarmed
+998100019:SL 115 Disarmed
+998100020:SL 117 Disarmed
+998900000:SL 0
+998900001:SL 0
+998900002:SL 0
+998900003:SL 8 Knight with buff
+998900004:SL 29 Knight with buff
+998900005:SL 51 Knight with buff
+998900006:SL 51 Knight with buff
+998900007:SL 115 Knight with buff
+998900008:SL 155 Knight with buff
+998900009:SL 194 Knight with buff
+998900010:SL 233 Knight with buff
+998900011:SL 802 Knight with buff
+998901000:SL 6 Mage
+998901001:SL 29 Mage
+998901002:SL 51 Mage
+998901003:SL 51 Mage
+998901004:SL 115 Mage
+998901005:SL 162 Mage
+998901006:SL 202 Mage
+998901007:SL 241 Mage
+998901008:SL 802 Mage
+998902000:SL 9 Pyro
+998902001:SL 29 Pyro
+998902002:SL 51 Pyro
+998902003:SL 51 Pyro
+998902004:SL 120 Pyro
+998902005:SL 160 Pyro
+998902006:SL 199 Pyro
+998902007:SL 238 Pyro
+998902008:SL 802 Pyro
+998903000:SL 13 Cleric
+998903001:SL 30 Cleric
+998903002:SL 51 Cleric
+998903003:SL 51 Cleric
+998903004:SL 115 Cleric
+998903005:SL 154 Cleric
+998903006:SL 194 Cleric
+998903007:SL 233 Cleric
+998903008:SL 802 Cleric
+998905000:SL 0
+998905001:SL 0
+998905002:SL 0
+998905010:125 SL Cleric
+998905011:125 SL Mage
+998905012:125 SL Pyro
+998905013:125 SL Knight (Quality Build)
+998905014:125 SL Cleric
+998905015:125 SL Mage
+998905016:125 SL Pyro
+998905017:125 SL Knight (Quality Build)
+998905018:150 SL Cleric
+998905019:150 SL Mage
+998905020:150 SL Pyro
+998905021:150 SL Knight (Quality Build)
+999999200:SL 0
+999999201:SL 0
+999999202:SL 0
+999999203:SL 0
+999999204:SL 8 Zwei Knight
+999999205:SL 17 Zwei Knight
+999999206:SL 23 Zwei Knight
+999999207:SL 29 Zwei Knight
+999999208:SL 36 Zwei Knight
+999999209:SL 40 Zwei Knight
+999999210:SL 43 Zwei Knight
+999999211:SL 51 Zwei Knight
+999999212:SL 57 Zwei Knight
+999999213:SL 61 Zwei Knight
+999999214:SL 70 Zwei Knight
+999999215:SL 76 Zwei Knight + Test Ring
+999999216:SL 78 Zwei Knight + Test Ring
+999999217:SL 79 Zwei Knight + Test Ring
+999999218:SL 92 Zwei Knight +Test Ring
+999999219:SL 98 Zwei Knight + Test Ring
+999999220:SL 100 Zwei Knight  + Test Ring
+999999300:SL 0
+999999301:SL 0
+999999302:SL 0
+999999303:98 SL Friede's Scythe + Test Ring
+999999304:98 SL Rose of Ariandel + Test Ring
+999999305:98 SL Crow Talons + Test Ring
+999999306:98 SL Valorheart + Test Ring
+999999307:98 SL Crow Quills + Test Ring
+999999308:98 SL Parting Flame + Test Ring
+999999309:98 SL Follower Torch + Test Ring
+999999310:98 SL Millwood Battle Axe + Test Ring
+999999311:98 SL Earthseeker + Test Ring
+999999312:98 SL Quakestone Hammer + Test Ring
+999999313:98 SL Milwood Greatbow + Test Ring
+999999314:98 SL Onyx Blade + Test Ring
+999999315:98 SL Follower Javelin + Test Ring
+999999316:98 SL Follower Sabre + Test Ring
+999999317:98 SL Mage + Test Ring
+999999318:98 SL Mage + Test Ring
+999999319:98 SL Pyro + Test Ring
+999999320:98 SL Knight +Test Ring
+999999400:SL 0
+999999401:SL 0
+999999402:SL 0
+999999410:115 SL Aquamarine Dagger + Test Ring
+999999411:115 SL Murky Hand Scythe + Test Ring
+999999412:115 SL Ringed Sword + Test Ring
+999999413:115 SL Gael Sword + Test Ring
+999999414:115 SL Demonscar Pyromancer
+999999415:115 SL Frayed Blade + Test Ring
+999999416:115 SL Harald Curved + Test Ring
+999999417:115 SL Ledo Hammer + Test Ring
+999999418:115 SL Ringed Spear + Test Ring
+999999419:115 SL Lothric Warbanner + Test Ring
+999999420:115 SL Crucifix + Test Ring
+999999421:115 SL Splitleaf GS + Test Ring
+999999422:115 SL White Bow + Test Ring
+999999423:115 SL Gael Crossbow + Test Ring
+999999424:115 SL Warrior + Test Ring
+999999425:115 SL Dark Mage
+999999426:115 SL Mage with Preacher Hand
+999999427:115 SL Cleric + Test Ring
+999999428:115 SL No Weapon
+999999429:117 SL No Weapon
+999999430:115 SL Knight + Test Ring
+999999431:115 SL Mage
+999999432:115 SL Pyro
+999999433:115 SL Knight + Test Ring
+999999500:SL 0
+999999501:SL 0
+999999502:SL 0
+999999510:125 SL Knight + Test Ring
+999999511:125 SL Knight + Test Ring
+999999512:125 SL Knight + Test Ring
+999999513:125 SL Knight + Test Ring
+999999514:125 SL Knight + Test Ring
+999999515:125 SL Knight + Test Ring
+999999516:125 SL Knight + Test Ring
+999999517:125 SL Knight + Test Ring
+999999518:125 SL Knight + Test Ring
+999999519:125 SL Knight + Test Ring
+999999520:125 SL Crucifix Knight + Test Ring
+999999521:125 SL Knight + Test Ring
+999999522:125 SL Knight + Test Ring
+999999523:125 SL Knight + Test Ring
+999999524:125 SL Shield Knight + Test Ring
+999999525:125 SL Dark Mage
+999999526:125 SL Preacher Hand Mage
+999999527:125 SL Cleric-Knight + Test Ring
+999999528:125 SL Knight + Test Ring
+999999529:125 SL Knight + Test Ring
+999999530:125 SL Knight + Test Ring
+999999531:125 SL Knight + Test Ring
+999999532:125 SL Knight + Test Ring
+999999533:125 SL Knight + Test Ring
+999999534:125 SL Mage
+999999535:125 SL pyro
+</DropDownList>
+  <VariableType>4 Bytes</VariableType>
+  <Address>ChrParamID</Address>
+</CheatEntry>

@@ -1,0 +1,12 @@
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+
+[[[WorldChrMan]+40]+28]+80:
+readmem([[GameDataMan]+40]+0,12)
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+
+
+

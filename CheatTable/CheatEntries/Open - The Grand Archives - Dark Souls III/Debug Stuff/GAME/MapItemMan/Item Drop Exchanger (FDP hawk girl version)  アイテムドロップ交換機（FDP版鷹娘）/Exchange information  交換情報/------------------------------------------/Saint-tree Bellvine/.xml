@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>1337098401</ID>
+  <Description>"Saint-tree Bellvine"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>10*6</Offset>
+    <Offset>28</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337098402"/>
+    <id id="1337098403"/>
+    <id id="1337098404"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

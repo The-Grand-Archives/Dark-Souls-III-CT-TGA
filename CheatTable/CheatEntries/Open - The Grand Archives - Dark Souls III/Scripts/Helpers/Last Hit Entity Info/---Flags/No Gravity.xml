@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>88223</ID>
+  <Description>"No Gravity"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>6</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>1a08</Offset>
+  </Offsets>
+</CheatEntry>

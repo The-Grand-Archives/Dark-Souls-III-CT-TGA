@@ -1,0 +1,23 @@
+[ENABLE]
+aobscanmodule(CreateNpc_Call,$process,48 83 EC ?? FF CA 74 ?? FF CA 74 ?? FF CA 75 ?? 48 8B 0D ???????? 48 85 C9)
+alloc(CreateNpc,$100,DarkSoulsIII.exe)
+label(CreateNpc_Data)
+registerSymbol(CreateNpc)
+registerSymbol(CreateNpc_Data)
+
+CreateNpc:
+sub rsp,28
+mov edx,[CreateNpc_Data]
+mov rcx,[WorldChrMan]
+mov rcx,[rcx+00003018]
+call CreateNpc_Call
+add rsp,28
+ret
+
+CreateNpc_Data:
+dd 00000000
+
+[DISABLE]
+dealloc(CreateNpc)
+unregisterSymbol(CreateNpc)
+unregisterSymbol(CreateNpc_Data)

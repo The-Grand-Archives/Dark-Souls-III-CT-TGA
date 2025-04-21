@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337081435</ID>
+  <Description>"handle"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">FFFFFFFF:unknown
+</DropDownList>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>D94</Offset>
+  </Offsets>
+</CheatEntry>

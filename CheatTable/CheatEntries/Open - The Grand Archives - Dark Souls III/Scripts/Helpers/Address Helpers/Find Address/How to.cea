@@ -1,0 +1,13 @@
+{$lua}
+if syntaxcheck then return end
+
+[ENABLE]
+disableMemrec(memrec)
+showText([[
+1. Select a param
+2. Memory view window will open up with selected param at the top
+3. Right click it and choose "Find out what addresses this instruction accesses"
+]])
+
+[DISABLE]
+

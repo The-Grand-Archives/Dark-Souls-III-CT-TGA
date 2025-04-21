@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337098518</ID>
+  <Description>"BerserkerWhiteCount"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>(SprjEventMan)</Address>
+  <Offsets>
+    <Offset>344</Offset>
+    <Offset>40</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

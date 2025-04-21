@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096752</ID>
+  <Description>"Time to overwrite the received life of the ghost | 受信した幻影の寿命を上書き時間"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>89</Offset>
+    <Offset>B98</Offset>
+  </Offsets>
+</CheatEntry>

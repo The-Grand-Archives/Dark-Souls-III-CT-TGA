@@ -1,0 +1,84 @@
+[ENABLE]
+aobscanmodule(Cameramovetest,DarkSoulsIII.exe,41 0F 29 56 30 45)
+alloc(newmem,256,Cameramovetest)
+
+label(code)
+label(return)
+
+alloc(CameraXOffset, 4)
+registersymbol(CameraXOffset)
+
+alloc(CameraZOffset, 4)
+registersymbol(CameraZOffset)
+
+alloc(CameraYOffset, 4)
+registersymbol(CameraYOffset)
+
+newmem:
+  push rax
+  mov rax,[Target_ptr]
+  mov rax,[rax+1F90]
+  mov rax,[rax+68]
+  mov rax,[rax+80]
+  movd xmm13,rax //Using xmm registers , Coins idea
+  addss xmm13,[CameraXOffset]
+  movd rax,xmm13
+  mov [r14+30],rax
+  pop rax
+
+  push rax
+  mov rax,[Target_ptr]
+  mov rax,[rax+1F90]
+  mov rax,[rax+68]
+  mov rax,[rax+84]
+  movd xmm13,rax
+  addss xmm13,[CameraZOffset]
+  movd rax,xmm13
+  mov [r14+34],rax
+  pop rax
+
+  push rax
+  mov rax,[Target_ptr]
+  mov rax,[rax+1F90]
+  mov rax,[rax+68]
+  mov rax,[rax+88]
+  movd xmm13,rax
+  addss xmm13,[CameraYOffset]
+  movd rax,xmm13
+  mov [r14+38],rax
+  pop rax
+
+  push rax
+  mov rax,[Target_ptr]
+  mov rax,[rax+1F90]
+  mov rax,[rax+68]
+  mov rax,[rax+8C]
+  mov [r14+3C],rax
+  pop rax
+  jmp return
+
+code:
+  movaps [r14+30],xmm2
+  jmp return
+
+Cameramovetest:
+  jmp newmem
+return:
+registersymbol(Cameramovetest)
+
+[DISABLE]
+
+Cameramovetest:
+  db 41 0F 29 56 30
+
+unregistersymbol(Cameramovetest)
+dealloc(newmem)
+
+dealloc(CameraXOffset)
+unregistersymbol(CameraXOffset)
+
+dealloc(CameraZOffset)
+unregistersymbol(CameraZOffset)
+
+dealloc(CameraYOffset)
+unregistersymbol(CameraYOffset)

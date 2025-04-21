@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097225</ID>
+  <Description>"NoRagdoll"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>A63</Offset>
+    <Offset>28</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337080870</ID>
+  <Description>"Player Name Display"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Character Name
+1:GamerTag
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>1D</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

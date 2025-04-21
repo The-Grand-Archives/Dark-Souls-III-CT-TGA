@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337097749</ID>
+  <Description>"Max number of registrations Min value | 登録最大数最小値"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>1C</Offset>
+    <Offset>80</Offset>
+    <Offset>BA0</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>86509</ID>
+  <Description>"?"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>D2</Offset>
+    <Offset>0</Offset>
+  </Offsets>
+</CheatEntry>

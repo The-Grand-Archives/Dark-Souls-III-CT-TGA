@@ -1,0 +1,71 @@
+{
+  Author: Igromaamamru
+  Description: Reduces fertility
+}
+[ENABLE]
+[[[[DarkSoulsIII.exe+4782838]+4A8]+68]+68]+1BA78:
+dd (float)5
+
+[[[[DarkSoulsIII.exe+4782838]+4A8]+68]+68]+1BB98:
+dd #16270
+
+[[[[DarkSoulsIII.exe+4782838]+4A8]+68]+68]+168DBC:
+dd (float)0.1
+
+[[[[DarkSoulsIII.exe+4782838]+4A8]+68]+68]+168E48:
+dd #105010700
+
+[[[[DarkSoulsIII.exe+4782838]+4A8]+68]+68]+168DB0:
+dw #334
+
+[[[[DarkSoulsIII.exe+4782838]+418]+68]+68]+4566C:
+dd #113
+
+[[[[DarkSoulsIII.exe+4782838]+388]+68]+68]+116D0:
+dd #1054
+
+[[[[DarkSoulsIII.exe+4782838]+388]+68]+68]+116E0:
+dd (float)10
+
+[[[[DarkSoulsIII.exe+4782838]+388]+68]+68]+11718:
+dd (float)50
+
+[[[[DarkSoulsIII.exe+4782838]+388]+68]+68]+11718:
+dd (float)10
+
+[[[[DarkSoulsIII.exe+4782838]+388]+68]+68]+11738:
+dd #75
+
+[DISABLE]
+[[[[DarkSoulsIII.exe+4782838]+4A8]+68]+68]+1BA78:
+dd (float)1
+
+[[[[DarkSoulsIII.exe+4782838]+4A8]+68]+68]+1BB98:
+dd FFFFFFFF
+
+[[[[DarkSoulsIII.exe+4782838]+4A8]+68]+68]+168DBC:
+dd (float)0.5
+
+[[[[DarkSoulsIII.exe+4782838]+4A8]+68]+68]+168E48:
+dd #1200
+
+[[[[DarkSoulsIII.exe+4782838]+4A8]+68]+68]+168DB0:
+dw #275
+
+[[[[DarkSoulsIII.exe+4782838]+418]+68]+68]+4566C:
+dd #100100700
+
+[[[[DarkSoulsIII.exe+4782838]+388]+68]+68]+116D0:
+dd #1054
+
+[[[[DarkSoulsIII.exe+4782838]+388]+68]+68]+116E0:
+dd (float)10
+
+[[[[DarkSoulsIII.exe+4782838]+388]+68]+68]+11718:
+dd (float)50
+
+[[[[DarkSoulsIII.exe+4782838]+388]+68]+68]+11718:
+dd (float)10
+
+[[[[DarkSoulsIII.exe+4782838]+388]+68]+68]+11738:
+dd #75

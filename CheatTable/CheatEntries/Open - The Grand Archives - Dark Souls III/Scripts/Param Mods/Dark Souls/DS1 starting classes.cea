@@ -1,0 +1,201 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local Knight = CharaInitParam:new("startingClassesDS1",3000)
+Knight:equip_Wep_Right(2020000) --Broadsword
+Knight:equip_Wep_Left(21240000) --Silver Eagle Kite Shield
+Knight:equip_Helm(71000000)     --Nameless Knight Helm
+Knight:equip_Armor(71001000)    --Nameless Knight Armor
+Knight:equip_Gaunt(71002000)    --Nameless Knight Gauntlets
+Knight:equip_Leg(71003000)      --Nameless Knight Leggings
+Knight:equip_Accessory5(10060)  --Way of Blue
+
+local Mercenary = CharaInitParam:new("startingClassesDS1",3001) --Wanderer
+Mercenary:equip_Wep_Right(4030000) --Scimitar
+Mercenary:equip_Wep_Left(20220000) --Leather Shield
+Mercenary:equip_Helm(23100000)     --Assassin Hood
+Mercenary:equip_Armor(23001000)    --Black Hand Armor
+Mercenary:equip_Gaunt(23002000)    --Assassin Gloves
+Mercenary:equip_Leg(23003000)      --Assassin Trousers
+
+local Warrior = CharaInitParam:new("startingClassesDS1",3002) --Bandit
+Warrior:equip_Wep_Left(21190000) --Spider Shield
+Warrior:equip_Helm(75500000)     --Brigand Hood
+Warrior:equip_Armor(75501000)    --Brigand Armor
+Warrior:equip_Gaunt(75502000)    --Brigand Gauntlets
+Warrior:equip_Leg(75503000)      --Brigand Trousers
+
+local Herald = CharaInitParam:new("startingClassesDS1",3003) --Warrior
+Herald:equip_Wep_Right(2010000) --Longsword
+Herald:equip_Subwep_Left(-1)
+Herald:equip_Helm(74500000)     --Standard Helm
+Herald:equip_Armor(74501000)    --Hard Leather Armor
+Herald:equip_Gaunt(74502000)    --Hard Leather Gauntlets
+Herald:equip_Leg(74503000)      --Hard Leather Boots
+Herald:Equip_Spell_01(-1)
+
+local Thief = CharaInitParam:new("startingClassesDS1",3004)
+Thief:equip_Wep_Right(1010000) --Bandit's Knife
+Thief:equip_Wep_Left(20160000) --Target Shield
+Thief:equip_Subwep_Left(-1)
+Thief:equip_Armor(78001000)    --Black Leather Armor
+Thief:equip_Gaunt(78002000)    --Black Leather Armor
+Thief:equip_Leg(78003000)      --Black Leather Armor
+Thief:equip_Arrow(-1)
+Thief:arrowNum(0)
+Thief:Item_03(2001)            --Lift Chamber Key
+Thief:itemNum_03(1)
+
+local Assassin = CharaInitParam:new("startingClassesDS1",3005) --Hunter
+Assassin:equip_Wep_Right(2000000)     --Shortsword
+Assassin:equip_Subwep_Right(14010000) --Short Bow
+Assassin:equip_Wep_Left(20040000)     --Large Leather Shield
+Assassin:equip_Subwep_Left(-1)
+Assassin:equip_Helm(-1)
+Assassin:equip_Armor(76001000)        --Leather Armor
+Assassin:equip_Gaunt(76002000)        --Leather Gloves
+Assassin:equip_Leg(76003000)          --Leather Boots
+Assassin:equip_Arrow(400000)          --Standard Arrow
+Assassin:Equip_Spell_01(-1)
+Assassin:arrowNum(30)
+
+local Sorcerer = CharaInitParam:new("startingClassesDS1",3006)
+Sorcerer:equip_Wep_Right(1000000) --Dagger
+Sorcerer:equip_Wep_Left(20010000) --Small Leather Shield
+Sorcerer:equip_Helm(77000000)     --Old Sorcerer Hat
+Sorcerer:equip_Armor(77001000)    --Old Sorcerer Cloak
+Sorcerer:equip_Gaunt(77002000)    --Old Sorcerer Gauntlets
+Sorcerer:equip_Leg(77003000)      --Old Sorcerer Boots
+
+local Pyromancer = CharaInitParam:new("startingClassesDS1",3007)
+Pyromancer:equip_Helm(77500000)  --Conjurator Hood
+Pyromancer:equip_Armor(77501000) --Conjurator
+Pyromancer:equip_Gaunt(77502000) --Conjurator
+Pyromancer:equip_Leg(77503000)   --Conjurator
+
+local Cleric = CharaInitParam:new("startingClassesDS1",3008)
+Cleric:equip_Accessory5(10060) --Way of Blue
+
+local FireGem = CharaInitParam:new("startingClassesDS1",2405)
+FireGem:Item_02(500) --Ember
+
+local SovereignlessSoul = CharaInitParam:new("startingClassesDS1",2406)
+SovereignlessSoul:Item_02(371) --Binoculars
+
+local RustedGoldCoin = CharaInitParam:new("startingClassesDS1",2407)
+RustedGoldCoin:Item_02(376) --Pendant
+RustedGoldCoin:itemNum_02(1)
+
+local CrackedRedEyeOrb = CharaInitParam:new("startingClassesDS1",2408)
+CrackedRedEyeOrb:Item_02(2014) --Grand Archives Key
+
+local YoungWhiteBranch = CharaInitParam:new("startingClassesDS1",2409)
+YoungWhiteBranch:equip_Accessory2(20740) --Reversal Ring
+YoungWhiteBranch:Item_02(-1)
+YoungWhiteBranch:itemNum_02(0)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+640]+CB1A:
+dw 'Wanderer',0
+
+[[[[MsgRepository]+8]+0]+640]+CB2E:
+dw 'Bandit',0
+
+[[[[MsgRepository]+8]+0]+640]+CB3E:
+dw 'Warior',0 //character limit
+
+[[[[MsgRepository]+8]+0]+640]+CB58:
+dw 'Hunter',0
+
+[[[[MsgRepository]+8]+0]+640]+CC58:
+dw 'Ember',0
+
+[[[[MsgRepository]+8]+0]+640]+CC6A:
+dw 'Binoculars',0
+
+[[[[MsgRepository]+8]+0]+640]+CCE0:
+dw 'Pendant',0
+
+[[[[MsgRepository]+8]+0]+640]+CC92:
+dw 'Grand Archives Key',0
+
+[[[[MsgRepository]+8]+0]+640]+CCBA:
+dw 'Reversal Ring',0
+
+[[[[MsgRepository]+8]+0]+640]+12526:
+dw 'Gain the strength of flame and',A
+dw 'increase max HP until death.',0
+
+[[[[MsgRepository]+8]+0]+640]+125E4:
+dw 'Binoculars made of brass.',A
+dw 'Use to peer at distant scenery.',0
+
+[[[[MsgRepository]+8]+0]+640]+12806:
+dw 'Trinket.',A
+dw 'No effect, but fond memories comfort',A
+dw 'travelers.',0
+
+[[[[MsgRepository]+8]+0]+640]+12682:
+dw 'Key to the main entrance to',A
+dw 'the Grand Archives of Lothric.',0
+
+[[[[MsgRepository]+8]+0]+640]+12720:
+dw 'Causes males to perform female actions,',A
+dw 'and vice-versa.',0
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("startingClassesDS1")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+640]+CB1A:
+dw 'Mercenary',0
+
+[[[[MsgRepository]+8]+0]+640]+CB2E:
+dw 'Warrior',0
+
+[[[[MsgRepository]+8]+0]+640]+CB3E:
+dw 'Herald',0
+
+[[[[MsgRepository]+8]+0]+640]+CB58:
+dw 'Assassin',0
+
+[[[[MsgRepository]+8]+0]+640]+CC58:
+dw 'Fire Gem',0
+
+[[[[MsgRepository]+8]+0]+640]+CC6A:
+dw 'Sovereignless Soul',0
+
+[[[[MsgRepository]+8]+0]+640]+CCE0:
+dw 'Rusted Gold Coin',0
+
+[[[[MsgRepository]+8]+0]+640]+CC92:
+dw 'Cracked Red Eye Orb',0
+
+[[[[MsgRepository]+8]+0]+640]+CCBA:
+dw 'Young White Branch',0
+
+[[[[MsgRepository]+8]+0]+640]+12526:
+dw 'Material used to upgrade to fire weapons.',A
+dw 'More appropriate for a warrior',A
+dw 'than pretty trinkets.',0
+
+[[[[MsgRepository]+8]+0]+640]+125E4:
+dw 'The sovereignless soul of one',A
+dw 'who slept beside you.',A
+dw 'Use to acquire many souls.',0
+
+[[[[MsgRepository]+8]+0]+640]+12806:
+dw 'Burial item for good fortune after death.',A
+dw 'Greatly increases item discovery',A
+dw 'for a short while.',0
+
+[[[[MsgRepository]+8]+0]+640]+12682:
+dw 'Online play item. One use only.',A
+dw 'Become a dark spirit and invade another world.',0
+
+[[[[MsgRepository]+8]+0]+640]+12720:
+dw 'Branch of a young white birch, perhaps',A
+dw 'an offering of peace. Can be used to',A
+dw 'blend into environment, but only once.',0

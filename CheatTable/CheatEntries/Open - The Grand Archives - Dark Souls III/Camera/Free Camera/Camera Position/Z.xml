@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>79007</ID>
+  <Description>"Z"</Description>
+  <VariableType>Float</VariableType>
+  <Address>FieldArea</Address>
+  <Offsets>
+    <Offset>44</Offset>
+    <Offset>E8</Offset>
+    <Offset>18</Offset>
+  </Offsets>
+</CheatEntry>

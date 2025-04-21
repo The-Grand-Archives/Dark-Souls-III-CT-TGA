@@ -1,0 +1,43 @@
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+
+define(MapCollision,DarkSoulsIII.exe+857AD0)
+alloc(newmem,256,MapCollision) //"DarkSoulsIII.exe"+84F1B0
+
+label(code)
+label(return)
+
+alloc(CollisionValue, 1)
+registerSymbol(CollisionValue)
+newmem:
+  push rsi
+  mov sil,[CollisionValue]
+  add sil,FE
+  mov [rcx+38],sil
+  pop rsi
+code:
+  mov eax,[rcx+38]
+  mov [rdx],eax
+  jmp return
+
+MapCollision:
+  jmp newmem
+return:
+registersymbol(MapCollision)
+
+CollisionValue:
+  db 01
+
+[DISABLE]
+
+MapCollision:
+  db 8B 41 38 89 02
+
+unregistersymbol(MapCollision)
+dealloc(newmem)
+
+dealloc(CollisionValue)
+unregistersymbol(CollisionValue)

@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337190046</ID>
+  <Description>"Magic/Item Casting/Activation/Effect Enable SFX | 魔法/アイテムの詠唱・発動・効果SFXを有効化するか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>176</Offset>
+  </Offsets>
+</CheatEntry>

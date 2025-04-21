@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>11352</ID>
+  <Description>"Is Anim Pause on Remo Play"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+A</Address>
+</CheatEntry>

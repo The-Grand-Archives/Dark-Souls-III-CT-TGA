@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081623</ID>
+  <Description>"WaterWetID | 水濡れID"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1F3C</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

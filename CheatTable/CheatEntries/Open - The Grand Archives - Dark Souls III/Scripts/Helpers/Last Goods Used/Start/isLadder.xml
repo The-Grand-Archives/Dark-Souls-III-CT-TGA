@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337045527</ID>
+  <Description>"isLadder"</Description>
+  <Options moHideChildren="1"/>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Binary</VariableType>
+  <BitStart>2</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+68</Address>
+</CheatEntry>

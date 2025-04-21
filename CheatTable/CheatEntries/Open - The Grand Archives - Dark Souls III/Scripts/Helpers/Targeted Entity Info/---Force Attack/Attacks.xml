@@ -1,0 +1,73 @@
+<CheatEntry>
+  <ID>1337045437</ID>
+  <Description>"Attacks"</Description>
+  <DropDownList>-1:Nothing
+700:
+701:
+702:
+703:
+704:
+705:
+1700:
+1701:
+1702:
+1703:
+1704:
+1705:
+3000:
+3001:
+3002:
+3003:
+3004:
+3005:
+3006:
+3007:
+3008:
+3009:
+3010:
+3011:
+3012:
+3013:
+3014:
+3015:
+3016:
+3017:
+3018:
+3019:
+3020:
+3021:
+3022:
+3023:
+3024:
+3025:
+3026:
+3027:
+3028:
+3029:
+3030:
+FFFF:
+6000:
+6001:
+6002:
+6003:
+6004:
+2100:
+1500:
+-1:
+20000:
+20001:
+20002:
+20003:
+20004:
+20005:
+30000:
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>7414</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>1337096753</ID>
+  <Description>"Wandering ghost reception prohibited | 徘徊ゴースト受信禁止"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>85</Offset>
+    <Offset>B98</Offset>
+  </Offsets>
+</CheatEntry>

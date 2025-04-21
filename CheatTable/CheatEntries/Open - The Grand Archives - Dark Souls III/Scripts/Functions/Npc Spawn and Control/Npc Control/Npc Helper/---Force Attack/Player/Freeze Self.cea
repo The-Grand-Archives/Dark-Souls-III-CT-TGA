@@ -1,0 +1,6 @@
+[ENABLE]
+[[WorldChrMan]+80]+1EE8:
+db C0
+[DISABLE]
+[[WorldChrMan]+80]+1EE8:
+db 00

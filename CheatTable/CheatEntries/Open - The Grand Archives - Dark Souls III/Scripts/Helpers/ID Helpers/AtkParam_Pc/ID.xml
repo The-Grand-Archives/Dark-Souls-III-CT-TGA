@@ -1,0 +1,8 @@
+<CheatEntry>
+  <ID>1337256187</ID>
+  <Description>"ID"</Description>
+  <DropDownListLink>ATTACK_PC_ID</DropDownListLink>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>8 Bytes</VariableType>
+  <Address>AtkParam_PcHelper</Address>
+</CheatEntry>

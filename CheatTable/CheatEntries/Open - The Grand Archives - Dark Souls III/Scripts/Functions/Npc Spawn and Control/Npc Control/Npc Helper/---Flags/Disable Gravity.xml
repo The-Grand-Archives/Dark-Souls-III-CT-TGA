@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337190198</ID>
+  <Description>"Disable Gravity"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disabled
+1:Enabled
+</DropDownList>
+  <VariableType>Binary</VariableType>
+  <BitStart>6</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>1a08</Offset>
+  </Offsets>
+</CheatEntry>

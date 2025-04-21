@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080976</ID>
+  <Description>"m_mpEstusFlaskAllocateRate"</Description>
+  <VariableType>Float</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>804</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

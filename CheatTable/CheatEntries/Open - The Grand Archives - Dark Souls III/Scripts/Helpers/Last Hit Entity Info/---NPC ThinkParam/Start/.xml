@@ -1,0 +1,52 @@
+<CheatEntry>
+  <ID>89393</ID>
+  <Description>"Start"</Description>
+  <VariableType>String</VariableType>
+  <Length>0</Length>
+  <Unicode>0</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>lasthit_ptr</Address>
+  <Offsets>
+    <Offset>0</Offset>
+    <Offset>30</Offset>
+    <Offset>320</Offset>
+    <Offset>58</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="89394"/>
+    <id id="89395"/>
+    <id id="89396"/>
+    <id id="89397"/>
+    <id id="89398"/>
+    <id id="89399"/>
+    <id id="89400"/>
+    <id id="89401"/>
+    <id id="89402"/>
+    <id id="89403"/>
+    <id id="89404"/>
+    <id id="89405"/>
+    <id id="89406"/>
+    <id id="89407"/>
+    <id id="89408"/>
+    <id id="89409"/>
+    <id id="89410"/>
+    <id id="89411"/>
+    <id id="89412"/>
+    <id id="89413"/>
+    <id id="89414"/>
+    <id id="89415"/>
+    <id id="89416"/>
+    <id id="89417"/>
+    <id id="89418"/>
+    <id id="89419"/>
+    <id id="89420"/>
+    <id id="89421"/>
+    <id id="89422"/>
+    <id id="89423"/>
+    <id id="89424"/>
+    <id id="89425"/>
+    <id id="89426"/>
+    <id id="89427"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

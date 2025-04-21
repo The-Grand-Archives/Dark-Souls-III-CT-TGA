@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097398</ID>
+  <Description>"Quantity"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>240</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

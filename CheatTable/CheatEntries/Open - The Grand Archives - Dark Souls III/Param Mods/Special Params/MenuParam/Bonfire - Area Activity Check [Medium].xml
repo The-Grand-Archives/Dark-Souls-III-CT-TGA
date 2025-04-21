@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099246</ID>
+  <Description>"Bonfire - Area Activity Check [Medium]"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>44</Offset>
+    <Offset>60</Offset>
+    <Offset>60</Offset>
+  </Offsets>
+</CheatEntry>

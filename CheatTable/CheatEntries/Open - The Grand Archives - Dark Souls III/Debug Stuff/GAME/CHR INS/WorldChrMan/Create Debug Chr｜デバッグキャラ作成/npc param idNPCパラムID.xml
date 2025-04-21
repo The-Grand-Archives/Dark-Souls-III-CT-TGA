@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337189340</ID>
+  <Description>"npc param id|NPCパラムID"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>128</Offset>
+    <Offset>3018</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,15 @@
+<CheatEntry>
+  <ID>1337190152</ID>
+  <Description>"Npc Control"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="1337190153"/>
+    <id id="1337190155"/>
+    <id id="1337190224"/>
+    <id id="1337190225"/>
+    <id id="1337190226"/>
+    <id id="1337190227"/>
+    <id id="1337190228"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

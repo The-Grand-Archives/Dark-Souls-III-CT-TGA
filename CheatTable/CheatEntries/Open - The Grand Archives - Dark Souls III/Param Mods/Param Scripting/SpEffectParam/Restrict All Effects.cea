@@ -1,0 +1,14 @@
+{
+  Author: Igromanru
+  Description: Restrict All Effects
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local object = SpEffectParam:new("RestrictAllEffectsUuid31s")
+object:patchAllByte(0x16C,4)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("RestrictAllEffectsUuid31s")

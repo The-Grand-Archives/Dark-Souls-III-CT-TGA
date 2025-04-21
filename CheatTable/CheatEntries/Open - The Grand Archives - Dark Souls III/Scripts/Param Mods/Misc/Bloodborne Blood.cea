@@ -1,0 +1,24 @@
+//Author: inuNorii
+//Based on mod by PinoIsReading
+//https://www.nexusmods.com/darksouls3/mods/541
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local decalIds = {
+  1460000, 1460001, 1460002, 1460003, 1460004
+}
+for i,id in ipairs(decalIds) do
+local decal = DecalParam:new("BBBlood",id)
+  decal:decalShapeType0(1)
+  decal:randomSizeMin(130)
+  decal:Contrast1(255)
+  decal:R_Diffuse(90)
+  decal:G_Diffuse(0)
+  decal:B_Diffuse(0)
+  decal:Contrast2(255)
+  decal:DecalSpawnDelay(0)
+  decal:IsContactPlayer(1)
+end
+
+[DISABLE]
+paramUtils:restore("BBBlood")

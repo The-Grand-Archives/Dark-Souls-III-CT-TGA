@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097221</ID>
+  <Description>"TestAnimId"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>A5C</Offset>
+    <Offset>28</Offset>
+    <Offset>1F90</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

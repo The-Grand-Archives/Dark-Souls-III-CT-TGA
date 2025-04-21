@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(SpEffectVfxParamHelper,8)
+registersymbol(SpEffectVfxParamHelper)
+[DISABLE]
+dealloc(SpEffectVfxParamHelper)
+unregistersymbol(SpEffectVfxParamHelper)

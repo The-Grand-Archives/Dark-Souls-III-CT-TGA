@@ -1,0 +1,18 @@
+{
+  Author: Igromanru
+  Description: Removes requirements from all weapons
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local object = EquipParamWeapon:new("NoRequirementsForAllWeapons")
+object:patchAllByte(0xEE,0) -- Str
+object:patchAllByte(0xEF,0) -- Dex
+object:patchAllByte(0xF0,0) -- Int
+object:patchAllByte(0xF1,0) -- Fth
+
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("NoRequirementsForAllWeapons")

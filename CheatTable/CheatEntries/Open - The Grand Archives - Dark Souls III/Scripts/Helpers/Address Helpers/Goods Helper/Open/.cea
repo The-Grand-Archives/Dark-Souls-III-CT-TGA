@@ -1,0 +1,10 @@
+[ENABLE]
+label(EquipParamGoods)
+registersymbol(EquipParamGoods)
+[GoodsAddressToUse]:
+EquipParamGoods:
+[DISABLE]
+unregistersymbol(EquipParamGoods)
+
+
+

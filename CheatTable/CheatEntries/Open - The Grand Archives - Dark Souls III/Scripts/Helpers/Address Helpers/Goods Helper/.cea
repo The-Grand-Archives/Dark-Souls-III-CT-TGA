@@ -1,0 +1,6 @@
+[ENABLE]
+alloc(GoodsAddressToUse,8)
+registersymbol(GoodsAddressToUse)
+[DISABLE]
+dealloc(GoodsAddressToUse)
+unregistersymbol(GoodsAddressToUse)

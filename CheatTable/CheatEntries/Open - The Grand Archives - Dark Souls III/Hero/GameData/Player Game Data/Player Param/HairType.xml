@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080920</ID>
+  <Description>"HairType"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>f9</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

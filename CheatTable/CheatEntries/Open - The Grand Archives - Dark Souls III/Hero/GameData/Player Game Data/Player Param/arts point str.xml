@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337080939</ID>
+  <Description>"arts point str"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>108</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73289</ID>
+  <Description>"Position (Horizontal)"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>700</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,7 @@
+[ENABLE]
+label(SpEffectParam)
+registersymbol(SpEffectParam)
+[EffecAddressToUse]:
+SpEffectParam:
+[DISABLE]
+unregistersymbol(SpEffectParam)

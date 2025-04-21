@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337187666</ID>
+  <Description>"members created | キャラ作成済みのメンバーの数"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>D38</Offset>
+  </Offsets>
+</CheatEntry>

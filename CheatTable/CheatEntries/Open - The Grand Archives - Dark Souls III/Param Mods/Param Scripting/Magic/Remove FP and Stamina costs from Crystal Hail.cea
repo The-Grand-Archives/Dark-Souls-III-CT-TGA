@@ -1,0 +1,15 @@
+{
+	Author: Igromanru
+	Description: Removes FP and Stamina costs from the Crystal Hail
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local magic = Magic:new("CrystalHailNoFPCost", 0x4014F348)
+magic:Mp(0)
+magic:Stamina(0)
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("CrystalHailNoFPCost")

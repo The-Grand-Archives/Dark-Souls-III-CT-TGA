@@ -1,0 +1,21 @@
+<CheatEntry>
+  <ID>1337097507</ID>
+  <Description>"CurrentColor"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>Array of byte</VariableType>
+  <ByteLength>0</ByteLength>
+  <Address>SprjFade</Address>
+  <Offsets>
+    <Offset>190</Offset>
+    <Offset>28</Offset>
+    <Offset>0</Offset>
+    <Offset>8</Offset>
+    <Offset>8</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337097600"/>
+    <id id="1337097601"/>
+    <id id="1337097602"/>
+    <id id="1337097603"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

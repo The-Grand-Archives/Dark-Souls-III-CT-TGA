@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337096611</ID>
+  <Description>"Debug FPS | デバッグFPS"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjFlipper</Address>
+  <Offsets>
+    <Offset>354</Offset>
+  </Offsets>
+</CheatEntry>

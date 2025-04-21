@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337097099</ID>
+  <Description>"Intrusion position | 乱入位置"</Description>
+  <Options moHideChildren="1"/>
+  <Color>C0C0C0</Color>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097100"/>
+    <id id="1337097101"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

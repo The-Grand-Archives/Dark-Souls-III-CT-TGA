@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337187800</ID>
+  <Description>"Forced kickout (when hosting) | 強制キックアウト（ホスト時）"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>350</Offset>
+  </Offsets>
+</CheatEntry>

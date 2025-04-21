@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337045205</ID>
+  <Description>"Hp"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>target_ptr</Address>
+  <Offsets>
+    <Offset>D8</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

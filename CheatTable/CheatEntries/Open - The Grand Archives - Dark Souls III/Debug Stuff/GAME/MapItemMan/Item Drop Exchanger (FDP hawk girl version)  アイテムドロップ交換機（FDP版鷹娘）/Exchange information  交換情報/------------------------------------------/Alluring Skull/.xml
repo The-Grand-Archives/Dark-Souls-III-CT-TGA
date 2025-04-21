@@ -1,0 +1,18 @@
+<CheatEntry>
+  <ID>1337098457</ID>
+  <Description>"Alluring Skull"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>MapItemMan</Address>
+  <Offsets>
+    <Offset>10*10</Offset>
+    <Offset>28</Offset>
+    <Offset>88</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="1337098458"/>
+    <id id="1337098459"/>
+    <id id="1337098460"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

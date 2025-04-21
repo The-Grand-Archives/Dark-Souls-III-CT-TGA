@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337019891</ID>
+  <Description>"Main Menu"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>5</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>8</Offset>
+  </Offsets>
+</CheatEntry>

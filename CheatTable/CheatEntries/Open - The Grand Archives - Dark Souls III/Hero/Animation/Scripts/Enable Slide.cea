@@ -1,0 +1,16 @@
+[ENABLE]
+aobscanmodule(DontNopThis,DarkSoulsIII.exe,80 A3 F8 04 00 00 FC)
+registersymbol(DontNopThis)
+
+DontNopThis:
+nop 7
+
+[[[WorldChrMan]+40]+30]+4F8:
+  db 01
+
+[DISABLE]
+
+DontNopThis:
+db 80 A3 F8 04 00 00 FC
+
+unregistersymbol(DontNopThis)

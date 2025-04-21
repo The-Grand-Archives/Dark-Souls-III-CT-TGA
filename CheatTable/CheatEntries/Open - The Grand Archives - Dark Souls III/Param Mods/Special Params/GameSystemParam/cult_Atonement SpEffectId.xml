@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337099358</ID>
+  <Description>"cult_Atonement SpEffectId"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>CSStayParamRepository</Address>
+  <Offsets>
+    <Offset>38</Offset>
+    <Offset>60</Offset>
+    <Offset>90</Offset>
+  </Offsets>
+</CheatEntry>

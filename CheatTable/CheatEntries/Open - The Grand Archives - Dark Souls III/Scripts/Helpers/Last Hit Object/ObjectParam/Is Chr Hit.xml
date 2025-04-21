@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>11340</ID>
+  <Description>"Is Chr Hit"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>4</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+9</Address>
+</CheatEntry>

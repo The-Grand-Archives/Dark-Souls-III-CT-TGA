@@ -1,0 +1,36 @@
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local CharInitCustom = {
+    {3000,0,"","ChrInitEntry3000"},
+    {3001,0,"","ChrInitEntry3001"},
+    {3002,0,"","ChrInitEntry3002"},
+    {3003,0,"","ChrInitEntry3003"},
+    {3004,0,"","ChrInitEntry3004"},
+    {3005,0,"","ChrInitEntry3005"},
+    {3006,0,"","ChrInitEntry3006"},
+    {3007,0,"","ChrInitEntry3007"},
+    {3008,0,"","ChrInitEntry3008"},
+    {3009,0,"","ChrInitEntry3009"},
+    {999999320,0,"","ChrInitEntry999999320"}
+  }
+  paramUtils:paramIterator("CharaInitParam",CharInitCustom,"CharacterSave")
+end
+
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+  paramUtils:paramDepatcher("CharacterSave")
+  unregisterSymbol("ChrInitEntry3000")
+  unregisterSymbol("ChrInitEntry3001")
+  unregisterSymbol("ChrInitEntry3002")
+  unregisterSymbol("ChrInitEntry3003")
+  unregisterSymbol("ChrInitEntry3004")
+  unregisterSymbol("ChrInitEntry3005")
+  unregisterSymbol("ChrInitEntry3006")
+  unregisterSymbol("ChrInitEntry3007")
+  unregisterSymbol("ChrInitEntry3008")
+  unregisterSymbol("ChrInitEntry3009")
+  unregisterSymbol("ChrInitEntry999999320")
+end
+

@@ -1,0 +1,182 @@
+<CheatEntry>
+  <ID>110168</ID>
+  <Description>"Model ID"</Description>
+  <Options moHideChildren="1" moRecursiveSetValue="1"/>
+  <DropDownList ReadOnly="1" DisplayValueAsItem="1">0000:Player
+1070:Skeleton
+1071:Skeleton
+1090:Pus of Man
+1100:Hollow Deserter
+1102:Hollow Deserter
+1105:Hollow Deserter
+1130:Giant Slug
+1170:Skeleton Elite
+1180:Shotel Skeleton
+1190:Cathedral Knight
+1200:Thrall
+1201:Thrall
+1210:Ghru
+1211:Ghru
+1220:Hollow
+1230:Evangelist
+1240:Undead Settler
+1241:Undead Settler
+1250:Grave Warden
+1260:Undead Jailer
+1280:Lothric Knight
+1281:Lothric Knight
+1282:Lothric Knight
+1283:Lothric Knight
+1290:Winged Knight
+1300:Black Knight
+1310:Outrider
+1320:Crystal Sage
+1321:Crystal Sage
+1340:Scholar
+1350:Irithyll Hollow
+1360:Crucified Hollow
+1370:Swamp Hollow
+1380:Snake Shaman
+1390:Snake Assassin
+1391:Snake Assassin
+1400:Fire Keeper
+1410:Silver Knight
+1430:Hollow
+1440:Hollow
+1441:Hollow
+1442:Hollow
+1445:Hollow
+1446:Hollow
+1450:Ludleth
+1470:Bonewheel
+1480:Phantom Outrider
+1490:Phantom Dancer
+2020:Dog
+2021:Dog
+2030:Pontiff Knight
+2040:Monstrosity of Sin
+2060:Leech Monster
+2070:Wretch
+2080:Dog
+2090:Oceiros
+2100:Sewer Centipede
+2110:Rat
+2120:Mimic
+2130:Slime
+2131:Slime
+2132:Slime
+2140:Basilisk
+2150:Crystal Lizard
+2160:Pilgrim
+2170:Yorshka
+2180:Mangrub
+2190:Gargoyle
+2191:Gargoyle
+2200:Sandworm
+2210:Corvian
+2230:Jailer
+2240:Vordt
+2250:Sulyvahn's Beast
+2260:Ballista
+2270:Giant Crab
+2271:Crab
+2280:Giant Rat
+2290:Irithyll Dog
+3020:Giant
+3021:Greater Giant
+3040:Abyss Watcher
+3050:Stray Demon
+3060:Fire Demon
+3070:Demon Ghru
+3071:Demon Ghru
+3080:Pilgrim Butterfly
+3090:Caged Hollow
+3100:Giant Crystal Lizard
+3110:Deep Accursed
+3120:Elder Ghru
+3140:Ancient Wyvern
+3141:Ancient Wyvern
+3160:Dragonslayer Armour
+3170:Darkwraith
+3190:Andre
+3200:Shrine Handmaid
+3210:Horn Beetle
+3220:Rock Lizard
+3230:Demon Statue
+3250:Shrine Handmaid
+5010:Nameless King
+5020:Demon from Below
+5021:Demon in Pain
+5030:King of the Storm
+5110:Gundyr
+5140:Pontiff Sulyvahn
+5150:Aldrich
+5160:Wolnir
+5180:Greatwood
+5200:Stray Demon
+5210:Rosaria
+5220:Archdeacon
+5221:Deacon (Fat)
+5222:Deacon (Tall)
+5223:Deacon (Normal)
+5225:Deacon (Blue)
+5226:Deacon
+5227:Deacon
+5240:Fire Witch
+5250:Lorian
+5251:Lothric
+5260:Yhorm
+5270:Dancer
+5280:Cinder
+6000:Follower
+6010:Ariandel
+6020:Friede
+6030:Greatwolf
+6040:Snowwolf
+6050:Snowwolf (Small)
+6060:Tree Hollow
+6070:Corvian Knight
+6080:Corvian Villager
+6081:Corvian Villager
+6090:Giant Fly
+6100:Millwood Knight
+6120:Painter
+6121:Painter
+6130:Ice Crab
+6200:Slave Knight Gael
+6201:Slave Knight Gael
+6210:Darkeater Midir
+6211:Darkeater Midir
+6230:Murkman
+6231:Murkman
+6232:Murkman
+6240:Angel
+6250:Angel Larva
+6260:Ringed Knight
+6270:Hollow Pilgrim
+6280:Judicator
+6281:Judicator
+6290:Hollow Cleric
+6300:Pygmy
+6310:Filianore
+6320:Harald Legionnaire
+6330:Locust
+6331:Locust (Small)
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>String</VariableType>
+  <Length>4</Length>
+  <Unicode>1</Unicode>
+  <CodePage>0</CodePage>
+  <ZeroTerminate>0</ZeroTerminate>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>2a</Offset>
+    <Offset>30</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+  <x-ce2fs-child-order>
+    <id id="489662"/>
+    <id id="102392"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

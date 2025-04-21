@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337081763</ID>
+  <Description>"Check Interval Time"</Description>
+  <VariableType>Float</VariableType>
+  <Address>SprjSessionManager</Address>
+  <Offsets>
+    <Offset>30</Offset>
+    <Offset>108</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

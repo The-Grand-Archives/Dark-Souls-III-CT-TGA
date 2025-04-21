@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>91882</ID>
+  <Description>"Last Hit Object"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="91884"/>
+    <id id="91883"/>
+    <id id="91887"/>
+    <id id="91891"/>
+    <id id="11336"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

@@ -1,0 +1,19 @@
+{
+For those unfortunate PvE players, and as a CE lua/Param Patcher example.
+Also a little neat trick (I like to think) for the people that like
+to patch params often.
+
+Gate d17/m01/y2020
+bad lua fixed by even bigger reetar (cih)
+}
+{$lua}
+if syntaxcheck then return end
+[enable]
+writeInteger(
+    string.format(
+        "[[%x]+68]+318",
+        paramUtils:getParamAddress("Ceremony")+104
+    ),
+    2404
+)
+[disable]

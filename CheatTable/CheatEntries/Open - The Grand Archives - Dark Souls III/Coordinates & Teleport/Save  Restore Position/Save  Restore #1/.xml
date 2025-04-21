@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>88434</ID>
+  <Description>"Save / Restore #1"</Description>
+  <Options moHideChildren="1"/>
+  <VariableType>Auto Assembler Script</VariableType>
+  <x-ce2fs-child-order>
+    <id id="89232"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

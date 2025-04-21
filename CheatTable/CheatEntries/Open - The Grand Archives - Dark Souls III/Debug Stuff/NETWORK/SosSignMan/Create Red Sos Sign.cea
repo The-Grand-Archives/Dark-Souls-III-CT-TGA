@@ -1,0 +1,15 @@
+[ENABLE]
+alloc(Debug_CreateRedSosSign,$100,DarkSoulsIII.exe)
+createthread(Debug_CreateRedSosSign)
+
+Debug_CreateRedSosSign:
+sub rsp,28
+mov edx,000005DD
+call DarkSoulsIII.exe+846190
+add rsp,28
+ret
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+{$asm}
+[DISABLE]
+dealloc(Debug_CreateRedSosSign)

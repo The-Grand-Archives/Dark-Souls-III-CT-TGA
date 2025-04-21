@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337046214</ID>
+  <Description>"Weapon Category"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+e2</Address>
+</CheatEntry>

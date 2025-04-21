@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>73201</ID>
+  <Description>"Cheekbone"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>728</Offset>
+    <Offset>10</Offset>
+  </Offsets>
+</CheatEntry>

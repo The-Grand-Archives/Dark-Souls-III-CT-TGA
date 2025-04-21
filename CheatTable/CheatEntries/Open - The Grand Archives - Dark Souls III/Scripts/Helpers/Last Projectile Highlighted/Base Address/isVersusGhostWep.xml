@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337045718</ID>
+  <Description>"isVersusGhostWep"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>7</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+103</Address>
+</CheatEntry>

@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>1337097956</ID>
+  <Description>"Activate distance | アクティベート距離"</Description>
+  <VariableType>Float</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>190</Offset>
+  </Offsets>
+</CheatEntry>

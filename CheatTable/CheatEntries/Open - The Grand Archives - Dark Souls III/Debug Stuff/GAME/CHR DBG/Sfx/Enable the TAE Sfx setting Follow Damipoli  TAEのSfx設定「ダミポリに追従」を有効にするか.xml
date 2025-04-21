@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097958</ID>
+  <Description>"Enable the TAE Sfx setting "Follow Damipoli" | TAEのSfx設定「ダミポリに追従」を有効にするか"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg</Address>
+  <Offsets>
+    <Offset>172</Offset>
+  </Offsets>
+</CheatEntry>

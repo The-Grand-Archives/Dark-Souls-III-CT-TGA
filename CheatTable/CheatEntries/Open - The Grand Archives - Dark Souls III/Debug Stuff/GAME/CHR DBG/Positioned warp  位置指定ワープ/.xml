@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097810</ID>
+  <Description>"Positioned warp | 位置指定ワープ"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337097898"/>
+    <id id="1337097900"/>
+    <id id="1337097899"/>
+    <id id="1337097902"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

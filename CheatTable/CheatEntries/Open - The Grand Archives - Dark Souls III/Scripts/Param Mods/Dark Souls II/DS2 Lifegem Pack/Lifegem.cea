@@ -1,0 +1,51 @@
+//Original Lifegem Script Author: inuNorii
+//Edited and redesigned by Boblord
+//basic lifegem, replaces rusted gold coin
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local GoldCoin = EquipParamGoods:new("lifegem",457) -- base lifegem, uses rusted gold coin
+GoldCoin:refId(150)
+GoldCoin:goodsUseAnim(9)
+GoldCoin:iconId(267) -- icon: young grass dew
+GoldCoin:sfxId(528704) -- gold glow with dust
+GoldCoin:sfxId1(535000) -- golden crush effect
+GoldCoin:maxNum(20) -- sets number of gems that you can hold to 20 hopefully
+
+local BlankEffectHeal = SpEffectParam:new("lifegem",150)
+BlankEffectHeal:effectEndurance(21)
+BlankEffectHeal:motionInterval(0.03)
+BlankEffectHeal:changeHpRate(0)
+BlankEffectHeal:changeHpPoint(-1)
+BlankEffectHeal:spCategory(10)
+BlankEffectHeal:effectSfx(91120701)
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+3180:
+dw 'Lifegem',0
+[[[[MsgRepository]+8]+0]+C0]+11E1E:
+dw 'Small stone made up of crystallized souls.',A
+dw '',A
+dw 'Gradually restores a small amount of hp.',A
+dw '',A
+dw 'Often found near abandoned corpses, as if it were what remains of the soul.',0
+[[[[MsgRepository]+08]+00]+A0]+4564:
+dw 'Crush to restore some HP',0
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("lifegem")
+
+{$asm}
+[[[[MsgRepository]+8]+0]+50]+3180:
+dw 'Rusted Gold Coin',0
+[[[[MsgRepository]+8]+0]+C0]+11E1E:
+dw 'A rusty old gold coin that surely has no currency.',A
+dw '',A
+dw 'Crushing the coin gives a large, if temporary, boost to item discovery.',A
+dw '',A
+dw 'A rich man lost his fortune, but it returned to him twinfold. He was swift to squander his retrieved fortune, smugly confident that it was bound to double once again.',0
+[[[[MsgRepository]+08]+00]+A0]+4564:
+dw 'Crush to temporarily greatly boost item discovery',0
+

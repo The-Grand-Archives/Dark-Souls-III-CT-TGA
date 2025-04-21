@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>1337190162</ID>
+  <Description>"MaxSp"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>NpcControl_Data+04</Address>
+  <Offsets>
+    <Offset>F8</Offset>
+    <Offset>18</Offset>
+    <Offset>1F90</Offset>
+  </Offsets>
+</CheatEntry>

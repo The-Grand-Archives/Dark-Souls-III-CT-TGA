@@ -1,0 +1,55 @@
+{ Game   : Dark Souls 3
+  Version: 1.15
+  Author : Igromanru
+  Description: New gesture pointer.
+  Fix : 25.08.2017 Pavcuck
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+-- Disable Gesture walk
+igro:getRecordById(489671).Active = false
+
+{$asm}
+aobscanmodule(GesturesAccessAddress,DarkSoulsIII.exe,8B 01 89 02 48 8B ? C3 ? 2B ? ? 54 DB ? ? ? ? EC)
+alloc(newmem,256,GesturesAccessAddress)
+
+label(code)
+label(GesturesAccessOriginal)
+label(return)
+label(GesturesPointer)
+
+newmem:
+GesturesAccessOriginal:
+  readmem(GesturesAccessAddress,7)
+
+code:
+  mov eax,[rcx]
+  mov [rdx],eax
+  mov rax,rdx
+  cmp [rax],14820
+  jne return
+  mov [GesturesPointer],rcx
+  jmp return
+
+GesturesPointer:
+  dq 0
+
+GesturesAccessAddress:
+  jmp newmem
+  nop
+  nop
+return:
+registersymbol(GesturesAccessAddress)
+registersymbol(GesturesAccessOriginal)
+registersymbol(GesturesPointer)
+
+[DISABLE]
+
+GesturesAccessAddress:
+  readmem(GesturesAccessOriginal,7)
+
+unregistersymbol(GesturesAccessAddress)
+unregistersymbol(GesturesAccessOriginal)
+unregistersymbol(GesturesPointer)
+dealloc(newmem)

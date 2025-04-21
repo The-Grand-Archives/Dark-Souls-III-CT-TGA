@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337189959</ID>
+  <Description>"Force Parry Mode"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Off
+1:On
+</DropDownList>
+  <Color>000080</Color>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrManDbg_Flags+10</Address>
+</CheatEntry>

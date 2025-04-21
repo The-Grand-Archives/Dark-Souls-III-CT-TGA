@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097691</ID>
+  <Description>"GOTY"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Standard
+1:The Fire FadesTM Edition
+</DropDownList>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>DarkSoulsIII.exe+4786138</Address>
+</CheatEntry>

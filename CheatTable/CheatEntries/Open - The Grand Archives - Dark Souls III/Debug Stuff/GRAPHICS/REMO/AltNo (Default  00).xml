@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>6</ID>
+  <Description>"AltNo (Default : 00)"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>SprjRemo</Address>
+  <Offsets>
+    <Offset>24</Offset>
+  </Offsets>
+</CheatEntry>

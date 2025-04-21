@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>78526</ID>
+  <Description>"Pontiff"</Description>
+  <VariableType>Binary</VariableType>
+  <BitStart>3</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>SprjEventFlagMan</Address>
+  <Offsets>
+    <Offset>4B37</Offset>
+    <Offset>8</Offset>
+  </Offsets>
+</CheatEntry>

@@ -1,0 +1,27 @@
+{
+  Author: Igromanru
+  Description: Gives all daggers curse. (User test)
+}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local daggers = {
+  0x000F4240, --Dagger
+  0x000F9060, --Parrying Dagger
+  0x000F90C4, --Heavy Parrying Dagger
+  0x000F9128, --Sharp Parrying Dagger
+  0x00111700, --Handmaid's Dagger
+  0x00116520, --Aquamarine Dagger
+  0x00F50E60, --Brigand Twindaggers
+}
+
+for i,id in ipairs(daggers) do
+  local equipWeapon = EquipParamWeapon:new("curseDaggerMeme",id)
+  equipWeapon:patch4Byte(0x54,33) -- Curse
+end
+
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+paramUtils:restore("curseDaggerMeme")

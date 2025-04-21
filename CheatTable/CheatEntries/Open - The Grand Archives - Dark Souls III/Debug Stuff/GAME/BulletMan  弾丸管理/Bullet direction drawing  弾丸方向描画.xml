@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337187444</ID>
+  <Description>"Bullet direction drawing | 弾丸方向描画"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <VariableType>Byte</VariableType>
+  <Address>SprjBulletManager</Address>
+  <Offsets>
+    <Offset>1C0</Offset>
+  </Offsets>
+</CheatEntry>

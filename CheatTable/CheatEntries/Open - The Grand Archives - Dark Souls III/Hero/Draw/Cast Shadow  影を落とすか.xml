@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337081649</ID>
+  <Description>"Cast Shadow | 影を落とすか"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>1A54</Offset>
+    <Offset>80</Offset>
+  </Offsets>
+</CheatEntry>

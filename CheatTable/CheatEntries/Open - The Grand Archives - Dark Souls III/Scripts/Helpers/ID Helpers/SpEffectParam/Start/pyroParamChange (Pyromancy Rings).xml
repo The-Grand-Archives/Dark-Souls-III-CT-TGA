@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337256997</ID>
+  <Description>"pyroParamChange (Pyromancy Rings)"</Description>
+  <Color>004080</Color>
+  <VariableType>Binary</VariableType>
+  <BitStart>0</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+02C6</Address>
+</CheatEntry>

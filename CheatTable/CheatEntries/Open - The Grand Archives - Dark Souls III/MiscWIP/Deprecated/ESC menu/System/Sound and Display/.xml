@@ -1,0 +1,14 @@
+<CheatEntry>
+  <ID>1337019875</ID>
+  <Description>"Sound and Display"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="1337019893"/>
+    <id id="1337019866"/>
+    <id id="1337019859"/>
+    <id id="1337019894"/>
+    <id id="1337019864"/>
+    <id id="1337019865"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

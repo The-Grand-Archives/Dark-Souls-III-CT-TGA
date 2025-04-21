@@ -1,0 +1,455 @@
+{$lua}
+if not syntaxcheck then disableMemrec(memrec) end
+local win = MIGForm:new()
+
+Weapon = Item:new()
+function Weapon:new(attributes)
+  o = Item:new(attributes.id, attributes.typ, attributes.quantity, attributes.dlc, attributes.cutContent)
+  setmetatable(o, self)
+  self.__index = self
+  return o
+end
+
+local weapons = {
+--Weapon:new({id = 0x00015F90, typ = 'Torches', cutContent = true}),	--Torch
+  Weapon:new({id = 0x015EF3C0, typ = 'Torches'}),	--Torch
+  Weapon:new({id = 0x015F1AD0, typ = 'Torches', dlc = 1}),	--Follower Torch
+
+  Weapon:new({id = 0x000F4240, typ = 'Daggers'}),	--Dagger
+  Weapon:new({id = 0x000F6950, typ = 'Daggers'}),	--Bandit's Knife
+  Weapon:new({id = 0x000F9060, typ = 'Daggers'}),	--Parrying Dagger
+  Weapon:new({id = 0x000FDE80, typ = 'Daggers'}),	--Rotten Ghru Dagger
+  Weapon:new({id = 0x00102CA0, typ = 'Daggers'}),	--Harpe
+  Weapon:new({id = 0x001053B0, typ = 'Daggers'}),	--Scholar's Candlestick
+  Weapon:new({id = 0x00107AC0, typ = 'Daggers'}),	--Tailbone Short Sword
+  Weapon:new({id = 0x0010A1D0, typ = 'Daggers'}),	--Corvian Greatknife
+  Weapon:new({id = 0x00111700, typ = 'Daggers'}),	--Handmaid's Dagger
+  Weapon:new({id = 0x00116520, typ = 'Daggers', dlc = 2}),	--Aquamarine Dagger
+  Weapon:new({id = 0x00118C30, typ = 'Daggers', dlc = 2}),	--Murky Hand Scythe
+  Weapon:new({id = 0x00F50E60, typ = 'Daggers'}),	--Brigand Twindaggers
+
+--Weapon:new({id = 0x00100590, typ = 'StraightSwords', cutContent = true}),	--Blood-stained Short Sword
+  Weapon:new({id = 0x001E8480, typ = 'StraightSwords'}),	--Shortsword
+  Weapon:new({id = 0x001EAB90, typ = 'StraightSwords'}),	--Long Sword
+  Weapon:new({id = 0x001ED2A0, typ = 'StraightSwords'}),	--Broadsword
+  Weapon:new({id = 0x001EF9B0, typ = 'StraightSwords'}),	--Broken Straight Sword
+  Weapon:new({id = 0x001F6EE0, typ = 'StraightSwords'}),	--Lothric Knight Sword
+  Weapon:new({id = 0x00203230, typ = 'StraightSwords'}),	--Sunlight Straight Sword
+  Weapon:new({id = 0x0020A760, typ = 'StraightSwords'}),	--Irithyll Straight Sword
+  Weapon:new({id = 0x0020F580, typ = 'StraightSwords'}),	--Cleric's Candlestick
+  Weapon:new({id = 0x002143A0, typ = 'StraightSwords'}),	--Morion Blade
+  Weapon:new({id = 0x002191C0, typ = 'StraightSwords'}),	--Astora Straight Sword
+  Weapon:new({id = 0x0021B8D0, typ = 'StraightSwords'}),	--Barbed Straight Sword
+  Weapon:new({id = 0x002206F0, typ = 'StraightSwords'}),	--Anri's Straight Sword
+  Weapon:new({id = 0x00225510, typ = 'StraightSwords', dlc = 2}),	--Ringed Knight Straight Sword
+  Weapon:new({id = 0x005FD340, typ = 'StraightSwords'}),	--Lothric's Holy Sword
+  Weapon:new({id = 0x005F3700, typ = 'StraightSwords'}),	--Dark Sword
+  Weapon:new({id = 0x00F53570, typ = 'StraightSwords'}),	--Gotthard Twinswords
+  Weapon:new({id = 0x00F646E0, typ = 'StraightSwords', dlc = 1}),	--Valorheart
+
+  Weapon:new({id = 0x002DC6C0, typ = 'Rapiers'}),	--Estoc
+  Weapon:new({id = 0x002DEDD0, typ = 'Rapiers'}),	--Mail Breaker
+  Weapon:new({id = 0x002E14E0, typ = 'Rapiers'}),	--Rapier
+  Weapon:new({id = 0x002E3BF0, typ = 'Rapiers'}),	--Ricard's Rapier
+  Weapon:new({id = 0x002E6300, typ = 'Rapiers'}),	--Crystal Sage's Rapier
+  Weapon:new({id = 0x002E8A10, typ = 'Rapiers'}),	--Irithyll Rapier
+  Weapon:new({id = 0x00F66DF0, typ = 'Rapiers', dlc = 1}),	--Crow Quills
+
+  Weapon:new({id = 0x00205940, typ = 'CurvedSwords'}),	--Rotten Ghru Curved Sword
+  Weapon:new({id = 0x003D3010, typ = 'CurvedSwords'}),	--Shotel
+  Weapon:new({id = 0x003D7E30, typ = 'CurvedSwords'}),	--Scimitar
+  Weapon:new({id = 0x003DA540, typ = 'CurvedSwords'}),	--Falchion
+  Weapon:new({id = 0x003DCC50, typ = 'CurvedSwords'}),	--Carthus Curved Sword
+  Weapon:new({id = 0x003E1A70, typ = 'CurvedSwords'}),	--Pontiff Knight Curved Sword
+  Weapon:new({id = 0x003E4180, typ = 'CurvedSwords'}),	--Storm Curved Sword
+  Weapon:new({id = 0x003E6890, typ = 'CurvedSwords'}),	--Painting Guardian's Curved Sword
+  Weapon:new({id = 0x003E8FA0, typ = 'CurvedSwords'}),	--Crescent Moon Sword
+  Weapon:new({id = 0x003EB6B0, typ = 'CurvedSwords'}),	--Carthus Shotel
+  Weapon:new({id = 0x003EDDC0, typ = 'CurvedSwords', dlc = 1}),	--Follower Sabre
+  Weapon:new({id = 0x003F04D0, typ = 'CurvedSwords', dlc = 2}),	--Demon Scar
+  Weapon:new({id = 0x00F42400, typ = 'CurvedSwords'}),	--Sellsword Twinblades
+  Weapon:new({id = 0x00F47220, typ = 'CurvedSwords'}),	--Warden Twinblades
+  Weapon:new({id = 0x00F4C040, typ = 'CurvedSwords'}),	--Dancer's Enchanted Swords
+
+  Weapon:new({id = 0x004C4B40, typ = 'Katanas'}),	--Uchigatana
+  Weapon:new({id = 0x004C7250, typ = 'Katanas'}),	--Washing Pole
+  Weapon:new({id = 0x004C9960, typ = 'Katanas'}),	--Chaos Blade
+  Weapon:new({id = 0x004CC070, typ = 'Katanas'}),	--Black Blade
+  Weapon:new({id = 0x004CE780, typ = 'Katanas'}),	--Bloodlust
+  Weapon:new({id = 0x004D0E90, typ = 'Katanas'}),	--Darkdrift
+  Weapon:new({id = 0x004D35A0, typ = 'Katanas', dlc = 2}),	--Frayed Blade
+  Weapon:new({id = 0x00F58390, typ = 'Katanas'}),	--Onikiri and Ubadachi
+
+
+  Weapon:new({id = 0x0021DFE0, typ = 'Greatswords'}),	--Executioner's Greatsword
+  Weapon:new({id = 0x00222E00, typ = 'Greatswords', dlc = 1}),	--Onyx Blade
+  Weapon:new({id = 0x00227C20, typ = 'Greatswords', dlc = 2}),	--Gael Greatsword
+  Weapon:new({id = 0x005B8D80, typ = 'Greatswords'}),	--Bastard Sword
+  Weapon:new({id = 0x005BDBA0, typ = 'Greatswords'}),	--Claymore
+  Weapon:new({id = 0x005DB060, typ = 'Greatswords'}),	--Flamberge
+  Weapon:new({id = 0x005F5E10, typ = 'Greatswords'}),	--Black Knight Sword
+  Weapon:new({id = 0x005FAC30, typ = 'Greatswords'}),	--Twin Princes' Greatsword
+  Weapon:new({id = 0x005FFA50, typ = 'Greatswords'}),	--Wolnir's Holy Sword
+  Weapon:new({id = 0x00602160, typ = 'Greatswords'}),	--Wolf Knight's Greatsword
+  Weapon:new({id = 0x0060216A, typ = 'Greatswords'}),	--Greatsword of Artorias !!!!!!!!!!!!!!!!
+  Weapon:new({id = 0x00604870, typ = 'Greatswords'}),	--Hollowslayer Greatsword
+  Weapon:new({id = 0x00606F80, typ = 'Greatswords'}),	--Moonlight Greatsword
+  Weapon:new({id = 0x00609690, typ = 'Greatswords'}),	--Drakeblood Greatsword
+  Weapon:new({id = 0x0060BDA0, typ = 'Greatswords'}),	--Firelink Greatsword
+  Weapon:new({id = 0x005E2590, typ = 'Greatswords'}),	--Greatsword of Judgment
+  Weapon:new({id = 0x006132D0, typ = 'Greatswords'}),	--Storm Ruler
+
+  Weapon:new({id = 0x005C29C0, typ = 'UltraGreatswords'}),	--Zweihander
+  Weapon:new({id = 0x005C50D0, typ = 'UltraGreatswords'}),	--Greatsword
+  Weapon:new({id = 0x005C9EF0, typ = 'UltraGreatswords'}),	--Astora Greatsword
+  Weapon:new({id = 0x005D1420, typ = 'UltraGreatswords'}),	--Lothric Knight Greatsword
+  Weapon:new({id = 0x005D8950, typ = 'UltraGreatswords'}),	--Black Knight Greatsword
+  Weapon:new({id = 0x005E4CA0, typ = 'UltraGreatswords'}),	--Profaned Greatsword
+  Weapon:new({id = 0x005E73B0, typ = 'UltraGreatswords'}),	--Cathedral Knight Greatsword
+  Weapon:new({id = 0x005E9AC0, typ = 'UltraGreatswords'}),	--Farron Greatsword
+  Weapon:new({id = 0x005F8520, typ = 'UltraGreatswords'}),	--Lorian's Greatsword
+  Weapon:new({id = 0x0060E4B0, typ = 'UltraGreatswords'}),	--Fume Ultra Greatsword
+  Weapon:new({id = 0x00F69500, typ = 'UltraGreatswords', dlc = 2}),	--Ringed Knight Paired Greatswords
+
+
+  Weapon:new({id = 0x003DF360, typ = 'CurvedGreatswords'}),	--Carthus Curved Greatsword
+  Weapon:new({id = 0x005CC600, typ = 'CurvedGreatswords'}),	--Murakumo
+  Weapon:new({id = 0x005DD770, typ = 'CurvedGreatswords'}),	--Exile Greatsword
+  Weapon:new({id = 0x00610BC0, typ = 'CurvedGreatswords'}),	--Old Wolf Curved Sword
+  Weapon:new({id = 0x006159E0, typ = 'CurvedGreatswords', dlc = 2}),	--Harald Curved Greatsword
+
+  Weapon:new({id = 0x006ACFC0, typ = 'Axes'}),	--Hand Axe
+  Weapon:new({id = 0x006AF6D0, typ = 'Axes'}),	--Battle Axe
+  Weapon:new({id = 0x006B1DE0, typ = 'Axes'}),	--Brigand Axe
+  Weapon:new({id = 0x006B6C00, typ = 'Axes'}),	--Crescent Axe
+  Weapon:new({id = 0x006BE130, typ = 'Axes'}),	--Butcher Knife
+  Weapon:new({id = 0x006C0840, typ = 'Axes'}),	--Dragonslayer's Axe
+--Weapon:new({id = 0x006C2F50, typ = 'Axes', cutContent = true}),	--Missionary's Axe
+  Weapon:new({id = 0x006C5660, typ = 'Axes'}),	--Thrall Axe
+  Weapon:new({id = 0x006CCB90, typ = 'Axes'}),	--Eleonora
+  Weapon:new({id = 0x006D19B0, typ = 'Axes'}),	--Man Serpent Hatchet
+  Weapon:new({id = 0x006D67D0, typ = 'Axes', dlc = 1}),	--Millwood Battle Axe
+  Weapon:new({id = 0x00F49930, typ = 'Axes'}),	--Winged Knight Twinaxes
+
+  Weapon:new({id = 0x005F0FF0, typ = 'Greataxes'}),	--Yhorm's Great Machete
+  Weapon:new({id = 0x006B9310, typ = 'Greataxes'}),	--Greataxe
+  Weapon:new({id = 0x006C7D70, typ = 'Greataxes'}),	--Dragonslayer Greataxe
+  Weapon:new({id = 0x006CA480, typ = 'Greataxes'}),	--Demon's Greataxe
+  Weapon:new({id = 0x006D8EE0, typ = 'Greataxes', dlc = 1}),	--Earth Seeker
+--Weapon:new({id = 0x006D40C0, typ = 'Greataxes', cutContent = true}),	--Dragon King Greataxe
+  Weapon:new({id = 0x00F4E750, typ = 'Greataxes'}),	--Great Machete
+
+  Weapon:new({id = 0x007A1200, typ = 'Hammers'}),	--Club
+  Weapon:new({id = 0x007A3910, typ = 'Hammers'}),	--Mace
+  Weapon:new({id = 0x007A6020, typ = 'Hammers'}),	--Morning Star
+  Weapon:new({id = 0x007A8730, typ = 'Hammers'}),	--Reinforced Club
+  Weapon:new({id = 0x007D6D60, typ = 'Hammers'}),	--Heysel Pick
+  Weapon:new({id = 0x007DBB80, typ = 'Hammers'}),	--Warpick
+  Weapon:new({id = 0x007E57C0, typ = 'Hammers'}),	--Blacksmith Hammer
+  Weapon:new({id = 0x00F61FD0, typ = 'Hammers'}),	--Drang Hammers
+
+  Weapon:new({id = 0x007AFC60, typ = 'GreatHammers'}),	--Large Club
+  Weapon:new({id = 0x007B4A80, typ = 'GreatHammers'}),	--Great Club
+  Weapon:new({id = 0x007BBFB0, typ = 'GreatHammers'}),	--Great Mace
+  Weapon:new({id = 0x007C8300, typ = 'GreatHammers'}),	--Great Wooden Hammer
+  Weapon:new({id = 0x007CAA10, typ = 'GreatHammers'}),	--Gargoyle Flame Hammer
+  Weapon:new({id = 0x007CD120, typ = 'GreatHammers'}),	--Vordt's Great Hammer
+  Weapon:new({id = 0x007CF830, typ = 'GreatHammers'}),	--Old King's Great Hammer
+--Weapon:new({id = 0x007D4650, typ = 'GreatHammers', cutContent = true}),	--Four Knights Hammer
+--Weapon:new({id = 0x007D9470, typ = 'GreatHammers', cutContent = true}),	--Hammer of the Great Tree
+  Weapon:new({id = 0x007DE290, typ = 'GreatHammers'}),	--Pickaxe
+  Weapon:new({id = 0x007E09A0, typ = 'GreatHammers'}),	--Dragon Tooth
+  Weapon:new({id = 0x007E30B0, typ = 'GreatHammers'}),	--Smough's Great Hammer
+  Weapon:new({id = 0x007E7ED0, typ = 'GreatHammers'}),	--Morne's Great Hammer
+  Weapon:new({id = 0x007EA5E0, typ = 'GreatHammers'}),	--Spiked Mace
+  Weapon:new({id = 0x007ECCF0, typ = 'GreatHammers', dlc = 1}),	--Quakestone Hammer
+  Weapon:new({id = 0x007EF400, typ = 'GreatHammers', dlc = 2}),	--Ledo's Great Hammer
+
+  Weapon:new({id = 0x00895440, typ = 'Spears'}),	--Spear
+  Weapon:new({id = 0x00897B50, typ = 'Spears'}),	--Winged Spear
+  Weapon:new({id = 0x0089C970, typ = 'Spears'}),	--Partizan
+  Weapon:new({id = 0x008A8CC0, typ = 'Spears'}),	--Greatlance
+  Weapon:new({id = 0x008AB3D0, typ = 'Spears'}),	--Lothric Knight Long Spear
+  Weapon:new({id = 0x008ADAE0, typ = 'Spears'}),	--Four-Pronged Plow
+  Weapon:new({id = 0x008B01F0, typ = 'Spears'}),	--Gargoyle Flame Spear
+  Weapon:new({id = 0x008B2900, typ = 'Spears'}),	--Rotten Ghru Spear
+  Weapon:new({id = 0x008B5010, typ = 'Spears'}),	--Tailbone Spear
+  Weapon:new({id = 0x008B7720, typ = 'Spears'}),	--Soldering Iron
+  Weapon:new({id = 0x008BC540, typ = 'Spears'}),	--Dragonslayer Swordspear
+  Weapon:new({id = 0x008BEC50, typ = 'Spears'}),	--Arstor's Spear
+  Weapon:new({id = 0x008C1360, typ = 'Spears'}),	--Saint Bident
+  Weapon:new({id = 0x008C3A70, typ = 'Spears'}),	--Yorshka's Spear
+  Weapon:new({id = 0x008C6180, typ = 'Spears'}),	--Pike
+--Weapon:new({id = 0x008C8890, typ = 'Spears', cutContent = true}),	--Channeler's Trident
+  Weapon:new({id = 0x008CAFA0, typ = 'Spears'}),	--Dragonslayer Spear
+  Weapon:new({id = 0x008CD6B0, typ = 'Spears', dlc = 1}),	--Follower Javelin
+  Weapon:new({id = 0x008CFDC0, typ = 'Spears', dlc = 2}),	--Ringed Knight Spear
+  Weapon:new({id = 0x008D24D0, typ = 'Spears', dlc = 2}),	--Lothric War Banner
+  Weapon:new({id = 0x00F5AAA0, typ = 'Spears'}),	--Drang Twinspears
+
+  Weapon:new({id = 0x008D4BE0, typ = 'Halberds', dlc = 2}),	--Crucifix of the Mad King (Halberd)
+  Weapon:new({id = 0x0098BD90, typ = 'Halberds'}),	--Lucerne
+  Weapon:new({id = 0x0098E4A0, typ = 'Halberds'}),	--Glaive
+  Weapon:new({id = 0x00990BB0, typ = 'Halberds'}),	--Halberd
+  Weapon:new({id = 0x009959D0, typ = 'Halberds'}),	--Black Knight Greataxe
+  Weapon:new({id = 0x0099A7F0, typ = 'Halberds'}),	--Pontiff Knight Great Scythe
+  Weapon:new({id = 0x0099F610, typ = 'Halberds'}),	--Winged Knight Halberd
+  Weapon:new({id = 0x009A1D20, typ = 'Halberds'}),	--Gundyr's Halberd
+--Weapon:new({id = 0x009A6B40, typ = 'Halberds', cutContent = true}),	--Ancient Dragon Halberd
+  Weapon:new({id = 0x009AB960, typ = 'Halberds'}),	--Red Hilted Halberd
+  Weapon:new({id = 0x009AE070, typ = 'Halberds'}),	--Black Knight Glaive
+  Weapon:new({id = 0x009B0780, typ = 'Halberds'}),	--Immolation Tinder
+  Weapon:new({id = 0x009B2E90, typ = 'Halberds', dlc = 2}),	--Splitleaf Greatsword (It's a Halberd)
+
+  Weapon:new({id = 0x00989680, typ = 'Reapers'}),	--Great Scythe
+  Weapon:new({id = 0x0099CF00, typ = 'Reapers'}),	--Great Corvian Scythe
+--Weapon:new({id = 0x009A4430, typ = 'Reapers', cutContent = true}),	--Lothric's Scythe
+--Weapon:new({id = 0x009A9250, typ = 'Reapers', cutContent = true}),	--Scythe of Want
+  Weapon:new({id = 0x009B55A0, typ = 'Reapers', dlc = 1}),	--Friede's Great Scythe
+
+  Weapon:new({id = 0x00A7D8C0, typ = 'Fists'}),	--Claw
+  Weapon:new({id = 0x00A7FFD0, typ = 'Fists'}),	--Caestus
+  Weapon:new({id = 0x00A826E0, typ = 'Fists'}),	--Manikin Claws
+  Weapon:new({id = 0x00A84DF0, typ = 'Fists'}),	--Demon's Fist
+  Weapon:new({id = 0x00A87500, typ = 'Fists'}),	--Dark Hand
+  Weapon:new({id = 0x00A89C10, typ = 'Fists', dlc = 1}),	--Crow Talons
+
+  Weapon:new({id = 0x00B71B00, typ = 'Whips'}),	--Whip
+  Weapon:new({id = 0x00B7B740, typ = 'Whips'}),	--Witch's Locks
+  Weapon:new({id = 0x00B7DE50, typ = 'Whips'}),	--Notched Whip
+  Weapon:new({id = 0x00B80560, typ = 'Whips'}),	--Spotted Whip
+  Weapon:new({id = 0x00B82C70, typ = 'Whips', dlc = 1}),	--Rose of Ariandel
+
+
+  Weapon:new({id = 0x00C747A0, typ = 'Staves'}),	--Sorcerer's Staff
+  Weapon:new({id = 0x00C76EB0, typ = 'Staves'}),	--Storyteller's Staff
+  Weapon:new({id = 0x00C795C0, typ = 'Staves'}),	--Mendicant's Staff
+  Weapon:new({id = 0x00C7E3E0, typ = 'Staves'}),	--Man-grub's Staff
+  Weapon:new({id = 0x00C80AF0, typ = 'Staves'}),	--Archdeacon's Great Staff
+  Weapon:new({id = 0x00C8CE40, typ = 'Staves'}),	--Sage's Crystal Staff
+  Weapon:new({id = 0x00C8F550, typ = 'Staves'}),	--Heretic's Staff
+  Weapon:new({id = 0x00C91C60, typ = 'Staves'}),	--Court Sorcerer's Staff
+  Weapon:new({id = 0x00C94370, typ = 'Staves'}),	--Witchtree Branch
+  Weapon:new({id = 0x00C96A80, typ = 'Staves'}),	--Izalith Staff
+  Weapon:new({id = 0x00CCC5E0, typ = 'Staves', dlc = 2}),	--Murky Longstaff
+  Weapon:new({id = 0x00CD1400, typ = 'Staves', dlc = 2}),	--Preacher's Right Arm
+--Weapon:new({id = 0x00C8A730, typ = 'Staves', cutContent = true}),	--Sacred Beast Catalyst
+  Weapon:new({id = 0x00C83200, typ = 'Staves'}),	--Golden Ritual Spear
+
+  Weapon:new({id = 0x00C88020, typ = 'Chimes'}),	--Yorshka's Chime
+  Weapon:new({id = 0x00C99190, typ = 'Chimes'}),	--Cleric's Sacred Chime
+  Weapon:new({id = 0x00C9B8A0, typ = 'Chimes'}),	--Priest's Chime
+  Weapon:new({id = 0x00C9DFB0, typ = 'Chimes'}),	--Saint-tree Bellvine
+  Weapon:new({id = 0x00CA06C0, typ = 'Chimes'}),	--Caitha's Chime
+  Weapon:new({id = 0x00CA2DD0, typ = 'Chimes'}),	--Crystal Chime
+  Weapon:new({id = 0x00CCECF0, typ = 'Chimes', dlc = 2}),	--Sacred Chime of Filianore
+
+  Weapon:new({id = 0x00C72090, typ = 'Talismans'}),	--Talisman
+  Weapon:new({id = 0x00CA54E0, typ = 'Talismans'}),	--Sunlight Talisman
+  Weapon:new({id = 0x00CA7BF0, typ = 'Talismans'}),	--Canvas Talisman
+  Weapon:new({id = 0x00CAA300, typ = 'Talismans'}),	--Sunless Talisman
+  Weapon:new({id = 0x00CACA10, typ = 'Talismans'}),	--Saint's Talisman
+  Weapon:new({id = 0x00CAF120, typ = 'Talismans'}),	--White Hair Talisman
+
+  Weapon:new({id = 0x00CC77C0, typ = 'Flames'}),	--Pyromancy Flame
+  Weapon:new({id = 0x00CC9ED0, typ = 'Flames', dlc = 1}),	--Pyromancer's Parting Flame
+--Weapon:new({id = 0x00CD3B10, typ = 'Flames', cutContent = true}),	--Flickering Pyromancy Flame
+--Weapon:new({id = 0x00CD6220, typ = 'Flames', cutContent = true}),	--Strong Pyromancy Flame
+--Weapon:new({id = 0x00CDFE60, typ = 'Flames', cutContent = true}),	--Deep Pyromancy Flame
+--Weapon:new({id = 0x00CE2570, typ = 'Flames', cutContent = true}),	--Pitch-Dark Pyromancy Flame
+
+  Weapon:new({id = 0x00D5C690, typ = 'Bows'}),	--Short Bow
+  Weapon:new({id = 0x00D5EDA0, typ = 'Bows'}),	--Composite Bow
+  Weapon:new({id = 0x00D689E0, typ = 'Bows'}),	--Longbow
+  Weapon:new({id = 0x00D77440, typ = 'Bows', dlc = 2}),	--White Tree Bow (White Birch Bow)
+  Weapon:new({id = 0x00D79B50, typ = 'Bows'}),	--Darkmoon Longbow
+  Weapon:new({id = 0x00D7E970, typ = 'Bows'}),	--Black Bow of Pharis
+
+  Weapon:new({id = 0x00D6B0F0, typ = 'Greatbows'}),	--Dragonrider Bow
+  Weapon:new({id = 0x00D7C260, typ = 'Greatbows'}),	--Onislayer Greatbow
+  Weapon:new({id = 0x00CF8500, typ = 'Greatbows'}),	--Dragonslayer Greatbow
+  Weapon:new({id = 0x00D85EA0, typ = 'Greatbows', dlc = 1}),	--Millwood Greatbow
+  Weapon:new({id = 0x00D63BC0, typ = 'Crossbows'}),	--Light Crossbow
+  Weapon:new({id = 0x00D662D0, typ = 'Crossbows'}),	--Arbalest
+  Weapon:new({id = 0x00D6FF10, typ = 'Crossbows'}),	--Avelyn
+  Weapon:new({id = 0x00D72620, typ = 'Crossbows'}),	--Knight's Crossbow
+  Weapon:new({id = 0x00D74D30, typ = 'Crossbows'}),	--Heavy Crossbow
+--Weapon:new({id = 0x00D81080, typ = 'Crossbows', cutContent = true}),	--Shield Crossbow
+  Weapon:new({id = 0x00D83790, typ = 'Crossbows'}),	--Sniper Crossbow
+  Weapon:new({id = 0x00D885B0, typ = 'Crossbows', dlc = 2}),	--Repeating Crossbow
+
+  Weapon:new({id = 0x01312D00, typ = 'SmallShields'}),	--Buckler
+  Weapon:new({id = 0x01315410, typ = 'SmallShields'}),	--Small Leather Shield
+  Weapon:new({id = 0x0131C940, typ = 'SmallShields'}),	--Large Leather Shield
+  Weapon:new({id = 0x01323E70, typ = 'SmallShields'}),	--Hawkwood's Shield
+  Weapon:new({id = 0x01326580, typ = 'SmallShields'}),	--Iron Round Shield
+  Weapon:new({id = 0x013328D0, typ = 'SmallShields'}),	--Ghru Rotshield
+  Weapon:new({id = 0x01339E00, typ = 'SmallShields'}),	--Target Shield
+  Weapon:new({id = 0x0133C510, typ = 'SmallShields'}),	--Elkhorn Round Shield
+  Weapon:new({id = 0x0133EC20, typ = 'SmallShields'}),	--Warrior's Round Shield
+  Weapon:new({id = 0x01341330, typ = 'SmallShields'}),	--Caduceus Round Shield
+  Weapon:new({id = 0x01343A40, typ = 'SmallShields'}),	--Red and White Round Shield
+  Weapon:new({id = 0x01346150, typ = 'SmallShields'}),	--Plank Shield
+  Weapon:new({id = 0x01348860, typ = 'SmallShields'}),	--Leather Shield
+  Weapon:new({id = 0x0134AF70, typ = 'SmallShields'}),	--Crimson Parma
+  Weapon:new({id = 0x0134D680, typ = 'SmallShields'}),	--Eastern Iron Shield
+  Weapon:new({id = 0x0134FD90, typ = 'SmallShields'}),	--Llewellyn Shield
+  Weapon:new({id = 0x01354BB0, typ = 'SmallShields'}),	--Golden Falcon Shield
+
+--Weapon:new({id = 0x01421CF0, typ = 'StandardShields', cutContent = true}),	--Prince's Shield
+--Weapon:new({id = 0x013524A0, typ = 'StandardShields', cutContent = true}),	--Cleric's Parma
+  Weapon:new({id = 0x013572C0, typ = 'StandardShields'}),	--Sacred Bloom Shield
+  Weapon:new({id = 0x0131A230, typ = 'StandardShields'}),	--Round Shield
+  Weapon:new({id = 0x0132DAB0, typ = 'StandardShields'}),	--Wooden Shield
+  Weapon:new({id = 0x013301C0, typ = 'StandardShields'}),	--Kite Shield
+  Weapon:new({id = 0x0135C0E0, typ = 'StandardShields', dlc = 1}),	--Followers Shield
+  Weapon:new({id = 0x01409650, typ = 'StandardShields'}),	--Lothric Knight Shield
+  Weapon:new({id = 0x01410B80, typ = 'StandardShields'}),	--Knight Shield
+  Weapon:new({id = 0x014159A0, typ = 'StandardShields'}),	--Pontiff Knight Shield
+  Weapon:new({id = 0x014180B0, typ = 'StandardShields'}),	--Carthus Shield
+  Weapon:new({id = 0x0141F5E0, typ = 'StandardShields'}),	--Black Knight Shield
+  Weapon:new({id = 0x01426B10, typ = 'StandardShields'}),	--Spiked Shield
+  Weapon:new({id = 0x0142B930, typ = 'StandardShields'}),	--East-West Shield
+  Weapon:new({id = 0x01429220, typ = 'StandardShields'}),	--Pierce Shield
+  Weapon:new({id = 0x01424400, typ = 'StandardShields'}),	--Silver Knight Shield
+  Weapon:new({id = 0x01430750, typ = 'StandardShields'}),	--Crest Shield
+  Weapon:new({id = 0x0142E040, typ = 'StandardShields'}),	--Sunlight Shield
+  Weapon:new({id = 0x01432E60, typ = 'StandardShields'}),	--Dragon Crest Shield
+  Weapon:new({id = 0x01435570, typ = 'StandardShields'}),	--Spider Shield
+  Weapon:new({id = 0x0143A390, typ = 'StandardShields'}),	--Sunset Shield
+  Weapon:new({id = 0x01437C80, typ = 'StandardShields'}),	--Grass Crest Shield
+  Weapon:new({id = 0x0143F1B0, typ = 'StandardShields'}),	--Blue Wooden Shield
+  Weapon:new({id = 0x014418C0, typ = 'StandardShields'}),	--Silver Eagle Kite Shield
+  Weapon:new({id = 0x0143CAA0, typ = 'StandardShields'}),	--Golden Wing Crest Shield
+  Weapon:new({id = 0x01443FD0, typ = 'StandardShields'}),	--Stone Parma
+  Weapon:new({id = 0x01448DF0, typ = 'StandardShields'}),	--Porcine Shield
+  Weapon:new({id = 0x014466E0, typ = 'StandardShields'}),	--Spirit Tree Crest Shield
+  Weapon:new({id = 0x0144B500, typ = 'StandardShields'}),	--Shield of Want
+  Weapon:new({id = 0x0144DC10, typ = 'StandardShields'}),	--Wargod Wooden Shield
+  Weapon:new({id = 0x01450320, typ = 'StandardShields', dlc = 1}),	--Ethereal Oak Shield
+
+  Weapon:new({id = 0x013599D0, typ = 'Greatshields'}),	--Ancient Dragon Greatshield
+  Weapon:new({id = 0x0135E7F0, typ = 'Greatshields', dlc = 2}),	--Dragonhead Shield
+  Weapon:new({id = 0x013376F0, typ = 'Greatshields'}),	--Havel's Greatshield
+  Weapon:new({id = 0x01452A30, typ = 'Greatshields', dlc = 2}),	--Dragonhead Greatshield
+  Weapon:new({id = 0x014FD890, typ = 'Greatshields'}),	--Lothric Knight Greatshield
+  Weapon:new({id = 0x014FFFA0, typ = 'Greatshields'}),	--Cathedral Knight Greatshield
+  Weapon:new({id = 0x01504DC0, typ = 'Greatshields'}),	--Dragonslayer Greatshield
+  Weapon:new({id = 0x015074D0, typ = 'Greatshields'}),	--Moaning Shield
+--Weapon:new({id = 0x01509BE0, typ = 'Greatshields', cutContent = true}),	--Ancient Dragon Great Shield
+  Weapon:new({id = 0x0150C2F0, typ = 'Greatshields'}),	--Yhorm's Greatshield
+  Weapon:new({id = 0x0150EA00, typ = 'Greatshields'}),	--Black Iron Greatshield
+  Weapon:new({id = 0x01511110, typ = 'Greatshields'}),	--Wolf Knight's Greatshield
+  Weapon:new({id = 0x01513820, typ = 'Greatshields'}),	--Twin Dragon Greatshield
+  Weapon:new({id = 0x01515F30, typ = 'Greatshields'}),	--Greatshield of Glory
+  Weapon:new({id = 0x01518640, typ = 'Greatshields'}),	--Curse Ward Greatshield
+  Weapon:new({id = 0x0151AD50, typ = 'Greatshields'}),	--Bonewheel Shield
+  Weapon:new({id = 0x0151D460, typ = 'Greatshields'}),	--Stone Greatshield
+  Weapon:new({id = 0x00F5F8C0, typ = 'Greatshields', dlc = 2}),	--Great Door Twinshields
+
+--Weapon:new({id = 0x00F55C80, typ = 'StraightSwords', cutContent = true}),	--Golden Dual Swords
+  Weapon:new({id = 0x000D9490, typ = 'StraightSwords', cutContent = true}),	--Broken Sword with Glow
+  Weapon:new({id = 0x000E30D0, typ = 'Daggers', cutContent = true}),	--transparent dagger
+  Weapon:new({id = 0x000E3134, typ = 'StraightSwords', cutContent = true}),	--transparent sword
+  Weapon:new({id = 0x000E31FC, typ = 'Greatswords', cutContent = true}),	--transparent greatsword
+  Weapon:new({id = 0x000E3328, typ = 'CurvedSwords', cutContent = true}),	--transparent curved sword
+  Weapon:new({id = 0x000E3454, typ = 'Axes', cutContent = true}),	--transparent axe
+  Weapon:new({id = 0x000E34B8, typ = 'Greataxes', cutContent = true}),	--transparent greataxe
+  Weapon:new({id = 0x000E351C, typ = 'Hammers', cutContent = true}),	--transparent mace
+  Weapon:new({id = 0x000E3648, typ = 'Halberds', cutContent = true}),	--transparent halberd
+  Weapon:new({id = 0x000E3710, typ = 'Staves', cutContent = true}),	--transparent staff
+  Weapon:new({id = 0x000E383C, typ = 'Whips', cutContent = true}),	--transparent whip
+  Weapon:new({id = 0x000E3904, typ = 'Greatbows', cutContent = true}),	--transparent greatbow
+  Weapon:new({id = 0x000E3A30, typ = 'Fists', cutContent = true}),	--transparent caestus
+  Weapon:new({id = 0x000E3B5C, typ = 'Axes', cutContent = true}),	--transparent paired axe
+  Weapon:new({id = 0x000E3C24, typ = 'StraightSwords', cutContent = true}),	--transparent paired sword
+  Weapon:new({id = 0x000E3D50, typ = 'Fists', cutContent = true}),	--transparent demon fist
+  Weapon:new({id = 0x000E3E18, typ = 'Hammers', cutContent = true}),	--transparent paired hammers
+  Weapon:new({id = 0x000E3F44, typ = 'StandardShields', cutContent = true}),	--transparent round shield
+  Weapon:new({id = 0x000E400C, typ = 'Torches', cutContent = true}),	--transparent torch
+  Weapon:new({id = 0x055E0DD0, typ = 'StraightSwords', cutContent = true}),	--Twinswords with torch effect
+}
+
+function createWindow()
+  local formName = 'Weapons'
+  win:create('TCEForm', nil, {Caption = formName})
+  win:initDefaultForm(formName)
+
+  local infusions = {
+    'Normal',
+    'Heavy',
+    'Sharp',
+    'Refined',
+    'Simple',
+    'Crystal',
+    'Fire',
+    'Chaos',
+    'Lightning',
+    'Deep',
+    'Dark',
+    'Poison',
+    'Blood',
+    'Raw',
+    'Blessed',
+    'Hollow'
+  }
+
+  win:create('TLabel', formName, {Caption = 'Include', Left = 15})
+  win:create('TScrollBox', formName, {Caption = 'WeaponList', Width = 240, Height = 105, Left = 10, Top = 15 })
+  local checkBoxes = {'Daggers', 'Straight Swords', 'Greatswords', 'Ultra Greatswords', 'Curved Swords', 'Curved Greatswords', 'Katanas', 'Rapiers', 'Axes', 'Greataxes', 'Hammers', 'Great Hammers', 'Fists', 'Spears', 'Halberds', 'Reapers', 'Whips', 'Torches', 'Bows', 'Greatbows', 'Crossbows', 'Staves', 'Flames', 'Talismans', 'Chimes', 'Small Shields','Standard Shields', 'Greatshields'}
+  win:create('TCheckBox', 'WeaponList', {Checked = true}, 'CheckAll')
+  win.ctrl['CheckAll'].onChange = changeAllCheckBoxes
+  for _, checkBox in pairs(checkBoxes) do
+    win:create('TCheckBox', 'WeaponList', {Caption = checkBox, Checked = true})
+  end
+  win:initialize('WeaponList',{ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', EnlargeHorizontal = 'crsScaleChilds', LeftRightSpacing = 5}})
+
+  win:create('TGroupBox', formName, {Caption = 'DLC', Left = 10, Top = win.ctrl['WeaponList'].y, ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', LeftRightSpacing = 5}})
+  win:create('TCheckBox', 'DLC', {Caption = 'Base Game', Checked = true})
+  win:create('TCheckBox', 'DLC', {Caption = 'Ashes of Ariandel', Checked = true})
+  win:create('TCheckBox', 'DLC', {Caption = 'Ringed City', Checked = true})
+  win:fixSize('DLC', 5, 25)
+
+  win:create('TGroupBox', formName, {Caption = 'Content', Left = win.ctrl['DLC'].x + 10, Top = win.ctrl['WeaponList'].y, ChildSizing = {Layout = 'cclLeftToRightThenTopToBottom', LeftRightSpacing = 5}})
+  win:create('TCheckBox', 'Content', {Caption = 'Game Content', Checked = true})
+  win:create('TCheckBox', 'Content', {Caption = 'Cut Content', Checked = false})
+  win:fillGap('Content', {x = 'WeaponList', y = 'DLC'})
+
+  win:fixSize(formName, 10, 90)
+  win:create('TLabel', formName, {Caption = 'Infusion:', Left = 10, Top = win.ctrl[formName].Height - 75})
+  win:create('TCEComboBox', formName, {Caption = 'Infusion', Width = win.ctrl[formName].Width - 70, Height = 40, Left = 60, Top = win.ctrl[formName].Height - 80})
+  win:addItems('Infusion', infusions)
+  win:create('TButton', formName, {Caption = 'Spawn', Width = win.ctrl[formName].Width - 20, Height = 40, Left = 10, Top = win.ctrl[formName].Height - 50})
+  win.ctrl['Spawn'].onClick = spawn
+end
+
+function changeAllCheckBoxes()
+  win:changeCheckBoxes('WeaponList')
+end
+
+function spawn()
+  local checkBoxes = win.ctrl
+  local baseAddress = GetAddress('ItemArray')
+  local infusion = win.ctrl['Infusion'].getItemIndex() * 100 + 10
+  local totalItems = 0
+  for _, weapon in pairs(weapons) do
+       if(weapon:checkAll(checkBoxes)) then
+         totalItems = totalItems + 1
+         if(weapon.typ == 'SmallShields' or weapon.typ == 'StandardShields' or weapon.typ == 'Greatshields') then
+           baseAddress = weapon:spawn(baseAddress, 10)
+         else
+           if(weapon.id == 0x00A87500) then baseAddress = weapon:spawn(baseAddress, 0) --Dark Hand case
+           else baseAddress = weapon:spawn(baseAddress, infusion) end
+         end
+       end
+  end
+  WriteInteger(GetAddress('ItemArray'), totalItems)
+  autoAssemble('CreateThread(MassItemGib)')
+  win.ctrl.Weapons.close()
+end
+
+[ENABLE]
+createWindow()
+
+[DISABLE]
+

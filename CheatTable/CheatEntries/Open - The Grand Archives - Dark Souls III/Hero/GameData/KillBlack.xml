@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337078903</ID>
+  <Description>"KillBlack"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>8C</Offset>
+  </Offsets>
+</CheatEntry>

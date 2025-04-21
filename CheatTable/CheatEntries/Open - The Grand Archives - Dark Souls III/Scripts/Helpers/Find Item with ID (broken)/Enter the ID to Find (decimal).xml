@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>72408</ID>
+  <Description>"Enter the ID to Find (decimal)"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>itemid_value</Address>
+</CheatEntry>

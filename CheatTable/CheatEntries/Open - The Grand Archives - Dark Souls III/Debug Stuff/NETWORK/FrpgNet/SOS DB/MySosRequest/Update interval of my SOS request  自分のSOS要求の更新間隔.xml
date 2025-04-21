@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337096732</ID>
+  <Description>"Update interval of my SOS request | 自分のSOS要求の更新間隔"</Description>
+  <VariableType>Float</VariableType>
+  <Address>FrpgNetMan</Address>
+  <Offsets>
+    <Offset>70</Offset>
+    <Offset>B90</Offset>
+  </Offsets>
+</CheatEntry>

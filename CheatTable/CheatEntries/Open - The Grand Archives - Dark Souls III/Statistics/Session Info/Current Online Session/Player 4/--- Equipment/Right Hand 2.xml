@@ -1,0 +1,13 @@
+<CheatEntry>
+  <ID>86949</ID>
+  <Description>"Right Hand 2"</Description>
+  <ShowAsHex>1</ShowAsHex>
+  <VariableType>4 Bytes</VariableType>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>338</Offset>
+    <Offset>1FA0</Offset>
+    <Offset>E0</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

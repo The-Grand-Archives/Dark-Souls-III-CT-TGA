@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>1337097684</ID>
+  <Description>"Vfx R/G/B"</Description>
+  <Options moRecursiveSetValue="1"/>
+  <VariableType>Float</VariableType>
+  <Address>DarkSoulsIII.exe+3D6C0C0</Address>
+  <x-ce2fs-child-order>
+    <id id="1337097685"/>
+    <id id="1337097686"/>
+    <id id="1337097687"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

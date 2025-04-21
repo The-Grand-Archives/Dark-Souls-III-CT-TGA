@@ -1,0 +1,6 @@
+<CheatEntry>
+  <ID>1337046255</ID>
+  <Description>"Guard Angle"</Description>
+  <VariableType>Byte</VariableType>
+  <Address>+e4</Address>
+</CheatEntry>

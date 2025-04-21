@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337037187</ID>
+  <Description>"EffectOnHitDisabled"</Description>
+  <ShowAsSigned>1</ShowAsSigned>
+  <VariableType>Binary</VariableType>
+  <BitStart>2</BitStart>
+  <BitLength>1</BitLength>
+  <ShowAsBinary>0</ShowAsBinary>
+  <Address>+07D</Address>
+</CheatEntry>

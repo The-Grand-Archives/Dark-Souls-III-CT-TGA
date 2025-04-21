@@ -1,0 +1,9 @@
+<CheatEntry>
+  <ID>107635</ID>
+  <Description>"Players count (read only)"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameMan</Address>
+  <Offsets>
+    <Offset>D3C</Offset>
+  </Offsets>
+</CheatEntry>

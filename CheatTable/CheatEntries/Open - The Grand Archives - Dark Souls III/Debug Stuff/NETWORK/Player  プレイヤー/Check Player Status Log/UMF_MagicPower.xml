@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097089</ID>
+  <Description>"UMF_MagicPower"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>4E4</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>

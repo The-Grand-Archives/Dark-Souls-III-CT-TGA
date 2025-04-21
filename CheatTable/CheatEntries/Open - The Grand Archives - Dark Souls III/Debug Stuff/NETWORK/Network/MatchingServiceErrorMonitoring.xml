@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097677</ID>
+  <Description>"MatchingServiceErrorMonitoring"</Description>
+  <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">0:Disable
+1:Enable
+</DropDownList>
+  <Color>C0C0C0</Color>
+  <VariableType>Byte</VariableType>
+  <Address>0</Address>
+</CheatEntry>

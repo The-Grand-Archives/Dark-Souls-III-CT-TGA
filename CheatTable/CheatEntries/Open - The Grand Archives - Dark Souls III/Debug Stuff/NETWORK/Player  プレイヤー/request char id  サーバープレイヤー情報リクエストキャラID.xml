@@ -1,0 +1,10 @@
+<CheatEntry>
+  <ID>1337097056</ID>
+  <Description>"request char id | サーバープレイヤー情報リクエストキャラID"</Description>
+  <VariableType>4 Bytes</VariableType>
+  <Address>FdpClient</Address>
+  <Offsets>
+    <Offset>4A8</Offset>
+    <Offset>20</Offset>
+  </Offsets>
+</CheatEntry>
