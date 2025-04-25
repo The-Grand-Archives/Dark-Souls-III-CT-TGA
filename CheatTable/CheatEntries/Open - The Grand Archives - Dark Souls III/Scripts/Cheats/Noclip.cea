@@ -1,0 +1,230 @@
+// author: Dasaav
+// Controls are tied to regular character and camera controls
+// Arrow keys or D-pad up/down are used for vertical movement
+{$lua}
+if syntaxcheck then return end
+address_version("1.15.2")
+{$asm}
+[ENABLE]
+{$c}
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
+
+#define WIN32_LEAN_AND_MEAN
+#include <winapi/windows.h>
+
+extern void* FD4PadManager;
+extern void* FieldArea;
+extern void* SprjFlipper;
+extern void* WorldChrMan;
+
+// FD4PadManager holds a Microsoft STL std::map where the keys are unique
+// objects with a comparison function that compares their memory addresses.
+// They presumably used to contain strings, which are not there in the release
+// binary. The values are key input interfaces.
+struct _SprjPadTreeNode;
+typedef struct _SprjPadTreeNode {
+    struct _SprjPadTreeNode* left;
+    struct _SprjPadTreeNode* parent;
+    struct _SprjPadTreeNode* right;
+    char color;
+    char is_nil;
+    uintptr_t key;
+    void* sprj_pad;
+} SprjPadTreeNode;
+
+// Traverses the std::map and returns the main in-game
+// input interface. The `key` is hardcoded to the corresponding address.
+void* get_sprj_pad_interface() {
+    if (FD4PadManager == NULL) {
+        return NULL;
+    }
+
+    SprjPadTreeNode* head = **(SprjPadTreeNode***)(
+        (uintptr_t)FD4PadManager + 0x38);
+
+    SprjPadTreeNode* node = head->parent;
+    SprjPadTreeNode* found = node;
+
+    uintptr_t key = (uintptr_t)GetModuleHandle(NULL) + 0x4751927;
+
+    while (!node->is_nil) {
+        if (node->key < key) {
+            node = node->right;
+        } else {
+            found = node;
+            node = node->left;
+        }
+    }
+
+    if (found == head || found->key != key) {
+        return NULL;
+    }
+
+    return found->sprj_pad;
+}
+
+// Represents a 2D vector in the direction of the held movement input.
+typedef struct {
+    float x;
+    float y;
+} MoveInputXY;
+
+typedef void (*SprjPad_get_xy_movement_input)(void*, MoveInputXY*, int, int);
+
+// Returns the movement input vector regardless of input device.
+// At this level, gamepad and keyboard input is abstracted away.
+MoveInputXY get_xy_movement_input(void* sprj_pad) {
+    MoveInputXY input = { 0.0f, 0.0f };
+
+    if (sprj_pad != NULL) {
+        // Call into virtual function index 6 in the virtual function table.
+        void** sprj_pad_vtable = *(void***)(sprj_pad);
+
+        ((SprjPad_get_xy_movement_input)(sprj_pad_vtable[6]))(
+            sprj_pad, &input, 72, 71);
+    }
+
+    return input;
+}
+
+typedef bool (*SprjPad_is_key_pressed)(void*, int);
+
+// Returns the dpad/arrow key up and down input.
+float get_up_down_input(void* sprj_pad) {
+    float input = 0.0f;
+
+    if (sprj_pad != NULL) {
+        SprjPad_is_key_pressed is_key_pressed =
+            (SprjPad_is_key_pressed)((uintptr_t)GetModuleHandle(NULL) + 0x233de40);
+
+        if (is_key_pressed(sprj_pad, 44)) {
+            input += 1.0f;
+        }
+
+        if (is_key_pressed(sprj_pad, 45)) {
+            input -= 1.0f;
+        }
+    }
+
+    return input;
+}
+
+// Simple linalg stuff for transforming noclip movement to camera space.
+typedef struct {
+    float x;
+    float y;
+    float z;
+    float w;
+} Vector4;
+
+typedef struct {
+    Vector4 r0;
+    Vector4 r1;
+    Vector4 r2;
+    Vector4 r3;
+} Matrix44;
+
+Vector4 mv_product_ignore_w(Matrix44* m, Vector4* v) {
+    Vector4 result;
+
+    result.x = m->r0.x * v->x + m->r1.x * v->y + m->r2.x * v->z;
+    result.y = m->r0.y * v->x + m->r1.y * v->y + m->r2.y * v->z;
+    result.z = m->r0.z * v->x + m->r1.z * v->y + m->r2.z * v->z;
+    result.w = 0.0f;
+
+    return result;
+}
+
+// Returns the view matrix (regardless of camera type).
+Matrix44* get_view_matrix() {
+    if (FieldArea != NULL) {
+        void* chr_cam = *(void**)((uintptr_t)FieldArea + 0x28);
+
+        if (chr_cam != NULL) {
+            return (Matrix44*)((uintptr_t)chr_cam + 0x10);
+        }
+    }
+
+    return NULL;
+}
+
+float get_delta_time() {
+    if (SprjFlipper != NULL) {
+        return *(float*)((uintptr_t)SprjFlipper + 0x268);
+    }
+
+    return 0.01666666f;
+}
+
+bool is_main_player(void* player_ins) {
+    if (player_ins == NULL || WorldChrMan == NULL) {
+        return false;
+    }
+
+    return player_ins == *(void**)((uintptr_t)WorldChrMan + 0x80);
+}
+{$asm}
+alloc(physics_update_hook, $1000, $process)
+
+physics_update_hook:
+{$ccode physics_module=rcx}
+// Filter non-player entities.
+if (is_main_player(*(void**)((uintptr_t)physics_module + 0x08))) {
+    Matrix44* view_matrix = get_view_matrix();
+
+    if (view_matrix != NULL) {
+        void* sprj_pad = get_sprj_pad_interface();
+
+        // Get up/down movement.
+        float ud_input = get_up_down_input(sprj_pad);
+
+        // Get 2D movement vector.
+        MoveInputXY input = get_xy_movement_input(sprj_pad);
+
+        // Map movement to world coordinates.
+        Vector4 input_vec4 = { input.x, 0.0f, input.y, 0.0f };
+
+        // Scale movement to approx. 10 m/s.
+        float scale = 10.0f * get_delta_time();
+        input_vec4.x *= scale;
+        ud_input *= 0.7f * scale;
+        input_vec4.z *= scale;
+
+        // Transform movement to camera space.
+        Vector4 product = mv_product_ignore_w(view_matrix, &input_vec4);
+
+        // Offset player position.
+        Vector4* player_pos = (Vector4*)((uintptr_t)physics_module + 0x80);
+        player_pos->x += product.x;
+        player_pos->y += product.y + ud_input;
+        player_pos->z += product.z;
+
+        // Cleanup: mark player pos as "updated" to prevent the game
+        // from updating it (effectively, disables clipping) and disable gravity.
+        *(char*)((uintptr_t)physics_module + 0x1e1) = 1;
+        void* player_ins = *(void**)((uintptr_t)physics_module + 0x08);
+        uint8_t* player_flags = (char*)((uintptr_t)player_ins + 0x1A08);
+        uint8_t gravity_flag = 1 << 6;
+        *player_flags |= gravity_flag;
+    }
+}
+{$asm}
+push rbx
+sub rsp,50
+jmp $process+9DC4D6
+
+$process+9DC4D0:
+jmp physics_update_hook
+
+[DISABLE]
+[[WorldChrMan]+80]+1A08:
+db 98
+
+$process+9DC4D0:
+db 40
+push rbx
+sub rsp,50
+
+dealloc(physics_update_hook)
