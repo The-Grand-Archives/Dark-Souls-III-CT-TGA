@@ -1,0 +1,80 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+equipItem_data = allocateMemory(0x20, getAddress(process))
+
+local equipGear_addr = AOBScanModuleUnique(process, "?? 8b f1 ?? 8b d8 ?? 63 ea ?? 8b f9") - 0x2B
+local equipGoods_addr = AOBScanModuleUnique(process, "?? fa ?? ?? 0f ?? 81 c1 ?? ?? ?? ?? ?? 8b c1 e9")
+
+local addr = 0
+
+function equipItem(slot, invIdx)
+	if slot == nil then	return false end
+
+	local function changeEquipment(EquipGameData, slot, data, idx)
+		if slot <= 21 then
+			return executeCodeEx(0, 100, equipGear_addr, EquipGameData, slot, data, idx, 1, 1, 0)
+		elseif slot <= 36 then
+			slot = slot - 22
+			return executeCodeEx(0, 100, equipGoods_addr, EquipGameData, slot, data, idx)
+		end
+
+		return false
+	end
+
+	local function getItemIfMissing(id)
+		local idx = getItemIdx(id)
+		if not idx then
+			ItemGive(id)
+			return getItemIdx(id)
+		end
+		return idx
+	end
+
+	local GameDataMan = readPointer("GameDataMan")
+	local PlayerGameData = readPointer(GameDataMan + 0x10)
+	local EquipGameData = PlayerGameData + 0x228
+	local EquipInventoryData = readPointer(PlayerGameData + 0x520)
+
+	local tailDataIdx = readInteger(EquipInventoryData + 0x24)
+	local item = 0xFFFFFFFF
+
+    if slot == 10 or slot == 11 or slot == 16 then
+		invIdx = -1
+    end
+
+	if invIdx ~= nil and invIdx ~= 0xFFFFFFFF and invIdx >= 0 then
+		writeInteger(equipItem_data + 0x10, getItemByIdx(invIdx))
+	else
+		local protector_type = 0x10000000
+		if slot <= 5 then
+			item = 110000
+		elseif slot == 12 then
+			item = 10000 + protector_type
+		elseif slot == 13 then
+			item = 10100 + protector_type
+		elseif slot == 14 then
+			item = 10200 + protector_type
+		elseif slot == 15 then
+			item = 10300 + protector_type
+		else
+			invIdx = 0xFFFFFFFF
+			tailDataIdx = 0
+		end
+		if invIdx ~= 0xFFFFFFFF then invIdx = getItemIfMissing(item) end
+		if not invIdx then throwError("Item not found") end
+		writeInteger(equipItem_data + 0x10, item)
+	end
+
+	return changeEquipment(EquipGameData, slot, equipItem_data + 0x10, invIdx + tailDataIdx)
+end
+
+function unequipItem(slot)
+	equipItem(slot)
+end
+
+[DISABLE]
+deAlloc(equipItem_data)
+equipItem_data = nil
+equipItem = nil
+unequipItem = nil

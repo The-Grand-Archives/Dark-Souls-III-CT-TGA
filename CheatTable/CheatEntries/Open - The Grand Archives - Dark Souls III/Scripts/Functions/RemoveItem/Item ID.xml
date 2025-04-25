@@ -1,9 +1,0 @@
-<CheatEntry>
-  <ID>1337272808</ID>
-  <Description>"Item ID"</Description>
-  <DropDownListLink>ITEM_ID</DropDownListLink>
-  <ShowAsHex>1</ShowAsHex>
-  <ShowAsSigned>0</ShowAsSigned>
-  <VariableType>4 Bytes</VariableType>
-  <Address>RemoveItem_data+4</Address>
-</CheatEntry>

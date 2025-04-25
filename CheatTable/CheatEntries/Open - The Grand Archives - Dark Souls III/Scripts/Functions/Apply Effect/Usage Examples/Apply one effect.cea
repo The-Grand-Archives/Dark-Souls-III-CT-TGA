@@ -1,8 +1,6 @@
-[ENABLE]
-EffectID:
-dd #3040      // Green Blossom
-dd 00000000   // end
-createthread(ApplyEffect)
 {$lua}
-if not syntaxcheck then disableMemrec(memrec) end
+if syntaxcheck then return end
+[ENABLE]
+SpEffect.add(3040)  -- Green Blossom
+disableMemrec(memrec)
 [DISABLE]

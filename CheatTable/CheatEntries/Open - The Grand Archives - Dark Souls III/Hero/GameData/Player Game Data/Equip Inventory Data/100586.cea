@@ -1,0 +1,13 @@
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+local GameDataMan = readPointer("GameDataMan")
+local PlayerGameData = readPointer(GameDataMan + 0x10)
+local idx = PlayerGameData + 0x468
+local new_idx = readInteger(idx) - 1
+if new_idx >= 0 then
+   writeInteger(idx, new_idx)
+end
+
+disableMemrec(memrec)
+[DISABLE]

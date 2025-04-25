@@ -1,35 +1,15 @@
-// Author: inuNorii
+{$lua}
+if syntaxcheck then return end
 [ENABLE]
-aobscanmodule(ApplyEffect_AOB,$process,C6 40 B0 00 C7) // alt: 44 88 40 B0 C7
-define(ApplyEffect_Call,ApplyEffect_AOB-1D)
-alloc(ApplyEffect,$100,DarkSoulsIII.exe)
-label(EffectID)
-registerSymbol(ApplyEffect)
-registerSymbol(EffectID)
+if SpEffect == nil then
+    getAddressList().getMemoryRecordByDescription("SpEffect_code").active = true
+    throwError("'SpEffect' symbol was not found.\nTry enabling this script again.")
+end
 
-ApplyEffect:
-sub rsp,48
-lea r12,[EffectID]
-mov rbx,[WorldChrMan]
-effect_loop:
-test rbx,rbx
-je short end
-mov rcx,[rbx+80]
-mov edx,[r12]
-mov r8,rcx
-call ApplyEffect_Call
-add r12,4
-cmp dword ptr [r12],00000000
-jne short effect_loop
-end:
-add rsp,48
-ret
+-- Actual code is located in Misc/WIP -> Dependencies -> Global Functions
 
-EffectID:
-dd #3040      // Green Blossom
-dd 00000000   // end
+-- SpEffect.addForSelf(id, ptr)
+-- SpEffect.eraseAll(id, ptr)
+-- SpEffect.remove(id, ptr)
 
 [DISABLE]
-dealloc(ApplyEffect)
-unregisterSymbol(ApplyEffect)
-unregisterSymbol(EffectID)

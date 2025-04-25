@@ -1,32 +1,20 @@
-//Author: inuNorii, originally found by TheSpicyChef
-//Why replicate the function that handles MenuDropData
-//when you could just use it as well
+{$lua}
+if syntaxcheck then return end
 [ENABLE]
-aobscanmodule(ItemDrop_Call,$process,48 89 6C 24 10 48 89 74 24 18 48 89 7C 24 20 41 56 48 83 EC 70 41)
-aobscanmodule(MenuDropData_AOB,$process,89 82 ???????? 8B 41 0C 89 82 ???????? C3)
-define(MenuDropData_Call,MenuDropData_AOB-1B)
-alloc(ItemDrop,$100,DarkSoulsIII.exe)
-registerSymbol(ItemDrop)
-registerSymbol(ItemDropData)
+if ItemDrop == nil then
+    getAddressList().getMemoryRecordByDescription("ItemDrop_code").active = true
+    throwError("'ItemDrop' symbol was not found.\nTry enabling this script again.")
+end
 
-ItemDrop:
-sub rsp,48
-lea rcx,[ItemDropData]
-call MenuDropData_Call
-mov rcx,[MapItemMan]
-xor edx,edx
-xor r8d,r8d
-call ItemDrop_Call
-add rsp,48
-ret
+ItemDrop_data = allocateMemory(16, getAddress(process))
+writeInteger(ItemDrop_data + 0, 0x00000000) -- Item
+writeInteger(ItemDrop_data + 4, 0x00000001) -- Quantity
+writeInteger(ItemDrop_data + 8, 0xFFFFFFFF) -- Durability
 
-ItemDropData:
-dd 40000000
-dd 000001F4
-dd FFFFFFFF
-dd 00000001
+-- Actual code is located in Misc/WIP -> Dependencies -> Global Functions
+
+-- ItemDrop(item, quantity, durability, isMultiDropShare, isScatter)
 
 [DISABLE]
-dealloc(ItemDrop)
-unregisterSymbol(ItemDrop)
-unregisterSymbol(ItemDropData)
+deAlloc(ItemDrop_data)
+ItemDrop_data = nil

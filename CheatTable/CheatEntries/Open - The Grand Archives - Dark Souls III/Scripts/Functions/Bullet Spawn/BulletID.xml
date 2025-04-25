@@ -3,5 +3,5 @@
   <Description>"BulletID"</Description>
   <ShowAsSigned>1</ShowAsSigned>
   <VariableType>4 Bytes</VariableType>
-  <Address>BulletID</Address>
+  <Address>BulletSpawn.data</Address>
 </CheatEntry>

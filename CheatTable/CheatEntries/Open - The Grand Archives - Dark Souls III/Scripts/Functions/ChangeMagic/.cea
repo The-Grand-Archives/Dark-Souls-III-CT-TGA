@@ -2,66 +2,21 @@
 {$lua}
 if syntaxcheck then return end
 [ENABLE]
+if changeMagic == nil then
+    getAddressList().getMemoryRecordByDescription("changeMagic_code").active = true
+    throwError("'changeMagic' symbol was not found.\nTry enabling this script again.")
+end
+
 changeMagic_data = allocateMemory(16, getAddress(process))
 writeInteger(changeMagic_data, 0xFFFFFFFF)
-writeInteger(changeMagic_data + 4, 1200000)
+writeInteger(changeMagic_data + 4, 4000)
 
-local changeMagic_addr = AOBScanModuleUnique(process, "?? 83 ec ?? ?? 8d ?? ?? 8b 49 08 e8")
--- v1.15.2 0x140BABE60
+-- Actual code is located in Misc/WIP -> Dependencies -> Global Functions
 
-function changeMagic(magicSlot, magicId)
-	local function checkMagicSlot(PlayerGameData, slot)
-		local magicSlots = readInteger(PlayerGameData + 0x918) - 1
-
-		if slot > magicSlots then slot = magicSlots end
-
-		if slot < 0 or slot > 13 then
-			error("invalid slot", 2)
-		end
-
-		return slot
-	end
-
-	local function isAttuned(EquipMagicData, id)
-		if id == -1 then return false end
-
-		for i=0,13 do
-			if readInteger(EquipMagicData + i*8 + 0x18) == id then
-				return true
-			end
-		end
-	end
-
-	local GameDataMan = readPointer("GameDataMan")
-	local PlayerGameData = readPointer(GameDataMan + 0x10)
-	local EquipMagicData = readPointer(PlayerGameData + 0x470)
-
-	if not magicSlot or magicSlot == nil then magicSlot = 0 end
-	if not magicId or magicId == nil then magicId = -1 end
-
-	if isAttuned(EquipMagicData, magicId) then return false end
-	magicSlot = checkMagicSlot(PlayerGameData, magicSlot)
-
-	local mem = allocateMemory(128, getAddress(process))
-	writeInteger(mem + 0x08, magicSlot)
-	writeInteger(mem + 0x4C, magicId + 0x40000000)
-
-	local r = executeCodeEx(0, 100, changeMagic_addr, mem)
-	deAlloc(mem)
-	return r
-end
-
-function addMagic(magicId)
-	changeMagic(13, magicId)
-end
-
-function removeMagic(magicSlot)
-	changeMagic(slot or 0, -1)
-end
+-- changeMagic(magicSlot, magicId)
+-- addMagic(magicId)
+-- removeMagic(magicSlot)
 
 [DISABLE]
 deAlloc(changeMagic_data)
-changeMagic = nil
 changeMagic_data = nil
-addMagic = nil
-removeMagic = nil

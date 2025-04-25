@@ -3,6 +3,7 @@
 ### Changed
  - Move World Flags into Deprecated unter Event Flags
  - Adjusted the event flags aob to work with seamless co-op
+ - Ported over most of our Elden Ring table's "Global Functions" and updated multiple scripts to make use of them
 ### Fixed
  - EquipItem
  - Restored old AOBs for Hero -> Animation -> Scripts, making the scripts usable again
@@ -11,6 +12,7 @@
  - Extended blocklist
 ### Removed
  - Custom blocklist
+ - Deprecated "Multiplayer Protection" header
 
 ## [v3.4.0] - 2024-03-06
 ### Added

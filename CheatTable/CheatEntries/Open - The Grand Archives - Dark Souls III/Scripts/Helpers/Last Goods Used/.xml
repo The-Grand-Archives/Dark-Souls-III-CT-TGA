@@ -1,7 +1,6 @@
 <CheatEntry>
   <ID>1337033380</ID>
   <Description>"Last Goods Used"</Description>
-  <Options moHideChildren="1"/>
   <VariableType>Auto Assembler Script</VariableType>
   <x-ce2fs-child-order>
     <id id="1337033381"/>

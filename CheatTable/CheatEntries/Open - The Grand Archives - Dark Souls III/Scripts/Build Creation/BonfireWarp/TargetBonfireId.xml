@@ -90,5 +90,5 @@
 </DropDownList>
   <ShowAsSigned>1</ShowAsSigned>
   <VariableType>4 Bytes</VariableType>
-  <Address>TargetBonfireId</Address>
+  <Address>warp_data</Address>
 </CheatEntry>

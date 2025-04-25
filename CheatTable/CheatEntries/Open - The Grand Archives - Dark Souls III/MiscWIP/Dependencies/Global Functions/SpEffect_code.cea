@@ -1,0 +1,44 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local addr = AOBScanModuleUnique(process,"?? 53 ?? 83 ec ?? ?? 8b d9 85 d2 0f 84 ?? ?? ?? ?? ff ca 0f 84 ?? ?? ?? ?? ff ca 74 ?? ff ca 0f 85")
+
+SpEffect = {}
+
+function SpEffect.getPtr(ptr)
+	local PlayerIns = getPlayerIns(ptr)
+    local unkPtr = readPointer(PlayerIns + 0x18)
+    return readPointer(unkPtr + 0x18)
+end
+
+-- 自分に特殊効果発動
+function SpEffect.addForSelf(id, ptr)
+	local SpecialEffect = SpEffect.getPtr(ptr)
+    writeInteger(SpecialEffect + 0x30, id)
+	return executeCodeEx(0, 100, addr, SpecialEffect, 0)
+end
+SpEffect.add = SpEffect.addForSelf
+
+-- 全部消去
+function SpEffect.eraseAll(ptr)
+	local SpecialEffect = SpEffect.getPtr(ptr)
+	return executeCodeEx(0, 100, addr, SpecialEffect, 1)
+end
+SpEffect.erase = SpEffect.eraseAll
+
+-- プレイヤーから特殊効果発動
+function SpEffect.addFromPlayers(id, ptr)
+	local SpecialEffect = SpEffect.getPtr(ptr)
+    writeInteger(SpecialEffect + 0x30, id)
+	return executeCodeEx(0, 100, addr, SpecialEffect, 2)
+end
+
+-- 特殊効果を削除
+function SpEffect.remove(id, ptr)
+	local SpecialEffect = SpEffect.getPtr(ptr)
+    writeInteger(SpecialEffect + 0x30, id)
+	return executeCodeEx(0, 100, addr, SpecialEffect, 3)
+end
+
+[DISABLE]
+SpEffect = nil

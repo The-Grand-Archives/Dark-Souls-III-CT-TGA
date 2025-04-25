@@ -6,7 +6,8 @@
   <Address>GameDataMan</Address>
   <Offsets>
     <Offset>readInteger("[[GameDataMan]+10]+468")*0x10</Offset>
-    <Offset>3D0+18</Offset>
+    <Offset>18</Offset>
+    <Offset>getInvData(readByte("EquipInventoryData_InvType"))[1]</Offset>
     <Offset>10</Offset>
   </Offsets>
   <x-ce2fs-child-order>

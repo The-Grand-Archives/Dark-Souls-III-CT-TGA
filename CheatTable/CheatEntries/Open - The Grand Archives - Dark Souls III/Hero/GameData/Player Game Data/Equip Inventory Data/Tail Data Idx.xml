@@ -5,7 +5,8 @@
   <VariableType>4 Bytes</VariableType>
   <Address>GameDataMan</Address>
   <Offsets>
-    <Offset>3D0+24</Offset>
+    <Offset>24</Offset>
+    <Offset>getInvData(readByte("EquipInventoryData_InvType"))[1]</Offset>
     <Offset>10</Offset>
   </Offsets>
 </CheatEntry>

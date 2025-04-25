@@ -1,0 +1,34 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+BulletSpawn = {
+	addr = AOBScanModuleUnique(process, "?? 89 84 ?? ?? ?? ?? ?? ?? 8b d8 ?? 8b fa ?? 8b f1 ?? 8d") - 0x1E
+}
+
+function BulletSpawn.create(id, coords)
+	if id == nil then return false end
+	local SprjBulletManager = readPointer("SprjBulletManager")
+	local mem = allocateMemory(0x200, getAddress(process))
+    local data = mem + 0x30
+
+	writeInteger(data + 0x10, id)
+
+	if coords ~= nil and type(coords) == "table" then
+		for i,v in ipairs(coords) do
+			writeFloat(data + 0x4C + 0x10 * i - 0x10, v)
+		end
+	else
+		local PlayerIns = getPlayerIns()
+        local ChrModules = readPointer(PlayerIns + 0x1F90)
+        local SprjChrPhysicsModule = readPointer(ChrModules + 0x68)
+        for i=0,2 do
+            writeFloat(data + 0x4C + 0x10 * i, readFloat(SprjChrPhysicsModule + 0x80 + 4 * i))
+        end
+	end
+
+	local r = executeCodeEx(0, 100, BulletSpawn.addr, SprjBulletManager, mem, data)
+	deAlloc(mem)
+	return r
+end
+[DISABLE]
+BulletSpawn = nil

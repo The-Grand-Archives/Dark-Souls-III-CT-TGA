@@ -3,5 +3,5 @@
   <Description>"Coord Y"</Description>
   <ShowAsSigned>1</ShowAsSigned>
   <VariableType>Float</VariableType>
-  <Address>BulletCoords+20</Address>
+  <Address>BulletSpawn.data+C</Address>
 </CheatEntry>

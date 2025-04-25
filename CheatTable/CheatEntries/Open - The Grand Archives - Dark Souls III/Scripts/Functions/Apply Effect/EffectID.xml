@@ -3,5 +3,11 @@
   <Description>"EffectID"</Description>
   <ShowAsSigned>1</ShowAsSigned>
   <VariableType>4 Bytes</VariableType>
-  <Address>EffectID</Address>
+  <Address>WorldChrMan</Address>
+  <Offsets>
+    <Offset>30</Offset>
+    <Offset>18</Offset>
+    <Offset>18</Offset>
+    <Offset>80</Offset>
+  </Offsets>
 </CheatEntry>

@@ -1,0 +1,45 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+function isOwnDlc(dlc)
+	local CsDlc = readPointer("CsDlc")
+	local dlc = dlc or 1
+
+	if readByte(CsDlc + 0x10 + dlc) == 1 then
+		return true
+	end
+
+	return false
+end
+
+function isDlcMagic(id)
+	if id > 0x40000000 then id = id - 0x40000000 end
+	if id >= 2004300 and id <= 2007820 then
+		return true
+	end
+	return false
+end
+
+function isInventoryFull(inv)
+	inv = getInvData(inv)
+	if not inv then return false end
+
+	local GameDataMan = readPointer("GameDataMan")
+	local PlayerGameData = readPointer(GameDataMan + 10)
+	local EquipInventoryData = readPointer(PlayerGameData + inv[1])
+	local inventoryNum = readInteger(EquipInventoryData + 0x20 + inv[2] * 0x10)
+
+	if inventoryNum >= inv[3] then return true end
+	return false
+end
+
+function isStorageFull()
+	return isInventoryFull(1)
+end
+
+
+[DISABLE]
+isOwnDlc = nil
+isDlcMagic = nil
+isInventoryFull = nil
+isStorageFull = nil

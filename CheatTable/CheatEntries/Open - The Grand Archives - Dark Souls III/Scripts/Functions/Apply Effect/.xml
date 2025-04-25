@@ -4,8 +4,10 @@
   <Options moHideChildren="1"/>
   <VariableType>Auto Assembler Script</VariableType>
   <x-ce2fs-child-order>
-    <id id="1337080000"/>
     <id id="1337079999"/>
+    <id id="101128"/>
+    <id id="101129"/>
+    <id id="101130"/>
     <id id="1337187864"/>
   </x-ce2fs-child-order>
 </CheatEntry>

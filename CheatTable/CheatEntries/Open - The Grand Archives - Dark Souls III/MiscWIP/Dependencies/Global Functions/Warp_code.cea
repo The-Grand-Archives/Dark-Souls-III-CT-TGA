@@ -1,0 +1,67 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local LuaWarp_01 = AOBScanModuleUnique(process, "BA 10 27 00 00 41 B8 04 0A 01 00") - 0x14
+function lua_warp(warpId, ceremony)
+	local function isDlcBonfire(warpId)
+		local dlc1 = "Ashes of Ariandel"
+		local dlc2 = "The Ringed Rity"
+		local arena_ids = { 4602950, 4702950, 5302950, 5402950 }
+
+		if inArray(arena_ids, warpId) then
+			if isOwnDlc(1) ~= 1 or isOwnDlc(2) ~= 1 then
+				return dlc1.." or "..dlc2
+			end
+		end
+
+		if warpId > 4500000 and warpId < 4600000 then
+			if not isOwnDlc(1) then return dlc1 end
+		elseif warpId >= 5000000 and warpId <= 5200000 then
+			if not isOwnDlc(2) then return dlc2	end
+		else
+			return 0
+		end
+	end
+
+	local function setCeremony(warpId)
+		if warpId == 4002953 then
+			ceremony = 10
+		elseif warpId == 4002954 then
+			ceremony = 10
+		else
+			ceremony = 0
+		end
+		return ceremony
+	end
+
+	if ceremony == nil then
+		 ceremony = setCeremony(warpId)
+	end
+
+	local dlc_result = isDlcBonfire(warpId)
+	if dlc_result ~= 0 then
+		e = "You need to own "..dlc_result.." to warp to this location."
+		throwError(e)
+	end
+
+	if warpId >= 1000 then
+		warpId = warpId-1000
+	else
+		warpId = 0
+	end
+
+	local SprjLuaEventMan = readPointer("SprjLuaEventMan")
+	local SprjLuaEventProxy = readPointer(SprjLuaEventMan + 0x8)
+	local SprjLuaEventScriptImitation = readPointer(SprjLuaEventMan + 0x18)
+    local GameMan = readPointer("GameMan")
+
+    local lastWarpId = readInteger(GameMan + 0xACC) - 1000
+
+	return executeCodeEx(0, 100, LuaWarp_01, SprjLuaEventScriptImitation, SprjLuaEventProxy, lastWarpId, warpId, ceremony)
+end
+Warp = lua_warp
+
+[DISABLE]
+deAlloc(warp_data)
+lua_warp = nil
+Warp = nil

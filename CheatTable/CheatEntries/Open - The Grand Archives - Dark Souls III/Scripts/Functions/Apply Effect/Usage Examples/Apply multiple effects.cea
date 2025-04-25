@@ -1,10 +1,15 @@
-[ENABLE]
-EffectID:
-dd #101310000 // Magic Weapon
-dd #101330000 // Magic Shield
-dd #101354000 // Spook
-dd 00000000   // end
-createthread(ApplyEffect)
 {$lua}
-if not syntaxcheck then disableMemrec(memrec) end
+if syntaxcheck then return end
+[ENABLE]
+local ids = {
+    101310000,  -- Magic Weapon
+    101330000,  -- Magic Shield
+    101354000   -- Spook
+}
+
+for _,id in pairs(ids) do
+    SpEffect.add(id)
+end
+
+disableMemrec(memrec)
 [DISABLE]

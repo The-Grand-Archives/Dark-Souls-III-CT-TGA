@@ -3,5 +3,5 @@
   <Description>"Souls"</Description>
   <ShowAsSigned>1</ShowAsSigned>
   <VariableType>4 Bytes</VariableType>
-  <Address>SoulsToAdd</Address>
+  <Address>AddSoul_value</Address>
 </CheatEntry>

@@ -1,25 +1,45 @@
 {$lua}
 if syntaxcheck then return end
 [ENABLE]
+local invChoice = readByte(EquipInventoryData_InvType)
+local inv = getInvData(invChoice)
+local keyOffset = inv[2] * 0x10
+
 local GameDataMan = readPointer("GameDataMan")
 local PlayerGameData = readPointer(GameDataMan + 0x10)
-local EquipInventoryData = getAddress(PlayerGameData + 0x3D0)
+local EquipInventoryData = readPointer(PlayerGameData + inv[1])
 
-local inventoryList = readPointer(EquipInventoryData + 0x18)
-local inventoryNum = readInteger(EquipInventoryData + 0x20)
+local inventoryList = readPointer(EquipInventoryData + 0x18 + keyOffset)
+local inventoryNum = readInteger(EquipInventoryData + 0x20 + keyOffset)
 
-for i=0,inventoryNum do
+local invName = {
+	[0] = "Player Inventory",
+	[1] = "Storage Chest",
+	[2] = "Key Items (Player Inventory)",
+	[3] = "Key Items (Storage Chest)"
+}
+
+print("---- "..invName[invChoice].." ----")
+local itemCount = 0
+for i=0,inv[3] do
     local item = getAddress(inventoryList + i * 0x10)
+    local GaItemHandle = readInteger(item)
     local itemId = readInteger(item + 4)
     local itemType = getItemType(itemId)
-    itemId = itemId - itemType[1]
-    local quantity = readInteger(item + 8)
-    if itemId <= 0x4FFFFFFF and itemId ~= nil and quantity ~= nil then
-        print(string.format("#%d | Type: %s | ID: %d | Quantity: %d", i, itemType[2], itemId, quantity))
-    end
+	local quantity = readInteger(item + 8)
+    if itemType[3] ~= -1 then
+		itemId = itemId - itemType[1]
+
+		if itemId ~= nil and itemId <= 0x4FFFFFFF and itemId ~= 0xFFFFFFFF and quantity ~= nil and GaItemHandle ~= 0 then
+		print(string.format("#%d | Type: %s | ID: %d | Quantity: %d", itemCount, itemType[2], itemId, quantity))
+		itemCount = itemCount + 1
+		end
+	end
+
+    if itemCount >= inventoryNum then break end
 end
+--print(string.format("itemCount: %d | inventoryNum: %d",itemCount,inventoryNum))
 
 disableMemrec(memrec)
 
 [DISABLE]
-

@@ -1,0 +1,29 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local GameDataMan = readPointer("GameDataMan")
+local PlayerGameData = readPointer(GameDataMan + 0x10)
+local inv = getInvData(0)
+local EquipInventoryData = readPointer(PlayerGameData + inv[1])
+
+local inventoryList = readPointer(EquipInventoryData + 0x18)
+local inventoryNum = readInteger(EquipInventoryData + 0x20)
+
+local items = {}
+
+local itemCount = 0
+for i=0,2688 do
+    local item = getAddress(inventoryList + i * 0x10)
+    local itemId = readInteger(item + 4)
+    if itemId ~= 0xFFFFFFFF then
+		if itemId < 0x40000000 and inArray(items, itemId) then
+			RemoveItem(i, 0)
+		else
+			table.insert(items, itemId)
+		end
+        itemCount = itemCount + 1
+	end
+    if itemCount >= inventoryNum then break end
+end
+disableMemrec(memrec)
+[DISABLE]

@@ -1,0 +1,29 @@
+{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local addr = AOBScanModuleUnique(process,"48 89 6C 24 10 48 89 74 24 18 48 89 7C 24 20 41 56 48 83 EC 70 41")
+
+function ItemDrop(item, quantity, durability, isMultiDropShare, isScatter)
+	if item == nil then throwError("No item specified") end
+	if durability == nil then durability = 0xFFFFFFFF end
+	if quantity == nil then quantity = 1 end
+	if isMultiDropShare == nil then isMultiDropShare = 0 end
+	if isScatter == nil then isScatter = 0 end
+
+	local MapItemMan = readPointer("MapItemMan")
+
+    local itemType = getItemType(item)
+
+	local mem = allocateMemory(16, getAddress(process))
+	writeInteger(mem +  0, itemType[1])
+	writeInteger(mem +  4, item-itemType[1])
+	writeInteger(mem +  8, durability)
+	writeInteger(mem + 12, quantity)
+
+	local r = executeCodeEx(0, 100, addr, MapItemMan, mem, isMultiDropShare, isScatter)
+	deAlloc(mem)
+	return r
+end
+
+[DISABLE]
+ItemDrop = nil

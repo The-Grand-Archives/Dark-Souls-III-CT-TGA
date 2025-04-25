@@ -1,26 +1,18 @@
-//Author: inuNorii
-//Add souls directly without the need for effects or items
+{$lua}
+if syntaxcheck then return end
 [ENABLE]
-aobscanmodule(AddSoul_Call,$process,48 89 5C 24 ?? 48 89 74 24 ?? 57 48 83 EC ?? 8B DA 48 8B F9 E8 ???????? 8D 14 18)
-alloc(AddSoul,$100,$process)
-registerSymbol(AddSoul)
-registerSymbol(SoulsToAdd)
+if AddSoul == nil then
+    getAddressList().getMemoryRecordByDescription("AddSoul_code").active = true
+    throwError("'AddSoul' symbol was not found.\nTry enabling this script again.")
+end
 
-AddSoul:
-sub rsp,48
-mov edi,[SoulsToAdd]
-mov rcx,[WorldChrMan]
-mov rcx,[rcx+80]
-mov rcx,[rcx+00001FA0]
-mov edx,edi
-call AddSoul_Call //DarkSoulsIII.exe+5A3310
-add rsp,48
-ret
+AddSoul_value = allocateMemory(4, getAddress(process))
+writeInteger(AddSoul_value, 500)
 
-SoulsToAdd:
-dd #500
+-- Actual code is located in Misc/WIP -> Dependencies -> Global Functions
+
+-- AddSoul(value)
 
 [DISABLE]
-dealloc(AddSoul)
-unregisterSymbol(AddSoul)
-unregisterSymbol(SoulsToAdd)
+deAlloc(AddSoul_value)
+AddSoul_value = nil
