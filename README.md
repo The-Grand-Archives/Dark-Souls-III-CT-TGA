@@ -19,7 +19,7 @@ If it doesn't work, try this [alternative invite](https://discord.gg/2RTW6BFgeX)
 
 ### Requirements
 
-Cheat Engine: 7.5 or 7.4
+Cheat Engine: 7.5 or 7.4  
 Game: App ver. 1.15.2
 
 ## How to use
@@ -60,7 +60,7 @@ I expect you to already have Steam, Wine, Proton, and the game installed
 2. Install Chocolatey by pasting the following line into either and pressing enter, if you don't already have it:
   `winget install chocolatey`
 3. Install Cheat Engine through Chocolatey, using:
-  `choco install cheatengine --version=7.5`
+  `choco install cheatengine --version=7.5`  
   If your terminal doesn't recognise `choco`, restart it
 
 #### Linux
@@ -85,27 +85,62 @@ autorun/soundextension.lua
 autorun/dlls/dnd.dat
 ```
 
+## For Contributors
+
+### Development Environment
+
+This table uses [CE2FS](https://pypi.org/project/ce2fs/) to build the table from a file system 
+representation. This and some of the TGA-specific build scripts require Python 3.10+. 
+You can install the required dependencies using the `./scripts/install_deps.[sh/bat]` script.
+
+### Scripts
+
+#### `install_deps.sh`
+- Installs required dependencies to use the other scripts.
+
+#### `build.py`
+- Builds the Cheat Engine table in the `dist` folder. You can forward CE2FS arguments to the script. 
+- Run with `--fixup` to generate missing XML metadata files after adding scripts / group headers.
+
+#### `check.sh`
+- Checks that your `CheatTable` folder is not missing any XML files or important tags within them. 
+
+#### `unpack.sh -o PATH/TO/FOLDER`
+- Unpacks the cheat table currently present in the `dist` folder to the file system in `PATH/TO/FOLDER`.
+- **WARNING**: Currently, **this wipes the existing contents of `FOLDER/CheatTable`** and cannot "merge" with an existing unpacked table. **DO NOT PASS `-o .`!** Instead, follow the instructions in the [Contribution Workflow](#contribution-workflow) section.
+
+#### `pack_table_files.py`
+- Packs the files/folders in `table_files` to the Cheat Engine table files directory (`CheatTable/Files`).
+- Files are simply copied, while folders are packed using the TGA archiving protocol (see script). 
+
+### Contribution Workflow
+
+Make a pull request to the `dev` branch of this repository. Run `./scripts/check.sh` or `python build.py --fixup` first to make sure all the required XML files have been generated.
+
+For merging changes made to the built table in Cheat Engine is to run `unpack.sh -o dist`, manually nagivate to the folder where you made your changes, and copy them to the `CheatTable` folder.
+
 ## Credits
 
 The Grand Archives | Reason
 ------------------ | ---------------------
 Ametalon | Help with LUA, major table contributions
+[Amirah](https://github.com/AmySouls) | Table contribution
 [Coinsworth](https://github.com/LukeYui/) | Help with ASM, knowledge, major table contributions
-[inuNorii](https://github.com/inuNorii) | knowledge, table contribution/overhaul
-Unfairest | Ban data collection, guides
-Gáté | Param Edits, Param knowledge, fixes
-Lucifer | Param Edits
-[/u/MajinCry](https://www.reddit.com/user/MajinCry) | Kill all mobs in the area script
-kairos | PP Class contribution
-PurplE | ItemGib dropdown contribution
-Vortexian | Inspiration for vortmov
-[Saucy](https://github.com/0dm) | Table contribution
-[amirah](https://github.com/AmirSouls) | Table contribution
-Grish | Mass ItemGib
-[sfix](https://github.com/garyttierney) | Table contribution
-Z.Z | Table contribution
-heliodesic | Table contribution
 [Dasaav](https://github.com/Dasaav-dsv) | Functionality reworks and additions
+Gáté | Param Edits, Param knowledge, fixes
+Grish | Mass ItemGib
+heliodesic | Table contribution
+[inuNorii](https://github.com/inuNorii) | knowledge, table contribution/overhaul
+kairos | PP Class contribution
+Lucifer | Param Edits
+[MajinCry](https://www.reddit.com/user/MajinCry) | Kill all mobs in the area script
+PurplE | ItemGib dropdown contribution
+[Saucy](https://github.com/0dm) | Table contribution
+[sfix](https://github.com/garyttierney) | Table contribution
+[tremwil](https://github.com/tremwil/) | CParamUtils, CE2FS, and many more table contributions
+Unfairest | Ban data collection, guides
+Vortexian | Inspiration for vortmov
+Z.Z | Table contribution
 
 Reverse Souls | Reason
 ------------- | ---------------------
