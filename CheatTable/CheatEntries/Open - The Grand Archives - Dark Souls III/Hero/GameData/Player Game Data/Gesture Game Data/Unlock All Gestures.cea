@@ -1,50 +1,91 @@
 [ENABLE]
-[[[GameDataMan]+10]+7B8]+10:
-dw 0003 0000//Point Forward
-dw 0005 0001 //Point Up
-dw 0007 0002 //Point down
-dw 0009 0003 //Wave
-dw 000B 0004 //Beckon
-dw 000D 0005 //Call over
-dw 000F 0006 //Welcome
-dw 0011 0007 //Applause
-dw 0013 0008 //Quiet Resolve
-dw 0015 0009 //Jump For Joy
-dw 0017 000A //Joy
-dw 0019 000B //Rejoice
-dw 001B 000C //Hurrah
-dw 001D 000D //Praise the Sun
-dw 001F 000E //My Thanks
-dw 0021 000F //Bow
-dw 0023 0010 //Proper Bow
-dw 0025 0011 //Dignified Bow
-dw 0027 0012 //Duel Bow
-dw 0029 0013 //Legion Etiquette
-dw 002B 0014 //Darkmoon Loyality
-dw 002D 0015 //By my sword
-dw 002F 0016 //Prayer
-dw 0031 0017 //Silent Ally
-dw 0033 0018 //Rest
-dw 0035 0019 //Collapse
-dw 0037 001A //Patches Squat
-dw 0039 001B //Prostration
-dw 003B 001C //Toast
-dw 003D 001D //Sleep
-dw 003F 001E //Curl Up
-dw 0041 001F //Stretch out
-dw 0043 0020 //Path of the Dragon
-
-//dw 0045 0021 //Unmannered Bow
-//dw 0047 0022 //Lord of Cinder
-//dw 0049 0023 //FDP_MenuText(301140)
-//dw 004B 0024 //FDP_MenuText(301141)
-//dw 004D 0025 //FDP_MenuText(301142)
-//dw 004F 0026 //FDP_MenuText(301143)
-//dw 0051 0027 //FDP_MenuText(301144)
-//dw 0053 0028 //FDP_MenuText(301145)
-
 {$lua}
 if syntaxcheck then return end
+
+-- change these for options
+local unlock_gestures = true		-- set this to false if you want to lock all gestures
+local give_cut_gestures = false
+local give_unused_gestures = false
+
+-- do not change the rest
+
+local gestures = {
+	{  2, 0x40002329 }, -- Point forward
+	{  4, 0x40002330 }, -- Point up
+	{  6, 0x40002331 }, -- Point down
+	{  8, 0x4000232E }, -- Wave
+	{ 10, 0x40002328 }, -- Beckon
+	{ 12, 0x40002341 }, -- Call over
+	{ 14, 0x40002337 }, -- Welcome
+	{ 16, 0x40002345 }, -- Applause
+	{ 18, 0x40002343 }, -- Quiet Resolve
+	{ 20, 0x4000232C }, -- Jump for joy
+	{ 22, 0x40002338 }, -- Joy
+	{ 24, 0x4000233A }, -- Rejoice
+	{ 26, 0x4000232A }, -- Hurrah!
+	{ 28, 0x4000232F }, -- Praise the Sun
+	{ 30, 0x40002339 }, -- My thanks!
+	{ 32, 0x4000232B }, -- Bow
+	{ 34, 0x40002335 }, -- Proper bow
+	{ 36, 0x4000233D }, -- Dignified bow
+	{ 38, 0x4000232D }, -- Duel bow
+	{ 40, 0x40002347 }, -- Legion Etiquette
+	{ 42, 0x40002348 }, -- Darkmoon Loyalty
+	{ 44, 0x4000233C }, -- By my sword
+	{ 46, 0x40002336 }, -- Prayer
+	{ 48, 0x4000234B }, -- Silent Ally!
+	{ 50, 0x4000233B }, -- Rest
+	{ 52, 0x40002342 }, -- Collapse
+	{ 54, 0x40002344 }, -- Patches Squat
+	{ 56, 0x40002334 }, -- Prostration
+	{ 58, 0x4000234A }, -- Toast
+	{ 60, 0x40002349 }, -- Sleep
+	{ 62, 0x4000233F }, -- Curl up
+	{ 64, 0x40002340 }, -- Stretch out
+	{ 66, 0x40002346 }  -- Path of the Dragon
+}
+
+local cut_gestures = {
+	{ 68, 0xFFFFFFFF }, -- Unmannered Bow
+	{ 70, 0xFFFFFFFF }  -- Lord of Cinder
+}
+
+local unused_gestures = {
+	{ 72, 0xFFFFFFFF }, -- FDP_MenuText(301140)
+	{ 74, 0xFFFFFFFF }, -- FDP_MenuText(301141)
+	{ 76, 0xFFFFFFFF }, -- FDP_MenuText(301142)
+	{ 78, 0xFFFFFFFF }, -- FDP_MenuText(301143)
+	{ 80, 0xFFFFFFFF }, -- FDP_MenuText(301144)
+	{ 82, 0xFFFFFFFF }  -- FDP_MenuText(301145)
+}
+
+local GameDataMan = readPointer("GameDataMan")
+local PlayerGameData = readPointer(GameDataMan + 0x10)
+local GestureGameData = readPointer(PlayerGameData + 0x7B8)
+
+-- cut content / unused gestures
+if give_cut_gestures then
+	for _,v in ipairs(cut_gestures) do
+		table.insert(gestures, v)
+	end
+end
+
+if give_unused_gestures then
+	for _,v in ipairs(unused_gestures) do
+		table.insert(gestures, v)
+	end
+end
+
+local addval = 0
+if unlock_gestures then addval = 1 end
+
+for i,v in ipairs(gestures) do
+	if v[1] ~= -1 then
+		writeInteger(GestureGameData + 4 + i * 4, v[1] + addval)
+		--ItemPopup(v[2],1)
+	end
+end
+
 disableMemrec(memrec)
 
 [DISABLE]

@@ -1,17 +1,11 @@
 //Author: inuNorii
 //Saves the game, but not from itself
-[ENABLE]
-aobscanmodule(SaveRequest_AOB,$process,48 8B 05 ???????? 0F B6 DA 8B F9)
-define(SaveRequest_Call,SaveRequest_AOB-A)
-alloc(SaveRequest,$10,DarkSoulsIII.exe)
-createthread(SaveRequest)
-SaveRequest:
-sub rsp,8
-call SaveRequest_Call
-add rsp,8
-ret
 {$lua}
-if not syntaxcheck then disableMemrec(memrec) end
-{$asm}
+if sytnaxcheck then return end
+[ENABLE]
+local addr = AOBScanModuleUnique(process,"48 8B 05 ???????? 0F B6 DA 8B F9") - 0xA
+
+executeCodeEx(0, 100, addr)
+disableMemrec(memrec)
+
 [DISABLE]
-dealloc(SaveRequest)

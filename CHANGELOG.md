@@ -5,6 +5,14 @@
 ### Changed
  - Move World Flags into Deprecated unter Event Flags
  - Adjusted the event flags aob to work with seamless co-op
+ - Replace the following scripts with their lua rewrites:
+   - AddSoul
+   - BonfireWarp
+   - Unlock All Gestures
+   - Apply Effect
+   - Bullet Spawn
+   - Item Drop
+   - SaveRequest
 ### Fixed
  - EquipItem
  - Restored old AOBs for Hero -> Animation -> Scripts, making the scripts usable again
