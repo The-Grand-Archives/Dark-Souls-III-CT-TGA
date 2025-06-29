@@ -25,51 +25,51 @@ void memxor_simd(void* dest, void* src, size_t len);
 void memor_simd(void* dest, void* src, size_t len);
 void memandn_simd(void* dest, void* src, size_t len);
 void memand_simd(void* dest, void* src, size_t len);
-__asm__("
+__asm__(
 
-memxor_simd:
-	xorq %rax, %rax
-loop_xor_simd:
-	movaps (%rcx, %rax), %xmm0
-	pxor (%rdx, %rax), %xmm0
-	movaps %xmm0, (%rcx, %rax)
-	addq $0x10, %rax
-	cmpq %rax, %r8
-	ja loop_xor_simd
-	ret
+"memxor_simd:\n\t"
+	"xorq %rax, %rax\n"
+"loop_xor_simd:\n\t"
+	"movaps (%rcx, %rax), %xmm0\n\t"
+	"pxor (%rdx, %rax), %xmm0\n\t"
+	"movaps %xmm0, (%rcx, %rax)\n\t"
+	"addq $0x10, %rax\n\t"
+	"cmpq %rax, %r8\n\t"
+	"ja loop_xor_simd\n\t"
+	"ret\n"
 
-memor_simd:
-	xorq %rax, %rax
-loop_or_simd:
-	movaps (%rcx, %rax), %xmm0
-	por (%rdx, %rax), %xmm0
-	movaps %xmm0, (%rcx, %rax)
-	addq $0x10, %rax
-	cmpq %rax, %r8
-	ja loop_or_simd
-	ret
+"memor_simd:\n\t"
+	"xorq %rax, %rax\n"
+"loop_or_simd:\n\t"
+	"movaps (%rcx, %rax), %xmm0\n\t"
+	"por (%rdx, %rax), %xmm0\n\t"
+	"movaps %xmm0, (%rcx, %rax)\n\t"
+	"addq $0x10, %rax\n\t"
+	"cmpq %rax, %r8\n\t"
+	"ja loop_or_simd\n\t"
+	"ret\n"
 
-memandn_simd:
-	xorq %rax, %rax
-loop_andn_simd:
-	movaps (%rcx, %rax), %xmm0
-	pandn (%rdx, %rax), %xmm0
-	movaps %xmm0, (%rcx, %rax)
-	addq $0x10, %rax
-	cmpq %rax, %r8
-	ja loop_andn_simd
-	ret
+"memandn_simd:\n\t"
+	"xorq %rax, %rax\n"
+"loop_andn_simd:\n\t"
+	"movaps (%rcx, %rax), %xmm0\n\t"
+	"pandn (%rdx, %rax), %xmm0\n\t"
+	"movaps %xmm0, (%rcx, %rax)\n\t"
+	"addq $0x10, %rax\n\t"
+	"cmpq %rax, %r8\n\t"
+	"ja loop_andn_simd\n\t"
+	"ret\n"
 
-memand_simd:
-	xorq %rax, %rax
-loop_and_simd:
-	movaps (%rcx, %rax), %xmm0
-	pand (%rdx, %rax), %xmm0
-	movaps %xmm0, (%rcx, %rax)
-	addq $0x10, %rax
-	cmpq %rax, %r8
-	ja loop_and_simd
-	ret"
+"memand_simd:\n\t"
+	"xorq %rax, %rax\n"
+"loop_and_simd:\n\t"
+	"movaps (%rcx, %rax), %xmm0\n\t"
+	"pand (%rdx, %rax), %xmm0\n\t"
+	"movaps %xmm0, (%rcx, %rax)\n\t"
+	"addq $0x10, %rax\n\t"
+	"cmpq %rax, %r8\n\t"
+	"ja loop_and_simd\n\t"
+	"ret"
 );
 
 #define align16(n) (((n) + 0xF) & ~(uint64_t)0xF)
