@@ -16,16 +16,15 @@ PVOID _BAD_PTR_VEH_HANDLE = NULL;
 bool _safe_ptr_do_read(void* ptr, uint64_t* out_value);
 void _safe_ptr_exception_point();
 void _safe_ptr_do_read_end();
-__asm__("
-    _safe_ptr_do_read:
-        xorb %al, %al
-        movq (%rcx), %r8
-    _safe_ptr_exception_point:
-        movq %r8, (%rdx)
-        movb $1, %al
-    _safe_ptr_do_read_end:
-        ret
-    "
+__asm__(
+    "_safe_ptr_do_read:\n\t"
+        "xorb %al, %al\n\t"
+        "movq (%rcx), %r8\n"
+    "_safe_ptr_exception_point:\n\t"
+        "movq %r8, (%rdx)\n\t"
+        "movb $1, %al\n"
+    "_safe_ptr_do_read_end:\n\t"
+        "ret"
 );
 
 LONG _safe_ptr_veh_handler(uint8_t* ExceptionInfo)
