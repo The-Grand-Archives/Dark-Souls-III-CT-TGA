@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>100017</ID>
+  <Description>"Unk0x2C, always 0"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <Color>C0C0C0</Color>
+  <VariableType>4 Bytes</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>2C</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

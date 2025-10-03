@@ -1,9 +1,11 @@
 <CheatEntry>
-  <ID>1337019905</ID>
+  <ID>100002</ID>
   <Description>"X"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
   <VariableType>Float</VariableType>
-  <Address>bloodstain_coords_ptr_2</Address>
+  <Address>GameDataMan</Address>
   <Offsets>
     <Offset>0</Offset>
+    <Offset>40</Offset>
   </Offsets>
 </CheatEntry>
