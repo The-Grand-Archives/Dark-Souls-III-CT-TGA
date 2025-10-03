@@ -1,0 +1,12 @@
+<CheatEntry>
+  <ID>100006</ID>
+  <Description>"X"</Description>
+  <ShowAsSigned>0</ShowAsSigned>
+  <Color>C0C0C0</Color>
+  <VariableType>Float</VariableType>
+  <Address>GameDataMan</Address>
+  <Offsets>
+    <Offset>C</Offset>
+    <Offset>40</Offset>
+  </Offsets>
+</CheatEntry>

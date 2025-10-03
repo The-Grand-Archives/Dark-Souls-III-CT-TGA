@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>100001</ID>
+  <Description>"FloatVector3 Position"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="100002"/>
+    <id id="100003"/>
+    <id id="100004"/>
+  </x-ce2fs-child-order>
+</CheatEntry>

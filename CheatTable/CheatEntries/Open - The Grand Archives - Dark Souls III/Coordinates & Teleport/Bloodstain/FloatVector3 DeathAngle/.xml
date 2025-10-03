@@ -1,0 +1,11 @@
+<CheatEntry>
+  <ID>100013</ID>
+  <Description>"FloatVector3 DeathAngle"</Description>
+  <Options moHideChildren="1"/>
+  <GroupHeader>1</GroupHeader>
+  <x-ce2fs-child-order>
+    <id id="100014"/>
+    <id id="100015"/>
+    <id id="100016"/>
+  </x-ce2fs-child-order>
+</CheatEntry>
